@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "color": "^2.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.13",
+    "styled-components": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,6 +18,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
+    "jest-styled-components": "^4.6.0",
     "@storybook/react": "^3.2.10",
     "@storybook/addon-actions": "^3.2.10",
     "@storybook/addon-links": "^3.2.10"
