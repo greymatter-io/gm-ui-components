@@ -9,7 +9,6 @@ export const COLOR_GREEN = Color("#0aab2a");
 export const COLOR_WHITE = Color("#fff");
 export const COLOR_GREY = Color("#444");
 
-
 export const COLOR_HIGHLIGHT = COLOR_BRAND_PRIMARY;
 export const COLOR_SUCCESS = Color("#0aab2a");
 export const COLOR_DANGER = Color("red");
