@@ -1,2 +1,2 @@
 import './Footer.story.js'
-import './Breadcrumb.story.js'
+import './Breadcrumbs.story.js'
