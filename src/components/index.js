@@ -1,3 +1,4 @@
-import Footer from './Footer/Footer'
+import Footer from './Footer'
+import {Breadcrumbs, BreadcrumbItem} from './Breadcrumbs'
 
-export { Footer }
+export { Footer, Breadcrumbs, BreadcrumbItem}

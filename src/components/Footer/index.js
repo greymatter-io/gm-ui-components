@@ -1,0 +1,3 @@
+import '/Footer';
+
+export { Footer }
