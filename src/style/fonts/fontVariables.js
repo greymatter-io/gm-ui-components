@@ -1,6 +1,3 @@
-
-import { injectGlobal } from "styled-components";
-
 // Backup font list
 export const FONT_GROUP_SYSTEM = `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`;
 
@@ -22,20 +19,3 @@ export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
 export const FONT_SIZE_SM = "11px";
 export const FONT_SIZE_XS = "9px";
-
-injectGlobal`
-@font-face {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./Nunito/Nunito-Regular.ttf");
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("./Rubik/Rubik-Regular.ttf");
-}
-@font-face {
-  font-family: "SourceCodePro";
-  src: url("./Source_Code_Pro/SourceCodePro-Regular.ttf");
-}
-`;

@@ -1,13 +1,16 @@
+import React from "react";
+import styled from "styled-components";
+import { COLOR_HIGHLIGHT, COLOR_GREY } from "../../style/colorVariables";
+import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
+import longLogo from "../../images/decipher-logo-long.png";
+import github from "../../images/icons/github.svg";
+import twitter from "../../images/icons/twitter.svg";
+import linkedin from "../../images/icons/linkedin.svg";
 
-import React from "react"
-import styled from "styled-components"
-import { COLOR_HIGHLIGHT, COLOR_GREY } from '../../style/colorVariables'
-import { FONT_GROUP_MAIN_TEXT } from '../../style/fonts/fontVariables'
-import longLogo from "../../images/decipher-logo-long.png"
-import github from "../../images/icons/github.svg"
-import twitter from "../../images/icons/twitter.svg"
-
-import linkedin from "../../images/icons/linkedin.svg"
+// Globally import the fonts you want
+import "../../style/fonts/Rubik";
+import "../../style/fonts/Nunito";
+import "../../style/fonts/Source_Code_Pro";
 
 const Wrapper = styled.footer`
   user-select: none;
@@ -61,18 +64,16 @@ const Links = styled.div`
   padding: 0 0 0 8px;
 `;
 
-const Link = styled.a`
-  padding: 0 8px;
-`;
+const Link = styled.a`padding: 0 8px;`;
 
 const Social = styled.img`
   width: 16px;
   opacity: 0.4;
   transition: opacity 0.2s ease;
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
-`
+`;
 
 /**
  * Stateless functional React component that renders company branding and social media footer content
@@ -95,21 +96,21 @@ export default function Footer() {
           rel="noopener noreferrer"
           target="_blank"
         >
-        <Social alt="GitHub"  src={github} />
+          <Social alt="GitHub" src={github} />
         </Link>
         <Link
           href="http://twitter.com/deciphernow"
           rel="noopener noreferrer"
           target="_blank"
         >
-        <Social alt="Twitter" src={twitter} />
+          <Social alt="Twitter" src={twitter} />
         </Link>
         <Link
           href="http://www.linkedin.com/company/decipher-technology-studios"
           rel="noopener noreferrer"
           target="_blank"
         >
-        <Social alt="LinkedIn" src={linkedin} />
+          <Social alt="LinkedIn" src={linkedin} />
         </Link>
       </Links>
     </Wrapper>
