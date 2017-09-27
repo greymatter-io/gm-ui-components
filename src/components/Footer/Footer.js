@@ -15,7 +15,7 @@ import "../../style/fonts/Source_Code_Pro";
 const Wrapper = styled.footer`
   user-select: none;
   overflow: hidden;
-  padding: 0.5vw;
+  padding: 4px;
   display: flex;
   flex-direction: row;
   color: ${COLOR_GREY};
@@ -53,8 +53,7 @@ const Copyright = styled.p`
   z-index: -1;
   opacity: 0;
   @media all and (min-width: 800px) {
-    opacity: 0.8;
-    z-index: 1;
+    display: none;
   }
 `;
 
@@ -62,6 +61,7 @@ const Links = styled.div`
   flex: 0 0 auto;
   text-align: right;
   padding: 0 0 0 8px;
+
 `;
 
 const Link = styled.a`padding: 0 8px;`;

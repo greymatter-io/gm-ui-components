@@ -7,5 +7,6 @@ import { linkTo } from '@storybook/addon-links';
 
 import {Footer} from '../components'
 
+
 storiesOf('Footer', module)
-  .add('with copyright', () => <Footer/>)
+  .add('with copyright', () => <div style={{width: '300px', bottom: '0'}}><Footer/></div>)
