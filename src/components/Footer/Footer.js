@@ -22,6 +22,7 @@ const Wrapper = styled.footer`
   font-size: 11px;
   align-items: center;
   flex: 0 0 32px;
+  justify-content: space-between;
 `;
 
 const LongLogo = styled.a`
@@ -51,8 +52,8 @@ const Copyright = styled.p`
   cursor: default;
   font-family: ${FONT_GROUP_MAIN_TEXT};
   z-index: -1;
-  opacity: 0;
-  @media all and (min-width: 800px) {
+  opacity: 0.8;
+  @media all and (max-width: 600px) {
     display: none;
   }
 `;
@@ -61,7 +62,6 @@ const Links = styled.div`
   flex: 0 0 auto;
   text-align: right;
   padding: 0 0 0 8px;
-
 `;
 
 const Link = styled.a`padding: 0 8px;`;

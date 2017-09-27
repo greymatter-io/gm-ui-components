@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> it renders correctly 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  padding: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: model:rgb;
+  color: 68,68,68;
+  valpha: 1;
+  font-size: 11px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 32px;
+  -ms-flex: 0 0 32px;
+  flex: 0 0 32px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  text-align: left;
+  padding: 0 8px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.c1:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.c1 img {
+  max-width: 157px;
+}
+
+.c2 {
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -webkit-letter-spacing: 0.03em;
+  -moz-letter-spacing: 0.03em;
+  -ms-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  cursor: default;
+  font-family: Nunito;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c3 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  text-align: right;
+  padding: 0 0 0 8px;
+}
+
+.c4 {
+  padding: 0 8px;
+}
+
+.c5 {
+  width: 16px;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.c5:hover {
+  opacity: 0.8;
+}
+
+@media all and (max-width:600px) {
+  .c2 {
+    display: none;
+  }
+}
+
+<footer
+  className="c0"
+>
+  <a
+    className="c1"
+    href="http://deciphernow.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="Decipher Technology Studios"
+      src="decipher-logo-long.png"
+    />
+  </a>
+  <p
+    className="c2"
+  >
+    ©2017 Decipher Technology Studios
+  </p>
+  <div
+    className="c3"
+  >
+    <a
+      className="c4"
+      href="http://github.com/DecipherNow"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="GitHub"
+        className="c5"
+        src="github.svg"
+      />
+    </a>
+    <a
+      className="c4"
+      href="http://twitter.com/deciphernow"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Twitter"
+        className="c5"
+        src="twitter.svg"
+      />
+    </a>
+    <a
+      className="c4"
+      href="http://www.linkedin.com/company/decipher-technology-studios"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="LinkedIn"
+        className="c5"
+        src="linkedin.svg"
+      />
+    </a>
+  </div>
+</footer>
+`;
