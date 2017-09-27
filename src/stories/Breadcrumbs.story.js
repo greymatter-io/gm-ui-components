@@ -1,18 +1,23 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
-import { linkTo } from "@storybook/addon-links";
-
+import { withKnobs, array } from "@storybook/addon-knobs";
 import { Breadcrumbs, BreadcrumbItem } from "../components";
+const stories = storiesOf("Storybook Knobs", module);
 
-const stories = storiesOf("Footer", module);
+stories.addDecorator(withKnobs);
 
-storiesOf("Breadcrumb", module).add("Simple Breadcrumbs", () => {
+stories.add("simple breadcrumbs", () => {
+  const label = "Breadcrumbs";
+  const defaultValue = ["Home", "View", "Data", "Graphs"];
+  const separator = ",";
+  const crumbs = array(label, defaultValue, separator);
+
   return (
     <Breadcrumbs>
-      <BreadcrumbItem path="/home" text="Home" />
-      <BreadcrumbItem path="/next" text="Next" />
+      {crumbs.map(item => {
+        return <BreadcrumbItem path={`/${item.trim()}`}>{item}</BreadcrumbItem>;
+      })}
     </Breadcrumbs>
   );
 });

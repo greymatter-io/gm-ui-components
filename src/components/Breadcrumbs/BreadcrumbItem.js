@@ -21,6 +21,7 @@ const Breadcrumb = styled.li`
     text-overflow: ellipsis;
     padding: 8px 0;
     color: inherit;
+    text-decoration: none;
     &:hover {
       color: black;
     }
@@ -39,10 +40,10 @@ const Breadcrumb = styled.li`
  * Stateless functional React component that renders an individual breadcrumb item
  * @returns JSX.Element
  */
-export default function BreadcrumbItem({ path, text }) {
+export default function BreadcrumbItem({ children, path }) {
   return (
     <Breadcrumb>
-      <a href={path}>{text}</a>
+      <a href={path}>{children}</a>
     </Breadcrumb>
   );
 }
