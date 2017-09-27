@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Footer /> it renders correctly 1`] = `
+exports[`<Footer> Snapshot it renders correctly 1`] = `
 .c0 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -96,7 +96,7 @@ exports[`<Footer /> it renders correctly 1`] = `
 }
 
 .c5:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 @media all and (max-width:600px) {

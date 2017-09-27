@@ -12,7 +12,7 @@ import "../../style/fonts/Rubik";
 import "../../style/fonts/Nunito";
 import "../../style/fonts/Source_Code_Pro";
 
-const Wrapper = styled.footer`
+export const Wrapper = styled.footer`
   user-select: none;
   overflow: hidden;
   padding: 4px;
@@ -25,7 +25,7 @@ const Wrapper = styled.footer`
   justify-content: space-between;
 `;
 
-const LongLogo = styled.a`
+export const LongLogo = styled.a`
   flex: 0 1 auto;
   text-align: left;
   padding: 0 8px;
@@ -42,7 +42,7 @@ const LongLogo = styled.a`
   }
 `;
 
-const Copyright = styled.p`
+export const Copyright = styled.p`
   margin: 0;
   text-transform: uppercase;
   flex: 1 1 100%;
@@ -58,20 +58,20 @@ const Copyright = styled.p`
   }
 `;
 
-const Links = styled.div`
+export const Links = styled.div`
   flex: 0 0 auto;
   text-align: right;
   padding: 0 0 0 8px;
 `;
 
-const Link = styled.a`padding: 0 8px;`;
+export const Link = styled.a`padding: 0 8px;`;
 
-const Social = styled.img`
+export const Social = styled.img`
   width: 16px;
   opacity: 0.4;
   transition: opacity 0.2s ease;
   &:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
 `;
 
