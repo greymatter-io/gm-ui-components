@@ -27,7 +27,7 @@ const ExpandedBreadcrumbTree = renderer.create(TestExpanded).toJSON();
 const CollapsedBreadcrumbTree = renderer.create(TestCollapsed).toJSON();
 
 describe("<Breadcrumbs> Snapshot", () => {
-  test("it renders expanded breadcrumbs correctly", () => {
+  test("renders expanded breadcrumbs correctly", () => {
     expect(ExpandedBreadcrumbTree).toMatchSnapshot();
   });
   test("renders collapsed breadcrumbs correctly", () => {
@@ -48,13 +48,13 @@ describe("<Breadcrumbs>", () => {
     expect(wrapper.find(BreadcrumbItem).length).toBe(3);
   });
 
-  test("does not collapse when children are less than maxItems", () => {
+  test("do not collapse when children are less than maxItems", () => {
     wrapper.setProps({ maxItems: 5 });
     expect(wrapper.state("isCollapsed")).toEqual(false);
     expect(wrapper.find(BreadcrumbItem).length).toBe(4);
   });
 
-  test("expands when elipsis is clicked", () => {
+  test("expand when elipsis is clicked", () => {
     wrapper.find(Elipsis).simulate("click");
     expect(wrapper.state("isCollapsed")).toEqual(false);
   });
