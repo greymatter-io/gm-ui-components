@@ -14,7 +14,7 @@ const TestExpanded = (
   </Breadcrumbs>
 );
 
-const TestTruncated = (
+const TestCollapsed = (
   <Breadcrumbs maxItems={3}>
     <BreadcrumbItem>This is a really long breadcrumb</BreadcrumbItem>
     <BreadcrumbItem>Test 1</BreadcrumbItem>
@@ -24,14 +24,14 @@ const TestTruncated = (
 );
 
 const ExpandedBreadcrumbTree = renderer.create(TestExpanded).toJSON();
-const TruncatedBreadcrumbTree = renderer.create(TestTruncated).toJSON();
+const CollapsedBreadcrumbTree = renderer.create(TestCollapsed).toJSON();
 
 describe("<Breadcrumbs> Snapshot", () => {
   test("it renders expanded breadcrumbs correctly", () => {
     expect(ExpandedBreadcrumbTree).toMatchSnapshot();
   });
-  test("renders truncated breadcrumbs correctly", () => {
-    expect(TruncatedBreadcrumbTree).toMatchSnapshot();
+  test("renders collapsed breadcrumbs correctly", () => {
+    expect(CollapsedBreadcrumbTree).toMatchSnapshot();
   });
 });
 
@@ -39,24 +39,24 @@ describe("<Breadcrumbs>", () => {
   let wrapper, instance;
 
   beforeEach(() => {
-    wrapper = shallow(TestTruncated);
+    wrapper = shallow(TestCollapsed);
     instance = wrapper.instance();
   });
 
   test("collapse when children are greater than maxItems", () => {
-    expect(wrapper.state("isTruncated")).toEqual(true);
+    expect(wrapper.state("isCollapsed")).toEqual(true);
     expect(wrapper.find(BreadcrumbItem).length).toBe(3);
   });
 
   test("does not collapse when children are less than maxItems", () => {
     wrapper.setProps({ maxItems: 5 });
-    expect(wrapper.state("isTruncated")).toEqual(false);
+    expect(wrapper.state("isCollapsed")).toEqual(false);
     expect(wrapper.find(BreadcrumbItem).length).toBe(4);
   });
 
   test("expands when elipsis is clicked", () => {
     wrapper.find(Elipsis).simulate("click");
-    expect(wrapper.state("isTruncated")).toEqual(false);
+    expect(wrapper.state("isCollapsed")).toEqual(false);
   });
   test("a single breadcrumb is not longer than 20 characters", () => {
     wrapper.find(BreadcrumbItem).forEach(item => {
