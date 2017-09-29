@@ -23,7 +23,7 @@ stories.add("simple breadcrumbs", () => {
   );
 });
 
-stories.add("truncated breadcrumbs", () => {
+stories.add("collapsed breadcrumbs", () => {
   crumbs = array(label, defaultCrumbs, separator);
   maxItems = number("Max Items", 3);
   return (
