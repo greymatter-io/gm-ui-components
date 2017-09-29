@@ -6,10 +6,14 @@ import { Wrapper, LongLogo, Copyright, Social } from "./Footer";
 import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
 import "jest-styled-components";
 
-const FooterTree = renderer.create(<Footer />).toJSON();
-const Logo = renderer.create(<LongLogo />).toJSON();
-const SocialIcon = renderer.create(<Social />).toJSON();
-const CopyrightLink = renderer.create(<Copyright />).toJSON();
+let FooterTree, Logo, SocialIcon, CopyrightLink;
+
+beforeAll(() => {
+  FooterTree = renderer.create(<Footer />).toJSON();
+  Logo = renderer.create(<LongLogo />).toJSON();
+  SocialIcon = renderer.create(<Social />).toJSON();
+  CopyrightLink = renderer.create(<Copyright />).toJSON();
+});
 
 describe("<Footer> Snapshot", () => {
   test("it renders correctly", () => {

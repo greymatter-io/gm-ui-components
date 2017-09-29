@@ -66,6 +66,7 @@ describe("<Breadcrumbs> Functionality", () => {
           .dive()
           .text().length
       ).toBeLessThanOrEqual(23);
+      // 23 includes the elipsis...
     });
   });
 });

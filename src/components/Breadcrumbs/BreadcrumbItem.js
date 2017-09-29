@@ -2,7 +2,7 @@ import { PropTypes } from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-const Breadcrumb = styled.li`
+export const Breadcrumb = styled.li`
   flex: 0 0 auto;
   display: flex;
   align-items: center;
