@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Breadcrumbs> Snapshots it renders expanded breadcrumbs correctly 1`] = `
+.c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  font-family: Nunito;
+  padding: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: inherit;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+}
+
+.c1:before {
+  content: ">";
+  -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  padding: 0 4px;
+}
+
+.c1 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 8px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.c1 a:hover {
+  color: black;
+}
+
+.c1:first-child:before {
+  content: none;
+}
+
+.c1:first-child a {
+  padding-left: 16px;
+}
+
+<ol
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    Test 1
+  </li>
+  <li
+    className="c1"
+  >
+    Test 2
+  </li>
+  <li
+    className="c1"
+  >
+    Test 3
+  </li>
+</ol>
+`;
+
+exports[`<Breadcrumbs> Snapshots it renders truncated breadcrumbs correctly 1`] = `
+.c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  font-family: Nunito;
+  padding: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: inherit;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+}
+
+.c1:before {
+  content: ">";
+  -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  padding: 0 4px;
+}
+
+.c1 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 8px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.c1 a:hover {
+  color: black;
+}
+
+.c1:first-child:before {
+  content: none;
+}
+
+.c1:first-child a {
+  padding-left: 16px;
+}
+
+.c2 {
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.c2:before {
+  content: "...";
+}
+
+<ol
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    This is a really lon...
+  </li>
+  <li
+    className="c1"
+  >
+    <span
+      className="c2"
+      onClick={[Function]}
+    />
+  </li>
+  <li
+    className="c1"
+  >
+    Test 3
+  </li>
+</ol>
+`;

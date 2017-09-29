@@ -1,22 +1,35 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { withKnobs, array } from "@storybook/addon-knobs";
+import { withKnobs, array, number } from "@storybook/addon-knobs";
 import { Breadcrumbs, BreadcrumbItem } from "../components";
-const stories = storiesOf("Storybook Knobs", module);
+
+const stories = storiesOf("Breadcrumbs", module);
+const label = "Breadcrumbs";
+const defaultCrumbs = ["Home", "View", "Data", "Graphs"];
+const separator = ",";
+let crumbs, maxItems;
 
 stories.addDecorator(withKnobs);
 
 stories.add("simple breadcrumbs", () => {
-  const label = "Breadcrumbs";
-  const defaultValue = ["Home", "View", "Data", "Graphs"];
-  const separator = ",";
-  const crumbs = array(label, defaultValue, separator);
-
+  crumbs = array(label, defaultCrumbs, separator);
   return (
     <Breadcrumbs>
       {crumbs.map(item => {
-        return <BreadcrumbItem path={`/${item.trim()}`}>{item}</BreadcrumbItem>;
+        return <BreadcrumbItem>{item}</BreadcrumbItem>;
+      })}
+    </Breadcrumbs>
+  );
+});
+
+stories.add("truncated breadcrumbs", () => {
+  crumbs = array(label, defaultCrumbs, separator);
+  maxItems = number("Max Items", 3);
+  return (
+    <Breadcrumbs maxItems={maxItems}>
+      {crumbs.map((item, i) => {
+        return <BreadcrumbItem key={i}>{item}</BreadcrumbItem>;
       })}
     </Breadcrumbs>
   );

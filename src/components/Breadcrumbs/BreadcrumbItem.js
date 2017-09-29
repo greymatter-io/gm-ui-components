@@ -40,10 +40,10 @@ const Breadcrumb = styled.li`
  * Stateless functional React component that renders an individual breadcrumb item
  * @returns JSX.Element
  */
-export default function BreadcrumbItem({ children, path }) {
+export default function BreadcrumbItem({ children }) {
   return (
     <Breadcrumb>
-      <a href={path}>{children}</a>
+      {children.length > 20 ? children.substr(0, 20).concat("...") : children}
     </Breadcrumb>
   );
 }

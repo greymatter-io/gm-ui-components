@@ -24,6 +24,9 @@
     "@storybook/addon-knobs": "^3.2.10",
     "@storybook/addon-links": "^3.2.10",
     "@storybook/react": "^3.2.10",
-    "jest-styled-components": "^4.6.0"
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
+    "jest-styled-components": "^4.6.0",
+    "react-addons-test-utils": "^15.6.2"
   }
 }
