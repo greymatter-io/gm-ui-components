@@ -25,7 +25,7 @@ export const Elipsis = styled.span`
 class Breadcrumbs extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isTruncated: false };
+    this.state = { isCollapsed: false };
   }
   componentDidMount() {
     this.updateView(this.props);
@@ -36,33 +36,33 @@ class Breadcrumbs extends React.Component {
   updateView = props => {
     const { children, maxItems } = props;
     const childrenLen = React.Children.count(children);
-    maxItems < childrenLen ? this.truncate() : this.expand();
+    maxItems < childrenLen ? this.collapse() : this.expand();
   };
-  truncate = () => this.setState({ isTruncated: true });
+  collapse = () => this.setState({ isCollapsed: true });
 
-  expand = () => this.setState({ isTruncated: false });
+  expand = () => this.setState({ isCollapsed: false });
 
-  renderTruncated = children => {
+  renderCollapsed = children => {
     const elipsisItem = (
       <BreadcrumbItem key={1}>
         <Elipsis onClick={this.expand} />
       </BreadcrumbItem>
     );
-    const truncatedArr = [
+    const collapsedArr = [
       children[0],
       elipsisItem,
       children[children.length - 1]
     ];
-    return truncatedArr;
+    return collapsedArr;
   };
 
   render() {
     const { children, maxItems } = this.props;
-    const { isTruncated } = this.state;
+    const { isCollapsed } = this.state;
     return (
       <BreadcrumbsContainer>
-        {isTruncated && children.length > 2 ? (
-          this.renderTruncated(children)
+        {isCollapsed && children.length > 2 ? (
+          this.renderCollapsed(children)
         ) : (
           children
         )}

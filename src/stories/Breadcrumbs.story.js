@@ -45,7 +45,3 @@ stories.add(
     );
   })
 );
-
-BreadcrumbItem.PropTypes = {
-  children: PropTypes.string.isRequired
-};
