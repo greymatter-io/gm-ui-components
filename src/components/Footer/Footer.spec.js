@@ -16,7 +16,7 @@ beforeAll(() => {
 });
 
 describe("<Footer> Snapshot", () => {
-  test("it renders correctly", () => {
+  test("renders correctly", () => {
     expect(FooterTree).toMatchSnapshot();
   });
 });
