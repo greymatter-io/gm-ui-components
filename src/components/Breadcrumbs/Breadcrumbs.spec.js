@@ -43,12 +43,12 @@ describe("<Breadcrumbs>", () => {
     instance = wrapper.instance();
   });
 
-  test("truncates when children are greater than maxItems", () => {
+  test("collapse when children are greater than maxItems", () => {
     expect(wrapper.state("isTruncated")).toEqual(true);
     expect(wrapper.find(BreadcrumbItem).length).toBe(3);
   });
 
-  test("does not truncate when children are less than maxItems", () => {
+  test("does not collapse when children are less than maxItems", () => {
     wrapper.setProps({ maxItems: 5 });
     expect(wrapper.state("isTruncated")).toEqual(false);
     expect(wrapper.find(BreadcrumbItem).length).toBe(4);
