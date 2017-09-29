@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
 import BreadcrumbItem from "./BreadcrumbItem";
@@ -21,7 +22,6 @@ export const Elipsis = styled.span`
     content: "...";
   }
 `;
-
 class Breadcrumbs extends React.Component {
   constructor(props) {
     super(props);
@@ -72,3 +72,12 @@ class Breadcrumbs extends React.Component {
 }
 
 export default Breadcrumbs;
+
+Breadcrumbs.defaultProps = {
+  maxItems: 10
+};
+
+Breadcrumbs.propTypes = {
+  maxItems: PropTypes.number,
+  children: PropTypes.instanceOf(BreadcrumbItem).isRequired
+};

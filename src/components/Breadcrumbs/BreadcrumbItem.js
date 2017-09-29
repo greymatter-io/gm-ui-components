@@ -1,4 +1,4 @@
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
@@ -40,6 +40,7 @@ export const Breadcrumb = styled.li`
  * Stateless functional React component that renders an individual breadcrumb item
  * @returns JSX.Element
  */
+
 export default function BreadcrumbItem({ children }) {
   return (
     <Breadcrumb>
@@ -47,3 +48,7 @@ export default function BreadcrumbItem({ children }) {
     </Breadcrumb>
   );
 }
+
+BreadcrumbItem.propTypes = {
+  children: PropTypes.string.isRequired
+};
