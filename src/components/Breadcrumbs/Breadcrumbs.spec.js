@@ -26,16 +26,16 @@ const TestTruncated = (
 const ExpandedBreadcrumbTree = renderer.create(TestExpanded).toJSON();
 const TruncatedBreadcrumbTree = renderer.create(TestTruncated).toJSON();
 
-describe("<Breadcrumbs> Snapshots", () => {
+describe("<Breadcrumbs> Snapshot", () => {
   test("it renders expanded breadcrumbs correctly", () => {
     expect(ExpandedBreadcrumbTree).toMatchSnapshot();
   });
-  test("it renders truncated breadcrumbs correctly", () => {
+  test("renders truncated breadcrumbs correctly", () => {
     expect(TruncatedBreadcrumbTree).toMatchSnapshot();
   });
 });
 
-describe("<Breadcrumbs> Functionality", () => {
+describe("<Breadcrumbs>", () => {
   let wrapper, instance;
 
   beforeEach(() => {
@@ -48,13 +48,13 @@ describe("<Breadcrumbs> Functionality", () => {
     expect(wrapper.find(BreadcrumbItem).length).toBe(3);
   });
 
-  test("it does not truncate when children are less than maxItems", () => {
+  test("does not truncate when children are less than maxItems", () => {
     wrapper.setProps({ maxItems: 5 });
     expect(wrapper.state("isTruncated")).toEqual(false);
     expect(wrapper.find(BreadcrumbItem).length).toBe(4);
   });
 
-  test("it expands when elipsis is clicked", () => {
+  test("expands when elipsis is clicked", () => {
     wrapper.find(Elipsis).simulate("click");
     expect(wrapper.state("isTruncated")).toEqual(false);
   });
