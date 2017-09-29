@@ -27,7 +27,7 @@ const ExpandedBreadcrumbTree = renderer.create(TestExpanded).toJSON();
 const CollapsedBreadcrumbTree = renderer.create(TestCollapsed).toJSON();
 
 describe("<Breadcrumbs> Snapshot", () => {
-  test("it renders expanded breadcrumbs correctly", () => {
+  test("renders expanded breadcrumbs correctly", () => {
     expect(ExpandedBreadcrumbTree).toMatchSnapshot();
   });
   test("renders collapsed breadcrumbs correctly", () => {
