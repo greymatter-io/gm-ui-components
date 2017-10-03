@@ -11,36 +11,36 @@ import {
   COLOR_SUCCESS,
   COLOR_BRAND_PRIMARY
 } from "../../style/colorVariables";
+import { lighten, darken, complement } from "polished";
 
 export const getColor = props => {
   switch (props.type) {
     case "warning":
       return {
-        background: COLOR_WARNING.string(),
-        color: COLOR_PRIMARY.string(),
-        hover: COLOR_WARNING.darken(0.2).string(),
-        disabled: COLOR_WARNING.desaturate("100%")
+        background: COLOR_WARNING,
+        color: COLOR_PRIMARY,
+        hover: lighten(0.1, COLOR_WARNING)
       };
       break;
     case "danger":
       return {
-        background: COLOR_DANGER.string(),
-        color: COLOR_PRIMARY.string(),
-        hover: COLOR_DANGER.darken(0.2).string()
+        background: COLOR_DANGER,
+        color: COLOR_PRIMARY,
+        hover: lighten(0.1, COLOR_DANGER)
       };
       break;
     case "info":
       return {
-        background: COLOR_INFO.string(),
-        color: COLOR_PRIMARY.string(),
-        hover: COLOR_INFO.darken(0.2).string()
+        background: COLOR_INFO,
+        color: COLOR_PRIMARY,
+        hover: lighten(0.1, COLOR_INFO)
       };
       break;
     default:
       return {
-        background: COLOR_PRIMARY.string(),
-        color: "#000",
-        hover: COLOR_PRIMARY.darken(0.05).string()
+        background: COLOR_PRIMARY,
+        color: "#333",
+        hover: darken(0.1, COLOR_PRIMARY)
       };
   }
 };

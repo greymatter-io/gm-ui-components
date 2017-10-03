@@ -17,7 +17,6 @@ const Button = styled.button`
   background: ${props =>
     props.disabled ? "#eee" : getColor(props).background};
   padding: ${props => getPadding(props)};
-  transition: background 0.5s linear;
   text-align: center;
   cursor: ${props => (props.disabled ? "default" : "pointer")};
   font-family: ${FONT_GROUP_MAIN_TEXT};
@@ -29,7 +28,7 @@ const Button = styled.button`
 
 Button.propTypes = {
   onClick: PropTypes.any.isRequired, // click handler
-  size: PropTypes.oneOf(["sm", "md", "lg"]), // Relative size of the button
+  size: PropTypes.oneOf(["xs", "sm", "md", "lg", "fit"]), // Relative size of the button
   type: PropTypes.oneOf(["danger", "info", "primary", "warning"])
 };
 

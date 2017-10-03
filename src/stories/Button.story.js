@@ -28,8 +28,9 @@ const flexColumn = {
   display: "flex",
   flexDirection: "column",
   padding: "10px",
+  minHeight: "24px",
   alignItems: "flex-start",
-  height: "40vh",
+  height: "300px",
   width: "50vw",
   background: "lightblue",
   justifyContent: "space-between"
@@ -41,20 +42,20 @@ stories.add("types", () => {
       <h1>Button Types</h1>
       <div style={flexParentStyle}>
         <div>
-          <Button onClick={() => console.log("Primary!")}>Primary</Button>
+          <Button onClick={() => alert("Primary!")}>Primary</Button>
         </div>
         <div>
-          <Button type="warning" onClick={() => console.log("Warning!")}>
+          <Button type="warning" onClick={() => alert("Warning!")}>
             Warning
           </Button>
         </div>
         <div>
-          <Button type="info" onClick={() => console.log("Info!")}>
+          <Button type="info" onClick={() => alert("Info!")}>
             Info
           </Button>
         </div>
         <div>
-          <Button type="danger" onClick={() => console.log("Danger!")}>
+          <Button type="danger" onClick={() => alert("Danger!")}>
             Danger
           </Button>
         </div>
@@ -68,19 +69,19 @@ stories.add("sizes", () => {
     <div style={wrapperStyle}>
       <h1>Button Sizes</h1>
       <div style={flexColumn}>
-        <Button size="xs" onClick={() => console.log("Primary xs!")}>
+        <Button size="xs" onClick={() => alert("Primary xs!")}>
           Primary xs
         </Button>
-        <Button size="sm" onClick={() => console.log("Primary sm!")}>
+        <Button size="sm" onClick={() => alert("Primary sm!")}>
           Primary sm
         </Button>
-        <Button size="md" onClick={() => console.log("Primary md!")}>
+        <Button size="md" onClick={() => alert("Primary md!")}>
           Primary md
         </Button>
-        <Button size="lg" onClick={() => console.log("Primary lg!")}>
+        <Button size="lg" onClick={() => alert("Primary lg!")}>
           Primary lg
         </Button>
-        <Button size="fit" onClick={() => console.log("Primary lg!")}>
+        <Button size="fit" onClick={() => alert("Primary lg!")}>
           Primary fit (expands to fit its container)
         </Button>
       </div>
