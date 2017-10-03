@@ -50,5 +50,5 @@ export default function BreadcrumbItem({ children }) {
 }
 
 BreadcrumbItem.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.object
 };

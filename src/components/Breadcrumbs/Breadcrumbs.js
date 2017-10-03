@@ -79,5 +79,5 @@ Breadcrumbs.defaultProps = {
 
 Breadcrumbs.propTypes = {
   maxItems: PropTypes.number,
-  children: PropTypes.instanceOf(BreadcrumbItem).isRequired
+  children: PropTypes.array
 };
