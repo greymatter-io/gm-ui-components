@@ -19,3 +19,5 @@ export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
 export const FONT_SIZE_SM = "11px";
 export const FONT_SIZE_XS = "9px";
+
+export const PADDING_BASE = 8;
