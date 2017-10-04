@@ -1,0 +1,10 @@
+{
+  "moduleId": "gm-ui-components",
+  "presets": ["es2015", { "modules": false }, "stage-0"],
+  "plugins": ["add-module-exports"],
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}
