@@ -41,14 +41,18 @@ export const Breadcrumb = styled.li`
  * @returns JSX.Element
  */
 
-export default function BreadcrumbItem({ children }) {
+export default function BreadcrumbItem({ item, expand }) {
   return (
-    <Breadcrumb>
-      {children.length > 20 ? children.substr(0, 20).concat("...") : children}
+    <Breadcrumb
+      onClick={() => {
+        if (item === "...") expand();
+      }}
+    >
+      {item}
     </Breadcrumb>
   );
 }
 
 BreadcrumbItem.propTypes = {
-  children: PropTypes.object
+  item: PropTypes.string.isRequired
 };

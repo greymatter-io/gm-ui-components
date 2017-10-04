@@ -1,5 +1,3 @@
-import Color from "color";
-
 export const COLOR_BRAND_PRIMARY = "#0aab2a";
 export const COLOR_BRAND_SECONDARY = "#002e6e";
 

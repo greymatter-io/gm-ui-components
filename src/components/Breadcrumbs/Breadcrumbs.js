@@ -34,38 +34,41 @@ class Breadcrumbs extends React.Component {
     this.updateView(nextProps);
   }
   updateView = props => {
-    const { children, maxItems } = props;
-    const childrenLen = React.Children.count(children);
+    const { crumbs, maxItems } = props;
+    const childrenLen = crumbs.length;
     maxItems < childrenLen ? this.collapse() : this.expand();
   };
   collapse = () => this.setState({ isCollapsed: true });
 
   expand = () => this.setState({ isCollapsed: false });
 
-  renderCollapsed = children => {
+  renderCollapsed = crumbs => {
     const elipsisItem = (
-      <BreadcrumbItem key={1}>
-        <Elipsis onClick={this.expand} />
-      </BreadcrumbItem>
+      <BreadcrumbItem key={1} item={"..."} expand={this.expand} />
     );
+    const lastIndex = crumbs.length - 1;
     const collapsedArr = [
-      children[0],
+      <BreadcrumbItem key={0} item={crumbs[0]} />,
       elipsisItem,
-      children[children.length - 1]
+      <BreadcrumbItem key={lastIndex} item={crumbs[lastIndex]} />
     ];
     return collapsedArr;
   };
 
+  renderExpanded = crumbs => {
+    return crumbs.map((item, i) => {
+      return <BreadcrumbItem key={i} item={item} />;
+    });
+  };
+
   render() {
-    const { children, maxItems } = this.props;
+    const { crumbs, maxItems } = this.props;
     const { isCollapsed } = this.state;
     return (
       <BreadcrumbsContainer>
-        {isCollapsed && children.length > 2 ? (
-          this.renderCollapsed(children)
-        ) : (
-          children
-        )}
+        {isCollapsed && crumbs.length > 2
+          ? this.renderCollapsed(crumbs)
+          : this.renderExpanded(crumbs)}
       </BreadcrumbsContainer>
     );
   }
@@ -79,5 +82,5 @@ Breadcrumbs.defaultProps = {
 
 Breadcrumbs.propTypes = {
   maxItems: PropTypes.number,
-  children: PropTypes.array
+  crumbs: PropTypes.array.isRequired
 };

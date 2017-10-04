@@ -1,5 +1,6 @@
 {
   "name": "gm-ui-components",
+  "main": "lib/build.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,6 @@
     "start": "webpack -w",
     "build": "webpack -p",
     "test": "jest --watchAll",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -33,14 +33,30 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "jest-styled-components": "^4.6.0",
+    "raf": "^3.4.0",
     "react-addons-test-utils": "^15.6.2",
     "webpack": "^3.6.0"
   },
+  "prettier": {
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
+  },
   "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
+    "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
+      "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
+    },
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+    ],
+    "setupFiles": ["raf/polyfill"]
   }
 }
