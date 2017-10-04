@@ -15,13 +15,6 @@ export const BreadcrumbsContainer = styled.ol`
   align-items: stretch;
 `;
 
-export const Elipsis = styled.span`
-  cursor: pointer;
-  padding: 0 8px;
-  &:before {
-    content: "...";
-  }
-`;
 class Breadcrumbs extends React.Component {
   constructor(props) {
     super(props);

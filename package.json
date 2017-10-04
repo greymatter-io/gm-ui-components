@@ -3,6 +3,7 @@
   "main": "lib/build.js",
   "version": "0.1.0",
   "private": true,
+  "files": ["build.js"],
   "dependencies": {
     "polished": "^1.7.0",
     "prop-types": "^15.6.0",
@@ -33,6 +34,7 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "jest-styled-components": "^4.6.0",
+    "prettier": "^1.7.4",
     "raf": "^3.4.0",
     "react-addons-test-utils": "^15.6.2",
     "webpack": "^3.6.0"

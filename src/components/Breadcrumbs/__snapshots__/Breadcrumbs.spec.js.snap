@@ -75,35 +75,26 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   padding-left: 16px;
 }
 
-.c2 {
-  cursor: pointer;
-  padding: 0 8px;
-}
-
-.c2:before {
-  content: "...";
-}
-
 <ol
   className="c0"
 >
   <li
     className="c1"
+    onClick={[Function]}
   >
-    This is a really lon...
+    Test 1
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
-    <span
-      className="c2"
-      onClick={[Function]}
-    />
+    ...
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
-    Test 3
+    Testing a really lon...
   </li>
 </ol>
 `;
@@ -188,18 +179,27 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 >
   <li
     className="c1"
+    onClick={[Function]}
   >
     Test 1
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
     Test 2
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
     Test 3
+  </li>
+  <li
+    className="c1"
+    onClick={[Function]}
+  >
+    Testing a really lon...
   </li>
 </ol>
 `;

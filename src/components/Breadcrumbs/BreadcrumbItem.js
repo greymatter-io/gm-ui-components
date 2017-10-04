@@ -48,7 +48,7 @@ export default function BreadcrumbItem({ item, expand }) {
         if (item === "...") expand();
       }}
     >
-      {item}
+      {item.length > 20 ? item.substr(0, 20).concat("...") : item}
     </Breadcrumb>
   );
 }
