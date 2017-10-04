@@ -10,7 +10,7 @@ const label = "Breadcrumbs";
 const defaultCrumbs = ["Home", "View", "Data", "Graphs"];
 const separator = ",";
 const breadCrumbsInfo =
-  "A React component that allows users to know their location. Use <Breadcrumbs> as the wrapper component and <BreadcrumbsItem> for rendering an individual link. The container accepts a maxItems prop that sets the amount of breadcrumbs to be rendered. If there are more children than the maximum, it will render a collapsed view.";
+  "A React component that allows users to know their location. Use <Breadcrumbs> and pass it an array of crumbs and an optional maxItems prop.  If there are more children than the maximum, it will render a collapsed view.";
 
 let crumbs, maxItems;
 
