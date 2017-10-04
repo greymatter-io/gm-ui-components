@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { withKnobs, array, number } from "@storybook/addon-knobs";
+import { withKnobs, array, number, boolean } from "@storybook/addon-knobs";
 import { Input } from "../components";
 
 const stories = storiesOf("Input", module);
@@ -15,16 +15,16 @@ stories.add("standard", () => {
         style={{
           margin: "10px"
         }}
-        placeholder="Username"
+        placeholder="Default"
         onChange={e => console.log("value changed", e)}
         maxLength={number("maxLength", 100)}
       />
       <Input
-        shouldFitContainer
+        shouldFitContainer={boolean("shouldFitContainer", true)}
         style={{
           margin: "10px"
         }}
-        placeholder="Password"
+        placeholder="shouldFitContainer"
         onChange={e => console.log("value changed", e)}
         maxLength={number("maxLength", 100)}
       />
