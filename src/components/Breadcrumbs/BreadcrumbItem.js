@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import React from "react";
-import styled from "styled-components";
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
 
 export const Breadcrumb = styled.li`
   flex: 0 0 auto;
@@ -8,7 +8,7 @@ export const Breadcrumb = styled.li`
   align-items: center;
   color: black;
   &:before {
-    content: ">";
+    content: '>';
     transform: scaleX(0.5);
     display: flex;
     opacity: 0.5;
@@ -41,14 +41,18 @@ export const Breadcrumb = styled.li`
  * @returns JSX.Element
  */
 
-export default function BreadcrumbItem({ children }) {
+export default function BreadcrumbItem({ item, expand }) {
   return (
-    <Breadcrumb>
-      {children.length > 20 ? children.substr(0, 20).concat("...") : children}
+    <Breadcrumb
+      onClick={() => {
+        if (item === '...') expand();
+      }}
+    >
+      {item}
     </Breadcrumb>
   );
 }
 
 BreadcrumbItem.propTypes = {
-  children: PropTypes.string.isRequired
+  item: PropTypes.string.isRequired
 };

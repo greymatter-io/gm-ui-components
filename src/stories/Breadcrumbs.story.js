@@ -1,46 +1,34 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, array, number } from "@storybook/addon-knobs";
-import { Breadcrumbs, BreadcrumbItem } from "../components";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { storiesOf } from '@storybook/react';
+import { withKnobs, array, number } from '@storybook/addon-knobs';
+import { Breadcrumbs, BreadcrumbItem } from '../components';
+import { withInfo } from '@storybook/addon-info';
 
-const stories = storiesOf("Breadcrumbs", module);
-const label = "Breadcrumbs";
-const defaultCrumbs = ["Home", "View", "Data", "Graphs"];
-const separator = ",";
+const stories = storiesOf('Breadcrumbs', module);
+const label = 'Breadcrumbs';
+const defaultCrumbs = ['Home', 'View', 'Data', 'Graphs'];
+const separator = ',';
 const breadCrumbsInfo =
-  "A React component that allows users to know their location. Use <Breadcrumbs> as the wrapper component and <BreadcrumbsItem> for rendering an individual link. The container accepts a maxItems prop that sets the amount of breadcrumbs to be rendered. If there are more children than the maximum, it will render a collapsed view.";
+  'A React component that allows users to know their location. Use <Breadcrumbs> as the wrapper component and <BreadcrumbsItem> for rendering an individual link. The container accepts a maxItems prop that sets the amount of breadcrumbs to be rendered. If there are more children than the maximum, it will render a collapsed view.';
 
 let crumbs, maxItems;
 
 stories.addDecorator(withKnobs);
 
 stories.add(
-  "simple breadcrumbs",
+  'simple breadcrumbs',
   withInfo(breadCrumbsInfo)(() => {
     crumbs = array(label, defaultCrumbs, separator);
-    return (
-      <Breadcrumbs>
-        {crumbs.map(item => {
-          return <BreadcrumbItem>{item}</BreadcrumbItem>;
-        })}
-      </Breadcrumbs>
-    );
+    return <Breadcrumbs crumbs={crumbs} />;
   })
 );
 
 stories.add(
-  "truncated breadcrumbs",
+  'truncated breadcrumbs',
   withInfo(breadCrumbsInfo)(() => {
     crumbs = array(label, defaultCrumbs, separator);
-    maxItems = number("Max Items", 3);
-    return (
-      <Breadcrumbs maxItems={maxItems}>
-        {crumbs.map((item, i) => {
-          return <BreadcrumbItem key={i}>{item}</BreadcrumbItem>;
-        })}
-      </Breadcrumbs>
-    );
+    maxItems = number('Max Items', 3);
+    return <Breadcrumbs crumbs={crumbs} maxItems={maxItems} />;
   })
 );
