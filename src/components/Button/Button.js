@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 import { getColor, getPadding } from "./helpers";
+import { lighten } from "polished";
 import {
   FONT_SIZE_BASE,
   FONT_GROUP_MAIN_TEXT
@@ -12,7 +13,12 @@ const Button = styled.button`
   user-select: none;
   overflow: hidden;
   color: ${props => (props.disabled ? "#bbb" : getColor(props).color)};
-  border: none;
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  border-top-color: ${lighten("3%", "#ececec")};
+  border-bottom-color: #cdcdcd;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(0, 0, 0, 0);
   width: ${props => (props.size === "fit" ? "100%" : "")};
   background: ${props =>
     props.disabled ? "#eee" : getColor(props).background};
