@@ -15,6 +15,7 @@ const Input = styled.input.attrs({
   padding: 8px;
   font-weight: 500;
   line-height: 2;
+  box-sizing: border-box;
   width: ${props => (props.shouldFitContainer ? "100%" : "auto")};
   border: 1px solid #f0f0f0;
   border-radius: 3px;
