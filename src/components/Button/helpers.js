@@ -40,7 +40,7 @@ export const getColor = props => {
       return {
         background: COLOR_PRIMARY,
         color: "#333",
-        hover: darken(0.1, COLOR_PRIMARY)
+        hover: "#fbfbfb"
       };
   }
 };

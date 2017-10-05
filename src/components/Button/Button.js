@@ -30,7 +30,8 @@ const Button = styled.button.attrs({
   font-family: ${FONT_GROUP_MAIN_TEXT};
   font-size: ${FONT_SIZE_BASE};
   &:hover {
-    background: ${props => (props.disabled ? "#eee" : getColor(props).hover)};
+    background: ${props =>
+      props.disabled ? "#fbfbfb" : getColor(props).hover};
   }
 `;
 
