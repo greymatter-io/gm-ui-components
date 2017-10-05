@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import styled from 'styled-components';
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
 
 export const Breadcrumb = styled.li`
   flex: 0 0 auto;
@@ -8,7 +8,7 @@ export const Breadcrumb = styled.li`
   align-items: center;
   color: black;
   &:before {
-    content: '>';
+    content: ">";
     transform: scaleX(0.5);
     display: flex;
     opacity: 0.5;
@@ -45,10 +45,10 @@ export default function BreadcrumbItem({ item, expand }) {
   return (
     <Breadcrumb
       onClick={() => {
-        if (item === '...') expand();
+        if (item === "...") expand();
       }}
     >
-      {item}
+      {item.length > 20 ? item.substr(0, 20).concat("...") : item}
     </Breadcrumb>
   );
 }

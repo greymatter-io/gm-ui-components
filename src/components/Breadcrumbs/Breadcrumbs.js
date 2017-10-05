@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { FONT_GROUP_MAIN_TEXT } from '../../style/fonts/fontVariables';
-import BreadcrumbItem from './BreadcrumbItem';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
+import BreadcrumbItem from "./BreadcrumbItem";
 
 export const BreadcrumbsContainer = styled.ol`
   flex: 1 1 auto;
@@ -15,13 +15,6 @@ export const BreadcrumbsContainer = styled.ol`
   align-items: stretch;
 `;
 
-export const Elipsis = styled.span`
-  cursor: pointer;
-  padding: 0 8px;
-  &:before {
-    content: '...';
-  }
-`;
 class Breadcrumbs extends React.Component {
   constructor(props) {
     super(props);
@@ -44,7 +37,7 @@ class Breadcrumbs extends React.Component {
 
   renderCollapsed = crumbs => {
     const elipsisItem = (
-      <BreadcrumbItem key={1} item={'...'} expand={this.expand} />
+      <BreadcrumbItem key={1} item={"..."} expand={this.expand} />
     );
     const lastIndex = crumbs.length - 1;
     const collapsedArr = [

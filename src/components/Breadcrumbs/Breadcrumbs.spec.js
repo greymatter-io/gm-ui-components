@@ -6,22 +6,16 @@ import { Elipsis } from "./Breadcrumbs";
 import { mount, shallow } from "enzyme";
 import "jest-styled-components";
 
-const TestExpanded = (
-  <Breadcrumbs maxItems={10}>
-    <BreadcrumbItem>Test 1</BreadcrumbItem>
-    <BreadcrumbItem>Test 2</BreadcrumbItem>
-    <BreadcrumbItem>Test 3</BreadcrumbItem>
-  </Breadcrumbs>
-);
+const crumbs = [
+  "Test 1",
+  "Test 2",
+  "Test 3",
+  "Testing a really long breadcrumb item"
+];
 
-const TestCollapsed = (
-  <Breadcrumbs maxItems={3}>
-    <BreadcrumbItem>This is a really long breadcrumb</BreadcrumbItem>
-    <BreadcrumbItem>Test 1</BreadcrumbItem>
-    <BreadcrumbItem>Test 2</BreadcrumbItem>
-    <BreadcrumbItem>Test 3</BreadcrumbItem>
-  </Breadcrumbs>
-);
+const TestExpanded = <Breadcrumbs maxItems={10} crumbs={crumbs} />;
+
+const TestCollapsed = <Breadcrumbs maxItems={3} crumbs={crumbs} />;
 
 const ExpandedBreadcrumbTree = renderer.create(TestExpanded).toJSON();
 const CollapsedBreadcrumbTree = renderer.create(TestCollapsed).toJSON();
@@ -55,9 +49,13 @@ describe("<Breadcrumbs>", () => {
   });
 
   test("expand when elipsis is clicked", () => {
-    wrapper.find(Elipsis).simulate("click");
+    wrapper
+      .find({ item: "..." })
+      .dive()
+      .simulate("click");
     expect(wrapper.state("isCollapsed")).toEqual(false);
   });
+
   test("a single breadcrumb is not longer than 20 characters", () => {
     wrapper.find(BreadcrumbItem).forEach(item => {
       expect(

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Breadcrumbs> Snapshots it renders expanded breadcrumbs correctly 1`] = `
+exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 .c0 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -80,23 +80,26 @@ exports[`<Breadcrumbs> Snapshots it renders expanded breadcrumbs correctly 1`] =
 >
   <li
     className="c1"
+    onClick={[Function]}
   >
     Test 1
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
-    Test 2
+    ...
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
-    Test 3
+    Testing a really lon...
   </li>
 </ol>
 `;
 
-exports[`<Breadcrumbs> Snapshots it renders truncated breadcrumbs correctly 1`] = `
+exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 .c0 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -171,35 +174,32 @@ exports[`<Breadcrumbs> Snapshots it renders truncated breadcrumbs correctly 1`] 
   padding-left: 16px;
 }
 
-.c2 {
-  cursor: pointer;
-  padding: 0 8px;
-}
-
-.c2:before {
-  content: "...";
-}
-
 <ol
   className="c0"
 >
   <li
     className="c1"
+    onClick={[Function]}
   >
-    This is a really lon...
+    Test 1
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
-    <span
-      className="c2"
-      onClick={[Function]}
-    />
+    Test 2
   </li>
   <li
     className="c1"
+    onClick={[Function]}
   >
     Test 3
+  </li>
+  <li
+    className="c1"
+    onClick={[Function]}
+  >
+    Testing a really lon...
   </li>
 </ol>
 `;
