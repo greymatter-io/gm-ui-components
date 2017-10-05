@@ -7,7 +7,6 @@ import { Button } from "../components";
 const stories = storiesOf("Button", module);
 
 const wrapperStyle = {
-  background: "#ddd",
   padding: "2vw",
   position: "absolute",
   top: 0,
@@ -32,7 +31,7 @@ const flexColumn = {
   alignItems: "flex-start",
   height: "300px",
   width: "50vw",
-  background: "lightblue",
+  background: "#eee",
   justifyContent: "space-between"
 };
 
