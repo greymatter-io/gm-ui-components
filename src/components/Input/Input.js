@@ -19,7 +19,6 @@ const Input = styled.input.attrs({
   width: ${props => (props.shouldFitContainer ? "100%" : "auto")};
   border: 1px solid #f0f0f0;
   border-radius: 3px;
-  border-top-color: ${lighten("3%", "#ececec")};
   border-bottom-color: #cdcdcd;
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0),
     0 0 0 rgba(0, 0, 0, 0);
