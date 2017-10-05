@@ -1,5 +1,5 @@
 import { Footer } from "./Footer";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import { Button } from "./Button";
-
-export { Footer, Button, Breadcrumbs, BreadcrumbItem };
+import { Input } from "./Input";
+export { Footer, Input, Button, Breadcrumbs, BreadcrumbItem };

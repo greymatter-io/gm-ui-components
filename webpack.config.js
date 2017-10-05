@@ -8,7 +8,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "lib"),
     filename: "build.js",
-    libraryTarget: "umd"
+    libraryTarget: "umd",
+    library: "gm-ui-components"
   },
   module: {
     rules: [
@@ -19,11 +20,11 @@ module.exports = {
       },
       {
         use: ["file-loader"],
-        test: /\.(png|jpg|gif)$/
+        test: /\.(jpg|gif)$/
       },
       {
         use: ["url-loader"],
-        test: /\.(eot|svg|ttf|woff|woff2)$/
+        test: /\.(eot|png|svg|ttf|woff|woff2)$/
       },
       {
         test: /\.(css|scss|less)$/,

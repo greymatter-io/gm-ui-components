@@ -24,6 +24,7 @@ exports[`<Footer> Snapshot renders correctly 1`] = `
   -webkit-flex: 0 0 32px;
   -ms-flex: 0 0 32px;
   flex: 0 0 32px;
+  width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;

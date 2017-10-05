@@ -14,7 +14,6 @@ const crumbs = [
 ];
 
 const TestExpanded = <Breadcrumbs maxItems={10} crumbs={crumbs} />;
-
 const TestCollapsed = <Breadcrumbs maxItems={3} crumbs={crumbs} />;
 
 const ExpandedBreadcrumbTree = renderer.create(TestExpanded).toJSON();

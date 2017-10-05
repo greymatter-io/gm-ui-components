@@ -14,7 +14,7 @@ import {
 import { lighten, darken, complement } from "polished";
 
 export const getColor = props => {
-  switch (props.type) {
+  switch (props.appearance) {
     case "warning":
       return {
         background: COLOR_WARNING,
@@ -40,7 +40,7 @@ export const getColor = props => {
       return {
         background: COLOR_PRIMARY,
         color: "#333",
-        hover: darken(0.1, COLOR_PRIMARY)
+        hover: "#fbfbfb"
       };
   }
 };

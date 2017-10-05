@@ -22,6 +22,7 @@ export const Wrapper = styled.footer`
   font-size: 11px;
   align-items: center;
   flex: 0 0 32px;
+  width: 100%;
   justify-content: space-between;
 `;
 
@@ -64,7 +65,9 @@ export const Links = styled.div`
   padding: 0 0 0 8px;
 `;
 
-export const Link = styled.a`padding: 0 8px;`;
+export const Link = styled.a`
+  padding: 0 8px;
+`;
 
 export const Social = styled.img`
   width: 16px;

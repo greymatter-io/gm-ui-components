@@ -8,7 +8,9 @@ import {
   FONT_GROUP_MAIN_TEXT
 } from "../../style/fonts/fontVariables";
 
-const Button = styled.button`
+const Button = styled.button.attrs({
+  type: "button" // defaults to button rather than submit
+})`
   box-sizing: border-box;
   user-select: none;
   overflow: hidden;
@@ -28,14 +30,20 @@ const Button = styled.button`
   font-family: ${FONT_GROUP_MAIN_TEXT};
   font-size: ${FONT_SIZE_BASE};
   &:hover {
-    background: ${props => (props.disabled ? "#eee" : getColor(props).hover)};
+    background: ${props =>
+      props.disabled ? "#fbfbfb" : getColor(props).hover};
   }
 `;
+
+Button.defaultProps = {
+  size: "md",
+  appearance: "primary"
+};
 
 Button.propTypes = {
   onClick: PropTypes.any.isRequired, // click handler
   size: PropTypes.oneOf(["xs", "sm", "md", "lg", "fit"]), // Relative size of the button
-  type: PropTypes.oneOf(["danger", "info", "primary", "warning"])
+  appearance: PropTypes.oneOf(["danger", "info", "primary", "warning"])
 };
 
 export default Button;
