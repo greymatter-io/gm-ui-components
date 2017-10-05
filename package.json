@@ -1,9 +1,16 @@
 {
   "name": "gm-ui-components",
-  "main": "lib/build.js",
   "version": "0.1.0",
-  "private": true,
-  "files": ["build.js"],
+  "description":
+    "A library of reusable UI components for the Grey Matter product suite.",
+  "main": "lib/build.js",
+  "author": "Decipher Technology Studios",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DecipherNow/gm-ui-components.git"
+  },
+  "files": ["lib"],
   "dependencies": {
     "polished": "^1.7.0",
     "prop-types": "^15.6.0",
@@ -19,7 +26,8 @@
     "build": "webpack -p",
     "test": "jest --watchAll",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepublishonly": "npm run build"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.10",
@@ -60,5 +68,12 @@
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
     "setupFiles": ["raf/polyfill"]
+  },
+  "engines": {
+    "node": ">=8.6.0",
+    "npm": ">=5.3.0"
+  },
+  "publishConfig": {
+    "registry": "http://34.206.52.14:4873"
   }
 }
