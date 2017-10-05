@@ -10,7 +10,7 @@ export const COLOR_GREY = "#444";
 export const COLOR_HIGHLIGHT = COLOR_BRAND_PRIMARY;
 export const COLOR_SUCCESS = "#0aab2a";
 export const COLOR_PRIMARY = "#fff";
-export const COLOR_DANGER = "red";
+export const COLOR_DANGER = COLOR_RED;
 export const COLOR_WARNING = "#f5a623";
 export const COLOR_INFO = "#002e6e";
 

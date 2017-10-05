@@ -59,7 +59,11 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
-    "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme",
+      "jest-enzyme"
+    ],
     "moduleNameMapper": {
       "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
     },
