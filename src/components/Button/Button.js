@@ -18,7 +18,7 @@ const Button = styled.button.attrs({
   border-bottom-color: #cdcdcd;
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0),
     0 0 0 rgba(0, 0, 0, 0);
-  width: ${props => (props.size === "fit" ? "100%" : "")};
+  width: ${props => (props.size === "fit" ? "100%" : "fit-content")};
   background: ${props =>
     props.disabled ? "#eee" : getColor(props).background};
   padding: ${props => getPadding(props)};
