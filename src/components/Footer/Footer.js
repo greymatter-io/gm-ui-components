@@ -51,7 +51,6 @@ export const Copyright = styled.p`
   text-align: center;
   transition: opacity 0.2s ease;
   cursor: default;
-  font-family: ${FONT_GROUP_MAIN_TEXT};
   z-index: -1;
   opacity: 0.8;
   @media all and (max-width: 600px) {

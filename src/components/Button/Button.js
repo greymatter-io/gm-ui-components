@@ -3,10 +3,7 @@ import styled from "styled-components";
 import { PropTypes } from "prop-types";
 import { getColor, getPadding } from "./helpers";
 import { lighten } from "polished";
-import {
-  FONT_SIZE_BASE,
-  FONT_GROUP_MAIN_TEXT
-} from "../../style/fonts/fontVariables";
+import { FONT_SIZE_BASE } from "../../style/fonts/fontVariables";
 
 const Button = styled.button.attrs({
   type: "button" // defaults to button rather than submit
@@ -27,7 +24,6 @@ const Button = styled.button.attrs({
   padding: ${props => getPadding(props)};
   text-align: center;
   cursor: ${props => (props.disabled ? "default" : "pointer")};
-  font-family: ${FONT_GROUP_MAIN_TEXT};
   font-size: ${FONT_SIZE_BASE};
   &:hover {
     background: ${props =>
