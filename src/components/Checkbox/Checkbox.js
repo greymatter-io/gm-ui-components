@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 import { COLOR_BRAND_PRIMARY } from "../../style/colorVariables";
-import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
 
 const Box = styled.input.attrs({
   type: "checkbox"

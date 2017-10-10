@@ -13,7 +13,7 @@ import "../style/fonts/Source_Code_Pro";
 injectGlobal`
 @font-face {
   font-family: ${FONT_GROUP_MAIN_TEXT};
-  src: url('../style/fonts/Nunito');
+
 }
 body {
     font-family: ${FONT_GROUP_MAIN_TEXT};
