@@ -8,7 +8,6 @@ export const BreadcrumbsContainer = styled.ol`
   flex: 1 1 auto;
   display: flex;
   margin: 0;
-  font-family: ${FONT_GROUP_MAIN_TEXT};
   padding: 0;
   flex-direction: row;
   height: inherit;
@@ -20,17 +19,21 @@ class Breadcrumbs extends React.Component {
     super(props);
     this.state = { isCollapsed: false };
   }
+
   componentDidMount() {
     this.updateView(this.props);
   }
+
   componentWillReceiveProps(nextProps) {
     this.updateView(nextProps);
   }
+
   updateView = props => {
     const { crumbs, maxItems } = props;
     const childrenLen = crumbs.length;
     maxItems < childrenLen ? this.collapse() : this.expand();
   };
+
   collapse = () => this.setState({ isCollapsed: true });
 
   expand = () => this.setState({ isCollapsed: false });

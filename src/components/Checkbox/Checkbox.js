@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { COLOR_BRAND_PRIMARY } from "../../style/colorVariables";
 import { PropTypes } from "prop-types";
+import { COLOR_BRAND_PRIMARY } from "../../style/colorVariables";
+import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
 
 const Box = styled.input.attrs({
   type: "checkbox"
@@ -12,9 +13,9 @@ const Box = styled.input.attrs({
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
     inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 6px;
-  border-radius: 3px;
-  display: inline-block;
+  height: 8px;
   position: relative;
+  border-radius: 3px;
   &:checked {
     &:after {
       content: "\u2714";
@@ -27,12 +28,21 @@ const Box = styled.input.attrs({
   }
 `;
 
+const Label = styled.label`
+  display: flex;
+  align-items: center;
+  > input {
+    margin: 0 8px;
+  }
+`;
+
+//pick out label, all other props are passed to checkbox element
 const Checkbox = ({ label, ...props }) => {
   return (
-    <label>
+    <Label>
       <Box {...props} />
       {label}
-    </label>
+    </Label>
   );
 };
 

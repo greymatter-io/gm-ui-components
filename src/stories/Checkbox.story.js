@@ -11,7 +11,7 @@ stories.addDecorator(withKnobs);
 stories.add("standard", () => {
   return (
     <div style={{ width: "50vw" }}>
-      <Checkbox label="this is a cool checkbox" />
+      <Checkbox label="this is a checkbox" />
     </div>
   );
 });
