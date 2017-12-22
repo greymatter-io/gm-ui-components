@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledSVG matches snapshot 1`] = `
+.c0 {
+  z-index: 1;
+  height: NaNpx;
+  width: NaNpx;
+  word-spacing: 0;
+  vertical-align: middle;
+}
+
+.c0:not(:root) {
+  overflow: visible;
+}
+
+<svg
+  className="c0"
+  version="1.1"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+/>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundTriangle matches snapshot 1`] = `
+<g
+  className="iconBackground"
+  fill="transparent"
+  fillOpacity="1"
+  fillRule="evenodd"
+  id="Square"
+>
+  <polygon
+    id="Triangle-6"
+    points="12 1 24 20 0 20"
+  />
+</g>
+`;

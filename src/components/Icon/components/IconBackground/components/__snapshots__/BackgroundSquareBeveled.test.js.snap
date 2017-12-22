@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundSquareBeveled matches snapshot 1`] = `
+<g
+  className="iconBackground"
+  fill="currentColor"
+  fillOpacity="1"
+  fillRule="evenodd"
+  id="SquareBeveled"
+>
+  <polygon
+    id="Rectangle"
+    points="4 0 20 0 24 4 24 20 20 24 4 24 0 20 0 4"
+  />
+</g>
+`;
