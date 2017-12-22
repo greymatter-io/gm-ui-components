@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BorderSquareSmall matches snapshot 1`] = `
+exports[`Play matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BorderSquareSmall />,
+  Symbol(enzyme.__unrendered__): <Play />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,11 +17,12 @@ ShallowWrapper {
     "key": null,
     "nodeType": "host",
     "props": Object {
-      "d": "M6,4 L18,4 C19.1045695,4 20,4.8954305 20,6 L20,18 C20,19.1045695 19.1045695,20 18,20 L6,20 C4.8954305,20 4,19.1045695 4,18 L4,6 C4,4.8954305 4.8954305,4 6,4 Z",
+      "id": "Triangle-6",
+      "points": "19 12 7 20 7 4",
     },
     "ref": null,
     "rendered": null,
-    "type": "path",
+    "type": "polygon",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -29,11 +30,12 @@ ShallowWrapper {
       "key": null,
       "nodeType": "host",
       "props": Object {
-        "d": "M6,4 L18,4 C19.1045695,4 20,4.8954305 20,6 L20,18 C20,19.1045695 19.1045695,20 18,20 L6,20 C4.8954305,20 4,19.1045695 4,18 L4,6 C4,4.8954305 4.8954305,4 6,4 Z",
+        "id": "Triangle-6",
+        "points": "19 12 7 20 7 4",
       },
       "ref": null,
       "rendered": null,
-      "type": "path",
+      "type": "polygon",
     },
   ],
   Symbol(enzyme.__options__): Object {

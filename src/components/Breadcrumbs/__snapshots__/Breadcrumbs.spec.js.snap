@@ -10,7 +10,6 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  font-family: Nunito;
   padding: 0;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -109,7 +108,6 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  font-family: Nunito;
   padding: 0;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;

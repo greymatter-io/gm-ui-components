@@ -1,23 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StyledSVG matches snapshot 1`] = `
-.c0 {
-  z-index: 1;
-  height: NaNpx;
-  width: NaNpx;
-  word-spacing: 0;
-  vertical-align: middle;
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <styled.svg />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "className": "sc-bdVaJa iYqOYI",
+      "version": "1.1",
+      "viewBox": "0 0 24 24",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlnsXlink": "http://www.w3.org/1999/xlink",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "svg",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "className": "sc-bdVaJa iYqOYI",
+        "version": "1.1",
+        "viewBox": "0 0 24 24",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "xmlnsXlink": "http://www.w3.org/1999/xlink",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "svg",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
-
-.c0:not(:root) {
-  overflow: visible;
-}
-
-<svg
-  className="c0"
-  version="1.1"
-  viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlnsXlink="http://www.w3.org/1999/xlink"
-/>
 `;

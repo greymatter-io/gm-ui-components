@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BorderSquareSmall matches snapshot 1`] = `
+exports[`Bars matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BorderSquareSmall />,
+  Symbol(enzyme.__unrendered__): <Bars />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,7 +17,8 @@ ShallowWrapper {
     "key": null,
     "nodeType": "host",
     "props": Object {
-      "d": "M6,4 L18,4 C19.1045695,4 20,4.8954305 20,6 L20,18 C20,19.1045695 19.1045695,20 18,20 L6,20 C4.8954305,20 4,19.1045695 4,18 L4,6 C4,4.8954305 4.8954305,4 6,4 Z",
+      "d": "M7,8 L19,8 L19,9.5 L7,9.5 L7,8 Z M7,12 L19,12 L19,13.5 L7,13.5 L7,12 Z M7,16 L19,16 L19,17.5 L7,17.5 L7,16 Z",
+      "id": "Combined-Shape",
     },
     "ref": null,
     "rendered": null,
@@ -29,7 +30,8 @@ ShallowWrapper {
       "key": null,
       "nodeType": "host",
       "props": Object {
-        "d": "M6,4 L18,4 C19.1045695,4 20,4.8954305 20,6 L20,18 C20,19.1045695 19.1045695,20 18,20 L6,20 C4.8954305,20 4,19.1045695 4,18 L4,6 C4,4.8954305 4.8954305,4 6,4 Z",
+        "d": "M7,8 L19,8 L19,9.5 L7,9.5 L7,8 Z M7,12 L19,12 L19,13.5 L7,13.5 L7,12 Z M7,16 L19,16 L19,17.5 L7,17.5 L7,16 Z",
+        "id": "Combined-Shape",
       },
       "ref": null,
       "rendered": null,
