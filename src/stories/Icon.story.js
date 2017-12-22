@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, select, number, color } from "@storybook/addon-knobs";
+import { withKnobs, select, number, color, text } from "@storybook/addon-knobs";
+import { withInfo } from "@storybook/addon-info";
 
 import Icon from "../components/Icon";
 
@@ -73,31 +74,48 @@ const iconBorderNames = [
   "BorderTriangleSmall"
 ];
 
-// dynamic glyph name is used for story knob testing only.
-// call the glyph component by name specifically, <CardGlyph> instead of <Glyph name="CardGlyph"> for code implementation
-
 storiesOf("Icons", module)
   .addDecorator(withKnobs)
-  .add(" Icon", () => {
-    const glyphName = select("Glyph", glyphNames, "Card");
-
-    return (
-      <Icon
-        glyphName={glyphName}
+  .add(
+    "default",
+    withInfo(
+      "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)"
+    )(() => {
+      return (
+        <Icon
         backgroundStyle={select(
-          "Icon Background",
+          "backgroundStyle",
           iconBackgroundNames,
-          "BackgroundSquare"
+          "BackgroundSquareRounded"
         )}
-        backgroundColor={color("Background Color", "#f00")}
-        backgroundOpacity={number("Background Opacity", 0.5)}
-        borderStyle={select("Icon Border", iconBorderNames, "BorderSquare")}
-        borderColor={color("Border Color", "currentColor")}
-        borderOpacity={number("Border Opacity", 0.5)}
-        iconRatio={number("Icon Ratio", 1)}
-        glyphColor={color("Glyph Color", "currentColor")}
-        glyphRatio={number("Glyph Ratio", 1)}
-        transform={""}
-      />
-    );
+        backgroundColor={color("backgroundColor", "#000")}
+        backgroundOpacity={number("backgroundOpacity", 2)}
+        backgroundSizeRatio={number("backgroundSizeRatio", 1)}
+        borderStyle={select("borderStyle", iconBorderNames, "BorderSquare")}
+        borderColor={color("borderColor", "currentColor")}
+        borderOpacity={number("borderOpacity", 0.5)}
+        borderWidth={number("borderWidth", 0.1)}
+        glyphColor={color("glyphColor", "#fff")}
+        glyphSizeRatio={number("glyphSizeRatio", 1)}
+        glyph={select("glyph", glyphNames, "Bell")}
+        />
+      );
+    })
+  )
+  .add("gallery", () => {
+    return <div>
+    {glyphNames.map(glyph => {
+      return <div key={glyph}>
+      <span>{glyph}: </span>
+      <Icon
+          glyph={glyph}
+          backgroundStyle="BackgroundSquareRounded"
+          backgroundColor="#eee"
+          backgroundOpacity={1}
+          backgroundSizeRatio={1}
+          glyphColor="#000"
+          glyphRatio={1}
+        /></div>
+    })}
+    </div>
   });

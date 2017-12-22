@@ -11,7 +11,6 @@ const StyledSVG = styled.svg.attrs({
   z-index: 1;
   height: ${props => props.iconRatio * ICON_VIEWBOX_SIZE}px;
   width: ${props => props.iconRatio * ICON_VIEWBOX_SIZE}px;
-  color: ${props => props.glyphColor};
   word-spacing: 0;
   vertical-align: middle;
 

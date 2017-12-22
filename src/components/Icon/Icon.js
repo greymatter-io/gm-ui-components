@@ -10,48 +10,59 @@ import Glyph from "./components/Glyphs";
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   backgroundColor: PropTypes.string,
+  backgroundSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   backgroundOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   backgroundStyle: PropTypes.string,
   borderColor: PropTypes.string,
   borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   borderStyle: PropTypes.string,
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object, PropTypes.string]),
   glyphColor: PropTypes.string,
-  glyphName: PropTypes.string,
-  glyphRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  iconRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  title: PropTypes.string,
-  transform: PropTypes.string
+  glyph: PropTypes.string,
+  glyphSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  title: PropTypes.string
 };
 
+Icon.defaultProps = {
+  ariaLabelledby: "ariaLabelledby",
+  backgroundColor: "currentColor",
+  backgroundOpacity: 1,
+  borderColor: "currentColor",
+  borderOpacity: 1,
+  borderWidth: 1,
+  glyphColor: "currentColor",
+  glyph: "",
+  glyphSizeRatio: 1,
+  backgroundSizeRatio: 1,
+  title: ""
+}
+
 /**
- * Renders an Icon with Glyph component passed in as props.children with any additional styling props
+ * Renders an Icon wrapping a Glyph component with any additional styling props
  * @param {any} { optional styling props}
  * @returns JSX elements
  */
 export default function Icon({
-  ariaLabelledby = "ariaLabelledby",
-  backgroundColor = "currentColor",
-  backgroundOpacity = "1",
+  ariaLabelledby,
+  backgroundColor,
+  backgroundOpacity,
   backgroundStyle,
-  borderColor = "currentColor",
-  borderOpacity = "1",
+  borderColor,
+  borderOpacity,
   borderStyle,
-  borderWidth = "1",
+  borderWidth,
   children,
-  glyphColor = "currentColor",
-  glyphName = "",
-  glyphRatio = 1,
-  iconRatio = "1",
-  title = "",
-  transform
+  glyph,
+  glyphColor,
+  glyphSizeRatio,
+  backgroundSizeRatio,
+  title
 }) {
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      iconRatio={iconRatio}
-      glyphColor={glyphColor}
+      iconRatio={backgroundSizeRatio}
       focusable="false"
     >
       {backgroundStyle && (
@@ -59,7 +70,7 @@ export default function Icon({
           name={backgroundStyle}
           backgroundColor={backgroundColor}
           backgroundOpacity={backgroundOpacity}
-          ratio={iconRatio}
+          ratio={backgroundSizeRatio}
         />
       )}
       {borderStyle && (
@@ -68,11 +79,12 @@ export default function Icon({
           borderColor={borderColor}
           borderOpacity={borderOpacity}
           borderWidth={borderWidth}
-          ratio={iconRatio}
+          ratio={backgroundSizeRatio}
         />
       )}
-      <StyledG title={glyphName} ratio={glyphRatio}>
-        <title>{title ? title : glyphName}</title>
+      <StyledG title={glyph} ratio={glyphSizeRatio}>
+        <title>{title ? title : glyph}</title>
+        <Glyph name={glyph} ratio={glyphSizeRatio} glyphColor={glyphColor} />
         {children}
       </StyledG>
     </StyledSVG>
