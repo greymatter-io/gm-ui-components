@@ -100,7 +100,13 @@ storiesOf("Button", module)
   .add("types", () => (
     <div style={wrapperStyle}>
       {types.map(type => (
-        <Button type={type} label={type} key={type} clickAction={() => {}} />
+        <Button
+          type={type}
+          label={type}
+          key={type}
+          outline="raised"
+          clickAction={() => {}}
+        />
       ))}
     </div>
   ))
