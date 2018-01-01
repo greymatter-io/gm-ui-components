@@ -14,6 +14,8 @@ export const COLOR_DANGER = COLOR_RED;
 export const COLOR_WARNING = "#f5a623";
 export const COLOR_INFO = "#002e6e";
 
+export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
+
 // Theme Configuration
 export const COLOR_SIDEBAR_BACKGROUND = COLOR_BLACK;
 export const COLOR_CONTENT_BACKGROUND = COLOR_WHITE;

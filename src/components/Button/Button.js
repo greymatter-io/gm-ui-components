@@ -47,7 +47,7 @@ Button.propTypes = {
  * @param {Object} props - see propTypes
  * @returns JSX.Element
  */
-function Button({
+export default function Button({
   active,
   children,
   clickAction,
@@ -93,5 +93,3 @@ function Button({
     </ButtonWrap>
   );
 }
-
-export default Button;

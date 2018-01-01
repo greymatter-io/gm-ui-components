@@ -1,6 +1,13 @@
-import { contrastColor } from "style/styleFunctions";
-import { COLOR_BRAND_PRIMARY, COLOR_WHITE } from "style/styleVariables";
-import { darkenColor, lightenColor } from "style/styleFunctions";
+import { mix, desaturate } from "polished";
+import {
+  COLOR_BRAND_PRIMARY,
+  COLOR_WHITE
+} from "../../../../../style/colorVariables";
+import {
+  darkenColor,
+  lightenColor,
+  contrastColor
+} from "../../../../../style/styleFunctions";
 
 /**
  * Utility function that transforms an object containing different attributes
@@ -27,7 +34,7 @@ import { darkenColor, lightenColor } from "style/styleFunctions";
 function generateButtonStyle({
   buttonBackgroundColorBase = COLOR_WHITE,
   buttonBorderColorBase = COLOR_WHITE,
-  buttonLabelColorBase = contrastColor(COLOR_WHITE, 100),
+  buttonLabelColorBase = contrastColor(COLOR_WHITE, 1),
   buttonActiveStatus = false,
   buttonOutlineStyle = "raisedOutline",
   buttonOutlineStyleDepth = 0.06, // 0-100% // default: 6%,
@@ -37,7 +44,7 @@ function generateButtonStyle({
   buttonActiveReactionDegree = 0.06 * 2,
   buttonDownReactionDegree = 0.06,
   buttonActiveMixBaseColor = COLOR_BRAND_PRIMARY,
-  buttonActiveMixBaseLabelColor = contrastColor(COLOR_BRAND_PRIMARY, 100),
+  buttonActiveMixBaseLabelColor = contrastColor(COLOR_BRAND_PRIMARY, 1),
   buttonActiveMixDegree = 1 //default 100%
 }) {
   // default style Types (static, hover, down, active, activeDown)
@@ -62,6 +69,7 @@ function generateButtonStyle({
       buttonBackgroundColorBase,
       buttonHoverReactionDegree
     );
+    console.log("buttonLabelColorBase", buttonLabelColorBase);
     styleTypes.hoverStyles["color"] = darkenColor(
       buttonLabelColorBase,
       buttonHoverReactionDegree
@@ -84,34 +92,49 @@ function generateButtonStyle({
       buttonHoverReactionDegree + buttonDownReactionDegree
     );
     // Active Styles
-    styleTypes.activeStyles["backgroundColor"] = darkenColor(
-      buttonBackgroundColorBase,
-      buttonActiveReactionDegree
-    ).mix(buttonActiveMixBaseColor, buttonActiveMixDegree);
-    styleTypes.activeStyles["color"] = darkenColor(
-      buttonLabelColorBase,
-      buttonActiveReactionDegree
-    ).mix(buttonActiveMixBaseLabelColor, buttonActiveMixDegree);
+    styleTypes.activeStyles["backgroundColor"] = mix(
+      buttonActiveMixDegree,
+      darkenColor(buttonBackgroundColorBase, buttonActiveReactionDegree),
+      buttonActiveMixBaseColor
+    );
+    styleTypes.activeStyles["color"] = mix(
+      buttonActiveMixDegree,
+      darkenColor(buttonLabelColorBase, buttonActiveReactionDegree),
+      buttonActiveMixBaseLabelColor
+    );
     styleTypes.activeStyles["borderColor"] = darkenColor(
-      buttonBorderColorBase.mix(
-        buttonActiveMixBaseColor,
-        buttonActiveMixDegree
+      mix(
+        buttonActiveMixDegree,
+        buttonBorderColorBase,
+        buttonActiveMixBaseColor
       ),
       buttonActiveReactionDegree + buttonDownReactionDegree
     );
     // Active Down Styles
-    styleTypes.activeDownStyles["backgroundColor"] = darkenColor(
-      buttonBackgroundColorBase,
-      buttonActiveReactionDegree + buttonDownReactionDegree
-    ).mix(buttonActiveMixBaseColor, buttonActiveMixDegree);
-    styleTypes.activeDownStyles["color"] = darkenColor(
-      buttonLabelColorBase,
-      buttonActiveReactionDegree + buttonDownReactionDegree
-    ).mix(buttonActiveMixBaseLabelColor, buttonActiveMixDegree);
-    styleTypes.activeDownStyles["borderColor"] = darkenColor(
-      buttonBorderColorBase,
-      buttonActiveReactionDegree + buttonDownReactionDegree
-    ).mix(buttonActiveMixBaseColor, buttonActiveMixDegree);
+    styleTypes.activeDownStyles["backgroundColor"] = mix(
+      buttonActiveMixDegree,
+      darkenColor(
+        buttonBackgroundColorBase,
+        buttonActiveReactionDegree + buttonDownReactionDegree
+      ),
+      buttonActiveMixBaseColor
+    );
+    styleTypes.activeDownStyles["color"] = mix(
+      buttonActiveMixDegree,
+      darkenColor(
+        buttonLabelColorBase,
+        buttonActiveReactionDegree + buttonDownReactionDegree
+      ),
+      buttonActiveMixBaseLabelColor
+    );
+    styleTypes.activeDownStyles["borderColor"] = mix(
+      buttonActiveMixDegree,
+      darkenColor(
+        buttonBorderColorBase,
+        buttonActiveReactionDegree + buttonDownReactionDegree
+      ),
+      buttonActiveMixBaseColor
+    );
   } else {
     // Assume button reaction style == lighten
     // Hover Styles
@@ -398,50 +421,38 @@ function generateButtonStyle({
     : styleTypes.hoverStyles;
 
   return `
-  background-color: ${baseStyles["backgroundColor"].string()};
-  border-color: ${baseStyles["borderColor"].string()};
-  ${
-    baseStyles["borderTopColor"]
-      ? `border-top-color: ${baseStyles["borderTopColor"].string()};`
-      : ""
-  }
-  ${
-    baseStyles["borderBottomColor"]
-      ? `border-bottom-color: ${baseStyles["borderBottomColor"].string()};`
-      : ""
-  }
-  color: ${baseStyles["color"].string()};
+  background-color: ${baseStyles["backgroundColor"]};
+  border-color: ${baseStyles["borderColor"]};
+  ${baseStyles["borderTopColor"]
+    ? `border-top-color: ${baseStyles["borderTopColor"]};`
+    : ""}
+  ${baseStyles["borderBottomColor"]
+    ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
+    : ""}
+  color: ${baseStyles["color"]};
   &:active {
     ${!buttonActiveStatus ? "transition-duration: 0s;" : ""}
-    background-color: ${downStyles["backgroundColor"].string()};
-    border-color: ${downStyles["borderColor"].string()};
-    ${
-      downStyles["borderTopColor"]
-        ? `border-top-color: ${downStyles["borderTopColor"].string()};`
-        : ""
-    }
-    ${
-      downStyles["borderBottomColor"]
-        ? `border-bottom-color: ${downStyles["borderBottomColor"].string()};`
-        : ""
-    }
-    color: ${downStyles["color"].string()};
+    background-color: ${downStyles["backgroundColor"]};
+    border-color: ${downStyles["borderColor"]};
+    ${downStyles["borderTopColor"]
+      ? `border-top-color: ${downStyles["borderTopColor"]};`
+      : ""}
+    ${downStyles["borderBottomColor"]
+      ? `border-bottom-color: ${downStyles["borderBottomColor"]};`
+      : ""}
+    color: ${downStyles["color"]};
   }
 
   &:hover {
-    background-color: ${hoverStyles["backgroundColor"].string()};
-    border-color: ${hoverStyles["borderColor"].string()};
-    ${
-      hoverStyles["borderTopColor"]
-        ? `border-top-color: ${hoverStyles["borderTopColor"].string()};`
-        : ""
-    }
-    ${
-      hoverStyles["borderBottomColor"]
-        ? `border-bottom-color: ${hoverStyles["borderBottomColor"].string()};`
-        : ""
-    }
-    color: ${hoverStyles["color"].string()};
+    background-color: ${hoverStyles["backgroundColor"]};
+    border-color: ${hoverStyles["borderColor"]};
+    ${hoverStyles["borderTopColor"]
+      ? `border-top-color: ${hoverStyles["borderTopColor"]};`
+      : ""}
+    ${hoverStyles["borderBottomColor"]
+      ? `border-bottom-color: ${hoverStyles["borderBottomColor"]};`
+      : ""}
+    color: ${hoverStyles["color"]};
   } 
 
   &:focus {
@@ -457,17 +468,17 @@ function generateButtonStyle({
     cursor: default;
     opacity: 0.8;
     background-color: ${darkenColor(
-      buttonBackgroundColorBase.desaturate(1),
+      desaturate(1, buttonBackgroundColorBase),
       buttonReactionDegree
-    ).string()};
+    )};
     border-color: ${darkenColor(
-      buttonBorderColorBase.desaturate(1),
+      desaturate(1, buttonBorderColorBase),
       buttonReactionDegree
-    ).string()};
+    )};
     color: ${darkenColor(
-      buttonLabelColorBase.desaturate(1),
+      desaturate(1, buttonLabelColorBase),
       buttonReactionDegree
-    ).string()};
+    )};
   }
 `;
 }

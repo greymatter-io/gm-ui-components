@@ -9,9 +9,9 @@ import {
   boolean,
   color
 } from "@storybook/addon-knobs";
-import { Button } from "../components";
+import Button from "../components/Button";
 
-console.log(Button);
+console.log("BUTTON", Button);
 const wrapperStyle = {
   display: "flex",
   width: "100vw",

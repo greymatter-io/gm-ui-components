@@ -8,28 +8,29 @@ import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
 
 import {
-  FONT_STACK_BASE,
   COLOR_BRAND_PRIMARY,
   COLOR_DANGER,
   COLOR_INFO,
   COLOR_WARNING,
   COLOR_CONTENT_BACKGROUND
-} from "style/styleVariables";
+} from "../../../../style/colorVariables";
+
+import { FONT_STACK_BASE } from "../../../../style/fonts/fontVariables";
 
 // Maps button types to a particular color
 function generateButtonTypeColor(type) {
   switch (type) {
     case "danger":
-      return COLOR_DANGER.rgb();
+      return COLOR_DANGER;
     case "info":
-      return COLOR_INFO.rgb();
+      return COLOR_INFO;
     case "warning":
-      return COLOR_WARNING.rgb();
+      return COLOR_WARNING;
     case "polling":
-      return COLOR_CONTENT_BACKGROUND.rgb();
+      return COLOR_CONTENT_BACKGROUND;
     default:
     case "primary":
-      return COLOR_BRAND_PRIMARY.rgb();
+      return COLOR_BRAND_PRIMARY;
   }
 }
 
@@ -79,7 +80,7 @@ const ButtonWrap = styled.button`
           buttonBorderColorBase: generateButtonTypeColor(props.type),
           buttonLabelColorBase: contrastColor(
             generateButtonTypeColor(props.type),
-            100
+            1
           ),
           buttonActiveStatus: props.active
         }) // has color (also code in props.outline and props.active)
