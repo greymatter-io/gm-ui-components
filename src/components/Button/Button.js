@@ -1,45 +1,97 @@
-import React from "react";
-import styled from "styled-components";
 import { PropTypes } from "prop-types";
-import { getColor, getPadding } from "./helpers";
-import { lighten } from "polished";
-import { FONT_SIZE_BASE } from "../../style/fonts/fontVariables";
+import React from "react";
 
-const Button = styled.button.attrs({
-  type: "button" // defaults to button rather than submit
-})`
-  box-sizing: border-box;
-  user-select: none;
-  overflow: hidden;
-  color: ${props => (props.disabled ? "#bbb" : getColor(props).color)};
-  border: 1px solid #f0f0f0;
-  border-radius: 3px;
-  border-top-color: ${lighten("3%", "#ececec")};
-  border-bottom-color: #cdcdcd;
-  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(0, 0, 0, 0);
-  width: ${props => (props.size === "fit" ? "100%" : "fit-content")};
-  background: ${props =>
-    props.disabled ? "#eee" : getColor(props).background};
-  padding: ${props => getPadding(props)};
-  text-align: center;
-  cursor: ${props => (props.disabled ? "default" : "pointer")};
-  font-size: ${FONT_SIZE_BASE};
-  &:hover {
-    background: ${props =>
-      props.disabled ? "#fbfbfb" : getColor(props).hover};
-  }
-`;
+import Icon from "../Icon";
 
-Button.defaultProps = {
-  size: "md",
-  appearance: "primary"
-};
+import ButtonWrap from "./components/ButtonWrap";
+import ButtonLabelPrefix from "./components/ButtonLabelPrefix";
+import ButtonLabelSuffix from "./components/ButtonLabelSuffix";
 
 Button.propTypes = {
-  onClick: PropTypes.any.isRequired, // click handler
-  size: PropTypes.oneOf(["xs", "sm", "md", "lg", "fit"]), // Relative size of the button
-  appearance: PropTypes.oneOf(["danger", "info", "primary", "warning"])
+  active: PropTypes.bool, // If the button should be style as active or not
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  clickAction: PropTypes.any.isRequired, // click handler
+  disabled: PropTypes.bool, // disables the button
+  glyph: PropTypes.string, // Glyph to display in the button
+  glyphColor: PropTypes.string, // Color for the glyph
+  glyphRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Relative size for the glyph
+  iconSize: PropTypes.string,
+  label: PropTypes.string.isRequired, // label for the button
+  labelStyle: PropTypes.object,
+  orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
+  outline: PropTypes.oneOf([
+    "raised", // Add highlight effect to top edge and shadow effect to bottom edge
+    "outline", // Add outline effect
+    "outline-shadow", // Add outline effect, and add shadow effect to bottom edge
+    "shadow", // Add shadow effect to bottom edge
+    "none", // No effects
+    "raised-outline"
+  ]),
+  prefix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add prefix text to button label
+  size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]), // Relative size of the button
+  style: PropTypes.object, // style prop
+  suffix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add suffix text to button label
+  tabIndex: PropTypes.number,
+  type: PropTypes.oneOf([
+    "danger",
+    "info",
+    "primary",
+    "secondary",
+    "warning",
+    "polling"
+  ])
 };
+
+/**
+ * General purpose button
+ * @param {Object} props - see propTypes
+ * @returns JSX.Element
+ */
+function Button({
+  active,
+  children,
+  clickAction,
+  disabled,
+  glyph,
+  glyphRatio,
+  glyphColor,
+  label,
+  orientation,
+  prefix,
+  size,
+  style,
+  suffix,
+  outline,
+  tabIndex,
+  type,
+  iconSize,
+  labelStyle
+}) {
+  return (
+    <ButtonWrap
+      active={active}
+      type={type}
+      size={size}
+      outline={outline}
+      orientation={orientation}
+      disabled={disabled}
+      onClick={clickAction}
+      tabIndex={tabIndex}
+      title={label}
+      style={style}
+      iconSize={iconSize}
+    >
+      {glyph && (
+        <Icon glyphColor={glyphColor} name={glyph} ratio={glyphRatio} />
+      )}
+      {children}
+      <span style={labelStyle}>
+        {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
+        {label}
+        {suffix ? <ButtonLabelSuffix>{suffix}</ButtonLabelSuffix> : ""}
+      </span>
+    </ButtonWrap>
+  );
+}
 
 export default Button;

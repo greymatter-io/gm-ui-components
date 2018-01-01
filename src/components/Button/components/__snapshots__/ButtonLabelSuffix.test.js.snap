@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonLabelSuffix matches snapshot 1`] = `
+.c0 {
+  opacity: 0.5;
+  margin-left: 8px;
+}
+
+<span
+  className="c0"
+/>
+`;
