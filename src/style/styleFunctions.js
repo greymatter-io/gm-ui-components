@@ -4,6 +4,7 @@ import {
   darken,
   saturate,
   desaturate,
+  parseToHsl,
   lighten
 } from "polished";
 import { DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO } from "./colorVariables";
@@ -26,31 +27,14 @@ export function contrastColor(backgroundColor, contrast, intentColor) {
   // if luminosity of color is closer to light, and intentColor is null, set the intentColor to black.  if luminosity is closer to dark, and intentColor is null, set the intentColor to white.
   if (getLuminance(backgroundColor) > 0.65) {
     intentColor = intentColor || "#000"; //black
-    console.log(
-      "contrast",
-      contrast,
-      "backgroundColor",
-      backgroundColor,
-      "intentColor",
-      intentColor
-    );
-    return mix(contrast, backgroundColor, intentColor);
+    return mix(contrast, intentColor, backgroundColor);
   } else {
     let enhancedContrast = contrast * DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO; // DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2
     intentColor = intentColor || "#FFF"; //white
     if (enhancedContrast > 1) {
-      // enhancedContrast = 1
       enhancedContrast = 1;
     }
-    console.log(
-      "contrast",
-      contrast,
-      "backgroundColor",
-      backgroundColor,
-      "intentColor",
-      intentColor
-    );
-    return mix(contrast, backgroundColor, intentColor);
+    return mix(enhancedContrast, intentColor, backgroundColor);
   }
 }
 
@@ -67,31 +51,21 @@ export function spacingScale(factor) {
 
 // Darken the color, but add a touch of saturation for a more natural shadow look
 export function darkenColor(color, percent) {
-  if (color) {
-    console.log("color, percent", color, percent);
+  if (parseToHsl(color).saturation > 0.1) {
     // If the element has any substantial color to it, then you can mess with the saturation
-    // return color
-    //   .darken(percent)
-    //   .saturate(percent)
-    //   .rgb();
     return saturate(percent, darken(percent, color));
   } else {
     // Otherwise, don't add color where there wasn't any to start with
     return darken(percent, color);
-    // return darken(color, percent);
   }
 }
 
 // Lighten the color, but wash out the color a bit, for a more natural highlighted look
 export function lightenColor(color, percent) {
-  if (color) {
+  if (parseToHsl(color).saturation > 0.1) {
     return desaturate(percent, lighten(percent, color));
-    // return color
-    //   .lighten(percent)
-    //   .desaturate(percent)
-    //   .rgb();
   } else {
     // Otherwise, don't add color where there wasn't any to start with
-    return color.lighten(percent);
+    return lighten(percent, color);
   }
 }

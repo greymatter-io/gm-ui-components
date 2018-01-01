@@ -82,7 +82,11 @@ export default function Button({
       iconSize={iconSize}
     >
       {glyph && (
-        <Icon glyphColor={glyphColor} name={glyph} ratio={glyphRatio} />
+        <Icon
+          glyphColor={glyphColor}
+          glyph={glyph}
+          glyphSizeRatio={glyphRatio}
+        />
       )}
       {children}
       <span style={labelStyle}>

@@ -69,7 +69,6 @@ function generateButtonStyle({
       buttonBackgroundColorBase,
       buttonHoverReactionDegree
     );
-    console.log("buttonLabelColorBase", buttonLabelColorBase);
     styleTypes.hoverStyles["color"] = darkenColor(
       buttonLabelColorBase,
       buttonHoverReactionDegree
@@ -94,13 +93,13 @@ function generateButtonStyle({
     // Active Styles
     styleTypes.activeStyles["backgroundColor"] = mix(
       buttonActiveMixDegree,
-      darkenColor(buttonBackgroundColorBase, buttonActiveReactionDegree),
-      buttonActiveMixBaseColor
+      buttonActiveMixBaseColor,
+      darkenColor(buttonBackgroundColorBase, buttonActiveReactionDegree)
     );
     styleTypes.activeStyles["color"] = mix(
       buttonActiveMixDegree,
-      darkenColor(buttonLabelColorBase, buttonActiveReactionDegree),
-      buttonActiveMixBaseLabelColor
+      buttonActiveMixBaseLabelColor,
+      darkenColor(buttonLabelColorBase, buttonActiveReactionDegree)
     );
     styleTypes.activeStyles["borderColor"] = darkenColor(
       mix(
@@ -164,31 +163,46 @@ function generateButtonStyle({
       buttonHoverReactionDegree + buttonDownReactionDegree
     );
     // Active Styles
-    styleTypes.activeStyles["backgroundColor"] = lightenColor(
-      buttonBackgroundColorBase,
-      buttonActiveReactionDegree
-    ).mix(buttonActiveMixBaseColor, buttonActiveMixDegree);
-    styleTypes.activeStyles["color"] = lightenColor(
-      buttonLabelColorBase,
-      buttonActiveReactionDegree
-    ).mix(buttonActiveMixBaseLabelColor, buttonActiveMixDegree);
-    styleTypes.activeStyles["borderColor"] = lightenColor(
-      buttonBorderColorBase,
-      buttonActiveReactionDegree
-    ).mix(buttonActiveMixBaseColor, buttonActiveMixDegree);
+    styleTypes.activeStyles["backgroundColor"] = mix(
+      buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
+      lightenColor(buttonBackgroundColorBase, buttonActiveReactionDegree)
+    );
+    styleTypes.activeStyles["color"] = mix(
+      buttonActiveMixDegree,
+      buttonActiveMixBaseLabelColor,
+      lightenColor(buttonLabelColorBase, buttonActiveReactionDegree)
+    );
+    styleTypes.activeStyles["borderColor"] = mix(
+      buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
+      lightenColor(buttonBorderColorBase, buttonActiveReactionDegree)
+    );
     // Active Down Styles
-    styleTypes.activeDownStyles["backgroundColor"] = lightenColor(
-      buttonBackgroundColorBase,
-      buttonActiveReactionDegree + buttonDownReactionDegree
-    ).mix(buttonActiveMixBaseColor, buttonActiveMixDegree);
-    styleTypes.activeDownStyles["color"] = lightenColor(
-      buttonLabelColorBase,
-      buttonActiveReactionDegree + buttonDownReactionDegree
-    ).mix(buttonActiveMixBaseLabelColor, buttonActiveMixDegree);
-    styleTypes.activeDownStyles["borderColor"] = lightenColor(
-      buttonBorderColorBase,
-      buttonActiveReactionDegree + buttonDownReactionDegree
-    ).mix(buttonActiveMixBaseColor, buttonActiveMixDegree);
+    styleTypes.activeDownStyles["backgroundColor"] = mix(
+      buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
+      lightenColor(
+        buttonBackgroundColorBase,
+        buttonActiveReactionDegree + buttonDownReactionDegree
+      )
+    );
+    styleTypes.activeDownStyles["color"] = mix(
+      buttonActiveMixDegree,
+      buttonActiveMixBaseLabelColor,
+      lightenColor(
+        buttonLabelColorBase,
+        buttonActiveReactionDegree + buttonDownReactionDegree
+      )
+    );
+    styleTypes.activeDownStyles["borderColor"] = mix(
+      buttonActiveMixDegree,
+      lightenColor(
+        buttonBorderColorBase,
+        buttonActiveReactionDegree + buttonDownReactionDegree
+      ),
+      buttonActiveMixBaseColor
+    );
   }
 
   // Generation of outline styles based on styleOptions and styleTypes objects
