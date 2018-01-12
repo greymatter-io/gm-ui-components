@@ -4,7 +4,10 @@ exports[`Button Snapshots matches active snapshot 1`] = `
 <Button
   active={true}
   clickAction={[Function]}
+  disabled={false}
   label="Button"
+  orientation="horizontal"
+  size="normal"
 />
 `;
 
@@ -14,6 +17,8 @@ exports[`Button Snapshots matches disabled snapshot 1`] = `
   clickAction={[Function]}
   disabled={true}
   label="Button"
+  orientation="horizontal"
+  size="normal"
 />
 `;
 
@@ -166,6 +171,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat leYILG",
+      "orientation": "horizontal",
       "title": "raised",
     },
     "children": Array [
@@ -212,10 +218,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -235,6 +243,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat hUliTy",
+      "orientation": "horizontal",
       "title": "outline",
     },
     "children": Array [
@@ -281,10 +290,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -304,6 +315,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat QSpLP",
+      "orientation": "horizontal",
       "title": "shadow",
     },
     "children": Array [
@@ -350,10 +362,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -373,6 +387,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat heHVnn",
+      "orientation": "horizontal",
       "title": "none",
     },
     "children": Array [
@@ -419,10 +434,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -442,6 +459,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat ldFWDs",
+      "orientation": "horizontal",
       "title": "raised-outline",
     },
     "children": Array [
@@ -488,10 +506,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -510,8 +530,11 @@ exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
 <Button
   active={false}
   clickAction={[Function]}
+  disabled={false}
   label="Button"
+  orientation="horizontal"
   prefix="Prefix"
+  size="normal"
   suffix="Suffix"
 />
 `;
@@ -521,6 +544,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat ldFWDs",
+      "orientation": "horizontal",
       "title": "normal",
     },
     "children": Array [
@@ -567,10 +591,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -590,6 +616,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat fyKUlQ",
+      "orientation": "horizontal",
       "title": "xs",
     },
     "children": Array [
@@ -636,10 +663,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -659,6 +688,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat hbQUmD",
+      "orientation": "horizontal",
       "title": "sm",
     },
     "children": Array [
@@ -705,10 +735,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -728,6 +760,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat fbviyi",
+      "orientation": "horizontal",
       "title": "lg",
     },
     "children": Array [
@@ -774,10 +807,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -797,6 +832,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat iGiFrn",
+      "orientation": "horizontal",
       "title": "xl",
     },
     "children": Array [
@@ -843,10 +879,12 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
     },
   },
@@ -866,6 +904,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat doqxor",
+      "orientation": "horizontal",
       "title": "danger",
       "type": "danger",
     },
@@ -913,11 +952,13 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
@@ -938,6 +979,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat jXuIci",
+      "orientation": "horizontal",
       "title": "info",
       "type": "info",
     },
@@ -985,11 +1027,13 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
@@ -1010,6 +1054,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat SvRy",
+      "orientation": "horizontal",
       "title": "primary",
       "type": "primary",
     },
@@ -1057,11 +1102,13 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
@@ -1082,6 +1129,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat iLcjtN",
+      "orientation": "horizontal",
       "title": "warning",
       "type": "warning",
     },
@@ -1129,11 +1177,13 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
@@ -1154,6 +1204,7 @@ initialize {
   "0": Object {
     "attribs": Object {
       "class": "sc-htpNat ldFWDs",
+      "orientation": "horizontal",
       "title": "polling",
       "type": "polling",
     },
@@ -1201,11 +1252,13 @@ initialize {
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },
     "x-attribsPrefix": Object {
       "class": undefined,
+      "orientation": undefined,
       "title": undefined,
       "type": undefined,
     },

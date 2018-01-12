@@ -43,7 +43,10 @@ Button.propTypes = {
 
 Button.defaultProps = {
   active: false,
-  clickAction: () => {}
+  clickAction: () => {},
+  disabled: false,
+  size: "normal",
+  orientation: "horizontal"
 };
 
 /**
