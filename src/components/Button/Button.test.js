@@ -3,7 +3,6 @@ import { mount, render } from "enzyme";
 
 import Button from "./Button";
 import ButtonWrap from "./components/ButtonWrap";
-import Glyph from "components/Glyphs/";
 
 const types = ["danger", "info", "primary", "warning", "polling"];
 const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
@@ -128,7 +127,7 @@ describe("Button", () => {
     });
 
     test("passes correct props to Glyph", () => {
-      expect(wrapper.find(Glyph).props()).toMatchObject({
+      expect(wrapper.find("Glyph").props()).toMatchObject({
         glyphColor: "#fff",
         name: "Bell",
         ratio: 1

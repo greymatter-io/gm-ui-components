@@ -10,6 +10,7 @@ exports[`Button Snapshots matches active snapshot 1`] = `
 
 exports[`Button Snapshots matches disabled snapshot 1`] = `
 <Button
+  active={false}
   clickAction={[Function]}
   disabled={true}
   label="Button"
@@ -17,804 +18,497 @@ exports[`Button Snapshots matches disabled snapshot 1`] = `
 `;
 
 exports[`Button Snapshots matches orientation snapshots 1`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 4px;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat fqBpnO",
+      "orientation": "vertical",
+      "title": "vertical",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "vertical",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "orientation": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "orientation": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-top: 0.25px;
-}
-
-<button
-  class="c0"
-  orientation="vertical"
-  title="vertical"
->
-  <span>
-    vertical
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches orientation snapshots 2`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat ldFWDs",
+      "orientation": "horizontal",
+      "title": "horizontal",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "horizontal",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "orientation": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "orientation": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  orientation="horizontal"
-  title="horizontal"
->
-  <span>
-    horizontal
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches outline snapshots 1`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: rgb(255,255,255);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,94%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat leYILG",
+      "title": "raised",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "raised",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,92.5%);
-  border-top-color: hsl(0,0%,98%);
-  border-bottom-color: hsl(0,0%,87%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,98.5%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,92.6%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="raised"
->
-  <span>
-    raised
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches outline snapshots 2`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat hUliTy",
+      "title": "outline",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "outline",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="outline"
->
-  <span>
-    outline
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches outline snapshots 3`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: rgb(255,255,255);
-  border-bottom-color: hsl(0,0%,94%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat QSpLP",
+      "title": "shadow",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "shadow",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,92.5%);
-  border-bottom-color: hsl(0,0%,87%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,98.5%);
-  border-bottom-color: hsl(0,0%,92.6%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="shadow"
->
-  <span>
-    shadow
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches outline snapshots 4`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: rgb(255,255,255);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat heHVnn",
+      "title": "none",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "none",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,92.5%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,98.5%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="none"
->
-  <span>
-    none
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches outline snapshots 5`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat ldFWDs",
+      "title": "raised-outline",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "raised-outline",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="raised-outline"
->
-  <span>
-    raised-outline
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
 <Button
+  active={false}
   clickAction={[Function]}
   label="Button"
   prefix="Prefix"
@@ -823,1168 +517,706 @@ exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
 `;
 
 exports[`Button Snapshots matches size snapshots 1`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat ldFWDs",
+      "title": "normal",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "normal",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="normal"
->
-  <span>
-    normal
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches size snapshots 2`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 7px;
-  border-radius: 3px;
-  padding: 1px 4px;
-  text-transform: uppercase;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat fyKUlQ",
+      "title": "xs",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "xs",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="xs"
->
-  <span>
-    xs
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches size snapshots 3`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 11px;
-  border-radius: 3px;
-  padding: 1px 4px;
-  text-transform: uppercase;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat hbQUmD",
+      "title": "sm",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "sm",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="sm"
->
-  <span>
-    sm
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches size snapshots 4`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 18px;
-  border-radius: 3px;
-  padding: 2px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat fbviyi",
+      "title": "lg",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "lg",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="lg"
->
-  <span>
-    lg
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches size snapshots 5`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 21px;
-  border-radius: 3px;
-  padding: 2px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat iGiFrn",
+      "title": "xl",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "xl",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="xl"
->
-  <span>
-    xl
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches type snapshots 1`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(228,0,0);
-  border-color: rgb(220,0,0);
-  border-top-color: rgb(231,4,4);
-  border-bottom-color: rgb(203,0,0);
-  color: rgb(255,255,255);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat doqxor",
+      "title": "danger",
+      "type": "danger",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "danger",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: rgb(218,0,0);
-  border-color: rgb(212,0,0);
-  border-top-color: rgb(222,3,3);
-  border-bottom-color: rgb(195,0,0);
-  color: hsl(0,0%,92.5%);
-}
-
-.c0:hover {
-  background-color: rgb(226,0,0);
-  border-color: rgb(219,0,0);
-  border-top-color: rgb(229,4,4);
-  border-bottom-color: rgb(202,0,0);
-  color: hsl(0,0%,98.5%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,41.9%);
-  border-color: hsl(0,0%,41.9%);
-  color: hsl(0,0%,94%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="danger"
-  type="danger"
->
-  <span>
-    danger
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches type snapshots 2`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(0,0,255);
-  border-color: rgb(0,0,247);
-  border-top-color: rgb(11,11,251);
-  border-bottom-color: rgb(0,0,228);
-  color: rgb(255,255,255);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat jXuIci",
+      "title": "info",
+      "type": "info",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "info",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: rgb(0,0,245);
-  border-color: rgb(0,0,237);
-  border-top-color: rgb(4,4,248);
-  border-bottom-color: rgb(0,0,219);
-  color: hsl(0,0%,92.5%);
-}
-
-.c0:hover {
-  background-color: rgb(0,0,253);
-  border-color: rgb(0,0,245);
-  border-top-color: rgb(9,9,251);
-  border-bottom-color: rgb(0,0,226);
-  color: hsl(0,0%,98.5%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(240,0%,47%);
-  border-color: hsl(240,0%,47%);
-  color: hsl(0,0%,94%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="info"
-  type="info"
->
-  <span>
-    info
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches type snapshots 3`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(10,171,42);
-  border-color: rgb(5,165,37);
-  border-top-color: rgb(13,174,45);
-  border-bottom-color: rgb(0,152,27);
-  color: rgb(255,255,255);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat SvRy",
+      "title": "primary",
+      "type": "primary",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "primary",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: rgb(4,164,36);
-  border-color: rgb(0,158,31);
-  border-top-color: rgb(6,166,38);
-  border-bottom-color: rgb(0,146,22);
-  color: hsl(0,0%,92.5%);
-}
-
-.c0:hover {
-  background-color: rgb(9,170,41);
-  border-color: rgb(4,164,36);
-  border-top-color: rgb(11,172,43);
-  border-bottom-color: rgb(0,151,26);
-  color: hsl(0,0%,98.5%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(131.89999999999998,0%,33.4%);
-  border-color: hsl(131.89999999999998,0%,33.4%);
-  color: hsl(0,0%,94%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="primary"
-  type="primary"
->
-  <span>
-    primary
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches type snapshots 4`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(250,198,15);
-  border-color: rgb(251,195,0);
-  border-top-color: rgb(247,198,26);
-  border-bottom-color: rgb(232,177,0);
-  color: rgb(255,255,255);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat iLcjtN",
+      "title": "warning",
+      "type": "warning",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "warning",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: rgb(249,193,0);
-  border-color: rgb(241,185,0);
-  border-top-color: rgb(251,196,5);
-  border-bottom-color: rgb(223,168,0);
-  color: hsl(0,0%,92.5%);
-}
-
-.c0:hover {
-  background-color: rgb(252,198,9);
-  border-color: rgb(249,193,0);
-  border-top-color: rgb(248,198,21);
-  border-bottom-color: rgb(230,176,0);
-  color: hsl(0,0%,98.5%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(46.69999999999999,0%,48.8%);
-  border-color: hsl(46.69999999999999,0%,48.8%);
-  color: hsl(0,0%,94%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="warning"
-  type="warning"
->
-  <span>
-    warning
-  </span>
-</button>
 `;
 
 exports[`Button Snapshots matches type snapshots 5`] = `
-.c0 {
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: rgb(255,255,255);
-  border-color: hsl(0,0%,94%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,82%);
-  color: rgb(0,0,0);
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 1.4px 4px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-htpNat ldFWDs",
+      "title": "polling",
+      "type": "polling",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "data": "polling",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "span",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "button",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "title": undefined,
+      "type": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: hsl(0,0%,92.5%);
-  border-color: hsl(0,0%,87%);
-  border-top-color: hsl(0,0%,95.3%);
-  border-bottom-color: hsl(0,0%,75.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:hover {
-  background-color: hsl(0,0%,98.5%);
-  border-color: hsl(0,0%,92.6%);
-  border-top-color: hsl(0,0%,100%);
-  border-bottom-color: hsl(0,0%,80.8%);
-  color: hsl(0,0%,0%);
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: hsl(0,0%,94%);
-  border-color: hsl(0,0%,94%);
-  color: hsl(0,0%,0%);
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  title="polling"
-  type="polling"
->
-  <span>
-    polling
-  </span>
-</button>
 `;
