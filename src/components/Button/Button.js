@@ -15,6 +15,7 @@ Button.propTypes = {
   glyph: PropTypes.string, // Glyph to display in the button
   glyphColor: PropTypes.string, // Color for the glyph
   glyphRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Relative size for the glyph
+  iconSize: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),
   label: PropTypes.string.isRequired, // label for the button
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
@@ -58,6 +59,7 @@ export default function Button({
   glyph,
   glyphRatio,
   glyphColor,
+  iconSize,
   label,
   orientation,
   prefix,
@@ -81,7 +83,7 @@ export default function Button({
       tabIndex={tabIndex}
       title={label}
       style={style}
-      iconSize={glyphRatio}
+      iconSize={iconSize}
     >
       {glyph && (
         <Icon
