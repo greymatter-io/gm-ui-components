@@ -10,14 +10,17 @@ import Glyph from "./components/Glyphs";
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   backgroundColor: PropTypes.string,
-  backgroundSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  backgroundSizeRatio: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ]),
   backgroundOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   backgroundStyle: PropTypes.string,
   borderColor: PropTypes.string,
   borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   borderStyle: PropTypes.string,
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object, PropTypes.string]),
+  children: PropTypes.element,
   glyphColor: PropTypes.string,
   glyph: PropTypes.string,
   glyphSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -34,9 +37,8 @@ Icon.defaultProps = {
   glyphColor: "currentColor",
   glyph: "",
   glyphSizeRatio: 1,
-  backgroundSizeRatio: 1,
-  title: ""
-}
+  backgroundSizeRatio: 1
+};
 
 /**
  * Renders an Icon wrapping a Glyph component with any additional styling props
@@ -47,6 +49,7 @@ export default function Icon({
   ariaLabelledby,
   backgroundColor,
   backgroundOpacity,
+  backgroundSizeRatio,
   backgroundStyle,
   borderColor,
   borderOpacity,
@@ -56,7 +59,6 @@ export default function Icon({
   glyph,
   glyphColor,
   glyphSizeRatio,
-  backgroundSizeRatio,
   title
 }) {
   return (
@@ -82,10 +84,14 @@ export default function Icon({
           ratio={backgroundSizeRatio}
         />
       )}
-      <StyledG title={glyph} ratio={glyphSizeRatio}>
+      <StyledG title={glyph} ratio={glyphSizeRatio} fill={glyphColor}>
         <title>{title ? title : glyph}</title>
-        <Glyph name={glyph} ratio={glyphSizeRatio} glyphColor={glyphColor} />
-        {children}
+        {/* render a custom svg as children or a built in glyph */}
+        {children ? (
+          children
+        ) : (
+          <Glyph name={glyph} ratio={glyphSizeRatio} glyphColor={glyphColor} />
+        )}
       </StyledG>
     </StyledSVG>
   );

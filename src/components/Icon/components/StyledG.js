@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
 const StyledG = styled.g.attrs({
-  fill: "currentColor"
+  fill: props => props.fill
 })`
   transform: scale(${props => props.ratio});
 `;
