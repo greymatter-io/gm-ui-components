@@ -13,7 +13,6 @@ import { withInfo } from "@storybook/addon-info";
 
 import Button from "../components/Button";
 
-console.log("BUTTON", Button);
 const wrapperStyle = {
   display: "flex",
   width: "100vw",
