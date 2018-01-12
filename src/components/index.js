@@ -2,7 +2,7 @@ import { injectGlobal } from "styled-components";
 
 import { Footer } from "./Footer";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
-import { Button } from "./Button";
+import Button from "./Button";
 import { Checkbox } from "./Checkbox";
 import { Input } from "./Input";
 import { Icon } from "./Icon";
