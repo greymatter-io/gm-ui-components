@@ -1,9 +1,12 @@
+import { injectGlobal } from "styled-components";
+
 import { Footer } from "./Footer";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import { Button } from "./Button";
 import { Checkbox } from "./Checkbox";
 import { Input } from "./Input";
-import { injectGlobal } from "styled-components";
+import { Icon } from "./Icon";
+
 import { FONT_GROUP_MAIN_TEXT } from "../style/fonts/fontVariables";
 
 import "../style/fonts/Rubik";
@@ -20,4 +23,4 @@ body {
 }
 `;
 
-export { Checkbox, Footer, Input, Button, Breadcrumbs, BreadcrumbItem };
+export { Checkbox, Footer, Icon, Input, Button, Breadcrumbs, BreadcrumbItem };

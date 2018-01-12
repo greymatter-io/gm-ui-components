@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundSquircle matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BackgroundSquircle />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": <path
+        d="M4,2 L22,2 C23.6568542,2 25,3.34314575 25,5 L25,23 C25,24.6568542 23.6568542,26 22,26 L4,26 C2.34314575,26 1,24.6568542 1,23 L1,5 C1,3.34314575 2.34314575,2 4,2 Z"
+        id="Rectangle-8"
+/>,
+      "className": "iconBackground",
+      "fill": "transparent",
+      "fillOpacity": "1",
+      "fillRule": "evenodd",
+      "id": "Squircle",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "d": "M4,2 L22,2 C23.6568542,2 25,3.34314575 25,5 L25,23 C25,24.6568542 23.6568542,26 22,26 L4,26 C2.34314575,26 1,24.6568542 1,23 L1,5 C1,3.34314575 2.34314575,2 4,2 Z",
+        "id": "Rectangle-8",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "path",
+    },
+    "type": "g",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": <path
+          d="M4,2 L22,2 C23.6568542,2 25,3.34314575 25,5 L25,23 C25,24.6568542 23.6568542,26 22,26 L4,26 C2.34314575,26 1,24.6568542 1,23 L1,5 C1,3.34314575 2.34314575,2 4,2 Z"
+          id="Rectangle-8"
+/>,
+        "className": "iconBackground",
+        "fill": "transparent",
+        "fillOpacity": "1",
+        "fillRule": "evenodd",
+        "id": "Squircle",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "d": "M4,2 L22,2 C23.6568542,2 25,3.34314575 25,5 L25,23 C25,24.6568542 23.6568542,26 22,26 L4,26 C2.34314575,26 1,24.6568542 1,23 L1,5 C1,3.34314575 2.34314575,2 4,2 Z",
+          "id": "Rectangle-8",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "path",
+      },
+      "type": "g",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
