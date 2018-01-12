@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 
 import Glyph from "./index";
-import Bell from "./Bell";
+import Bell from "./components/Bell";
 
 describe("Glyph", () => {
   let wrapper;
@@ -29,7 +29,7 @@ describe("Glyph", () => {
   });
 
   test("returns an empty <g> if a glyph name is not found", () => {
-    wrapper = shallow(<Glyph name="Belt" />);
+    wrapper = shallow(<Glyph name="Bell" />);
     expect(wrapper.find("g").props()).toMatchObject({});
   });
 });

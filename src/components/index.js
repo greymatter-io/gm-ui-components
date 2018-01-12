@@ -5,7 +5,8 @@ import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import Button from "./Button";
 import { Checkbox } from "./Checkbox";
 import { Input } from "./Input";
-import Icon from "./Icon";
+import { Icon } from "./Icon";
+
 import { FONT_GROUP_MAIN_TEXT } from "../style/fonts/fontVariables";
 
 import "../style/fonts/Rubik";
