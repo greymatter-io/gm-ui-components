@@ -9,6 +9,8 @@ import {
   boolean,
   color
 } from "@storybook/addon-knobs";
+import { withInfo } from "@storybook/addon-info";
+
 import Button from "../components/Button";
 
 console.log("BUTTON", Button);
@@ -77,26 +79,31 @@ const orientations = ["vertical", "horizontal"];
 
 storiesOf("Button", module)
   .addDecorator(withKnobs)
-  .add("default", () => (
-    <div style={wrapperStyle}>
-      <Button
-        active={boolean("active", false)}
-        label={text("label", "Hello World")}
-        type={select("type", types)}
-        glyph={select("glyph", glyphNames)}
-        glyphColor={color("glyphColor")}
-        glyphRatio={number("glyphRatio", 1)}
-        disabled={boolean("disabled", false)}
-        clickAction={() => alert("clicked")}
-        orientation={select("orientation", orientations, "horizontal")}
-        outline={select("outline", outlines, "none")}
-        prefix={text("prefix")}
-        suffix={text("suffix")}
-        size={select("size", sizes, "normal")}
-        tabIndex={number("tabIndex")}
-      />
-    </div>
-  ))
+  .add(
+    "default",
+    withInfo(
+      "A React component that renders a button and includes base styling, used to trigger actions."
+    )(() => (
+      <div style={wrapperStyle}>
+        <Button
+          active={boolean("active", false)}
+          label={text("label", "Hello World")}
+          type={select("type", types)}
+          glyph={select("glyph", glyphNames)}
+          glyphColor={color("glyphColor")}
+          glyphRatio={number("glyphRatio", 1)}
+          disabled={boolean("disabled", false)}
+          clickAction={() => alert("clicked")}
+          orientation={select("orientation", orientations, "horizontal")}
+          outline={select("outline", outlines, "none")}
+          prefix={text("prefix")}
+          suffix={text("suffix")}
+          size={select("size", sizes, "normal")}
+          tabIndex={number("tabIndex")}
+        />
+      </div>
+    ))
+  )
   .add("types", () => (
     <div style={wrapperStyle}>
       {types.map(type => (
