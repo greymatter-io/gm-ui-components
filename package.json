@@ -27,7 +27,8 @@
     "test": "jest --watchAll",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "prepublishonly": "npm run build"
+    "prepublishonly": "npm run build",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
@@ -36,6 +37,7 @@
     "@storybook/addon-links": "^3.2.12",
     "@storybook/addon-options": "^3.2.12",
     "@storybook/react": "^3.2.12",
+    "@storybook/storybook-deployer": "^2.2.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.24.1",
