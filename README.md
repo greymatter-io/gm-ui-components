@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">React components for building user interfaces in Grey Matter products.</h4>
+<h4 align="center">React components for Grey Matter user interfaces</h4>
 
 <p align="center">
   <a href="https://github.com/prettier/prettier" target="_blank">
