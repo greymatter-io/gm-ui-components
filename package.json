@@ -25,7 +25,7 @@
   "scripts": {
     "start": "webpack -w",
     "build": "webpack -p",
-    "test": "jest --watchAll",
+    "test": "jest",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "prepublishonly": "npm run build",
