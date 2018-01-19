@@ -7,7 +7,7 @@
 defaults: &defaults
   working_directory: ~/repo
   environment:
-    CC_TEST_REPORTER_ID: 8d6b13736e5671bfae1278c53eae2dc43fe937f0deb7215ec76b2b684bea0682
+    CC_TEST_REPORTER_ID: c54354c67485869b121e5dcdb231ceefcbe890a99864521430f328118fb9fa4d
   docker:
     - image: circleci/node:carbon
 
