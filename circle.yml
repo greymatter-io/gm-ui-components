@@ -64,7 +64,7 @@ jobs:
       - store_artifacts:
           path: bundlesize
       - store_artifacts:
-          path: build.tar.gz
+          path: lib.tar.gz
 
   # run tests!
   test:
