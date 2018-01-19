@@ -80,12 +80,6 @@ jobs:
           - cache-
       # CircleCI 2.0 no longer allows interpolation of env variables. This is the workaround: 
       # https://discuss.circleci.com/t/using-environment-variables-in-config-yml-not-working/14237
-      - run: 
-          command: | 
-            mkdir results
-      - run:
-          name: Set JEST_JUNIT_OUTPUT
-          command: echo 'export JEST_JUNIT_OUTPUT="results/junit.xml"' >> $BASH_ENV
       - run:
           name: Prepare Code Climate Test Reporter
           command: |
