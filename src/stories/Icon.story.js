@@ -48,11 +48,11 @@ const glyphNames = [
   "Threads",
   "Timer",
   "ViewCollapse",
-  "GET",
-  "PUT",
-  "POST",
-  "DELETE",
-  "PATCH"
+  "HttpGet",
+  "HttpPut",
+  "HttpPost",
+  "HttpDelete",
+  "HttpPatch"
 ];
 
 const iconBackgroundNames = [
