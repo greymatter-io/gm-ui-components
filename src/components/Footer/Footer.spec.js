@@ -33,8 +33,4 @@ describe("<Footer> elements", () => {
   test("<Social> imgs have rule to transition opacity on hover", () => {
     expect(SocialIcon).toHaveStyleRule("opacity", "1", hover);
   });
-
-  test("<Copyright> is using the correct font-family", () => {
-    expect(CopyrightLink).toHaveStyleRule("font-family", FONT_GROUP_MAIN_TEXT);
-  });
 });

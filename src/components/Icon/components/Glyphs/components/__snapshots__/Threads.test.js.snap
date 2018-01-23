@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Threads matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Threads />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "d": "M7,7 L19,7 L19,9 L7,9 L7,7 Z M6,11 L18,11 L18,13 L6,13 L6,11 Z M5,15 L17,15 L17,17 L5,17 L5,15 Z",
+      "id": "shape",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "path",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "d": "M7,7 L19,7 L19,9 L7,9 L7,7 Z M6,11 L18,11 L18,13 L6,13 L6,11 Z M5,15 L17,15 L17,17 L5,17 L5,15 Z",
+        "id": "shape",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "path",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
