@@ -1,22 +1,22 @@
 import { injectGlobal } from "styled-components";
-import GMMetropolisRegular from "./Metropolis-Regular.otf";
-import GMMetropolisRegularItalic from "./Metropolis-RegularItalic.otf";
-import GMMetropolisMedium from "./Metropolis-Medium.otf";
-import GMMetropolisMediumItalic from "./Metropolis-MediumItalic.otf";
-import GMMetropolisSemiBold from "./Metropolis-SemiBold.otf";
-import GMMetropolisSemiBoldItalic from "./Metropolis-SemiBoldItalic.otf";
-import GMMetropolisBold from "./Metropolis-Bold.otf";
-import GMMetropolisBoldItalic from "./Metropolis-BoldItalic.otf";
-import GMMetropolisExtraBold from "./Metropolis-ExtraBold.otf";
-import GMMetropolisExtraBoldItalic from "./Metropolis-ExtraBoldItalic.otf";
-import GMMetropolisBlack from "./Metropolis-Black.otf";
-import GMMetropolisBlackItalic from "./Metropolis-BlackItalic.otf";
-import GMMetropolisLight from "./Metropolis-Light.otf";
-import GMMetropolisLightItalic from "./Metropolis-LightItalic.otf";
-import GMMetropolisExtraLight from "./Metropolis-ExtraLight.otf";
-import GMMetropolisExtraLightItalic from "./Metropolis-ExtraLightItalic.otf";
-import GMMetropolisThin from "./Metropolis-Thin.otf";
-import GMMetropolisThinItalic from "./Metropolis-ThinItalic.otf";
+import GMMetropolisRegular from "./Metropolis-Regular.ttf";
+import GMMetropolisRegularItalic from "./Metropolis-RegularItalic.ttf";
+import GMMetropolisMedium from "./Metropolis-Medium.ttf";
+import GMMetropolisMediumItalic from "./Metropolis-MediumItalic.ttf";
+import GMMetropolisSemiBold from "./Metropolis-SemiBold.ttf";
+import GMMetropolisSemiBoldItalic from "./Metropolis-SemiBoldItalic.ttf";
+import GMMetropolisBold from "./Metropolis-Bold.ttf";
+import GMMetropolisBoldItalic from "./Metropolis-BoldItalic.ttf";
+import GMMetropolisExtraBold from "./Metropolis-ExtraBold.ttf";
+import GMMetropolisExtraBoldItalic from "./Metropolis-ExtraBoldItalic.ttf";
+import GMMetropolisBlack from "./Metropolis-Black.ttf";
+import GMMetropolisBlackItalic from "./Metropolis-BlackItalic.ttf";
+import GMMetropolisLight from "./Metropolis-Light.ttf";
+import GMMetropolisLightItalic from "./Metropolis-LightItalic.ttf";
+import GMMetropolisExtraLight from "./Metropolis-ExtraLight.ttf";
+import GMMetropolisExtraLightItalic from "./Metropolis-ExtraLightItalic.ttf";
+import GMMetropolisThin from "./Metropolis-Thin.ttf";
+import GMMetropolisThinItalic from "./Metropolis-ThinItalic.ttf";
 
 injectGlobal`
 @font-face {
