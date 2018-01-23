@@ -9,7 +9,7 @@ import linkedin from "../../images/icons/linkedin.svg";
 
 // Globally import the fonts you want
 import "../../style/fonts/Rubik";
-import "../../style/fonts/Nunito";
+import "../../style/fonts/Metropolis";
 import "../../style/fonts/Source_Code_Pro";
 
 export const Wrapper = styled.footer`
