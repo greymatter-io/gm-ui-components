@@ -10,19 +10,19 @@ import Glyph from "./components/Glyphs";
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   backgroundColor: PropTypes.string,
+  backgroundOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   backgroundSizeRatio: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number
   ]),
-  backgroundOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   backgroundStyle: PropTypes.string,
   borderColor: PropTypes.string,
   borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   borderStyle: PropTypes.string,
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.element,
-  glyphColor: PropTypes.string,
   glyph: PropTypes.string,
+  glyphColor: PropTypes.string,
   glyphSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   title: PropTypes.string
 };
@@ -31,13 +31,13 @@ Icon.defaultProps = {
   ariaLabelledby: "ariaLabelledby",
   backgroundColor: "currentColor",
   backgroundOpacity: 1,
+  backgroundSizeRatio: 1,
   borderColor: "currentColor",
   borderOpacity: 1,
   borderWidth: 1,
-  glyphColor: "currentColor",
   glyph: "",
-  glyphSizeRatio: 1,
-  backgroundSizeRatio: 1
+  glyphColor: "currentColor",
+  glyphSizeRatio: 1
 };
 
 /**

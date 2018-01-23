@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
 import BreadcrumbItem from "./BreadcrumbItem";
 
 export const BreadcrumbsContainer = styled.ol`
@@ -58,7 +57,7 @@ class Breadcrumbs extends React.Component {
   };
 
   render() {
-    const { crumbs, maxItems } = this.props;
+    const { crumbs } = this.props;
     const { isCollapsed } = this.state;
     return (
       <BreadcrumbsContainer>
@@ -77,6 +76,6 @@ Breadcrumbs.defaultProps = {
 };
 
 Breadcrumbs.propTypes = {
-  maxItems: PropTypes.number,
-  crumbs: PropTypes.array.isRequired
+  crumbs: PropTypes.array.isRequired,
+  maxItems: PropTypes.number
 };

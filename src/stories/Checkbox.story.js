@@ -1,13 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import {
-  withKnobs,
-  array,
-  number,
-  boolean,
-  text
-} from "@storybook/addon-knobs";
+import { withKnobs, text } from "@storybook/addon-knobs";
 import { Checkbox } from "../components";
 
 const stories = storiesOf("Checkbox", module);

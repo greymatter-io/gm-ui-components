@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { lighten } from "polished";
 
-import { COLOR_BLACK, COLOR_WHITE } from "../../../style/colorVariables";
+import { COLOR_BLACK } from "../../../style/colorVariables";
 import { ZINDEX_TOOLTIP } from "../../../style/sizeVariables";
 
 const TooltipWrap = styled.div`
