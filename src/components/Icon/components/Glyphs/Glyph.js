@@ -22,9 +22,11 @@ export default class Glyph extends Component {
   componentDidMount() {
     let { name } = this.props;
     name = _.upperFirst(name);
-    import(`./components/${name}`).then(glyph =>
-      this.setState({ glyph: glyph })
-    );
+    import(`./components/${name}`)
+      .then(glyph => this.setState({ glyph: glyph }))
+      .catch(err =>
+        console.error(`${name} could not be found in the glyph adapter`, err)
+      );
   }
 
   render() {
@@ -38,7 +40,6 @@ export default class Glyph extends Component {
 
     return (
       <g
-        className="glyph"
         fill={glyphColor}
         transform={
           "translate(" +
