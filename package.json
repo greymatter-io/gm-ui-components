@@ -1,8 +1,7 @@
 {
   "name": "gm-ui-components",
   "version": "0.3.0",
-  "description":
-    "A library of reusable UI components for the Grey Matter product suite.",
+  "description": "A library of reusable UI components for the Grey Matter product suite.",
   "main": "lib/build.js",
   "author": "Decipher Technology Studios",
   "license": "Apache-2.0",
@@ -10,7 +9,9 @@
     "type": "git",
     "url": "git@github.com:DecipherNow/gm-ui-components.git"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "polished": "^1.7.0",
     "prop-types": "^15.6.0",
@@ -24,10 +25,11 @@
   "scripts": {
     "start": "webpack -w",
     "build": "webpack -p",
-    "test": "jest --watchAll",
+    "test": "jest",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "prepublishonly": "npm run build",
+    "junit-merge": "junit-merge",
     "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
@@ -44,7 +46,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
+    "jest-junit": "^3.4.1",
     "jest-styled-components": "^4.6.0",
+    "junit-merge": "^1.2.3",
     "prettier": "^1.7.4",
     "raf": "^3.4.0",
     "react-addons-test-utils": "^15.6.2",
@@ -61,8 +65,15 @@
     "useTabs": false
   },
   "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
-    "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme",
+      "jest-enzyme"
+    ],
     "moduleNameMapper": {
       "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
     },
@@ -70,13 +81,15 @@
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
-    "setupFiles": ["raf/polyfill"]
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   },
   "engines": {
     "node": ">=8.6.0",
     "npm": ">=5.3.0"
   },
   "publishConfig": {
-    "registry": "http://34.206.52.14:4873"
+    "registry": "https://registry.npmjs.org/"
   }
 }
