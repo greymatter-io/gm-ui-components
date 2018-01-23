@@ -1,9 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import renderer from "react-test-renderer";
 import { Breadcrumbs, BreadcrumbItem } from "./index.js";
-import { Elipsis } from "./Breadcrumbs";
-import { mount, shallow } from "enzyme";
+import { shallow } from "enzyme";
 import "jest-styled-components";
 
 const crumbs = [
@@ -29,11 +27,10 @@ describe("<Breadcrumbs> Snapshot", () => {
 });
 
 describe("<Breadcrumbs>", () => {
-  let wrapper, instance;
+  let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(TestCollapsed);
-    instance = wrapper.instance();
   });
 
   test("collapse when children are greater than maxItems", () => {

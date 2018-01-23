@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, select, number, color, text } from "@storybook/addon-knobs";
+import { withKnobs, select, number, color } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import Icon from "../components/Icon";
@@ -48,11 +48,11 @@ const glyphNames = [
   "Threads",
   "Timer",
   "ViewCollapse",
-  "GET",
-  "PUT",
-  "POST",
-  "DELETE",
-  "PATCH"
+  "HttpGet",
+  "HttpPut",
+  "HttpPost",
+  "HttpDelete",
+  "HttpPatch"
 ];
 
 const iconBackgroundNames = [
