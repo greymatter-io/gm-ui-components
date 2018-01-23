@@ -23,14 +23,15 @@
     "styled-components": "^2.1.2"
   },
   "scripts": {
-    "start": "webpack -w",
     "build": "webpack -p",
-    "test": "jest",
-    "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "prepublishonly": "npm run build",
+    "deploy-storybook": "storybook-to-ghpages",
     "junit-merge": "junit-merge",
-    "deploy-storybook": "storybook-to-ghpages"
+    "prepublishonly": "npm run build",
+    "start": "webpack -w",
+    "storybook": "start-storybook -p 9009 -s public",
+    "test": "jest",
+    "update-deps": "npm-check . --skip-unused -u"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
@@ -49,6 +50,7 @@
     "jest-junit": "^3.4.1",
     "jest-styled-components": "^4.6.0",
     "junit-merge": "^1.2.3",
+    "npm-check": "^5.5.2",
     "prettier": "^1.7.4",
     "raf": "^3.4.0",
     "react-addons-test-utils": "^15.6.2",
