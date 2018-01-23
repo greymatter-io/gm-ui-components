@@ -11,7 +11,7 @@ import Tooltip from "./Tooltip";
 import { FONT_GROUP_MAIN_TEXT } from "../style/fonts/fontVariables";
 
 import "../style/fonts/Rubik";
-import "../style/fonts/Nunito";
+import "../style/fonts/Metropolis";
 import "../style/fonts/Source_Code_Pro";
 
 injectGlobal`
