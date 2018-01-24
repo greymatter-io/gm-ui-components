@@ -1,8 +1,7 @@
 {
   "name": "gm-ui-components",
   "version": "0.3.0",
-  "description":
-    "A library of reusable UI components for the Grey Matter product suite.",
+  "description": "A library of reusable UI components for the Grey Matter product suite.",
   "main": "lib/build.js",
   "author": "Decipher Technology Studios",
   "license": "Apache-2.0",
@@ -10,16 +9,17 @@
     "type": "git",
     "url": "git@github.com:DecipherNow/gm-ui-components.git"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "dependencies": {
-    "polished": "^1.7.0",
+    "polished": "^1.9.0",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-responsive": "^1.3.4",
-    "react-scripts": "1.0.13",
-    "react-test-renderer": "^16.0.0",
-    "styled-components": "^2.1.2"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.1.0",
+    "react-test-renderer": "^16.2.0",
+    "styled-components": "^3.0.2"
   },
   "scripts": {
     "build": "webpack -p",
@@ -34,31 +34,31 @@
     "update-deps": "npm-check . --skip-unused -u"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.2.12",
-    "@storybook/addon-info": "^3.2.12",
-    "@storybook/addon-knobs": "^3.2.12",
-    "@storybook/addon-links": "^3.2.12",
-    "@storybook/addon-options": "^3.2.12",
-    "@storybook/react": "^3.2.12",
+    "@storybook/addon-actions": "^3.3.10",
+    "@storybook/addon-info": "^3.3.10",
+    "@storybook/addon-knobs": "^3.3.10",
+    "@storybook/addon-links": "^3.3.10",
+    "@storybook/addon-options": "^3.3.10",
+    "@storybook/react": "^3.3.10",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.5.1",
     "jest-junit": "^3.4.1",
-    "jest-styled-components": "^4.6.0",
+    "jest-styled-components": "^4.11.0-0",
     "junit-merge": "^1.2.3",
     "npm-check": "^5.5.2",
-    "prettier": "^1.7.4",
+    "prettier": "^1.10.2",
     "raf": "^3.4.0",
     "react-addons-test-utils": "^15.6.2",
-    "webpack": "^3.6.0"
+    "webpack": "^3.10.0"
   },
   "prettier": {
     "bracketSpacing": true,
@@ -71,9 +71,15 @@
     "useTabs": false
   },
   "jest": {
-    "collectCoverageFrom": ["src/components/**/*.{js,jsx}"],
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
-    "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme",
+      "jest-enzyme"
+    ],
     "moduleNameMapper": {
       "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
     },
@@ -81,7 +87,9 @@
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
-    "setupFiles": ["raf/polyfill"]
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   },
   "engines": {
     "node": ">=8.6.0",
