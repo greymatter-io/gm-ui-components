@@ -34,12 +34,12 @@
     "update-deps": "npm-check . --skip-unused -u"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.2.12",
-    "@storybook/addon-info": "^3.2.12",
-    "@storybook/addon-knobs": "^3.2.12",
-    "@storybook/addon-links": "^3.2.12",
-    "@storybook/addon-options": "^3.2.12",
-    "@storybook/react": "^3.2.12",
+    "@storybook/addon-actions": "^3.3.10",
+    "@storybook/addon-info": "^3.3.10",
+    "@storybook/addon-knobs": "^3.3.10",
+    "@storybook/addon-links": "^3.3.10",
+    "@storybook/addon-options": "^3.3.10",
+    "@storybook/react": "^3.3.10",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",

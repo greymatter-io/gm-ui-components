@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, array, number } from "@storybook/addon-knobs";
+import { withKnobs, array, number } from "@storybook/addon-knobs/react";
 import { Breadcrumbs } from "../components";
 import { withInfo } from "@storybook/addon-info";
 
