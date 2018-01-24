@@ -12,10 +12,9 @@ import {
   COLOR_DANGER,
   COLOR_INFO,
   COLOR_WARNING,
-  COLOR_CONTENT_BACKGROUND
-} from "../../../../style/colorVariables";
-
-import { FONT_STACK_BASE } from "../../../../style/fonts/fontVariables";
+  COLOR_CONTENT_BACKGROUND,
+  FONT_STACK_BASE
+} from "../../../../style/styleVariables";
 
 // Maps button types to a particular color
 function generateButtonTypeColor(type) {

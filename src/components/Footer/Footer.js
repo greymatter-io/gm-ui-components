@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { COLOR_GREY } from "../../style/colorVariables";
+import { COLOR_GREY } from "../../style/styleVariables";
 import longLogo from "../../images/decipher-logo-long.png";
 import github from "../../images/icons/github.svg";
 import twitter from "../../images/icons/twitter.svg";

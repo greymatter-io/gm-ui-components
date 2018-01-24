@@ -8,7 +8,7 @@ import { Input } from "./Input";
 import { Icon } from "./Icon";
 import Tooltip from "./Tooltip";
 
-import { FONT_GROUP_MAIN_TEXT } from "../style/fonts/fontVariables";
+import { FONT_GROUP_MAIN_TEXT } from "../style/styleVariables";
 
 import "../style/fonts/Rubik";
 import "../style/fonts/Metropolis";

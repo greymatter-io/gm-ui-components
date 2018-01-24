@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { lighten } from "polished";
 
-import { COLOR_BLACK } from "../../../style/colorVariables";
-import { ZINDEX_TOOLTIP } from "../../../style/sizeVariables";
+import { COLOR_BLACK, ZINDEX_TOOLTIP } from "../../../style/styleVariables";
 
 const TooltipWrap = styled.div`
   border-bottom: 1px solid ${lighten(0.85, COLOR_BLACK)};
