@@ -31,9 +31,7 @@ export default class Glyph extends Component {
 
   render() {
     let { name, ratio, glyphColor } = this.props;
-    // use upperFirst instead of capitalize to respect camelCase
-    // console.log(this.state);
-    // dynamically render glyph component by name
+
     const GlyphComponent = this.state.glyph;
     const viewBoxSize = ICON_VIEWBOX_SIZE;
     const glyphTranslateDist = (ratio - 1) * (0.5 * viewBoxSize) * -1;
