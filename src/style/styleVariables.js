@@ -1,7 +1,40 @@
+/*/ Colors /*/
+export const COLOR_BRAND_PRIMARY = "#0aab2a";
+export const COLOR_BRAND_SECONDARY = "#002e6e";
+
+export const COLOR_RED = "#E4251A";
+export const COLOR_BLACK = "#000";
+export const COLOR_GREEN = "#0aab2a";
+export const COLOR_WHITE = "#fff";
+export const COLOR_GREY = "#444";
+
+export const COLOR_HIGHLIGHT = COLOR_BRAND_PRIMARY;
+export const COLOR_SUCCESS = "#0aab2a";
+export const COLOR_PRIMARY = "#fff";
+export const COLOR_DANGER = COLOR_RED;
+export const COLOR_WARNING = "#FAC60F";
+export const COLOR_INFO = "blue";
+
+export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
+
+/*/ Theme Configuration /*/
+export const COLOR_SIDEBAR_BACKGROUND = COLOR_BLACK;
+export const COLOR_CONTENT_BACKGROUND = COLOR_WHITE;
+
+export const BORDER_RADIUS_BASE = "3px";
+
+export const ICON_VIEWBOX_SIZE = 24;
+
+export const PADDING_BASE = 8;
+
+// z-index mappings
+export const ZINDEX_TOOLTIP = "1070";
+
+/*/ Fonts /*/
+
 // Backup font list
 export const FONT_GROUP_SYSTEM = `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`;
 
-// Fonts for specific use
 export const FONT_GROUP_MAIN_TEXT = "GMMetropolis";
 export const FONT_GROUP_DATA = "Rubik";
 export const FONT_GROUP_CODE = `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`;
@@ -19,5 +52,3 @@ export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
 export const FONT_SIZE_SM = "11px";
 export const FONT_SIZE_XS = "9px";
-
-export const PADDING_BASE = 8;
