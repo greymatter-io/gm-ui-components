@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import {
   FONT_STACK_BASE,
-  FONT_SIZE_SM
-} from "../../../style/fonts/fontVariables";
-import { COLOR_WHITE } from "../../../style/colorVariables.js";
-import { ZINDEX_TOOLTIP } from "../../../style/sizeVariables";
+  FONT_SIZE_SM,
+  COLOR_WHITE,
+  ZINDEX_TOOLTIP
+} from "../../../style/styleVariables.js";
 
 const TooltipContent = styled.div`
   background-color: rgba(0, 0, 0, 0.8);

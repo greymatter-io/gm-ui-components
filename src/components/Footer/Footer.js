@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { COLOR_HIGHLIGHT, COLOR_GREY } from "../../style/colorVariables";
-import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
+import { COLOR_GREY } from "../../style/styleVariables";
 import longLogo from "../../images/decipher-logo-long.png";
 import github from "../../images/icons/github.svg";
 import twitter from "../../images/icons/twitter.svg";
@@ -9,7 +8,7 @@ import linkedin from "../../images/icons/linkedin.svg";
 
 // Globally import the fonts you want
 import "../../style/fonts/Rubik";
-import "../../style/fonts/Nunito";
+import "../../style/fonts/Metropolis";
 import "../../style/fonts/Source_Code_Pro";
 
 export const Wrapper = styled.footer`

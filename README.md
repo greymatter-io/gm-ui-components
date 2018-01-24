@@ -14,7 +14,11 @@
          alt="styled with prettier">
   </a>
   <a href="https://www.styled-components.com/" target="_blank"><img src="https://img.shields.io/badge/styled_with-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357" alt="styled with styled-components"></a>
+  <a href="https://circleci.com/gh/DecipherNow/gm-ui-components/tree/master" target="_blank"><img src="https://circleci.com/gh/DecipherNow/gm-ui-components/tree/master.svg?style=shield" alt="tested on CircleCI"></a>
+  <a href="https://codeclimate.com/github/DecipherNow/gm-ui-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/878bee2571c9dca75eef/maintainability" /></a>
+  <a href="https://codeclimate.com/github/DecipherNow/gm-ui-components/test_coverage"><img src="https://api.codeclimate.com/v1/badges/878bee2571c9dca75eef/test_coverage" /></a>
   <a href="https://opensource.org/licenses/mit-license.php" target="_blank"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" alt="licensed under MIT"></a>
+  <a href="https://david-dm.org/deciphernow/gm-ui-components" target="_blank"><img src="https://david-dm.org/deciphernow/gm-ui-components.svg" alt="dependency vulnerabilities tracked by DavidDM"></a>
 </p>
 
 <p align="center">

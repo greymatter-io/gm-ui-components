@@ -54,5 +54,6 @@ export default function BreadcrumbItem({ item, expand }) {
 }
 
 BreadcrumbItem.propTypes = {
+  expand: PropTypes.func.isRequired,
   item: PropTypes.string.isRequired
 };

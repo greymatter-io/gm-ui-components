@@ -1,18 +1,15 @@
 import React from "react";
-import styled from "styled-components";
 import renderer from "react-test-renderer";
 import Footer from "./Footer";
-import { Wrapper, LongLogo, Copyright, Social } from "./Footer";
-import { FONT_GROUP_MAIN_TEXT } from "../../style/fonts/fontVariables";
+import { LongLogo, Social } from "./Footer";
 import "jest-styled-components";
 
-let FooterTree, Logo, SocialIcon, CopyrightLink;
+let FooterTree, Logo, SocialIcon;
 
 beforeAll(() => {
   FooterTree = renderer.create(<Footer />).toJSON();
   Logo = renderer.create(<LongLogo />).toJSON();
   SocialIcon = renderer.create(<Social />).toJSON();
-  CopyrightLink = renderer.create(<Copyright />).toJSON();
 });
 
 describe("<Footer> Snapshot", () => {

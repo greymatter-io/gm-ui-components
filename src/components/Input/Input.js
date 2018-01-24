@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import { COLOR_BRAND_PRIMARY } from "../../style/colorVariables";
-import { transparentize, lighten } from "polished";
+import { COLOR_BRAND_PRIMARY } from "../../style/styleVariables";
+import { transparentize } from "polished";
 
 const Input = styled.input.attrs({
   type: "text",

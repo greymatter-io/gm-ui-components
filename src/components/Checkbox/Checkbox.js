@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
-import { COLOR_BRAND_PRIMARY } from "../../style/colorVariables";
+import { COLOR_BRAND_PRIMARY } from "../../style/styleVariables";
 
 const Box = styled.input.attrs({
   type: "checkbox"
@@ -46,9 +46,9 @@ const Checkbox = ({ label, ...props }) => {
 };
 
 Checkbox.propTypes = {
+  defaultChecked: PropTypes.bool,
   label: PropTypes.string,
-  onChange: PropTypes.func,
-  defaultChecked: PropTypes.bool
+  onChange: PropTypes.func
 };
 
 export default Checkbox;

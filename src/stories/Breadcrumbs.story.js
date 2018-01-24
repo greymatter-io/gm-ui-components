@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, array, number } from "@storybook/addon-knobs";
-import { Breadcrumbs, BreadcrumbItem } from "../components";
+import { Breadcrumbs } from "../components";
 import { withInfo } from "@storybook/addon-info";
 
 const stories = storiesOf("Breadcrumbs", module);
