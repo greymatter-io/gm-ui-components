@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLOR_BRAND_PRIMARY } from "../../style/colorVariables";
+import { COLOR_BRAND_PRIMARY } from "../../style/styleVariables";
 import { transparentize } from "polished";
 
 const Input = styled.input.attrs({

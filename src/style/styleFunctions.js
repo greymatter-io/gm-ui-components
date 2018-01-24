@@ -7,8 +7,10 @@ import {
   parseToHsl,
   lighten
 } from "polished";
-import { DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO } from "./colorVariables";
-import { PADDING_BASE } from "./sizeVariables";
+import {
+  DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO,
+  PADDING_BASE
+} from "./styleVariables";
 
 /**
  * Utility to generate a readable content color from the background color of an element

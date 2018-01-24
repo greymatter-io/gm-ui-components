@@ -2,7 +2,7 @@ import { mix, desaturate } from "polished";
 import {
   COLOR_BRAND_PRIMARY,
   COLOR_WHITE
-} from "../../../../../style/colorVariables";
+} from "../../../../../style/styleVariables";
 import {
   darkenColor,
   lightenColor,

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { PropTypes } from "prop-types";
 import _ from "lodash";
-import { ICON_VIEWBOX_SIZE } from "../../../../style/sizeVariables";
+import { ICON_VIEWBOX_SIZE } from "../../../../style/styleVariables";
 
 import Bars from "./components/Bars";
 import Bell from "./components/Bell";
