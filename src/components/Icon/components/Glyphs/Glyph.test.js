@@ -12,6 +12,8 @@ describe("Glyph", () => {
   });
 
   test("returns a Glyph corresponding to the name prop", () => {
+    // Force the wrapper to update in order to make assertions on dynamic import of Bell
+    wrapper.update();
     expect(wrapper.find(Bell)).toHaveLength(1);
   });
 

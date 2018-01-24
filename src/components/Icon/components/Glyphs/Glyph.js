@@ -20,9 +20,9 @@ export default class Glyph extends Component {
   state = {};
 
   componentDidMount() {
-    let { name } = this.props;
-    name = name.toLowerCase();
-    import(`./components/${filenames[name]}`)
+    const { name } = this.props;
+    const filename = filenames[name.toLowerCase()];
+    import(`./components/${filename}`)
       .then(glyph => this.setState({ glyph: glyph }))
       .catch(err =>
         console.error(`${name} could not be found in the glyph adapter`, err)
