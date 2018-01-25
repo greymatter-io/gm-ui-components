@@ -8,7 +8,7 @@ import {
   text,
   boolean,
   color
-} from "@storybook/addon-knobs";
+} from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Button from "../components/Button";
