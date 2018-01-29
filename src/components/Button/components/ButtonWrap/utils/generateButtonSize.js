@@ -19,7 +19,7 @@ function _buttonSizeStyleBlockGenerator({
   textIsUppercase = false
 }) {
   const fontSizeBase = 14;
-  const borderRadiusBase = 3;
+  const borderRadiusBase = 6;
   const contentSpacingBase = parseInt(spacingScale(0.5), 10);
   return `
     font-size: ${Math.ceil(fontSizeBase * fontSizeMultiplier)}px;
