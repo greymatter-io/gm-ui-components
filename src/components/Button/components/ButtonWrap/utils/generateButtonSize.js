@@ -25,8 +25,8 @@ function _buttonSizeStyleBlockGenerator({
     font-size: ${Math.ceil(fontSizeBase * fontSizeMultiplier)}px;
     border-radius: ${borderRadiusBase}px;
     padding: ${contentSpacingBase *
-      horizontalPaddingMultiplier}px ${contentSpacingBase *
-    verticalPaddingMultiplier}px;
+      verticalPaddingMultiplier}px ${contentSpacingBase *
+    horizontalPaddingMultiplier}px;
     ${textIsUppercase ? "text-transform: uppercase;" : ""}
   `;
 }
@@ -43,7 +43,7 @@ function generateButtonSize(size) {
     case "xs": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 0.5,
-        horizontalPaddingMultiplier: 0.25,
+        horizontalPaddingMultiplier: 1.5,
         verticalPaddingMultiplier: 1,
         textIsUppercase: true
       });
@@ -51,7 +51,7 @@ function generateButtonSize(size) {
     case "sm": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 0.75,
-        horizontalPaddingMultiplier: 0.25,
+        horizontalPaddingMultiplier: 1.5,
         verticalPaddingMultiplier: 1,
         textIsUppercase: true
       });
@@ -59,7 +59,7 @@ function generateButtonSize(size) {
     case "lg": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1.25,
-        horizontalPaddingMultiplier: 0.5,
+        horizontalPaddingMultiplier: 3,
         verticalPaddingMultiplier: 1,
         textIsUppercase: false
       });
@@ -67,7 +67,7 @@ function generateButtonSize(size) {
     case "xl": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1.5,
-        horizontalPaddingMultiplier: 0.5,
+        horizontalPaddingMultiplier: 3,
         verticalPaddingMultiplier: 1,
         textIsUppercase: false
       });
@@ -76,7 +76,7 @@ function generateButtonSize(size) {
     case "normal": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1,
-        horizontalPaddingMultiplier: 0.35,
+        horizontalPaddingMultiplier: 2,
         verticalPaddingMultiplier: 1,
         textIsUppercase: false
       });
