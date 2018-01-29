@@ -1,4 +1,4 @@
-import "./Footer.story.js";
+import "./AppFooter.story.js";
 import "./Breadcrumbs.story.js";
 import "./Button.story.js";
 import "./Input.story.js";

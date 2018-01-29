@@ -1,26 +1,26 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Footer from "./Footer";
-import { LongLogo, Social } from "./Footer";
+import AppFooter from "./AppFooter";
+import { LongLogo, Social } from "./AppFooter";
 import "jest-styled-components";
 
-let FooterTree, Logo, SocialIcon;
+let AppFooterTree, Logo, SocialIcon;
 
 beforeAll(() => {
-  FooterTree = renderer.create(<Footer />).toJSON();
+  AppFooterTree = renderer.create(<AppFooter />).toJSON();
   Logo = renderer.create(<LongLogo />).toJSON();
   SocialIcon = renderer.create(<Social />).toJSON();
 });
 
-describe("<Footer> Snapshot", () => {
+describe("<AppFooter> Snapshot", () => {
   test("renders correctly", () => {
-    expect(FooterTree).toMatchSnapshot();
+    expect(AppFooterTree).toMatchSnapshot();
   });
 });
 
 const hover = { modifier: ":hover" };
 
-describe("<Footer> elements", () => {
+describe("<AppFooter> elements", () => {
   test("<Logo> has rule to transition to color on hover", () => {
     expect(Logo).toHaveStyleRule("opacity", "1", hover);
     expect(Logo).toHaveStyleRule("transition", "all 0.2s ease", hover);

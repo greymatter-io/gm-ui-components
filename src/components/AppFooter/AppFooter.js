@@ -80,7 +80,7 @@ export const Social = styled.img`
  * Stateless functional React component that renders company branding and social media footer content
  * @returns JSX.Element
  */
-export default function Footer() {
+export default function AppFooter() {
   return (
     <Wrapper>
       <LongLogo

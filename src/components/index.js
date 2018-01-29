@@ -1,6 +1,6 @@
 import { injectGlobal } from "styled-components";
 
-import { Footer } from "./Footer";
+import { AppFooter } from "./AppFooter";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import Button from "./Button";
 import { Checkbox } from "./Checkbox";
@@ -28,7 +28,7 @@ body {
 
 export {
   Checkbox,
-  Footer,
+  AppFooter,
   Icon,
   Input,
   Button,
