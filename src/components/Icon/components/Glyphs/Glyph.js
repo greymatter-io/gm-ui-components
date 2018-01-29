@@ -20,14 +20,21 @@ export default class Glyph extends Component {
   state = {};
 
   componentDidMount() {
-    const { name } = this.props;
+    this.importGlyph(this.props.name);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.importGlyph(nextProps.name);
+  }
+
+  importGlyph = name => {
     const filename = filenames[name.toLowerCase()];
     import(`./components/${filename}`)
       .then(glyph => this.setState({ glyph: glyph }))
       .catch(err =>
         console.error(`${name} could not be found in the glyph adapter`, err)
       );
-  }
+  };
 
   render() {
     let { name, ratio, glyphColor } = this.props;
