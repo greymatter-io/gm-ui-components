@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: "./src/components/index.js",
@@ -63,5 +64,6 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [new UglifyJsPlugin()]
 };
