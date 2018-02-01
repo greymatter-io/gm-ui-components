@@ -24,6 +24,7 @@
     "build": "webpack -p",
     "build-storybook": "build-storybook -s public",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "deploy-storybook": "storybook-to-ghpages",
     "junit-merge": "junit-merge",
     "lint-js": "node ./node_modules/eslint/bin/eslint 'src'",
@@ -36,6 +37,8 @@
     "update-deps": "npm-check . --skip-unused -u"
   },
   "devDependencies": {
+    "@commitlint/cli": "^6.0.5",
+    "@commitlint/config-conventional": "^6.0.4",
     "@storybook/addon-actions": "^3.3.10",
     "@storybook/addon-info": "^3.3.10",
     "@storybook/addon-knobs": "^3.3.10",
@@ -54,6 +57,7 @@
     "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.5.1",
+    "husky": "^0.14.3",
     "jest-junit": "^3.4.1",
     "jest-styled-components": "^4.11.0-0",
     "junit-merge": "^1.2.3",
@@ -72,6 +76,9 @@
     "tabWidth": 2,
     "trailingComma": "none",
     "useTabs": false
+  },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"]
   },
   "jest": {
     "collectCoverageFrom": ["src/components/**/*.{js,jsx}"],
