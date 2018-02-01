@@ -2,10 +2,10 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 
-import { Footer } from "../components";
+import { AppFooter } from "../components";
 
-const stories = storiesOf("Footer", module);
+const stories = storiesOf("AppFooter", module);
 
 stories.add("Full Width", () => {
-  return <Footer />;
+  return <AppFooter />;
 });
