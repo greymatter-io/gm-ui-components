@@ -20,8 +20,8 @@ Icon.propTypes = {
   borderStyle: PropTypes.string,
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.element,
-  glyph: PropTypes.string,
   glyphColor: PropTypes.string,
+  glyphName: PropTypes.string,
   glyphSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   title: PropTypes.string
 };
@@ -55,6 +55,7 @@ export default function Icon({
   borderStyle,
   borderWidth,
   children,
+  glyphName,
   glyphColor,
   glyphSizeRatio,
   title,
@@ -84,7 +85,8 @@ export default function Icon({
           ratio={backgroundSizeRatio}
         />
       )}
-      <StyledG ratio={glyphSizeRatio} fill={glyphColor}>
+      <StyledG title={glyphName} ratio={glyphSizeRatio} fill={glyphColor}>
+        <title>{title ? title : glyphName}</title>
         {/* render a custom svg as children or a built in glyph */}
         {children}
       </StyledG>

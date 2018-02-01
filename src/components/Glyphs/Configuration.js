@@ -3,7 +3,7 @@ import Icon from "../Icon";
 
 export default function Configuration(props) {
   return (
-    <Icon {...props}>
+    <Icon {...props} glyphName="Configuration">
       <g>
         <g id="control" className="primary">
           <path
