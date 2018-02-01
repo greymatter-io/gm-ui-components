@@ -5,7 +5,6 @@ import IconBackground from "./components/IconBackground";
 import IconBorder from "./components/IconBorder";
 import StyledG from "./components/StyledG";
 import StyledSVG from "./components/StyledSVG";
-// import Glyph from "./components/Glyphs";
 
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
@@ -56,7 +55,6 @@ export default function Icon({
   borderStyle,
   borderWidth,
   children,
-  glyph,
   glyphColor,
   glyphSizeRatio,
   title,
@@ -86,8 +84,7 @@ export default function Icon({
           ratio={backgroundSizeRatio}
         />
       )}
-      <StyledG title={glyph} ratio={glyphSizeRatio} fill={glyphColor}>
-        <title>{title ? title : glyph}</title>
+      <StyledG ratio={glyphSizeRatio} fill={glyphColor}>
         {/* render a custom svg as children or a built in glyph */}
         {children}
       </StyledG>
