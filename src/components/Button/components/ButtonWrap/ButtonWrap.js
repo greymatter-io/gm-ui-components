@@ -27,9 +27,11 @@ function generateButtonTypeColor(type) {
       return COLOR_WARNING;
     case "polling":
       return COLOR_CONTENT_BACKGROUND;
-    default:
     case "primary":
       return COLOR_BRAND_PRIMARY;
+    default:
+    case "default":
+      return COLOR_CONTENT_BACKGROUND;
   }
 }
 
@@ -72,34 +74,38 @@ const ButtonWrap = styled.button`
   }
 
   ${props => `
-    ${props.type
-      ? generateButtonStyle({
-          buttonOutlineStyle: camelCaseConverter(props.outline),
-          buttonBackgroundColorBase: generateButtonTypeColor(props.type),
-          buttonBorderColorBase: generateButtonTypeColor(props.type),
-          buttonLabelColorBase: contrastColor(
-            generateButtonTypeColor(props.type),
-            1
-          ),
-          buttonActiveStatus: props.active
-        }) // has color (also code in props.outline and props.active)
-      : generateButtonStyle({
-          buttonOutlineStyle: camelCaseConverter(props.outline),
-          buttonActiveStatus: props.active
-        }) // no color
-  }
-    ${props.size
-      ? generateButtonSize(props.size) // has size
-      : generateButtonSize() // Icons // no size
-  } 
-    ${props.iconSize
-      ? generateButtonIconRatio(props.iconSize) // has iconSize
-      : generateButtonIconRatio() // Orientation // no iconSize
-  } 
-    ${props.orientation
-      ? generateButtonOrientation(props.orientation) // has orientation
-      : generateButtonOrientation() // no orientation default horizontal
-  } 
+    ${
+      props.type
+        ? generateButtonStyle({
+            buttonOutlineStyle: camelCaseConverter(props.outline),
+            buttonBackgroundColorBase: generateButtonTypeColor(props.type),
+            buttonBorderColorBase: generateButtonTypeColor(props.type),
+            buttonLabelColorBase: contrastColor(
+              generateButtonTypeColor(props.type),
+              1
+            ),
+            buttonActiveStatus: props.active
+          }) // has color (also code in props.outline and props.active)
+        : generateButtonStyle({
+            buttonOutlineStyle: camelCaseConverter(props.outline),
+            buttonActiveStatus: props.active
+          }) // no color
+    }
+    ${
+      props.size
+        ? generateButtonSize(props.size) // has size
+        : generateButtonSize() // Icons // no size
+    } 
+    ${
+      props.iconSize
+        ? generateButtonIconRatio(props.iconSize) // has iconSize
+        : generateButtonIconRatio() // Orientation // no iconSize
+    } 
+    ${
+      props.orientation
+        ? generateButtonOrientation(props.orientation) // has orientation
+        : generateButtonOrientation() // no orientation default horizontal
+    } 
   `};
 `;
 
