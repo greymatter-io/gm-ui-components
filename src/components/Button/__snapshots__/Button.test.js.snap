@@ -26,7 +26,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat kLinXN",
+      "class": "sc-htpNat cODCVn",
       "orientation": "vertical",
       "title": "vertical",
     },
@@ -98,7 +98,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat dGVkhH",
+      "class": "sc-htpNat cYvHvx",
       "orientation": "horizontal",
       "title": "horizontal",
     },
@@ -170,7 +170,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat jXostj",
+      "class": "sc-htpNat doZzVP",
       "orientation": "horizontal",
       "title": "raised",
     },
@@ -242,7 +242,7 @@ exports[`Button Snapshots matches outline snapshots 2`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat gByJOc",
+      "class": "sc-htpNat edVTZY",
       "orientation": "horizontal",
       "title": "outline",
     },
@@ -314,7 +314,7 @@ exports[`Button Snapshots matches outline snapshots 3`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat srxhz",
+      "class": "sc-htpNat cMqQve",
       "orientation": "horizontal",
       "title": "shadow",
     },
@@ -386,7 +386,7 @@ exports[`Button Snapshots matches outline snapshots 4`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat iUjtoF",
+      "class": "sc-htpNat bFksyz",
       "orientation": "horizontal",
       "title": "none",
     },
@@ -458,7 +458,7 @@ exports[`Button Snapshots matches outline snapshots 5`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat dGVkhH",
+      "class": "sc-htpNat cYvHvx",
       "orientation": "horizontal",
       "title": "raised-outline",
     },
@@ -543,7 +543,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat dGVkhH",
+      "class": "sc-htpNat cYvHvx",
       "orientation": "horizontal",
       "title": "normal",
     },
@@ -615,7 +615,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat kKeqoW",
+      "class": "sc-htpNat fwBypy",
       "orientation": "horizontal",
       "title": "xs",
     },
@@ -687,7 +687,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat dfyISb",
+      "class": "sc-htpNat fZiOZo",
       "orientation": "horizontal",
       "title": "sm",
     },
@@ -759,7 +759,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat HNtYC",
+      "class": "sc-htpNat jDOlCk",
       "orientation": "horizontal",
       "title": "lg",
     },
@@ -831,7 +831,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat gpLBnc",
+      "class": "sc-htpNat edqcrN",
       "orientation": "horizontal",
       "title": "xl",
     },
@@ -903,7 +903,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat jhyRZU",
+      "class": "sc-htpNat fSgbrv",
       "orientation": "horizontal",
       "title": "danger",
       "type": "danger",
@@ -978,7 +978,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat bpSlNj",
+      "class": "sc-htpNat kVXTwT",
       "orientation": "horizontal",
       "title": "info",
       "type": "info",
@@ -1053,7 +1053,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat kmDDKK",
+      "class": "sc-htpNat cNxYjl",
       "orientation": "horizontal",
       "title": "primary",
       "type": "primary",
@@ -1128,7 +1128,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat gNbDox",
+      "class": "sc-htpNat gxgPeQ",
       "orientation": "horizontal",
       "title": "warning",
       "type": "warning",
@@ -1203,7 +1203,7 @@ exports[`Button Snapshots matches type snapshots 5`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat dGVkhH",
+      "class": "sc-htpNat cYvHvx",
       "orientation": "horizontal",
       "title": "polling",
       "type": "polling",
