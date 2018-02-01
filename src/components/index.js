@@ -22,10 +22,11 @@ injectGlobal`
   font-family: ${FONT_GROUP_MAIN_TEXT};
 }
 body {
-    font-family: ${FONT_GROUP_MAIN_TEXT};
+  font-family: ${FONT_GROUP_MAIN_TEXT};
 }
 `;
 
+export * from "./Glyphs";
 export {
   Checkbox,
   AppFooter,

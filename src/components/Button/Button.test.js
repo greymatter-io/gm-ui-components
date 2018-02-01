@@ -126,11 +126,10 @@ describe("Button", () => {
       });
     });
 
-    test("passes correct props to Glyph", () => {
-      expect(wrapper.find("Glyph").props()).toMatchObject({
+    test("passes correct props to Bell glyph", () => {
+      expect(wrapper.find("Bell").props()).toMatchObject({
         glyphColor: "#fff",
-        name: "Bell",
-        ratio: 1
+        glyphSizeRatio: 1
       });
     });
 

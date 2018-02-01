@@ -5,7 +5,6 @@ import IconBackground from "./components/IconBackground";
 import IconBorder from "./components/IconBorder";
 import StyledG from "./components/StyledG";
 import StyledSVG from "./components/StyledSVG";
-import Glyph from "./components/Glyphs";
 
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
@@ -21,8 +20,8 @@ Icon.propTypes = {
   borderStyle: PropTypes.string,
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.element,
-  glyph: PropTypes.string,
   glyphColor: PropTypes.string,
+  glyphName: PropTypes.string,
   glyphSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   title: PropTypes.string
 };
@@ -56,16 +55,18 @@ export default function Icon({
   borderStyle,
   borderWidth,
   children,
-  glyph,
+  glyphName,
   glyphColor,
   glyphSizeRatio,
-  title
+  title,
+  ...props
 }) {
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
       iconRatio={backgroundSizeRatio}
       focusable="false"
+      {...props}
     >
       {backgroundStyle && (
         <IconBackground
@@ -84,14 +85,10 @@ export default function Icon({
           ratio={backgroundSizeRatio}
         />
       )}
-      <StyledG title={glyph} ratio={glyphSizeRatio} fill={glyphColor}>
-        <title>{title ? title : glyph}</title>
+      <StyledG title={glyphName} ratio={glyphSizeRatio} fill={glyphColor}>
+        <title>{title ? title : glyphName}</title>
         {/* render a custom svg as children or a built in glyph */}
-        {children ? (
-          children
-        ) : (
-          <Glyph name={glyph} ratio={glyphSizeRatio} glyphColor={glyphColor} />
-        )}
+        {children}
       </StyledG>
     </StyledSVG>
   );
