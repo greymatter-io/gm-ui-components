@@ -2,6 +2,7 @@ import { PropTypes } from "prop-types";
 import React from "react";
 
 import Icon from "../Icon";
+import * as Glyphs from "../Glyphs";
 
 import ButtonWrap from "./components/ButtonWrap";
 import ButtonLabelPrefix from "./components/ButtonLabelPrefix";
@@ -74,6 +75,7 @@ export default function Button({
   type,
   labelStyle
 }) {
+  const Glyph = Glyphs[glyph];
   return (
     <ButtonWrap
       active={active}
@@ -88,13 +90,7 @@ export default function Button({
       style={style}
       iconSize={iconSize}
     >
-      {glyph && (
-        <Icon
-          glyphColor={glyphColor}
-          glyph={glyph}
-          glyphSizeRatio={glyphRatio}
-        />
-      )}
+      {Glyph && <Glyph glyphColor={glyphColor} glyphSizeRatio={glyphRatio} />}
       {children}
       <span style={labelStyle}>
         {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
