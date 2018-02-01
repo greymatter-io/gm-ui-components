@@ -4,7 +4,7 @@ import { withKnobs, select, number, color } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Icon from "../components/Icon";
-import { Bell } from "../components/Glyphs";
+import * as Glyphs from "../components/Glyphs";
 
 const glyphNames = [
   "Bars",
@@ -80,8 +80,9 @@ storiesOf("Icons", module)
   .add(
     "default",
     withInfo(
-      "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)"
+      "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
     )(() => {
+      const Bell = Glyphs.Bell;
       return (
         <Bell
           backgroundStyle={select(
@@ -105,7 +106,7 @@ storiesOf("Icons", module)
   .add(
     "custom glyph",
     withInfo(
-      "An Icon component that renders a custom glyph. Simply wrap your custom svg with <Icon>."
+      "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
     )(() => {
       return (
         <Icon
@@ -127,25 +128,23 @@ storiesOf("Icons", module)
       );
     })
   )
-  .add("gallery", () => {
-    return (
-      <div>
-        {glyphNames.map(glyph => {
-          return (
-            <div key={glyph}>
-              <span>{glyph}: </span>
-              <Icon
-                glyph={glyph}
-                backgroundStyle="BackgroundSquareRounded"
-                backgroundColor="#eee"
-                backgroundOpacity={1}
-                backgroundSizeRatio={1}
-                glyphColor="#000"
-                glyphRatio={1}
-              />
-            </div>
-          );
-        })}
-      </div>
-    );
-  });
+  .add(
+    "gallery",
+    withInfo(
+      "A gallery of all native Glyphs. Import the desired Glyph by name and pass desired props as documented in Icons/default"
+    )(() => {
+      return (
+        <div>
+          {glyphNames.map(glyph => {
+            let Glyph = Glyphs[glyph];
+            return (
+              <div key={glyph}>
+                <span>{glyph}: </span>
+                <Glyph />
+              </div>
+            );
+          })}
+        </div>
+      );
+    })
+  );

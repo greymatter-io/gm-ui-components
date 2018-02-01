@@ -46,11 +46,11 @@ import Threads from "./Threads";
 import Timer from "./Timer";
 import Twitter from "./Twitter";
 import ViewCollapse from "./ViewCollapse";
-import HTTPGet from "./HttpGet";
-import HTTPPut from "./HttpPut";
-import HTTPPost from "./HttpPost";
-import HTTPPatch from "./HttpPatch";
-import HTTPDelete from "./HttpDelete";
+import HttpGet from "./HttpGet";
+import HttpPut from "./HttpPut";
+import HttpPost from "./HttpPost";
+import HttpPatch from "./HttpPatch";
+import HttpDelete from "./HttpDelete";
 
 export {
   Bars,
@@ -60,7 +60,7 @@ export {
   Close,
   Cog,
   Configuration,
-  HTTPDelete,
+  HttpDelete,
   Docs,
   EKG,
   EditGraph,
@@ -70,7 +70,7 @@ export {
   Fabric,
   Finagle,
   Functions,
-  HTTPGet,
+  HttpGet,
   GRPC,
   GitHub,
   JVM as Go,
@@ -85,9 +85,9 @@ export {
   Negation,
   NoKey,
   NoMetrics,
-  HTTPPatch,
-  HTTPPost,
-  HTTPPut,
+  HttpPatch,
+  HttpPost,
+  HttpPut,
   Pause,
   Person,
   Play,
