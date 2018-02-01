@@ -4,6 +4,7 @@ import { withKnobs, select, number, color } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Icon from "../components/Icon";
+import { Bell } from "../components/Glyphs";
 
 const glyphNames = [
   "Bars",
@@ -82,7 +83,7 @@ storiesOf("Icons", module)
       "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)"
     )(() => {
       return (
-        <Icon
+        <Bell
           backgroundStyle={select(
             "backgroundStyle",
             iconBackgroundNames,
@@ -97,7 +98,6 @@ storiesOf("Icons", module)
           borderWidth={number("borderWidth", 0.1)}
           glyphColor={color("glyphColor", "#fff")}
           glyphSizeRatio={number("glyphSizeRatio", 1)}
-          glyph={select("glyph", glyphNames, "Bell")}
         />
       );
     })
