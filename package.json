@@ -1,6 +1,6 @@
 {
   "name": "gm-ui-components",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "description":
     "A library of reusable UI components for the Grey Matter product suite.",
   "main": "lib/build.js",
@@ -29,6 +29,7 @@
     "junit-merge": "junit-merge",
     "lint-js": "node ./node_modules/eslint/bin/eslint 'src'",
     "preversion": "npm test",
+    "version": "git add -A",
     "prepublishonly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "webpack -w",

@@ -1,9 +1,23 @@
+<a name="0.4.1"></a>
+
+# 0.4.1 (2018-02-09)
+
+### Fixes
+
+* refactored Glyph export ([d5578e8](https://github.com/DecipherNow/gm-ui-components/commit/d5578e8))
+* update Button styles ([5e14c01](https://github.com/DecipherNow/gm-ui-components/commit/5e14c01)))
+
+### Features
+
+* added tooling for linting commits ([b92c35e](https://github.com/DecipherNow/gm-ui-components/commit/b92c35e))
+
 <a name="0.4.0"></a>
+
 # 0.4.0 (2018-01-25)
 
 ### Fixes
 
-* updated dependencies  ([4d5710f](https://github.com/DecipherNow/gm-ui-components/commit/4d5710f))
+* updated dependencies ([4d5710f](https://github.com/DecipherNow/gm-ui-components/commit/4d5710f))
 * refactored style variables ([45da297](https://github.com/DecipherNow/gm-ui-components/commit/45da297))
 
 ### Features
@@ -20,26 +34,26 @@
 * created licence ([#37](https://github.com/DecipherNow/gm-ui-components/issues/37)) ([4db7d6b](https://github.com/DecipherNow/gm-ui-components/commit/4db7d6b))
 * added Metropolis font ([18380a4](https://github.com/DecipherNow/gm-ui-components/commit/18380a4))
 
-
-
-
 <a name="0.3.0"></a>
+
 # 0.3.0 (2017-10-10)
 
 ### Features
-* added Checkbox  ([6876f3e](https://github.com/DecipherNow/gm-ui-components/commit/6876f3e))
+
+* added Checkbox ([6876f3e](https://github.com/DecipherNow/gm-ui-components/commit/6876f3e))
 * added storybook options ([4284e86](https://github.com/DecipherNow/gm-ui-components/commit/4284e86))
 
-
-
 <a name="0.2.0"></a>
+
 # 0.2.0 (2017-10-05)
 
 ### Fixes
+
 * refactored utils to use `polished` ([50d0dd2](https://github.com/DecipherNow/gm-ui-components/commit/50d0dd2))
 * updated config to allow applications to use UMD bundle ([fe2b831](https://github.com/DecipherNow/gm-ui-components/commit/fe2b831))
 
 ### Features
+
 * added storybook ([eae7441](https://github.com/DecipherNow/gm-ui-components/commit/eae7441))
 * added Footer ([4c428f4](https://github.com/DecipherNow/gm-ui-components/commit/4c428f4))
 * implemented storybook knobs ([86c6be0](https://github.com/DecipherNow/gm-ui-components/commit/86c6be0))
@@ -47,11 +61,9 @@
 * implemented storybook withInfo ([ddf0ed1](https://github.com/DecipherNow/gm-ui-components/commit/ddf0ed1))
 * added Input ([b22f649](https://github.com/DecipherNow/gm-ui-components/commit/b22f649))
 
-
-
 <a name="0.1.0"></a>
-# 0.1.0 (2017-09-26)
 
+# 0.1.0 (2017-09-26)
 
 ### Features
 
