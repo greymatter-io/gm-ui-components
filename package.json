@@ -29,6 +29,7 @@
     "junit-merge": "junit-merge",
     "lint-js": "node ./node_modules/eslint/bin/eslint 'src'",
     "preversion": "npm test",
+    "version": "git add -A",
     "prepublishonly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "webpack -w",
