@@ -26,7 +26,6 @@ body {
 }
 `;
 
-export * from "./Glyphs";
 export {
   Checkbox,
   AppFooter,
@@ -37,3 +36,5 @@ export {
   BreadcrumbItem,
   Tooltip
 };
+
+export * from "./Glyphs";
