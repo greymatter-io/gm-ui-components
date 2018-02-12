@@ -1,10 +1,18 @@
+<a name="0.4.3"></a>
+
+# 0.4.3 (2018-02-12)
+
+### Fixes
+
+* patch fix for Icon import
+
 <a name="0.4.2"></a>
 
 # 0.4.2 (2018-02-12)
 
 ### Fixes
 
-* patch fix for glyph export
+* patch fix for glyph
 
 <a name="0.4.1"></a>
 
