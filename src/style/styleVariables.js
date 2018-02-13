@@ -20,11 +20,8 @@ export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
 /*/ Theme Configuration /*/
 export const COLOR_SIDEBAR_BACKGROUND = COLOR_BLACK;
 export const COLOR_CONTENT_BACKGROUND = COLOR_WHITE;
-
 export const BORDER_RADIUS_BASE = "3px";
-
 export const ICON_VIEWBOX_SIZE = 24;
-
 export const PADDING_BASE = 8;
 
 // z-index mappings
@@ -47,6 +44,7 @@ export const FONT_STACK_CODE = FONT_GROUP_CODE;
 
 export const LINE_HEIGHT_BASE = 1.4;
 export const FONT_WEIGHT_BASE = 400;
+export const FONT_WEIGHT_CONTROLS = 600;
 export const FONT_SIZE_HERO = "32px";
 export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
