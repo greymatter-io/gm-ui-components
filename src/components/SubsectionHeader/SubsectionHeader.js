@@ -6,15 +6,16 @@ import { FONT_SIZE_BASE, FONT_WEIGHT_HEADING, BORDER_RADIUS_BASE, PADDING_BASE }
 const SubsectionHeaderWrap = styled.header`
   display: flex;
   margin: 0;
-  margin-top: ${parseInt(PADDING_BASE, 10) * 2}px;
+  margin-top: ${parseInt(PADDING_BASE, 10) * 4}px;
 `;
 
-const SubsectionHeaderTitle = styled.h1`
+const SubsectionHeaderTitle = styled.h3`
   font-weight: ${FONT_WEIGHT_HEADING};
   font-size: ${FONT_SIZE_BASE};
-  background: rgba(0,0,0,.1);
+  background: rgba(0,0,0,.075);
   border-radius: ${BORDER_RADIUS_BASE};
   padding: .15em .5em;
+  margin: 0;
   flex: 0 0 auto;
 `;
 
