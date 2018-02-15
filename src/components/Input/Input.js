@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { COLOR_BRAND_PRIMARY, BORDER_RADIUS_BASE, COLOR_BLACK, FONT_SIZE_BASE, COLOR_HIGHLIGHT, FONT_SIZE_XS, FONT_GROUP_MAIN_TEXT, COLOR_DANGER, COLOR_SUCCESS, COLOR_GREY, COLOR_INFO } from "../../style/styleVariables";
+import { COLOR_BLACK, FONT_SIZE_BASE, COLOR_HIGHLIGHT, FONT_SIZE_XS, FONT_GROUP_MAIN_TEXT } from "../../style/styleVariables";
 import { spacingScale } from "../../style/styleFunctions";
 import InputGroup from "./components/InputGroup";
 import InputLabel from "./components/InputLabel";
@@ -71,19 +71,35 @@ export const InputStyle = (`
 
 const InputElement = styled.input.attrs({
   type: "text",
-  name: props => props.fieldName,
+  name: props => props.name,
+  autofocus: props => props.autofocus,
+  maxLength: props => props.maxlength,
+  readonly: props => props.readonly,
+  required: props => props.required,
+  value: props => props.value,
   placeholder: props => props.placeholder || ""
 }) `
   ${InputStyle};
 `;
 
 
-export default function Input({ placeholder, fieldName, label, hintText, required, stretch }) {
+export default function Input({
+  placeholder,
+  value,
+  name,
+  label,
+  hint,
+  required,
+  stretch,
+  readonly,
+  maxlength,
+  autofocus
+}) {
   return (
     <InputGroup stretch={stretch}>
-      <InputLabel fieldName={fieldName} placeholder={placeholder}>{label}</InputLabel>
-      <InputElement placeholder={label} fieldName={fieldName} required={required} />
-      <InputHint hintText={hintText} />
+      <InputLabel name={name} placeholder={placeholder}>{label}</InputLabel>
+      <InputElement placeholder={placeholder || label} readonly={readonly} name={name} required={required} autofocus={autofocus} value={value} />
+      <InputHint hint={hint} />
     </InputGroup>
   );
 };

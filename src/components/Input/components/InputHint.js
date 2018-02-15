@@ -13,10 +13,10 @@ const InputHintElement = styled.small.attrs({
   max-width: 100%;
 `;
 
-export default function InputHint({ hintText, children }) {
+export default function InputHint({ hint, children }) {
   return (
     <InputHintElement>
-      {hintText}
+      {hint}
       {children}
     </InputHintElement>
   )

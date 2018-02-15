@@ -34,43 +34,44 @@ stories.add("All Types", () => {
     <div style={{ width: "50vw" }}>
       <TextInput
         name="text-input"
-        stretch={boolean("stretch", false)}
+        stretch={boolean("Fields stretch", false)}
         label="Text"
         placeholder={text("Placeholder", "")}
-        hintText={text("")}
+        hint={text("Hint", "")}
+        required={boolean("Fields are required", false)}
         autofocus={true}
       />
       <NumberInput
         name="number-input"
-        stretch={boolean("stretch", false)}
+        stretch={boolean("Fields stretch", false)}
         label="Number"
         placeholder={text("Placeholder", "")}
-        hintText={text("")}
-        required={boolean("required?", false)}
+        hint={text("Hint", "")}
+        required={boolean("Fields are required", false)}
       />
       <PasswordInput
         name="password-input"
-        stretch={boolean("stretch", false)}
+        stretch={boolean("Fields stretch", false)}
         label="Password"
         placeholder={text("Placeholder", "")}
-        hintText={text("")}
-        required={boolean("required?", false)}
+        hint={text("Hint", "")}
+        required={boolean("Fields are required", false)}
       />
       <EmailInput
         name="email-input"
-        stretch={boolean("stretch", false)}
+        stretch={boolean("Fields stretch", false)}
         label="Email"
         placeholder={text("Placeholder", "")}
-        hintText={text("")}
-        required={boolean("required?", false)}
+        hint={text("Hint", "")}
+        required={boolean("Fields are required", false)}
       />
       <Textarea
         name="email-input"
-        stretch={boolean("stretch", false)}
+        stretch={boolean("Fields stretch", false)}
         label="Textarea"
         placeholder={text("Placeholder", "")}
-        hintText={text("")}
-        required={boolean("required?", false)}
+        hint={text("Hint", "")}
+        required={boolean("Fields are required", false)}
       />
     </div>
   );

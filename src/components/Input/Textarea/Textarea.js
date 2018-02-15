@@ -27,7 +27,7 @@ export default function Textarea({
   value,
   name,
   label,
-  hintText,
+  hint,
   required,
   stretch,
   readonly,
@@ -40,8 +40,8 @@ export default function Textarea({
   return (
     <InputGroup stretch={stretch}>
       <InputLabel name={name} placeholder={placeholder}>{label}</InputLabel>
-      <InputElement placeholder={label} readonly={readonly} name={name} required={required} autofocus={autofocus} value={value} />
-      <InputHint hintText={hintText} />
+      <InputElement placeholder={placeholder || label} readonly={readonly} name={name} required={required} autofocus={autofocus} value={value} />
+      <InputHint hint={hint} />
     </InputGroup>
   );
 };
