@@ -1,41 +1,89 @@
+import React from "react";
 import styled from "styled-components";
-import { COLOR_BRAND_PRIMARY } from "../../style/styleVariables";
-import { transparentize } from "polished";
+import { COLOR_BRAND_PRIMARY, BORDER_RADIUS_BASE, COLOR_BLACK, FONT_SIZE_BASE, COLOR_HIGHLIGHT, FONT_SIZE_XS, FONT_GROUP_MAIN_TEXT, COLOR_DANGER, COLOR_SUCCESS, COLOR_GREY, COLOR_INFO } from "../../style/styleVariables";
+import { spacingScale } from "../../style/styleFunctions";
+import InputGroup from "./components/InputGroup";
+import InputLabel from "./components/InputLabel";
+import InputHint from "./components/InputHint";
 
-const Input = styled.input.attrs({
-  type: "text",
-  placeholder: props => props.placeholder,
-  maxLength: props => props.maxlength
-})`
+export const InputStyle = (`
+  font-family: ${FONT_GROUP_MAIN_TEXT};
+  font-size: ${FONT_SIZE_BASE};
+  padding: ${spacingScale(1.25)} ${spacingScale(1.25)} ${spacingScale(.75)};
   user-select: auto;
-  text-align: left;
-  font-size: 14px;
-  color: black;
-  padding: 8px;
-  font-weight: 500;
-  line-height: 2;
   box-sizing: border-box;
-  width: ${props => (props.shouldFitContainer ? "100%" : "auto")};
-  border: 1px solid #f0f0f0;
-  border-radius: 3px;
-  border-bottom-color: #cdcdcd;
-  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(0, 0, 0, 0);
+  text-align: left;
+  color: black;
+  line-height: 1.1;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 ${COLOR_BLACK};
+  transition: all .15s ease;
+  border: 0;
+  width: 100%;
+
   &::placeholder {
-    text-align: center;
+    color: ${COLOR_BLACK};
+    position: relative;
+    transition: inherit;
+    opacity: .4;
+    left: 0;
   }
+
   &:hover {
-    background-color: #fbfbfb;
+    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
   }
+
   &:focus {
+    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
     outline: none;
-    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.5),
-      0 0 0 1px ${transparentize(0.25, COLOR_BRAND_PRIMARY)},
-      0 0 0 4px ${transparentize(0.75, COLOR_BRAND_PRIMARY)};
-    &::placeholder {
-      color: transparent;
-    }
   }
+
+  &:focus::placeholder,
+  &[value]::placeholder,
+  &:not(:empty)::placeholder {
+    transform: translateY(-${spacingScale(1.5)});
+    left: 0;
+    color: ${COLOR_BLACK};
+    opacity: 1;
+    visibility: visible;
+    font-size: ${FONT_SIZE_XS};
+    letter-spacing: .03em;
+  }
+
+  &:valid {
+  }
+
+  &:invalid {
+  }
+
+  &[required] {
+  }
+
+  &[disabled] {
+  }
+
+  &[readonly] {
+  }
+
+
+`);
+
+
+const InputElement = styled.input.attrs({
+  type: "text",
+  name: props => props.fieldName,
+  placeholder: props => props.placeholder || ""
+}) `
+  ${InputStyle};
 `;
 
-export default Input;
+
+export default function Input({ placeholder, fieldName, label, hintText, required, stretch }) {
+  return (
+    <InputGroup stretch={stretch}>
+      <InputLabel fieldName={fieldName} placeholder={placeholder}>{label}</InputLabel>
+      <InputElement placeholder={label} fieldName={fieldName} required={required} />
+      <InputHint hintText={hintText} />
+    </InputGroup>
+  );
+};
