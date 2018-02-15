@@ -5,21 +5,24 @@ import InputLabel from "../components/InputLabel";
 import InputHint from "../components/InputHint";
 import { InputStyle } from "../Input";
 
-const InputElement = styled.input.attrs({
-  type: "password",
+const InputElement = styled.textarea.attrs({
   name: props => props.name,
   autofocus: props => props.autofocus,
   maxLength: props => props.maxlength,
   readonly: props => props.readonly,
   required: props => props.required,
   value: props => props.value,
+  rows: props => props.rows || 20,
+  cols: props => props.cols || null,
+  wrap: props => props.wrap || null,
   placeholder: props => props.placeholder || ""
 }) `
   ${InputStyle};
+  resize: vertical;
 `;
 
 
-export default function PasswordInput({
+export default function Textarea({
   placeholder,
   value,
   name,
@@ -28,8 +31,11 @@ export default function PasswordInput({
   required,
   stretch,
   readonly,
+  rows,
   maxlength,
   autofocus,
+  cols,
+  wrap
 }) {
   return (
     <InputGroup stretch={stretch}>

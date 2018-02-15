@@ -5,20 +5,36 @@ import InputLabel from "../components/InputLabel";
 import InputHint from "../components/InputHint";
 import { InputStyle } from "../Input";
 
-const InputNumberElement = styled.input.attrs({
+const InputElement = styled.input.attrs({
   type: "number",
-  name: props => props.fieldName,
-  placeholder: props => props.placeholder || ""
+  name: props => props.name,
+  autofocus: props => props.autofocus,
+  maxLength: props => props.maxlength,
+  readonly: props => props.readonly,
+  required: props => props.required,
+  value: props => props.value,
+  placeholder: props => props.placeholder || null
 }) `
   ${InputStyle};
 `;
 
 
-export default function NumberInput({ placeholder, fieldName, label, hintText, required, stretch }) {
+export default function NumberInput({
+  placeholder,
+  value,
+  name,
+  label,
+  hintText,
+  required,
+  stretch,
+  readonly,
+  maxlength,
+  autofocus,
+}) {
   return (
     <InputGroup stretch={stretch}>
-      <InputLabel fieldName={fieldName} placeholder={placeholder}>{label}</InputLabel>
-      <InputNumberElement placeholder={label} fieldName={fieldName} required={required} />
+      <InputLabel name={name} placeholder={placeholder}>{label}</InputLabel>
+      <InputElement placeholder={label} readonly={readonly} name={name} required={required} autofocus={autofocus} value={value} />
       <InputHint hintText={hintText} />
     </InputGroup>
   );

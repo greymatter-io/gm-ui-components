@@ -7,6 +7,7 @@ import NumberInput from "../components/Input/NumberInput";
 import TextInput from "../components/Input/TextInput";
 import PasswordInput from "../components/Input/PasswordInput";
 import EmailInput from "../components/Input/EmailInput";
+import Textarea from "../components/Input/Textarea";
 
 const stories = storiesOf("Input", module);
 
@@ -28,36 +29,48 @@ stories.add("Default", () => {
   );
 });
 
-stories.add("Number", () => {
+stories.add("All Types", () => {
   return (
     <div style={{ width: "50vw" }}>
       <TextInput
-        fieldName="text-input"
+        name="text-input"
         stretch={boolean("stretch", false)}
         label="Text"
-        placeholder={text("field Placeholder", "")}
+        placeholder={text("Placeholder", "")}
         hintText={text("")}
+        autofocus={true}
       />
       <NumberInput
-        fieldName="number-input"
+        name="number-input"
         stretch={boolean("stretch", false)}
         label="Number"
-        placeholder={text("field Placeholder", "")}
+        placeholder={text("Placeholder", "")}
         hintText={text("")}
+        required={boolean("required?", false)}
       />
       <PasswordInput
-        fieldName="password-input"
+        name="password-input"
         stretch={boolean("stretch", false)}
         label="Password"
-        placeholder={text("field Placeholder", "")}
+        placeholder={text("Placeholder", "")}
         hintText={text("")}
+        required={boolean("required?", false)}
       />
       <EmailInput
-        fieldName="email-input"
+        name="email-input"
         stretch={boolean("stretch", false)}
         label="Email"
-        placeholder={text("field Placeholder", "")}
+        placeholder={text("Placeholder", "")}
         hintText={text("")}
+        required={boolean("required?", false)}
+      />
+      <Textarea
+        name="email-input"
+        stretch={boolean("stretch", false)}
+        label="Textarea"
+        placeholder={text("Placeholder", "")}
+        hintText={text("")}
+        required={boolean("required?", false)}
       />
     </div>
   );
