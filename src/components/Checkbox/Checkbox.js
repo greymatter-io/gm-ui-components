@@ -1,37 +1,71 @@
 import React from "react";
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
-import { COLOR_BRAND_PRIMARY } from "../../style/styleVariables";
+import { decipher } from "../../style/styleVariables";
+
+const theme = decipher;
+
+const boxBorderRadius = parseInt(theme.borderRadiusNormal, 10) * .5 + "px";
 
 const Box = styled.input.attrs({
   type: "checkbox"
-})`
+}) `
+  background-color: ${theme.colorBackground};
+  border: 1px solid ${theme.colorIntentHighlight};
+  border-radius: ${boxBorderRadius};
+  transition: ${theme.transitionNormal};
   appearance: none;
-  background-color: #fafafa;
-  border: 1px solid ${COLOR_BRAND_PRIMARY};
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-  height: 8px;
+  box-sizing: border-box;
+  height: 1.5em;
+  width: 1.5em;
   position: relative;
-  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:after { 
+    color: ${theme.colorIntentHighlight};
+    content: "\u2714";
+    flex: 0 0 auto;
+    display: block;
+    text-align: center;
+    overflow: visible;
+    width: 0;
+    opacity: 0;
+    position: relative;
+    transition: inherit;
+    left: -.35em;
+  }
+
+  &:hover:after {
+    opacity: .25;
+  }
+
   &:checked {
     &:after {
-      content: "\u2714";
-      font-size: 10px;
-      position: absolute;
-      top: 0px;
-      left: 2px;
-      color: ${COLOR_BRAND_PRIMARY};
+      opacity: 1;
     }
+
+    &:hover:after {
+      opacity: .75;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px ${theme.colorIntentHighlight};
   }
 `;
 
 const Label = styled.label`
   display: flex;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
+
   > input {
-    margin: 0 8px;
+    margin: 0 ${theme.spacing};
   }
 `;
 

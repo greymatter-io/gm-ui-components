@@ -1,26 +1,26 @@
 import styled from "styled-components";
 import {
-  FONT_STACK_BASE,
-  FONT_SIZE_SM,
-  COLOR_WHITE,
-  ZINDEX_TOOLTIP
+  ZINDEX_TOOLTIP,
+  decipher
 } from "../../../style/styleVariables.js";
 
+const theme = decipher;
+
 const TooltipContent = styled.div`
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 6px;
-  color: ${COLOR_WHITE};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_SM};
+  background-color: ${theme.colorBackground};
+  border-radius: ${theme.borderRadiusNormal};
+  color: ${theme.colorContent};
+  font-family: ${theme.fontStackNormal};
+  font-size: ${theme.fontSizeSm};
+  padding: ${theme.spacing};
+  width: ${parseInt(theme.spacing, 10) * 20}px;
+  z-index: ${ZINDEX_TOOLTIP};
+  transition: ${theme.transitionNormal};
   opacity: 0;
-  padding: 10px;
   position: absolute;
   text-align: left;
-  transition: opacity 1s;
   visibility: hidden;
   white-space: normal;
-  width: 160px;
-  z-index: ${ZINDEX_TOOLTIP};
 
   /* Position the tooltip */
   ${props => getPosition(props.position)};

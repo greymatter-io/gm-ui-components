@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
+import { decipher } from "../../style/styleVariables";
+
+const theme = decipher;
 
 export const Breadcrumb = styled.li`
   flex: 0 0 auto;
@@ -12,14 +15,14 @@ export const Breadcrumb = styled.li`
     transform: scaleX(0.5);
     display: flex;
     opacity: 0.5;
-    padding: 0 4px;
+    padding: 0 ${parseInt(theme.spacing, 10) * .5}px;
   }
   a {
     display: flex;
     max-width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding: 8px 0;
+    padding: ${theme.spacing} 0;
     color: inherit;
     text-decoration: none;
     &:hover {
@@ -31,7 +34,7 @@ export const Breadcrumb = styled.li`
       content: none;
     }
     a {
-      padding-left: 16px;
+      padding-left: ${parseInt(theme.spacing, 10) * 2}px;
     }
   }
 `;

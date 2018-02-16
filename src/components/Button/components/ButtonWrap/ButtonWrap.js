@@ -7,37 +7,30 @@ import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
 
-import {
-  COLOR_BRAND_PRIMARY,
-  COLOR_DANGER,
-  COLOR_INFO,
-  COLOR_WARNING,
-  COLOR_CONTENT_BACKGROUND,
-  FONT_STACK_BASE
-} from "../../../../style/styleVariables";
+import { decipher } from "../../../../style/styleVariables";
+
+const theme = decipher;
 
 // Maps button types to a particular color
 function generateButtonTypeColor(type) {
   switch (type) {
     case "danger":
-      return COLOR_DANGER;
+      return theme.colorIntentDanger;
     case "info":
-      return COLOR_INFO;
+      return theme.colorIntentInfo;
     case "warning":
-      return COLOR_WARNING;
-    case "polling":
-      return COLOR_CONTENT_BACKGROUND;
+      return theme.colorIntentWarning;
     case "primary":
-      return COLOR_BRAND_PRIMARY;
+      return theme.colorIntentHighlight;
     default:
     case "default":
-      return COLOR_CONTENT_BACKGROUND;
+      return theme.colorBackground;
   }
 }
 
 const camelCaseConverter = stringInput => {
   if (stringInput) {
-    return stringInput.replace(/-([a-z])/g, function(g) {
+    return stringInput.replace(/-([a-z])/g, function (g) {
       return g[1].toUpperCase();
     });
   }
@@ -45,12 +38,14 @@ const camelCaseConverter = stringInput => {
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
+  font-family: ${theme.fontStackNormal};
+  font-weight: ${theme.fontWeightControls};
+  line-height: ${theme.lineHeightControls};
+  transition: ${theme.transitionNormal};
+  transitionDuration ${parseInt(theme.transitionDurationNormal, 10) * 2};
   box-sizing: border-box;
   user-select: none;
-  font-family: ${FONT_STACK_BASE};
-  font-weight: 600;
   border-width: 1px;
-  line-height: 1.4;
   border-style: solid;
   text-transform: none;
   text-align: center;
@@ -58,15 +53,14 @@ const ButtonWrap = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.3s ease;
 
   &:hover {
-    transition: all 0.1s ease;
+    transition: ${theme.transitionNormal};
   }
 
   &:focus,
   &:active {
-    transition: all 0 ease;
+    transition-duration: 0;
   }
 
   > * {
@@ -75,36 +69,36 @@ const ButtonWrap = styled.button`
 
   ${props => `
     ${
-      props.type
-        ? generateButtonStyle({
-            buttonOutlineStyle: camelCaseConverter(props.outline),
-            buttonBackgroundColorBase: generateButtonTypeColor(props.type),
-            buttonBorderColorBase: generateButtonTypeColor(props.type),
-            buttonLabelColorBase: contrastColor(
-              generateButtonTypeColor(props.type),
-              1
-            ),
-            buttonActiveStatus: props.active
-          }) // has color (also code in props.outline and props.active)
-        : generateButtonStyle({
-            buttonOutlineStyle: camelCaseConverter(props.outline),
-            buttonActiveStatus: props.active
-          }) // no color
+    props.type
+      ? generateButtonStyle({
+        buttonOutlineStyle: camelCaseConverter(props.outline),
+        buttonBackgroundColorBase: generateButtonTypeColor(props.type),
+        buttonBorderColorBase: generateButtonTypeColor(props.type),
+        buttonLabelColorBase: contrastColor(
+          generateButtonTypeColor(props.type),
+          1
+        ),
+        buttonActiveStatus: props.active
+      }) // has color (also code in props.outline and props.active)
+      : generateButtonStyle({
+        buttonOutlineStyle: camelCaseConverter(props.outline),
+        buttonActiveStatus: props.active
+      }) // no color
     }
     ${
-      props.size
-        ? generateButtonSize(props.size) // has size
-        : generateButtonSize() // Icons // no size
+    props.size
+      ? generateButtonSize(props.size) // has size
+      : generateButtonSize() // Icons // no size
     } 
     ${
-      props.iconSize
-        ? generateButtonIconRatio(props.iconSize) // has iconSize
-        : generateButtonIconRatio() // Orientation // no iconSize
+    props.iconSize
+      ? generateButtonIconRatio(props.iconSize) // has iconSize
+      : generateButtonIconRatio() // Orientation // no iconSize
     } 
     ${
-      props.orientation
-        ? generateButtonOrientation(props.orientation) // has orientation
-        : generateButtonOrientation() // no orientation default horizontal
+    props.orientation
+      ? generateButtonOrientation(props.orientation) // has orientation
+      : generateButtonOrientation() // no orientation default horizontal
     } 
   `};
 `;
@@ -121,7 +115,7 @@ ButtonWrap.propTypes = {
     "raised-outline"
   ]),
   size: PropTypes.string,
-  type: PropTypes.oneOf(["danger", "info", "warning", "primary", "polling"])
+  type: PropTypes.oneOf(["danger", "info", "warning", "primary"])
 };
 
 export default ButtonWrap;

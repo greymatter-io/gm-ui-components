@@ -52,3 +52,53 @@ export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
 export const FONT_SIZE_SM = "11px";
 export const FONT_SIZE_XS = "9px";
+
+
+// The default theme
+export const decipher = {
+  colorBrandPrimary: '#00ab2a',
+  colorBrandSecondary: '#00ab2a',
+
+  colorIntentHighlight: '#00ab2a',
+  colorIntentDanger: 'red',
+  colorIntentWarning: 'orange',
+  colorIntentInfo: 'blue',
+  colorIntentSuccess: 'green',
+
+  colorBackground: '#fff',
+  colorContent: '#000',
+
+  spacing: '8px',
+  borderRadiusNormal: '6px',
+
+  fontSizeNormal: '14px',
+  fontSizeXs: '9px',
+  fontSizeSm: '11px',
+  fontSizeLg: '24px',
+  fontSizeXl: '32px',
+  fontSizeHero: '40px',
+
+  lineHeightNormal: '1.6',
+  lineHeightHeading: '1.1',
+  lineHeightControls: '1.2',
+
+  fontWeightNormal: '400',
+  fontWeightHeadings: '600',
+  fontWeightControls: '500',
+
+  fontStackNormal: `GMMetropolis, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  fontStackCode: '',
+  fontStackData: '',
+  fontStackDataMono: '',
+
+  transitionDurationNormal: '.15s',
+  transitionTimingFunction: 'ease',
+  transitionDelay: '0',
+  transitionNormal: 'all .15s ease'
+}
+
+// The 'decipher' theme, but with colorBackground and colorContent swapped.
+export const decipherDark = ({ colorBackground, colorContent }) => ({
+  colorContent: colorBackground,
+  colorBackground: colorContent
+})

@@ -1,4 +1,7 @@
 import { spacingScale } from "../../../../../style/styleFunctions";
+import { decipher } from "../../../../../style/styleVariables";
+
+const theme = decipher;
 
 /**
  * Utility function that transforms an object containing different attributes
@@ -18,14 +21,14 @@ function _buttonSizeStyleBlockGenerator({
   verticalPaddingMultiplier = 1,
   textIsUppercase = false
 }) {
-  const fontSizeBase = 14;
-  const borderRadiusBase = 6;
+  const fontSizeNormal = theme.fontSizeNormal;
+  const borderRadiusNormal = theme.borderRadiusNormal;
   const contentSpacingBase = parseInt(spacingScale(0.5), 10);
   return `
-    font-size: ${Math.ceil(fontSizeBase * fontSizeMultiplier)}px;
-    border-radius: ${borderRadiusBase}px;
+    font-size: ${Math.ceil(parseInt(fontSizeNormal, 10) * fontSizeMultiplier)}px;
+    border-radius: ${borderRadiusNormal};
     padding: ${contentSpacingBase *
-      verticalPaddingMultiplier}px ${contentSpacingBase *
+    verticalPaddingMultiplier}px ${contentSpacingBase *
     horizontalPaddingMultiplier}px;
     ${textIsUppercase ? "text-transform: uppercase;" : ""}
   `;

@@ -1,3 +1,5 @@
+import ICON_VIEWBOX_SIZE from "../../../../../style/styleVariables";
+
 /**
  * Helper function that maps button sizes to numbers representing icon ratios
  *
@@ -27,7 +29,7 @@ function mapSizeToButtonIconRatio(size) {
  * @returns string
  */
 function generateButtonIconRatio(size) {
-  const viewboxSize = 24; // default viewbox size 24px
+  const viewboxSize = ICON_VIEWBOX_SIZE; // default viewbox size 24px
   const ratio = mapSizeToButtonIconRatio(size); // default ratio 1
   const viewboxDimensions = viewboxSize * ratio;
   return `> svg { width: ${/* sc-value */ viewboxDimensions}px; 
