@@ -1,17 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { ThemeProvider } from "styled-components";
-import { decipher } from "../../../style/styleVariables";
+import { decipher, decipherDark } from "../../../style/styleVariables";
 
 const StorybookWrapWrap = styled.div`
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ${props => props.theme.colorBackground};
 `;
 
-export default function StorybookWrap({ children, theme }) {
+export default function StorybookWrap({ children, storyTheme, theme }) {
+
+  switch (props => props.storyTheme) {
+    case 'decipherDark':
+      storyTheme = decipherDark;
+      break;
+    default:
+      storyTheme = decipher;
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <StorybookWrapWrap>
@@ -26,13 +36,6 @@ StorybookWrap.propTypes = {
     PropTypes.object,
     PropTypes.array,
   ]),
-  theme: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.array,
-    PropTypes.string
-  ])
-};
-
-StorybookWrap.defaultProps = {
-  theme: decipher
+  storyTheme: PropTypes.string,
+  theme: PropTypes.object
 };

@@ -15,7 +15,7 @@ storiesOf("Tooltip", module)
       "top"
     );
     return (
-      <StorybookWrap>
+      <StorybookWrap storyTheme={select("Theme", ['decipher', 'decipherDark'])}>
         <Tooltip content={content} position={position}>
           Hover over me
         </Tooltip>

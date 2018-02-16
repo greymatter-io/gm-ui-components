@@ -1,21 +1,19 @@
 import styled from "styled-components";
 import {
   ZINDEX_TOOLTIP,
-  decipher
+  decipherDark
 } from "../../../style/styleVariables.js";
 
-const theme = decipher;
-
 const TooltipContent = styled.div`
-  background-color: ${theme.colorBackground};
-  border-radius: ${theme.borderRadiusNormal};
-  color: ${theme.colorContent};
-  font-family: ${theme.fontStackNormal};
-  font-size: ${theme.fontSizeSm};
-  padding: ${theme.spacing};
-  width: ${parseInt(theme.spacing, 10) * 20}px;
+  background-color: ${props => props.theme.colorBackground};
+  border-radius: ${props => props.theme.borderRadiusNormal};
+  color: ${props => props.theme.colorContent};
+  font-family: ${props => props.theme.fontStackNormal};
+  font-size: ${props => props.theme.fontSizeSm};
+  padding: ${props => props.theme.spacing};
+  width: ${parseInt(props => props.theme.spacing, 10) * 20}px;
   z-index: ${ZINDEX_TOOLTIP};
-  transition: ${theme.transitionNormal};
+  transition: ${props => props.theme.transitionNormal};
   opacity: 0;
   position: absolute;
   text-align: left;
@@ -49,5 +47,10 @@ function getPosition(position) {
       margin-left: -80px`;
   }
 }
+
+TooltipContent.defaultProps = {
+  theme: decipherDark
+}
+
 
 export default TooltipContent;
