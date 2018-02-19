@@ -10,6 +10,7 @@ const theme = decipher;
 
 export const Wrapper = styled.footer`
   color: ${theme.colorContent};
+  content: ${theme.colorContent};
   font-size: ${theme.fontSizeSm};
   flex: 0 0 ${parseInt(theme.spacing, 10) * 4}px;
   padding: ${parseInt(theme.spacing, 10) * .5}px;
@@ -25,6 +26,7 @@ export const Wrapper = styled.footer`
 
 export const LongLogo = styled.a`
   padding: 0 ${theme.spacing};
+  content: ${theme.colorContent};
   transition: ${theme.transitionNormal};
   flex: 0 1 auto;
   text-align: left;
@@ -41,6 +43,7 @@ export const LongLogo = styled.a`
 
 export const Copyright = styled.p`
   transition: ${theme.transitionNormal};
+  content: ${theme.colorContent};
   margin: 0;
   text-transform: uppercase;
   flex: 1 1 100%;
@@ -55,12 +58,14 @@ export const Copyright = styled.p`
 
 export const Links = styled.div`
   padding: 0 0 0 ${theme.spacing};
+  content: ${theme.colorContent};
   flex: 0 0 auto;
   text-align: right;
 `;
 
 export const Link = styled.a`
   padding: 0 ${theme.spacing};
+  content: ${theme.colorContent};
 `;
 
 export const Social = styled.img`

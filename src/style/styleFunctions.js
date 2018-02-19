@@ -9,8 +9,11 @@ import {
 } from "polished";
 import {
   DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO,
-  PADDING_BASE
+  defaultTheme
 } from "./styleVariables";
+
+const theme = defaultTheme;
+const PADDING_BASE = theme.spacing;
 
 /**
  * Utility to generate a readable content color from the background color of an element
@@ -27,7 +30,7 @@ export function contrastColor(backgroundColor, contrast, intentColor) {
   }
   // luminosity() => 0 is black, 1 is white.
   // if luminosity of color is closer to light, and intentColor is null, set the intentColor to black.  if luminosity is closer to dark, and intentColor is null, set the intentColor to white.
-  if (getLuminance(backgroundColor) > 0.65) {
+  if (getLuminance(backgroundColor > 0.65) {
     intentColor = intentColor || "#000"; //black
     return mix(contrast, intentColor, backgroundColor);
   } else {
