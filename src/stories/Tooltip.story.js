@@ -1,16 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, text, select } from "@storybook/addon-knobs/react";
+import StorybookWrap from "./utils/StorybookWrap";
 
 import { Tooltip } from "../components";
-
-const wrapperStyle = {
-  display: "flex",
-  width: "100vw",
-  justifyContent: "center",
-  height: "100vh",
-  alignItems: "center"
-};
 
 storiesOf("Tooltip", module)
   .addDecorator(withKnobs)
@@ -22,10 +15,10 @@ storiesOf("Tooltip", module)
       "top"
     );
     return (
-      <div style={wrapperStyle}>
+      <StorybookWrap storyTheme={select("Theme", ['decipher', 'decipherDark'])}>
         <Tooltip content={content} position={position}>
           Hover over me
         </Tooltip>
-      </div>
+      </StorybookWrap>
     );
   });

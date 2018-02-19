@@ -1,13 +1,14 @@
 import { mix, desaturate } from "polished";
 import {
-  COLOR_BRAND_PRIMARY,
-  COLOR_WHITE
+  decipher
 } from "../../../../../style/styleVariables";
 import {
   darkenColor,
   lightenColor,
   contrastColor
 } from "../../../../../style/styleFunctions";
+
+const theme = decipher;
 
 /**
  * Utility function that transforms an object containing different attributes
@@ -32,9 +33,9 @@ import {
  * @returns string
  */
 function generateButtonStyle({
-  buttonBackgroundColorBase = COLOR_WHITE,
-  buttonBorderColorBase = COLOR_WHITE,
-  buttonLabelColorBase = contrastColor(COLOR_WHITE, 1),
+  buttonBackgroundColorBase = theme.colorBackground,
+  buttonBorderColorBase = theme.colorBackground,
+  buttonLabelColorBase = contrastColor(buttonBackgroundColorBase, 1),
   buttonActiveStatus = false,
   buttonOutlineStyle = "raisedOutline",
   buttonOutlineStyleDepth = 0.06, // 0-100% // default: 6%,
@@ -43,8 +44,8 @@ function generateButtonStyle({
   buttonHoverReactionDegree = 0.06 * 0.25,
   buttonActiveReactionDegree = 0.06 * 2,
   buttonDownReactionDegree = 0.06,
-  buttonActiveMixBaseColor = COLOR_BRAND_PRIMARY,
-  buttonActiveMixBaseLabelColor = contrastColor(COLOR_BRAND_PRIMARY, 1),
+  buttonActiveMixBaseColor = theme.colorIntentHighlight,
+  buttonActiveMixBaseLabelColor = contrastColor(theme.colorIntentHighlight, 1),
   buttonActiveMixDegree = 1 //default 100%
 }) {
   // default style Types (static, hover, down, active, activeDown)
@@ -438,11 +439,11 @@ function generateButtonStyle({
   background-color: ${baseStyles["backgroundColor"]};
   border-color: ${baseStyles["borderColor"]};
   ${baseStyles["borderTopColor"]
-    ? `border-top-color: ${baseStyles["borderTopColor"]};`
-    : ""}
+      ? `border-top-color: ${baseStyles["borderTopColor"]};`
+      : ""}
   ${baseStyles["borderBottomColor"]
-    ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
-    : ""}
+      ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
+      : ""}
   color: ${baseStyles["color"]};
   &:active {
     ${!buttonActiveStatus ? "transition-duration: 0s;" : ""}

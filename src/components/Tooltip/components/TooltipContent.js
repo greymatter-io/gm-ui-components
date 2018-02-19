@@ -1,26 +1,24 @@
 import styled from "styled-components";
 import {
-  FONT_STACK_BASE,
-  FONT_SIZE_SM,
-  COLOR_WHITE,
-  ZINDEX_TOOLTIP
+  ZINDEX_TOOLTIP,
+  decipherDark
 } from "../../../style/styleVariables.js";
 
 const TooltipContent = styled.div`
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 6px;
-  color: ${COLOR_WHITE};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_SM};
+  background-color: ${props => props.theme.colorBackground};
+  border-radius: ${props => props.theme.borderRadiusNormal};
+  color: ${props => props.theme.colorContent};
+  font-family: ${props => props.theme.fontStackNormal};
+  font-size: ${props => props.theme.fontSizeSm};
+  padding: ${props => props.theme.spacing};
+  width: ${parseInt(props => props.theme.spacing, 10) * 20}px;
+  z-index: ${ZINDEX_TOOLTIP};
+  transition: ${props => props.theme.transitionNormal};
   opacity: 0;
-  padding: 10px;
   position: absolute;
   text-align: left;
-  transition: opacity 1s;
   visibility: hidden;
   white-space: normal;
-  width: 160px;
-  z-index: ${ZINDEX_TOOLTIP};
 
   /* Position the tooltip */
   ${props => getPosition(props.position)};
@@ -49,5 +47,10 @@ function getPosition(position) {
       margin-left: -80px`;
   }
 }
+
+TooltipContent.defaultProps = {
+  theme: decipherDark
+}
+
 
 export default TooltipContent;
