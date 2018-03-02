@@ -73,7 +73,6 @@ See the [Grey Matter UI Components storybook](https://deciphernow.github.io/gm-u
 
 ## Related Projects
 
-* [Grey Matter Fabric Dashboard](https://github.com/DecipherNow/gm-fabric-dashboard)
 * [Grey Matter Fabric JVM SDK](https://github.com/DecipherNow/gm-fabric-jvm)
 * [Grey Matter Fabric Go SDK](https://github.com/DecipherNow/gm-fabric-go)
 * [Grey Matter Fabric Passthrough Agent](https://github.com/DecipherNow/gm-fabric-jvmagent)
