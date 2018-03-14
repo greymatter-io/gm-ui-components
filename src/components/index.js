@@ -10,6 +10,8 @@ import Tooltip from "./Tooltip";
 
 import { FONT_GROUP_MAIN_TEXT } from "../style/styleVariables";
 
+import * as Glyphs from "./Glyphs";
+
 import "../style/fonts/Rubik";
 import "../style/fonts/Metropolis";
 import "../style/fonts/Source_Code_Pro";
@@ -26,7 +28,8 @@ body {
 }
 `;
 
-export {
+const library = {
+  ...Glyphs,
   Checkbox,
   AppFooter,
   Icon,
@@ -37,4 +40,4 @@ export {
   Tooltip
 };
 
-export * from "./Glyphs";
+export default library;
