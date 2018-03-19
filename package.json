@@ -93,7 +93,8 @@
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
-    "setupFiles": ["raf/polyfill"]
+    "setupFiles": ["raf/polyfill"],
+    "coverageReporters": ["lcov"]
   },
   "engines": {
     "node": ">=8.6.0",
