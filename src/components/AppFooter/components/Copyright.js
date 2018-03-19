@@ -10,7 +10,7 @@ const Copyright = styled.p`
   text-align: center;
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid ${contrastColor(COLOR_CONTENT_BACKGROUND.toString(), 0.1)};
+  border-top: 1px solid ${contrastColor(COLOR_CONTENT_BACKGROUND, 0.1)};
   margin-top: ${spacingScale(1)};
   padding: ${spacingScale(1)};
   text-transform: uppercase;

@@ -1,10 +1,12 @@
 import React from "react";
-import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
+import "jest-styled-components";
+
 import Link from "./Link";
 
 describe("Link", () => {
   it("should render", () => {
-    const aLink = shallow(<Link />);
+    const aLink = renderer.create(<Link />).toJSON();
     expect(aLink).toMatchSnapshot();
   });
 });

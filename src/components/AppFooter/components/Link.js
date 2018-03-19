@@ -8,7 +8,7 @@ import {
 } from "../../../style/styleVariables";
 
 const Link = styled.a`
-  color: ${transparentize(0.5, contrastColor(COLOR_CONTENT_BACKGROUND.toString(), 1))};
+  color: ${transparentize(0.5, contrastColor(COLOR_CONTENT_BACKGROUND, 1))};
   padding: 0 ${spacingScale(1)};
 
   &:hover {

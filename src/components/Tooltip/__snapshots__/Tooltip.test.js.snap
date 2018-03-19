@@ -4,14 +4,14 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
+      "class": "sc-bwzfXH jVZTOo",
     },
     "children": Array [
       Object {
         "data": "Hover over me",
         "next": Object {
           "attribs": Object {
-            "class": "sc-bdVaJa jjdvdn",
+            "class": "sc-bdVaJa dgFXbc",
           },
           "children": Array [
             Object {
@@ -41,7 +41,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "sc-bdVaJa jjdvdn",
+          "class": "sc-bdVaJa dgFXbc",
         },
         "children": Array [
           Object {
@@ -114,14 +114,14 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
+      "class": "sc-bwzfXH jVZTOo",
     },
     "children": Array [
       Object {
         "data": "Hover over me",
         "next": Object {
           "attribs": Object {
-            "class": "sc-bdVaJa eRwJSN",
+            "class": "sc-bdVaJa kvQLxS",
           },
           "children": Array [
             Object {
@@ -151,7 +151,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "sc-bdVaJa eRwJSN",
+          "class": "sc-bdVaJa kvQLxS",
         },
         "children": Array [
           Object {
@@ -224,14 +224,14 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
+      "class": "sc-bwzfXH jVZTOo",
     },
     "children": Array [
       Object {
         "data": "Hover over me",
         "next": Object {
           "attribs": Object {
-            "class": "sc-bdVaJa dcLRd",
+            "class": "sc-bdVaJa bmlkcK",
           },
           "children": Array [
             Object {
@@ -261,7 +261,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "sc-bdVaJa dcLRd",
+          "class": "sc-bdVaJa bmlkcK",
         },
         "children": Array [
           Object {
@@ -334,14 +334,14 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
+      "class": "sc-bwzfXH jVZTOo",
     },
     "children": Array [
       Object {
         "data": "Hover over me",
         "next": Object {
           "attribs": Object {
-            "class": "sc-bdVaJa hdMWWf",
+            "class": "sc-bdVaJa fvTUNF",
           },
           "children": Array [
             Object {
@@ -371,7 +371,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "sc-bdVaJa hdMWWf",
+          "class": "sc-bdVaJa fvTUNF",
         },
         "children": Array [
           Object {
