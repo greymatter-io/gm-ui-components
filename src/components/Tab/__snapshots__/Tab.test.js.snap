@@ -41,6 +41,7 @@ exports[`Tab matches snapshot 1`] = `
 <a
   className="c0"
   disabled={false}
+  onClick={undefined}
 >
   <span
     className="c1"
