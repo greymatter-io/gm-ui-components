@@ -21,10 +21,10 @@ jobs:
       - restore_cache:
           name: Restore node_modules and CC test reporter
           keys:
-          - newcache-{{ .Branch }}-{{ checksum "package.json" }}
+          - cache-{{ .Branch }}-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
-          - newcache-{{ .Branch }}-
-          - newcache-
+          - cache-{{ .Branch }}-
+          - cache-
       - run:
           name: Install dependencies
           command: |
@@ -38,7 +38,7 @@ jobs:
           paths:
             - node_modules
             - cc-test-reporter
-          key: newcache-{{ .Branch }}-{{ checksum "package.json" }}
+          key: cache-{{ .Branch }}-{{ checksum "package.json" }}
 
   build:
     <<: *defaults
@@ -47,10 +47,10 @@ jobs:
       - restore_cache:
           name: Restore node_modules
           keys:
-          - newcache-{{ .Branch }}-{{ checksum "package.json" }}
+          - cache-{{ .Branch }}-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
-          - newcache-{{ .Branch }}-
-          - newcache-
+          - cache-{{ .Branch }}-
+          - cache-
       # Generate a build
       - run:
           name: Build the application
@@ -72,10 +72,10 @@ jobs:
       - restore_cache:
           name: Restore node_modules and Code Climate Test Reporter
           keys:
-          - newcache-{{ .Branch }}-{{ checksum "package.json" }}
+          - cache-{{ .Branch }}-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
-          - newcache-{{ .Branch }}
-          - newcache-
+          - cache-{{ .Branch }}
+          - cache-
       # CircleCI 2.0 no longer allows interpolation of env variables. This is the workaround: 
       # https://discuss.circleci.com/t/using-environment-variables-in-config-yml-not-working/14237
       - run:
