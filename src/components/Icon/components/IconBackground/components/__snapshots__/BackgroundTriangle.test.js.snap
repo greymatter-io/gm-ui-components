@@ -20,7 +20,7 @@ ShallowWrapper {
       "children": <polygon
         id="Triangle-6"
         points="12 1 24 20 0 20"
-/>,
+      />,
       "className": "iconBackground",
       "fill": "transparent",
       "fillOpacity": "1",
@@ -51,7 +51,7 @@ ShallowWrapper {
         "children": <polygon
           id="Triangle-6"
           points="12 1 24 20 0 20"
-/>,
+        />,
         "className": "iconBackground",
         "fill": "transparent",
         "fillOpacity": "1",

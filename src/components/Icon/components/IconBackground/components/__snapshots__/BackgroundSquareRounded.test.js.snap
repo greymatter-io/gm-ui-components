@@ -24,7 +24,7 @@ ShallowWrapper {
         width="24"
         x="0"
         y="0"
-/>,
+      />,
       "className": "iconBackground",
       "fill": "currentColor",
       "fillOpacity": "1",
@@ -63,7 +63,7 @@ ShallowWrapper {
           width="24"
           x="0"
           y="0"
-/>,
+        />,
         "className": "iconBackground",
         "fill": "currentColor",
         "fillOpacity": "1",

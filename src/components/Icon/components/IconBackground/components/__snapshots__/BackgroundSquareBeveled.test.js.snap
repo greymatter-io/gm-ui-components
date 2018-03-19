@@ -20,7 +20,7 @@ ShallowWrapper {
       "children": <polygon
         id="Rectangle"
         points="4 0 20 0 24 4 24 20 20 24 4 24 0 20 0 4"
-/>,
+      />,
       "className": "iconBackground",
       "fill": "currentColor",
       "fillOpacity": "1",
@@ -51,7 +51,7 @@ ShallowWrapper {
         "children": <polygon
           id="Rectangle"
           points="4 0 20 0 24 4 24 20 20 24 4 24 0 20 0 4"
-/>,
+        />,
         "className": "iconBackground",
         "fill": "currentColor",
         "fillOpacity": "1",
