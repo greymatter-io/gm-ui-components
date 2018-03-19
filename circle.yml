@@ -82,13 +82,11 @@ jobs:
           name: Prepare Code Climate Test Reporter
           command: |
             ./cc-test-reporter before-build
-      - run: 
-          command: mkdir results
       - run:
           name: Run tests
           # split tests by timing and then run npm test
           command: |
-            JEST_JUNIT_OUTPUT="results/junit.xml" npm test -- --testResultsProcessor="jest-junit"  --coverage --ci
+            JEST_JUNIT_OUTPUT="junit.xml" npm test -- --testResultsProcessor="jest-junit"  --coverage --ci
       # Note: When re-running a build in CircleCI, Code Climate returns a
       # failure state with the error message:
       #
