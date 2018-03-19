@@ -1,27 +1,28 @@
 import styled from "styled-components";
+import { spacingScale, contrastColor } from "../../../style/styleFunctions";
 import {
-  FONT_STACK_BASE,
-  FONT_SIZE_SM,
-  COLOR_WHITE,
-  ZINDEX_TOOLTIP
-} from "../../../style/styleVariables.js";
+  FONT_SIZE_BASE,
+  ZINDEX_TOOLTIP,
+  BORDER_RADIUS_BASE,
+  COLOR_CONTENT_BACKGROUND
+} from "../../../style/styleVariables";
+
+const TOOLTIP_BACKGROUND_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 1);
 
 const TooltipContent = styled.div`
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 6px;
-  color: ${COLOR_WHITE};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_SM};
+  background-color: ${TOOLTIP_BACKGROUND_COLOR};
+  border-radius: ${BORDER_RADIUS_BASE};
+  color: ${contrastColor(TOOLTIP_BACKGROUND_COLOR, 1)};
+  font-size: ${FONT_SIZE_BASE};
   opacity: 0;
-  padding: 10px;
+  padding: ${spacingScale(1)};
   position: absolute;
   text-align: left;
   transition: opacity 1s;
   visibility: hidden;
   white-space: normal;
-  width: 160px;
+  width: ${spacingScale(20)};
   z-index: ${ZINDEX_TOOLTIP};
-
   /* Position the tooltip */
   ${props => getPosition(props.position)};
 `;

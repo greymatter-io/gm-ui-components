@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LongLogo should render 1`] = `
+.c0 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  text-align: left;
+  padding: 0 8px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.c0:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.c0 img {
+  max-width: 157px;
+}
+
+<a
+  className="c0"
+/>
+`;

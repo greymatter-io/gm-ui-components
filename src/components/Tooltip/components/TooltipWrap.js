@@ -1,18 +1,24 @@
 import styled from "styled-components";
-import { lighten } from "polished";
-
-import { COLOR_BLACK, ZINDEX_TOOLTIP } from "../../../style/styleVariables";
+import { mix } from "polished";
+import {
+  ZINDEX_TOOLTIP,
+  COLOR_CONTENT,
+  COLOR_CONTENT_BACKGROUND
+} from "../../../style/styleVariables";
 
 const TooltipWrap = styled.div`
-  border-bottom: 1px solid ${lighten(0.85, COLOR_BLACK)};
-  cursor: help;
+  border-bottom: 1px solid ${mix(0.15, COLOR_CONTENT, COLOR_CONTENT_BACKGROUND)};
+  cursor: ${props => (props.hideTooltip ? "default" : "help")};
   display: inline-block;
   position: relative;
-
   :hover > :last-child {
-    opacity: 1;
+    ${props =>
+      props.hideTooltip
+        ? ""
+        : `opacity: 1;
+      
     visibility: visible;
-    z-index: ${ZINDEX_TOOLTIP};
+    z-index: ${ZINDEX_TOOLTIP};`};
   }
 `;
 

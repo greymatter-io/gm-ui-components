@@ -1,441 +1,191 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip correctly positions tooltip content based on position prop 1`] = `
-initialize {
-  "0": Object {
-    "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
-    },
-    "children": Array [
-      Object {
-        "data": "Hover over me",
-        "next": Object {
-          "attribs": Object {
-            "class": "sc-bdVaJa jjdvdn",
-          },
-          "children": Array [
-            Object {
-              "data": "Hello!",
-              "next": null,
-              "parent": [Circular],
-              "prev": null,
-              "type": "text",
-            },
-          ],
-          "name": "div",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "next": null,
-          "parent": [Circular],
-          "prev": [Circular],
-          "type": "tag",
-          "x-attribsNamespace": Object {
-            "class": undefined,
-          },
-          "x-attribsPrefix": Object {
-            "class": undefined,
-          },
-        },
-        "parent": [Circular],
-        "prev": null,
-        "type": "text",
-      },
-      Object {
-        "attribs": Object {
-          "class": "sc-bdVaJa jjdvdn",
-        },
-        "children": Array [
-          Object {
-            "data": "Hello!",
-            "next": null,
-            "parent": [Circular],
-            "prev": null,
-            "type": "text",
-          },
-        ],
-        "name": "div",
-        "namespace": "http://www.w3.org/1999/xhtml",
-        "next": null,
-        "parent": [Circular],
-        "prev": Object {
-          "data": "Hover over me",
-          "next": [Circular],
-          "parent": [Circular],
-          "prev": null,
-          "type": "text",
-        },
-        "type": "tag",
-        "x-attribsNamespace": Object {
-          "class": undefined,
-        },
-        "x-attribsPrefix": Object {
-          "class": undefined,
-        },
-      },
-    ],
-    "name": "div",
-    "namespace": "http://www.w3.org/1999/xhtml",
-    "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
-      "children": Array [
-        [Circular],
-      ],
-      "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
-    },
-    "type": "tag",
-    "x-attribsNamespace": Object {
-      "class": undefined,
-    },
-    "x-attribsPrefix": Object {
-      "class": undefined,
-    },
-  },
-  "_root": [Circular],
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
-    "xml": false,
-  },
+.c1 {
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  padding: 8px;
+  position: absolute;
+  text-align: left;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  visibility: hidden;
+  white-space: normal;
+  width: 160px;
+  z-index: 1070;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -80px;
 }
+
+.c0 {
+  border-bottom: 1px solid #d8d8d8;
+  cursor: help;
+  display: inline-block;
+  position: relative;
+}
+
+.c0:hover > :last-child {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1070;
+}
+
+<div
+  className="c0"
+  style={Object {}}
+>
+  Hover over me
+  <div
+    className="c1"
+    style={Object {}}
+  >
+    Hello!
+  </div>
+</div>
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 2`] = `
-initialize {
-  "0": Object {
-    "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
-    },
-    "children": Array [
-      Object {
-        "data": "Hover over me",
-        "next": Object {
-          "attribs": Object {
-            "class": "sc-bdVaJa eRwJSN",
-          },
-          "children": Array [
-            Object {
-              "data": "Hello!",
-              "next": null,
-              "parent": [Circular],
-              "prev": null,
-              "type": "text",
-            },
-          ],
-          "name": "div",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "next": null,
-          "parent": [Circular],
-          "prev": [Circular],
-          "type": "tag",
-          "x-attribsNamespace": Object {
-            "class": undefined,
-          },
-          "x-attribsPrefix": Object {
-            "class": undefined,
-          },
-        },
-        "parent": [Circular],
-        "prev": null,
-        "type": "text",
-      },
-      Object {
-        "attribs": Object {
-          "class": "sc-bdVaJa eRwJSN",
-        },
-        "children": Array [
-          Object {
-            "data": "Hello!",
-            "next": null,
-            "parent": [Circular],
-            "prev": null,
-            "type": "text",
-          },
-        ],
-        "name": "div",
-        "namespace": "http://www.w3.org/1999/xhtml",
-        "next": null,
-        "parent": [Circular],
-        "prev": Object {
-          "data": "Hover over me",
-          "next": [Circular],
-          "parent": [Circular],
-          "prev": null,
-          "type": "text",
-        },
-        "type": "tag",
-        "x-attribsNamespace": Object {
-          "class": undefined,
-        },
-        "x-attribsPrefix": Object {
-          "class": undefined,
-        },
-      },
-    ],
-    "name": "div",
-    "namespace": "http://www.w3.org/1999/xhtml",
-    "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
-      "children": Array [
-        [Circular],
-      ],
-      "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
-    },
-    "type": "tag",
-    "x-attribsNamespace": Object {
-      "class": undefined,
-    },
-    "x-attribsPrefix": Object {
-      "class": undefined,
-    },
-  },
-  "_root": [Circular],
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
-    "xml": false,
-  },
+.c1 {
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  padding: 8px;
+  position: absolute;
+  text-align: left;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  visibility: hidden;
+  white-space: normal;
+  width: 160px;
+  z-index: 1070;
+  top: 150%;
+  left: 50%;
+  margin-left: -80px;
 }
+
+.c0 {
+  border-bottom: 1px solid #d8d8d8;
+  cursor: help;
+  display: inline-block;
+  position: relative;
+}
+
+.c0:hover > :last-child {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1070;
+}
+
+<div
+  className="c0"
+  style={Object {}}
+>
+  Hover over me
+  <div
+    className="c1"
+    style={Object {}}
+  >
+    Hello!
+  </div>
+</div>
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 3`] = `
-initialize {
-  "0": Object {
-    "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
-    },
-    "children": Array [
-      Object {
-        "data": "Hover over me",
-        "next": Object {
-          "attribs": Object {
-            "class": "sc-bdVaJa dcLRd",
-          },
-          "children": Array [
-            Object {
-              "data": "Hello!",
-              "next": null,
-              "parent": [Circular],
-              "prev": null,
-              "type": "text",
-            },
-          ],
-          "name": "div",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "next": null,
-          "parent": [Circular],
-          "prev": [Circular],
-          "type": "tag",
-          "x-attribsNamespace": Object {
-            "class": undefined,
-          },
-          "x-attribsPrefix": Object {
-            "class": undefined,
-          },
-        },
-        "parent": [Circular],
-        "prev": null,
-        "type": "text",
-      },
-      Object {
-        "attribs": Object {
-          "class": "sc-bdVaJa dcLRd",
-        },
-        "children": Array [
-          Object {
-            "data": "Hello!",
-            "next": null,
-            "parent": [Circular],
-            "prev": null,
-            "type": "text",
-          },
-        ],
-        "name": "div",
-        "namespace": "http://www.w3.org/1999/xhtml",
-        "next": null,
-        "parent": [Circular],
-        "prev": Object {
-          "data": "Hover over me",
-          "next": [Circular],
-          "parent": [Circular],
-          "prev": null,
-          "type": "text",
-        },
-        "type": "tag",
-        "x-attribsNamespace": Object {
-          "class": undefined,
-        },
-        "x-attribsPrefix": Object {
-          "class": undefined,
-        },
-      },
-    ],
-    "name": "div",
-    "namespace": "http://www.w3.org/1999/xhtml",
-    "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
-      "children": Array [
-        [Circular],
-      ],
-      "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
-    },
-    "type": "tag",
-    "x-attribsNamespace": Object {
-      "class": undefined,
-    },
-    "x-attribsPrefix": Object {
-      "class": undefined,
-    },
-  },
-  "_root": [Circular],
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
-    "xml": false,
-  },
+.c1 {
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  padding: 8px;
+  position: absolute;
+  text-align: left;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  visibility: hidden;
+  white-space: normal;
+  width: 160px;
+  z-index: 1070;
+  right: 120%;
+  top: -5px;
 }
+
+.c0 {
+  border-bottom: 1px solid #d8d8d8;
+  cursor: help;
+  display: inline-block;
+  position: relative;
+}
+
+.c0:hover > :last-child {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1070;
+}
+
+<div
+  className="c0"
+  style={Object {}}
+>
+  Hover over me
+  <div
+    className="c1"
+    style={Object {}}
+  >
+    Hello!
+  </div>
+</div>
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 4`] = `
-initialize {
-  "0": Object {
-    "attribs": Object {
-      "class": "sc-bwzfXH kkePiY",
-    },
-    "children": Array [
-      Object {
-        "data": "Hover over me",
-        "next": Object {
-          "attribs": Object {
-            "class": "sc-bdVaJa hdMWWf",
-          },
-          "children": Array [
-            Object {
-              "data": "Hello!",
-              "next": null,
-              "parent": [Circular],
-              "prev": null,
-              "type": "text",
-            },
-          ],
-          "name": "div",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "next": null,
-          "parent": [Circular],
-          "prev": [Circular],
-          "type": "tag",
-          "x-attribsNamespace": Object {
-            "class": undefined,
-          },
-          "x-attribsPrefix": Object {
-            "class": undefined,
-          },
-        },
-        "parent": [Circular],
-        "prev": null,
-        "type": "text",
-      },
-      Object {
-        "attribs": Object {
-          "class": "sc-bdVaJa hdMWWf",
-        },
-        "children": Array [
-          Object {
-            "data": "Hello!",
-            "next": null,
-            "parent": [Circular],
-            "prev": null,
-            "type": "text",
-          },
-        ],
-        "name": "div",
-        "namespace": "http://www.w3.org/1999/xhtml",
-        "next": null,
-        "parent": [Circular],
-        "prev": Object {
-          "data": "Hover over me",
-          "next": [Circular],
-          "parent": [Circular],
-          "prev": null,
-          "type": "text",
-        },
-        "type": "tag",
-        "x-attribsNamespace": Object {
-          "class": undefined,
-        },
-        "x-attribsPrefix": Object {
-          "class": undefined,
-        },
-      },
-    ],
-    "name": "div",
-    "namespace": "http://www.w3.org/1999/xhtml",
-    "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
-      "children": Array [
-        [Circular],
-      ],
-      "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
-    },
-    "type": "tag",
-    "x-attribsNamespace": Object {
-      "class": undefined,
-    },
-    "x-attribsPrefix": Object {
-      "class": undefined,
-    },
-  },
-  "_root": [Circular],
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
-    "xml": false,
-  },
+.c1 {
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  padding: 8px;
+  position: absolute;
+  text-align: left;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  visibility: hidden;
+  white-space: normal;
+  width: 160px;
+  z-index: 1070;
+  top: -5px;
+  left: 120%;
 }
+
+.c0 {
+  border-bottom: 1px solid #d8d8d8;
+  cursor: help;
+  display: inline-block;
+  position: relative;
+}
+
+.c0:hover > :last-child {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1070;
+}
+
+<div
+  className="c0"
+  style={Object {}}
+>
+  Hover over me
+  <div
+    className="c1"
+    style={Object {}}
+  >
+    Hello!
+  </div>
+</div>
 `;

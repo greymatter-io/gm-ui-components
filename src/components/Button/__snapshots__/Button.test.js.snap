@@ -978,7 +978,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat kVXTwT",
+      "class": "sc-htpNat kqEQrP",
       "orientation": "horizontal",
       "title": "info",
       "type": "info",
@@ -1128,7 +1128,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-htpNat gxgPeQ",
+      "class": "sc-htpNat lZzwi",
       "orientation": "horizontal",
       "title": "warning",
       "type": "warning",

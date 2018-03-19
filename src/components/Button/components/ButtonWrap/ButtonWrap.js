@@ -97,9 +97,9 @@ const ButtonWrap = styled.button`
         : generateButtonSize() // Icons // no size
     } 
     ${
-      props.iconSize
-        ? generateButtonIconRatio(props.iconSize) // has iconSize
-        : generateButtonIconRatio() // Orientation // no iconSize
+      props.glyphSize
+        ? generateButtonIconRatio(props.glyphSize) // has glyphSize
+        : generateButtonIconRatio() // Orientation // no glyphSize
     } 
     ${
       props.orientation
