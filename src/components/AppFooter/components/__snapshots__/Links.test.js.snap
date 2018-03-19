@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should render 1`] = `
+.c0 {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  text-align: right;
+  padding: 0 0 0 8px;
+}
+
+@media all and (min-width:800px) {
+  .c0 {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
