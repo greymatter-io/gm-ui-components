@@ -1,7 +1,6 @@
 import { PropTypes } from "prop-types";
 import React from "react";
 
-import Icon from "../Icon";
 import * as Glyphs from "../Glyphs";
 
 import ButtonWrap from "./components/ButtonWrap";
@@ -15,8 +14,7 @@ Button.propTypes = {
   disabled: PropTypes.bool, // disables the button
   glyph: PropTypes.string, // Glyph to display in the button
   glyphColor: PropTypes.string, // Color for the glyph
-  glyphRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Relative size for the glyph
-  iconSize: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),
+  glyphSize: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),
   label: PropTypes.string.isRequired, // label for the button
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
@@ -63,7 +61,7 @@ export default function Button({
   glyph,
   glyphRatio,
   glyphColor,
-  iconSize,
+  glyphSize,
   label,
   orientation,
   prefix,
@@ -88,9 +86,9 @@ export default function Button({
       tabIndex={tabIndex}
       title={label}
       style={style}
-      iconSize={iconSize}
+      glyphSize={glyphSize}
     >
-      {Glyph && <Glyph glyphColor={glyphColor} glyphSizeRatio={glyphRatio} />}
+      {Glyph && <Glyph glyphColor={glyphColor} />}
       {children}
       <span style={labelStyle}>
         {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
