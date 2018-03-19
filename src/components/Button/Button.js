@@ -59,7 +59,6 @@ export default function Button({
   clickAction,
   disabled,
   glyph,
-  glyphRatio,
   glyphColor,
   glyphSize,
   label,
