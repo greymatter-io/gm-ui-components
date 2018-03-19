@@ -3,6 +3,7 @@ import { injectGlobal } from "styled-components";
 import { AppFooter } from "./AppFooter";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import Button from "./Button";
+import ButtonGroup from "./ButtonGroup";
 import { Checkbox } from "./Checkbox";
 import { Input } from "./Input";
 import Icon from "./Icon";
@@ -17,7 +18,7 @@ import "../style/fonts/Metropolis";
 import "../style/fonts/Source_Code_Pro";
 
 injectGlobal`
-*{
+* {
   box-sizing: border-box;
 }
 @font-face {
@@ -35,6 +36,7 @@ const library = {
   Icon,
   Input,
   Button,
+  ButtonGroup,
   Breadcrumbs,
   BreadcrumbItem,
   Tooltip
