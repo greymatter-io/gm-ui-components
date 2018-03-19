@@ -90,7 +90,7 @@ storiesOf("Button", module)
           type={select("type", types, "default")}
           glyph={select("glyph", glyphNames)}
           glyphColor={color("glyphColor")}
-          glyphRatio={number("glyphRatio", 1)}
+          glyphSize={select("glyphSize", sizes)}
           disabled={boolean("disabled", false)}
           clickAction={() => alert("clicked")}
           orientation={select("orientation", orientations, "horizontal")}

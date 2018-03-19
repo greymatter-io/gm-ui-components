@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacingScale, contrastColor } from '../../../style/styleFunctions';
+import { spacingScale, contrastColor } from "../../../style/styleFunctions";
 import {
   FONT_SIZE_BASE,
   ZINDEX_TOOLTIP,
