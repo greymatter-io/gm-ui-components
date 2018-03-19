@@ -12,6 +12,8 @@ const ButtonGroup = styled.div`
   ${props => props.style};
 `;
 
+ButtonGroup.displayName = "ButtonGroup";
+
 ButtonGroup.propTypes = {
   style: PropTypes.object
 };

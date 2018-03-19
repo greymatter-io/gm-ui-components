@@ -8,17 +8,17 @@ import ButtonGroup from "../components/ButtonGroup";
 
 storiesOf("Button Group", module)
   .addDecorator(withKnobs)
-  .addDecorator(
+  .add(
+    "default",
     withInfo(
       "An ButtonGroup component that takes any number of Button components as children"
-    )
-  )
-  .add("default", () => {
-    return (
-      <ButtonGroup>
-        <Button label="Button #1" />
-        <Button label="Button #2" />
-        <Button label="Button #3" />
-      </ButtonGroup>
-    );
-  });
+    )(() => {
+      return (
+        <ButtonGroup>
+          <Button label="Button #1" />
+          <Button label="Button #2" />
+          <Button label="Button #3" />
+        </ButtonGroup>
+      );
+    })
+  );
