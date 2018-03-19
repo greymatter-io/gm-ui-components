@@ -1,10 +1,12 @@
 import React from "react";
-import { shallow } from "enzyme";
-import FooterContainer from "./index.js";
+import renderer from "react-test-renderer";
+import "jest-styled-components";
+
+import { AppFooter } from "./index.js";
 
 describe("A Footer container", () => {
   it("should render", () => {
-    const aFooterContainer = shallow(<FooterContainer />);
-    expect(aFooterContainer).toMatchSnapshot();
+    const anAppFooter = renderer.create(<AppFooter />).toJSON();
+    expect(anAppFooter).toMatchSnapshot();
   });
 });

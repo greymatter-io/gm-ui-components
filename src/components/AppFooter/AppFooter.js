@@ -1,21 +1,38 @@
-import { FormattedHTMLMessage } from "react-intl";
-import React from "react";
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
 import Copyright from "./components/Copyright";
 import Footer from "./components/Footer";
 import Links from "./components/Links";
 import Link from "./components/Link";
-import Icon from "../../components/Icon";
-import Glyph from "../../components/Glyphs";
+import { Twitter, GitHub, LinkedIn } from "../../components/Glyphs";
 import LongLogo from "./components/LongLogo";
 
 import longLogo from "./assets/decipher-logo-long.png";
+
+AppFooter.propTypes = {
+  copyrightText: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.node,
+    PropTypes.string
+  ])
+};
+
+AppFooter.defaultProps = {
+  copyrightText: (
+    <Fragment>
+      Copyright &copy; 2018 Decipher Technology Studios. All rights reserved.{" "}
+      <br /> Copyright &copy; 2018 Grey Matter, a Decipher Technology Studios
+      product. All rights reserved.
+    </Fragment>
+  )
+};
 
 /**
  * Stateless functional React component that renders company branding and social media footer content
  * @returns JSX.Element
  */
-export default function AppFooter() {
+export default function AppFooter({ copyrightText }) {
   return (
     <Footer>
       <LongLogo
@@ -26,16 +43,7 @@ export default function AppFooter() {
       >
         <img alt="Decipher Technology Studios" src={longLogo} />
       </LongLogo>
-      <Copyright>
-        <p>Message here</p>
-        <FormattedHTMLMessage
-          id="footer.copyright"
-          defaultMessage="Copyright &copy; 2018 Decipher Technology Studios. All rights reserved. 
-          <br /> Copyright &copy; 2018 Grey Matter, a Decipher Technology Studios product. All
-        rights reserved."
-          description="Footer copyright message"
-        />
-      </Copyright>
+      <Copyright> {copyrightText} </Copyright>
       <Links>
         <Link
           href="http://github.com/DecipherNow"
@@ -43,9 +51,7 @@ export default function AppFooter() {
           target="_blank"
           title="Decipher Technology Studios Github"
         >
-          <Icon iconRatio={0.8}>
-            <Glyph name="GitHub" />
-          </Icon>
+          <GitHub />
         </Link>
         <Link
           href="http://twitter.com/deciphernow"
@@ -53,9 +59,7 @@ export default function AppFooter() {
           target="_blank"
           title="Decipher Technology Studios Twitter"
         >
-          <Icon iconRatio={0.8}>
-            <Glyph name="Twitter" />
-          </Icon>
+          <Twitter />
         </Link>
         <Link
           href="http://www.linkedin.com/company/decipher-technology-studios"
@@ -63,9 +67,7 @@ export default function AppFooter() {
           target="_blank"
           title="Decipher Technology Studios LinkedIn"
         >
-          <Icon iconRatio={0.8}>
-            <Glyph name="LinkedIn" />
-          </Icon>
+          <LinkedIn />
         </Link>
       </Links>
     </Footer>
