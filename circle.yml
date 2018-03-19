@@ -38,7 +38,7 @@ jobs:
           paths:
             - node_modules
             - cc-test-reporter
-          key: cache-{{ .Branch }}-{{ checksum "package.json" }}
+          key: newcache-{{ .Branch }}-{{ checksum "package.json" }}
 
   build:
     <<: *defaults
