@@ -14,6 +14,8 @@ function mapSizeToButtonIconRatio(size) {
       return 1.25;
     case "xl":
       return 1.5;
+    case "xxl":
+      return 2;
     case "normal":
     default:
       return 1;
