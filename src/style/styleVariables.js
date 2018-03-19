@@ -20,6 +20,8 @@ export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
 /*/ Theme Configuration /*/
 export const COLOR_SIDEBAR_BACKGROUND = COLOR_BLACK;
 export const COLOR_CONTENT_BACKGROUND = COLOR_WHITE;
+export const COLOR_SIDEBAR_CONTENT = COLOR_WHITE;
+export const COLOR_CONTENT = COLOR_BLACK;
 
 export const BORDER_RADIUS_BASE = "3px";
 

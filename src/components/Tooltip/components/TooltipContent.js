@@ -7,10 +7,7 @@ import {
   COLOR_CONTENT_BACKGROUND
 } from "../../../style/styleVariables";
 
-const TOOLTIP_BACKGROUND_COLOR = contrastColor(
-  COLOR_CONTENT_BACKGROUND.toString(),
-  1
-).toString();
+const TOOLTIP_BACKGROUND_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 1);
 
 const TooltipContent = styled.div`
   background-color: ${TOOLTIP_BACKGROUND_COLOR};
