@@ -9,11 +9,11 @@ export const COLOR_WHITE = "#fff";
 export const COLOR_GREY = "#444";
 
 export const COLOR_HIGHLIGHT = COLOR_BRAND_PRIMARY;
-export const COLOR_SUCCESS = "#0aab2a";
-export const COLOR_PRIMARY = "#fff";
+export const COLOR_SUCCESS = COLOR_BRAND_PRIMARY;
 export const COLOR_DANGER = COLOR_RED;
-export const COLOR_WARNING = "#FAC60F";
-export const COLOR_INFO = "blue";
+export const COLOR_WARNING = "#f8b400";
+export const COLOR_INFO = "#094dff";
+
 
 export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
 
