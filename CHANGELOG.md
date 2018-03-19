@@ -1,3 +1,9 @@
+<a name="0.4.5"></a>
+
+# 0.4.5 (2018-03-19)
+
+* update main export to include glyphs
+
 <a name="0.4.4"></a>
 
 # 0.4.4 (2018-02-13)
