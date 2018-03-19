@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A Footer container should render 1`] = `
+<styled.footer>
+  <styled.a
+    href="http://deciphernow.com"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Decipher Technology Studios website"
+  >
+    <img
+      alt="Decipher Technology Studios"
+      src="decipher-logo-long.png"
+    />
+  </styled.a>
+  <styled.p>
+    <FormattedHTMLMessage
+      defaultMessage="Copyright © 2018 Decipher Technology Studios. All rights reserved.  <br /> Copyright © 2018 Grey Matter, a Decipher Technology Studios product. All rights reserved."
+      description="Footer copyright message"
+      id="footer.copyright"
+      values={Object {}}
+    />
+  </styled.p>
+  <styled.div>
+    <styled.a
+      href="http://github.com/DecipherNow"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Decipher Technology Studios Github"
+    >
+      <Icon
+        iconRatio={0.8}
+      >
+        <Glyph
+          glyphColor="currentColor"
+          name="GitHub"
+          ratio={1}
+        />
+      </Icon>
+    </styled.a>
+    <styled.a
+      href="http://twitter.com/deciphernow"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Decipher Technology Studios Twitter"
+    >
+      <Icon
+        iconRatio={0.8}
+      >
+        <Glyph
+          glyphColor="currentColor"
+          name="Twitter"
+          ratio={1}
+        />
+      </Icon>
+    </styled.a>
+    <styled.a
+      href="http://www.linkedin.com/company/decipher-technology-studios"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Decipher Technology Studios LinkedIn"
+    >
+      <Icon
+        iconRatio={0.8}
+      >
+        <Glyph
+          glyphColor="currentColor"
+          name="LinkedIn"
+          ratio={1}
+        />
+      </Icon>
+    </styled.a>
+  </styled.div>
+</styled.footer>
+`;

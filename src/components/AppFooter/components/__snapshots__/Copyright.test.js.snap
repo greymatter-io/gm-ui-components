@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copyright should render when screen is 800px or higher 1`] = `
+.c0 {
+  font-size: 50%;
+  margin: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  cursor: default;
+  border-top: 1px solid rgb(230,230,230);
+  margin-top: 8px;
+  padding: 8px;
+  text-transform: uppercase;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+@media all and (min-width:800px) {
+  .c0 {
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}
+
+<p
+  className="c0"
+/>
+`;

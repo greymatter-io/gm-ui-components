@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should render 1`] = `
+.c0 {
+  color: rgba(0,0,0,0.5);
+  padding: 0 8px;
+}
+
+.c0:hover {
+  color: rgb(10,171,42);
+}
+
+<a
+  className="c0"
+/>
+`;
