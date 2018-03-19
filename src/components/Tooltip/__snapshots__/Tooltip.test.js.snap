@@ -4,7 +4,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH jVZTOo",
+      "class": "sc-bwzfXH gFQqZs",
     },
     "children": Array [
       Object {
@@ -114,7 +114,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH jVZTOo",
+      "class": "sc-bwzfXH gFQqZs",
     },
     "children": Array [
       Object {
@@ -224,7 +224,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH jVZTOo",
+      "class": "sc-bwzfXH gFQqZs",
     },
     "children": Array [
       Object {
@@ -334,7 +334,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bwzfXH jVZTOo",
+      "class": "sc-bwzfXH gFQqZs",
     },
     "children": Array [
       Object {
