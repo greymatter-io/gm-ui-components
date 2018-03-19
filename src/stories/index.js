@@ -1,6 +1,7 @@
 import "./AppFooter.story.js";
 import "./Breadcrumbs.story.js";
 import "./Button.story.js";
+import "./ButtonGroup.story.js";
 import "./Input.story.js";
 import "./NavTab.story.js";
 import "./Icon.story.js";

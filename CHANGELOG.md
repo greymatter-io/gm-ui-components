@@ -1,3 +1,29 @@
+<a name="0.4.5"></a>
+
+# 0.4.5 (2018-03-19)
+
+* update main export to include glyphs
+
+<a name="0.4.4"></a>
+
+# 0.4.4 (2018-02-13)
+
+<a name="0.4.3"></a>
+
+# 0.4.3 (2018-02-12)
+
+### Fixes
+
+* patch fix for Icon import
+
+<a name="0.4.2"></a>
+
+# 0.4.2 (2018-02-12)
+
+### Fixes
+
+* patch fix for glyph
+
 <a name="0.4.1"></a>
 
 # 0.4.1 (2018-02-09)
