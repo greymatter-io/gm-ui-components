@@ -46,7 +46,9 @@ export const FONT_STACK_DATA_MONO = `${FONT_GROUP_DATA_MONO}, ${FONT_GROUP_DATA}
 export const FONT_STACK_CODE = FONT_GROUP_CODE;
 
 export const LINE_HEIGHT_BASE = 1.4;
+export const LINE_HEIGHT_HEADING = 1.15;
 export const FONT_WEIGHT_BASE = 400;
+export const FONT_WEIGHT_HEADING = 600;
 export const FONT_SIZE_HERO = "32px";
 export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
