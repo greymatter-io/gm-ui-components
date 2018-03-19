@@ -7,7 +7,7 @@ import {
 import { mix } from "polished";
 
 const TooltipWrap = styled.div`
-  border-bottom: 1px solid ${mix(0.85, COLOR_BLACK, COLOR_WHITE)};
+  border-bottom: 1px solid ${mix(0.2, COLOR_BLACK, COLOR_WHITE)};
   cursor: ${props => (props.hideTooltip ? "default" : "help")};
   display: inline-block;
   position: relative;

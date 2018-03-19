@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import TooltipContent from "./components/TooltipContent";
 import TooltipWrap from "./components/TooltipWrap";
 

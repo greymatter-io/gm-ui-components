@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacingScale, contrastColor } from '../../../style/styleFunctions';
+import { spacingScale, contrastColor } from "../../../style/styleFunctions";
 import {
   FONT_SIZE_BASE,
   ZINDEX_TOOLTIP,
@@ -7,12 +7,15 @@ import {
   COLOR_CONTENT_BACKGROUND
 } from "../../../style/styleVariables";
 
-const TOOLTIP_BACKGROUND_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND.toString(), 1).toString();
+const TOOLTIP_BACKGROUND_COLOR = contrastColor(
+  COLOR_CONTENT_BACKGROUND.toString(),
+  1
+).toString();
 
 const TooltipContent = styled.div`
   background-color: ${TOOLTIP_BACKGROUND_COLOR};
   border-radius: ${BORDER_RADIUS_BASE};
-  color: ${contrastColor(TOOLTIP_BACKGROUND_COLOR, 1).toString()};
+  color: ${contrastColor(TOOLTIP_BACKGROUND_COLOR, 1)};
   font-size: ${FONT_SIZE_BASE};
   opacity: 0;
   padding: ${spacingScale(1)};
