@@ -21,8 +21,8 @@ const Tab = ({
 
 Tab.propTypes = {
   active: PropTypes.bool,
-  clickAction: PropTypes.func.isRequired,
   children: PropTypes.any,
+  clickAction: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
   label: PropTypes.string
 };

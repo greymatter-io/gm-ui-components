@@ -6,7 +6,9 @@ import Tab from "./Tab";
 
 describe("Tab", () => {
   it("matches snapshot", () => {
-    const aTab = renderer.create(<Tab label="Test" />).toJSON();
+    const aTab = renderer
+      .create(<Tab label="Test" clickAction={() => {}} />)
+      .toJSON();
     expect(aTab).toMatchSnapshot();
   });
 });
