@@ -8,6 +8,8 @@ import { Checkbox } from "./Checkbox";
 import { Input } from "./Input";
 import Icon from "./Icon";
 import Tooltip from "./Tooltip";
+import Tab from "./Tab";
+import TabGroup from "./TabGroup";
 
 import { FONT_GROUP_MAIN_TEXT } from "../style/styleVariables";
 
@@ -39,7 +41,9 @@ const library = {
   ButtonGroup,
   Breadcrumbs,
   BreadcrumbItem,
-  Tooltip
+  Tooltip,
+  Tab,
+  TabGroup
 };
 
 export default library;
