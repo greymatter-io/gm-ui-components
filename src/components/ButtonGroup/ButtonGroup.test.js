@@ -1,10 +1,11 @@
 import React from "react";
-import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
 import ButtonGroup from "./ButtonGroup";
+import "jest-styled-components";
 
 describe("ButtonGroup", () => {
   it("matches snapshot", () => {
-    const aButtonGroup = shallow(<ButtonGroup />);
+    const aButtonGroup = renderer.create(<ButtonGroup />).toJSON();
     expect(aButtonGroup).toMatchSnapshot();
   });
 });
