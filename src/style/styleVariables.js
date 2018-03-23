@@ -14,7 +14,6 @@ export const COLOR_DANGER = COLOR_RED;
 export const COLOR_WARNING = "#f8b400";
 export const COLOR_INFO = "#094dff";
 
-
 export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
 
 /*/ Theme Configuration /*/
@@ -29,7 +28,7 @@ export const PADDING_BASE = 8;
 
 // z-index mappings
 export const ZINDEX_TOOLTIP = "1070";
-
+export const ZINDEX_STICKY = "1010";
 /*/ Fonts /*/
 
 // Backup font list
