@@ -10,7 +10,7 @@ describe("TabGroup", () => {
     const aTabGroup = renderer
       .create(
         <TabGroup label="Tab Group Label">
-          <Tab label="Test" />
+          <Tab label="Test" clickAction={() => {}} />
         </TabGroup>
       )
       .toJSON();

@@ -17,6 +17,7 @@ stories.add(
     return (
       <div style={{ width: "100vw", display: "flex" }}>
         <Tab
+          clickAction={() => alert("hello")}
           label={text("label", "Active Tab")}
           active={boolean("active", true)}
           disabled={boolean("disabled", false)}
