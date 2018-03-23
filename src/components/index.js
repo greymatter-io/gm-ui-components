@@ -33,17 +33,17 @@ body {
 
 const library = {
   ...Glyphs,
-  Checkbox,
   AppFooter,
-  Icon,
-  Input,
+  BreadcrumbItem,
+  Breadcrumbs,
   Button,
   ButtonGroup,
-  Breadcrumbs,
-  BreadcrumbItem,
-  Tooltip,
+  Checkbox,
+  Icon,
+  Input,
   Tab,
-  TabGroup
+  TabGroup,
+  Tooltip
 };
 
 export default library;

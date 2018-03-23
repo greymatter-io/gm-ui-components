@@ -1,10 +1,14 @@
-import { configure } from "@storybook/react";
+import { configure, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
+
+import Wrapper from "../src/stories/utils/StoryWrapper";
 
 function loadStories() {
   require("../src/stories");
 }
+
+addDecorator(Wrapper);
 
 // addon-info
 setDefaults({
