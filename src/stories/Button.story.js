@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { Fragment } from "react";
 import { storiesOf } from "@storybook/react";
 import {
   withKnobs,
@@ -10,16 +9,8 @@ import {
   color
 } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
-
 import Button from "../components/Button";
-
-const wrapperStyle = {
-  display: "flex",
-  width: "100vw",
-  justifyContent: "space-around",
-  height: "100vh",
-  alignItems: "center"
-};
+import ThemeDecorator from "./utils/ThemeDecorator";
 
 const glyphNames = [
   "Bars",
@@ -77,34 +68,33 @@ const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
 storiesOf("Button", module)
+  .addDecorator(ThemeDecorator)
   .addDecorator(withKnobs)
   .add(
     "default",
     withInfo(
       "A React component that renders a button and includes base styling, used to trigger actions."
     )(() => (
-      <div style={wrapperStyle}>
-        <Button
-          active={boolean("active", false)}
-          label={text("label", "Hello World")}
-          type={select("type", types, "default")}
-          glyph={select("glyph", glyphNames)}
-          glyphColor={color("glyphColor")}
-          glyphSize={select("glyphSize", sizes)}
-          disabled={boolean("disabled", false)}
-          clickAction={() => alert("clicked")}
-          orientation={select("orientation", orientations, "horizontal")}
-          outline={select("outline", outlines, "none")}
-          prefix={text("prefix")}
-          suffix={text("suffix")}
-          size={select("size", sizes, "normal")}
-          tabIndex={number("tabIndex")}
-        />
-      </div>
+      <Button
+        active={boolean("active", false)}
+        label={text("label", "Hello World")}
+        type={select("type", types, "default")}
+        glyph={select("glyph", glyphNames)}
+        glyphColor={color("glyphColor")}
+        glyphSize={select("glyphSize", sizes)}
+        disabled={boolean("disabled", false)}
+        clickAction={() => alert("clicked")}
+        orientation={select("orientation", orientations, "horizontal")}
+        outline={select("outline", outlines, "none")}
+        prefix={text("prefix")}
+        suffix={text("suffix")}
+        size={select("size", sizes, "normal")}
+        tabIndex={number("tabIndex")}
+      />
     ))
   )
   .add("types", () => (
-    <div style={wrapperStyle}>
+    <Fragment>
       {types.map(type => (
         <Button
           type={type}
@@ -114,17 +104,17 @@ storiesOf("Button", module)
           clickAction={() => {}}
         />
       ))}
-    </div>
+    </Fragment>
   ))
   .add("sizes", () => (
-    <div style={wrapperStyle}>
+    <Fragment>
       {sizes.map(size => (
         <Button size={size} label={size} key={size} clickAction={() => {}} />
       ))}
-    </div>
+    </Fragment>
   ))
   .add("outlines", () => (
-    <div style={wrapperStyle}>
+    <Fragment>
       {outlines.map(outline => (
         <Button
           outline={outline}
@@ -133,10 +123,10 @@ storiesOf("Button", module)
           clickAction={() => {}}
         />
       ))}
-    </div>
+    </Fragment>
   ))
   .add("orientations", () => (
-    <div style={wrapperStyle}>
+    <Fragment>
       {orientations.map(orientation => (
         <Button
           glyph={"Bell"}
@@ -146,5 +136,5 @@ storiesOf("Button", module)
           key={orientation}
         />
       ))}
-    </div>
+    </Fragment>
   ));

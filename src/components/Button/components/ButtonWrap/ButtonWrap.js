@@ -6,32 +6,25 @@ import generateButtonIconRatio from "./utils/generateButtonIconRatio";
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
-
-import {
-  COLOR_BRAND_PRIMARY,
-  COLOR_DANGER,
-  COLOR_INFO,
-  COLOR_WARNING,
-  COLOR_CONTENT_BACKGROUND,
-  FONT_STACK_BASE
-} from "../../../../style/styleVariables";
+import baseTheme from "../../../../themes/base";
+import { FONT_STACK_BASE } from "../../../../style/styleVariables";
 
 // Maps button types to a particular color
-function generateButtonTypeColor(type) {
+function generateButtonTypeColor(type, theme) {
   switch (type) {
     case "danger":
-      return COLOR_DANGER;
+      return theme.colorIntentDanger;
     case "info":
-      return COLOR_INFO;
+      return theme.colorIntentInfo;
     case "warning":
-      return COLOR_WARNING;
+      return theme.colorIntentWarning;
     case "polling":
-      return COLOR_CONTENT_BACKGROUND;
+      return theme.colorIntentHighlight;
     case "primary":
-      return COLOR_BRAND_PRIMARY;
-    default:
+      return theme.colorIntentSuccess;
     case "default":
-      return COLOR_CONTENT_BACKGROUND;
+    default:
+      return theme.colorBackground;
   }
 }
 
@@ -45,6 +38,14 @@ const camelCaseConverter = stringInput => {
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
+  font-family: ${props => props.theme.fontStackNormal};
+  font-weight: ${props => props.theme.fontWeightControls};
+  line-height: ${props => props.theme.lineHeightControls};
+  transition: ${props => props.theme.transitionNormal};
+  transition-duration: ${parseInt(
+    props => props.theme.transitionDurationNormal,
+    10
+  ) * 2};
   box-sizing: border-box;
   user-select: none;
   font-family: ${FONT_STACK_BASE};
@@ -76,17 +77,23 @@ const ButtonWrap = styled.button`
   ${props => `
     ${
       props.type
-        ? generateButtonStyle({
+        ? generateButtonStyle(props.theme, {
             buttonOutlineStyle: camelCaseConverter(props.outline),
-            buttonBackgroundColorBase: generateButtonTypeColor(props.type),
-            buttonBorderColorBase: generateButtonTypeColor(props.type),
+            buttonBackgroundColorBase: generateButtonTypeColor(
+              props.type,
+              props.theme
+            ),
+            buttonBorderColorBase: generateButtonTypeColor(
+              props.type,
+              props.theme
+            ),
             buttonLabelColorBase: contrastColor(
-              generateButtonTypeColor(props.type),
+              generateButtonTypeColor(props.type, props.theme),
               1
             ),
             buttonActiveStatus: props.active
           }) // has color (also code in props.outline and props.active)
-        : generateButtonStyle({
+        : generateButtonStyle(props.theme, {
             buttonOutlineStyle: camelCaseConverter(props.outline),
             buttonActiveStatus: props.active
           }) // no color
@@ -122,6 +129,10 @@ ButtonWrap.propTypes = {
   ]),
   size: PropTypes.string,
   type: PropTypes.oneOf(["danger", "info", "warning", "primary", "polling"])
+};
+
+ButtonWrap.defaultProps = {
+  theme: baseTheme
 };
 
 export default ButtonWrap;

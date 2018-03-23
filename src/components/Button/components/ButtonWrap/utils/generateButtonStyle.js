@@ -1,9 +1,5 @@
 import { mix, desaturate } from "polished";
 import {
-  COLOR_BRAND_PRIMARY,
-  COLOR_WHITE
-} from "../../../../../style/styleVariables";
-import {
   darkenColor,
   lightenColor,
   contrastColor
@@ -31,22 +27,28 @@ import {
  * }
  * @returns string
  */
-function generateButtonStyle({
-  buttonBackgroundColorBase = COLOR_WHITE,
-  buttonBorderColorBase = COLOR_WHITE,
-  buttonLabelColorBase = contrastColor(COLOR_WHITE, 1),
-  buttonActiveStatus = false,
-  buttonOutlineStyle = "raisedOutline",
-  buttonOutlineStyleDepth = 0.06, // 0-100% // default: 6%,
-  buttonReactionStyle = "darken", // darken, lighten // default: darken
-  buttonReactionDegree = 0.06, // 0-100% // default: 6%
-  buttonHoverReactionDegree = 0.06 * 0.25,
-  buttonActiveReactionDegree = 0.06 * 2,
-  buttonDownReactionDegree = 0.06,
-  buttonActiveMixBaseColor = COLOR_BRAND_PRIMARY,
-  buttonActiveMixBaseLabelColor = contrastColor(COLOR_BRAND_PRIMARY, 1),
-  buttonActiveMixDegree = 1 //default 100%
-}) {
+function generateButtonStyle(
+  theme,
+  {
+    buttonBackgroundColorBase = theme.colorBackground,
+    buttonBorderColorBase = theme.colorBackground,
+    buttonLabelColorBase = contrastColor(theme.colorBackground, 1),
+    buttonActiveStatus = false,
+    buttonOutlineStyle = "raisedOutline",
+    buttonOutlineStyleDepth = 0.06, // 0-100% // default: 6%,
+    buttonReactionStyle = "darken", // darken, lighten // default: darken
+    buttonReactionDegree = 0.06, // 0-100% // default: 6%
+    buttonHoverReactionDegree = 0.06 * 0.25,
+    buttonActiveReactionDegree = 0.06 * 2,
+    buttonDownReactionDegree = 0.06,
+    buttonActiveMixBaseColor = theme.colorIntentHighlight,
+    buttonActiveMixBaseLabelColor = contrastColor(
+      theme.colorIntentHighlight,
+      1
+    ),
+    buttonActiveMixDegree = 1 //default 100%
+  }
+) {
   // default style Types (static, hover, down, active, activeDown)
   // this object feeds all the css at the bottom of the function
   // in this object we unite defaults with inputs
@@ -437,35 +439,47 @@ function generateButtonStyle({
   return `
   background-color: ${baseStyles["backgroundColor"]};
   border-color: ${baseStyles["borderColor"]};
-  ${baseStyles["borderTopColor"]
-    ? `border-top-color: ${baseStyles["borderTopColor"]};`
-    : ""}
-  ${baseStyles["borderBottomColor"]
-    ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
-    : ""}
+  ${
+    baseStyles["borderTopColor"]
+      ? `border-top-color: ${baseStyles["borderTopColor"]};`
+      : ""
+  }
+  ${
+    baseStyles["borderBottomColor"]
+      ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
+      : ""
+  }
   color: ${baseStyles["color"]};
   &:active {
     ${!buttonActiveStatus ? "transition-duration: 0s;" : ""}
     background-color: ${downStyles["backgroundColor"]};
     border-color: ${downStyles["borderColor"]};
-    ${downStyles["borderTopColor"]
-      ? `border-top-color: ${downStyles["borderTopColor"]};`
-      : ""}
-    ${downStyles["borderBottomColor"]
-      ? `border-bottom-color: ${downStyles["borderBottomColor"]};`
-      : ""}
+    ${
+      downStyles["borderTopColor"]
+        ? `border-top-color: ${downStyles["borderTopColor"]};`
+        : ""
+    }
+    ${
+      downStyles["borderBottomColor"]
+        ? `border-bottom-color: ${downStyles["borderBottomColor"]};`
+        : ""
+    }
     color: ${downStyles["color"]};
   }
 
   &:hover {
     background-color: ${hoverStyles["backgroundColor"]};
     border-color: ${hoverStyles["borderColor"]};
-    ${hoverStyles["borderTopColor"]
-      ? `border-top-color: ${hoverStyles["borderTopColor"]};`
-      : ""}
-    ${hoverStyles["borderBottomColor"]
-      ? `border-bottom-color: ${hoverStyles["borderBottomColor"]};`
-      : ""}
+    ${
+      hoverStyles["borderTopColor"]
+        ? `border-top-color: ${hoverStyles["borderTopColor"]};`
+        : ""
+    }
+    ${
+      hoverStyles["borderBottomColor"]
+        ? `border-bottom-color: ${hoverStyles["borderBottomColor"]};`
+        : ""
+    }
     color: ${hoverStyles["color"]};
   } 
 
