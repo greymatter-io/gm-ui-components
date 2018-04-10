@@ -1,7 +1,8 @@
 {
   "name": "gm-ui-components",
   "version": "0.4.5",
-  "description": "A library of reusable UI components for the Grey Matter product suite.",
+  "description":
+    "A library of reusable UI components for the Grey Matter product suite.",
   "main": "lib/build.js",
   "author": "Decipher Technology Studios",
   "license": "Apache-2.0",
@@ -9,17 +10,15 @@
     "type": "git",
     "url": "git@github.com:DecipherNow/gm-ui-components.git"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "dependencies": {
-    "polished": "^1.9.0",
-    "prop-types": "^15.6.0",
+    "polished": "^1.9.2",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "^1.1.0",
+    "react-scripts": "^1.1.4",
     "react-test-renderer": "^16.2.0",
-    "styled-components": "^3.0.2"
+    "styled-components": "^3.2.5"
   },
   "scripts": {
     "build": "webpack -p",
@@ -33,8 +32,7 @@
     "version": "git add -A",
     "prepublishonly": "npm run build",
     "postpublish": "npm run deploy-storybook",
-    "start": "webpack -w",
-    "storybook": "start-storybook -p 9009 -s public",
+    "start": "start-storybook -p 9009 -s public",
     "test": "jest",
     "update-deps": "npm-check . --skip-unused -u"
   },
@@ -69,6 +67,9 @@
     "react-addons-test-utils": "^15.6.2",
     "webpack": "^3.10.0"
   },
+  "peerDependencies": {
+    "styled-components": "^3"
+  },
   "prettier": {
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
@@ -80,20 +81,12 @@
     "useTabs": false
   },
   "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+    "extends": ["@commitlint/config-conventional"]
   },
   "jest": {
-    "collectCoverageFrom": [
-      "src/components/**/*.{js,jsx}"
-    ],
+    "collectCoverageFrom": ["src/components/**/*.{js,jsx}"],
     "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
-    "unmockedModulePathPatterns": [
-      "react",
-      "enzyme",
-      "jest-enzyme"
-    ],
+    "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
     "moduleNameMapper": {
       "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
     },
@@ -101,9 +94,7 @@
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
-    "setupFiles": [
-      "raf/polyfill"
-    ]
+    "setupFiles": ["raf/polyfill"]
   },
   "engines": {
     "node": ">=8.6.0",
