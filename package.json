@@ -92,7 +92,7 @@
     "output": "./junit.xml"
   },
   "jest": {
-    "collectCoverageFrom": ["src/components/**/*.{js,jsx}"],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
     "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
     "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
     "moduleNameMapper": {
