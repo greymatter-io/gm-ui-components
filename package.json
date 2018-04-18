@@ -54,6 +54,7 @@
     "conventional-changelog-cli": "^1.3.5",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-prettier": "^2.5.0",
@@ -88,22 +89,30 @@
     "classNameTemplate": "{classname}",
     "titleTemplate": "{title}",
     "ancestorSeparator": " › ",
-    "usePathForSuiteName": "true",
-    "output": "./junit.xml"
+    "usePathForSuiteName": "true"
   },
   "jest": {
     "collectCoverageFrom": ["src/**/*.{js,jsx}"],
-    "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
-    "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
-    "moduleNameMapper": {
-      "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
-    },
+    "coverageReporters": ["lcov"],
+    "setupFiles": ["raf/polyfill", "<rootDir>/config/jestSetup.js"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
-    "setupFiles": ["raf/polyfill"],
-    "coverageReporters": ["lcov"]
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/fileTransform.js"
+    },
+    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleDirectories": ["node_modules", "<rootDir>/src"],
+    "moduleFileExtensions": ["web.js", "js", "json", "web.jsx", "jsx"]
   },
   "engines": {
     "node": ">=8.6.0",
