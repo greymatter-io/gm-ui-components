@@ -24,13 +24,13 @@ plugins:
     enabled: true
   radon:
     enabled: false
-exclude_paths:
-- ".circle.yml"
-- ".storybook/"
-- ".vscode/"
-- "lib/"
-- "config/"
-- "public/"
-- "node_modules/"
-- "**/*.test.js"
+exclude_patterns:
+- .circle.yml
+- .storybook/
+- .vscode/
+- lib/
+- config/
+- public/
+- node_modules/
+- **/*.test.js
 - stories/
