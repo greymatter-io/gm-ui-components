@@ -24,7 +24,7 @@ plugins:
     enabled: true
   radon:
     enabled: false
-exclude_patterns:
+exclude_paths:
 - ".circle.yml"
 - ".storybook/"
 - ".vscode/"
