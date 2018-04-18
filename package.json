@@ -94,7 +94,7 @@
   "jest": {
     "collectCoverageFrom": ["src/**/*.{js,jsx}"],
     "coverageReporters": ["lcov"],
-    "setupFiles": ["raf/polyfill", "<rootDir>/config/jestSetup.js"],
+    "setupFiles": ["raf/polyfill", "<rootDir>/config/setupTests.js"],
     "snapshotSerializers": ["enzyme-to-json/serializer"],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
