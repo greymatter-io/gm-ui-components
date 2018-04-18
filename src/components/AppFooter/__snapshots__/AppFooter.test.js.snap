@@ -167,7 +167,7 @@ exports[`A Footer container should render 1`] = `
   >
     <img
       alt="Decipher Technology Studios"
-      src=""
+      src="decipher-logo-long.png"
     />
   </a>
   <p
