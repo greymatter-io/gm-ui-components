@@ -14,7 +14,6 @@ export const COLOR_DANGER = COLOR_RED;
 export const COLOR_WARNING = "#f8b400";
 export const COLOR_INFO = "#094dff";
 
-
 export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
 
 /*/ Theme Configuration /*/
@@ -24,14 +23,12 @@ export const COLOR_SIDEBAR_CONTENT = COLOR_WHITE;
 export const COLOR_CONTENT = COLOR_BLACK;
 
 export const BORDER_RADIUS_BASE = "3px";
-
 export const ICON_VIEWBOX_SIZE = 24;
-
 export const PADDING_BASE = 8;
 
 // z-index mappings
 export const ZINDEX_TOOLTIP = "1070";
-
+export const ZINDEX_STICKY = "1010";
 /*/ Fonts /*/
 
 // Backup font list
@@ -49,6 +46,7 @@ export const FONT_STACK_CODE = FONT_GROUP_CODE;
 
 export const LINE_HEIGHT_BASE = 1.4;
 export const FONT_WEIGHT_BASE = 400;
+export const FONT_WEIGHT_CONTROLS = 600;
 export const FONT_SIZE_HERO = "32px";
 export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
