@@ -65,7 +65,6 @@ jobs:
     parallelism: 2
     steps:
       - checkout
-      - parallel: 
       - attach_workspace:
           at: ~/repo
       # CircleCI 2.0 no longer allows interpolation of env variables. This is the workaround: 
