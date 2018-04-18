@@ -32,5 +32,5 @@ exclude_patterns:
 - config/
 - public/
 - node_modules/
-- **/*.test.js
+- "**/*.test.js"
 - stories/
