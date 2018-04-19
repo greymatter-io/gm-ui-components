@@ -33,7 +33,7 @@
     "prepublishonly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "start-storybook -p 9009 -s public",
-    "test": "jest",
+    "test": "node scripts/test.js --env=jsdom",
     "update-deps": "npm-check . --skip-unused -u"
   },
   "devDependencies": {
@@ -46,6 +46,7 @@
     "@storybook/addon-options": "^3.3.10",
     "@storybook/react": "^3.3.10",
     "@storybook/storybook-deployer": "^2.2.0",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.24.1",
@@ -53,14 +54,17 @@
     "conventional-changelog-cli": "^1.3.5",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.5.1",
     "husky": "^0.14.3",
-    "jest-junit": "^3.4.1",
-    "jest-styled-components": "^4.11.0-0",
-    "junit-merge": "^1.2.3",
+    "jest": "^22.4.0",
+    "jest-cli": "^22.4.2",
+    "jest-junit": "^3.6.0",
+    "jest-styled-components": "^4.11.0-1",
+    "junit-merge": "^1.3.0",
     "npm-check": "^5.5.2",
     "prettier": "^1.10.2",
     "raf": "^3.4.0",
@@ -83,18 +87,37 @@
   "commitlint": {
     "extends": ["@commitlint/config-conventional"]
   },
+  "jest-junit": {
+    "suiteName": "gm-ui-components",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
+  },
   "jest": {
     "collectCoverageFrom": ["src/components/**/*.{js,jsx}"],
-    "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
-    "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
-    "moduleNameMapper": {
-      "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
-    },
+    "coverageReporters": ["lcov"],
+    "setupFiles": ["raf/polyfill", "<rootDir>/config/setupTests.js"],
+    "setupTestFrameworkScriptFile":
+      "<rootDir>/config/jestSetupTestFramework.js",
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
-    "setupFiles": ["raf/polyfill"]
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/fileTransform.js"
+    },
+    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleDirectories": ["node_modules", "<rootDir>/src"],
+    "moduleFileExtensions": ["web.js", "js", "json", "web.jsx", "jsx"]
   },
   "engines": {
     "node": ">=8.6.0",
