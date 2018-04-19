@@ -15,6 +15,7 @@ const Copyright = styled.p`
   padding: ${spacingScale(1)};
   text-transform: uppercase;
   order: 3;
+  white-space: pre-wrap;
 
   @media all and (min-width: 800px) {
     order: initial;
