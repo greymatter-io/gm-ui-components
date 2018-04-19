@@ -85,7 +85,7 @@ jobs:
             xargs npm test -- --testResultsProcessor="jest-junit" --coverage --ci --maxWorkers=2
       - run: 
           name: Format coverage
-          command: ./cc-test-reporter format-coverage --output coverage/codeclimate.$CIRCLE_NODE_INDEX.json
+          command: ./cc-test-reporter format-coverage -t lcov --output coverage/codeclimate.$CIRCLE_NODE_INDEX.json
       - persist_to_workspace: 
           root: ~/repo
           paths:
