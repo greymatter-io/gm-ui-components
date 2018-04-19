@@ -12,7 +12,6 @@ export const BreadcrumbsContainer = styled.ol`
   flex-direction: row;
   height: inherit;
   align-items: stretch;
-  font-family: ${FONT_STACK_BASE};
 `;
 
 class Breadcrumbs extends React.Component {
