@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { COLOR_CONTENT_BACKGROUND } from "../../../style/styleVariables";
-import { spacingScale, contrastColor } from "../../../style/styleFunctions";
+import { COLOR_CONTENT_BACKGROUND } from "style/styleVariables";
+import { spacingScale, contrastColor } from "style/styleFunctions";
 
 const Copyright = styled.p`
   font-size: 50%;

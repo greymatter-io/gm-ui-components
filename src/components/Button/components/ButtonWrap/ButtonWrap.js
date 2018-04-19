@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import { contrastColor } from "../../../../style/styleFunctions";
+import { contrastColor } from "style/styleFunctions";
 import generateButtonIconRatio from "./utils/generateButtonIconRatio";
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
@@ -14,7 +14,7 @@ import {
   COLOR_WARNING,
   COLOR_CONTENT_BACKGROUND,
   FONT_STACK_BASE
-} from "../../../../style/styleVariables";
+} from "style/styleVariables";
 
 // Maps button types to a particular color
 function generateButtonTypeColor(type) {

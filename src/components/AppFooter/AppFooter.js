@@ -5,7 +5,7 @@ import Copyright from "./components/Copyright";
 import Footer from "./components/Footer";
 import Links from "./components/Links";
 import Link from "./components/Link";
-import { Twitter, GitHub, LinkedIn } from "../../components/Glyphs";
+import { Twitter, GitHub, LinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
 
 import longLogo from "./assets/decipher-logo-long.png";

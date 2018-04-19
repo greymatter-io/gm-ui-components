@@ -1,4 +1,4 @@
-import { spacingScale } from "../../../../../style/styleFunctions";
+import { spacingScale } from "style/styleFunctions";
 
 /**
  * Utility function that transforms an object containing different attributes
