@@ -34,4 +34,4 @@ exclude_patterns:
   - "public/"
   - "node_modules/"
   - "**/*.test.js"
-  - "src/stories/*"
+  - "src/stories/"
