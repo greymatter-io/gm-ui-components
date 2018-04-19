@@ -76,16 +76,16 @@ jobs:
           command: echo 'export JEST_JUNIT_OUTPUT="results/junit-$CIRCLE_NODE_INDEX.xml"' >> $BASH_ENV
       - run:
           name: Prepare Code Climate Test Reporter
-          command: ./cc-test-reporter before-build -d
+          command: ./cc-test-reporter before-build
       - run:
           name: Run tests
           # split tests by timing and then run npm test
           command: |
             circleci tests glob "src/**/*.test.js" | circleci tests split --split-by=timings | \
-            xargs npm test -- --testResultsProcessor="jest-junit" --coverage --ci --maxWorkers=2
+            xargs npm test -- --testResultsProcessor="jest-junit"  --coverage --ci --maxWorkers=2
       - run: 
           name: Format coverage
-          command: ./cc-test-reporter format-coverage -d -t lcov --output coverage/codeclimate.$CIRCLE_NODE_INDEX.json coverage/lcov.info
+          command: ./cc-test-reporter format-coverage --output coverage/codeclimate.$CIRCLE_NODE_INDEX.json
       - persist_to_workspace: 
           root: ~/repo
           paths:
@@ -102,8 +102,8 @@ jobs:
       - run:
           name: Send Istanbul LCOV Results to Code Climate
           command: |
-            ./cc-test-reporter sum-coverage -d coverage/codeclimate.*.json
-            ./cc-test-reporter upload-coverage -d
+            ./cc-test-reporter sum-coverage coverage/codeclimate.*.json
+            ./cc-test-reporter upload-coverage
       - run: 
           name: Merge junit results
           command: mkdir junit && npm run junit-merge -- -d results -o junit/junit.xml
