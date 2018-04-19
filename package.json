@@ -93,7 +93,7 @@
     "usePathForSuiteName": "true"
   },
   "jest": {
-    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "collectCoverageFrom": ["src/components/**/*.{js,jsx}"],
     "coverageReporters": ["lcov"],
     "setupFiles": ["raf/polyfill", "<rootDir>/config/setupTests.js"],
     "setupTestFrameworkScriptFile":

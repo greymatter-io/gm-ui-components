@@ -112,10 +112,8 @@ jobs:
           path: junit
       - store_test_results:
           path: junit
-      # Uploading all of the LCOV assets is time consuming, and we get this info
-      # in CircleCI. However, I'm leaving this here to uncomment if needed.
-      # - store_artifacts:
-      #     path: coverage
+      - store_artifacts:
+          path: coverage
 
 # Define a workflow to specify the run order of jobs
 # More info at https://circleci.com/docs/2.0/workflows/
