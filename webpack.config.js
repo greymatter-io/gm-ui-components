@@ -12,7 +12,9 @@ module.exports = {
     library: "gm-ui-components"
   },
   externals: {
-    "styled-components": true
+    "styled-components": true,
+    react: true,
+    "react-dom": true
   },
   module: {
     rules: [
