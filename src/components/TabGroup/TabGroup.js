@@ -7,7 +7,7 @@ import TabGroupWrap from "./components/TabGroupWrap";
 const TabGroup = ({ label, children }) => {
   return (
     <TabGroupWrap>
-      <TabGroupLabel>{label}</TabGroupLabel>
+      {label && <TabGroupLabel>{label}</TabGroupLabel>}
       {children}
     </TabGroupWrap>
   );
