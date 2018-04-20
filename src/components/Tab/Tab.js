@@ -29,7 +29,7 @@ Tab.propTypes = {
   clickAction: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
   glyph: PropTypes.string,
-  label: PropTypes.string
+  label: PropTypes.string.isRequired
 };
 
 export default Tab;
