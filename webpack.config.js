@@ -21,9 +21,6 @@ module.exports = {
     "react-dom": true,
     polished: true
   },
-  resolve: {
-    modules: [path.resolve(__dirname, "node_modules"), "styled-components"]
-  },
   module: {
     rules: [
       {
