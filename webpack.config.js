@@ -14,7 +14,8 @@ module.exports = {
   externals: {
     react: "react",
     "react-dom": "react-dom",
-    "styled-components": "styled-components"
+    "styled-components": "styled-components",
+    polished: "polished"
   },
   module: {
     rules: [
