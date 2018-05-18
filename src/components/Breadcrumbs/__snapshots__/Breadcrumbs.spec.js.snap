@@ -39,6 +39,7 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   text-overflow: ellipsis;
   padding: 8px 0;
   color: inherit;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -137,6 +138,7 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   text-overflow: ellipsis;
   padding: 8px 0;
   color: inherit;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
