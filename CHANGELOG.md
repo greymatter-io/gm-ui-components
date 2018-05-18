@@ -1,5 +1,11 @@
 <a name="0.4.5"></a>
 
+# 0.4.5 (2018-05-18)
+
+* move styled-components, react, and react-dom to peerDependencies and exclude from build
+
+<a name="0.4.5"></a>
+
 # 0.4.5 (2018-03-19)
 
 * update main export to include glyphs
