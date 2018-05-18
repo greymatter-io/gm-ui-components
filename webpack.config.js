@@ -11,6 +11,19 @@ module.exports = {
     libraryTarget: "umd",
     library: "gm-ui-components"
   },
+  externals: {
+    "styled-components": {
+      commonjs: "styled-components",
+      commonjs2: "styled-components",
+      amd: "styled-components"
+    },
+    react: true,
+    "react-dom": true,
+    polished: true
+  },
+  resolve: {
+    modules: [path.resolve(__dirname, "node_modules"), "styled-components"]
+  },
   module: {
     rules: [
       {
