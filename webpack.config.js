@@ -12,13 +12,9 @@ module.exports = {
     library: "gm-ui-components"
   },
   externals: {
-    react: "React",
-    "react-dom": "ReactDOM",
-    "styled-components": {
-      commonjs: "styled-components",
-      commonjs2: "styled-components",
-      amd: "styled-components"
-    }
+    react: "react",
+    "react-dom": "react-dom",
+    "styled-components": "styled-components"
   },
   module: {
     rules: [
