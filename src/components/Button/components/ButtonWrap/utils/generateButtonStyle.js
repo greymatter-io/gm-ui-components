@@ -104,35 +104,35 @@ function generateButtonStyle({
     styleTypes.activeStyles["borderColor"] = darkenColor(
       mix(
         buttonActiveMixDegree,
-        buttonBorderColorBase,
-        buttonActiveMixBaseColor
+        buttonActiveMixBaseColor,
+        buttonBorderColorBase
       ),
       buttonActiveReactionDegree + buttonDownReactionDegree
     );
     // Active Down Styles
     styleTypes.activeDownStyles["backgroundColor"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
       darkenColor(
         buttonBackgroundColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseColor
+      )
     );
     styleTypes.activeDownStyles["color"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseLabelColor,
       darkenColor(
         buttonLabelColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseLabelColor
+      )
     );
     styleTypes.activeDownStyles["borderColor"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
       darkenColor(
         buttonBorderColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseColor
+      )
     );
   } else {
     // Assume button reaction style == lighten
@@ -197,11 +197,11 @@ function generateButtonStyle({
     );
     styleTypes.activeDownStyles["borderColor"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
       lightenColor(
         buttonBorderColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseColor
+      )
     );
   }
 
@@ -437,41 +437,51 @@ function generateButtonStyle({
   return `
   background-color: ${baseStyles["backgroundColor"]};
   border-color: ${baseStyles["borderColor"]};
-  ${baseStyles["borderTopColor"]
-    ? `border-top-color: ${baseStyles["borderTopColor"]};`
-    : ""}
-  ${baseStyles["borderBottomColor"]
-    ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
-    : ""}
+  ${
+    baseStyles["borderTopColor"]
+      ? `border-top-color: ${baseStyles["borderTopColor"]};`
+      : ""
+  }
+  ${
+    baseStyles["borderBottomColor"]
+      ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
+      : ""
+  }
   color: ${baseStyles["color"]};
   &:active {
     ${!buttonActiveStatus ? "transition-duration: 0s;" : ""}
     background-color: ${downStyles["backgroundColor"]};
     border-color: ${downStyles["borderColor"]};
-    ${downStyles["borderTopColor"]
-      ? `border-top-color: ${downStyles["borderTopColor"]};`
-      : ""}
-    ${downStyles["borderBottomColor"]
-      ? `border-bottom-color: ${downStyles["borderBottomColor"]};`
-      : ""}
+    ${
+      downStyles["borderTopColor"]
+        ? `border-top-color: ${downStyles["borderTopColor"]};`
+        : ""
+    }
+    ${
+      downStyles["borderBottomColor"]
+        ? `border-bottom-color: ${downStyles["borderBottomColor"]};`
+        : ""
+    }
     color: ${downStyles["color"]};
   }
 
   &:hover {
     background-color: ${hoverStyles["backgroundColor"]};
     border-color: ${hoverStyles["borderColor"]};
-    ${hoverStyles["borderTopColor"]
-      ? `border-top-color: ${hoverStyles["borderTopColor"]};`
-      : ""}
-    ${hoverStyles["borderBottomColor"]
-      ? `border-bottom-color: ${hoverStyles["borderBottomColor"]};`
-      : ""}
+    ${
+      hoverStyles["borderTopColor"]
+        ? `border-top-color: ${hoverStyles["borderTopColor"]};`
+        : ""
+    }
+    ${
+      hoverStyles["borderBottomColor"]
+        ? `border-bottom-color: ${hoverStyles["borderBottomColor"]};`
+        : ""
+    }
     color: ${hoverStyles["color"]};
   } 
 
   &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #0aab2a;
     z-index: 1;
   }
 

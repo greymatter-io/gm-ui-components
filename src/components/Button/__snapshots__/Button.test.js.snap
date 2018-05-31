@@ -4,21 +4,15 @@ exports[`Button Snapshots matches active snapshot 1`] = `
 <Button
   active={true}
   clickAction={[Function]}
-  disabled={false}
   label="Button"
-  orientation="horizontal"
-  size="normal"
 />
 `;
 
 exports[`Button Snapshots matches disabled snapshot 1`] = `
 <Button
-  active={false}
   clickAction={[Function]}
   disabled={true}
   label="Button"
-  orientation="horizontal"
-  size="normal"
 />
 `;
 
@@ -29,8 +23,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -57,8 +50,8 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -101,8 +94,6 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -144,8 +135,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -172,8 +162,8 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -215,8 +205,6 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -261,8 +249,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -289,8 +276,8 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   border-bottom-color: #f0f0f0;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -332,8 +319,6 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -362,7 +347,6 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="raised"
 >
   <span>
@@ -378,8 +362,7 @@ exports[`Button Snapshots matches outline snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -404,8 +387,8 @@ exports[`Button Snapshots matches outline snapshots 2`] = `
   border-color: #f0f0f0;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -443,8 +426,6 @@ exports[`Button Snapshots matches outline snapshots 2`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -473,7 +454,6 @@ exports[`Button Snapshots matches outline snapshots 2`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="outline"
 >
   <span>
@@ -489,8 +469,7 @@ exports[`Button Snapshots matches outline snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -516,8 +495,8 @@ exports[`Button Snapshots matches outline snapshots 3`] = `
   border-bottom-color: #f0f0f0;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -557,8 +536,6 @@ exports[`Button Snapshots matches outline snapshots 3`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -587,7 +564,6 @@ exports[`Button Snapshots matches outline snapshots 3`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="shadow"
 >
   <span>
@@ -603,8 +579,7 @@ exports[`Button Snapshots matches outline snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -629,8 +604,8 @@ exports[`Button Snapshots matches outline snapshots 4`] = `
   border-color: #fff;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -668,8 +643,6 @@ exports[`Button Snapshots matches outline snapshots 4`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -698,7 +671,6 @@ exports[`Button Snapshots matches outline snapshots 4`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="none"
 >
   <span>
@@ -714,8 +686,7 @@ exports[`Button Snapshots matches outline snapshots 5`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -742,8 +713,8 @@ exports[`Button Snapshots matches outline snapshots 5`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -785,8 +756,6 @@ exports[`Button Snapshots matches outline snapshots 5`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -815,7 +784,6 @@ exports[`Button Snapshots matches outline snapshots 5`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="raised-outline"
 >
   <span>
@@ -826,13 +794,9 @@ exports[`Button Snapshots matches outline snapshots 5`] = `
 
 exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
 <Button
-  active={false}
   clickAction={[Function]}
-  disabled={false}
   label="Button"
-  orientation="horizontal"
   prefix="Prefix"
-  size="normal"
   suffix="Suffix"
 />
 `;
@@ -844,8 +808,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -872,8 +835,8 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -915,8 +878,6 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -945,7 +906,6 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="normal"
 >
   <span>
@@ -961,8 +921,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -989,8 +948,8 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 7px;
-  border-radius: 6px;
-  padding: 4px 6px;
+  border-radius: 3px;
+  padding: 1px 4px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1033,8 +992,6 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1063,7 +1020,6 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="xs"
 >
   <span>
@@ -1079,8 +1035,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1107,8 +1062,8 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 11px;
-  border-radius: 6px;
-  padding: 4px 6px;
+  border-radius: 3px;
+  padding: 1px 4px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1151,8 +1106,6 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1181,7 +1134,6 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="sm"
 >
   <span>
@@ -1197,8 +1149,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1225,8 +1176,8 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 18px;
-  border-radius: 6px;
-  padding: 4px 12px;
+  border-radius: 3px;
+  padding: 2px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1268,8 +1219,6 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1298,7 +1247,6 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="lg"
 >
   <span>
@@ -1314,8 +1262,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1342,8 +1289,8 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 21px;
-  border-radius: 6px;
-  padding: 4px 12px;
+  border-radius: 3px;
+  padding: 2px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1385,8 +1332,6 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1415,7 +1360,6 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="xl"
 >
   <span>
@@ -1431,8 +1375,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1453,14 +1396,14 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #E4251A;
-  border-color: #d01b10;
-  border-top-color: #e2342b;
-  border-bottom-color: #a10b02;
+  background-color: #eb001a;
+  border-color: #cc0017;
+  border-top-color: #f6041f;
+  border-bottom-color: #8f0010;
   color: #fff;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1486,24 +1429,22 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ca180e;
-  border-color: #b31006;
-  border-top-color: #d51d12;
-  border-bottom-color: #7c0700;
+  background-color: #c50016;
+  border-color: #a60013;
+  border-top-color: #d1031a;
+  border-bottom-color: #69000c;
   color: #ececec;
 }
 
 .c0:hover {
-  background-color: #df2217;
-  border-color: #c9180e;
-  border-top-color: #e42c22;
-  border-bottom-color: #9a0900;
+  background-color: #e30019;
+  border-color: #c40016;
+  border-top-color: #ee041e;
+  border-bottom-color: #87000f;
   color: #fbfbfb;
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1513,8 +1454,8 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 .c0[disabled]:active {
   cursor: default;
   opacity: 0.8;
-  background-color: #707070;
-  border-color: #707070;
+  background-color: #676767;
+  border-color: #676767;
   color: #f0f0f0;
 }
 
@@ -1532,7 +1473,6 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="danger"
   type="danger"
 >
@@ -1549,8 +1489,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1577,8 +1516,8 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   border-bottom-color: #0030ac;
   color: #fff;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1620,8 +1559,6 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1650,7 +1587,6 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="info"
   type="info"
 >
@@ -1667,8 +1603,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1695,8 +1630,8 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   border-bottom-color: #005912;
   color: #fff;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1738,8 +1673,6 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1768,7 +1701,6 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="primary"
   type="primary"
 >
@@ -1785,8 +1717,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1813,8 +1744,8 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   border-bottom-color: #9c7100;
   color: #fff;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1856,8 +1787,6 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -1886,7 +1815,6 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="warning"
   type="warning"
 >
@@ -1903,8 +1831,7 @@ exports[`Button Snapshots matches type snapshots 5`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -1931,8 +1858,8 @@ exports[`Button Snapshots matches type snapshots 5`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 1.4px 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1974,8 +1901,6 @@ exports[`Button Snapshots matches type snapshots 5`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 
@@ -2004,7 +1929,6 @@ exports[`Button Snapshots matches type snapshots 5`] = `
 
 <button
   class="c0"
-  orientation="horizontal"
   title="polling"
   type="polling"
 >

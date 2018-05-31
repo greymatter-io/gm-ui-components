@@ -13,7 +13,7 @@ import {
   COLOR_INFO,
   COLOR_WARNING,
   COLOR_CONTENT_BACKGROUND,
-  FONT_STACK_BASE
+  FONT_WEIGHT_SEMIBOLD
 } from "../../../../style/styleVariables";
 
 // Maps button types to a particular color
@@ -27,11 +27,9 @@ function generateButtonTypeColor(type) {
       return COLOR_WARNING;
     case "polling":
       return COLOR_CONTENT_BACKGROUND;
+    default:
     case "primary":
       return COLOR_BRAND_PRIMARY;
-    default:
-    case "default":
-      return COLOR_CONTENT_BACKGROUND;
   }
 }
 
@@ -47,8 +45,7 @@ const camelCaseConverter = stringInput => {
 const ButtonWrap = styled.button`
   box-sizing: border-box;
   user-select: none;
-  font-family: ${FONT_STACK_BASE};
-  font-weight: 600;
+  font-weight: ${FONT_WEIGHT_SEMIBOLD};
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -97,9 +94,9 @@ const ButtonWrap = styled.button`
         : generateButtonSize() // Icons // no size
     } 
     ${
-      props.glyphSize
-        ? generateButtonIconRatio(props.glyphSize) // has glyphSize
-        : generateButtonIconRatio() // Orientation // no glyphSize
+      props.iconSize
+        ? generateButtonIconRatio(props.iconSize) // has iconSize
+        : generateButtonIconRatio() // Orientation // no iconSize
     } 
     ${
       props.orientation
