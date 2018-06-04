@@ -6,13 +6,15 @@ import {
   COLOR_CONTENT_BACKGROUND,
   FONT_SIZE_BASE,
   APP_FOOTER_HEIGHT,
-  ZINDEX_STICKY
+  ZINDEX_STICKY,
+  FONT_STACK_BASE
 } from "style/styleVariables";
 
 const Footer = styled.footer`
   user-select: none;
   overflow: hidden;
   padding: ${spacingScale(0.5)};
+  font-family: ${FONT_STACK_BASE};
   display: flex;
   flex-flow: row wrap;
   color: ${contrastColor(COLOR_CONTENT_BACKGROUND, 0.8)};

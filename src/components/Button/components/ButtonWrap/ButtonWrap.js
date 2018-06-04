@@ -12,7 +12,8 @@ import {
   COLOR_DANGER,
   COLOR_INFO,
   COLOR_WARNING,
-  COLOR_CONTENT_BACKGROUND
+  COLOR_CONTENT_BACKGROUND,
+  FONT_STACK_BASE
 } from "style/styleVariables";
 
 // Maps button types to a particular color
@@ -44,6 +45,7 @@ const camelCaseConverter = stringInput => {
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
+  font-family: ${FONT_STACK_BASE};
   box-sizing: border-box;
   user-select: none;
   font-weight: 600;

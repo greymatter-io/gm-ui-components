@@ -11,17 +11,7 @@ import Tooltip from "./Tooltip";
 import Tab from "./Tab";
 import TabGroup from "./TabGroup";
 
-import { FONT_STACK_BASE } from "style/styleVariables";
-
 import * as Glyphs from "./Glyphs";
-
-injectGlobal`
-* {
-  box-sizing: border-box;
-  font-family: ${FONT_STACK_BASE};
-  text-decoration: none;
-}
-`;
 
 const library = {
   ...Glyphs,
