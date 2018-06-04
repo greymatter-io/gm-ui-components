@@ -16,6 +16,8 @@ exclude_patterns:
   - scripts/
   - "**/*.test.js"
   - "**/*.stories.js"
+  - "**/*.js.snap"
+  - "**/__snapshots__/"
 plugins: 
   csslint: 
     enabled: false
