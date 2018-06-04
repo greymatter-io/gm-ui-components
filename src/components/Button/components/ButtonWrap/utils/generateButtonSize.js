@@ -43,32 +43,32 @@ function generateButtonSize(size) {
     case "xs": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 0.5,
-        horizontalPaddingMultiplier: 0.25,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: true
       });
     }
     case "sm": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 0.75,
-        horizontalPaddingMultiplier: 0.25,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: true
       });
     }
     case "lg": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1.25,
-        horizontalPaddingMultiplier: 0.5,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: false
       });
     }
     case "xl": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1.5,
-        horizontalPaddingMultiplier: 0.5,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: false
       });
     }
@@ -76,8 +76,8 @@ function generateButtonSize(size) {
     case "normal": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1,
-        horizontalPaddingMultiplier: 0.35,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: false
       });
     }
