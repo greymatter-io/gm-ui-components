@@ -5,7 +5,8 @@
     [
       "babel-plugin-styled-components",
       {
-        "displayName": true
+        "displayName": true,
+        "fileName": false
       }
     ],
     "add-module-exports"
