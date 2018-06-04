@@ -34,7 +34,7 @@ export const ZINDEX_STICKY = "1010";
 // Backup font list
 export const FONT_GROUP_SYSTEM = `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`;
 
-export const FONT_GROUP_MAIN_TEXT = "GMMetropolis";
+export const FONT_GROUP_MAIN_TEXT = "Metropolis";
 export const FONT_GROUP_DATA = "Rubik";
 export const FONT_GROUP_CODE = `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`;
 export const FONT_GROUP_DATA_MONO = "Source Code Pro";
