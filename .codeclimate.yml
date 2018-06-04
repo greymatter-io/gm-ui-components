@@ -25,6 +25,8 @@ plugins:
   radon:
     enabled: false
 exclude_patterns:
+- ".babelrc"
+- ".eslintrc"
 - ".circle.yml"
 - ".storybook/"
 - ".vscode/"
@@ -32,5 +34,6 @@ exclude_patterns:
 - "config/"
 - "public/"
 - "node_modules/"
+- "scripts/"
 - "**/*.test.js"
-- "**/*.story.js"
+- "**/*.stories.js"
