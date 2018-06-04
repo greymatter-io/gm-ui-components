@@ -5,31 +5,31 @@ describe("generateButtonSize", () => {
     expect(generateButtonSize("xs")).toEqual(`
     font-size: 7px;
     border-radius: 3px;
-    padding: 4px 1px;
+    padding: 2px 7px;
     text-transform: uppercase;
   `);
     expect(generateButtonSize("sm")).toEqual(`
     font-size: 11px;
     border-radius: 3px;
-    padding: 4px 1px;
+    padding: 2px 7px;
     text-transform: uppercase;
   `);
     expect(generateButtonSize("lg")).toEqual(`
     font-size: 18px;
     border-radius: 3px;
-    padding: 4px 2px;
+    padding: 2px 7px;
     
   `);
     expect(generateButtonSize("xl")).toEqual(`
     font-size: 21px;
     border-radius: 3px;
-    padding: 4px 2px;
+    padding: 2px 7px;
     
   `);
     expect(generateButtonSize("normal")).toEqual(`
     font-size: 14px;
     border-radius: 3px;
-    padding: 4px 1.4px;
+    padding: 2px 7px;
     
   `);
   });
