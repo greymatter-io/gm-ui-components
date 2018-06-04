@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { spacingScale, contrastColor } from "../../../style/styleFunctions";
+import { spacingScale, contrastColor } from "style/styleFunctions";
 import {
   FONT_SIZE_BASE,
   ZINDEX_TOOLTIP,
   BORDER_RADIUS_BASE,
   COLOR_CONTENT_BACKGROUND
-} from "../../../style/styleVariables";
+} from "style/styleVariables";
 
 const TOOLTIP_BACKGROUND_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 1);
 

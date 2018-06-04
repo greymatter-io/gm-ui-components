@@ -18,6 +18,7 @@ exports[`Copyright should render when screen is 800px or higher 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+  white-space: pre-wrap;
 }
 
 @media all and (min-width:800px) {

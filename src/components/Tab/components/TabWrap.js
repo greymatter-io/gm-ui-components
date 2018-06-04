@@ -3,7 +3,7 @@ import {
   COLOR_BRAND_PRIMARY,
   PADDING_BASE,
   FONT_WEIGHT_CONTROLS
-} from "../../../style/styleVariables";
+} from "style/styleVariables";
 
 const activeStyles = `
     border-color: ${COLOR_BRAND_PRIMARY};
