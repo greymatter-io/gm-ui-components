@@ -1,13 +1,6 @@
 import { mix, desaturate } from "polished";
-import {
-  COLOR_BRAND_PRIMARY,
-  COLOR_WHITE
-} from "../../../../../style/styleVariables";
-import {
-  darkenColor,
-  lightenColor,
-  contrastColor
-} from "../../../../../style/styleFunctions";
+import { COLOR_BRAND_PRIMARY, COLOR_WHITE } from "style/styleVariables";
+import { darkenColor, lightenColor, contrastColor } from "style/styleFunctions";
 
 /**
  * Utility function that transforms an object containing different attributes
@@ -437,35 +430,47 @@ function generateButtonStyle({
   return `
   background-color: ${baseStyles["backgroundColor"]};
   border-color: ${baseStyles["borderColor"]};
-  ${baseStyles["borderTopColor"]
-    ? `border-top-color: ${baseStyles["borderTopColor"]};`
-    : ""}
-  ${baseStyles["borderBottomColor"]
-    ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
-    : ""}
+  ${
+    baseStyles["borderTopColor"]
+      ? `border-top-color: ${baseStyles["borderTopColor"]};`
+      : ""
+  }
+  ${
+    baseStyles["borderBottomColor"]
+      ? `border-bottom-color: ${baseStyles["borderBottomColor"]};`
+      : ""
+  }
   color: ${baseStyles["color"]};
   &:active {
     ${!buttonActiveStatus ? "transition-duration: 0s;" : ""}
     background-color: ${downStyles["backgroundColor"]};
     border-color: ${downStyles["borderColor"]};
-    ${downStyles["borderTopColor"]
-      ? `border-top-color: ${downStyles["borderTopColor"]};`
-      : ""}
-    ${downStyles["borderBottomColor"]
-      ? `border-bottom-color: ${downStyles["borderBottomColor"]};`
-      : ""}
+    ${
+      downStyles["borderTopColor"]
+        ? `border-top-color: ${downStyles["borderTopColor"]};`
+        : ""
+    }
+    ${
+      downStyles["borderBottomColor"]
+        ? `border-bottom-color: ${downStyles["borderBottomColor"]};`
+        : ""
+    }
     color: ${downStyles["color"]};
   }
 
   &:hover {
     background-color: ${hoverStyles["backgroundColor"]};
     border-color: ${hoverStyles["borderColor"]};
-    ${hoverStyles["borderTopColor"]
-      ? `border-top-color: ${hoverStyles["borderTopColor"]};`
-      : ""}
-    ${hoverStyles["borderBottomColor"]
-      ? `border-bottom-color: ${hoverStyles["borderBottomColor"]};`
-      : ""}
+    ${
+      hoverStyles["borderTopColor"]
+        ? `border-top-color: ${hoverStyles["borderTopColor"]};`
+        : ""
+    }
+    ${
+      hoverStyles["borderBottomColor"]
+        ? `border-bottom-color: ${hoverStyles["borderBottomColor"]};`
+        : ""
+    }
     color: ${hoverStyles["color"]};
   } 
 
