@@ -19,6 +19,7 @@ injectGlobal`
 * {
   box-sizing: border-box;
   font-family: ${FONT_STACK_BASE};
+  text-decoration: none;
 }
 `;
 
