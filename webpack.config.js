@@ -15,6 +15,11 @@ module.exports = {
     libraryTarget: "umd",
     library: "gm-ui-components"
   },
+  externals: {
+    react: "react",
+    "react-dom": "react-dom",
+    "styled-components": "styled-components"
+  },
   module: {
     rules: [
       {
