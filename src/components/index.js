@@ -11,7 +11,7 @@ import Tooltip from "./Tooltip";
 import Tab from "./Tab";
 import TabGroup from "./TabGroup";
 
-import { FONT_STACK_BASE } from "../style/styleVariables";
+import { FONT_STACK_BASE } from "style/styleVariables";
 
 import * as Glyphs from "./Glyphs";
 
