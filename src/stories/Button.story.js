@@ -71,7 +71,7 @@ const glyphNames = [
   "PATCH"
 ];
 
-const types = ["danger", "info", "primary", "warning", "polling"];
+const types = ["default", "danger", "info", "primary", "warning", "polling"];
 const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
@@ -87,10 +87,10 @@ storiesOf("Button", module)
         <Button
           active={boolean("active", false)}
           label={text("label", "Hello World")}
-          type={select("type", types)}
+          type={select("type", types, "default")}
           glyph={select("glyph", glyphNames)}
           glyphColor={color("glyphColor")}
-          glyphRatio={number("glyphRatio", 1)}
+          glyphSize={select("glyphSize", sizes)}
           disabled={boolean("disabled", false)}
           clickAction={() => alert("clicked")}
           orientation={select("orientation", orientations, "horizontal")}

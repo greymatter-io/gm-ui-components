@@ -1,7 +1,6 @@
 import { PropTypes } from "prop-types";
 import React from "react";
-import Icon from "components/Icon";
-import Glyph from "components/Glyphs/";
+import * as Glyphs from "../Glyphs";
 
 import ButtonWrap from "./components/ButtonWrap";
 import ButtonLabelPrefix from "./components/ButtonLabelPrefix";
@@ -14,8 +13,7 @@ Button.propTypes = {
   disabled: PropTypes.bool, // disables the button
   glyph: PropTypes.string, // Glyph to display in the button
   glyphColor: PropTypes.string, // Color for the glyph
-  glyphRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Relative size for the glyph
-  iconSize: PropTypes.string,
+  glyphSize: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),
   label: PropTypes.string.isRequired, // label for the button
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
@@ -32,6 +30,7 @@ Button.propTypes = {
   suffix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add suffix text to button label
   tabIndex: PropTypes.number,
   type: PropTypes.oneOf([
+    "default",
     "danger",
     "info",
     "primary",
@@ -60,8 +59,8 @@ export default function Button({
   clickAction,
   disabled,
   glyph,
-  glyphRatio,
   glyphColor,
+  glyphSize,
   label,
   orientation,
   prefix,
@@ -71,9 +70,9 @@ export default function Button({
   outline,
   tabIndex,
   type,
-  iconSize,
   labelStyle
 }) {
+  const Glyph = Glyphs[glyph];
   return (
     <ButtonWrap
       active={active}
@@ -86,13 +85,9 @@ export default function Button({
       tabIndex={tabIndex}
       title={label}
       style={style}
-      iconSize={iconSize}
+      glyphSize={glyphSize}
     >
-      {glyph && (
-        <Icon>
-          <Glyph glyphColor={glyphColor} name={glyph} ratio={glyphRatio} />
-        </Icon>
-      )}
+      {Glyph && <Glyph glyphColor={glyphColor} />}
       {children}
       <span style={labelStyle}>
         {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}

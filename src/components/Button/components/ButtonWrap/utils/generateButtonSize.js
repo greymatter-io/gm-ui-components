@@ -25,8 +25,8 @@ function _buttonSizeStyleBlockGenerator({
     font-size: ${Math.ceil(fontSizeBase * fontSizeMultiplier)}px;
     border-radius: ${borderRadiusBase}px;
     padding: ${contentSpacingBase *
-      horizontalPaddingMultiplier}px ${contentSpacingBase *
-    verticalPaddingMultiplier}px;
+      verticalPaddingMultiplier}px ${contentSpacingBase *
+    horizontalPaddingMultiplier}px;
     ${textIsUppercase ? "text-transform: uppercase;" : ""}
   `;
 }

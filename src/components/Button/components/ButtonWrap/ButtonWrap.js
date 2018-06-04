@@ -28,9 +28,11 @@ function generateButtonTypeColor(type) {
       return COLOR_WARNING;
     case "polling":
       return COLOR_CONTENT_BACKGROUND;
-    default:
     case "primary":
       return COLOR_BRAND_PRIMARY;
+    default:
+    case "default":
+      return COLOR_CONTENT_BACKGROUND;
   }
 }
 
@@ -95,9 +97,9 @@ const ButtonWrap = styled.button`
         : generateButtonSize() // Icons // no size
     } 
     ${
-      props.iconSize
-        ? generateButtonIconRatio(props.iconSize) // has iconSize
-        : generateButtonIconRatio() // Orientation // no iconSize
+      props.glyphSize
+        ? generateButtonIconRatio(props.glyphSize) // has glyphSize
+        : generateButtonIconRatio() // Orientation // no glyphSize
     } 
     ${
       props.orientation
@@ -119,7 +121,14 @@ ButtonWrap.propTypes = {
     "raised-outline"
   ]),
   size: PropTypes.string,
-  type: PropTypes.oneOf(["danger", "info", "warning", "primary", "polling"])
+  type: PropTypes.oneOf([
+    "default",
+    "danger",
+    "info",
+    "warning",
+    "primary",
+    "polling"
+  ])
 };
 
 export default ButtonWrap;

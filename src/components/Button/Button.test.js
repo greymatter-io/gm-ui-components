@@ -3,7 +3,6 @@ import { mount, render } from "enzyme";
 
 import Button from "./Button";
 import ButtonWrap from "./components/ButtonWrap";
-import Glyph from "components/Glyphs/";
 
 const types = ["danger", "info", "primary", "warning", "polling"];
 const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
@@ -16,8 +15,7 @@ const props = {
   disabled: false,
   glyph: "Bell",
   glyphColor: "#fff",
-  glyphRatio: 1,
-  iconSize: "sm",
+  glyphSize: "sm",
   label: "Button",
   labelStyle: {},
   orientation: "horizontal",
@@ -115,7 +113,7 @@ describe("Button", () => {
       expect(wrapper.find(ButtonWrap).props()).toMatchObject({
         active: false,
         disabled: false,
-        iconSize: "sm",
+        glyphSize: "sm",
         onClick: wrapper.props().clickAction,
         orientation: "horizontal",
         outline: "outline",
@@ -127,11 +125,9 @@ describe("Button", () => {
       });
     });
 
-    test("passes correct props to Glyph", () => {
-      expect(wrapper.find(Glyph).props()).toMatchObject({
-        glyphColor: "#fff",
-        name: "Bell",
-        ratio: 1
+    test("passes correct props to Bell glyph", () => {
+      expect(wrapper.find("Bell").props()).toMatchObject({
+        glyphColor: "#fff"
       });
     });
 
