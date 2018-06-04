@@ -1,13 +1,6 @@
 import { mix, desaturate } from "polished";
-import {
-  COLOR_BRAND_PRIMARY,
-  COLOR_WHITE
-} from "../../../../../style/styleVariables";
-import {
-  darkenColor,
-  lightenColor,
-  contrastColor
-} from "../../../../../style/styleFunctions";
+import { COLOR_BRAND_PRIMARY, COLOR_WHITE } from "style/styleVariables";
+import { darkenColor, lightenColor, contrastColor } from "style/styleFunctions";
 
 /**
  * Utility function that transforms an object containing different attributes

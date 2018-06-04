@@ -4,7 +4,7 @@ import {
   ZINDEX_TOOLTIP,
   COLOR_CONTENT,
   COLOR_CONTENT_BACKGROUND
-} from "../../../style/styleVariables";
+} from "style/styleVariables";
 
 const TooltipWrap = styled.div`
   border-bottom: 1px solid ${mix(0.15, COLOR_CONTENT, COLOR_CONTENT_BACKGROUND)};

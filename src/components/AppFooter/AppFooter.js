@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import Copyright from "./components/Copyright";
 import Footer from "./components/Footer";
 import Links from "./components/Links";
 import Link from "./components/Link";
-import { Twitter, GitHub, LinkedIn } from "../../components/Glyphs";
+import { Twitter, GitHub, LinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
 
 import longLogo from "./assets/decipher-logo-long.png";
@@ -19,13 +19,8 @@ AppFooter.propTypes = {
 };
 
 AppFooter.defaultProps = {
-  copyrightText: (
-    <Fragment>
-      Copyright &copy; 2018 Decipher Technology Studios. All rights reserved.{" "}
-      <br /> Copyright &copy; 2018 Grey Matter, a Decipher Technology Studios
-      product. All rights reserved.
-    </Fragment>
-  )
+  copyrightText:
+    "Copyright \u00A9 2018 Decipher Technology Studios. All rights reserved. \n Copyright \u00A9 2018 Grey Matter, a Decipher Technology Studios product. All rights reserved."
 };
 
 /**
