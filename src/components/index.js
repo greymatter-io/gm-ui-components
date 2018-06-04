@@ -1,5 +1,3 @@
-import { injectGlobal } from "styled-components";
-
 import { AppFooter } from "./AppFooter";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import Button from "./Button";
