@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { transparentize } from 'polished';
+import { transparentize } from "polished";
 
-import { contrastColor, spacingScale } from "../../../style/styleFunctions";
+import { contrastColor, spacingScale } from "style/styleFunctions";
 import {
   COLOR_CONTENT_BACKGROUND,
   FONT_SIZE_BASE,
   APP_FOOTER_HEIGHT,
   ZINDEX_STICKY
-} from "../../../style/styleVariables";
+} from "style/styleVariables";
 
 const Footer = styled.footer`
   user-select: none;

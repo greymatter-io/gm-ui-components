@@ -1,4 +1,4 @@
-import { spacingScale } from "../../../../../style/styleFunctions";
+import { spacingScale } from "style/styleFunctions";
 
 /**
  * Utility function that generates a CSS mixin containing button orientation rulesets

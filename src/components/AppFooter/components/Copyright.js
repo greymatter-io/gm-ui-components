@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { COLOR_CONTENT_BACKGROUND } from "../../../style/styleVariables";
-import { spacingScale, contrastColor } from "../../../style/styleFunctions";
+import { COLOR_CONTENT_BACKGROUND } from "style/styleVariables";
+import { spacingScale, contrastColor } from "style/styleFunctions";
 
 const Copyright = styled.p`
   font-size: 50%;
@@ -15,6 +15,7 @@ const Copyright = styled.p`
   padding: ${spacingScale(1)};
   text-transform: uppercase;
   order: 3;
+  white-space: pre-wrap;
 
   @media all and (min-width: 800px) {
     order: initial;

@@ -4,6 +4,10 @@ const autoprefixer = require("autoprefixer");
 
 module.exports = {
   entry: "./src/components/index.js",
+  resolve: {
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
+    extensions: [".json", ".js"]
+  },
   target: "node",
   output: {
     path: path.resolve(__dirname, "lib"),

@@ -25,13 +25,12 @@ plugins:
   radon:
     enabled: false
 exclude_patterns:
-- "circle.yml"
+- ".circle.yml"
 - ".storybook/"
 - ".vscode/"
-- ".github/"
 - "lib/"
 - "config/"
 - "public/"
 - "node_modules/"
 - "**/*.test.js"
-- "src/stories/"
+- "**/*.story.js"
