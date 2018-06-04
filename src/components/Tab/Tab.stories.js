@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import Tab from "../components/Tab";
+import Tab from "./Tab";
 
 const stories = storiesOf("Tab", module);
 
