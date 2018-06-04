@@ -28,6 +28,11 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
   position: relative;
 }
 
+.c0 > * {
+  height: 100%;
+  width: 100%;
+}
+
 .c0:hover > :last-child {
   opacity: 1;
   visibility: visible;
@@ -74,6 +79,11 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
   cursor: help;
   display: inline-block;
   position: relative;
+}
+
+.c0 > * {
+  height: 100%;
+  width: 100%;
 }
 
 .c0:hover > :last-child {
@@ -123,6 +133,11 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
   position: relative;
 }
 
+.c0 > * {
+  height: 100%;
+  width: 100%;
+}
+
 .c0:hover > :last-child {
   opacity: 1;
   visibility: visible;
@@ -168,6 +183,11 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
   cursor: help;
   display: inline-block;
   position: relative;
+}
+
+.c0 > * {
+  height: 100%;
+  width: 100%;
 }
 
 .c0:hover > :last-child {

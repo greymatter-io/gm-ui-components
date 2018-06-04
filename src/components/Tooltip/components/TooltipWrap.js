@@ -11,6 +11,12 @@ const TooltipWrap = styled.div`
   cursor: ${props => (props.hideTooltip ? "default" : "help")};
   display: inline-block;
   position: relative;
+
+  & > * {
+    height: 100%;
+    width: 100%;
+  }
+
   :hover > :last-child {
     ${props =>
       props.hideTooltip
