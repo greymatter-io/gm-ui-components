@@ -25,7 +25,7 @@ class Breadcrumbs extends React.Component {
     this.updateView(this.props);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.updateView(nextProps);
   }
 
