@@ -13,12 +13,7 @@ const Checkbox = ({
 }) => {
   return (
     <Wrapper labelPosition={labelPosition}>
-      <Box
-        defaultChecked={defaultChecked}
-        id={label}
-        value={value}
-        {...props}
-      />
+      <Box defaultChecked={defaultChecked} value={value} {...props} />
       {label}
     </Wrapper>
   );
