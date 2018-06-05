@@ -71,7 +71,7 @@ const glyphNames = [
   "PATCH"
 ];
 
-const types = ["default", "danger", "info", "primary", "warning", "polling"];
+const types = ["default", "danger", "info", "primary", "warning"];
 const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
