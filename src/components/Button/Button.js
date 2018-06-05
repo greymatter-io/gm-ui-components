@@ -1,7 +1,7 @@
 import { PropTypes } from "prop-types";
 import React from "react";
-import * as Glyphs from "../Glyphs";
 
+import * as Glyphs from "../Glyphs";
 import ButtonWrap from "./components/ButtonWrap";
 import ButtonLabelPrefix from "./components/ButtonLabelPrefix";
 import ButtonLabelSuffix from "./components/ButtonLabelSuffix";
@@ -97,3 +97,53 @@ export default function Button({
     </ButtonWrap>
   );
 }
+
+const glyphLookup = {
+  bars: "Bars",
+  bell: "Bell",
+  cpu: "CPU",
+  card: "Card",
+  cog: "Cog",
+  configuration: "Configuration",
+  docs: "Docs",
+  ekg: "EKG",
+  editgraph: "EditGraph",
+  errorlist: "ErrorList",
+  exclamation: "Exclamation",
+  explorer: "Explorer",
+  fabric: "Fabric",
+  finagle: "Finagle",
+  grpc: "GRPC",
+  github: "GitHub",
+  http: "Http",
+  info: "Info",
+  instances: "Instances",
+  jvm: "JVM",
+  key: "Key",
+  linkedin: "LinkedIn",
+  memory: "Memory",
+  negation: "Negation",
+  pause: "Pause",
+  person: "Person",
+  play: "Play",
+  poll: "Poll",
+  power: "Power",
+  rows: "Rows",
+  runningsmall: "RunningSmall",
+  scale: "Scale",
+  scatterplot: "Scatterplot",
+  service: "Service",
+  serviceinstance: "ServiceInstance",
+  servicewhite: "ServicesWhite",
+  starfilled: "StarFilled",
+  summary: "Summary",
+  tape: "Tape",
+  threads: "Threads",
+  timer: "Timer",
+  viewcollapse: "ViewCollapse",
+  httpget: "HttpGet",
+  httpput: "HttpPut",
+  httppost: "HttpPost",
+  httpdelete: "HttpDelete",
+  httppatch: "HttpPatch"
+};
