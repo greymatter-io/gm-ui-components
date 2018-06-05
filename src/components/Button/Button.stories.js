@@ -11,7 +11,7 @@ import {
 } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import Button from "../components/Button";
+import Button from "./Button";
 
 const wrapperStyle = {
   display: "flex",
