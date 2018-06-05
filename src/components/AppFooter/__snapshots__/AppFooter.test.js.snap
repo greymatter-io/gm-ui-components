@@ -67,12 +67,6 @@ exports[`A Footer container should render 1`] = `
   color: #0aab2a;
 }
 
-.c6 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c5 {
   z-index: 1;
   height: 24px;
@@ -200,7 +194,6 @@ exports[`A Footer container should render 1`] = `
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
         <g
-          className="c6"
           fill="currentColor"
           title="GitHub"
         >
@@ -231,7 +224,6 @@ exports[`A Footer container should render 1`] = `
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
         <g
-          className="c6"
           fill="currentColor"
           title="Twitter"
         >
@@ -262,7 +254,6 @@ exports[`A Footer container should render 1`] = `
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
         <g
-          className="c6"
           fill="currentColor"
           title="LinkedIn"
         >

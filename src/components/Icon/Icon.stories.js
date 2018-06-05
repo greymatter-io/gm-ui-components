@@ -92,13 +92,12 @@ storiesOf("Icons", module)
           )}
           backgroundColor={color("backgroundColor", "#000")}
           backgroundOpacity={number("backgroundOpacity", 1)}
-          backgroundSizeRatio={number("backgroundSizeRatio", 1)}
+          glyphSizeRatio={number("glyphSizeRatio", 1)}
           borderStyle={select("borderStyle", iconBorderNames, "BorderSquare")}
           borderColor={color("borderColor", "currentColor")}
           borderOpacity={number("borderOpacity", 0.5)}
           borderWidth={number("borderWidth", 0.1)}
           glyphColor={color("glyphColor", "#fff")}
-          glyphSizeRatio={number("glyphSizeRatio", 1)}
         />
       );
     })
@@ -118,7 +117,7 @@ storiesOf("Icons", module)
           backgroundColor={color("backgroundColor", "#eee")}
           glyphColor={color("glyphColor", "#444")}
           backgroundOpacity={number("backgroundOpacity", 1)}
-          backgroundSizeRatio={number("backgroundSizeRatio", 1)}
+          glyphSizeRatio={number("glyphSizeRatio", 1)}
           title="Custom Glyph"
         >
           <svg className="svg-icon" viewBox="0 0 20 20">
