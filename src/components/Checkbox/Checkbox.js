@@ -9,6 +9,7 @@ const Checkbox = ({ label, value, defaultChecked, ...props }) => {
     <Label for={label}>
       <Box
         defaultChecked={defaultChecked}
+        id={label}
         name={label}
         value={value}
         {...props}
