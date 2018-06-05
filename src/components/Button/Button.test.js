@@ -13,9 +13,6 @@ const props = {
   active: false,
   clickAction: () => {},
   disabled: false,
-  glyph: "Bell",
-  glyphColor: "#fff",
-  glyphSize: "sm",
   label: "Button",
   labelStyle: {},
   orientation: "horizontal",
@@ -113,7 +110,6 @@ describe("Button", () => {
       expect(wrapper.find(ButtonWrap).props()).toMatchObject({
         active: false,
         disabled: false,
-        glyphSize: "sm",
         onClick: wrapper.props().clickAction,
         orientation: "horizontal",
         outline: "outline",
@@ -122,12 +118,6 @@ describe("Button", () => {
         tabIndex: 0,
         title: "Button",
         type: "primary"
-      });
-    });
-
-    test("passes correct props to Bell glyph", () => {
-      expect(wrapper.find("Bell").props()).toMatchObject({
-        glyphColor: "#fff"
       });
     });
 
