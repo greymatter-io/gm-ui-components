@@ -1,36 +1,41 @@
----
-version: "2"
-checks:
-  method-lines:
-    config:
+--- 
+checks: 
+  method-lines: 
+    config: 
       threshold: 50
-plugins:
-  csslint:
+exclude_patterns: 
+  - .babelrc
+  - .eslintrc
+  - .circle.yml
+  - .storybook/
+  - .vscode/
+  - lib/
+  - config/
+  - public/
+  - node_modules/
+  - scripts/
+  - "**/*.test.js"
+  - "**/*.stories.js"
+  - "**/*.js.snap"
+  - "**/__snapshots__/"
+plugins: 
+  csslint: 
     enabled: false
-  duplication:
-    enabled: true
-    config:
-      languages:
-        javascript:
-          mass_threshold: 50
+  duplication: 
+    config: 
+      languages: 
+        javascript: 
           count_threshold: 3
-  eslint:
+          mass_threshold: 50
     enabled: true
-    channel: "eslint-4"
+  eslint: 
+    channel: eslint-4
     config: .eslintrc
-  fixme:
     enabled: true
-  nodesecurity:
+  fixme: 
     enabled: true
-  radon:
+  nodesecurity: 
+    enabled: true
+  radon: 
     enabled: false
-exclude_patterns:
-- ".circle.yml"
-- ".storybook/"
-- ".vscode/"
-- "lib/"
-- "config/"
-- "public/"
-- "node_modules/"
-- "**/*.test.js"
-- "**/*.story.js"
+version: "2"
