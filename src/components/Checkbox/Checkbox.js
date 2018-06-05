@@ -1,55 +1,30 @@
 import React from "react";
-import styled from "styled-components";
 import { PropTypes } from "prop-types";
-import { COLOR_BRAND_PRIMARY, FONT_STACK_BASE } from "style/styleVariables";
 
-const Box = styled.input.attrs({
-  type: "checkbox"
-})`
-  appearance: none;
-  background-color: #fafafa;
-  border: 1px solid ${COLOR_BRAND_PRIMARY};
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-  height: 8px;
-  position: relative;
-  border-radius: 3px;
-  &:checked {
-    &:after {
-      content: "\u2714";
-      font-size: 10px;
-      position: absolute;
-      top: 0px;
-      left: 2px;
-      color: ${COLOR_BRAND_PRIMARY};
-    }
-  }
-`;
+import Wrapper from "./components/Wrapper";
+import Box from "./components/Box";
 
-const Label = styled.label`
-  display: flex;
-  align-items: center;
-  font-family: ${FONT_STACK_BASE};
-  > input {
-    margin: 0 8px;
-  }
-`;
-
-//pick out label, all other props are passed to checkbox element
-const Checkbox = ({ label, ...props }) => {
+const Checkbox = ({
+  label,
+  value,
+  defaultChecked,
+  labelPosition = "left",
+  ...props
+}) => {
   return (
-    <Label>
-      <Box {...props} />
+    <Wrapper labelPosition={labelPosition}>
+      <Box defaultChecked={defaultChecked} value={value} {...props} />
       {label}
-    </Label>
+    </Wrapper>
   );
 };
 
 Checkbox.propTypes = {
   defaultChecked: PropTypes.bool,
-  label: PropTypes.string,
-  onChange: PropTypes.func
+  label: PropTypes.string.isRequired,
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  onChange: PropTypes.func,
+  value: PropTypes.string
 };
 
 export default Checkbox;

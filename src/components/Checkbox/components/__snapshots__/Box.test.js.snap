@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box should render 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05),inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  padding: 6px;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.c0:checked:after {
+  content: "✔";
+  font-size: 10px;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  color: #0aab2a;
+}
+
+<input
+  className="c0"
+  type="checkbox"
+/>
+`;
