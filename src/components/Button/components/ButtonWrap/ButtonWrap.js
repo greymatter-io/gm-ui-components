@@ -13,6 +13,7 @@ import {
   COLOR_INFO,
   COLOR_WARNING,
   COLOR_CONTENT_BACKGROUND,
+  FONT_WEIGHT_SEMIBOLD,
   FONT_STACK_BASE
 } from "style/styleVariables";
 
@@ -45,10 +46,10 @@ const camelCaseConverter = stringInput => {
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
+  font-family: ${FONT_STACK_BASE};
   box-sizing: border-box;
   user-select: none;
-  font-family: ${FONT_STACK_BASE};
-  font-weight: 600;
+  font-weight: ${FONT_WEIGHT_SEMIBOLD};
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -121,7 +122,14 @@ ButtonWrap.propTypes = {
     "raised-outline"
   ]),
   size: PropTypes.string,
-  type: PropTypes.oneOf(["danger", "info", "warning", "primary", "polling"])
+  type: PropTypes.oneOf([
+    "default",
+    "danger",
+    "info",
+    "warning",
+    "primary",
+    "polling"
+  ])
 };
 
 export default ButtonWrap;

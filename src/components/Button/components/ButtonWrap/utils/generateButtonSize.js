@@ -19,7 +19,7 @@ function _buttonSizeStyleBlockGenerator({
   textIsUppercase = false
 }) {
   const fontSizeBase = 14;
-  const borderRadiusBase = 6;
+  const borderRadiusBase = 3;
   const contentSpacingBase = parseInt(spacingScale(0.5), 10);
   return `
     font-size: ${Math.ceil(fontSizeBase * fontSizeMultiplier)}px;
@@ -43,32 +43,32 @@ function generateButtonSize(size) {
     case "xs": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 0.5,
-        horizontalPaddingMultiplier: 1.5,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: true
       });
     }
     case "sm": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 0.75,
-        horizontalPaddingMultiplier: 1.5,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: true
       });
     }
     case "lg": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1.25,
-        horizontalPaddingMultiplier: 3,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: false
       });
     }
     case "xl": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1.5,
-        horizontalPaddingMultiplier: 3,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: false
       });
     }
@@ -76,8 +76,8 @@ function generateButtonSize(size) {
     case "normal": {
       return _buttonSizeStyleBlockGenerator({
         fontSizeMultiplier: 1,
-        horizontalPaddingMultiplier: 2,
-        verticalPaddingMultiplier: 1,
+        horizontalPaddingMultiplier: 1.75,
+        verticalPaddingMultiplier: 0.5,
         textIsUppercase: false
       });
     }

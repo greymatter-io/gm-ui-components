@@ -2,13 +2,13 @@
 
 exports[`ButtonWrap should match snapshot 1`] = `
 .c0 {
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: GMMetropolis,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border-width: 1px;
   line-height: 1.4;
   border-style: solid;
@@ -35,8 +35,8 @@ exports[`ButtonWrap should match snapshot 1`] = `
   border-bottom-color: #d1d1d1;
   color: #000;
   font-size: 14px;
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 2px 7px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -78,8 +78,6 @@ exports[`ButtonWrap should match snapshot 1`] = `
 }
 
 .c0:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #0aab2a;
   z-index: 1;
 }
 

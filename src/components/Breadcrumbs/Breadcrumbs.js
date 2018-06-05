@@ -10,6 +10,7 @@ export const BreadcrumbsContainer = styled.ol`
   margin: 0;
   padding: 0;
   flex-direction: row;
+  font-family: ${FONT_STACK_BASE};
   height: inherit;
   align-items: stretch;
 `;

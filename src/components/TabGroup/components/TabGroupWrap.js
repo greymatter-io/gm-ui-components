@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import { FONT_STACK_BASE } from "style/styleVariables";
 
 const TabGroupWrap = styled.nav`
   width: 100%;
@@ -7,6 +7,7 @@ const TabGroupWrap = styled.nav`
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
+  font-family: ${FONT_STACK_BASE};
 `;
 
 export default TabGroupWrap;

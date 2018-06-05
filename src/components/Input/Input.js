@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLOR_BRAND_PRIMARY } from "style/styleVariables";
+import { COLOR_BRAND_PRIMARY, FONT_STACK_BASE } from "style/styleVariables";
 import { transparentize } from "polished";
 
 const Input = styled.input.attrs({
@@ -12,6 +12,7 @@ const Input = styled.input.attrs({
   font-size: 14px;
   color: black;
   padding: 8px;
+  font-family: ${FONT_STACK_BASE};
   font-weight: 500;
   line-height: 2;
   box-sizing: border-box;

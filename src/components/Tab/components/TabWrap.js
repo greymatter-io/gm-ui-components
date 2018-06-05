@@ -2,7 +2,8 @@ import styled from "styled-components";
 import {
   COLOR_BRAND_PRIMARY,
   PADDING_BASE,
-  FONT_WEIGHT_CONTROLS
+  FONT_WEIGHT_CONTROLS,
+  FONT_STACK_BASE
 } from "style/styleVariables";
 
 const activeStyles = `
@@ -26,6 +27,7 @@ const downStyles = `
 const TabWrap = styled.a.attrs({
   disabled: props => props.disabled
 })`
+  font-family: ${FONT_STACK_BASE};
   flex: 0 0 auto;
   padding-left: ${PADDING_BASE}px;
   padding-right: ${PADDING_BASE}px;

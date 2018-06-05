@@ -98,7 +98,7 @@ storiesOf("Button", module)
           prefix={text("prefix")}
           suffix={text("suffix")}
           size={select("size", sizes, "normal")}
-          tabIndex={number("tabIndex")}
+          tabIndex={number("tabIndex", 0)}
         />
       </div>
     ))
