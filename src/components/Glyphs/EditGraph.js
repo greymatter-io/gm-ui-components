@@ -4,7 +4,7 @@ import Icon from "../Icon";
 export default function EditGraph(props) {
   return (
     <Icon {...props} glyphName="EditGraph">
-      <g id="edit-graph" fill="#000">
+      <g id="edit-graph">
         <path
           d="M16.3463349,6.95474685 L18.6536651,6.95474685 L18.6536651,16.7212366 L17.5,19.4341504 L16.3463349,16.7212366 L16.3463349,6.95474685 Z M16.3463349,15.636071 L16.3463349,16.7212366 L18.6536651,16.7212366 L18.6536651,15.636071 L16.3463349,15.636071 Z"
           id="Rectangle-3"

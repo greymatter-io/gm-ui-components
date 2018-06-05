@@ -15,7 +15,6 @@ exports[`EditGraph matches snapshot 1`] = `
   glyphSizeRatio={1}
 >
   <g
-    fill="#000"
     id="edit-graph"
   >
     <path
