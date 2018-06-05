@@ -3,8 +3,8 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, select, number, color } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import { Icon } from "../components";
-import * as Glyphs from "../components";
+import Icon from "../Icon";
+import * as Glyphs from "components/Glyphs";
 
 const glyphNames = [
   "Bars",

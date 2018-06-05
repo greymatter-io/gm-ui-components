@@ -2,8 +2,10 @@ import { configure } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
 
+const req = require.context("../src", true, /\.stories\.js$/);
+
 function loadStories() {
-  require("../src/stories");
+  req.keys().forEach(filename => req(filename));
 }
 
 // addon-info
@@ -29,7 +31,7 @@ setOptions({
    * name to display in the top left corner
    * @type {String}
    */
-  name: "Storybook",
+  name: "GM UI Components",
   /**
    * URL for name in top left corner to link to
    * @type {String}

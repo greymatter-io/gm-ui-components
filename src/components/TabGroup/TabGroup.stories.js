@@ -3,8 +3,8 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text } from "@storybook/addon-knobs";
 
-import Tab from "../components/Tab";
-import TabGroup from "../components/TabGroup";
+import Tab from "components/Tab";
+import TabGroup from "./TabGroup";
 
 const stories = storiesOf("TabGroup", module);
 
