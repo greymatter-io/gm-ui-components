@@ -1,5 +1,16 @@
 {
   "moduleId": "gm-ui-components",
-  "presets": ["es2015", "react", "stage-1"],
-  "plugins": ["add-module-exports"]
+  "presets": ["env", "react"],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "displayName": true,
+        "fileName": false
+      }
+    ],
+    "transform-class-properties",
+    "add-module-exports",
+    "transform-object-rest-spread"
+  ]
 }

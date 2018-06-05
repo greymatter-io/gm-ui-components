@@ -8,7 +8,7 @@ import {
   object
 } from "@storybook/addon-knobs/react";
 
-import Tooltip from "../components/Tooltip/";
+import Tooltip from "./Tooltip";
 
 const wrapperStyle = {
   display: "flex",

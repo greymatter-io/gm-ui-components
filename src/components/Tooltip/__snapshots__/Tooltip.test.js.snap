@@ -28,7 +28,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
   position: relative;
 }
 
-.c0:hover > :last-child {
+.c0:hover >:last-child {
   opacity: 1;
   visibility: visible;
   z-index: 1070;
@@ -76,7 +76,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
   position: relative;
 }
 
-.c0:hover > :last-child {
+.c0:hover >:last-child {
   opacity: 1;
   visibility: visible;
   z-index: 1070;
@@ -123,7 +123,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
   position: relative;
 }
 
-.c0:hover > :last-child {
+.c0:hover >:last-child {
   opacity: 1;
   visibility: visible;
   z-index: 1070;
@@ -170,7 +170,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
   position: relative;
 }
 
-.c0:hover > :last-child {
+.c0:hover >:last-child {
   opacity: 1;
   visibility: visible;
   z-index: 1070;
