@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs/react";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Tab from "./Tab";
@@ -17,10 +17,10 @@ stories.add(
     return (
       <div style={{ width: "100vw", display: "flex", height: "40px" }}>
         <Tab
-          clickAction={() => alert("hello")}
-          label={text("label", "Active Tab")}
           active={boolean("active", true)}
+          clickAction={() => alert("hello")}
           disabled={boolean("disabled", false)}
+          label={text("label", "Active Tab")}
         />
       </div>
     );

@@ -51,8 +51,6 @@ function App() {
     <Icon
         backgroundStyle="BackgroundSquareRounded"
         backgroundColor="#000"
-        glyphColor="#fff"
-        glyph="Bell"
     />
   );
 }

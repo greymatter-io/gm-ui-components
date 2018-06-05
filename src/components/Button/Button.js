@@ -1,7 +1,6 @@
 import { PropTypes } from "prop-types";
 import React from "react";
 
-import * as Glyphs from "../Glyphs";
 import ButtonWrap from "./components/ButtonWrap";
 import ButtonLabelPrefix from "./components/ButtonLabelPrefix";
 import ButtonLabelSuffix from "./components/ButtonLabelSuffix";
@@ -11,9 +10,6 @@ Button.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   clickAction: PropTypes.any.isRequired, // click handler
   disabled: PropTypes.bool, // disables the button
-  glyph: PropTypes.string, // Glyph to display in the button
-  glyphColor: PropTypes.string, // Color for the glyph
-  glyphSize: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),
   label: PropTypes.string.isRequired, // label for the button
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
@@ -58,9 +54,6 @@ export default function Button({
   children,
   clickAction,
   disabled,
-  glyph,
-  glyphColor,
-  glyphSize,
   label,
   orientation,
   prefix,
@@ -72,7 +65,6 @@ export default function Button({
   type,
   labelStyle
 }) {
-  const Glyph = Glyphs[glyph];
   return (
     <ButtonWrap
       active={active}
@@ -85,9 +77,7 @@ export default function Button({
       tabIndex={tabIndex}
       title={label}
       style={style}
-      glyphSize={glyphSize}
     >
-      {Glyph && <Glyph glyphColor={glyphColor} />}
       {children}
       <span style={labelStyle}>
         {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
@@ -97,53 +87,3 @@ export default function Button({
     </ButtonWrap>
   );
 }
-
-const glyphLookup = {
-  bars: "Bars",
-  bell: "Bell",
-  cpu: "CPU",
-  card: "Card",
-  cog: "Cog",
-  configuration: "Configuration",
-  docs: "Docs",
-  ekg: "EKG",
-  editgraph: "EditGraph",
-  errorlist: "ErrorList",
-  exclamation: "Exclamation",
-  explorer: "Explorer",
-  fabric: "Fabric",
-  finagle: "Finagle",
-  grpc: "GRPC",
-  github: "GitHub",
-  http: "Http",
-  info: "Info",
-  instances: "Instances",
-  jvm: "JVM",
-  key: "Key",
-  linkedin: "LinkedIn",
-  memory: "Memory",
-  negation: "Negation",
-  pause: "Pause",
-  person: "Person",
-  play: "Play",
-  poll: "Poll",
-  power: "Power",
-  rows: "Rows",
-  runningsmall: "RunningSmall",
-  scale: "Scale",
-  scatterplot: "Scatterplot",
-  service: "Service",
-  serviceinstance: "ServiceInstance",
-  servicewhite: "ServicesWhite",
-  starfilled: "StarFilled",
-  summary: "Summary",
-  tape: "Tape",
-  threads: "Threads",
-  timer: "Timer",
-  viewcollapse: "ViewCollapse",
-  httpget: "HttpGet",
-  httpput: "HttpPut",
-  httppost: "HttpPost",
-  httpdelete: "HttpDelete",
-  httppatch: "HttpPatch"
-};
