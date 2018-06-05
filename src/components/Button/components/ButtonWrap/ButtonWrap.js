@@ -2,7 +2,6 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 import { contrastColor } from "style/styleFunctions";
-import generateButtonIconRatio from "./utils/generateButtonIconRatio";
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
@@ -94,11 +93,6 @@ const ButtonWrap = styled.button`
       props.size
         ? generateButtonSize(props.size) // has size
         : generateButtonSize() // Icons // no size
-    } 
-    ${
-      props.glyphSize
-        ? generateButtonIconRatio(props.glyphSize) // has glyphSize
-        : generateButtonIconRatio() // Orientation // no glyphSize
     } 
     ${
       props.orientation
