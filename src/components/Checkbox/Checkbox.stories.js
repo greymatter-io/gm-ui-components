@@ -11,7 +11,7 @@ stories.addDecorator(withKnobs);
 stories.add("standard", () => {
   return (
     <div style={{ width: "50vw" }}>
-      <Checkbox position={select("position", ["top", "bottom", "left", "right"], "top")} label={text("label", "this is a checkbox")} />
+      <Checkbox labelPosition={select("labelPosition", ["top", "bottom", "left", "right"], "top")} label={text("label", "this is a checkbox")} />
     </div>
   );
 });

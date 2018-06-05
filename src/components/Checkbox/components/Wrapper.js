@@ -11,37 +11,37 @@ function getPosition(position) {
   switch (position) {
     case "top":
       return `
+          flex-direction: column-reverse;
+        > input {
+          margin-top: 8px;
+        }
+      `;
+    case "bottom":
+      return `
         flex-direction: column;
         > input {
           margin-bottom: 8px;
         }
       `;
-    case "bottom":
-      return `
-        flex-direction: column-reverse;
-        > input {
-          margin-top: 8px;
-        }
-      `;
     case "left":
-      return `
-        flex-direction: row;
-        > input {
-          margin-right: 8px;
-        }
-      `;
-    case "right":
       return `
         flex-direction: row-reverse;
         > input {
           margin-left: 8px;
         }
       `;
-    default:
+    case "right":
       return `
         flex-direction: row;
         > input {
           margin-right: 8px;
+        }
+      `;
+    default:
+      return `
+        flex-direction: column;
+        > input {
+          margin-bottom: 8px;
         }
       `;
   }
