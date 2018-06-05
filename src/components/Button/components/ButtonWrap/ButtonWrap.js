@@ -2,7 +2,6 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 import { contrastColor } from "style/styleFunctions";
-import generateButtonIconRatio from "./utils/generateButtonIconRatio";
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
