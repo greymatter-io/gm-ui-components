@@ -68,6 +68,7 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   height: inherit;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -167,6 +168,7 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   height: inherit;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;

@@ -46,6 +46,7 @@ const camelCaseConverter = stringInput => {
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
+  font-family: ${FONT_STACK_BASE};
   box-sizing: border-box;
   user-select: none;
   font-weight: ${FONT_WEIGHT_SEMIBOLD};

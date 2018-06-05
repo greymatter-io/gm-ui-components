@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
-import { COLOR_BRAND_PRIMARY } from "style/styleVariables";
+import { COLOR_BRAND_PRIMARY, FONT_STACK_BASE } from "style/styleVariables";
 
 const Box = styled.input.attrs({
   type: "checkbox"
@@ -30,6 +30,7 @@ const Box = styled.input.attrs({
 const Label = styled.label`
   display: flex;
   align-items: center;
+  font-family: ${FONT_STACK_BASE};
   > input {
     margin: 0 8px;
   }
