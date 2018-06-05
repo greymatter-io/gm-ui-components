@@ -22,8 +22,8 @@ const Checkbox = ({
 Checkbox.propTypes = {
   defaultChecked: PropTypes.bool,
   label: PropTypes.string.isRequired,
-  onChange: PropTypes.func,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  onChange: PropTypes.func,
   value: PropTypes.string
 };
 
