@@ -24,7 +24,7 @@ stories.add("with props", () => {
           "label",
           "this is a checkbox defaulted to true with an onchange event handler"
         )}
-        defaultChecked="true"
+        defaultChecked={true}
         onChange={e => {
           alert("checked: " + e.target.checked);
         }}

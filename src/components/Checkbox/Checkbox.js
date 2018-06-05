@@ -1,8 +1,8 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import Label from "./Label";
-import Box from "./Box";
+import Label from "./components/Label";
+import Box from "./components/Box";
 
 const Checkbox = ({ label, value, defaultChecked, ...props }) => {
   return (
