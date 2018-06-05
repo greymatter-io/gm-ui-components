@@ -36,10 +36,10 @@ const Label = styled.label`
 `;
 
 //pick out label, all other props are passed to checkbox element
-const Checkbox = ({ label, ...props }) => {
+const Checkbox = ({ label, defaultChecked, ...props }) => {
   return (
-    <Label>
-      <Box {...props} />
+    <Label for={label}>
+      <Box defaultChecked={defaultChecked} {...props} />
       {label}
     </Label>
   );
@@ -47,7 +47,7 @@ const Checkbox = ({ label, ...props }) => {
 
 Checkbox.propTypes = {
   defaultChecked: PropTypes.bool,
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
   onChange: PropTypes.func
 };
 
