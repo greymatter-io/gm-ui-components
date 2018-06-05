@@ -31,8 +31,7 @@ Button.propTypes = {
     "info",
     "primary",
     "secondary",
-    "warning",
-    "polling"
+    "warning"
   ])
 };
 

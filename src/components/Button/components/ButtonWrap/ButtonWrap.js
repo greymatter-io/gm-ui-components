@@ -25,8 +25,6 @@ function generateButtonTypeColor(type) {
       return COLOR_INFO;
     case "warning":
       return COLOR_WARNING;
-    case "polling":
-      return COLOR_CONTENT_BACKGROUND;
     case "primary":
       return COLOR_BRAND_PRIMARY;
     default:
@@ -116,14 +114,7 @@ ButtonWrap.propTypes = {
     "raised-outline"
   ]),
   size: PropTypes.string,
-  type: PropTypes.oneOf([
-    "default",
-    "danger",
-    "info",
-    "warning",
-    "primary",
-    "polling"
-  ])
+  type: PropTypes.oneOf(["default", "danger", "info", "warning", "primary"])
 };
 
 export default ButtonWrap;

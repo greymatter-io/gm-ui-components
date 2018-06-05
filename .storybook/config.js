@@ -18,7 +18,7 @@ setDefaults({
   ], // displays Prop Tables with this components
   propTablesExclude: [], // Exclude Components from being shoun in Prop Tables section
   styles: {}, // Overrides styles of addon
-  marksyConf: {}, // Overrides components used to display markdown. Warning! This option's name will be likely deprecated in favor to "components" with the same API in 3.3 release. Follow this PR #1501 for details
+  components: {}, // Overrides components used to display markdown. Warning! This option's name will be likely deprecated in favor to "components" with the same API in 3.3 release. Follow this PR #1501 for details
   maxPropsIntoLine: 1, // Max props to display per line in source code
   maxPropObjectKeys: 10,
   maxPropArrayLength: 10,
@@ -46,12 +46,12 @@ setOptions({
    * display left panel that shows a list of stories
    * @type {Boolean}
    */
-  showLeftPanel: true,
+  showStoriesPanel: true,
   /**
    * display horizontal panel that displays addon configurations
    * @type {Boolean}
    */
-  showDownPanel: true,
+  showAddonPanel: true,
   /**
    * display floating search box to search through stories
    * @type {Boolean}
@@ -61,7 +61,7 @@ setOptions({
    * show horizontal addons panel as a vertical panel on the right
    * @type {Boolean}
    */
-  downPanelInRight: false,
+  addonPanelInRight: false,
   /**
    * sorts stories
    * @type {Boolean}
