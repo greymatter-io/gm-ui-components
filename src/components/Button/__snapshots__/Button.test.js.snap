@@ -115,11 +115,6 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   color: #000;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-top: 0.25px;
 }
@@ -225,11 +220,6 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   background-color: #f0f0f0;
   border-color: #f0f0f0;
   color: #000;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {
@@ -342,11 +332,6 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   color: #000;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;
@@ -449,11 +434,6 @@ exports[`Button Snapshots matches outline snapshots 2`] = `
   background-color: #f0f0f0;
   border-color: #f0f0f0;
   color: #000;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {
@@ -563,11 +543,6 @@ exports[`Button Snapshots matches outline snapshots 3`] = `
   color: #000;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;
@@ -670,11 +645,6 @@ exports[`Button Snapshots matches outline snapshots 4`] = `
   background-color: #f0f0f0;
   border-color: #f0f0f0;
   color: #000;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {
@@ -785,11 +755,6 @@ exports[`Button Snapshots matches outline snapshots 5`] = `
   background-color: #f0f0f0;
   border-color: #f0f0f0;
   color: #000;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {
@@ -915,11 +880,6 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   color: #000;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;
@@ -1029,11 +989,6 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   background-color: #f0f0f0;
   border-color: #f0f0f0;
   color: #000;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {
@@ -1147,11 +1102,6 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   color: #000;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;
@@ -1260,11 +1210,6 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   background-color: #f0f0f0;
   border-color: #f0f0f0;
   color: #000;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {
@@ -1377,11 +1322,6 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   color: #000;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;
@@ -1490,11 +1430,6 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   background-color: #707070;
   border-color: #707070;
   color: #f0f0f0;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {
@@ -1608,11 +1543,6 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   color: #f0f0f0;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;
@@ -1724,11 +1654,6 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   color: #f0f0f0;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;
@@ -1838,11 +1763,6 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   background-color: #6d6d6d;
   border-color: #6d6d6d;
   color: #f0f0f0;
-}
-
-.c0 > svg {
-  width: 24px;
-  height: 24px;
 }
 
 .c0 > :not(:first-child) {

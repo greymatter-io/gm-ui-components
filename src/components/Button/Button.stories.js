@@ -6,11 +6,11 @@ import {
   number,
   select,
   text,
-  boolean,
-  color
+  boolean
 } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
+import { Bell } from "components/Glyphs";
 import Button from "./Button";
 
 const wrapperStyle = {
@@ -21,57 +21,7 @@ const wrapperStyle = {
   alignItems: "center"
 };
 
-const glyphNames = [
-  "Bars",
-  "Bell",
-  "CPU",
-  "Card",
-  "Cog",
-  "Configuration",
-  "Docs",
-  "EKG",
-  "EditGraph",
-  "ErrorList",
-  "Exclamation",
-  "Explorer",
-  "Fabric",
-  "Finagle",
-  "GRPC",
-  "GitHub",
-  "Http",
-  "Info",
-  "Instances",
-  "JVM",
-  "Key",
-  "LinkedIn",
-  "Memory",
-  "Negation",
-  "Pause",
-  "Person",
-  "Play",
-  "Poll",
-  "Power",
-  "Rows",
-  "RunningSmall",
-  "Scale",
-  "Scatterplot",
-  "Service",
-  "ServiceInstance",
-  "ServicesWhite",
-  "StarFilled",
-  "Summary",
-  "Tape",
-  "Threads",
-  "Timer",
-  "ViewCollapse",
-  "GET",
-  "PUT",
-  "POST",
-  "DELETE",
-  "PATCH"
-];
-
-const types = ["default", "danger", "info", "primary", "warning"];
+const types = ["default", "danger", "info", "primary", "warning", "polling"];
 const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
@@ -88,9 +38,6 @@ storiesOf("Button", module)
           active={boolean("active", false)}
           label={text("label", "Hello World")}
           type={select("type", types, "default")}
-          glyph={select("glyph", glyphNames)}
-          glyphColor={color("glyphColor")}
-          glyphSize={select("glyphSize", sizes)}
           disabled={boolean("disabled", false)}
           clickAction={() => alert("clicked")}
           orientation={select("orientation", orientations, "horizontal")}
@@ -139,12 +86,13 @@ storiesOf("Button", module)
     <div style={wrapperStyle}>
       {orientations.map(orientation => (
         <Button
-          glyph={"Bell"}
           orientation={orientation}
           label={orientation}
           clickAction={() => {}}
           key={orientation}
-        />
+        >
+          <Bell />
+        </Button>
       ))}
     </div>
   ));

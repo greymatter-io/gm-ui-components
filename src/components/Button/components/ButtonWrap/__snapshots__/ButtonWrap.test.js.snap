@@ -92,11 +92,6 @@ exports[`ButtonWrap should match snapshot 1`] = `
   color: #000;
 }
 
-.c0 > svg {
-  width: 24px;
-  height: 24px;
-}
-
 .c0 > :not(:first-child) {
   margin-left: 4px;
   -webkit-flex-basis: auto;

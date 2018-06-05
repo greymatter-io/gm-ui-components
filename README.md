@@ -48,11 +48,11 @@ import { Icon } from 'gm-ui-components';
 
 function App() {
   return (
-    <Icon
-        backgroundStyle="BackgroundSquareRounded"
-        backgroundColor="#000"
-        glyphColor="#fff"
-        glyph="Bell"
+    <Button
+        label="Hello World!"
+        type="default"
+        size="xl"
+        active={true}
     />
   );
 }
