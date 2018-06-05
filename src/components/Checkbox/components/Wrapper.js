@@ -39,9 +39,9 @@ function getPosition(position) {
       `;
     default:
       return `
-        flex-direction: column;
+       flex-direction: row-reverse;
         > input {
-          margin-bottom: 8px;
+          margin-left: 8px;
         }
       `;
   }

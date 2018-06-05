@@ -2,11 +2,11 @@ import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
 
-import Label from "./Label";
+import Wrapper from "./Wrapper";
 
-describe("Label", () => {
+describe("Wrapper", () => {
   it("should render", () => {
-    const aLabel = renderer.create(<Label />).toJSON();
-    expect(aLabel).toMatchSnapshot();
+    const aWrapper = renderer.create(<Wrapper />).toJSON();
+    expect(aWrapper).toMatchSnapshot();
   });
 });
