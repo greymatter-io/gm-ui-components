@@ -1,6 +1,5 @@
 import { PropTypes } from "prop-types";
 import React from "react";
-
 import * as Glyphs from "../Glyphs";
 
 import ButtonWrap from "./components/ButtonWrap";
@@ -31,6 +30,7 @@ Button.propTypes = {
   suffix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add suffix text to button label
   tabIndex: PropTypes.number,
   type: PropTypes.oneOf([
+    "default",
     "danger",
     "info",
     "primary",

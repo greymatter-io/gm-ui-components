@@ -97,35 +97,35 @@ function generateButtonStyle({
     styleTypes.activeStyles["borderColor"] = darkenColor(
       mix(
         buttonActiveMixDegree,
-        buttonBorderColorBase,
-        buttonActiveMixBaseColor
+        buttonActiveMixBaseColor,
+        buttonBorderColorBase
       ),
       buttonActiveReactionDegree + buttonDownReactionDegree
     );
     // Active Down Styles
     styleTypes.activeDownStyles["backgroundColor"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
       darkenColor(
         buttonBackgroundColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseColor
+      )
     );
     styleTypes.activeDownStyles["color"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseLabelColor,
       darkenColor(
         buttonLabelColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseLabelColor
+      )
     );
     styleTypes.activeDownStyles["borderColor"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
       darkenColor(
         buttonBorderColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseColor
+      )
     );
   } else {
     // Assume button reaction style == lighten
@@ -190,11 +190,11 @@ function generateButtonStyle({
     );
     styleTypes.activeDownStyles["borderColor"] = mix(
       buttonActiveMixDegree,
+      buttonActiveMixBaseColor,
       lightenColor(
         buttonBorderColorBase,
         buttonActiveReactionDegree + buttonDownReactionDegree
-      ),
-      buttonActiveMixBaseColor
+      )
     );
   }
 
@@ -475,8 +475,6 @@ function generateButtonStyle({
   } 
 
   &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #0aab2a;
     z-index: 1;
   }
 
