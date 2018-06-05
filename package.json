@@ -106,6 +106,13 @@
     "collectCoverageFrom": [
       "src/components/**/*.{js,jsx}"
     ],
+    "coveragePathIgnorePatterns": [
+      "node_modules/", 
+      "scripts/", 
+      "lib/",
+      ".js.snap", 
+      ".stories.js"
+    ],
     "coverageReporters": [
       "lcov"
     ],
