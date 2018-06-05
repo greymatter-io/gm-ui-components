@@ -12,6 +12,7 @@ const Box = styled.input.attrs({
     inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 6px;
   height: 8px;
+  width: 8px;
   position: relative;
   border-radius: 3px;
   &:checked {

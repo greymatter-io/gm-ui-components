@@ -1,21 +1,26 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import Label from "./components/Label";
+import Wrapper from "./components/Wrapper";
 import Box from "./components/Box";
 
-const Checkbox = ({ label, value, defaultChecked, ...props }) => {
+const Checkbox = ({
+  label,
+  value,
+  defaultChecked,
+  labelPosition = "left",
+  ...props
+}) => {
   return (
-    <Label for={label}>
+    <Wrapper labelPosition={labelPosition}>
       <Box
         defaultChecked={defaultChecked}
         id={label}
-        name={label}
         value={value}
         {...props}
       />
       {label}
-    </Label>
+    </Wrapper>
   );
 };
 
@@ -23,6 +28,7 @@ Checkbox.propTypes = {
   defaultChecked: PropTypes.bool,
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func,
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   value: PropTypes.string
 };
 
