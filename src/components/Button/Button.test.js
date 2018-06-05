@@ -4,7 +4,7 @@ import { mount, render } from "enzyme";
 import Button from "./Button";
 import ButtonWrap from "./components/ButtonWrap";
 
-const types = ["danger", "info", "primary", "warning", "polling"];
+const types = ["danger", "info", "primary", "warning"];
 const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
