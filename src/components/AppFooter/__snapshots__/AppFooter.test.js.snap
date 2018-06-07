@@ -69,8 +69,8 @@ exports[`A Footer container should render 1`] = `
 
 .c5 {
   z-index: 1;
-  width: 100%;
-  height: auto;
+  width: 20px;
+  height: 20px;
   word-spacing: 0;
   vertical-align: middle;
 }
@@ -189,6 +189,7 @@ exports[`A Footer container should render 1`] = `
         className="c5"
         focusable="false"
         preserveAspectRatio="xMaxYMax meet"
+        size="20px"
         version="1.1"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -220,6 +221,7 @@ exports[`A Footer container should render 1`] = `
         className="c5"
         focusable="false"
         preserveAspectRatio="xMaxYMax meet"
+        size="20px"
         version="1.1"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -251,6 +253,7 @@ exports[`A Footer container should render 1`] = `
         className="c5"
         focusable="false"
         preserveAspectRatio="xMaxYMax meet"
+        size="20px"
         version="1.1"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
