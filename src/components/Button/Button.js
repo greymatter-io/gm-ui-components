@@ -10,7 +10,7 @@ Button.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   clickAction: PropTypes.any.isRequired, // click handler
   disabled: PropTypes.bool, // disables the button
-  label: PropTypes.string.isRequired, // label for the button
+  label: PropTypes.string, // label for the button
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
   outline: PropTypes.oneOf([
@@ -38,6 +38,7 @@ Button.propTypes = {
 Button.defaultProps = {
   active: false,
   clickAction: () => {},
+  label: "",
   disabled: false,
   size: "normal",
   orientation: "horizontal"
@@ -78,11 +79,13 @@ export default function Button({
       style={style}
     >
       {children}
-      <span style={labelStyle}>
-        {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
-        {label}
-        {suffix ? <ButtonLabelSuffix>{suffix}</ButtonLabelSuffix> : ""}
-      </span>
+      {label.length > 0 && (
+        <span style={labelStyle}>
+          {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
+          {label}
+          {suffix ? <ButtonLabelSuffix>{suffix}</ButtonLabelSuffix> : ""}
+        </span>
+      )}
     </ButtonWrap>
   );
 }
