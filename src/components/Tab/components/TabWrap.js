@@ -1,38 +1,37 @@
 import styled from "styled-components";
 import {
   COLOR_BRAND_PRIMARY,
-  PADDING_BASE,
-  FONT_WEIGHT_CONTROLS,
-  FONT_STACK_BASE
+  FONT_STACK_BASE,
+  FONT_SIZE_BASE,
+  COLOR_GREY
 } from "style/styleVariables";
+import { lighten } from "polished";
 
 const activeStyles = `
-    border-color: ${COLOR_BRAND_PRIMARY};
+    box-shadow: ${COLOR_BRAND_PRIMARY} 0px -2px inset;
   `;
 
 const disabledStyles = `
     cursor: default;
-    opacity: .8;
-    border-color: transparent;
+    opacity: .5;
+    box-shadow: none;
   `;
 
 const hoverStyles = `
-    border-color: currentColor;
+    box-shadow: ${lighten(0.5, COLOR_GREY)} 0px -1px inset;
   `;
 
 const downStyles = `
-    border-color: ${COLOR_BRAND_PRIMARY};
+    box-shadow: ${COLOR_BRAND_PRIMARY} 0px -2px inset;
   `;
 
 const TabWrap = styled.a.attrs({
   disabled: props => props.disabled
 })`
   font-family: ${FONT_STACK_BASE};
+  font-size: ${FONT_SIZE_BASE};
   flex: 0 0 auto;
-  padding-left: ${PADDING_BASE}px;
-  padding-right: ${PADDING_BASE}px;
-  font-weight: ${FONT_WEIGHT_CONTROLS};
-  border-bottom: 2px solid;
+  padding: 8px 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
