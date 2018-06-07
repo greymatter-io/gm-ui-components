@@ -10,7 +10,7 @@ Button.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   clickAction: PropTypes.any.isRequired, // click handler
   disabled: PropTypes.bool, // disables the button
-  label: PropTypes.string.isRequired, // label for the button
+  label: PropTypes.string, // label for the button
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
   outline: PropTypes.oneOf([
