@@ -59,10 +59,10 @@ class Breadcrumbs extends React.Component {
   };
 
   render() {
-    const { crumbs } = this.props;
+    const { crumbs, ...props } = this.props;
     const { isCollapsed } = this.state;
     return (
-      <BreadcrumbsContainer>
+      <BreadcrumbsContainer {...props}>
         {isCollapsed && crumbs.length > 2
           ? this.renderCollapsed(crumbs)
           : this.renderExpanded(crumbs)}
