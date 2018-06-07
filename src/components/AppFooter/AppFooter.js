@@ -46,7 +46,7 @@ export default function AppFooter({ copyrightText }) {
           target="_blank"
           title="Decipher Technology Studios Github"
         >
-          <GitHub />
+          <GitHub size="20px" />
         </Link>
         <Link
           href="http://twitter.com/deciphernow"
@@ -54,7 +54,7 @@ export default function AppFooter({ copyrightText }) {
           target="_blank"
           title="Decipher Technology Studios Twitter"
         >
-          <Twitter />
+          <Twitter size="20px" />
         </Link>
         <Link
           href="http://www.linkedin.com/company/decipher-technology-studios"
@@ -62,7 +62,7 @@ export default function AppFooter({ copyrightText }) {
           target="_blank"
           title="Decipher Technology Studios LinkedIn"
         >
-          <LinkedIn />
+          <LinkedIn size="20px" />
         </Link>
       </Links>
     </Footer>

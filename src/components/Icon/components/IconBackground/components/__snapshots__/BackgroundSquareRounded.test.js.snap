@@ -2,11 +2,7 @@
 
 exports[`BackgroundSquareRounded matches snapshot 1`] = `
 <g
-  className="iconBackground"
-  fill="currentColor"
-  fillOpacity="1"
   fillRule="evenodd"
-  id="SquareRounded"
 >
   <rect
     height="24"

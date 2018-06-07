@@ -91,7 +91,7 @@ storiesOf("Button", module)
           clickAction={() => {}}
           key={orientation}
         >
-          <Bell />
+          <Bell size="25px" />
         </Button>
       ))}
     </div>
