@@ -11,7 +11,7 @@ const StyledSVG = styled.svg.attrs({
 })`
   z-index: 1;
   width: ${props => (props.size ? props.size : "100%")};
-  height: auto;
+  height: ${props => (props.size ? props.size : "auto")};
   word-spacing: 0;
   vertical-align: middle;
   &:not(:root) {
