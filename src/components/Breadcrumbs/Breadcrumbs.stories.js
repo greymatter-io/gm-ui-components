@@ -18,8 +18,8 @@ stories.addDecorator(withKnobs);
 stories.add(
   "simple breadcrumbs",
   withInfo(breadCrumbsInfo)(() => {
-    crumbs = array(label, defaultCrumbs, separator);
-    return <Breadcrumbs crumbs={crumbs} />;
+    // crumbs = array(label, defaultCrumbs, separator);
+    return <Breadcrumbs crumbs={[null]} />;
   })
 );
 
