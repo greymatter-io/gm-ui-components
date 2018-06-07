@@ -3,13 +3,11 @@
 exports[`TabGroup matches snapshot 1`] = `
 .c2 {
   font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-weight: 600;
-  border-bottom: 2px solid;
+  padding: 8px 16px;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26,11 +24,11 @@ exports[`TabGroup matches snapshot 1`] = `
 }
 
 .c2:hover {
-  border-color: currentColor;
+  box-shadow: #c3c3c3 0px -1px inset;
 }
 
 .c2:active {
-  border-color: #0aab2a;
+  box-shadow: #0aab2a 0px -2px inset;
 }
 
 .c3 {
@@ -41,6 +39,7 @@ exports[`TabGroup matches snapshot 1`] = `
 
 .c1 {
   padding: 0 8px;
+  font-size: 14px;
 }
 
 .c0 {
