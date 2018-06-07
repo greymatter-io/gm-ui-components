@@ -3,11 +3,12 @@ import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
 import { Checkbox } from "./Checkbox";
-import { Input } from "./Input";
 import Icon from "./Icon";
-import Tooltip from "./Tooltip";
+import { Input } from "./Input";
+import Spinner from "./Spinner";
 import Tab from "./Tab";
 import TabGroup from "./TabGroup";
+import Tooltip from "./Tooltip";
 
 import * as Glyphs from "./Glyphs";
 
@@ -21,6 +22,7 @@ const library = {
   ButtonGroup,
   Breadcrumbs,
   BreadcrumbItem,
+  Spinner,
   Tooltip,
   Tab,
   TabGroup
