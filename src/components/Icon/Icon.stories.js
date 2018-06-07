@@ -1,6 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, select, number, color } from "@storybook/addon-knobs/react";
+import {
+  withKnobs,
+  select,
+  number,
+  color,
+  text
+} from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Icon from "../Icon";
@@ -63,16 +69,8 @@ const iconBackgroundNames = [
   "BackgroundSquareRounded",
   "BackgroundSquareRoundedSmooth",
   "BackgroundSquareSmall",
-  "BackgroundSquircle",
   "BackgroundTriangle",
   "BackgroundTriangleSmall"
-];
-
-const iconBorderNames = [
-  "BorderCircleSmall",
-  "BorderSquare",
-  "BorderSquareSmall",
-  "BorderTriangleSmall"
 ];
 
 storiesOf("Icons", module)
@@ -92,12 +90,11 @@ storiesOf("Icons", module)
           )}
           backgroundColor={color("backgroundColor", "#000")}
           backgroundOpacity={number("backgroundOpacity", 1)}
-          glyphSizeRatio={number("glyphSizeRatio", 1)}
-          borderStyle={select("borderStyle", iconBorderNames, "BorderSquare")}
           borderColor={color("borderColor", "currentColor")}
           borderOpacity={number("borderOpacity", 0.5)}
-          borderWidth={number("borderWidth", 0.1)}
+          borderWidth={number("borderWidth", 1)}
           glyphColor={color("glyphColor", "#fff")}
+          size={text("size", "100px")}
         />
       );
     })
@@ -117,7 +114,7 @@ storiesOf("Icons", module)
           backgroundColor={color("backgroundColor", "#eee")}
           glyphColor={color("glyphColor", "#444")}
           backgroundOpacity={number("backgroundOpacity", 1)}
-          glyphSizeRatio={number("glyphSizeRatio", 1)}
+          size={text("size", "100px")}
           title="Custom Glyph"
         >
           <svg className="svg-icon" viewBox="0 0 20 20">
@@ -137,9 +134,21 @@ storiesOf("Icons", module)
           {glyphNames.map(glyph => {
             let Glyph = Glyphs[glyph];
             return (
-              <div key={glyph}>
+              <div
+                key={glyph}
+                style={{
+                  width: "100%",
+                  maxWidth: "400px",
+                  margin: "auto",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center"
+                }}
+              >
                 <span>{glyph}: </span>
-                <Glyph />
+                <Icon size={text("size", "100px")}>
+                  <Glyph />
+                </Icon>
               </div>
             );
           })}

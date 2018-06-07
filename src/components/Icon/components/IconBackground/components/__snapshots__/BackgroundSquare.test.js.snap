@@ -2,11 +2,7 @@
 
 exports[`BackgroundSquare matches snapshot 1`] = `
 <g
-  className="iconBackground"
-  fill="currentColor"
-  fillOpacity="1"
   fillRule="evenodd"
-  id="Square"
 >
   <polygon
     id="Rect"

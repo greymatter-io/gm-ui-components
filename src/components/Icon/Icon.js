@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import IconBackground from "./components/IconBackground";
-import IconBorder from "./components/IconBorder";
 import StyledSVG from "./components/StyledSVG";
 
 Icon.propTypes = {
@@ -17,11 +16,12 @@ Icon.propTypes = {
   borderColor: PropTypes.string,
   borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   borderStyle: PropTypes.string,
-  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
   children: PropTypes.element,
   glyphColor: PropTypes.string,
   glyphName: PropTypes.string,
-  glyphSizeRatio: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  size: PropTypes.string,
   title: PropTypes.string
 };
 
@@ -55,15 +55,15 @@ export default function Icon({
   children,
   glyphColor,
   glyphName,
-  glyphSizeRatio,
   title,
+  size,
   ...props
 }) {
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      iconRatio={glyphSizeRatio}
       focusable="false"
+      size={size}
       {...props}
     >
       {backgroundStyle && (
@@ -71,16 +71,9 @@ export default function Icon({
           name={backgroundStyle}
           backgroundColor={backgroundColor}
           backgroundOpacity={backgroundOpacity}
-          ratio={glyphSizeRatio}
-        />
-      )}
-      {borderStyle && (
-        <IconBorder
-          name={borderStyle}
           borderColor={borderColor}
           borderOpacity={borderOpacity}
-          borderWidth={borderWidth}
-          ratio={glyphSizeRatio}
+          borderWidth={parseInt(borderWidth, 10)}
         />
       )}
       <g title={glyphName} fill={glyphColor}>
