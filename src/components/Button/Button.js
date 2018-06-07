@@ -78,11 +78,13 @@ export default function Button({
       style={style}
     >
       {children}
-      <span style={labelStyle}>
-        {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
-        {label}
-        {suffix ? <ButtonLabelSuffix>{suffix}</ButtonLabelSuffix> : ""}
-      </span>
+      {label.length > 0 && (
+        <span style={labelStyle}>
+          {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
+          {label}
+          {suffix ? <ButtonLabelSuffix>{suffix}</ButtonLabelSuffix> : ""}
+        </span>
+      )}
     </ButtonWrap>
   );
 }
