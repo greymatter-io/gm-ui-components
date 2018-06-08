@@ -70,7 +70,7 @@ const iconBackgroundNames = [
   "BackgroundSquareRoundedSmooth",
   "BackgroundSquareSmall",
   "BackgroundTriangle",
-  "BackgroundTriangleSmall","weird"
+  "BackgroundTriangleSmall"
 ];
 
 storiesOf("Icons", module)
