@@ -12,10 +12,18 @@ Icon.propTypes = {
     PropTypes.string,
     PropTypes.number
   ]),
-  backgroundStyle: PropTypes.string,
+  backgroundStyle: PropTypes.oneOf([
+    "BackgroundCircleSmall",
+    "BackgroundSquareSmall",
+    "BackgroundTriangleSmall",
+    "BackgroundSquare",
+    "BackgroundSquareBeveled",
+    "BackgroundSquareRounded",
+    "BackgroundSquareRoundedSmooth",
+    "BackgroundTriangle"
+  ]),
   borderColor: PropTypes.string,
   borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  borderStyle: PropTypes.string,
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
   children: PropTypes.element,
@@ -26,7 +34,6 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
-  ariaLabelledby: "ariaLabelledby",
   backgroundColor: "currentColor",
   backgroundOpacity: 1,
   backgroundSizeRatio: 1,
@@ -50,7 +57,6 @@ export default function Icon({
   backgroundStyle,
   borderColor,
   borderOpacity,
-  borderStyle,
   borderWidth,
   children,
   glyphColor,
@@ -61,7 +67,7 @@ export default function Icon({
 }) {
   return (
     <StyledSVG
-      aria-labelledby={ariaLabelledby}
+      aria-labelledby={ariaLabelledby || glyphName}
       focusable="false"
       size={size}
       {...props}
@@ -73,7 +79,7 @@ export default function Icon({
           backgroundOpacity={backgroundOpacity}
           borderColor={borderColor}
           borderOpacity={borderOpacity}
-          borderWidth={parseInt(borderWidth, 10)}
+          borderWidth={parseFloat(borderWidth, 10)}
         />
       )}
       <g title={glyphName} fill={glyphColor}>
