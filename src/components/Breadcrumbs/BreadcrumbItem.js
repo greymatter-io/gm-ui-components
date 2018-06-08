@@ -6,7 +6,6 @@ export const Breadcrumb = styled.li`
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  color: black;
   &:before {
     content: ">";
     transform: scaleX(0.5);
@@ -22,9 +21,6 @@ export const Breadcrumb = styled.li`
     padding: 8px 0;
     color: inherit;
     text-decoration: none;
-    &:hover {
-      color: black;
-    }
   }
   &:first-child {
     &:before {
