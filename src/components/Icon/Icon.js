@@ -67,7 +67,7 @@ export default function Icon({
 }) {
   return (
     <StyledSVG
-      aria-labelledby={ariaLabelledby || glyphName}
+      aria-labelledby={ariaLabelledby || title}
       focusable="false"
       size={size}
       {...props}
