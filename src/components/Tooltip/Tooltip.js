@@ -8,15 +8,14 @@ export default function Tooltip({
   content,
   position,
   hideTooltip,
-  contentStyle = {},
-  containerStyle = {}
+  tooltipStyle = {}
 }) {
   // Always hide the tooltip if the content is empty
   if (!content) hideTooltip = true;
   return (
-    <TooltipWrap style={containerStyle} hideTooltip={hideTooltip}>
+    <TooltipWrap hideTooltip={hideTooltip}>
       {children}
-      <TooltipContent style={contentStyle} position={position}>
+      <TooltipContent style={tooltipStyle} position={position}>
         {content}
       </TooltipContent>
     </TooltipWrap>
@@ -30,11 +29,10 @@ Tooltip.propTypes = {
     PropTypes.string,
     PropTypes.number
   ]).isRequired,
-  containerStyle: PropTypes.object,
   content: PropTypes.string,
-  contentStyle: PropTypes.object,
   hideTooltip: PropTypes.bool,
-  position: PropTypes.oneOf(["top", "bottom", "left", "right"])
+  position: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  tooltipStyle: PropTypes.object
 };
 
 Tooltip.defaultProps = {

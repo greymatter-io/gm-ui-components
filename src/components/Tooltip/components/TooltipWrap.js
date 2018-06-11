@@ -1,14 +1,7 @@
 import styled from "styled-components";
-import { mix } from "polished";
-import {
-  ZINDEX_TOOLTIP,
-  COLOR_CONTENT,
-  COLOR_CONTENT_BACKGROUND,
-  FONT_STACK_BASE
-} from "style/styleVariables";
+import { ZINDEX_TOOLTIP, FONT_STACK_BASE } from "style/styleVariables";
 
 const TooltipWrap = styled.div`
-  border-bottom: 1px solid ${mix(0.15, COLOR_CONTENT, COLOR_CONTENT_BACKGROUND)};
   cursor: ${props => (props.hideTooltip ? "default" : "help")};
   display: inline-block;
   position: relative;
