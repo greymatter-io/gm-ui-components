@@ -12,36 +12,16 @@ import { darken } from "polished";
 function generateButtonTypeColors(type) {
   switch (type) {
     case "danger":
-      return {
-        backgroundColor: COLOR_DANGER,
-        borderColor: darken(0.1, COLOR_DANGER),
-        labelColor: contrastColor(COLOR_DANGER, 1)
-      };
+      return COLOR_DANGER;
     case "info":
-      return {
-        backgroundColor: COLOR_INFO,
-        borderColor: darken(0.1, COLOR_INFO),
-        labelColor: contrastColor(COLOR_INFO, 1)
-      };
+      return COLOR_INFO;
     case "warning":
-      return {
-        backgroundColor: COLOR_WARNING,
-        borderColor: darken(0.1, COLOR_WARNING),
-        labelColor: contrastColor(COLOR_WARNING, 1)
-      };
+      return COLOR_WARNING;
     case "primary":
-      return {
-        backgroundColor: COLOR_BRAND_PRIMARY,
-        borderColor: darken(0.1, COLOR_BRAND_PRIMARY),
-        labelColor: contrastColor(COLOR_BRAND_PRIMARY, 1)
-      };
+      return COLOR_BRAND_PRIMARY;
     default:
     case "default":
-      return {
-        backgroundColor: COLOR_CONTENT_BACKGROUND,
-        borderColor: darken(0.1, COLOR_CONTENT_BACKGROUND),
-        labelColor: contrastColor(COLOR_CONTENT_BACKGROUND, 1)
-      };
+      return COLOR_CONTENT_BACKGROUND;
   }
 }
 
@@ -57,14 +37,12 @@ function generateButtonTypeColors(type) {
  * @returns string
  */
 function generateButtonStyle(type, renderBorder) {
-  const { backgroundColor, labelColor, borderColor } = generateButtonTypeColors(
-    type
-  );
+  const baseColor = generateButtonTypeColors(type);
 
   return `
-  background-color: ${backgroundColor};
-  color: ${labelColor};
-  border-color: ${renderBorder ? borderColor : `transparent`};
+  background-color: ${baseColor};
+  color: ${contrastColor(baseColor, 1)};
+  border-color: ${renderBorder ? darken(0.1, baseColor) : `transparent`};
 
   &:hover {
     filter: saturate(120%) brightness(95%);
