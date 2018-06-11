@@ -62,7 +62,7 @@ function generateButtonStyle(type, renderBorder) {
   &[disabled]:focus,
   &[disabled]:active {
     cursor: not-allowed;
-    filter: saturate(0);
+    filter: saturate(0) opacity(70%);
   }
 `;
 }

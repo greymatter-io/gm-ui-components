@@ -101,8 +101,8 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -198,8 +198,8 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -298,8 +298,8 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -411,8 +411,8 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -512,8 +512,8 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -613,8 +613,8 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -713,8 +713,8 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -813,8 +813,8 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -913,8 +913,8 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1014,8 +1014,8 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1115,8 +1115,8 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1216,8 +1216,8 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {

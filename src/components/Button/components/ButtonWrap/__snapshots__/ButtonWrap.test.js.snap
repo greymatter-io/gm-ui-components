@@ -78,8 +78,8 @@ exports[`ButtonWrap should match snapshot 1`] = `
 .c0[disabled]:focus,
 .c0[disabled]:active {
   cursor: not-allowed;
-  -webkit-filter: saturate(0);
-  filter: saturate(0);
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
