@@ -60,7 +60,7 @@ export default function IconBackground({
       strokeOpacity={borderOpacity}
       strokeWidth={borderWidth}
     >
-      <IconBackgroundComponent />
+      {IconBackgroundComponent && <IconBackgroundComponent />}
     </g>
   );
 }
