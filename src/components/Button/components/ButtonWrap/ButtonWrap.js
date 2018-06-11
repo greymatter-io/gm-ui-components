@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
 import { contrastColor } from "style/styleFunctions";
@@ -58,6 +58,13 @@ const ButtonWrap = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  ${props =>
+    props.active &&
+    css`
+      transition-duration: 0s;
+      filter: saturate(80%) brightness(90%) contrast(110%);
+    `};
+
   &:hover {
     transition: all 0.1s ease;
   }
@@ -102,7 +109,6 @@ const ButtonWrap = styled.button`
   `};
 `;
 
-// might have to add 'open' prop to satisfy condition in the generateButtonStyles.
 ButtonWrap.propTypes = {
   active: PropTypes.bool,
   orientation: PropTypes.string,
