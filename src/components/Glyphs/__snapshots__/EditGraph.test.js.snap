@@ -2,7 +2,6 @@
 
 exports[`EditGraph matches snapshot 1`] = `
 <Icon
-  ariaLabelledby="ariaLabelledby"
   backgroundColor="currentColor"
   backgroundOpacity={1}
   backgroundSizeRatio={1}
