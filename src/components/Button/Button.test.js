@@ -5,7 +5,6 @@ import Button from "./Button";
 import ButtonWrap from "./components/ButtonWrap";
 
 const types = ["danger", "info", "primary", "warning"];
-const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
@@ -16,7 +15,7 @@ const props = {
   label: "Button",
   labelStyle: {},
   orientation: "horizontal",
-  outline: "outline",
+  outline: false,
   prefix: "pre",
   size: "normal",
   style: {},
@@ -38,18 +37,10 @@ describe("Button", () => {
     });
 
     test("matches outline snapshots", () => {
-      let tree;
-      outlines.forEach(outline => {
-        tree = render(
-          <Button
-            outline={outline}
-            label={outline}
-            key={outline}
-            clickAction={() => {}}
-          />
-        );
-        expect(tree).toMatchSnapshot();
-      });
+      let tree = render(
+        <Button outline={true} label={"outline"} clickAction={() => {}} />
+      );
+      expect(tree).toMatchSnapshot();
     });
 
     test("matches size snapshots", () => {
@@ -112,7 +103,7 @@ describe("Button", () => {
         disabled: false,
         onClick: wrapper.props().clickAction,
         orientation: "horizontal",
-        outline: "outline",
+        outline: false,
         size: "normal",
         style: {},
         tabIndex: 0,
