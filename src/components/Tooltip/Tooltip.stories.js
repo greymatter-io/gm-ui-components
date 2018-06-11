@@ -33,7 +33,7 @@ storiesOf("Tooltip", module)
           content={content}
           position={position}
           hideTooltip={boolean("hideTooltip", false)}
-          tooltipStyle={object("containerStyle", {})}
+          tooltipStyle={object("tooltipStyle", {})}
         >
           {text("children", "Hover over me")}
         </Tooltip>
