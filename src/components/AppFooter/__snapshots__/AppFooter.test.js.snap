@@ -185,7 +185,6 @@ exports[`A Footer container should render 1`] = `
       title="Decipher Technology Studios Github"
     >
       <svg
-        aria-labelledby="ariaLabelledby"
         className="c5"
         focusable="false"
         preserveAspectRatio="xMaxYMax meet"
@@ -217,7 +216,6 @@ exports[`A Footer container should render 1`] = `
       title="Decipher Technology Studios Twitter"
     >
       <svg
-        aria-labelledby="ariaLabelledby"
         className="c5"
         focusable="false"
         preserveAspectRatio="xMaxYMax meet"
@@ -249,7 +247,6 @@ exports[`A Footer container should render 1`] = `
       title="Decipher Technology Studios LinkedIn"
     >
       <svg
-        aria-labelledby="ariaLabelledby"
         className="c5"
         focusable="false"
         preserveAspectRatio="xMaxYMax meet"
