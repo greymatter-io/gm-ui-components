@@ -2,38 +2,36 @@
 
 exports[`ButtonWrap should match snapshot 1`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -59,22 +57,16 @@ exports[`ButtonWrap should match snapshot 1`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -85,11 +77,9 @@ exports[`ButtonWrap should match snapshot 1`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {

@@ -13,13 +13,7 @@ Button.propTypes = {
   label: PropTypes.string, // label for the button
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
-  outline: PropTypes.oneOf([
-    "raised", // Add highlight effect to top edge and shadow effect to bottom edge
-    "outline", // Add outline effect
-    "shadow", // Add shadow effect to bottom edge
-    "none", // No effects
-    "raised-outline"
-  ]),
+  outline: PropTypes.bool,
   prefix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add prefix text to button label
   size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]), // Relative size of the button
   style: PropTypes.object, // style prop
