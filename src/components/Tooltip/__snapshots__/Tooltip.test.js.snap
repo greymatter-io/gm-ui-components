@@ -36,7 +36,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
 
 <div
   className="c0"
-  style={Object {}}
 >
   Hover over me
   <div
@@ -84,7 +83,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
 
 <div
   className="c0"
-  style={Object {}}
 >
   Hover over me
   <div
@@ -131,7 +129,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
 
 <div
   className="c0"
-  style={Object {}}
 >
   Hover over me
   <div
@@ -178,7 +175,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
 
 <div
   className="c0"
-  style={Object {}}
 >
   Hover over me
   <div
