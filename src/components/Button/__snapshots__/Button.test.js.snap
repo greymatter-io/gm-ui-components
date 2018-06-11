@@ -24,38 +24,36 @@ exports[`Button Snapshots matches disabled snapshot 1`] = `
 
 exports[`Button Snapshots matches orientation snapshots 1`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -82,22 +80,16 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -108,11 +100,9 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -132,38 +122,36 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
 
 exports[`Button Snapshots matches orientation snapshots 2`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -189,22 +177,16 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -215,11 +197,9 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -242,38 +222,36 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 
 exports[`Button Snapshots matches outline snapshots 1`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #fff;
-  border-top-color: #fff;
-  border-bottom-color: #f0f0f0;
   color: #000;
+  border-color: #e6e6e6;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -299,22 +277,16 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ececec;
-  border-top-color: #fbfbfb;
-  border-bottom-color: #ddd;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #fbfbfb;
-  border-top-color: #fff;
-  border-bottom-color: #ececec;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -325,115 +297,9 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  orientation="horizontal"
-  title="raised"
->
-  <span>
-    raised
-  </span>
-</button>
-`;
-
-exports[`Button Snapshots matches outline snapshots 2`] = `
-.c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  border-color: #f0f0f0;
-  color: #000;
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  color: #000;
-}
-
-.c0:focus {
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -454,327 +320,6 @@ exports[`Button Snapshots matches outline snapshots 2`] = `
 </button>
 `;
 
-exports[`Button Snapshots matches outline snapshots 3`] = `
-.c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  border-color: #fff;
-  border-bottom-color: #f0f0f0;
-  color: #000;
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ececec;
-  border-bottom-color: #ddd;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #fbfbfb;
-  border-bottom-color: #ececec;
-  color: #000;
-}
-
-.c0:focus {
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  orientation="horizontal"
-  title="shadow"
->
-  <span>
-    shadow
-  </span>
-</button>
-`;
-
-exports[`Button Snapshots matches outline snapshots 4`] = `
-.c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  border-color: #fff;
-  color: #000;
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ececec;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #fbfbfb;
-  color: #000;
-}
-
-.c0:focus {
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  orientation="horizontal"
-  title="none"
->
-  <span>
-    none
-  </span>
-</button>
-`;
-
-exports[`Button Snapshots matches outline snapshots 5`] = `
-.c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
-  color: #000;
-  font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.c0:focus,
-.c0:active {
-  -webkit-transition: all 0 ease;
-  transition: all 0 ease;
-}
-
-.c0 > * {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-}
-
-.c0:active {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
-}
-
-.c0:focus {
-  z-index: 1;
-}
-
-.c0[disabled],
-.c0[disabled]:hover,
-.c0[disabled]:focus,
-.c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
-}
-
-.c0 > :not(:first-child) {
-  margin-left: 4px;
-  -webkit-flex-basis: auto;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-}
-
-<button
-  class="c0"
-  orientation="horizontal"
-  title="raised-outline"
->
-  <span>
-    raised-outline
-  </span>
-</button>
-`;
-
 exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
 <Button
   active={false}
@@ -790,38 +335,36 @@ exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
 
 exports[`Button Snapshots matches size snapshots 1`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -847,22 +390,16 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -873,11 +410,9 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -900,38 +435,36 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 
 exports[`Button Snapshots matches size snapshots 2`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 7px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -958,22 +491,16 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -984,11 +511,9 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1011,38 +536,36 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 
 exports[`Button Snapshots matches size snapshots 3`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 11px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -1069,22 +592,16 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -1095,11 +612,9 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1122,38 +637,36 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 
 exports[`Button Snapshots matches size snapshots 4`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 18px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -1179,22 +692,16 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -1205,11 +712,9 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1232,38 +737,36 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 
 exports[`Button Snapshots matches size snapshots 5`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #fff;
-  border-color: #f0f0f0;
-  border-top-color: #fff;
-  border-bottom-color: #d1d1d1;
   color: #000;
+  border-color: transparent;
   font-size: 21px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -1289,22 +792,16 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ececec;
-  border-color: #ddd;
-  border-top-color: #f4f4f4;
-  border-bottom-color: #bebebe;
-  color: #000;
-}
-
-.c0:hover {
-  background-color: #fbfbfb;
-  border-color: #ececec;
-  border-top-color: #fff;
-  border-bottom-color: #cdcdcd;
-  color: #000;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -1315,11 +812,9 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1342,38 +837,36 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 
 exports[`Button Snapshots matches type snapshots 1`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #E4251A;
-  border-color: #d01b10;
-  border-top-color: #e2342b;
-  border-bottom-color: #a10b02;
   color: #fff;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -1399,22 +892,16 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #ca180e;
-  border-color: #b31006;
-  border-top-color: #d51d12;
-  border-bottom-color: #7c0700;
-  color: #ececec;
-}
-
-.c0:hover {
-  background-color: #df2217;
-  border-color: #c9180e;
-  border-top-color: #e42c22;
-  border-bottom-color: #9a0900;
-  color: #fbfbfb;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -1425,11 +912,9 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #707070;
-  border-color: #707070;
-  color: #f0f0f0;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1453,38 +938,36 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 
 exports[`Button Snapshots matches type snapshots 2`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #094dff;
-  border-color: #0041e9;
-  border-top-color: #1b5afc;
-  border-bottom-color: #0030ac;
   color: #fff;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -1510,22 +993,16 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #003ee2;
-  border-color: #0036c3;
-  border-top-color: #0444ed;
-  border-bottom-color: #002586;
-  color: #ececec;
-}
-
-.c0:hover {
-  background-color: #0147ff;
-  border-color: #003ee1;
-  border-top-color: #1454fb;
-  border-bottom-color: #002da4;
-  color: #fbfbfb;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -1536,11 +1013,9 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #757575;
-  border-color: #757575;
-  color: #f0f0f0;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1564,38 +1039,36 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 
 exports[`Button Snapshots matches type snapshots 3`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #0aab2a;
-  border-color: #049320;
-  border-top-color: #0eb630;
-  border-bottom-color: #005912;
   color: #fff;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -1621,22 +1094,16 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #038c1e;
-  border-color: #007017;
-  border-top-color: #059922;
-  border-bottom-color: #00330a;
-  color: #ececec;
-}
-
-.c0:hover {
-  background-color: #09a527;
-  border-color: #038c1d;
-  border-top-color: #0db12c;
-  border-bottom-color: #005210;
-  color: #fbfbfb;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -1647,11 +1114,9 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #4b4b4b;
-  border-color: #4b4b4b;
-  color: #f0f0f0;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
@@ -1675,38 +1140,36 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 
 exports[`Button Snapshots matches type snapshots 4`] = `
 .c0 {
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 500;
-  border-width: 1px;
-  line-height: 1.4;
-  border-style: solid;
-  text-transform: none;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #f8b400;
-  border-color: #d99e00;
-  border-top-color: #fbb90c;
-  border-bottom-color: #9c7100;
   color: #fff;
+  border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;
@@ -1732,22 +1195,16 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   flex: 0 1 auto;
 }
 
+.c0:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
 .c0:active {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  background-color: #d29800;
-  border-color: #b38200;
-  border-top-color: #dea103;
-  border-bottom-color: #765600;
-  color: #ececec;
-}
-
-.c0:hover {
-  background-color: #f0ae00;
-  border-color: #d19800;
-  border-top-color: #fbb704;
-  border-bottom-color: #946b00;
-  color: #fbfbfb;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
 }
 
 .c0:focus {
@@ -1758,11 +1215,9 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 .c0[disabled]:hover,
 .c0[disabled]:focus,
 .c0[disabled]:active {
-  cursor: default;
-  opacity: 0.8;
-  background-color: #6d6d6d;
-  border-color: #6d6d6d;
-  color: #f0f0f0;
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
 }
 
 .c0 > :not(:first-child) {
