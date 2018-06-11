@@ -22,7 +22,6 @@ const wrapperStyle = {
 };
 
 const types = ["default", "danger", "info", "primary", "warning"];
-const outlines = ["raised", "outline", "shadow", "none", "raised-outline"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
@@ -41,7 +40,7 @@ storiesOf("Button", module)
           disabled={boolean("disabled", false)}
           clickAction={() => alert("clicked")}
           orientation={select("orientation", orientations, "horizontal")}
-          outline={select("outline", outlines, "none")}
+          outline={boolean("outline", false)}
           prefix={text("prefix")}
           suffix={text("suffix")}
           size={select("size", sizes, "normal")}
@@ -53,13 +52,7 @@ storiesOf("Button", module)
   .add("types", () => (
     <div style={wrapperStyle}>
       {types.map(type => (
-        <Button
-          type={type}
-          label={type}
-          key={type}
-          outline="raised"
-          clickAction={() => {}}
-        />
+        <Button type={type} label={type} key={type} clickAction={() => {}} />
       ))}
     </div>
   ))
@@ -67,18 +60,6 @@ storiesOf("Button", module)
     <div style={wrapperStyle}>
       {sizes.map(size => (
         <Button size={size} label={size} key={size} clickAction={() => {}} />
-      ))}
-    </div>
-  ))
-  .add("outlines", () => (
-    <div style={wrapperStyle}>
-      {outlines.map(outline => (
-        <Button
-          outline={outline}
-          label={outline}
-          key={outline}
-          clickAction={() => {}}
-        />
       ))}
     </div>
   ))
