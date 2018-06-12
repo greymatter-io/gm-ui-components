@@ -12,8 +12,7 @@ const readoutItems = [
   },
   {
     title: "CPU",
-    value: "0.000%",
-    icon: () => <Summary size={"24px"} />
+    value: "0.000%"
   }
 ];
 
@@ -38,6 +37,6 @@ describe("Readout", () => {
     let aReadoutWithItems = shallow(
       <Readout color={"#0a2"} readoutItems={readoutItems} />
     );
-    expect(aReadoutWithItems.find("ReadoutItem").length).toBe(2);
+    expect(aReadoutWithItems.find("ReadoutItem")).toHaveLength(2);
   });
 });

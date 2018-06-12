@@ -16,7 +16,7 @@ export default function ReadoutItem({ children, detail, icon, title, value }) {
           {title || "—"}
         </ReadoutItemTitle>
         <ReadoutItemValue>{value || "—"}</ReadoutItemValue>
-        {detail && <ReadoutItemDetail>{detail || "—"}</ReadoutItemDetail>}
+        {detail && <ReadoutItemDetail>{detail}</ReadoutItemDetail>}
         {children}
       </ReadoutItemData>
     </ItemDisplay>

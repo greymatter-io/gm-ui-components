@@ -25,7 +25,6 @@ exports[`Readout matches snapshot when rendering readoutItems 1`] = `
     value="0.000%"
   />
   <ReadoutItem
-    icon={[Function]}
     key="CPU|0.000%|undefined"
     title="CPU"
     value="0.000%"
