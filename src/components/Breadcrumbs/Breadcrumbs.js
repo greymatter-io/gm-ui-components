@@ -54,7 +54,13 @@ class Breadcrumbs extends React.Component {
 
   renderExpanded = crumbs => {
     return crumbs.map((item, i) => {
-      return <BreadcrumbItem key={i} item={item} />;
+      return (
+        <BreadcrumbItem
+          key={i}
+          item={item}
+          hideDelimiter={crumbs.length === 1}
+        />
+      );
     });
   };
 

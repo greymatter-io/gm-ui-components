@@ -6,7 +6,15 @@ import { withInfo } from "@storybook/addon-info";
 
 const stories = storiesOf("Breadcrumbs", module);
 const label = "Breadcrumbs";
-const defaultCrumbs = ["Home", "View", "Data", "Graphs"];
+const defaultCrumbs = [
+  "Home",
+  "View",
+  "Data",
+  "Graphs",
+  "Things",
+  "stuff",
+  "garbage"
+];
 const separator = ",";
 const breadCrumbsInfo =
   "A React component that allows users to know their location. Use <Breadcrumbs> and pass it an array of crumbs and an optional maxItems prop.  If there are more children than the maximum, it will render a collapsed view.";
@@ -19,7 +27,11 @@ stories.add(
   "simple breadcrumbs",
   withInfo(breadCrumbsInfo)(() => {
     crumbs = array(label, defaultCrumbs, separator);
-    return <Breadcrumbs crumbs={crumbs} />;
+    return (
+      <div style={{ backgroundColor: "black", width: "300px" }}>
+        <Breadcrumbs crumbs={crumbs} style={{ color: "white" }} />;
+      </div>
+    );
   })
 );
 
