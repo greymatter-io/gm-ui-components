@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadoutItemDetail matches snapshot 1`] = `
+.c0 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  min-height: 1em;
+}
+
+<p
+  className="c0"
+/>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadoutItem matches snapshot 1`] = `
+<ItemDisplay>
+  <ReadoutItemData>
+    <ReadoutItemTitle>
+      Readout
+    </ReadoutItemTitle>
+    <ReadoutItemValue>
+      100
+    </ReadoutItemValue>
+    <ReadoutItemDetail>
+      Readout Detail
+    </ReadoutItemDetail>
+  </ReadoutItemData>
+</ItemDisplay>
+`;

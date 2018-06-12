@@ -9,23 +9,27 @@ import Spinner from "./Spinner";
 import Tab from "./Tab";
 import TabGroup from "./TabGroup";
 import Tooltip from "./Tooltip";
+import Readout from "./Readout";
+import ReadoutGroup from "./ReadoutGroup";
 
 import * as Glyphs from "./Glyphs";
 
 const library = {
   ...Glyphs,
-  Checkbox,
   AppFooter,
-  Icon,
-  Input,
+  BreadcrumbItem,
+  Breadcrumbs,
   Button,
   ButtonGroup,
-  Breadcrumbs,
-  BreadcrumbItem,
+  Checkbox,
+  Icon,
+  Input,
+  Readout,
+  ReadoutGroup,
   Spinner,
-  Tooltip,
   Tab,
-  TabGroup
+  TabGroup,
+  Tooltip
 };
 
 export default library;

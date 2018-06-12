@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Readout matches snapshot when primary is true or false 1`] = `
+<ReadoutDisplay
+  color="#0aab2a"
+  primary={true}
+/>
+`;
+
+exports[`Readout matches snapshot when primary is true or false 2`] = `
+<ReadoutDisplay
+  color="#0aab2a"
+  primary={false}
+/>
+`;
+
+exports[`Readout matches snapshot when rendering readoutItems 1`] = `
+<ReadoutDisplay
+  color="#0a2"
+>
+  <ReadoutItem
+    icon={[Function]}
+    key="Error Rate|0.000%|undefined"
+    title="Error Rate"
+    value="0.000%"
+  />
+  <ReadoutItem
+    key="CPU|0.000%|undefined"
+    title="CPU"
+    value="0.000%"
+  />
+</ReadoutDisplay>
+`;
+
+exports[`Readout matches snapshot when taking a color prop 1`] = `
+<ReadoutDisplay
+  color="#0a2"
+/>
+`;
