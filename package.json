@@ -18,8 +18,7 @@
     "styled-components": "^3"
   },
   "dependencies": {
-    "polished": "^1.9.2",
-    "react-sparklines": "^1.7.0"
+    "polished": "^1.9.2"
   },
   "scripts": {
     "build": "webpack -p",
