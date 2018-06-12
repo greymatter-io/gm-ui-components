@@ -5,29 +5,21 @@ import styled from "styled-components";
 export const Breadcrumb = styled.li`
   flex: 0 0 auto;
   display: flex;
-  align-items: center;
   &:before {
     content: ">";
     transform: scaleX(0.5);
     display: flex;
-    opacity: 0.5;
+    opacity: ${props => (props.hideDelimiter ? 0 : 0.5)};
     padding: 0 4px;
   }
   a {
-    display: flex;
-    max-width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding: 8px 0;
     color: inherit;
-    text-decoration: none;
   }
   &:first-child {
     &:before {
       content: none;
-    }
-    a {
-      padding-left: 16px;
     }
   }
 `;

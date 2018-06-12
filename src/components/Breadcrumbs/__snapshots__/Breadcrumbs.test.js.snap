@@ -9,10 +9,6 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c1:before {
@@ -29,25 +25,13 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 }
 
 .c1 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding: 8px 0;
   color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .c1:first-child:before {
   content: none;
-}
-
-.c1:first-child a {
-  padding-left: 16px;
 }
 
 .c0 {
@@ -104,10 +88,6 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c1:before {
@@ -124,25 +104,13 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 }
 
 .c1 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding: 8px 0;
   color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .c1:first-child:before {
   content: none;
-}
-
-.c1:first-child a {
-  padding-left: 16px;
 }
 
 .c0 {
