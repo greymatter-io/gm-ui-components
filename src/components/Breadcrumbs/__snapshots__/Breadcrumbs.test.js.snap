@@ -2,13 +2,17 @@
 
 exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 .c1 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  overflow: hidden;
 }
 
 .c1:before {
@@ -16,10 +20,6 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-transform: scaleX(0.5);
   -ms-transform: scaleX(0.5);
   transform: scaleX(0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   opacity: 0.5;
   padding: 0 4px;
 }
@@ -81,13 +81,17 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 
 exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 .c1 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  overflow: hidden;
 }
 
 .c1:before {
@@ -95,10 +99,6 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-transform: scaleX(0.5);
   -ms-transform: scaleX(0.5);
   transform: scaleX(0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   opacity: 0.5;
   padding: 0 4px;
 }
