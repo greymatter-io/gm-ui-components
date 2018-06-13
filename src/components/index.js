@@ -11,6 +11,7 @@ import TabGroup from "./TabGroup";
 import Tooltip from "./Tooltip";
 import Readout from "./Readout";
 import ReadoutGroup from "./ReadoutGroup";
+import LayoutSection from "./LayoutSection";
 
 import * as Glyphs from "./Glyphs";
 
@@ -24,6 +25,7 @@ const library = {
   Checkbox,
   Icon,
   Input,
+  LayoutSection,
   Readout,
   ReadoutGroup,
   Spinner,
