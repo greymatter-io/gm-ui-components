@@ -9,10 +9,11 @@ export default function Readout({
   children,
   primary,
   color = COLOR_SUCCESS,
-  readoutItems = []
+  readoutItems = [],
+  ...props
 }) {
   return (
-    <ReadoutDisplay primary={primary} color={color}>
+    <ReadoutDisplay primary={primary} color={color} {...props}>
       {readoutItems.map(item => (
         <ReadoutItem
           key={`${item.title}|${item.value}|${item.detail}`}

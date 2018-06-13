@@ -1,3 +1,5 @@
+import { mix } from "polished";
+
 /*/ Colors /*/
 export const COLOR_BRAND_PRIMARY = "#0aab2a";
 export const COLOR_BRAND_SECONDARY = "#002e6e";
@@ -6,7 +8,7 @@ export const COLOR_RED = "#E4251A";
 export const COLOR_BLACK = "#000";
 export const COLOR_GREEN = "#0aab2a";
 export const COLOR_WHITE = "#fff";
-export const COLOR_GREY = "#444";
+export const COLOR_GREY = mix(0.2, COLOR_WHITE, COLOR_BLACK);
 
 export const COLOR_HIGHLIGHT = COLOR_BRAND_PRIMARY;
 export const COLOR_SUCCESS = COLOR_BRAND_PRIMARY;
@@ -49,7 +51,7 @@ export const LINE_HEIGHT_BASE = 1.4;
 export const FONT_WEIGHT_BASE = 400;
 export const FONT_WEIGHT_SEMIBOLD = FONT_WEIGHT_BASE * 1.25;
 export const FONT_WEIGHT_CONTROLS = 600;
-export const FONT_SIZE_HERO = "32px";
+export const FONT_SIZE_HERO = "40px";
 export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
 export const FONT_SIZE_SM = "11px";
