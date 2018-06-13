@@ -7,7 +7,7 @@ exports[`Extra matches snapshot 1`] = `
   bottom: 4px;
   color: #fff;
   display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   margin: 8px;
   padding: 2px 8px;
@@ -15,6 +15,8 @@ exports[`Extra matches snapshot 1`] = `
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
   z-index: 2;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not(:last-child) {

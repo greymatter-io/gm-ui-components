@@ -7,7 +7,7 @@ exports[`HeaderToolbarWrapper matches snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  color: #fff;
+  color: rgba(NaN,NaN,NaN,NaN);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

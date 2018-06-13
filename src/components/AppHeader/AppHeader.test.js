@@ -1,64 +1,79 @@
-import React from "react";
-import { MemoryRouter, Route } from "react-router";
-import { Provider } from "react-redux";
-import configureMockStore from "redux-mock-store";
+import React, { Fragment } from "react";
+import { shallow } from "enzyme";
+import { Cog, Button, ButtonGroup } from "../";
 
-// utils
-import { getFabricServer } from "../../utils/head";
-import mockState from "json/mockReduxState";
-import { renderWithIntl, mountWithIntl } from "utils/i18nTesting";
+import AppHeader from "./AppHeader";
 
-// components
-import Header from "./AppHeader";
+const breadcrumbs = [
+  "Fabric",
+  "Grace Hopper Battleship Service",
+  "Instances",
+  "Routes"
+];
 
-// styled-components
-import HeaderWrapper from "./components/HeaderWrapper";
+const bannerExtras = [
+  {
+    path: "/settings",
+    title: "Extra, Extra, Read all about it"
+  }
+];
 
-const store = configureMockStore()(mockState);
-
-const aHeader = (
-  <Provider store={store}>
-    <MemoryRouter initialEntries={["/Down"]}>
-      <Route render={props => <Header {...props} />} />
-    </MemoryRouter>
-  </Provider>
-);
-
-// mock getFabricServer
-jest.mock("../../utils/head");
+const toolbarItems = () => {
+  return (
+    <Fragment>
+      <span>1.1.6</span>
+      <ButtonGroup>
+        <Button
+          outline="none"
+          size="xs"
+          label=""
+          type="info"
+          style={{
+            border: "none",
+            backgroundColor: "white",
+            color: "black"
+          }}
+        >
+          <Cog size={"24px"} />
+        </Button>
+      </ButtonGroup>
+    </Fragment>
+  );
+};
 
 describe("Header component", () => {
-  let aHeaderWithIntl;
+  let aHeader;
 
   beforeEach(() => {
-    aHeaderWithIntl = mountWithIntl(aHeader);
+    aHeader = shallow(
+      <AppHeader
+        title="GM UI AppHeader"
+        breadcrumbs={breadcrumbs}
+        extras={bannerExtras}
+        toolbarItems={toolbarItems}
+      />
+    );
   });
 
   test("matches snapshot with instance view tabs", () => {
-    aHeaderWithIntl = renderWithIntl(aHeader);
-    expect(aHeaderWithIntl).toMatchSnapshot();
-  });
-
-  test("matches snapshot with fabric view tabs", () => {
-    // set a return value for getFabricServer() util func so that Header renders <UseSDS /> and remount
-    getFabricServer.mockImplementation(() => "http://localhost:1337");
-    aHeaderWithIntl = renderWithIntl(aHeader);
-    expect(aHeaderWithIntl).toMatchSnapshot();
+    expect(aHeader).toMatchSnapshot();
   });
 
   test("renders subcomponents", () => {
-    expect(aHeaderWithIntl.find(HeaderWrapper)).toHaveLength(1);
-    expect(aHeaderWithIntl.find("HeaderToolbar")).toHaveLength(1);
-    expect(aHeaderWithIntl.find("HeaderBanner")).toHaveLength(1);
+    expect(aHeader.find("HeaderWrapper")).toHaveLength(1);
+    expect(aHeader.find("HeaderToolbar")).toHaveLength(1);
+    expect(aHeader.find("HeaderBanner")).toHaveLength(1);
   });
 
-  test("passes the correct title to HeaderBanner", () => {
-    expect(aHeaderWithIntl.find("HeaderBanner").props().title).toBe("Down");
+  test("passes the correct props to HeaderBanner", () => {
+    expect(aHeader.find("HeaderBanner").props().title).toBe("GM UI AppHeader");
+    expect(aHeader.find("HeaderBanner").props().extras).toBe(bannerExtras);
   });
 
-  test("passes the pathname to HeaderToolbar", () => {
-    expect(aHeaderWithIntl.find("HeaderToolbar").props().pathname).toBe(
-      "/Down"
+  test("passes the correct props to HeaderToolbar", () => {
+    expect(aHeader.find("HeaderToolbar").props().breadcrumbs).toBe(breadcrumbs);
+    expect(aHeader.find("HeaderToolbar").props().toolbarItems).toBe(
+      toolbarItems
     );
   });
 });
