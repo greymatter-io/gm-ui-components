@@ -7,7 +7,8 @@ exports[`ErrorCard matches snapshot 1`] = `
       <Exclamation
         backgroundColor="transparent"
         backgroundStyle="BackgroundTriangleSmall"
-        size="64px"
+        borderWidth="0.5"
+        size="72px"
       />
     </Span>
     <Span>
@@ -24,7 +25,8 @@ exports[`ErrorCard renders an error message 1`] = `
       <Exclamation
         backgroundColor="transparent"
         backgroundStyle="BackgroundTriangleSmall"
-        size="64px"
+        borderWidth="0.5"
+        size="72px"
       />
     </Span>
     <Span>

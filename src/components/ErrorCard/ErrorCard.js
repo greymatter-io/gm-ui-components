@@ -21,7 +21,8 @@ const ErrorCard = ({ errorMsg = "Error", icon }) => {
           ) : (
             <Exclamation
               backgroundStyle="BackgroundTriangleSmall"
-              size="64px"
+              size="72px"
+              borderWidth="0.5"
               backgroundColor="transparent"
             />
           )}
