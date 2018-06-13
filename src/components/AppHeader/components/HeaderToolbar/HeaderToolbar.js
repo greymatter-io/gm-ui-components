@@ -8,6 +8,7 @@ import SkipNav from "./components/SkipNav";
 HeaderToolbar.propTypes = {
   appVersion: PropTypes.string,
   breadcrumbs: PropTypes.array,
+  skipToId: PropTypes.string,
   toolbarItems: PropTypes.func
 };
 
@@ -16,10 +17,10 @@ HeaderToolbar.propTypes = {
  * @param {Object} props - See propTypes
  * @returns JSX.Element
  */
-function HeaderToolbar({ breadcrumbs, toolbarItems }) {
+function HeaderToolbar({ breadcrumbs, toolbarItems, skipToId }) {
   return (
     <HeaderToolbarWrapper>
-      <SkipNav type="button" skipToId="main-content">
+      <SkipNav type="button" skipToId={skipToId}>
         Skip Navigation
       </SkipNav>
       <HeaderBreadcrumbs crumbs={breadcrumbs} />

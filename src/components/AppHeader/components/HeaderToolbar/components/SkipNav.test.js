@@ -7,4 +7,12 @@ describe("SkipNav", () => {
     const aSkipNav = shallow(<SkipNav />);
     expect(aSkipNav).toMatchSnapshot();
   });
+  it("calls onKeyDown", () => {
+    const onKeyDown = jest.fn();
+    const aSkipNav = shallow(
+      <SkipNav skipToId={"main-content"} onKeyDown={onKeyDown} />
+    );
+    aSkipNav.find("button").simulate("keyDown", { keyCode: 13 });
+    expect(onKeyDown).toHaveBeenCalled();
+  });
 });

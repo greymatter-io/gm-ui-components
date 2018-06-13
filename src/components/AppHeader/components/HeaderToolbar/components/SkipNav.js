@@ -30,4 +30,8 @@ SkipNav.propTypes = {
   skipToId: PropTypes.string
 };
 
+SkipNav.defaultProps = {
+  skipToId: "main-content"
+};
+
 export default SkipNav;

@@ -8,6 +8,7 @@ import HeaderBanner from "./components/HeaderBanner";
 AppHeader.propTypes = {
   breadcrumbs: PropTypes.array.isRequired,
   extras: PropTypes.array,
+  skipToId: PropTypes.string,
   title: PropTypes.string.isRequired,
   toolbarItems: PropTypes.func
 };
@@ -17,10 +18,14 @@ AppHeader.propTypes = {
  * @returns JSX.Element
  */
 
-function AppHeader({ title, extras, breadcrumbs, toolbarItems }) {
+function AppHeader({ title, extras, breadcrumbs, toolbarItems, skipToId }) {
   return (
     <HeaderWrapper>
-      <HeaderToolbar breadcrumbs={breadcrumbs} toolbarItems={toolbarItems} />
+      <HeaderToolbar
+        breadcrumbs={breadcrumbs}
+        toolbarItems={toolbarItems}
+        skipToId={skipToId}
+      />
       <HeaderBanner title={title} extras={extras} />
     </HeaderWrapper>
   );
