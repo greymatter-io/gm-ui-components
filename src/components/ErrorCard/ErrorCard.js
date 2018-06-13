@@ -9,6 +9,7 @@ import Span from "./components/Span";
 /**Stateless functional React component that renders the error message box
  * Takes an error message and returns error message box
  * @param {string} errorMsg
+ * @param {function} icon
  * @returns react component
  */
 const ErrorCard = ({ errorMsg = "Error", icon }) => {
