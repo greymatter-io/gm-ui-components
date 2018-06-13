@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderWrapper matches snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #000;
+  background-image: linear-gradient( to right,#000,rgba(0,0,0,0.3),rgba(0,0,0,0) ),url(mesh-web.jpg);
+  background-size: 100% 100%,120% auto;
+  background-position: center center,left center;
+  background-repeat: no-repeat;
+}
+
+<div
+  className="c0"
+/>
+`;

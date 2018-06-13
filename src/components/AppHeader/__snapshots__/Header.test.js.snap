@@ -1,0 +1,1351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot with fabric view tabs 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #000;
+  background-image: linear-gradient( to right,#000,rgba(0,0,0,0.3),rgba(0,0,0,0) ),url(mesh-web.jpg);
+  background-size: 100% 100%,120% auto;
+  background-position: center center,left center;
+  background-repeat: no-repeat;
+}
+
+.c18 {
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  word-spacing: 0;
+  vertical-align: middle;
+}
+
+.c18:not(:root) {
+  overflow: visible;
+}
+
+.c5 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5:before {
+  content: ">";
+  -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  padding: 0 4px;
+}
+
+.c5 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 8px 0;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:first-child:before {
+  content: none;
+}
+
+.c5:first-child a {
+  padding-left: 16px;
+}
+
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  height: inherit;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  color: #000;
+  border-color: transparent;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 2px 7px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c10:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.c10:focus,
+.c10:active {
+  -webkit-transition: all 0 ease;
+  transition: all 0 ease;
+}
+
+.c10 > * {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c10:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
+.c10:active {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
+}
+
+.c10:focus {
+  z-index: 1;
+}
+
+.c10[disabled],
+.c10[disabled]:hover,
+.c10[disabled]:focus,
+.c10[disabled]:active {
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
+}
+
+.c10 > :not(:first-child) {
+  margin-left: 4px;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c17 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #094dff;
+  color: #fff;
+  border-color: #003bd5;
+  font-size: 7px;
+  border-radius: 3px;
+  padding: 2px 7px;
+  text-transform: uppercase;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c17:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.c17:focus,
+.c17:active {
+  -webkit-transition: all 0 ease;
+  transition: all 0 ease;
+}
+
+.c17 > * {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c17:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
+.c17:active {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
+}
+
+.c17:focus {
+  z-index: 1;
+}
+
+.c17[disabled],
+.c17[disabled]:hover,
+.c17[disabled]:focus,
+.c17[disabled]:active {
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
+}
+
+.c17 > :not(:first-child) {
+  margin-left: 4px;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0px 8px;
+}
+
+.c16 * + * {
+  margin-left: 4px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 34px;
+  -ms-flex: 0 0 34px;
+  flex: 0 0 34px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 14px;
+  background-image: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,1));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c7 {
+  margin: 0 8px;
+  max-height: 16px;
+  width: auto;
+}
+
+.c8 {
+  color: #fff;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.03em;
+  -moz-letter-spacing: 0.03em;
+  -ms-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+}
+
+.c8 > a {
+  color: #fff;
+}
+
+.c8 > a:hover {
+  color: #fff;
+}
+
+.c15 {
+  color: white;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 1;
+  padding: 0 8px;
+}
+
+.c15:hover {
+  color: white;
+  opacity: 1;
+}
+
+.c2 {
+  background-color: #0aab2a;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  left: 0;
+  position: absolute;
+  padding: 0.6em;
+  text-transform: uppercase;
+  top: -10em;
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
+}
+
+.c2:focus {
+  top: 0;
+}
+
+.c9 {
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1021;
+  position: relative;
+}
+
+.c9 >:first-child {
+  opacity: 0.8;
+}
+
+.c9 >:first-child:hover {
+  opacity: 1;
+}
+
+.c12 {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1),0 12px 12px -12px rgba(0,0,0,0.4);
+  color: #1f1f1f;
+  opacity: 0;
+  padding: 4px 12px;
+  margin: 0;
+  text-align: left;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  white-space: nowrap;
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  right: -8px;
+  top: 24px;
+}
+
+.c13 {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+.c14 {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.c14:hover {
+  color: #0aab2a;
+}
+
+.c11 {
+  margin: 0 8px;
+  padding: 1px;
+  max-height: 19px;
+  max-width: 19px;
+}
+
+.c3 {
+  color: white;
+  text-transform: capitalize;
+}
+
+.c3 >:first-child a {
+  padding: 0;
+}
+
+.c3 >:first-child a >:before {
+  visibility: visible;
+}
+
+.c19 {
+  color: #fff;
+  padding: 8px 16px 8px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.c20 {
+  display: inline-block;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 8px 0;
+  max-width: 100%;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.c20::before {
+  background-color: rgba(0,0,0,1);
+  content: "";
+  display: block;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 108%;
+  z-index: -1;
+}
+
+@media all and (min-width:1000px) {
+  .c19 {
+    padding: 16px 16px 8px;
+  }
+}
+
+<div
+  class="c0"
+>
+  <nav
+    class="c1"
+  >
+    <button
+      class="c2"
+      type="button"
+    >
+      Skip Navigation
+    </button>
+    <ol
+      class="c3 c4"
+    >
+      <li
+        class="c5"
+      >
+        <div
+          class="c6"
+        >
+          <img
+            alt=""
+            class="c7"
+            src="decipherLogo.svg"
+          />
+          <span
+            class="c8"
+          >
+            <a
+              href="/"
+            >
+              Fabric
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        class="c5"
+      >
+        <a
+          href="/Down"
+        >
+          Down
+        </a>
+      </li>
+    </ol>
+    <div
+      class="c9"
+    >
+      <button
+        class="c10"
+        orientation="horizontal"
+        style="background-color:rgba(0,0,0,0);border:none"
+        tabindex="-1"
+        title=""
+      >
+        <img
+          class="c11"
+          src="languagesIcon.svg"
+          tabindex="0"
+        />
+      </button>
+      <ul
+        class="c12"
+      >
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+          >
+            English (en)
+          </button>
+        </li>
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+          >
+            Español (es)
+          </button>
+        </li>
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+          >
+            Deutsch (de)
+          </button>
+        </li>
+      </ul>
+    </div>
+    <a
+      class="c15"
+      href="https://deciphernow.github.io/gm-fabric-dashboard/CHANGELOG"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      1.1.6
+    </a>
+    <div
+      class="c16"
+    >
+      <a
+        aria-current="false"
+        href="/settings"
+        tabindex="-1"
+        title="Settings"
+      >
+        <button
+          class="c17"
+          orientation="horizontal"
+          style="border:none;background-color:white;color:black"
+          title=""
+          type="info"
+        >
+          <svg
+            class="c18"
+            focusable="false"
+            preserveAspectRatio="xMaxYMax meet"
+            version="1.1"
+            viewBox="0 0 24 24"
+            xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="currentColor"
+              title="Cog"
+            >
+              <title>
+                Cog
+              </title>
+              <path
+                d="M20.4055307,12.9306123 L20.4055307,11.0093482 L18.0759979,10.2408425 L17.5356424,8.93198128 L18.5923377,6.72252749 L17.2354449,5.36563467 L15.0620148,6.45835366 L13.7531536,5.91799811 L12.9246084,3.61248111 L11.0033442,3.61248111 L10.2468464,5.94201392 L8.91396943,6.48236946 L6.70451563,5.42567417 L5.34762281,6.78256699 L6.44034181,8.95599708 L5.89998626,10.2648583 L3.59446926,11.0813956 L3.59446926,12.9906518 L5.92400207,13.7591575 L6.46435761,15.0680187 L5.40766232,17.2774725 L6.76455514,18.6343653 L8.93798523,17.5416463 L10.2468464,18.0820019 L11.0753916,20.3875189 L12.9846479,20.3875189 L13.7411457,18.0579861 L15.0740227,17.5176305 L17.2834765,18.5743258 L18.6403693,17.217433 L17.5356424,15.0440029 L18.1000137,13.7351417 L20.4055307,12.9065965 L20.4055307,12.9306123 Z M12,15.6083743 C10.0066884,15.6083743 8.39762968,13.9993155 8.39762968,12.006004 C8.39762968,10.0126924 10.0066884,8.40363363 12,8.40363363 C13.9933116,8.40363363 15.6023703,10.0126924 15.6023703,12.006004 C15.6023703,13.9993155 13.9933116,15.6083743 12,15.6083743 Z"
+                id="Shape"
+              />
+            </g>
+          </svg>
+        </button>
+      </a>
+    </div>
+  </nav>
+  <div
+    class="c19"
+  >
+    <h1
+      class="c20"
+    >
+      Down
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Header component matches snapshot with instance view tabs 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #000;
+  background-image: linear-gradient( to right,#000,rgba(0,0,0,0.3),rgba(0,0,0,0) ),url(mesh-web.jpg);
+  background-size: 100% 100%,120% auto;
+  background-position: center center,left center;
+  background-repeat: no-repeat;
+}
+
+.c18 {
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  word-spacing: 0;
+  vertical-align: middle;
+}
+
+.c18:not(:root) {
+  overflow: visible;
+}
+
+.c5 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5:before {
+  content: ">";
+  -webkit-transform: scaleX(0.5);
+  -ms-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  padding: 0 4px;
+}
+
+.c5 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 8px 0;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:first-child:before {
+  content: none;
+}
+
+.c5:first-child a {
+  padding-left: 16px;
+}
+
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  height: inherit;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  color: #000;
+  border-color: transparent;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 2px 7px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c10:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.c10:focus,
+.c10:active {
+  -webkit-transition: all 0 ease;
+  transition: all 0 ease;
+}
+
+.c10 > * {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c10:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
+.c10:active {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
+}
+
+.c10:focus {
+  z-index: 1;
+}
+
+.c10[disabled],
+.c10[disabled]:hover,
+.c10[disabled]:focus,
+.c10[disabled]:active {
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
+}
+
+.c10 > :not(:first-child) {
+  margin-left: 4px;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c17 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #094dff;
+  color: #fff;
+  border-color: #003bd5;
+  font-size: 7px;
+  border-radius: 3px;
+  padding: 2px 7px;
+  text-transform: uppercase;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c17:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.c17:focus,
+.c17:active {
+  -webkit-transition: all 0 ease;
+  transition: all 0 ease;
+}
+
+.c17 > * {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c17:hover {
+  -webkit-filter: saturate(120%) brightness(95%);
+  filter: saturate(120%) brightness(95%);
+}
+
+.c17:active {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-filter: saturate(80%) brightness(90%) contrast(110%);
+  filter: saturate(80%) brightness(90%) contrast(110%);
+}
+
+.c17:focus {
+  z-index: 1;
+}
+
+.c17[disabled],
+.c17[disabled]:hover,
+.c17[disabled]:focus,
+.c17[disabled]:active {
+  cursor: not-allowed;
+  -webkit-filter: saturate(0) opacity(70%);
+  filter: saturate(0) opacity(70%);
+}
+
+.c17 > :not(:first-child) {
+  margin-left: 4px;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0px 8px;
+}
+
+.c16 * + * {
+  margin-left: 4px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 34px;
+  -ms-flex: 0 0 34px;
+  flex: 0 0 34px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 14px;
+  background-image: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,1));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c7 {
+  margin: 0 8px;
+  max-height: 16px;
+  width: auto;
+}
+
+.c8 {
+  color: #fff;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.03em;
+  -moz-letter-spacing: 0.03em;
+  -ms-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+}
+
+.c8 > a {
+  color: #fff;
+}
+
+.c8 > a:hover {
+  color: #fff;
+}
+
+.c15 {
+  color: white;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 1;
+  padding: 0 8px;
+}
+
+.c15:hover {
+  color: white;
+  opacity: 1;
+}
+
+.c2 {
+  background-color: #0aab2a;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  left: 0;
+  position: absolute;
+  padding: 0.6em;
+  text-transform: uppercase;
+  top: -10em;
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
+}
+
+.c2:focus {
+  top: 0;
+}
+
+.c9 {
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1021;
+  position: relative;
+}
+
+.c9 >:first-child {
+  opacity: 0.8;
+}
+
+.c9 >:first-child:hover {
+  opacity: 1;
+}
+
+.c12 {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1),0 12px 12px -12px rgba(0,0,0,0.4);
+  color: #1f1f1f;
+  opacity: 0;
+  padding: 4px 12px;
+  margin: 0;
+  text-align: left;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  white-space: nowrap;
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  right: -8px;
+  top: 24px;
+}
+
+.c13 {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+.c14 {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.c14:hover {
+  color: #0aab2a;
+}
+
+.c11 {
+  margin: 0 8px;
+  padding: 1px;
+  max-height: 19px;
+  max-width: 19px;
+}
+
+.c3 {
+  color: white;
+  text-transform: capitalize;
+}
+
+.c3 >:first-child a {
+  padding: 0;
+}
+
+.c3 >:first-child a >:before {
+  visibility: visible;
+}
+
+.c19 {
+  color: #fff;
+  padding: 8px 16px 8px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.c20 {
+  display: inline-block;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 8px 0;
+  max-width: 100%;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.c20::before {
+  background-color: rgba(0,0,0,1);
+  content: "";
+  display: block;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 108%;
+  z-index: -1;
+}
+
+@media all and (min-width:1000px) {
+  .c19 {
+    padding: 16px 16px 8px;
+  }
+}
+
+<div
+  class="c0"
+>
+  <nav
+    class="c1"
+  >
+    <button
+      class="c2"
+      type="button"
+    >
+      Skip Navigation
+    </button>
+    <ol
+      class="c3 c4"
+    >
+      <li
+        class="c5"
+      >
+        <div
+          class="c6"
+        >
+          <img
+            alt=""
+            class="c7"
+            src="decipherLogo.svg"
+          />
+          <span
+            class="c8"
+          >
+            <a
+              href="/"
+            >
+              Fabric
+            </a>
+          </span>
+        </div>
+      </li>
+      <li
+        class="c5"
+      >
+        <a
+          href="/Down"
+        >
+          Down
+        </a>
+      </li>
+    </ol>
+    <div
+      class="c9"
+    >
+      <button
+        class="c10"
+        orientation="horizontal"
+        style="background-color:rgba(0,0,0,0);border:none"
+        tabindex="-1"
+        title=""
+      >
+        <img
+          class="c11"
+          src="languagesIcon.svg"
+          tabindex="0"
+        />
+      </button>
+      <ul
+        class="c12"
+      >
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+          >
+            English (en)
+          </button>
+        </li>
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+          >
+            Español (es)
+          </button>
+        </li>
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+          >
+            Deutsch (de)
+          </button>
+        </li>
+      </ul>
+    </div>
+    <a
+      class="c15"
+      href="https://deciphernow.github.io/gm-fabric-dashboard/CHANGELOG"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      1.1.6
+    </a>
+    <div
+      class="c16"
+    >
+      <a
+        aria-current="false"
+        href="/settings"
+        tabindex="-1"
+        title="Settings"
+      >
+        <button
+          class="c17"
+          orientation="horizontal"
+          style="border:none;background-color:white;color:black"
+          title=""
+          type="info"
+        >
+          <svg
+            class="c18"
+            focusable="false"
+            preserveAspectRatio="xMaxYMax meet"
+            version="1.1"
+            viewBox="0 0 24 24"
+            xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="currentColor"
+              title="Cog"
+            >
+              <title>
+                Cog
+              </title>
+              <path
+                d="M20.4055307,12.9306123 L20.4055307,11.0093482 L18.0759979,10.2408425 L17.5356424,8.93198128 L18.5923377,6.72252749 L17.2354449,5.36563467 L15.0620148,6.45835366 L13.7531536,5.91799811 L12.9246084,3.61248111 L11.0033442,3.61248111 L10.2468464,5.94201392 L8.91396943,6.48236946 L6.70451563,5.42567417 L5.34762281,6.78256699 L6.44034181,8.95599708 L5.89998626,10.2648583 L3.59446926,11.0813956 L3.59446926,12.9906518 L5.92400207,13.7591575 L6.46435761,15.0680187 L5.40766232,17.2774725 L6.76455514,18.6343653 L8.93798523,17.5416463 L10.2468464,18.0820019 L11.0753916,20.3875189 L12.9846479,20.3875189 L13.7411457,18.0579861 L15.0740227,17.5176305 L17.2834765,18.5743258 L18.6403693,17.217433 L17.5356424,15.0440029 L18.1000137,13.7351417 L20.4055307,12.9065965 L20.4055307,12.9306123 Z M12,15.6083743 C10.0066884,15.6083743 8.39762968,13.9993155 8.39762968,12.006004 C8.39762968,10.0126924 10.0066884,8.40363363 12,8.40363363 C13.9933116,8.40363363 15.6023703,10.0126924 15.6023703,12.006004 C15.6023703,13.9993155 13.9933116,15.6083743 12,15.6083743 Z"
+                id="Shape"
+              />
+            </g>
+          </svg>
+        </button>
+      </a>
+    </div>
+  </nav>
+  <div
+    class="c19"
+  >
+    <h1
+      class="c20"
+    >
+      Down
+    </h1>
+  </div>
+</div>
+`;

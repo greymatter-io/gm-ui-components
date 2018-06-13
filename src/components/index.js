@@ -11,12 +11,13 @@ import TabGroup from "./TabGroup";
 import Tooltip from "./Tooltip";
 import Readout from "./Readout";
 import ReadoutGroup from "./ReadoutGroup";
-
+import AppHeader from "./AppHeader";
 import * as Glyphs from "./Glyphs";
 
 const library = {
   ...Glyphs,
   AppFooter,
+  AppHeader,
   BreadcrumbItem,
   Breadcrumbs,
   Button,

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppVersionLink matches snapshot 1`] = `
+.c0 {
+  color: white;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 1;
+  padding: 0 8px;
+}
+
+.c0:hover {
+  color: white;
+  opacity: 1;
+}
+
+<a
+  className="c0"
+/>
+`;
