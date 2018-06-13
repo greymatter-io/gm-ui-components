@@ -1,7 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import { Exclamation } from "../";
+import { Exclamation } from "../Glyphs";
 import ErrorBox from "./components/ErrorBox";
 import ErrorContent from "./components/ErrorContent";
 import Span from "./components/Span";

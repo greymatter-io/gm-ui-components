@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorCard matches snapshot 1`] = `
+<ErrorBox>
+  <ErrorContent>
+    <Span>
+      <Exclamation
+        backgroundColor="transparent"
+        backgroundStyle="BackgroundTriangleSmall"
+        size="64px"
+      />
+    </Span>
+    <Span>
+      Error
+    </Span>
+  </ErrorContent>
+</ErrorBox>
+`;
+
+exports[`ErrorCard renders an error message 1`] = `
+<ErrorBox>
+  <ErrorContent>
+    <Span>
+      <Exclamation
+        backgroundColor="transparent"
+        backgroundStyle="BackgroundTriangleSmall"
+        size="64px"
+      />
+    </Span>
+    <Span>
+      Woopsie
+    </Span>
+  </ErrorContent>
+</ErrorBox>
+`;
