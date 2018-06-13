@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { shallow } from "enzyme";
-import { Cog, Button, ButtonGroup } from "../";
+import { Button } from "../";
 
 import AppHeader from "./AppHeader";
 
@@ -20,24 +20,17 @@ const bannerExtras = [
 
 const toolbarItems = () => {
   return (
-    <Fragment>
-      <span>1.1.6</span>
-      <ButtonGroup>
-        <Button
-          outline="none"
-          size="xs"
-          label=""
-          type="info"
-          style={{
-            border: "none",
-            backgroundColor: "white",
-            color: "black"
-          }}
-        >
-          <Cog size={"24px"} />
-        </Button>
-      </ButtonGroup>
-    </Fragment>
+    <Button
+      outline={true}
+      size="xs"
+      label="Settings"
+      type="info"
+      style={{
+        border: "none",
+        backgroundColor: "white",
+        color: "black"
+      }}
+    />
   );
 };
 
@@ -55,7 +48,7 @@ describe("Header component", () => {
     );
   });
 
-  test("matches snapshot with instance view tabs", () => {
+  test("matches snapshot", () => {
     expect(aHeader).toMatchSnapshot();
   });
 

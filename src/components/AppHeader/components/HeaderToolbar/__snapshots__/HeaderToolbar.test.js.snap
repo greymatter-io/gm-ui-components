@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot with instance view tabs 1`] = `
+<HeaderToolbarWrapper>
+  <SkipNav
+    skipToId="main-content"
+    type="button"
+  >
+    Skip Navigation
+  </SkipNav>
+  <HeaderBreadcrumbs
+    crumbs={
+      Array [
+        "Fabric",
+        "Grace Hopper Battleship Service",
+      ]
+    }
+  />
+  <React.Fragment>
+    <span>
+      1.1.6
+    </span>
+    <ButtonGroup>
+      <Button
+        active={false}
+        clickAction={[Function]}
+        disabled={false}
+        label="Settings"
+        orientation="horizontal"
+        outline={true}
+        size="xs"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "border": "none",
+            "color": "black",
+          }
+        }
+        type="info"
+      />
+    </ButtonGroup>
+  </React.Fragment>
+</HeaderToolbarWrapper>
+`;

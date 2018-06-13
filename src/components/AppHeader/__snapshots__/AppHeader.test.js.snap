@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component matches snapshot with instance view tabs 1`] = `
+exports[`Header component matches snapshot 1`] = `
 <HeaderWrapper>
   <HeaderToolbar
     breadcrumbs={
