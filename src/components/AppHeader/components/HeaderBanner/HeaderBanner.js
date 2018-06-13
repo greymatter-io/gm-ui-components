@@ -15,9 +15,9 @@ HeaderBanner.propTypes = {
  * @param {String} props - See propTypes
  * @returns JSX.Element
  */
-function HeaderBanner({ title, extras, hideBackground = false }) {
+function HeaderBanner({ title, extras }) {
   return (
-    <HeaderContainer hideBackground={hideBackground}>
+    <HeaderContainer>
       <Header>{title || "—"}</Header>
       {extras && (
         <Fragment>
