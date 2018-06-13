@@ -1,0 +1,42 @@
+import React from "react";
+import { PropTypes } from "prop-types";
+
+import { Exclamation } from "../Glyphs";
+import ErrorBox from "./components/ErrorBox";
+import ErrorContent from "./components/ErrorContent";
+import Span from "./components/Span";
+
+/**Stateless functional React component that renders the error message box
+ * Takes an error message and returns error message box
+ * @param {string} errorMsg
+ * @param {function} icon
+ * @returns react component
+ */
+const ErrorCard = ({ errorMsg = "Error", icon }) => {
+  return (
+    <ErrorBox>
+      <ErrorContent>
+        <Span>
+          {icon ? (
+            icon()
+          ) : (
+            <Exclamation
+              backgroundStyle="BackgroundTriangleSmall"
+              size="72px"
+              borderWidth="0.5"
+              backgroundColor="transparent"
+            />
+          )}
+        </Span>
+        <Span>{errorMsg}</Span>
+      </ErrorContent>
+    </ErrorBox>
+  );
+};
+
+ErrorCard.propTypes = {
+  errorMsg: PropTypes.string,
+  icon: PropTypes.func
+};
+
+export default ErrorCard;
