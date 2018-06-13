@@ -27,7 +27,7 @@ const toolbarItems = () => {
   );
 };
 
-describe("Header component", () => {
+describe("HeaderToolbar component", () => {
   let aHeaderToolbar;
 
   beforeEach(() => {

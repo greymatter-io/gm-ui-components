@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component matches snapshot with instance view tabs 1`] = `
+exports[`HeaderToolbar component matches snapshot with instance view tabs 1`] = `
 <HeaderToolbarWrapper>
   <SkipNav
     skipToId="main-content"
