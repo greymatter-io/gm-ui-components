@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderBreadcrumbs matches snapshot 1`] = `
+.c0 {
+  color: white;
+  padding-left: 16px;
+}
+
+<Breadcrumbs
+  className="c0"
+  maxItems={10}
+/>
+`;
