@@ -11,7 +11,7 @@ import TabGroup from "./TabGroup";
 import Tooltip from "./Tooltip";
 import Readout from "./Readout";
 import ReadoutGroup from "./ReadoutGroup";
-
+import ErrorCard from "./ErrorCard";
 import * as Glyphs from "./Glyphs";
 
 const library = {
@@ -22,6 +22,7 @@ const library = {
   Button,
   ButtonGroup,
   Checkbox,
+  ErrorCard,
   Icon,
   Input,
   Readout,
