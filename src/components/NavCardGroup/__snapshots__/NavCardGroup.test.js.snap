@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavCardGroup matches snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  color: rgba(NaN,NaN,NaN,NaN);
+  padding: 2px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+<nav
+  className="c0"
+/>
+`;

@@ -13,6 +13,8 @@ import Readout from "./Readout";
 import ReadoutGroup from "./ReadoutGroup";
 import AppHeader from "./AppHeader";
 import ErrorCard from "./ErrorCard";
+import NavCard from "./NavCard";
+import NavCardGroup from "./NavCardGroup";
 import * as Glyphs from "./Glyphs";
 
 const library = {
@@ -27,6 +29,8 @@ const library = {
   ErrorCard,
   Icon,
   Input,
+  NavCard,
+  NavCardGroup,
   Readout,
   ReadoutGroup,
   Spinner,
