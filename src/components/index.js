@@ -12,13 +12,14 @@ import Tooltip from "./Tooltip";
 import Readout from "./Readout";
 import ReadoutGroup from "./ReadoutGroup";
 import LayoutSection from "./LayoutSection";
-
+import AppHeader from "./AppHeader";
 import ErrorCard from "./ErrorCard";
 import * as Glyphs from "./Glyphs";
 
 const library = {
   ...Glyphs,
   AppFooter,
+  AppHeader,
   BreadcrumbItem,
   Breadcrumbs,
   Button,
