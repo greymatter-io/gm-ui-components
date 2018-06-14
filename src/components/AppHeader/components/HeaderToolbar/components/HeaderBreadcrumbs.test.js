@@ -4,7 +4,7 @@ import HeaderBreadcrumbs from "./HeaderBreadcrumbs";
 
 describe("HeaderBreadcrumbs", () => {
   it("matches snapshot", () => {
-    const aHeaderBreadcrumbs = shallow(<HeaderBreadcrumbs />);
+    const aHeaderBreadcrumbs = shallow(<HeaderBreadcrumbs crumbs={[]} />);
     expect(aHeaderBreadcrumbs).toMatchSnapshot();
   });
 });

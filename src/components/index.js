@@ -11,6 +11,7 @@ import TabGroup from "./TabGroup";
 import Tooltip from "./Tooltip";
 import Readout from "./Readout";
 import ReadoutGroup from "./ReadoutGroup";
+import LayoutSection from "./LayoutSection";
 import AppHeader from "./AppHeader";
 import ErrorCard from "./ErrorCard";
 import NavCard from "./NavCard";
@@ -29,6 +30,7 @@ const library = {
   ErrorCard,
   Icon,
   Input,
+  LayoutSection,
   NavCard,
   NavCardGroup,
   Readout,
