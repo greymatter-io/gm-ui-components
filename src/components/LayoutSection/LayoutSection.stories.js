@@ -15,8 +15,6 @@ storiesOf("Layout Section", module)
         <LayoutSection
           title={text("title", "Test Layout")}
           icon={() => <Bell size={"24px"} />}
-          stretchContent={boolean("stretchContent", false)}
-          stretchSection={boolean("stretchSection", false)}
         >
           <ReadoutGroup>
             <Readout
