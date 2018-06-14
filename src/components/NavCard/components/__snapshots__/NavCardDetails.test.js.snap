@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavCardDetails matches snapshot 1`] = `
+.c0 {
+  margin: 0 4px 4px 36px;
+  line-height: 1.2;
+  font-size: 14px;
+  color: #fff;
+}
+
+<dl
+  className="c0"
+/>
+`;
