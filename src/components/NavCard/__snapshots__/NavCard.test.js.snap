@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavCard matches snapshot 1`] = `
+<NavCardWrapper>
+  <NavCardTitle>
+    <NavCardIcon>
+      <Exclamation />
+    </NavCardIcon>
+    <h1>
+      NavCard
+    </h1>
+  </NavCardTitle>
+  <NavCardDetails
+    key="Uptime"
+  >
+    <NavCardKey>
+      Uptime
+    </NavCardKey>
+    <NavCardVal>
+      15 Days
+    </NavCardVal>
+  </NavCardDetails>
+  <span>
+    Hello World!
+  </span>
+</NavCardWrapper>
+`;
