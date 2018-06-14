@@ -11,34 +11,23 @@ LayoutSection.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   className: PropTypes.string,
   icon: PropTypes.func,
-  stretchContent: PropTypes.bool,
-  stretchSection: PropTypes.bool,
   title: PropTypes.string.isRequired
 };
 
 /**
- * Section of a static dashboard, complete with header and icon
+ * A Layout component that renders an html section with a header
  * @param {Object} props - refer to propTypes
  */
-
-function LayoutSection({
-  children,
-  title,
-  icon,
-  stretchContent = false,
-  stretchSection = false
-}) {
+function LayoutSection({ children, title, icon }) {
   return (
-    <LayoutSectionWrap stretchSection={stretchSection}>
+    <LayoutSectionWrap>
       {title && (
         <Header>
           {icon && <SectionIcon>{icon()}</SectionIcon>}
           <SectionTitle>{title}</SectionTitle>
         </Header>
       )}
-      <SectionContent stretchContent={stretchContent}>
-        {children}
-      </SectionContent>
+      <SectionContent>{children}</SectionContent>
     </LayoutSectionWrap>
   );
 }

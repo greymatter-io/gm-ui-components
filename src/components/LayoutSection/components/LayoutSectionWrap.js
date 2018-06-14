@@ -15,8 +15,6 @@ const LayoutSectionWrap = styled.section`
   &:not(:first-of-type) {
     margin-top: ${spacingScale(4)};
   }
-
-  ${props => props.stretchSection && `flex: 1 0 auto;`};
 `;
 
 export default LayoutSectionWrap;
