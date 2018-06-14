@@ -5,16 +5,36 @@ import { text, object, array } from "@storybook/addon-knobs/react";
 
 import NavCard from "components/NavCard";
 
-import { Exclamation } from "gm-ui-components";
+import { Summary } from "components";
 
-storiesOf("NavCard", module).add("Basic NavCard", () => {
-  return (
-    <NavCard
-      href={text("Target href", "http://www.deciphernow.com/")}
-      icon={() => <Exclamation />}
-      lines={object("Detail Lines", [{ name: "Memory Used", value: "116 MB" }])}
-      title={text("Title", "Summary")}
-      chartData={array("Chart Data", [6, 2, 5.2, 8, 3, 6, 5.37, 7, 3.3, 8])}
-    />
-  );
-});
+storiesOf("NavCard", module)
+  .add("Basic NavCard", () => {
+    return (
+      <a href="#" style={{ textDecoration: "none" }}>
+        <NavCard
+          icon={() => <Summary size="24px" />}
+          details={object("Detail Lines", [
+            { name: "Memory Used", value: "116 MB" },
+            { name: "CPU Usage", value: "99%" }
+          ])}
+          title={text("Title", "Summary")}
+        />
+      </a>
+    );
+  })
+  .add("NavCard with children", () => {
+    return (
+      <a href="#" style={{ textDecoration: "none" }}>
+        <NavCard
+          icon={() => <Summary size="24px" />}
+          title={text("Title", "Summary")}
+        >
+          {() => (
+            <span style={{ paddingLeft: "38px", color: "white" }}>
+              NavCard Child Element
+            </span>
+          )}
+        </NavCard>
+      </a>
+    );
+  });

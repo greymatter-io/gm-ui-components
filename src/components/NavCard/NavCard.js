@@ -6,21 +6,12 @@ import NavCardDetails from "./components/NavCardDetails";
 import NavCardKey from "./components/NavCardKey";
 import NavCardVal from "./components/NavCardVal";
 import NavCardIcon from "./components/NavCardIcon";
-import NavCardLink from "./components/NavCardLink";
+import NavCardWrapper from "./components/NavCardWrapper";
 
 NavCard.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.element,
-    PropTypes.string,
-    PropTypes.array,
-    PropTypes.number,
-    PropTypes.object
-  ]),
+  children: PropTypes.func,
   details: PropTypes.array,
-  href: PropTypes.string,
   icon: PropTypes.func,
-  tabKey: PropTypes.string,
   title: PropTypes.string
 };
 
@@ -29,9 +20,9 @@ NavCard.propTypes = {
  * @param {Object[]} props - See propTypes
  * @returns JSX.Element
  */
-function NavCard({ href, icon, tabKey, details = [], title, children }) {
+function NavCard({ icon, details = [], title, children }) {
   return (
-    <NavCardLink to={href} data-key={tabKey}>
+    <NavCardWrapper>
       <NavCardTitle>
         {typeof icon === "function" && <NavCardIcon>{icon()}</NavCardIcon>}
         <h1>{title}</h1>
@@ -44,8 +35,8 @@ function NavCard({ href, icon, tabKey, details = [], title, children }) {
           </NavCardDetails>
         );
       })}
-      {children}
-    </NavCardLink>
+      {typeof children === "function" && children()}
+    </NavCardWrapper>
   );
 }
 

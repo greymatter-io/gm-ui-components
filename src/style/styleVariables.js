@@ -54,5 +54,6 @@ export const FONT_WEIGHT_CONTROLS = 600;
 export const FONT_SIZE_HERO = "40px";
 export const FONT_SIZE_LG = "18px";
 export const FONT_SIZE_BASE = "14px";
+export const FONT_SIZE_MD = "16px";
 export const FONT_SIZE_SM = "11px";
 export const FONT_SIZE_XS = "9px";

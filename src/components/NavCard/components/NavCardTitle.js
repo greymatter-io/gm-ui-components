@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 import { spacingScale, contrastColor } from "style/styleFunctions";
 import {
-  COLOR_ALT_BACKGROUND,
-  FONT_SIZE_BASE,
-  FONT_WEIGHT_SEMIBOLD
+  COLOR_WHITE,
+  FONT_WEIGHT_SEMIBOLD,
+  FONT_SIZE_MD
 } from "style/styleVariables";
 
-const COLOR_TAB_BACKGROUND_BASE = contrastColor(COLOR_ALT_BACKGROUND, 0.175);
+const COLOR_TAB_BACKGROUND_BASE = contrastColor(COLOR_WHITE, 0.175);
 
 const NavCardTitle = styled.div`
   color: ${contrastColor(COLOR_TAB_BACKGROUND_BASE, 1)};
@@ -22,12 +22,13 @@ const NavCardTitle = styled.div`
   margin: ${spacingScale(0.5)} ${spacingScale(1)} ${spacingScale(0.5)};
 
   h1 {
-    font-size: ${FONT_SIZE_BASE};
+    font-size: ${FONT_SIZE_MD};
     flex: 1 1 100%;
     line-height: 1;
     margin: 0;
     font-weight: ${FONT_WEIGHT_SEMIBOLD};
     text-transform: capitalize;
+    padding-left: ${spacingScale(0.5)};
   }
 `;
 

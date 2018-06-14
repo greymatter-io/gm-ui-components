@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { darken } from "polished";
 
@@ -7,7 +6,8 @@ import {
   COLOR_HIGHLIGHT,
   COLOR_CONTENT_BACKGROUND,
   FONT_WEIGHT_REGULAR,
-  BORDER_RADIUS_BASE
+  BORDER_RADIUS_BASE,
+  FONT_STACK_BASE
 } from "style/styleVariables";
 
 const TAB_BASE_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 0.8);
@@ -15,14 +15,13 @@ const TAB_WIDTH_BASE = "1%";
 
 // Note: Edge requires the overflow: hidden property to maintian
 // equal sized cards. flex-basis is not sufficient!
-const NavCardLink = styled(NavLink).attrs({
-  exact: true
-})`
+const NavCardWrapper = styled.div`
   font-weight: ${FONT_WEIGHT_REGULAR};
+  font-family: ${FONT_STACK_BASE};
   flex: 1 1 ${TAB_WIDTH_BASE};
   margin: ${spacingScale(0.25)};
   overflow: hidden;
-  padding: ${spacingScale(0.5)} 0 ${spacingScale(0)};
+  padding: ${spacingScale(0.5)};
   position: relative;
   transition: all 0.15s ease;
   background-color: ${TAB_BASE_COLOR};
@@ -59,4 +58,4 @@ const NavCardLink = styled(NavLink).attrs({
   }
 `;
 
-export default NavCardLink;
+export default NavCardWrapper;
