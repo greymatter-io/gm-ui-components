@@ -23,7 +23,7 @@ function HeaderToolbar({ breadcrumbs, toolbarItems, skipToId }) {
         Skip Navigation
       </SkipNav>
       <HeaderBreadcrumbs crumbs={breadcrumbs} />
-      {toolbarItems && toolbarItems()}
+      {typeof toolbarItems === "function" && toolbarItems()}
     </HeaderToolbarWrapper>
   );
 }
