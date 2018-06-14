@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LayoutSection matches snapshot 1`] = `
-<LayoutSectionWrap
-  stretchSection={false}
->
+<LayoutSectionWrap>
   <Header>
     <SectionIcon>
       <Bell
@@ -14,9 +12,7 @@ exports[`LayoutSection matches snapshot 1`] = `
       Test Layout
     </SectionTitle>
   </Header>
-  <SectionContent
-    stretchContent={false}
-  >
+  <SectionContent>
     <ReadoutGroup>
       <Readout
         readoutItems={

@@ -8,6 +8,7 @@ exports[`HeaderBreadcrumbs matches snapshot 1`] = `
 
 <Breadcrumbs
   className="c0"
+  crumbs={Array []}
   maxItems={10}
 />
 `;
