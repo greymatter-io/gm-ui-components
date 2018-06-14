@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkipNav matches snapshot 1`] = `
+.c0 {
+  background-color: #0aab2a;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  left: 0;
+  position: absolute;
+  padding: 0.6em;
+  text-transform: uppercase;
+  top: -10em;
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
+}
+
+.c0:focus {
+  top: 0;
+}
+
+<button
+  className="c0"
+  onKeyDown={[Function]}
+/>
+`;

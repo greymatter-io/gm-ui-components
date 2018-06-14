@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderContainer matches snapshot 1`] = `
+.c0 {
+  color: #fff;
+  padding: 8px 16px 8px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+@media all and (min-width:1000px) {
+  .c0 {
+    padding: 16px 16px 8px;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
