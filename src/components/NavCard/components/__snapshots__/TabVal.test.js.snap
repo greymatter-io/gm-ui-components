@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavCardVal matches snapshot 1`] = `
+.c0 {
+  margin: 0;
+  display: inline-block;
+}
+
+<dd
+  className="c0"
+/>
+`;
