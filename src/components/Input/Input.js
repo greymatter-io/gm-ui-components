@@ -1,41 +1,56 @@
 import styled from "styled-components";
-import { COLOR_BRAND_PRIMARY, FONT_STACK_BASE } from "style/styleVariables";
-import { transparentize } from "polished";
+import {
+  COLOR_BLACK,
+  FONT_SIZE_BASE,
+  COLOR_HIGHLIGHT,
+  FONT_SIZE_XS,
+  FONT_GROUP_MAIN_TEXT
+} from "style/styleVariables";
+import { spacingScale } from "style/styleFunctions";
 
 const Input = styled.input.attrs({
   type: "text",
   placeholder: props => props.placeholder,
   maxLength: props => props.maxlength
 })`
-  user-select: auto;
-  text-align: left;
-  font-size: 14px;
-  color: black;
-  padding: 8px;
-  font-family: ${FONT_STACK_BASE};
-  font-weight: 500;
-  line-height: 2;
+  background: transparent;
+  border: 0;
+  box-shadow: 0 1px 0 ${COLOR_BLACK};
   box-sizing: border-box;
-  width: ${props => (props.shouldFitContainer ? "100%" : "auto")};
-  border: 1px solid #f0f0f0;
-  border-radius: 3px;
-  border-bottom-color: #cdcdcd;
-  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(0, 0, 0, 0);
+  color: black;
+  font-family: ${FONT_GROUP_MAIN_TEXT};
+  font-size: ${FONT_SIZE_BASE};
+  line-height: 1.5;
+  padding: ${spacingScale(1.25)} ${spacingScale(0.5)} ${spacingScale(0.75)};
+  text-align: left;
+  transition: all 0.15s ease;
+  user-select: auto;
+  width: 100%;
+
   &::placeholder {
-    text-align: center;
+    color: ${COLOR_BLACK};
+    position: relative;
+    transition: inherit;
+    opacity: 0.4;
+    left: 0;
   }
   &:hover {
-    background-color: #fbfbfb;
+    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
   }
   &:focus {
+    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
     outline: none;
-    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.5),
-      0 0 0 1px ${transparentize(0.25, COLOR_BRAND_PRIMARY)},
-      0 0 0 4px ${transparentize(0.75, COLOR_BRAND_PRIMARY)};
-    &::placeholder {
-      color: transparent;
-    }
+  }
+  &:focus::placeholder,
+  &[value]::placeholder,
+  &:not(:empty)::placeholder {
+    transform: translateY(-${spacingScale(2)});
+    left: 0;
+    color: ${COLOR_BLACK};
+    opacity: 1;
+    visibility: visible;
+    font-size: ${FONT_SIZE_XS};
+    letter-spacing: 0.03em;
   }
 `;
 

@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input matches snapshot 1`] = `
+.c0 {
+  background: transparent;
+  border: 0;
+  box-shadow: 0 1px 0 #000;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px 4px 6px;
+  text-align: left;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  width: 100%;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #000;
+  position: relative;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.4;
+  left: 0;
+}
+
+.c0::-moz-placeholder {
+  color: #000;
+  position: relative;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.4;
+  left: 0;
+}
+
+.c0:-ms-input-placeholder {
+  color: #000;
+  position: relative;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.4;
+  left: 0;
+}
+
+.c0::placeholder {
+  color: #000;
+  position: relative;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.4;
+  left: 0;
+}
+
+.c0:hover {
+  box-shadow: 0 1px 0 #0aab2a,inset 0 -1px 0 #0aab2a;
+}
+
+.c0:focus {
+  box-shadow: 0 1px 0 #0aab2a,inset 0 -1px 0 #0aab2a;
+  outline: none;
+}
+
+.c0:focus::-webkit-input-placeholder,
+.c0[value]::-webkit-input-placeholder,
+.c0:not(:empty)::-webkit-input-placeholder {
+  -webkit-transform: translateY(-16px);
+  -ms-transform: translateY(-16px);
+  transform: translateY(-16px);
+  left: 0;
+  color: #000;
+  opacity: 1;
+  visibility: visible;
+  font-size: 9px;
+  -webkit-letter-spacing: 0.03em;
+  -moz-letter-spacing: 0.03em;
+  -ms-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+}
+
+.c0:focus::-moz-placeholder,
+.c0[value]::-moz-placeholder,
+.c0:not(:empty)::-moz-placeholder {
+  -webkit-transform: translateY(-16px);
+  -ms-transform: translateY(-16px);
+  transform: translateY(-16px);
+  left: 0;
+  color: #000;
+  opacity: 1;
+  visibility: visible;
+  font-size: 9px;
+  -webkit-letter-spacing: 0.03em;
+  -moz-letter-spacing: 0.03em;
+  -ms-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+}
+
+.c0:focus:-ms-input-placeholder,
+.c0[value]:-ms-input-placeholder,
+.c0:not(:empty):-ms-input-placeholder {
+  -webkit-transform: translateY(-16px);
+  -ms-transform: translateY(-16px);
+  transform: translateY(-16px);
+  left: 0;
+  color: #000;
+  opacity: 1;
+  visibility: visible;
+  font-size: 9px;
+  -webkit-letter-spacing: 0.03em;
+  -moz-letter-spacing: 0.03em;
+  -ms-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+}
+
+.c0:focus::placeholder,
+.c0[value]::placeholder,
+.c0:not(:empty)::placeholder {
+  -webkit-transform: translateY(-16px);
+  -ms-transform: translateY(-16px);
+  transform: translateY(-16px);
+  left: 0;
+  color: #000;
+  opacity: 1;
+  visibility: visible;
+  font-size: 9px;
+  -webkit-letter-spacing: 0.03em;
+  -moz-letter-spacing: 0.03em;
+  -ms-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+}
+
+<input
+  className="c0"
+  label="Test"
+  type="text"
+/>
+`;
