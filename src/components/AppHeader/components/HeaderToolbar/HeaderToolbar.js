@@ -6,7 +6,6 @@ import HeaderToolbarWrapper from "./components/HeaderToolbarWrapper";
 import SkipNav from "./components/SkipNav";
 
 HeaderToolbar.propTypes = {
-  appVersion: PropTypes.string,
   breadcrumbs: PropTypes.array,
   skipToId: PropTypes.string,
   toolbarItems: PropTypes.func
