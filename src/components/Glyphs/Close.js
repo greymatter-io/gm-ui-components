@@ -11,3 +11,5 @@ export default function Close(props) {
     </Icon>
   );
 }
+
+Close.displayName = "Close";

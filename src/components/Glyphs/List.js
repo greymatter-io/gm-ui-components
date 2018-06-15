@@ -11,3 +11,5 @@ export default function List(props) {
     </Icon>
   );
 }
+
+List.displayName = "List";

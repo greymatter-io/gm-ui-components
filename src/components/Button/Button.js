@@ -83,3 +83,5 @@ export default function Button({
     </ButtonWrap>
   );
 }
+
+Button.displayName = "Button";

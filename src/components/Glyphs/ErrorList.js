@@ -13,3 +13,5 @@ export default function ErrorList(props) {
     </Icon>
   );
 }
+
+ErrorList.displayName = "ErrorList";

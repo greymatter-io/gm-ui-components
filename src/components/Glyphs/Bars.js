@@ -11,3 +11,5 @@ export default function Bars(props) {
     </Icon>
   );
 }
+
+Bars.displayName = "Bars";

@@ -64,3 +64,5 @@ export default function IconBackground({
     </g>
   );
 }
+
+IconBackground.displayName = "IconBackground";

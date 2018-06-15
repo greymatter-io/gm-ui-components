@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "../Icon";
 
-export default function GithHub(props) {
+export default function GitHub(props) {
   return (
     <Icon {...props} glyphName="GitHub">
       <path
@@ -11,3 +11,5 @@ export default function GithHub(props) {
     </Icon>
   );
 }
+
+GitHub.displayName = "GitHub";

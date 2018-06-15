@@ -11,3 +11,5 @@ export default function HttpPatch(props) {
     </Icon>
   );
 }
+
+HttpPatch.displayName = "HttpPatch";

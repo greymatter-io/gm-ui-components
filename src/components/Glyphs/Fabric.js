@@ -11,3 +11,5 @@ export default function Fabric(props) {
     </Icon>
   );
 }
+
+Fabric.displayName = "Fabric";

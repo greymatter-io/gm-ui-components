@@ -31,4 +31,6 @@ function AppHeader({ title, extras, breadcrumbs, toolbarItems, skipToId }) {
   );
 }
 
+AppHeader.displayName = "AppHeader";
+
 export default AppHeader;

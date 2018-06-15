@@ -11,3 +11,5 @@ export default function Functions(props) {
     </Icon>
   );
 }
+
+Functions.displayName = "Functions";

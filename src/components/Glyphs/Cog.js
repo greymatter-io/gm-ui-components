@@ -11,3 +11,5 @@ export default function Cog(props) {
     </Icon>
   );
 }
+
+Cog.displayName = "Cog";

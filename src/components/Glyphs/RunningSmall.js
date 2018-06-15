@@ -11,3 +11,5 @@ export default function RunningSmall(props) {
     </Icon>
   );
 }
+
+RunningSmall.displayName = "RunningSmall";

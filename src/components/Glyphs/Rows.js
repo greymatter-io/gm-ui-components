@@ -11,3 +11,5 @@ export default function Rows(props) {
     </Icon>
   );
 }
+
+Rows.displayName = "Rows";

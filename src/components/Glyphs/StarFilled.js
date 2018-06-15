@@ -11,3 +11,5 @@ export default function StarFilled(props) {
     </Icon>
   );
 }
+
+StarFilled.displayName = "StarFilled";

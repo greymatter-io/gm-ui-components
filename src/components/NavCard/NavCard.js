@@ -40,4 +40,6 @@ function NavCard({ icon, details = [], title, children }) {
   );
 }
 
+NavCard.displayName = "NavCard";
+
 export default NavCard;

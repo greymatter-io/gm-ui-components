@@ -11,3 +11,5 @@ export default function CPU(props) {
     </Icon>
   );
 }
+
+CPU.displayName = "CPU";

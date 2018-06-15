@@ -68,3 +68,5 @@ export default function AppFooter({ copyrightText }) {
     </Footer>
   );
 }
+
+AppFooter.displayName = "AppFooter";

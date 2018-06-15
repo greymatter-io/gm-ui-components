@@ -11,3 +11,5 @@ export default function HttpPut(props) {
     </Icon>
   );
 }
+
+HttpPut.displayName = "HttpPut";

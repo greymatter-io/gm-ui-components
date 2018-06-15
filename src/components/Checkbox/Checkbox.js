@@ -27,4 +27,6 @@ Checkbox.propTypes = {
   value: PropTypes.string
 };
 
+Checkbox.displayName = "Checkbox";
+
 export default Checkbox;

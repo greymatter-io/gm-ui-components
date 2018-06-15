@@ -11,3 +11,5 @@ export default function HttpPost(props) {
     </Icon>
   );
 }
+
+HttpPost.displayName = "HttpPost";

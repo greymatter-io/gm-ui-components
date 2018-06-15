@@ -11,3 +11,5 @@ export default function Negation(props) {
     </Icon>
   );
 }
+
+Negation.displayName = "Negation";
