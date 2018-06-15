@@ -19,7 +19,6 @@ const NavCardWrapper = styled.div`
   font-weight: ${FONT_WEIGHT_REGULAR};
   font-family: ${FONT_STACK_BASE};
   flex: 1 1 ${TAB_WIDTH_BASE};
-  overflow: hidden;
   padding: ${spacingScale(0.5)};
   position: relative;
   transition: all 0.15s ease;

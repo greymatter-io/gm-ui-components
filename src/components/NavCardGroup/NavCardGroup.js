@@ -17,7 +17,6 @@ const NavCardGroup = styled.nav`
   flex-flow: row wrap;
   color: ${contrastColor(COLOR_TAB_BACKGROUND_BASE)};
   padding: ${spacingScale(0.25)};
-  overflow: hidden;
   position: relative;
   background-color: ${COLOR_BLACK};
   /* Since the end-user will wrap NavCard with a link element,
@@ -36,7 +35,7 @@ const NavCardGroup = styled.nav`
     &:active:hover,
     &.active,
     &.active:hover {
-      > div[class*="NavCard"] {
+      div[class*="NavCardWrapper"] {
         &:after {
           opacity: 1;
         }
