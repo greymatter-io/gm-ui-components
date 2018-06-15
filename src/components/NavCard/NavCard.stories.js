@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, object, array } from "@storybook/addon-knobs/react";
+import { text, object } from "@storybook/addon-knobs/react";
 
 import NavCard from "components/NavCard";
 
