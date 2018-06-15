@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { text, boolean, withKnobs } from "@storybook/addon-knobs";
+import { text, withKnobs } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import LayoutSection from "./LayoutSection";

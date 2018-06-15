@@ -3,11 +3,11 @@ import { darken } from "polished";
 
 import { spacingScale, contrastColor } from "style/styleFunctions";
 import {
-  COLOR_HIGHLIGHT,
   COLOR_CONTENT_BACKGROUND,
   FONT_WEIGHT_REGULAR,
   BORDER_RADIUS_BASE,
-  FONT_STACK_BASE
+  FONT_STACK_BASE,
+  COLOR_HIGHLIGHT
 } from "style/styleVariables";
 
 const TAB_BASE_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 0.8);
@@ -19,8 +19,6 @@ const NavCardWrapper = styled.div`
   font-weight: ${FONT_WEIGHT_REGULAR};
   font-family: ${FONT_STACK_BASE};
   flex: 1 1 ${TAB_WIDTH_BASE};
-  margin: ${spacingScale(0.25)};
-  overflow: hidden;
   padding: ${spacingScale(0.5)};
   position: relative;
   transition: all 0.15s ease;
@@ -30,7 +28,7 @@ const NavCardWrapper = styled.div`
   flex-direction: column;
   align-items: stretch;
   min-height: ${spacingScale(10)};
-
+  margin: ${spacingScale(0.25)};
   &:after {
     content: "";
     position: absolute;
@@ -42,16 +40,6 @@ const NavCardWrapper = styled.div`
     border: 2px solid ${COLOR_HIGHLIGHT};
     opacity: 0;
   }
-
-  &.active,
-  &.active:hover {
-    background-color: ${darken(0.1, TAB_BASE_COLOR)};
-
-    &:after {
-      opacity: 1;
-    }
-  }
-
   &:focus,
   &:hover {
     background-color: ${darken(0.06, TAB_BASE_COLOR)};

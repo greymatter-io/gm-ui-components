@@ -14,18 +14,6 @@ const mockReadoutItem = [
     value: "30000%"
   }
 ];
-const mockReadoutFewItems = [
-  {
-    icon: () => <Summary size={"24px"} />,
-    title: "Avg. Response Time",
-    value: "57.838%"
-  },
-  {
-    icon: () => <Summary size={"24px"} />,
-    title: "Error Rate",
-    value: "0.0012%"
-  }
-];
 
 const mockReadoutManyItems = [
   {
