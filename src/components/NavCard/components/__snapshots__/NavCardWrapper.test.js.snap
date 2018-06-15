@@ -6,7 +6,6 @@ exports[`NavCardWrapper matches snapshot 1`] = `
   -webkit-flex: 1 1 1%;
   -ms-flex: 1 1 1%;
   flex: 1 1 1%;
-  margin: 2px;
   overflow: hidden;
   padding: 4px;
   position: relative;
@@ -26,6 +25,7 @@ exports[`NavCardWrapper matches snapshot 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   min-height: 80px;
+  margin: 2px;
 }
 
 .c0:after {
@@ -38,16 +38,6 @@ exports[`NavCardWrapper matches snapshot 1`] = `
   border-radius: 4px;
   border: 2px solid #0aab2a;
   opacity: 0;
-}
-
-.c0.active,
-.c0.active:hover {
-  background-color: #181818;
-}
-
-.c0.active:after,
-.c0.active:hover:after {
-  opacity: 1;
 }
 
 .c0:focus,

@@ -31,6 +31,17 @@ const NavCardGroup = styled.nav`
     text-decoration: none;
     /* When the link element is active, make NavCard's green border pseudo-element
        visible and style the NavCard background color. */
+    &:active,
+    &:active:hover,
+    &.active,
+    &.active:hover {
+      > div[class*="NavCard"] {
+        &:after {
+          opacity: 1;
+        }
+        background-color: ${darken(0.1, TAB_BASE_COLOR)};
+      }
+    }
   }
 `;
 

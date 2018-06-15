@@ -16,6 +16,39 @@ exports[`NavCardGroup matches snapshot 1`] = `
   background-color: #000;
 }
 
+.c0 > * {
+  -webkit-flex: 1 1 1%;
+  -ms-flex: 1 1 1%;
+  flex: 1 1 1%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 80px;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 > *:active > div[class*="NavCard"],
+.c0 > *:active:hover > div[class*="NavCard"],
+.c0 > *.active > div[class*="NavCard"],
+.c0 > *.active:hover > div[class*="NavCard"] {
+  background-color: #181818;
+}
+
+.c0 > *:active > div[class*="NavCard"]:after,
+.c0 > *:active:hover > div[class*="NavCard"]:after,
+.c0 > *.active > div[class*="NavCard"]:after,
+.c0 > *.active:hover > div[class*="NavCard"]:after {
+  opacity: 1;
+}
+
 <nav
   className="c0"
 />
