@@ -11,7 +11,6 @@ exports[`NavCardGroup matches snapshot 1`] = `
   flex-flow: row wrap;
   color: rgba(NaN,NaN,NaN,NaN);
   padding: 2px;
-  overflow: hidden;
   position: relative;
   background-color: #000;
 }
@@ -35,17 +34,17 @@ exports[`NavCardGroup matches snapshot 1`] = `
   text-decoration: none;
 }
 
-.c0 > *:active > div[class*="NavCard"],
-.c0 > *:active:hover > div[class*="NavCard"],
-.c0 > *.active > div[class*="NavCard"],
-.c0 > *.active:hover > div[class*="NavCard"] {
+.c0 > *:active div[class*="NavCardWrapper"],
+.c0 > *:active:hover div[class*="NavCardWrapper"],
+.c0 > *.active div[class*="NavCardWrapper"],
+.c0 > *.active:hover div[class*="NavCardWrapper"] {
   background-color: #181818;
 }
 
-.c0 > *:active > div[class*="NavCard"]:after,
-.c0 > *:active:hover > div[class*="NavCard"]:after,
-.c0 > *.active > div[class*="NavCard"]:after,
-.c0 > *.active:hover > div[class*="NavCard"]:after {
+.c0 > *:active div[class*="NavCardWrapper"]:after,
+.c0 > *:active:hover div[class*="NavCardWrapper"]:after,
+.c0 > *.active div[class*="NavCardWrapper"]:after,
+.c0 > *.active:hover div[class*="NavCardWrapper"]:after {
   opacity: 1;
 }
 
