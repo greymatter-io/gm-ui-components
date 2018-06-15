@@ -27,13 +27,15 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/
       },
-      {
-        use: ["file-loader"],
-        test: /\.(jpg|gif)$/
-      },
+      // TODO: Troubleshoot path resolution for static assets. We're using url-loader for jpg/gif files in the meantime.
+      // See issue https://github.com/DecipherNow/gm-ui-components/issues/213
+      // {
+      //   use: ["file-loader"],
+      //   test: /\.(jpg|gif)$/
+      // },
       {
         use: ["url-loader"],
-        test: /\.(eot|png|svg|ttf|woff|woff2)$/
+        test: /\.(eot|png|jpg|gif|svg|ttf|woff|woff2)$/
       },
       {
         test: /\.(css|scss|less)$/,
