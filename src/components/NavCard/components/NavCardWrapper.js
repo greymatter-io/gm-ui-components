@@ -41,8 +41,8 @@ const NavCardWrapper = styled.div`
     border: 2px solid ${COLOR_HIGHLIGHT};
     opacity: 0;
   }
-  :focus,
-  :hover {
+  &:focus,
+  &:hover {
     background-color: ${darken(0.06, TAB_BASE_COLOR)};
   }
 `;
