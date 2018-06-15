@@ -1,11 +1,12 @@
+import styled from "styled-components";
+import { darken } from "polished";
+
 import {
   COLOR_WHITE,
   COLOR_BLACK,
   COLOR_CONTENT_BACKGROUND
 } from "style/styleVariables";
-import styled from "styled-components";
 import { contrastColor, spacingScale } from "style/styleFunctions";
-import { darken } from "polished";
 
 const TAB_BASE_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 0.8);
 const COLOR_TAB_BACKGROUND_BASE = contrastColor(COLOR_WHITE, 0.175);
