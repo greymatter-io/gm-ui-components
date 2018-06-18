@@ -6,9 +6,7 @@ import HeaderToolbar from "./components/HeaderToolbar";
 import HeaderBanner from "./components/HeaderBanner";
 
 AppHeader.propTypes = {
-  breadcrumbs: PropTypes.array.isRequired,
   extras: PropTypes.array,
-  skipToId: PropTypes.string,
   title: PropTypes.string.isRequired,
   toolbarItems: PropTypes.func
 };
@@ -18,14 +16,10 @@ AppHeader.propTypes = {
  * @returns JSX.Element
  */
 
-function AppHeader({ title, extras, breadcrumbs, toolbarItems, skipToId }) {
+function AppHeader({ title, extras = [], toolbarItems }) {
   return (
     <HeaderWrapper>
-      <HeaderToolbar
-        breadcrumbs={breadcrumbs}
-        toolbarItems={toolbarItems}
-        skipToId={skipToId}
-      />
+      <HeaderToolbar toolbarItems={toolbarItems} />
       <HeaderBanner title={title} extras={extras} />
     </HeaderWrapper>
   );

@@ -1,11 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, object, text } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import { ButtonGroup, Cog, Button } from "../";
+import { ButtonGroup, Cog, Button, AppHeader, Breadcrumbs } from "components";
 import { spacingScale } from "style/styleFunctions";
-import { AppHeader } from "../";
 
 const bannerExtras = [
   {
@@ -14,12 +13,7 @@ const bannerExtras = [
   }
 ];
 
-const breadcrumbs = [
-  "Fabric",
-  "Grace Hopper Battleship Service",
-  "Instances",
-  "Routes"
-];
+const breadcrumbs = ["Fabric", "Instances", "Routes"];
 
 const ToolbarButtonGroup = ButtonGroup.extend`
   padding: ${spacingScale(0)} ${spacingScale(1)};
@@ -27,9 +21,16 @@ const ToolbarButtonGroup = ButtonGroup.extend`
 
 const toolbarItems = () => {
   return (
-    <Fragment>
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        alignItems: "center"
+      }}
+    >
+      <Breadcrumbs crumbs={breadcrumbs} />
       <span>1.1.6</span>
-      <ToolbarButtonGroup>
+      <ToolbarButtonGroup style={{ paddingRight: 0 }}>
         <Button
           outline="none"
           size="xs"
@@ -44,7 +45,7 @@ const toolbarItems = () => {
           <Cog size={"24px"} />
         </Button>
       </ToolbarButtonGroup>
-    </Fragment>
+    </div>
   );
 };
 
@@ -62,7 +63,7 @@ storiesOf("App Header", module)
   .add(
     "default",
     withInfo(
-      "An AppHeader component that renders a title, breadcrumbs, extras, and other various toolbarItems that you can render by providing a render function."
+      "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
     )(() => {
       return (
         <AppHeader
