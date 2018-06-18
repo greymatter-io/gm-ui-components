@@ -13,12 +13,7 @@ const bannerExtras = [
   }
 ];
 
-const breadcrumbs = [
-  "Fabric",
-  "Grace Hopper Battleship Service",
-  "Instances",
-  "Routes"
-];
+const breadcrumbs = ["Fabric", "Instances", "Routes"];
 
 const ToolbarButtonGroup = ButtonGroup.extend`
   padding: ${spacingScale(0)} ${spacingScale(1)};
