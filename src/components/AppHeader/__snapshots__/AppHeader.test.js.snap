@@ -3,14 +3,6 @@
 exports[`AppHeader component matches snapshot 1`] = `
 <HeaderWrapper>
   <HeaderToolbar
-    breadcrumbs={
-      Array [
-        "Fabric",
-        "Grace Hopper Battleship Service",
-        "Instances",
-        "Routes",
-      ]
-    }
     toolbarItems={[Function]}
   />
   <HeaderBanner

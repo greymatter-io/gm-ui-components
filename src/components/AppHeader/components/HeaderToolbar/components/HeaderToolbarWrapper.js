@@ -14,7 +14,8 @@ const HeaderToolbarWrapper = styled.nav`
   color: ${APP_TOOLBAR_TEXT_COLOR};
   display: flex;
   flex: 0 0 ${APP_TOOLBAR_HEIGHT};
-  flex-direction: row;
+  padding: 0 ${spacingScale(1)};
+  flex-wrap: nowrap;
   font-size: ${APP_TOOLBAR_FONT_SIZE};
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   background-size: 100% 100%;

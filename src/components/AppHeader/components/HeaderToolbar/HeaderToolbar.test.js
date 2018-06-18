@@ -42,16 +42,6 @@ describe("HeaderToolbar component", () => {
 
   test("renders subcomponents", () => {
     expect(aHeaderToolbar.find("HeaderToolbarWrapper")).toHaveLength(1);
-    expect(aHeaderToolbar.find("SkipNav")).toHaveLength(1);
-    expect(aHeaderToolbar.find("HeaderBreadcrumbs")).toHaveLength(1);
-  });
-
-  test("renders Breadcrumbs", () => {
-    expect(aHeaderToolbar.find("HeaderBreadcrumbs")).toHaveLength(1);
-    expect(aHeaderToolbar.find("HeaderBreadcrumbs").html()).toContain("Fabric");
-    expect(aHeaderToolbar.find("HeaderBreadcrumbs").html()).toContain(
-      "Grace Hopper"
-    );
   });
 
   test("renders toolbarItems", () => {

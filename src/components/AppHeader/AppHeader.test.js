@@ -64,7 +64,6 @@ describe("AppHeader component", () => {
   });
 
   test("passes the correct props to HeaderToolbar", () => {
-    expect(aHeader.find("HeaderToolbar").props().breadcrumbs).toBe(breadcrumbs);
     expect(aHeader.find("HeaderToolbar").props().toolbarItems).toBe(
       toolbarItems
     );
