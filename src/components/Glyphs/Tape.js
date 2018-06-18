@@ -11,3 +11,5 @@ export default function Tape(props) {
     </Icon>
   );
 }
+
+Tape.displayName = "Tape";

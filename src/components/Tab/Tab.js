@@ -27,4 +27,6 @@ Tab.propTypes = {
   label: PropTypes.string.isRequired
 };
 
+Tab.displayName = "Tab";
+
 export default Tab;

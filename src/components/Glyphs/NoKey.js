@@ -12,3 +12,5 @@ export default function NoKey(props) {
     </Icon>
   );
 }
+
+NoKey.displayName = "NoKey";

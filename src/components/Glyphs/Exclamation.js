@@ -11,3 +11,5 @@ export default function Exclamation(props) {
     </Icon>
   );
 }
+
+Exclamation.displayName = "Exclamation";

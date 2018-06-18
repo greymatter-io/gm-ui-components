@@ -11,3 +11,5 @@ export default function Poll(props) {
     </Icon>
   );
 }
+
+Poll.displayName = "Poll";

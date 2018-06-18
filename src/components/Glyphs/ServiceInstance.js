@@ -11,3 +11,5 @@ export default function ServiceInstance(props) {
     </Icon>
   );
 }
+
+ServiceInstance.displayName = "ServiceInstance";

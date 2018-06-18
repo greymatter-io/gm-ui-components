@@ -11,3 +11,5 @@ export default function Pause(props) {
     </Icon>
   );
 }
+
+Pause.displayName = "Pause";

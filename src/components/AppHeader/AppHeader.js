@@ -25,4 +25,6 @@ function AppHeader({ title, extras = [], toolbarItems }) {
   );
 }
 
+AppHeader.displayName = "AppHeader";
+
 export default AppHeader;

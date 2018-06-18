@@ -39,4 +39,6 @@ ErrorCard.propTypes = {
   icon: PropTypes.func
 };
 
+ErrorCard.displayName = "ErrorCard";
+
 export default ErrorCard;

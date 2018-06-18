@@ -11,3 +11,5 @@ export default function GRPC(props) {
     </Icon>
   );
 }
+
+GRPC.displayName = "GRPC";

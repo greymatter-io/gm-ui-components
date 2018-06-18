@@ -15,3 +15,5 @@ export default function Scatterplot(props) {
     </Icon>
   );
 }
+
+Scatterplot.displayName = "Scatterplot";

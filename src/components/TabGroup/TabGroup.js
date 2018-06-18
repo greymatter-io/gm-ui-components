@@ -13,6 +13,8 @@ const TabGroup = ({ label, children }) => {
   );
 };
 
+TabGroup.displayName = "TabGroup";
+
 TabGroup.propTypes = {
   children: PropTypes.any,
   label: PropTypes.string

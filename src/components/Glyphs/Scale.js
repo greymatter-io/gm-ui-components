@@ -11,3 +11,5 @@ export default function Scale(props) {
     </Icon>
   );
 }
+
+Scale.displayName = "Scale";

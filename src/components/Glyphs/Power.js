@@ -11,3 +11,5 @@ export default function Power(props) {
     </Icon>
   );
 }
+
+Power.displayName = "Power";

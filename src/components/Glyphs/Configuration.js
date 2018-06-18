@@ -22,3 +22,5 @@ export default function Configuration(props) {
     </Icon>
   );
 }
+
+Configuration.displayName = "Configuration";

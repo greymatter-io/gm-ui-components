@@ -11,3 +11,5 @@ export default function Threads(props) {
     </Icon>
   );
 }
+
+Threads.displayName = "Threads";

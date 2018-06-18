@@ -11,3 +11,5 @@ export default function Summary(props) {
     </Icon>
   );
 }
+
+Summary.displayName = "Summary";

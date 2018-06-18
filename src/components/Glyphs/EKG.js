@@ -11,3 +11,5 @@ export default function EKG(props) {
     </Icon>
   );
 }
+
+EKG.displayName = "EKG";

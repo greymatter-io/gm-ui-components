@@ -11,3 +11,5 @@ export default function Explorer(props) {
     </Icon>
   );
 }
+
+Explorer.displayName = "Explorer";

@@ -11,3 +11,5 @@ export default function Http(props) {
     </Icon>
   );
 }
+
+Http.displayName = "Http";

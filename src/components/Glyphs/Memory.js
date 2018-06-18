@@ -11,3 +11,5 @@ export default function Memory(props) {
     </Icon>
   );
 }
+
+Memory.displayName = "Memory";

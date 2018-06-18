@@ -32,4 +32,6 @@ function LayoutSection({ children, title, icon }) {
   );
 }
 
+LayoutSection.displayName = "LayoutSection";
+
 export default LayoutSection;

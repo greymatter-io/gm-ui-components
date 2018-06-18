@@ -38,3 +38,5 @@ Tooltip.propTypes = {
 Tooltip.defaultProps = {
   position: "bottom"
 };
+
+Tooltip.displayName = "Tooltip";

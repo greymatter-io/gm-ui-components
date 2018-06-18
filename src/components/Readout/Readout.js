@@ -34,3 +34,5 @@ Readout.propTypes = {
     PropTypes.object
   ])
 };
+
+Readout.displayName = "Readout";

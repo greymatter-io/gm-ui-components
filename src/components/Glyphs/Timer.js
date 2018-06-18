@@ -11,3 +11,5 @@ export default function Timer(props) {
     </Icon>
   );
 }
+
+Timer.displayName = "Timer";

@@ -11,3 +11,5 @@ export default function Person(props) {
     </Icon>
   );
 }
+
+Person.displayName = "Person";
