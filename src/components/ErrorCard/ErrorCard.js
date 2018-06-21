@@ -12,9 +12,9 @@ import Span from "./components/Span";
  * @param {function} icon
  * @returns react component
  */
-const ErrorCard = ({ errorMsg = "Error", icon }) => {
+const ErrorCard = ({ errorMsg = "Error", icon, ...props }) => {
   return (
-    <ErrorBox>
+    <ErrorBox {...props}>
       <ErrorContent>
         <Span>
           {icon ? (

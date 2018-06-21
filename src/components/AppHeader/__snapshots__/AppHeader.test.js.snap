@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AppHeader component matches snapshot 1`] = `
-<HeaderWrapper>
+<HeaderWrapper
+  breadcrumbs={
+    Array [
+      "Fabric",
+      "Grace Hopper Battleship Service",
+      "Instances",
+      "Routes",
+    ]
+  }
+>
   <HeaderToolbar
     toolbarItems={[Function]}
   />

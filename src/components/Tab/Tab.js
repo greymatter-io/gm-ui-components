@@ -9,10 +9,16 @@ const Tab = ({
   active = false,
   disabled = false,
   children,
-  clickAction
+  clickAction,
+  ...props
 }) => {
   return (
-    <TabWrap active={active} disabled={disabled} onClick={clickAction}>
+    <TabWrap
+      active={active}
+      disabled={disabled}
+      onClick={clickAction}
+      {...props}
+    >
       {children}
       <TabLabel>{label}</TabLabel>
     </TabWrap>
