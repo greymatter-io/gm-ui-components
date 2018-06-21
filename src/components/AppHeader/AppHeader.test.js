@@ -41,7 +41,6 @@ describe("AppHeader component", () => {
     aHeader = shallow(
       <AppHeader
         title="GM UI AppHeader"
-        breadcrumbs={breadcrumbs}
         extras={bannerExtras}
         toolbarItems={toolbarItems}
       />
