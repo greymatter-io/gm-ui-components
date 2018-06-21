@@ -23,6 +23,7 @@ exports[`HeaderWrapper matches snapshot 1`] = `
   background-size: 100% 100%,120% auto;
   background-position: center center,left center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 <div

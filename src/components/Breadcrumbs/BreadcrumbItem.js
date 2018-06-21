@@ -7,7 +7,6 @@ export const Breadcrumb = styled.li`
   display: flex;
   overflow: hidden;
   white-space: nowrap;
-  max-width: fit-content;
 
   @media (max-width: 800px) {
     max-width: calc(25vw);

@@ -2,17 +2,15 @@
 
 exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 .c1 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .c1:before {
@@ -24,7 +22,7 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   padding: 0 4px;
 }
 
-.c1 a {
+.c1 > * {
   white-space: nowrap;
   text-overflow: ellipsis;
   color: inherit;
@@ -53,6 +51,18 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+}
+
+@media (max-width:800px) {
+  .c1 {
+    max-width: calc(25vw);
+  }
+}
+
+@media (max-width:567px) {
+  .c1 {
+    max-width: calc(11.1111vw);
+  }
 }
 
 <ol
@@ -81,17 +91,15 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 
 exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 .c1 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .c1:before {
@@ -103,7 +111,7 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   padding: 0 4px;
 }
 
-.c1 a {
+.c1 > * {
   white-space: nowrap;
   text-overflow: ellipsis;
   color: inherit;
@@ -132,6 +140,18 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+}
+
+@media (max-width:800px) {
+  .c1 {
+    max-width: calc(25vw);
+  }
+}
+
+@media (max-width:567px) {
+  .c1 {
+    max-width: calc(11.1111vw);
+  }
 }
 
 <ol
