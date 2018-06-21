@@ -34,24 +34,22 @@ const toolbarItems = () => {
       }}
     >
       <Breadcrumbs crumbs={breadcrumbs} />
-      <div style={{ display: "flex" }}>
-        <span>1.1.6</span>
-        <ToolbarButtonGroup style={{ paddingRight: 0, flex: "0 0 auto" }}>
-          <Button
-            outline="none"
-            size="xs"
-            label=""
-            type="info"
-            style={{
-              border: "none",
-              backgroundColor: "white",
-              color: "black"
-            }}
-          >
-            <Cog size={"24px"} />
-          </Button>
-        </ToolbarButtonGroup>
-      </div>
+      <span>1.1.6</span>
+      <ToolbarButtonGroup style={{ paddingRight: 0 }}>
+        <Button
+          outline="none"
+          size="xs"
+          label=""
+          type="info"
+          style={{
+            border: "none",
+            backgroundColor: "white",
+            color: "black"
+          }}
+        >
+          <Cog size={"24px"} />
+        </Button>
+      </ToolbarButtonGroup>
     </div>
   );
 };
