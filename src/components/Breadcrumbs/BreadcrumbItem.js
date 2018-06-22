@@ -6,14 +6,7 @@ export const Breadcrumb = styled.li`
   flex: 0 1 auto;
   display: flex;
   overflow: hidden;
-  white-space: nowrap;
-
-  @media (max-width: 800px) {
-    max-width: calc(25vw);
-  }
-  @media (max-width: 567px) {
-    max-width: calc(11.1111vw);
-  }
+  max-width: 100%;
 
   &:before {
     content: ">";
@@ -21,11 +14,12 @@ export const Breadcrumb = styled.li`
     opacity: ${props => (props.hideDelimiter ? 0 : 0.5)};
     padding: 0 4px;
   }
+
   > * {
-    white-space: nowrap;
     text-overflow: ellipsis;
     color: inherit;
   }
+
   &:first-child {
     &:before {
       content: none;
