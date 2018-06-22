@@ -3,10 +3,10 @@ import React from "react";
 import styled from "styled-components";
 
 export const Breadcrumb = styled.li`
-  flex: 0 1 100%;
+  flex: 0 1 auto;
   display: flex;
-  max-width: fit-content;
   overflow: hidden;
+  max-width: 100%;
 
   &:before {
     content: ">";
@@ -14,11 +14,12 @@ export const Breadcrumb = styled.li`
     opacity: ${props => (props.hideDelimiter ? 0 : 0.5)};
     padding: 0 4px;
   }
-  a {
-    white-space: nowrap;
+
+  > * {
     text-overflow: ellipsis;
     color: inherit;
   }
+
   &:first-child {
     &:before {
       content: none;

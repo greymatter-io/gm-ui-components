@@ -13,7 +13,12 @@ const bannerExtras = [
   }
 ];
 
-const breadcrumbs = ["Fabric", "Instances", "Routes"];
+const breadcrumbs = [
+  <a href="#">Fabric</a>,
+  <a href="#">Instances</a>,
+  <a href="#">Routes</a>,
+  <a href="#">Grace Hopper Battleship Service</a>
+];
 
 const ToolbarButtonGroup = ButtonGroup.extend`
   padding: ${spacingScale(0)} ${spacingScale(1)};
@@ -25,7 +30,8 @@ const toolbarItems = () => {
       style={{
         display: "flex",
         width: "100%",
-        alignItems: "center"
+        alignItems: "center",
+        flex: "1 1 auto"
       }}
     >
       <Breadcrumbs crumbs={breadcrumbs} />
