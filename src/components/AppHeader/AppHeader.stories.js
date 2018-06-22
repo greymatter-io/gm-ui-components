@@ -30,7 +30,8 @@ const toolbarItems = () => {
       style={{
         display: "flex",
         width: "100%",
-        alignItems: "center"
+        alignItems: "center",
+        flex: "1 1 auto"
       }}
     >
       <Breadcrumbs crumbs={breadcrumbs} />
