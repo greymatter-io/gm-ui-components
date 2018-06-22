@@ -16,9 +16,9 @@ AppHeader.propTypes = {
  * @returns JSX.Element
  */
 
-function AppHeader({ title, extras = [], toolbarItems }) {
+function AppHeader({ title, extras = [], toolbarItems, ...props }) {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper {...props}>
       <HeaderToolbar toolbarItems={toolbarItems} />
       <HeaderBanner title={title} extras={extras} />
     </HeaderWrapper>

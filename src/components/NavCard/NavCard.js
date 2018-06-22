@@ -20,9 +20,9 @@ NavCard.propTypes = {
  * @param {Object[]} props - See propTypes
  * @returns JSX.Element
  */
-function NavCard({ icon, details = [], title, children }) {
+function NavCard({ icon, details = [], title, children, ...props }) {
   return (
-    <NavCardWrapper>
+    <NavCardWrapper {...props}>
       <NavCardTitle>
         {typeof icon === "function" && <NavCardIcon>{icon()}</NavCardIcon>}
         <h1>{title}</h1>

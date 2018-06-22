@@ -57,7 +57,8 @@ export default function Button({
   outline,
   tabIndex,
   type,
-  labelStyle
+  labelStyle,
+  ...props
 }) {
   return (
     <ButtonWrap
@@ -71,6 +72,7 @@ export default function Button({
       tabIndex={tabIndex}
       title={label}
       style={style}
+      {...props}
     >
       {children}
       {label.length > 0 && (

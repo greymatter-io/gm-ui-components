@@ -18,9 +18,9 @@ LayoutSection.propTypes = {
  * A Layout component that renders an html section with a header
  * @param {Object} props - refer to propTypes
  */
-function LayoutSection({ children, title, icon }) {
+function LayoutSection({ children, title, icon, ...props }) {
   return (
-    <LayoutSectionWrap>
+    <LayoutSectionWrap {...props}>
       {title && (
         <Header>
           {icon && <SectionIcon>{icon()}</SectionIcon>}
