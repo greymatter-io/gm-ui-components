@@ -10,7 +10,7 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  white-space: nowrap;
+  max-width: 100%;
 }
 
 .c1:before {
@@ -23,7 +23,6 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 }
 
 .c1 > * {
-  white-space: nowrap;
   text-overflow: ellipsis;
   color: inherit;
 }
@@ -51,18 +50,9 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
-
-@media (max-width:800px) {
-  .c1 {
-    max-width: calc(25vw);
-  }
-}
-
-@media (max-width:567px) {
-  .c1 {
-    max-width: calc(11.1111vw);
-  }
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 <ol
@@ -99,7 +89,7 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  white-space: nowrap;
+  max-width: 100%;
 }
 
 .c1:before {
@@ -112,7 +102,6 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 }
 
 .c1 > * {
-  white-space: nowrap;
   text-overflow: ellipsis;
   color: inherit;
 }
@@ -140,18 +129,9 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
-
-@media (max-width:800px) {
-  .c1 {
-    max-width: calc(25vw);
-  }
-}
-
-@media (max-width:567px) {
-  .c1 {
-    max-width: calc(11.1111vw);
-  }
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 <ol
