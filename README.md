@@ -44,7 +44,7 @@ An example using the Icon component:
 ```
 import React from 'react';
 import { render } from 'react-dom';
-import { Icon } from 'gm-ui-components';
+import { Button } from 'gm-ui-components';
 
 function App() {
   return (
@@ -65,11 +65,7 @@ See the [Grey Matter UI Components storybook](https://deciphernow.github.io/gm-u
 
 ## Compatability
 
-* Chrome 61 +
-* Firefox 56 +
-* Safari 10.1 +
-* IE 11 +
-
+* [Full list of browser support matrix](http://browserl.ist/?q=last+2+Chrome+versions%2C+last+2+ChromeAndroid+versions%2C+last+2+Safari+versions%2C+last+2+iOS+versions%2C+last+2+Firefox+versions%2C+last+2+Edge+versions)
 
 ## Related Projects
 
