@@ -13,6 +13,7 @@ export const BreadcrumbsContainer = styled.ol`
   font-family: ${FONT_STACK_BASE};
   height: inherit;
   align-items: stretch;
+  flex-wrap: wrap;
 `;
 
 class Breadcrumbs extends React.Component {
@@ -30,9 +31,13 @@ class Breadcrumbs extends React.Component {
   }
 
   updateView = props => {
-    const { crumbs, maxItems } = props;
+    const { crumbs, maxItems, collapse } = props;
     const childrenLen = crumbs.length;
-    maxItems < childrenLen ? this.collapse() : this.expand();
+    if (collapse || maxItems < childrenLen) {
+      this.collapse();
+    } else {
+      this.expand();
+    }
   };
 
   collapse = () => this.setState({ isCollapsed: true });
@@ -54,7 +59,13 @@ class Breadcrumbs extends React.Component {
 
   renderExpanded = crumbs => {
     return crumbs.map((item, i) => {
-      return <BreadcrumbItem key={i} item={item} />;
+      return (
+        <BreadcrumbItem
+          key={i}
+          item={item}
+          hideDelimiter={crumbs.length === 1}
+        />
+      );
     });
   };
 
@@ -74,10 +85,12 @@ class Breadcrumbs extends React.Component {
 export default Breadcrumbs;
 
 Breadcrumbs.defaultProps = {
-  maxItems: 10
+  maxItems: 10,
+  collapse: false
 };
 
 Breadcrumbs.propTypes = {
+  collapse: PropTypes.bool,
   crumbs: PropTypes.array.isRequired,
   maxItems: PropTypes.number
 };

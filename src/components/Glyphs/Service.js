@@ -26,3 +26,5 @@ export default function Service(props) {
     </Icon>
   );
 }
+
+Service.displayName = "Service";

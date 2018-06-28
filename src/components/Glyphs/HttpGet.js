@@ -11,3 +11,5 @@ export default function HttpGet(props) {
     </Icon>
   );
 }
+
+HttpGet.displayName = "HttpGet";

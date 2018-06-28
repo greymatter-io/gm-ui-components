@@ -2,17 +2,15 @@
 
 exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 .c1 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .c1:before {
@@ -20,34 +18,17 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-transform: scaleX(0.5);
   -ms-transform: scaleX(0.5);
   transform: scaleX(0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   opacity: 0.5;
   padding: 0 4px;
 }
 
-.c1 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  white-space: nowrap;
+.c1 > * {
   text-overflow: ellipsis;
-  padding: 8px 0;
   color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .c1:first-child:before {
   content: none;
-}
-
-.c1:first-child a {
-  padding-left: 16px;
 }
 
 .c0 {
@@ -69,6 +50,9 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 <ol
@@ -97,17 +81,15 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 
 exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 .c1 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .c1:before {
@@ -115,34 +97,17 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-transform: scaleX(0.5);
   -ms-transform: scaleX(0.5);
   transform: scaleX(0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   opacity: 0.5;
   padding: 0 4px;
 }
 
-.c1 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  white-space: nowrap;
+.c1 > * {
   text-overflow: ellipsis;
-  padding: 8px 0;
   color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .c1:first-child:before {
   content: none;
-}
-
-.c1:first-child a {
-  padding-left: 16px;
 }
 
 .c0 {
@@ -164,6 +129,9 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 <ol

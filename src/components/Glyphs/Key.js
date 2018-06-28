@@ -11,3 +11,5 @@ export default function Key(props) {
     </Icon>
   );
 }
+
+Key.displayName = "Key";

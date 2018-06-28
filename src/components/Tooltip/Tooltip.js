@@ -8,12 +8,13 @@ export default function Tooltip({
   content,
   position,
   hideTooltip,
-  tooltipStyle = {}
+  tooltipStyle = {},
+  ...props
 }) {
   // Always hide the tooltip if the content is empty
   if (!content) hideTooltip = true;
   return (
-    <TooltipWrap hideTooltip={hideTooltip}>
+    <TooltipWrap hideTooltip={hideTooltip} {...props}>
       {children}
       <TooltipContent style={tooltipStyle} position={position}>
         {content}
@@ -38,3 +39,5 @@ Tooltip.propTypes = {
 Tooltip.defaultProps = {
   position: "bottom"
 };
+
+Tooltip.displayName = "Tooltip";

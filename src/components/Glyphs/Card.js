@@ -11,3 +11,5 @@ export default function Card(props) {
     </Icon>
   );
 }
+
+Card.displayName = "Card";

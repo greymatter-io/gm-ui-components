@@ -11,3 +11,5 @@ export default function Instances(props) {
     </Icon>
   );
 }
+
+Instances.displayName = "Instances";

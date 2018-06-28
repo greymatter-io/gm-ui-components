@@ -11,3 +11,5 @@ export default function ServicesWhite(props) {
     </Icon>
   );
 }
+
+ServicesWhite.displayName = "ServicesWhite";

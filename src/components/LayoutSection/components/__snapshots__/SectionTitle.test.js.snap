@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionTitle matches snapshot 1`] = `
+.c0 {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+<h3
+  className="c0"
+/>
+`;

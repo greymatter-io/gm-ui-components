@@ -11,3 +11,5 @@ export default function NoMetrics(props) {
     </Icon>
   );
 }
+
+NoMetrics.displayName = "NoMetrics";

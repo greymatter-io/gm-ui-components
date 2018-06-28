@@ -8,3 +8,5 @@ export default function Play(props) {
     </Icon>
   );
 }
+
+Play.displayName = "Play";

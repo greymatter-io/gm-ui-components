@@ -90,3 +90,5 @@ export default function Icon({
     </StyledSVG>
   );
 }
+
+Icon.displayName = "Icon";

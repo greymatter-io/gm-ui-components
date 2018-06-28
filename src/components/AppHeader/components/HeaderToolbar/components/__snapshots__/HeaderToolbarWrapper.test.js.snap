@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderToolbarWrapper matches snapshot 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgba(NaN,NaN,NaN,NaN);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 34px;
+  -ms-flex: 0 0 34px;
+  flex: 0 0 34px;
+  padding: 0 8px;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  background-image: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,1));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+<nav
+  className="c0"
+/>
+`;

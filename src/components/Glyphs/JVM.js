@@ -11,3 +11,5 @@ export default function JVM(props) {
     </Icon>
   );
 }
+
+JVM.displayName = "JVM";

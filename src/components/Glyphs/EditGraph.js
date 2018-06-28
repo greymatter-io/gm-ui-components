@@ -19,3 +19,5 @@ export default function EditGraph(props) {
     </Icon>
   );
 }
+
+EditGraph.displayName = "EditGraph";

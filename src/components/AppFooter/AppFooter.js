@@ -27,9 +27,9 @@ AppFooter.defaultProps = {
  * Stateless functional React component that renders company branding and social media footer content
  * @returns JSX.Element
  */
-export default function AppFooter({ copyrightText }) {
+export default function AppFooter({ copyrightText, ...props }) {
   return (
-    <Footer>
+    <Footer {...props}>
       <LongLogo
         href="http://deciphernow.com"
         rel="noopener noreferrer"
@@ -68,3 +68,5 @@ export default function AppFooter({ copyrightText }) {
     </Footer>
   );
 }
+
+AppFooter.displayName = "AppFooter";

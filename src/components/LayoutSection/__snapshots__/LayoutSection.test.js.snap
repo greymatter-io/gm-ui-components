@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutSection matches snapshot 1`] = `
+<LayoutSectionWrap>
+  <Header>
+    <SectionIcon>
+      <Bell
+        size="24px"
+      />
+    </SectionIcon>
+    <SectionTitle>
+      Test Layout
+    </SectionTitle>
+  </Header>
+  <SectionContent>
+    <ReadoutGroup>
+      <Readout
+        readoutItems={
+          Array [
+            Object {
+              "title": "Uptime",
+              "value": "1000ms",
+            },
+          ]
+        }
+      />
+      <Readout
+        primary={true}
+        readoutItems={
+          Array [
+            Object {
+              "icon": [Function],
+              "title": "Error Rate",
+              "value": "0.000%",
+            },
+          ]
+        }
+      />
+      <Readout
+        readoutItems={
+          Array [
+            Object {
+              "title": "Host CPU Cores",
+              "value": "0",
+            },
+          ]
+        }
+      />
+    </ReadoutGroup>
+  </SectionContent>
+</LayoutSectionWrap>
+`;

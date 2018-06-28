@@ -11,3 +11,5 @@ export default function Info(props) {
     </Icon>
   );
 }
+
+Info.displayName = "Info";

@@ -11,3 +11,4 @@ export default function Twitter(props) {
     </Icon>
   );
 }
+Twitter.displayName = "Twitter";

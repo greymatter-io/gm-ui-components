@@ -12,3 +12,5 @@ export default function Bell(props) {
     </Icon>
   );
 }
+
+Bell.displayName = "Bell";

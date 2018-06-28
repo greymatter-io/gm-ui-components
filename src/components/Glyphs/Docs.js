@@ -11,3 +11,5 @@ export default function Docs(props) {
     </Icon>
   );
 }
+
+Docs.displayName = "Docs";

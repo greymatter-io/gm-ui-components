@@ -12,3 +12,5 @@ export default function Finagle(props) {
     </Icon>
   );
 }
+
+Finagle.displayName = "Finagle";

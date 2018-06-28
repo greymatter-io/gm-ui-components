@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader component matches snapshot 1`] = `
+<HeaderWrapper>
+  <HeaderToolbar
+    toolbarItems={[Function]}
+  />
+  <HeaderBanner
+    extras={
+      Array [
+        Object {
+          "path": "/settings",
+          "title": "Extra, Extra, Read all about it",
+        },
+      ]
+    }
+    title="GM UI AppHeader"
+  />
+</HeaderWrapper>
+`;

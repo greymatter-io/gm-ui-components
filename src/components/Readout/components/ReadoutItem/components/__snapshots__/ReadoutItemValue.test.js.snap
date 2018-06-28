@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadoutItemValue matches snapshot 1`] = `
+.c0 {
+  font-size: 40px;
+  word-break: break-all;
+  margin: 0;
+  line-height: 1.2;
+  min-height: 1em;
+}
+
+<span
+  className="c0"
+/>
+`;
