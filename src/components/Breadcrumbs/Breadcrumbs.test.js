@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { Breadcrumbs, BreadcrumbItem } from "./index.js";
 import { shallow } from "enzyme";
-import "jest-styled-components";
+
 
 const crumbs = [
   "Test 1",
