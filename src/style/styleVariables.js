@@ -42,7 +42,7 @@ export const FONT_GROUP_DATA = "Rubik";
 export const FONT_GROUP_CODE = `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`;
 export const FONT_GROUP_DATA_MONO = "Source Code Pro";
 
-export const FONT_STACK_BASE = `${FONT_GROUP_MAIN_TEXT}, ${FONT_GROUP_SYSTEM}`;
+export const FONT_STACK_BASE = `${FONT_GROUP_SYSTEM}`;
 export const FONT_STACK_DATA = `${FONT_GROUP_DATA}, ${FONT_GROUP_SYSTEM}`;
 export const FONT_STACK_DATA_MONO = `${FONT_GROUP_DATA_MONO}, ${FONT_GROUP_DATA}, ${FONT_GROUP_SYSTEM}`;
 export const FONT_STACK_CODE = FONT_GROUP_CODE;

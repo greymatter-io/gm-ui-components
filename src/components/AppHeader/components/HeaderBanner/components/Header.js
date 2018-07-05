@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import {
   FONT_SIZE_TITLE,
-  FONT_STACK_BASE,
+  FONT_GROUP_MAIN_TEXT,
   FONT_WEIGHT_BASE
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
@@ -10,7 +10,7 @@ import { spacingScale } from "style/styleFunctions";
 const Header = styled.h1`
   display: inline-block;
   font-size: ${FONT_SIZE_TITLE};
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${FONT_GROUP_MAIN_TEXT};
   font-weight: ${FONT_WEIGHT_BASE};
   line-height: 1.2;
   margin: ${spacingScale(1)} 0;
