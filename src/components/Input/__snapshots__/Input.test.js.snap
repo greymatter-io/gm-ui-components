@@ -7,7 +7,7 @@ exports[`Input matches snapshot 1`] = `
   box-shadow: 0 1px 0 #000;
   box-sizing: border-box;
   color: black;
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 14px;
   line-height: 1.5;
   padding: 10px 4px 6px;
