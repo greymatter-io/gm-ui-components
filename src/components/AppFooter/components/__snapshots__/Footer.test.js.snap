@@ -8,7 +8,7 @@ exports[`Footer should render 1`] = `
   user-select: none;
   overflow: hidden;
   padding: 4px;
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

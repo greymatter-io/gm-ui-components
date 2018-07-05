@@ -4,7 +4,7 @@ import {
   FONT_SIZE_BASE,
   COLOR_HIGHLIGHT,
   FONT_SIZE_XS,
-  FONT_GROUP_MAIN_TEXT
+  FONT_STACK_BASE
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
@@ -18,7 +18,7 @@ const Input = styled.input.attrs({
   box-shadow: 0 1px 0 ${COLOR_BLACK};
   box-sizing: border-box;
   color: black;
-  font-family: ${FONT_GROUP_MAIN_TEXT};
+  font-family: ${FONT_STACK_BASE};
   font-size: ${FONT_SIZE_BASE};
   line-height: 1.5;
   padding: ${spacingScale(1.25)} ${spacingScale(0.5)} ${spacingScale(0.75)};
