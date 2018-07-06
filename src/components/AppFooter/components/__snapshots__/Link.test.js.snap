@@ -3,11 +3,15 @@
 exports[`Link should render 1`] = `
 .c0 {
   color: rgba(0,0,0,0.5);
-  padding: 0 8px;
+  padding: 0 4px;
 }
 
 .c0:hover {
   color: #0aab2a;
+}
+
+.c0 svg {
+  height: 1.25em;
 }
 
 <a

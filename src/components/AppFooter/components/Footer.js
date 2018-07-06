@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { transparentize } from "polished";
 
 import { contrastColor, spacingScale } from "style/styleFunctions";
 import {
@@ -18,11 +17,7 @@ const Footer = styled.footer`
   display: flex;
   flex-flow: row wrap;
   color: ${contrastColor(COLOR_CONTENT_BACKGROUND, 0.8)};
-  background-image: linear-gradient(
-    to bottom,
-    ${transparentize(1, COLOR_CONTENT_BACKGROUND)},
-    ${COLOR_CONTENT_BACKGROUND}
-  );
+  background: ${COLOR_CONTENT_BACKGROUND};
   font-size: ${FONT_SIZE_BASE};
   height: auto;
   align-items: stretch;
