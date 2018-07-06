@@ -23,7 +23,8 @@ exports[`LongLogo should render 1`] = `
 }
 
 .c0 img {
-  max-width: 157px;
+  max-width: 140px;
+  vertical-align: -3px;
 }
 
 <a
