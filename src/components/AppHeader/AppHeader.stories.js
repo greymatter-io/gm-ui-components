@@ -75,7 +75,6 @@ storiesOf("App Header", module)
         <AppHeader
           title={text("title", "GM UI App Header")}
           extras={object("extras", bannerExtras)}
-          breadcrumbs={object("breadcrumbs", breadcrumbs)}
           toolbarItems={toolbarItems}
         />
       );
