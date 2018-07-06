@@ -14,8 +14,10 @@ const LongLogo = styled.a`
     transition: all 0.2s ease;
     filter: grayscale(0%);
   }
+  
   img {
-    max-width: 157px;
+    max-width: 140px;
+    vertical-align: -3px;
   }
 `;
 
