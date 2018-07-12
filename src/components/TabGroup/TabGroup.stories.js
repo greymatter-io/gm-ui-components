@@ -1,14 +1,14 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { text } from "@storybook/addon-knobs";
 
 import Tab from "components/Tab";
 import TabGroup from "./TabGroup";
 
 const stories = storiesOf("TabGroup", module);
 
-stories.addDecorator(withKnobs).add(
+stories.add(
   "TabGroup",
   withInfo("A TabGroup component that wraps individual Tab components")(() => {
     return (

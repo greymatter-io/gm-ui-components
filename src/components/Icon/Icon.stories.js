@@ -1,12 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import {
-  withKnobs,
-  select,
-  number,
-  color,
-  text
-} from "@storybook/addon-knobs/react";
+import { select, number, color, text } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Icon from "../Icon";
@@ -74,7 +68,6 @@ const iconBackgroundNames = [
 ];
 
 storiesOf("Icons", module)
-  .addDecorator(withKnobs)
   .add(
     "default",
     withInfo(

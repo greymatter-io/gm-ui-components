@@ -1,13 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import {
-  withKnobs,
-  number,
-  select,
-  text,
-  boolean
-} from "@storybook/addon-knobs/react";
+import { number, select, text, boolean } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import { Bell } from "components/Glyphs";
@@ -26,7 +20,6 @@ const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
 storiesOf("Button", module)
-  .addDecorator(withKnobs)
   .add(
     "default",
     withInfo(

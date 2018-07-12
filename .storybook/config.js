@@ -1,13 +1,15 @@
-import { configure } from "@storybook/react";
+import { configure, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
+import { withKnobs } from "@storybook/addon-knobs/react";
 
 const req = require.context("../src", true, /\.stories\.js$/);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
-
+// add withKnobs globally so we don't need to import it into individual stories
+addDecorator(withKnobs);
 // addon-info
 setDefaults({
   header: true, // Toggles display of header with component name and description

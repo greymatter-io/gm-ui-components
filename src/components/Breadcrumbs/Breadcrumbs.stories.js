@@ -14,8 +14,6 @@ const defaultCrumbs = ["Home", "View", "Data", "Graphs"];
 const breadCrumbsInfo =
   "A React component that allows users to know their location. Use <Breadcrumbs> and pass it an array of crumbs and an optional maxItems prop.  If there are more children than the maximum, it will render a collapsed view.";
 
-stories.addDecorator(withKnobs);
-
 stories.add(
   "simple breadcrumbs",
   withInfo(breadCrumbsInfo)(() => {
