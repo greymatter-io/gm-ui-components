@@ -11,7 +11,6 @@ export default function Readout({
   readoutItems = [],
   ...props
 }) {
-  console.log("COLOR", color);
   return (
     <ReadoutDisplay primary={primary} color={color} {...props}>
       {readoutItems.map(item => (
