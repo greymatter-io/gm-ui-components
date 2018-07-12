@@ -1,21 +1,15 @@
 import styled from "styled-components";
 import { darken } from "polished";
 
-import {
-  COLOR_WHITE,
-  COLOR_BLACK,
-  COLOR_CONTENT_BACKGROUND
-} from "style/styleVariables";
+import { COLOR_BLACK, COLOR_CONTENT_BACKGROUND } from "style/styleVariables";
 import { contrastColor, spacingScale } from "style/styleFunctions";
 
 const TAB_BASE_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 0.8);
-const COLOR_TAB_BACKGROUND_BASE = contrastColor(COLOR_WHITE, 0.175);
 const TAB_WIDTH_BASE = "1%";
 
 const NavCardGroup = styled.nav`
   display: flex;
   flex-flow: row wrap;
-  color: ${contrastColor(COLOR_TAB_BACKGROUND_BASE)};
   padding: ${spacingScale(0.25)};
   position: relative;
   background-color: ${COLOR_BLACK};
