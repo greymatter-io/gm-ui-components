@@ -9,7 +9,6 @@ exports[`NavCardGroup matches snapshot 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  color: rgba(NaN,NaN,NaN,NaN);
   padding: 2px;
   position: relative;
   background-color: #000;
