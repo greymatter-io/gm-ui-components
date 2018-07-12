@@ -1,6 +1,5 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-
 import { COLOR_SUCCESS } from "style/styleVariables";
 import ReadoutDisplay from "./components/ReadoutDisplay";
 import ReadoutItem, { ReadoutItemShape } from "./components/ReadoutItem";

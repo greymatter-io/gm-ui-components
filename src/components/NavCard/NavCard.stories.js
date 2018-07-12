@@ -1,23 +1,24 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, object } from "@storybook/addon-knobs/react";
+import { text, object, withKnobs } from "@storybook/addon-knobs/react";
 
 import NavCard from "components/NavCard";
 
 import { Summary } from "components";
 
 storiesOf("NavCard", module)
+  .addDecorator(withKnobs)
   .add("Basic NavCard", () => {
     return (
       <a href="#" style={{ textDecoration: "none" }}>
         <NavCard
           icon={() => <Summary size="24px" />}
-          details={object("Detail Lines", [
+          details={object("details", [
             { name: "Memory Used", value: "116 MB" },
             { name: "CPU Usage", value: "99%" }
           ])}
-          title={text("Title", "Summary")}
+          title={text("title", "Summary")}
         />
       </a>
     );
@@ -27,7 +28,7 @@ storiesOf("NavCard", module)
       <a href="#" style={{ textDecoration: "none" }}>
         <NavCard
           icon={() => <Summary size="24px" />}
-          title={text("Title", "Summary")}
+          title={text("title", "Summary")}
         >
           {() => (
             <span style={{ paddingLeft: "38px", color: "white" }}>

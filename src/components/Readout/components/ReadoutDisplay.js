@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
+import { getLuminance, darken } from "polished";
 
 import {
   BORDER_RADIUS_BASE,
@@ -20,6 +21,11 @@ const ReadoutDisplay = styled.div`
   position: relative;
   overflow: hidden;
   font-family: ${FONT_STACK_BASE};
+  box-shadow: ${props =>
+    /* Luminance of 1 is white */
+    getLuminance(props.color) === 1
+      ? "inset 0 0 0 1px lightgrey"
+      : `0 8px 24px -16px ${props.color}`};
 
   &:before {
     content: "";
@@ -39,7 +45,13 @@ const ReadoutDisplay = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    border-bottom: 3px solid ${props => props.color};
+    border-bottom: 3px solid
+      ${props =>
+        /* If the color is very light, darken the border color,
+        otherwise just use the passed-in color as the border */
+        getLuminance(props.color) > 0.8
+          ? darken(0.1, props.color)
+          : props.color};
   }
 
   &:first-child:last-child {
