@@ -34,7 +34,7 @@ import Confidential from "./Confidential";
 import Configuration from "./Configuration";
 import Cycle from "./Cycle";
 import Dashboards from "./Dashboards";
-import Docs from "./Docs";
+import FileDocumentWhite from "./FileDocumentWhite";
 import Drive from "./Drive";
 import EKG from "./EKG";
 import EKGMagnifier from "./EKGMagnifier";
@@ -49,7 +49,6 @@ import Eye from "./Eye";
 import Fabric from "./Fabric";
 import File from "./File";
 import FileAudio from "./FileAudio";
-import FileDocs from "./FileDocs";
 import FileDocument from "./FileDocument";
 import FileDownload from "./FileDownload";
 import FileFind from "./FileFind";
@@ -76,12 +75,7 @@ import GRPC from "./GRPC";
 import GitHub from "./GitHub";
 import Globe from "./Globe";
 import HTTP2 from "./HTTP2";
-import Http from "./Http";
-import HttpDelete from "./HttpDelete";
-import HttpGet from "./HttpGet";
-import HttpPatch from "./HttpPatch";
-import HttpPost from "./HttpPost";
-import HttpPut from "./HttpPut";
+import HTTP from "./HTTP";
 import Idle from "./Idle";
 import Info from "./Info";
 import IngressEgress from "./IngressEgress";
@@ -152,7 +146,6 @@ import Secret from "./Secret";
 import Service from "./Service";
 import ServiceInstance from "./ServiceInstance";
 import Services from "./Services";
-import ServicesWhite from "./ServicesWhite";
 import Shapes from "./Shapes";
 import SquareThick from "./SquareThick";
 import SquareThin from "./SquareThin";
@@ -219,7 +212,7 @@ export {
   Configuration,
   Cycle,
   Dashboards,
-  Docs,
+  FileDocumentWhite,
   Drive,
   EKG,
   EKGMagnifier,
@@ -234,7 +227,6 @@ export {
   Fabric,
   File,
   FileAudio,
-  FileDocs,
   FileDocument,
   FileDownload,
   FileFind,
@@ -261,12 +253,7 @@ export {
   GitHub,
   Globe,
   HTTP2,
-  Http,
-  HttpDelete,
-  HttpGet,
-  HttpPatch,
-  HttpPost,
-  HttpPut,
+  HTTP,
   Idle,
   Info,
   IngressEgress,
@@ -337,7 +324,6 @@ export {
   Service,
   ServiceInstance,
   Services,
-  ServicesWhite,
   Shapes,
   SquareThick,
   SquareThin,

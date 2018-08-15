@@ -1,16 +1,10 @@
-import React from "react"
+import React from "react";
 import Icon from "../Icon";
 
 export default function ArrowRightSmall(props) {
   return (
     <Icon {...props} glyphName="ArrowRightSmall">
-      <g
-        id="ArrowRightSmall"
-        stroke="none"
-        strokeWidth="1"
-        fill="none"
-        fillRule="evenodd"
-      />
+      <polygon fillRule="nonzero" points="11 8.99999999 15 12 11 15" />
     </Icon>
   );
 }
