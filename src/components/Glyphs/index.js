@@ -109,7 +109,7 @@ import NoEye from "./NoEye";
 import NoKey from "./NoKey";
 import NoLock from "./NoLock";
 import NoMetrics from "./NoMetrics";
-import Object from "./Object";
+import ObjectBase from "./ObjectBase";
 import ObjectAdd from "./ObjectAdd";
 import ObjectAudio from "./ObjectAudio";
 import ObjectDocument from "./ObjectDocument";
@@ -294,7 +294,7 @@ export {
   NoKey,
   NoLock,
   NoMetrics,
-  Object,
+  ObjectBase,
   ObjectAdd,
   ObjectAudio,
   ObjectDocument,
