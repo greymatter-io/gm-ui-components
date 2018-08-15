@@ -5,7 +5,7 @@ export default function Minus(props) {
   return (
     <Icon {...props} glyphName="Minus">
       <polygon
-        fill="#000000"
+         
         fillRule="nonzero"
         points="2.99999996 11 2.99999996 13 21 13 21 11"
       />

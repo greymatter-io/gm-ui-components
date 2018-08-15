@@ -6,7 +6,7 @@ export default function ArrowRight(props) {
     <Icon {...props} glyphName="ArrowRight">
       <polygon
         id="ArrowRight"
-        fill="#000000"
+         
         fillRule="nonzero"
         points="9.99999999 7.99999998 15 12 9.99999999 16"
       />

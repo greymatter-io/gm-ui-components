@@ -6,7 +6,7 @@ export default function ArrowUpSmall(props) {
     <Icon {...props} glyphName="ArrowUpSmall">
       <polygon
         id="ArrowUpSmall"
-        fill="#000000"
+         
         fillRule="nonzero"
         transform="translate(12.000000, 11.000000) scale(-1, 1) rotate(-90.000000) translate(-12.000000, -11.000000) "
         points="9.99999999 7.99999998 14 11 9.99999999 14"

@@ -6,7 +6,7 @@ export default function Bullet(props) {
   return (
     <Icon {...props} glyphName="Bullet">
       <circle
-        fill="#000000"
+         
         fillRule="nonzero"
         cx="12"
         cy="12"
