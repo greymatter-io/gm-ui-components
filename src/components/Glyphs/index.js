@@ -51,8 +51,9 @@ import HttpPut from "./HttpPut";
 import HttpPost from "./HttpPost";
 import HttpPatch from "./HttpPatch";
 import HttpDelete from "./HttpDelete";
-
+import ArrowDown from "./ArrowDown";
 export {
+  ArrowDown,
   Bars,
   Bell,
   CPU,

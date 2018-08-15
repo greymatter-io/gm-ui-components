@@ -1,12 +1,13 @@
-import React from "react";
+import React from "../../../../../Library/Caches/typescript/2.9/node_modules/@types/react";
 import Icon from "../Icon";
 
 export default function Exclamation(props) {
   return (
     <Icon {...props} glyphName="Exclamation">
       <path
-        d="M11,14 L13,14 L13,16 L11,16 L11,14 Z M11,9 L13,9 L13,11.0070282 L12.5,13 L11.5,13 L11,11.0070282 L11,9 Z"
-        id="Exclamation"
+        d="M5.99999997,7.06066015 C5.70710675,6.76776693 5.70710675,6.2928932 5.99999997,5.99999997 C6.2928932,5.70710675 6.76776693,5.70710675 7.06066015,5.99999997 L18,16.9393398 C18.2928932,17.232233 18.2928932,17.7071068 18,18 C17.7071068,18.2928932 17.232233,18.2928932 16.9393398,18 L5.99999997,7.06066015 Z"
+        fill="#000000"
+        fillRule="nonzero"
       />
     </Icon>
   );

@@ -9,8 +9,8 @@ import {
 } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import Icon from "../Icon";
-import * as Glyphs from "components/Glyphs";
+import Icon from ".";
+import * as Glyphs from "../Glyphs";
 
 const glyphNames = [
   "Bars",
@@ -50,6 +50,7 @@ const glyphNames = [
   "ServiceInstance",
   "ServicesWhite",
   "StarFilled",
+  "ArrowDown",
   "Summary",
   "Tape",
   "Threads",
