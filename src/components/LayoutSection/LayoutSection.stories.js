@@ -4,7 +4,7 @@ import { text, withKnobs } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import LayoutSection from "./LayoutSection";
-import { Readout, ReadoutGroup, Bell, Summary } from "../";
+import { Readout, ReadoutGroup, IconBell, IconSummary } from "../";
 
 storiesOf("Layout Section", module)
   .addDecorator(withKnobs)
@@ -14,7 +14,7 @@ storiesOf("Layout Section", module)
       return (
         <LayoutSection
           title={text("title", "Test Layout")}
-          icon={() => <Bell size={"24px"} />}
+          icon={() => <IconBell size={"24px"} />}
         >
           <ReadoutGroup>
             <Readout
@@ -31,7 +31,7 @@ storiesOf("Layout Section", module)
                 {
                   title: "Error Rate",
                   value: "0.000%",
-                  icon: () => <Summary size={"24px"} />
+                  icon: () => <IconSummary size={"24px"} />
                 }
               ]}
             />
