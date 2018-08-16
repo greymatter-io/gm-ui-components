@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import { ErrorCard, Bell } from "../";
+import { ErrorCard, IconBell } from "../";
 
 describe("ErrorCard", () => {
   it("matches snapshot", () => {
@@ -17,7 +17,7 @@ describe("ErrorCard", () => {
     expect(aErrorCard.find("Exclamation")).toHaveLength(1);
   });
   it("renders a custom Icon", () => {
-    const aErrorCard = shallow(<ErrorCard icon={() => <Bell />} />);
+    const aErrorCard = shallow(<ErrorCard icon={() => <IconBell />} />);
     expect(aErrorCard.find("Bell")).toHaveLength(1);
   });
 });
