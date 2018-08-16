@@ -1,3 +1,11 @@
+<a name="0.5.0"></a>
+
+# 0.5.0 (2018-08-16)
+
+### Features
+
+- added a plethora of new icons and changed the naming scheme
+
 <a name="0.4.7"></a>
 
 # 0.4.7 (2018-11-18)
