@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, object, text } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import { ButtonGroup, Cog, Button, AppHeader, Breadcrumbs } from "components";
+import { ButtonGroup, IconCog, Button, AppHeader, Breadcrumbs } from "components";
 import { spacingScale } from "style/styleFunctions";
 
 const bannerExtras = [
@@ -48,7 +48,7 @@ const toolbarItems = () => {
             color: "black"
           }}
         >
-          <Cog size={"24px"} />
+          <IconCog size={"24px"} />
         </Button>
       </ToolbarButtonGroup>
     </div>
