@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconStarFilled matches snapshot 1`] = `
+<Icon
+  backgroundColor="currentColor"
+  backgroundOpacity={1}
+  backgroundSizeRatio={1}
+  borderColor="currentColor"
+  borderOpacity={1}
+  borderWidth={1}
+  glyph=""
+  glyphColor="currentColor"
+  glyphName="StarFilled"
+  glyphSizeRatio={1}
+>
+  <polygon
+    id="Star"
+    points="13 16.5 8.88550323 18.663119 9.67130219 14.0815595 6.34260439 10.836881 10.9427516 10.1684405 13 6 15.0572484 10.1684405 19.6573956 10.836881 16.3286978 14.0815595 17.1144968 18.663119"
+  />
+</Icon>
+`;
