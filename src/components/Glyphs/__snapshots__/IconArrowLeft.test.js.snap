@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconArrowLeft matches snapshot 1`] = `
+<Icon
+  backgroundColor="currentColor"
+  backgroundOpacity={1}
+  backgroundSizeRatio={1}
+  borderColor="currentColor"
+  borderOpacity={1}
+  borderWidth={1}
+  glyph=""
+  glyphColor="currentColor"
+  glyphName="ArrowLeft"
+  glyphSizeRatio={1}
+>
+  <polygon
+    fillRule="nonzero"
+    id="Mask"
+    points="8.99999999 7.99999998 14 12 8.99999999 16"
+    transform="translate(11.500000, 12.000000) scale(-1, 1) translate(-11.500000, -12.000000) "
+  />
+</Icon>
+`;
