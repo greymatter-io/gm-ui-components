@@ -14,10 +14,11 @@ export default function Table({
   onCellClick,
   onSort,
   selectedRows = [],
-  sortDataIndex
+  sortDataIndex,
+  ...props
 }) {
   return (
-    <TableWrapper>
+    <TableWrapper {...props}>
       {/* colgroup is used to give columns the proper width */}
       <colgroup>
         {columns.map(({ width }, i) => (
