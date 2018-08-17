@@ -8,6 +8,7 @@ import Input from "./Input";
 import Spinner from "./Spinner";
 import Tab from "./Tab";
 import TabGroup from "./TabGroup";
+import Table from "./Table";
 import Tooltip from "./Tooltip";
 import Readout from "./Readout";
 import ReadoutGroup from "./ReadoutGroup";
@@ -38,6 +39,7 @@ const library = {
   Spinner,
   Tab,
   TabGroup,
+  Table,
   Tooltip
 };
 

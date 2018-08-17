@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeader matches snapshot 1`] = `
+<thead>
+  <tr>
+    <TableHeaderCell
+      isSorting={false}
+      key="name"
+      onClick={[Function]}
+    >
+      Name
+    </TableHeaderCell>
+    <TableHeaderCell
+      isSorting={false}
+      key="address"
+      onClick={[Function]}
+    >
+      Address
+    </TableHeaderCell>
+    <TableHeaderCell
+      isSorting={false}
+      key="age"
+      onClick={[Function]}
+    >
+      Age
+    </TableHeaderCell>
+    <TableHeaderCell
+      isSorting={false}
+      key="favfood"
+      onClick={[Function]}
+    >
+      Food
+    </TableHeaderCell>
+  </tr>
+</thead>
+`;
