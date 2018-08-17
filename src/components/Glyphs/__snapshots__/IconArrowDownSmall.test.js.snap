@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconArrowDownSmall matches snapshot 1`] = `
+<Icon
+  backgroundColor="currentColor"
+  backgroundOpacity={1}
+  backgroundSizeRatio={1}
+  borderColor="currentColor"
+  borderOpacity={1}
+  borderWidth={1}
+  glyph=""
+  glyphColor="currentColor"
+  glyphName="ArrowDownSmall"
+  glyphSizeRatio={1}
+>
+  <polygon
+    id="ArrowDownSmall"
+    points="9.99999999 9.99999999 14 13 9.99999999 16"
+    transform="translate(12.000000, 13.000000) rotate(90.000000) translate(-12.000000, -13.000000) "
+  />
+</Icon>
+`;
