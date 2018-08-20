@@ -56,7 +56,6 @@ exports[`Table matches snapshot 1`] = `
   />
   <tbody>
     <TableRow
-      accentColor="#0aab2a"
       columns={
         Array [
           Object {
@@ -103,7 +102,6 @@ exports[`Table matches snapshot 1`] = `
       rowIndex={0}
     />
     <TableRow
-      accentColor="#0aab2a"
       columns={
         Array [
           Object {
@@ -150,7 +148,6 @@ exports[`Table matches snapshot 1`] = `
       rowIndex={1}
     />
     <TableRow
-      accentColor="#0aab2a"
       columns={
         Array [
           Object {
