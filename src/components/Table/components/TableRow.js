@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { lighten, transparentize } from "polished";
 
-import { COLOR_GREY } from "style/styleVariables";
+import { COLOR_GREY, COLOR_BRAND_PRIMARY } from "style/styleVariables";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
@@ -34,7 +34,7 @@ function TableRow({
   isSelected,
   onCellClick,
   rowIndex,
-  accentColor
+  accentColor = COLOR_BRAND_PRIMARY
 }) {
   return (
     <TableRowElement isSelected={isSelected} accentColor={accentColor}>
@@ -59,6 +59,7 @@ function TableRow({
 }
 
 TableRow.propTypes = {
+  accentColor: PropTypes.string,
   columns: PropTypes.arrayOf(columnItemShape),
   data: dataItemShape,
   isRowSelected: PropTypes.bool,

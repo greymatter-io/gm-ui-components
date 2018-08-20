@@ -7,7 +7,6 @@ import TableRow from "./components/TableRow";
 import TableColumn from "./components/TableColumn";
 
 import { columnItemShape, dataItemShape } from "./types";
-import { COLOR_BRAND_PRIMARY } from "style/styleVariables";
 
 export default function Table({
   columns = [],
@@ -16,7 +15,7 @@ export default function Table({
   onSort,
   selectedRows = [],
   sortDataIndex,
-  accentColor = COLOR_BRAND_PRIMARY,
+  accentColor,
   ...props
 }) {
   return (
