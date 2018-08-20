@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { lighten, transparentize } from "polished";
 
-import { COLOR_GREY, COLOR_BRAND_PRIMARY } from "style/styleVariables";
+import { COLOR_GREY } from "style/styleVariables";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
@@ -17,7 +17,7 @@ const TableRowElement = styled.tr`
   ${props =>
     props.isSelected &&
     css`
-      background-color: ${transparentize(0.85, COLOR_BRAND_PRIMARY)};
+      background-color: ${transparentize(0.85, props.accentColor)};
       &,
       & + &,
       & + tr {
@@ -28,9 +28,16 @@ const TableRowElement = styled.tr`
 
 TableRowElement.displayName = "TableRowElement";
 
-function TableRow({ data, columns, isSelected, onCellClick, rowIndex }) {
+function TableRow({
+  data,
+  columns,
+  isSelected,
+  onCellClick,
+  rowIndex,
+  accentColor
+}) {
   return (
-    <TableRowElement isSelected={isSelected}>
+    <TableRowElement isSelected={isSelected} accentColor={accentColor}>
       {/* Because the `columns` array determines the desired column order, 
         we need to map through it and use the dataIndex property to pick out 
         the appropriate data for that column */}
