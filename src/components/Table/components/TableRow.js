@@ -17,7 +17,7 @@ const TableRowElement = styled.tr`
   ${props =>
     props.isSelected &&
     css`
-      background-color: ${transparentize(0.85, COLOR_BRAND_PRIMARY)};
+      background-color: ${transparentize(0.85, props.accentColor)};
       &,
       & + &,
       & + tr {
@@ -28,9 +28,16 @@ const TableRowElement = styled.tr`
 
 TableRowElement.displayName = "TableRowElement";
 
-function TableRow({ data, columns, isSelected, onCellClick, rowIndex }) {
+function TableRow({
+  data,
+  columns,
+  isSelected,
+  onCellClick,
+  rowIndex,
+  accentColor = COLOR_BRAND_PRIMARY
+}) {
   return (
-    <TableRowElement isSelected={isSelected}>
+    <TableRowElement isSelected={isSelected} accentColor={accentColor}>
       {/* Because the `columns` array determines the desired column order, 
         we need to map through it and use the dataIndex property to pick out 
         the appropriate data for that column */}
@@ -52,6 +59,7 @@ function TableRow({ data, columns, isSelected, onCellClick, rowIndex }) {
 }
 
 TableRow.propTypes = {
+  accentColor: PropTypes.string,
   columns: PropTypes.arrayOf(columnItemShape),
   data: dataItemShape,
   isRowSelected: PropTypes.bool,
