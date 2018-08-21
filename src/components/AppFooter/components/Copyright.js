@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-import { COLOR_CONTENT_BACKGROUND } from "style/styleVariables";
-import { spacingScale, contrastColor } from "style/styleFunctions";
+import { COLOR_KEYLINE } from "style/styleVariables";
+import { spacingScale } from "style/styleFunctions";
 
 const Copyright = styled.p`
-  font-size: 50%;
+  font-size: 50%; /* unique instance of font size. Do not associate with theme variable. */
   margin: 0;
   flex: 0 0 100%;
   text-align: center;
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid ${contrastColor(COLOR_CONTENT_BACKGROUND, 0.1)};
+  border-top: 1px solid ${COLOR_KEYLINE};
   margin-top: ${spacingScale(1)};
   padding: ${spacingScale(1)};
   text-transform: uppercase;

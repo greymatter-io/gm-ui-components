@@ -1,25 +1,27 @@
 import styled from "styled-components";
 
-import { contrastColor, spacingScale } from "style/styleFunctions";
+import { spacingScale } from "style/styleFunctions";
 import {
-  COLOR_CONTENT_BACKGROUND,
   FONT_SIZE_BASE,
   APP_FOOTER_HEIGHT,
   ZINDEX_STICKY,
-  FONT_STACK_BASE
+  COLOR_CONTENT,
+  FONT_STACK_BASE,
+  COLOR_BACKGROUND_A
 } from "style/styleVariables";
 
 const Footer = styled.footer`
   user-select: none;
   overflow: hidden;
-  padding: ${spacingScale(0.5)};
+  padding: 0 ${spacingScale(0.5)};
   font-family: ${FONT_STACK_BASE};
   display: flex;
   flex-flow: row wrap;
-  color: ${contrastColor(COLOR_CONTENT_BACKGROUND, 0.8)};
-  background: ${COLOR_CONTENT_BACKGROUND};
+  color: ${COLOR_CONTENT};
+  background: ${COLOR_BACKGROUND_A};
   font-size: ${FONT_SIZE_BASE};
   height: auto;
+  min-height: ${spacingScale(4)};
   align-items: stretch;
   justify-content: stretch;
 
