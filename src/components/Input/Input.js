@@ -1,57 +1,90 @@
-import styled from "styled-components";
-import {
-  COLOR_BLACK,
-  FONT_SIZE_BASE,
-  COLOR_HIGHLIGHT,
-  FONT_SIZE_XS,
-  FONT_STACK_BASE
-} from "style/styleVariables";
-import { spacingScale } from "style/styleFunctions";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Input = styled.input.attrs({
-  type: "text",
+import styled from 'styled-components';
+import {
+  FONT_SIZE_BASE,
+  FONT_SIZE_XS,
+  FONT_STACK_BASE,
+  COLOR_KEYLINE,
+  COLOR_CONTENT,
+  BORDER_RADIUS_BASE,
+  COLOR_HIGHLIGHT
+} from 'style/styleVariables';
+import { spacingScale } from 'style/styleFunctions';
+
+
+Input.propTypes = {
+  autofocus: PropTypes.bool,
+  defaultValue: PropTypes.string,
+  hint: PropTypes.string,
+  label: PropTypes.string,
+  maxLength: PropTypes.number,
+  placeholder: PropTypes.string,
+  type: PropTypes.oneOf([
+    'text',
+  ]),
+};
+
+
+const InputWrap = styled.label`
+  font-family: ${FONT_STACK_BASE};
+  position: relative;
+`;
+
+const InputLabel = styled.p`
+  margin: ${spacingScale(0.5)} 0;
+  font-size: ${FONT_SIZE_BASE};
+`;
+
+const InputHint = styled.small`
+  margin: ${spacingScale(0.5)} 0;
+  font-size: ${FONT_SIZE_XS};
+  opacity: 0.5;
+  display: block;
+`;
+
+
+const InputField = styled.input.attrs({
+  autofocus: props => props.autofocus,
+  defaultValue: props => props.defaultValue,
   placeholder: props => props.placeholder,
-  maxLength: props => props.maxlength
+  maxLength: props => props.maxlength,
+  type: props => props.type,
 })`
-  background: transparent;
-  border: 0;
-  box-shadow: 0 1px 0 ${COLOR_BLACK};
-  box-sizing: border-box;
-  color: black;
+  padding: ${spacingScale(0.5) + ' ' + spacingScale(1)};
+  height: ${spacingScale(4)};
+  border: 1px solid ${COLOR_KEYLINE};
+  border-radius: ${BORDER_RADIUS_BASE};
+  color: ${COLOR_CONTENT};
   font-family: ${FONT_STACK_BASE};
   font-size: ${FONT_SIZE_BASE};
+  background: transparent;
+  box-sizing: border-box;
   line-height: 1.5;
-  padding: ${spacingScale(1.25)} ${spacingScale(0.5)} ${spacingScale(0.75)};
-  text-align: left;
   transition: all 0.15s ease;
   user-select: auto;
-  width: 100%;
+  flex: 1 1 auto;
 
   &::placeholder {
-    color: ${COLOR_BLACK};
-    position: relative;
+    color: ${COLOR_CONTENT};
     transition: inherit;
-    opacity: 0.4;
-    left: 0;
+    opacity: 0.5;
   }
-  &:hover {
-    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
-  }
+
   &:focus {
-    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
+    border-color: ${COLOR_HIGHLIGHT};
     outline: none;
-  }
-  &:focus::placeholder,
-  &[value]::placeholder,
-  &:not(:empty)::placeholder {
-    transform: translateY(-${spacingScale(2)});
-    left: 0;
-    color: ${COLOR_BLACK};
-    opacity: 1;
-    visibility: visible;
-    font-size: ${FONT_SIZE_XS};
-    letter-spacing: 0.03em;
   }
 `;
 
-export default Input;
+
+export default function Input({ autofocus, defaultValue, hint, label, maxLength, placeholder, type, ...props }) {
+  return (
+    <InputWrap>
+      { label && (<InputLabel>{ label }</InputLabel>)}
+      <InputField type={type} autofocus={autofocus} defaultValue={defaultValue} placeholder={placeholder} maxLength={maxLength} />
+      { hint && (<InputHint>{ hint }</InputHint>)}
+    </InputWrap>
+  )
+}

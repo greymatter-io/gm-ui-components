@@ -9,6 +9,8 @@ export const COLOR_BLACK = "#000";
 export const COLOR_GREEN = "#0aab2a";
 export const COLOR_WHITE = "#fff";
 export const COLOR_GREY = mix(0.2, COLOR_WHITE, COLOR_BLACK);
+export const COLOR_KEYLINE = 'rgba(0,0,0,0.08)';
+export const COLOR_KEYLINE_SOLID = '#EBEBEB';
 
 export const COLOR_HIGHLIGHT = COLOR_BRAND_PRIMARY;
 export const COLOR_SUCCESS = COLOR_BRAND_PRIMARY;
