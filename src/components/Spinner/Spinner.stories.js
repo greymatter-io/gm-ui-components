@@ -13,7 +13,7 @@ storiesOf("Spinner", module)
   .addDecorator(withKnobs)
   .add("default", () => (
   <Spinner
-    orientation={select("orientation", orientations, 'horizontal')}
-    message={text("Loading Message", "Thinking...")}
+    orientation={select("orientation", orientations)}
+    message={text("Loading Message")}
   />)
 );

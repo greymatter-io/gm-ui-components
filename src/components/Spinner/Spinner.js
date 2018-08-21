@@ -19,6 +19,12 @@ Spinner.propTypes = {
   ])
 };
 
+Spinner.defaultProps = {
+  orientation: 'vertical',
+  message: 'Loading...'
+};
+
+
 
 const spinGradient = keyframes`
   0% {
