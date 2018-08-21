@@ -10,7 +10,8 @@ export const COLOR_BACKGROUND_C = '#000';
 export const COLOR_INTENT_DANGER = "#EB4F3D";
 export const COLOR_INTENT_WARNING = "#F7CD45";
 export const COLOR_INTENT_SUCCESS = "#0aab2a";
-export const COLOR_INTENT_HIGHLIGHT = '#327BF7';
+// export const COLOR_INTENT_HIGHLIGHT = '#327BF7';
+export const COLOR_INTENT_HIGHLIGHT = COLOR_BRAND_PRIMARY;
 export const COLOR_KEYLINE = 'rgba(0,0,0,0.08)';
 export const COLOR_KEYLINE_SOLID = '#EBEBEB';
 

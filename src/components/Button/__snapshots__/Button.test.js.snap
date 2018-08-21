@@ -965,7 +965,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #327BF7;
+  background-color: #0aab2a;
   color: #fff;
   border-color: transparent;
   font-size: 14px;
