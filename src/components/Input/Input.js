@@ -46,7 +46,7 @@ const InputHint = styled.small`
 
 
 const InputField = styled.input.attrs({
-  autofocus: props => props.autofocus,
+  autoFocus: props => props.autofocus,
   defaultValue: props => props.defaultValue,
   placeholder: props => props.placeholder,
   maxLength: props => props.maxlength,
