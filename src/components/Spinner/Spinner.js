@@ -1,24 +1,94 @@
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from "prop-types";
 
-import Rotate360 from "./components/Rotate360";
+import styled, { keyframes } from "styled-components";
+import { transparentize } from 'polished';
 
-const Spinner = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -30px;
-  margin-left: -30px;
-  width: 60px;
-  height: 60px;
-  font-size: 8px;
-  text-indent: -9999em;
-  border-top: 1.1em solid rgba(0, 0, 0, 0.2);
-  border-right: 1.1em solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1.1em solid rgba(0, 0, 0, 0.2);
-  border-left: 1.1em solid #000000;
-  transform: translateZ(0);
-  animation: ${Rotate360} 1.1s infinite linear;
-  border-radius: 50%;
+import { spacingScale } from 'style/styleFunctions';
+import { COLOR_BRAND_PRIMARY, COLOR_CONTENT_BACKGROUND, FONT_SIZE_XS, FONT_STACK_BASE } from 'style/styleVariables';
+
+
+const SPINNER_COLOR = COLOR_BRAND_PRIMARY;
+
+
+Spinner.propTypes = {
+  message: PropTypes.string,
+  orientation: PropTypes.oneOf([
+    'vertical',
+    'horizontal'
+  ])
+};
+
+
+const spinGradient = keyframes`
+  0% {
+    background-position: -100% -100%;
+    transform: rotate(0)
+  }
+  100% {
+    background-position: 100% 100%;
+    transform: rotate(calc(360deg * 16))
+  }
+`
+
+const LoadingSpinnerWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ${FONT_STACK_BASE};
+  margin: auto;
+  flex: 0 0 auto;
+  
+  ${props => props.orientation === 'vertical' ? (`
+    text-align: center;
+    flex-direction: column;
+  `) : (`
+    text-align: left;
+    flex-direction: row;
+  `)}
 `;
 
-export default Spinner;
+const LoadingSpinner = styled.div`
+  margin: ${spacingScale(1)};
+  border-radius: 100px;
+  background-image: linear-gradient( to right, ${transparentize(1, SPINNER_COLOR)} 40%, ${SPINNER_COLOR} 60%, ${transparentize(1, SPINNER_COLOR)} );
+  background-size: 200% 200%;
+  position: relative;
+  animation: ${spinGradient} 16s ease infinite;
+
+  &:after {
+    box-shadow: 0 0 1px ${transparentize(0.8, SPINNER_COLOR)};
+    background-color: ${COLOR_CONTENT_BACKGROUND};
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+  }
+  
+  ${props => props.orientation === 'vertical' ? (`
+    height: ${spacingScale(6)};
+    width: ${spacingScale(6)};
+  `) : (`
+    height: ${spacingScale(2)};
+    width: ${spacingScale(2)};
+  `)}
+`;
+
+const LoadingMessage = styled.p`
+  opacity: 0.7;
+  font-size: ${FONT_SIZE_XS};
+  margin: 0;
+`;
+
+
+export default function Spinner({ message, orientation }) {
+  return (
+    <LoadingSpinnerWrap orientation={orientation}>
+      <LoadingSpinner orientation={orientation} />
+      { message && (<LoadingMessage>{ message }</LoadingMessage>)}
+    </LoadingSpinnerWrap>
+  )
+};
