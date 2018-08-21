@@ -1,10 +1,10 @@
 import { contrastColor } from "style/styleFunctions";
 import {
   COLOR_BRAND_PRIMARY,
-  COLOR_DANGER,
-  COLOR_INFO,
-  COLOR_WARNING,
-  COLOR_CONTENT_BACKGROUND
+  COLOR_INTENT_HIGHLIGHT,
+  COLOR_INTENT_DANGER,
+  COLOR_INTENT_WARNING,
+  COLOR_BACKGROUND_A
 } from "style/styleVariables";
 import { darken } from "polished";
 
@@ -12,16 +12,16 @@ import { darken } from "polished";
 function generateButtonTypeColors(type) {
   switch (type) {
     case "danger":
-      return COLOR_DANGER;
+      return COLOR_INTENT_DANGER;
     case "info":
-      return COLOR_INFO;
+      return COLOR_INTENT_HIGHLIGHT;
     case "warning":
-      return COLOR_WARNING;
+      return COLOR_INTENT_WARNING;
     case "primary":
       return COLOR_BRAND_PRIMARY;
     default:
     case "default":
-      return COLOR_CONTENT_BACKGROUND;
+      return COLOR_BACKGROUND_A;
   }
 }
 
