@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, text } from "@storybook/addon-knobs/react";
+import { select, text, withKnobs } from "@storybook/addon-knobs/react";
 
 import Spinner from "./Spinner";
 
@@ -9,7 +9,9 @@ const orientations = {
   horizontal: 'horizontal'
 };
 
-storiesOf("Spinner", module).add("default", () => (
+storiesOf("Spinner", module)
+  .addDecorator(withKnobs)
+  .add("default", () => (
   <Spinner
     orientation={select("orientation", orientations, 'horizontal')}
     message={text("Loading Message", "Thinking...")}

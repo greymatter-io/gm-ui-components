@@ -80,6 +80,7 @@ const LoadingSpinner = styled.div`
 const LoadingMessage = styled.p`
   opacity: 0.7;
   font-size: ${FONT_SIZE_XS};
+  max-width: 50%;
   margin: 0;
 `;
 
