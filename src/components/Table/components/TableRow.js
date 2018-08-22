@@ -23,6 +23,7 @@ const TableRowElement = styled.tr`
       & + tr {
         box-shadow: none;
       }
+      ${props.selectedRowStyle};
     `};
 `;
 
@@ -35,9 +36,14 @@ function TableRow({
   onCellClick,
   rowIndex,
   accentColor = COLOR_BRAND_A
+  selectedRowStyle,
 }) {
   return (
-    <TableRowElement isSelected={isSelected} accentColor={accentColor}>
+    <TableRowElement
+      isSelected={isSelected}
+      accentColor={accentColor}
+      selectedRowStyle={selectedRowStyle}
+    >
       {/* Because the `columns` array determines the desired column order, 
         we need to map through it and use the dataIndex property to pick out 
         the appropriate data for that column */}
@@ -65,7 +71,8 @@ TableRow.propTypes = {
   isRowSelected: PropTypes.bool,
   isSelected: PropTypes.bool,
   onCellClick: PropTypes.func,
-  rowIndex: PropTypes.number
+  rowIndex: PropTypes.number,
+  selectedRowStyle: PropTypes.object
 };
 
 export default TableRow;

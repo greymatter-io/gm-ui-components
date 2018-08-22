@@ -16,6 +16,7 @@ export default function Table({
   selectedRows = [],
   sortDataIndex,
   accentColor,
+  selectedRowStyle,
   ...props
 }) {
   return (
@@ -40,6 +41,7 @@ export default function Table({
             columns={columns}
             onCellClick={onCellClick}
             rowIndex={rowIndex}
+            selectedRowStyle={selectedRowStyle}
             isSelected={selectedRows.some(
               selectedRow => selectedRow === rowIndex
             )}
@@ -56,6 +58,7 @@ Table.propTypes = {
   data: PropTypes.arrayOf(dataItemShape), // An array of objects to populate the rows
   onCellClick: PropTypes.func, // A function called when a user clicks a cell. Passes the row data, row index, and column dataIndex.
   onSort: PropTypes.func, // A function called when a user sorts a column. Passes the dataIndex of the column being sorted.
+  selectedRowStyle: PropTypes.object, // A style object to pass to a row when selected
   selectedRows: PropTypes.arrayOf(PropTypes.number), // An array of indices of the currently selected rows
   sortDataIndex: PropTypes.string // The dataIndex of the column that is currently being sorted
 };
