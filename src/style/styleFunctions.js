@@ -9,7 +9,7 @@ import {
 } from "polished";
 import {
   DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO,
-  PADDING_BASE
+  SPACING_BASE
 } from "./styleVariables";
 
 /**
@@ -48,7 +48,7 @@ export function contrastColor(backgroundColor, contrast, intentColor) {
  * @returns {string} A string in the format "10px"
  */
 export function spacingScale(factor) {
-  return `${Math.round(parseInt(PADDING_BASE, 10) * factor)}px`;
+  return `${Math.round(parseInt(SPACING_BASE, 10) * factor)}px`;
 }
 
 // Darken the color, but add a touch of saturation for a more natural shadow look

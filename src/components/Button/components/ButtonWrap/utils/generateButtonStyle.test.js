@@ -32,7 +32,7 @@ describe("generateButtonStyle", () => {
 `);
 
     expect(generateButtonStyle("danger", false)).toContain(`
-  background-color: #E4251A;
+  background-color: #EB4F3D;
   color: #fff;
 `);
 
@@ -42,7 +42,7 @@ describe("generateButtonStyle", () => {
 `);
 
     expect(generateButtonStyle("warning", false)).toContain(`
-  background-color: #f8b400;
+  background-color: #F7CD45;
   color: #fff;
 `);
 
@@ -56,13 +56,13 @@ describe("generateButtonStyle", () => {
   border-color: #e6e6e6;
 `);
     expect(generateButtonStyle("danger", true)).toContain(`
-  border-color: #b61e15;
+  border-color: #EB4F3D;
 `);
     expect(generateButtonStyle("info", true)).toContain(`
-  border-color: #003bd5;
+  border-color: #094dff;
 `);
     expect(generateButtonStyle("warning", true)).toContain(`
-  border-color: #c58f00;
+  border-color: #F7CD45;
 `);
     expect(generateButtonStyle("primary", true)).toContain(`
   border-color: #077b1e;

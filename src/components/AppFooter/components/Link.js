@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
 import {
-  COLOR_HIGHLIGHT,
+  COLOR_INTENT_HIGHLIGHT,
   OPACITY_70,
   OPACITY_100,
   COLOR_CONTENT
@@ -14,7 +14,7 @@ const Link = styled.a`
   padding: 0 ${spacingScale(0.5)};
 
   &:hover {
-    color: ${COLOR_HIGHLIGHT};
+    color: ${COLOR_INTENT_HIGHLIGHT};
     opacity: ${OPACITY_100};
   }
 

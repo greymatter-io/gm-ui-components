@@ -3,7 +3,7 @@
 exports[`Header matches snapshot 1`] = `
 .c0 {
   font-size: 36px;
-  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   margin: 0;
   display: inline-block;

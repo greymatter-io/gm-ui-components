@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import {
-  COLOR_BLACK,
+  COLOR_CONTENT,
   FONT_SIZE_BASE,
-  COLOR_HIGHLIGHT,
+  COLOR_INTENT_HIGHLIGHT,
   FONT_SIZE_XS,
   FONT_STACK_BASE
 } from "style/styleVariables";
@@ -15,7 +15,7 @@ const Input = styled.input.attrs({
 })`
   background: transparent;
   border: 0;
-  box-shadow: 0 1px 0 ${COLOR_BLACK};
+  box-shadow: 0 1px 0 ${COLOR_CONTENT};
   box-sizing: border-box;
   color: black;
   font-family: ${FONT_STACK_BASE};
@@ -28,17 +28,17 @@ const Input = styled.input.attrs({
   width: 100%;
 
   &::placeholder {
-    color: ${COLOR_BLACK};
+    color: ${COLOR_CONTENT};
     position: relative;
     transition: inherit;
     opacity: 0.4;
     left: 0;
   }
   &:hover {
-    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
+    box-shadow: 0 1px 0 ${COLOR_INTENT_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_INTENT_HIGHLIGHT};
   }
   &:focus {
-    box-shadow: 0 1px 0 ${COLOR_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_HIGHLIGHT};
+    box-shadow: 0 1px 0 ${COLOR_INTENT_HIGHLIGHT}, inset 0 -1px 0 ${COLOR_INTENT_HIGHLIGHT};
     outline: none;
   }
   &:focus::placeholder,
@@ -46,7 +46,7 @@ const Input = styled.input.attrs({
   &:not(:empty)::placeholder {
     transform: translateY(-${spacingScale(2)});
     left: 0;
-    color: ${COLOR_BLACK};
+    color: ${COLOR_CONTENT};
     opacity: 1;
     visibility: visible;
     font-size: ${FONT_SIZE_XS};

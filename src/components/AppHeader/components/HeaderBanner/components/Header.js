@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import {
   FONT_SIZE_TITLE,
-  FONT_GROUP_MAIN_TEXT,
+  FONT_STACK_BRAND,
   FONT_WEIGHT_BASE,
   COLOR_BACKGROUND_C
 } from "style/styleVariables";
@@ -10,7 +10,7 @@ import { spacingScale } from "style/styleFunctions";
 
 const Header = styled.h1`
   font-size: ${FONT_SIZE_TITLE};
-  font-family: ${FONT_GROUP_MAIN_TEXT};
+  font-family: ${FONT_STACK_BRAND};
   font-weight: ${FONT_WEIGHT_BASE};
   margin: 0;
   display: inline-block;

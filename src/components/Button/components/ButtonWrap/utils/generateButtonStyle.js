@@ -1,12 +1,13 @@
-import { contrastColor } from "style/styleFunctions";
+import { darken } from "polished";
+
 import {
-  COLOR_BRAND_PRIMARY,
   COLOR_INTENT_HIGHLIGHT,
+  COLOR_INTENT_INFO,
   COLOR_INTENT_DANGER,
   COLOR_INTENT_WARNING,
   COLOR_BACKGROUND_A
 } from "style/styleVariables";
-import { darken } from "polished";
+import { contrastColor } from "style/styleFunctions";
 
 // Maps button types to a particular color
 function generateButtonTypeColors(type) {
@@ -14,11 +15,11 @@ function generateButtonTypeColors(type) {
     case "danger":
       return COLOR_INTENT_DANGER;
     case "info":
-      return COLOR_INTENT_HIGHLIGHT;
+      return COLOR_INTENT_INFO;
     case "warning":
       return COLOR_INTENT_WARNING;
     case "primary":
-      return COLOR_BRAND_PRIMARY;
+      return COLOR_INTENT_HIGHLIGHT;
     default:
     case "default":
       return COLOR_BACKGROUND_A;
@@ -30,9 +31,9 @@ function generateButtonTypeColors(type) {
  * into a block of CSS attributes dealing with buton styles
  *
  * @param {any} {
- *   buttonBackgroundColorBase = COLOR_WHITE,
- *   buttonBorderColorBase = COLOR_WHITE,
- *   buttonLabelColorBase = contrastColor(COLOR_WHITE, 100),
+ *   buttonBackgroundColorBase = COLOR_BACKGROUND_A,
+ *   buttonBorderColorBase = COLOR_BACKGROUND_A,
+ *   buttonLabelColorBase = contrastColor(COLOR_BACKGROUND_A, 100),
  * }
  * @returns string
  */
