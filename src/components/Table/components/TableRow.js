@@ -35,7 +35,7 @@ function TableRow({
   isSelected,
   onCellClick,
   rowIndex,
-  accentColor = COLOR_BRAND_A
+  accentColor = COLOR_BRAND_A,
   selectedRowStyle,
 }) {
   return (
