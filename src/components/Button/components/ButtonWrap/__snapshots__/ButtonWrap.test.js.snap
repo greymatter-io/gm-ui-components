@@ -30,7 +30,7 @@ exports[`ButtonWrap should match snapshot 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 14px;
   border-radius: 3px;

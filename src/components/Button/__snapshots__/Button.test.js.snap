@@ -52,7 +52,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
@@ -150,7 +150,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
@@ -250,7 +250,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: #e6e6e6;
   font-size: 14px;
   border-radius: 3px;
@@ -363,7 +363,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 14px;
   border-radius: 3px;
@@ -463,7 +463,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 7px;
   border-radius: 3px;
@@ -564,7 +564,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 11px;
   border-radius: 3px;
@@ -665,7 +665,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 18px;
   border-radius: 3px;
@@ -765,7 +765,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   -ms-user-select: none;
   user-select: none;
   background-color: #fff;
-  color: #666;
+  color: #000;
   border-color: transparent;
   font-size: 21px;
   border-radius: 3px;
