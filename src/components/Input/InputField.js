@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-
 import { FONT_SIZE_BASE, FONT_STACK_BASE, COLOR_KEYLINE, COLOR_CONTENT, BORDER_RADIUS_BASE, COLOR_HIGHLIGHT } from 'style/styleVariables';
 import { spacingScale } from 'style/styleFunctions';
-
 export const InputField = styled.input.attrs({
   autoFocus: props => props.autofocus,
   defaultValue: props => props.defaultValue,
@@ -35,5 +33,3 @@ export const InputField = styled.input.attrs({
     outline: none;
   }
 `;
-
-export default InputField;
