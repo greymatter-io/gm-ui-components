@@ -22,7 +22,7 @@ const Extra = styled.a`
   border-radius: ${BORDER_RADIUS_BASE};
   font-size: ${FONT_SIZE_SM};
   font-weight: ${FONT_WEIGHT_SEMIBOLD};
-  padding: ${spacingScale(0.25) + ' ' + spacingScale(1)};
+  padding: ${spacingScale(0.25)} ${spacingScale(1)};
   margin: ${spacingScale(1)};
   bottom: ${spacingScale(0.5)};
   display: inline-block;

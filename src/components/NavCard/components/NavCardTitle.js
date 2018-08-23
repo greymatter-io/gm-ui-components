@@ -15,7 +15,7 @@ const COLOR_TAB_BACKGROUND_BASE = mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACK
 
 const NavCardTitle = styled.div`
   color: ${readableColor(COLOR_TAB_BACKGROUND_BASE)};
-  margin: ${spacingScale(0.5) + ' ' + spacingScale(1) + ' ' + spacingScale(0)};
+  margin: ${spacingScale(0.5)} ${spacingScale(1)} ${spacingScale(0)};
   white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
