@@ -32,12 +32,12 @@ describe("generateButtonStyle", () => {
 `);
 
     expect(generateButtonStyle("danger", false)).toContain(`
-  background-color: #EB4F3D;
+  background-color: #D83D22;
   color: #fff;
 `);
 
     expect(generateButtonStyle("info", false)).toContain(`
-  background-color: #094dff;
+  background-color: #1E6DF6;
   color: #fff;
 `);
 
@@ -56,13 +56,13 @@ describe("generateButtonStyle", () => {
   border-color: #e6e6e6;
 `);
     expect(generateButtonStyle("danger", true)).toContain(`
-  border-color: #EB4F3D;
+  border-color: #ac311b;
 `);
     expect(generateButtonStyle("info", true)).toContain(`
-  border-color: #094dff;
+  border-color: #0955d8;
 `);
     expect(generateButtonStyle("warning", true)).toContain(`
-  border-color: #F7CD45;
+  border-color: #f5c014;
 `);
     expect(generateButtonStyle("primary", true)).toContain(`
   border-color: #077b1e;
