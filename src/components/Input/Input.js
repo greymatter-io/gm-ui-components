@@ -6,7 +6,6 @@ import InputWrap from './components/InputWrap';
 import InputHint from './components/InputHint';
 import InputField from './components/InputField';
 
-
 Input.propTypes = {
   autofocus: PropTypes.bool,
   defaultValue: PropTypes.string,

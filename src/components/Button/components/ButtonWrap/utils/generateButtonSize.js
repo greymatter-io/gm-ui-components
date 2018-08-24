@@ -1,4 +1,5 @@
 import { spacingScale } from "style/styleFunctions";
+import { FONT_SIZE_BASE } from "style/styleVariables";
 
 /**
  * Utility function that transforms an object containing different attributes
@@ -18,7 +19,7 @@ function _buttonSizeStyleBlockGenerator({
   verticalPaddingMultiplier = 1,
   textIsUppercase = false
 }) {
-  const fontSizeBase = 14;
+  const fontSizeBase = parseInt(FONT_SIZE_BASE, 10);
   const borderRadiusBase = 3;
   const contentSpacingBase = parseInt(spacingScale(0.5), 10);
   return `

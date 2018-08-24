@@ -4,17 +4,18 @@ import { css } from "styled-components";
 
 import { columnItemShape } from "../types";
 import TableCell from "./TableCell";
+import { FONT_WEIGHT_BASE, FONT_WEIGHT_SEMIBOLD } from "style/styleVariables";
 
 // Use all of TableCell's styles, but with a <th> element instead of <td>
 const TableHeaderCell = TableCell.withComponent("th").extend`
-  text-align:left; 
-  font-weight: 400;
+  font-weight: ${FONT_WEIGHT_BASE};
+  text-align: left; 
   cursor: pointer;
   border-top: none;
   ${props =>
     props.isSorting &&
     css`
-      font-weight: 700;
+      font-weight: ${FONT_WEIGHT_SEMIBOLD};
     `}
   `;
 

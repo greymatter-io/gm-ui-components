@@ -10,7 +10,7 @@ export const InputField = styled.input.attrs({
   maxLength: props => props.maxlength,
   type: props => props.type,
 })`
-  padding: ${spacingScale(0.5) + ' ' + spacingScale(1)};
+  padding: ${spacingScale(0.5)} ${spacingScale(1)};
   height: ${spacingScale(4)};
   border: 1px solid ${COLOR_KEYLINE};
   border-radius: ${BORDER_RADIUS_BASE};

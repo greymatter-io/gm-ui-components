@@ -52,7 +52,6 @@ exports[`InputField matches snapshot 1`] = `
 }
 
 .c0:focus {
-  border-color: #0aab2a;
   outline: none;
 }
 

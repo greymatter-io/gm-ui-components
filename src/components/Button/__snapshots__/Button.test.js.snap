@@ -864,7 +864,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #E4251A;
+  background-color: #D83D22;
   color: #fff;
   border-color: transparent;
   font-size: 14px;
@@ -965,7 +965,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #094dff;
+  background-color: #1E6DF6;
   color: #fff;
   border-color: transparent;
   font-size: 14px;
@@ -1167,7 +1167,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #f8b400;
+  background-color: #F7CD45;
   color: #fff;
   border-color: transparent;
   font-size: 14px;
