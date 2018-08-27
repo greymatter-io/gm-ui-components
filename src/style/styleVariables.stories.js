@@ -3,7 +3,6 @@ import { readableColor } from "polished";
 import styled from 'styled-components';
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
 
 import {
   FONT_SIZE_BASE,
@@ -33,8 +32,10 @@ import {
   COLOR_KEYLINE,
   COLOR_KEYLINE_SOLID,
 
-  BORDER_RADIUS_BASE,
+  OPACITY_100,
   OPACITY_70,
+  OPACITY_50,
+  OPACITY_15,
 
   RADIUS_05,
   RADIUS_1,
@@ -45,9 +46,6 @@ import {
   RADIUS_6,
   RADIUS_7,
   RADIUS_8,
-  OPACITY_100,
-  OPACITY_50,
-  OPACITY_15,
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
