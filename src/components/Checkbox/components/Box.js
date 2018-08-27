@@ -1,28 +1,37 @@
 import styled from "styled-components";
 
-import { COLOR_BRAND_PRIMARY } from "style/styleVariables";
+import { COLOR_BRAND_A, BORDER_RADIUS_BASE, COLOR_BACKGROUND_A } from "style/styleVariables";
+import { spacingScale } from "style/styleFunctions";
+
+const CHECKBOX_COLOR = COLOR_BRAND_A;
 
 const Box = styled.input.attrs({
   type: "checkbox"
 })`
+  box-shadow: inset 0 0 0 1px ${CHECKBOX_COLOR};
+  font-size: ${spacingScale(2)};
+  color: ${COLOR_BACKGROUND_A};
   appearance: none;
-  background-color: #fafafa;
-  border: 1px solid ${COLOR_BRAND_PRIMARY};
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-  height: 8px;
-  width: 8px;
+  flex: 0 0 1em;
+  height: 1em;
+  width: 1em;
   position: relative;
-  border-radius: 3px;
+  border-radius: ${BORDER_RADIUS_BASE};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &:checked {
+    background: ${CHECKBOX_COLOR};
+
     &:after {
-      content: "\u2714";
-      font-size: 10px;
-      position: absolute;
-      top: 0px;
-      left: 2px;
-      color: ${COLOR_BRAND_PRIMARY};
+      content: '';
+      width: 25%;
+      height: 50%;
+      border: 2px solid;
+      border-radius: 1px;
+      border-width: 0 2px 2px 0;
+      transform: translateY(-15%) rotate(45deg);
     }
   }
 `;

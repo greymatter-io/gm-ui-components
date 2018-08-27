@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { lighten, transparentize } from "polished";
+import { transparentize } from "polished";
 
-import { COLOR_GREY, COLOR_BRAND_PRIMARY } from "style/styleVariables";
+import { COLOR_BRAND_A, COLOR_KEYLINE } from "style/styleVariables";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
@@ -11,7 +11,7 @@ import TableCell from "./TableCell";
 const TableRowElement = styled.tr`
   cursor: pointer;
   position: relative;
-  box-shadow: 0 -1px 0 ${lighten(0.75, COLOR_GREY)};
+  box-shadow: 0 -1px 0 ${COLOR_KEYLINE};
 
   /* Give the table row a border when selected */
   ${props =>
@@ -23,6 +23,7 @@ const TableRowElement = styled.tr`
       & + tr {
         box-shadow: none;
       }
+      ${props.selectedRowStyle};
     `};
 `;
 
@@ -34,10 +35,15 @@ function TableRow({
   isSelected,
   onCellClick,
   rowIndex,
-  accentColor = COLOR_BRAND_PRIMARY
+  accentColor = COLOR_BRAND_A,
+  selectedRowStyle,
 }) {
   return (
-    <TableRowElement isSelected={isSelected} accentColor={accentColor}>
+    <TableRowElement
+      isSelected={isSelected}
+      accentColor={accentColor}
+      selectedRowStyle={selectedRowStyle}
+    >
       {/* Because the `columns` array determines the desired column order, 
         we need to map through it and use the dataIndex property to pick out 
         the appropriate data for that column */}
@@ -65,7 +71,8 @@ TableRow.propTypes = {
   isRowSelected: PropTypes.bool,
   isSelected: PropTypes.bool,
   onCellClick: PropTypes.func,
-  rowIndex: PropTypes.number
+  rowIndex: PropTypes.number,
+  selectedRowStyle: PropTypes.object
 };
 
 export default TableRow;

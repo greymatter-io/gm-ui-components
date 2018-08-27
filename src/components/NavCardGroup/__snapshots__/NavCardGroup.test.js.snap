@@ -27,7 +27,7 @@ exports[`NavCardGroup matches snapshot 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  min-height: 80px;
+  min-height: 64px;
   position: relative;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -37,7 +37,7 @@ exports[`NavCardGroup matches snapshot 1`] = `
 .c0 > *:active:hover div[class*="NavCardWrapper"],
 .c0 > *.active div[class*="NavCardWrapper"],
 .c0 > *.active:hover div[class*="NavCardWrapper"] {
-  background-color: #181818;
+  background-color: #0c0c0c;
 }
 
 .c0 > *:active div[class*="NavCardWrapper"]:after,
