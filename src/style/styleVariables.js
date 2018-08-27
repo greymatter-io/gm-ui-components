@@ -30,6 +30,16 @@ export const ICON_VIEWBOX_SIZE = SPACING_BASE * 3; // Move to Icons component?
 export const ZINDEX_TOOLTIP = "1070";
 export const ZINDEX_STICKY = "1010";
 
+export const RADIUS_05 = '4px' // spacingScale(0.5);
+export const RADIUS_1 = '8px'  // spacingScale(1);
+export const RADIUS_2 = '16px' // spacingScale(2);
+export const RADIUS_3 = '24px' // spacingScale(3);
+export const RADIUS_4 = '32px' // spacingScale(4);
+export const RADIUS_5 = '40px' // spacingScale(5);
+export const RADIUS_6 = '48px' // spacingScale(6);
+export const RADIUS_7 = '56px' // spacingScale(7);
+export const RADIUS_8 = '64px' // spacingScale(8);
+
 // TYPOGRAPHY
 export const FONTS_SYSTEM = `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`;
 export const FONTS_BRAND = `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`;
