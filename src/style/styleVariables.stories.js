@@ -50,7 +50,11 @@ import { spacingScale } from "./styleFunctions";
 const stories = storiesOf("Style Variables", module);
 
 const DemoItem = styled.div.attrs({
-  title: props => props.demoVarName
+  title: props => props.demoVarName,
+  onClick: props => () => {
+    copy(props.demoVarName);
+    alert(`${props.demoVarName} copied to clipboard`);
+  }
 })`
   background: transparent;
   border-radius: ${RADIUS_1};
@@ -218,403 +222,140 @@ stories.addDecorator(withKnobs).add("Style Variables", () => (
         <SpacingDemo
           demoVar={spacingScale(0.25)}
           demoVarName={"spacingScale(0.25)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(0.5)}
           demoVarName={"spacingScale(0.5)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(1)}
           demoVarName={"spacingScale(1)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(1.5)}
           demoVarName={"spacingScale(1.5)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(2)}
           demoVarName={"spacingScale(2)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(3)}
           demoVarName={"spacingScale(3)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(4)}
           demoVarName={"spacingScale(4)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(5)}
           demoVarName={"spacingScale(5)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <SpacingDemo
           demoVar={spacingScale(6)}
           demoVarName={"spacingScale(6)"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
       </DemoSubSection>
       <DemoSubSection name="Opacity">
-        <OpacityDemo
-          demoVar={OPACITY_100}
-          demoVarName={"OPACITY_100"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <OpacityDemo
-          demoVar={OPACITY_70}
-          demoVarName={"OPACITY_70"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <OpacityDemo
-          demoVar={OPACITY_50}
-          demoVarName={"OPACITY_50"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <OpacityDemo
-          demoVar={OPACITY_15}
-          demoVarName={"OPACITY_15"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
+        <OpacityDemo demoVar={OPACITY_100} demoVarName={"OPACITY_100"} />
+        <OpacityDemo demoVar={OPACITY_70} demoVarName={"OPACITY_70"} />
+        <OpacityDemo demoVar={OPACITY_50} demoVarName={"OPACITY_50"} />
+        <OpacityDemo demoVar={OPACITY_15} demoVarName={"OPACITY_15"} />
       </DemoSubSection>
       <DemoSubSection name="Rounding">
-        <RadiusDemo
-          demoVar={RADIUS_05}
-          demoVarName={"RADIUS_05"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_1}
-          demoVarName={"RADIUS_1"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_2}
-          demoVarName={"RADIUS_2"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_3}
-          demoVarName={"RADIUS_3"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_4}
-          demoVarName={"RADIUS_4"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_5}
-          demoVarName={"RADIUS_5"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_6}
-          demoVarName={"RADIUS_6"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_7}
-          demoVarName={"RADIUS_7"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <RadiusDemo
-          demoVar={RADIUS_8}
-          demoVarName={"RADIUS_8"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
+        <RadiusDemo demoVar={RADIUS_05} demoVarName={"RADIUS_05"} />
+        <RadiusDemo demoVar={RADIUS_1} demoVarName={"RADIUS_1"} />
+        <RadiusDemo demoVar={RADIUS_2} demoVarName={"RADIUS_2"} />
+        <RadiusDemo demoVar={RADIUS_3} demoVarName={"RADIUS_3"} />
+        <RadiusDemo demoVar={RADIUS_4} demoVarName={"RADIUS_4"} />
+        <RadiusDemo demoVar={RADIUS_5} demoVarName={"RADIUS_5"} />
+        <RadiusDemo demoVar={RADIUS_6} demoVarName={"RADIUS_6"} />
+        <RadiusDemo demoVar={RADIUS_7} demoVarName={"RADIUS_7"} />
+        <RadiusDemo demoVar={RADIUS_8} demoVarName={"RADIUS_8"} />
       </DemoSubSection>
     </DemoSection>
 
     <DemoSection name="Colors">
       <DemoSubSection name="Brand Colors">
-        <ColorDemo
-          demoVar={COLOR_BRAND_A}
-          demoVarName={"COLOR_BRAND_A"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <ColorDemo
-          demoVar={COLOR_BRAND_B}
-          demoVarName={"COLOR_BRAND_B"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
+        <ColorDemo demoVar={COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
+        <ColorDemo demoVar={COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
       </DemoSubSection>
       <DemoSubSection name="Border Colors">
-        <ColorLineDemo
-          demoVar={COLOR_KEYLINE}
-          demoVarName={"COLOR_KEYLINE"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
+        <ColorLineDemo demoVar={COLOR_KEYLINE} demoVarName={"COLOR_KEYLINE"} />
         <ColorLineDemo
           demoVar={COLOR_KEYLINE_SOLID}
           demoVarName={"COLOR_KEYLINE_SOLID"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
       </DemoSubSection>
       <DemoSubSection name="Intent Colors">
         <ColorDemo
           demoVar={COLOR_INTENT_HIGHLIGHT}
           demoVarName={"COLOR_INTENT_HIGHLIGHT"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <ColorDemo
           demoVar={COLOR_INTENT_SUCCESS}
           demoVarName={"COLOR_INTENT_SUCCESS"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <ColorDemo
           demoVar={COLOR_INTENT_INFO}
           demoVarName={"COLOR_INTENT_INFO"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <ColorDemo
           demoVar={COLOR_INTENT_WARNING}
           demoVarName={"COLOR_INTENT_WARNING"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <ColorDemo
           demoVar={COLOR_INTENT_DANGER}
           demoVarName={"COLOR_INTENT_DANGER"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
       </DemoSubSection>
       <DemoSubSection name="Background Colors">
         <ColorDemo
           demoVar={COLOR_BACKGROUND_A}
           demoVarName={"COLOR_BACKGROUND_A"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <ColorDemo
           demoVar={COLOR_BACKGROUND_B}
           demoVarName={"COLOR_BACKGROUND_B"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <ColorDemo
           demoVar={COLOR_BACKGROUND_C}
           demoVarName={"COLOR_BACKGROUND_C"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
       </DemoSubSection>
     </DemoSection>
 
     <DemoSection name="Typography">
       <DemoSubSection name="Fonts">
-        <FontDemo
-          demoVar={FONT_STACK_BRAND}
-          demoVarName={"FONT_STACK_BRAND"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <FontDemo
-          demoVar={FONT_STACK_BASE}
-          demoVarName={"FONT_STACK_BASE"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <FontDemo
-          demoVar={FONT_STACK_CODE}
-          demoVarName={"FONT_STACK_CODE"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
+        <FontDemo demoVar={FONT_STACK_BRAND} demoVarName={"FONT_STACK_BRAND"} />
+        <FontDemo demoVar={FONT_STACK_BASE} demoVarName={"FONT_STACK_BASE"} />
+        <FontDemo demoVar={FONT_STACK_CODE} demoVarName={"FONT_STACK_CODE"} />
       </DemoSubSection>
       <DemoSubSection name="Font Weights">
         <FontWeightDemo
           demoVar={FONT_WEIGHT_BASE}
           demoVarName={"FONT_WEIGHT_BASE"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <FontWeightDemo
           demoVar={FONT_WEIGHT_SEMIBOLD}
           demoVarName={"FONT_WEIGHT_SEMIBOLD"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
         <FontWeightDemo
           demoVar={FONT_WEIGHT_BOLD}
           demoVarName={"FONT_WEIGHT_BOLD"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
       </DemoSubSection>
       <DemoSubSection name="Font Sizes">
-        <FontSizeDemo
-          demoVar={FONT_SIZE_XS}
-          demoVarName={"FONT_SIZE_XS"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <FontSizeDemo
-          demoVar={FONT_SIZE_SM}
-          demoVarName={"FONT_SIZE_SM"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <FontSizeDemo
-          demoVar={FONT_SIZE_BASE}
-          demoVarName={"FONT_SIZE_BASE"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <FontSizeDemo
-          demoVar={FONT_SIZE_MD}
-          demoVarName={"FONT_SIZE_MD"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
-        <FontSizeDemo
-          demoVar={FONT_SIZE_LG}
-          demoVarName={"FONT_SIZE_LG"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
+        <FontSizeDemo demoVar={FONT_SIZE_XS} demoVarName={"FONT_SIZE_XS"} />
+        <FontSizeDemo demoVar={FONT_SIZE_SM} demoVarName={"FONT_SIZE_SM"} />
+        <FontSizeDemo demoVar={FONT_SIZE_BASE} demoVarName={"FONT_SIZE_BASE"} />
+        <FontSizeDemo demoVar={FONT_SIZE_MD} demoVarName={"FONT_SIZE_MD"} />
+        <FontSizeDemo demoVar={FONT_SIZE_LG} demoVarName={"FONT_SIZE_LG"} />
         <FontSizeDemo
           demoVar={FONT_SIZE_TITLE}
           demoVarName={"FONT_SIZE_TITLE"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
         />
-        <FontSizeDemo
-          demoVar={FONT_SIZE_HERO}
-          demoVarName={"FONT_SIZE_HERO"}
-          onClick={e => {
-            copy(e.target.title);
-            alert(`${e.target.title} copied to clipboard`);
-          }}
-        />
+        <FontSizeDemo demoVar={FONT_SIZE_HERO} demoVarName={"FONT_SIZE_HERO"} />
       </DemoSubSection>
     </DemoSection>
   </div>
