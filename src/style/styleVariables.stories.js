@@ -42,7 +42,8 @@ import {
   RADIUS_5,
   RADIUS_6,
   RADIUS_7,
-  RADIUS_8
+  RADIUS_8,
+  ZINDEX_STICKY
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
@@ -113,14 +114,17 @@ const DemoItem = styled.button.attrs({
   }
 `;
 
-const DemoSection = styled.div`
+const DemoSection = styled.div.attrs({
+  id: props => props.name
+})`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   font-family: ${FONT_STACK_BASE};
   flex: 0 0 100%;
   line-height: 1.5;
-  margin: ${spacingScale(1)};
+  margin-top: calc(${spacingScale(2)});
+  padding-top: ${spacingScale(4)};
   box-sizing: border-box;
 
   &:before { 
@@ -134,14 +138,15 @@ const DemoSection = styled.div`
   }
 
   &:not(:first-of-type) {
-    margin-top: calc(${spacingScale(10)} + 10vw);
-    padding-top: ${spacingScale(2)};
+    margin-top: calc(${spacingScale(8)});
+    padding-top: ${spacingScale(4)};
   }
 `;
 
 const DemoSubSection = DemoSection.extend`
   margin: 0;
   margin-top: ${spacingScale(4)};
+  padding-top: 0;
   flex: 0 0 100%;
 
   &:before {
@@ -152,7 +157,7 @@ const DemoSubSection = DemoSection.extend`
   }
 
   &:not(:first-of-type) {
-    margin-top: ${spacingScale(10)};
+    margin-top: ${spacingScale(4)};
     padding-top: 0;
     border: 0;
   }
@@ -293,11 +298,54 @@ const DemoDescription = styled.p`
 `;
 
 
+const DemoHeading = styled.h1`
+  font-family: ${FONT_STACK_BASE};
+  margin: ${spacingScale(4)} ${spacingScale(1)};
+`;
+
+const DemoNavigation = styled.nav`
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin: ${spacingScale(5)} 0 ${spacingScale(2)};
+  height: ${spacingScale(5)};
+  background-color: ${COLOR_BACKGROUND_A};
+  box-shadow: 0 1px 0 0 ${COLOR_KEYLINE};
+  z-index: ${ZINDEX_STICKY};
+  position: sticky;
+  top: 0;
+`;
+
+const DemoNavigationItem = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ${FONT_STACK_BASE};
+  font-weight: ${FONT_WEIGHT_BOLD};
+  color: ${COLOR_INTENT_HIGHLIGHT};
+  flex: 1 1 100%;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+
 stories
   .add(
     "Style Variables",
     (() => (
       <DemoCanvas>
+
+        <DemoHeading>Style Variables</DemoHeading>
+
+        <DemoNavigation>
+          <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>
+          <DemoNavigationItem href="#Color">Color</DemoNavigationItem>
+          <DemoNavigationItem href="#Typography">Typography</DemoNavigationItem>
+        </DemoNavigation>
+
         <DemoSection name="Layout">
 
           <DemoSubSection name="Spacing">
@@ -335,13 +383,7 @@ stories
           </DemoSubSection>
         </DemoSection>
 
-        <DemoSection name="Colors">
-
-          <DemoSubSection name="Brand Colors">
-            <DemoDescription>Use Brand colors where the company's visual style needs to be represented directly. Consider using only in places where the logo may appear. Avoid using for interaction colors like links and buttons.</DemoDescription>
-            <ColorDemo demoVar={COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
-            <ColorDemo demoVar={COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
-          </DemoSubSection>
+        <DemoSection name="Color">
 
           <DemoSubSection name="Intent Colors">
             <DemoDescription>Use Intent colors to hint at interactable elements, or to indicate the type of effect an action could have or has had. Use with links, buttons, notification badges, and the like.</DemoDescription>
@@ -353,7 +395,7 @@ stories
           </DemoSubSection>
 
           <DemoSubSection name="Border Colors">
-            <DemoDescription>Use borders sparingly. Prefer using keyline color, because it will be tinted by the colors underneath it. However, when many layers are required (consider a horizontal toolbar with a shadow, above a series of vertical file columns using borders), consider using KEYLINE_SOLID to prevent the distracting accumulation of tints.</DemoDescription>
+            <DemoDescription>Use borders sparingly. Prefer using keyline color, because it will be tinted by the colors underneath it. However, when many layers are required (consider a horizontal toolbar with a shadow, above a series of vertical file columns using borders), consider using KEYLINE_SOLID to prevent the distracting accumulation of tints. Consider implementing borders using the spread attribute of a box shadow.</DemoDescription>
             <ColorLineDemo demoVar={COLOR_KEYLINE} demoVarName={"COLOR_KEYLINE"} />
             <ColorLineDemo demoVar={COLOR_KEYLINE_SOLID} demoVarName={"COLOR_KEYLINE_SOLID"} />
           </DemoSubSection>
@@ -364,23 +406,15 @@ stories
             <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_B} demoVarName={"COLOR_BACKGROUND_B"} />
             <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_C} demoVarName={"COLOR_BACKGROUND_C"} />
           </DemoSubSection>
+
+          <DemoSubSection name="Brand Colors">
+            <DemoDescription>Use Brand colors where the company's visual style needs to be represented directly. Consider using only in places where the logo may appear. Avoid using for interaction colors like links and buttons.</DemoDescription>
+            <ColorDemo demoVar={COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
+            <ColorDemo demoVar={COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
+          </DemoSubSection>
         </DemoSection>
 
         <DemoSection name="Typography">
-
-          <DemoSubSection name="Fonts">
-            <DemoDescription>Font Stacks are compositions of Font Groups. All Font Stacks are backed by the operating system default sans-serif Font Group, and may include specialized fonts. Use FONT_STACK_BRAND sparingly, and keep it limited to large headings.</DemoDescription>
-            <FontDemo demoVar={FONT_STACK_BRAND} demoVarName={"FONT_STACK_BRAND"} />
-            <FontDemo demoVar={FONT_STACK_BASE} demoVarName={"FONT_STACK_BASE"} />
-            <FontDemo demoVar={FONT_STACK_CODE} demoVarName={"FONT_STACK_CODE"} />
-          </DemoSubSection>
-
-          <DemoSubSection name="Font Weights">
-            <DemoDescription>When in doubt, use the base weight. Use special weights only where necessary to reinforce visual heirarchy.</DemoDescription>
-            <FontWeightDemo demoVar={FONT_WEIGHT_BASE} demoVarName={"FONT_WEIGHT_BASE"} />
-            <FontWeightDemo demoVar={FONT_WEIGHT_SEMIBOLD} demoVarName={"FONT_WEIGHT_SEMIBOLD"} />
-            <FontWeightDemo demoVar={FONT_WEIGHT_BOLD} demoVarName={"FONT_WEIGHT_BOLD"} />
-          </DemoSubSection>
 
           <DemoSubSection name="Font Sizes">
             <DemoDescription>When in doubt, use the base size. Prefer using horizontal or vertical negative space to differentiate elements, when possible.</DemoDescription>
@@ -391,6 +425,20 @@ stories
             <FontSizeDemo demoVar={FONT_SIZE_LG} demoVarName={"FONT_SIZE_LG"} />
             <FontSizeDemo demoVar={FONT_SIZE_TITLE} demoVarName={"FONT_SIZE_TITLE"} />
             <FontSizeDemo demoVar={FONT_SIZE_HERO} demoVarName={"FONT_SIZE_HERO"} />
+          </DemoSubSection>
+
+          <DemoSubSection name="Font Weights">
+            <DemoDescription>When in doubt, use the base weight. Use special weights only where necessary to reinforce visual heirarchy.</DemoDescription>
+            <FontWeightDemo demoVar={FONT_WEIGHT_BASE} demoVarName={"FONT_WEIGHT_BASE"} />
+            <FontWeightDemo demoVar={FONT_WEIGHT_SEMIBOLD} demoVarName={"FONT_WEIGHT_SEMIBOLD"} />
+            <FontWeightDemo demoVar={FONT_WEIGHT_BOLD} demoVarName={"FONT_WEIGHT_BOLD"} />
+          </DemoSubSection>
+
+          <DemoSubSection name="Fonts">
+            <DemoDescription>Font Stacks are compositions of Font Groups. All Font Stacks are backed by the operating system default sans-serif Font Group, and may include specialized fonts. Use FONT_STACK_BRAND sparingly, and keep it limited to large headings.</DemoDescription>
+            <FontDemo demoVar={FONT_STACK_BRAND} demoVarName={"FONT_STACK_BRAND"} />
+            <FontDemo demoVar={FONT_STACK_BASE} demoVarName={"FONT_STACK_BASE"} />
+            <FontDemo demoVar={FONT_STACK_CODE} demoVarName={"FONT_STACK_CODE"} />
           </DemoSubSection>
         </DemoSection>
 
