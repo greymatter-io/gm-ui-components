@@ -14,9 +14,9 @@ stories.addDecorator(withKnobs).add(
     return (
       <div style={{ width: "100vw" }}>
         <TabGroup label={text("label", "Tab Group")}>
-          <Tab label="Active Tab" active />
-          <Tab label="Label" />
-          <Tab label="Disabled" disabled />
+          <Tab clickAction={() => {}} label="Active Tab" active />
+          <Tab clickAction={() => {}} label="Label" />
+          <Tab clickAction={() => {}} label="Disabled" disabled />
         </TabGroup>
       </div>
     );
