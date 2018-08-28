@@ -1,6 +1,7 @@
 import React from "react";
 import { readableColor } from "polished";
 import styled from 'styled-components';
+import copy from "copy-to-clipboard";
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs/react";
 
@@ -59,6 +60,10 @@ const DemoCanvas = styled.div`
 
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
+  onClick: e => {
+    copy(e.target.title);
+    alert(`${e.target.title} copied to clipboard`);
+  }
 })`
   box-sizing: border-box;
   background: ${COLOR_BACKGROUND_A};
