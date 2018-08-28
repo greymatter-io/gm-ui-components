@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import {
   withKnobs,
@@ -11,6 +12,8 @@ import { withInfo } from "@storybook/addon-info";
 
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
+import { spacingScale } from "style/styleFunctions";
+import { FONT_STACK_BASE, COLOR_KEYLINE_SOLID, FONT_SIZE_SM, COLOR_BACKGROUND_A, OPACITY_70 } from "style/styleVariables";
 
 const glyphNames = [
   "IconArrowDown",
@@ -201,6 +204,33 @@ const iconBackgroundNames = [
   "BackgroundTriangleSmall"
 ];
 
+const GalleryIconList = styled.ul`
+  margin: 0;
+  font-family: ${FONT_STACK_BASE};
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid ${COLOR_KEYLINE_SOLID};
+  border-width: 0 1px 1px 0;
+`;
+
+const GalleryIconDemo = styled.li`
+  border: 1px solid ${COLOR_KEYLINE_SOLID};
+  background-color: ${COLOR_BACKGROUND_A};
+  box-shadow: 1px 1px 0 0 ${COLOR_KEYLINE_SOLID};
+  border-width: 1px 0 0 1px;
+  flex: 1 0 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: ${spacingScale(2)};
+`;
+
+const GalleryIconLabel = styled.p`
+  margin: ${spacingScale(1)};
+  font-size: ${FONT_SIZE_SM};
+  opacity: ${OPACITY_70}
+`;
+
 storiesOf("Icons", module)
   .addDecorator(withKnobs)
   .add(
@@ -258,29 +288,19 @@ storiesOf("Icons", module)
       "A gallery of all native Glyphs. Import the desired Glyph by name and pass desired props as documented in Icons/default"
     )(() => {
       return (
-        <div>
+        <GalleryIconList>
           {glyphNames.map(glyph => {
             let Glyph = Glyphs[glyph];
             return (
-              <div
-                key={glyph}
-                style={{
-                  width: "100%",
-                  maxWidth: "400px",
-                  margin: "auto",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center"
-                }}
-              >
-                <span>{glyph}: </span>
-                <Icon size={text("size", "100px")}>
+              <GalleryIconDemo key={glyph}>
+                <Icon size={text("size", "40px")}>
                   <Glyph />
                 </Icon>
-              </div>
+                <GalleryIconLabel>{glyph}</GalleryIconLabel>
+              </GalleryIconDemo>
             );
           })}
-        </div>
+        </GalleryIconList>
       );
     })
   );
