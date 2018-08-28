@@ -55,7 +55,9 @@ const DemoCanvas = styled.div`
 
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
-  onClick: e => {
+  onClick: props => () => {
+    copy('${' + props.demoVarName + '}');
+    alert('${' + `${props.demoVarName}} copied to clipboard`);
   }
 })`
   box-sizing: border-box;
@@ -92,6 +94,7 @@ const DemoItem = styled.button.attrs({
 
   &:focus {
     color: #000;
+    outline: none;
   }
 `;
 
