@@ -1,9 +1,8 @@
 import React from "react";
 import { readableColor } from "polished";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import copy from "copy-to-clipboard";
 import { storiesOf } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs/react";
 
 import {
   FONT_SIZE_BASE,
@@ -52,12 +51,11 @@ const stories = storiesOf("Style Variables", module);
 const DemoCanvas = styled.div`
 `;
 
-
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
   onClick: props => () => {
     copy('${' + props.demoVarName + '}');
-    alert('${' + `${props.demoVarName}} copied to clipboard`);
+    // alert('${' + `${props.demoVarName}} copied to clipboard`);
   }
 })`
   box-sizing: border-box;
@@ -72,28 +70,45 @@ const DemoItem = styled.button.attrs({
   transition: all .3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   text-align: center;
-  color: #000;
   cursor: pointer;
 
   &:after {
     content: '${props => props.demoVarName}';
     margin-top: ${spacingScale(1)};
     margin-bottom: ${spacingScale(1)};
+    transition: all .5s ease;
     font-family: ${FONT_STACK_BASE};
     font-size: ${FONT_SIZE_SM};
     opacity: ${OPACITY_70};
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 0 0 1.5px ${COLOR_INTENT_HIGHLIGHT};
     transition: all .15s ease;
+
+    &:after {
+      transition: inherit;
+      content: 'Copy to Clipboard';
+      opacity: ${OPACITY_100};
+      color: ${COLOR_INTENT_HIGHLIGHT};
+    }
+
+    &:active {
+      transition: 0;
+
+      &:after{
+        font-weight: ${FONT_WEIGHT_SEMIBOLD};
+        color: ${COLOR_INTENT_HIGHLIGHT};
+      }
+    }
   }
 
-  &:focus {
-    color: #000;
+  &:focus,
+  &:active {
     outline: none;
   }
 `;
@@ -121,7 +136,6 @@ const DemoSection = styled.div`
   &:not(:first-of-type) {
     margin-top: calc(${spacingScale(10)} + 10vw);
     padding-top: ${spacingScale(2)};
-    border-top: 1.5px solid;
   }
 `;
 
@@ -138,7 +152,7 @@ const DemoSubSection = DemoSection.extend`
   }
 
   &:not(:first-of-type) {
-    margin-top: ${spacingScale(6)};
+    margin-top: ${spacingScale(10)};
     padding-top: 0;
     border: 0;
   }
@@ -228,7 +242,7 @@ const RadiusDemo = DemoItem.extend`
   &:before {
     content: "";
     border: 1px solid ${COLOR_BRAND_A};
-    margin: auto ${spacingScale(1)} 0;
+    margin: auto auto 0;
     border-width: 1px 1px 0 0;
     height: ${spacingScale(8)};
     width: ${spacingScale(8)};
@@ -280,7 +294,6 @@ const DemoDescription = styled.p`
 
 
 stories
-  .addDecorator(withKnobs)
   .add(
     "Style Variables",
     (() => (
