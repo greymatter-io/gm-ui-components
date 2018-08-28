@@ -1,5 +1,5 @@
 import React from "react";
-import { readableColor } from "polished";
+import { readableColor, transparentize } from "polished";
 import styled from "styled-components";
 import copy from "copy-to-clipboard";
 import { storiesOf } from "@storybook/react";
@@ -23,6 +23,7 @@ import {
   COLOR_BACKGROUND_C,
   COLOR_BRAND_A,
   COLOR_BRAND_B,
+  COLOR_CONTENT,
   COLOR_INTENT_DANGER,
   COLOR_INTENT_HIGHLIGHT,
   COLOR_INTENT_INFO,
@@ -321,13 +322,53 @@ const DemoNavigationItem = styled.a`
   align-items: center;
   justify-content: center;
   font-family: ${FONT_STACK_BASE};
+  font-size: ${FONT_SIZE_BASE};
+  color: ${COLOR_CONTENT};
   font-weight: ${FONT_WEIGHT_BOLD};
-  color: ${COLOR_INTENT_HIGHLIGHT};
   flex: 1 1 100%;
   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+  &:before {
+    content: '';
+    margin-right: ${spacingScale(1)};
+    color: ${COLOR_BRAND_A};
+  }
+
+  &[href="#Layout"] {
+    &:before {
+      width: ${spacingScale(2)};
+      height: ${spacingScale(2)};
+      border-radius: 1.5px;
+      border: 1px solid ${COLOR_BACKGROUND_A};
+      box-shadow: 0 0 0 2px, inset 0 0 0 1px;
+    }
+  }
+
+  &[href="#Color"] {
+
+    &:before {
+      content: '';
+      border-radius: ${RADIUS_8};
+      height: ${spacingScale(2)};
+      width: ${spacingScale(2)};
+      position: relative;
+      right: ${spacingScale(0.5)};
+      bottom: ${spacingScale(0.5)};
+      background-color: ${COLOR_BRAND_A};
+      box-shadow:
+        ${spacingScale(0.5)} ${spacingScale(0.5)} 0 ${transparentize(1 - OPACITY_70, COLOR_BRAND_A)},
+        ${spacingScale(1)} ${spacingScale(1)} 0 ${transparentize(1 - OPACITY_50, COLOR_BRAND_A)}
+      ;
+    }
+  }
+
+  &[href="#Typography"] {
+    &:before {
+      content: 'Aa';
+      transform: scale(1.15);
+      font-weight: ${FONT_WEIGHT_BASE};
+      font-size: ${FONT_SIZE_LG};
+    }
   }
 `;
 
@@ -359,14 +400,6 @@ stories
             <SpacingDemo demoVar={spacingScale(4)} demoVarName={"spacingScale(4)"} />
             <SpacingDemo demoVar={spacingScale(5)} demoVarName={"spacingScale(5)"} />
             <SpacingDemo demoVar={spacingScale(6)} demoVarName={"spacingScale(6)"} />
-          </DemoSubSection>
-
-          <DemoSubSection name="Opacity">
-            <DemoDescription>Stick to the basic palette of opacity values to limit subjective colors across an application. Levels 100, 70, and 50 may be used to lighten text for captions or similar uses, where appropriate.</DemoDescription>
-            <OpacityDemo demoVar={OPACITY_100} demoVarName={"OPACITY_100"} />
-            <OpacityDemo demoVar={OPACITY_70} demoVarName={"OPACITY_70"} />
-            <OpacityDemo demoVar={OPACITY_50} demoVarName={"OPACITY_50"} />
-            <OpacityDemo demoVar={OPACITY_15} demoVarName={"OPACITY_15"} />
           </DemoSubSection>
 
           <DemoSubSection name="Rounding">
@@ -411,6 +444,14 @@ stories
             <DemoDescription>Use Brand colors where the company's visual style needs to be represented directly. Consider using only in places where the logo may appear. Avoid using for interaction colors like links and buttons.</DemoDescription>
             <ColorDemo demoVar={COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
             <ColorDemo demoVar={COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
+          </DemoSubSection>
+
+          <DemoSubSection name="Opacity">
+            <DemoDescription>Stick to the basic palette of opacity values to limit subjective colors across an application. Levels 100, 70, and 50 may be used to lighten text for captions or similar uses, where appropriate.</DemoDescription>
+            <OpacityDemo demoVar={OPACITY_100} demoVarName={"OPACITY_100"} />
+            <OpacityDemo demoVar={OPACITY_70} demoVarName={"OPACITY_70"} />
+            <OpacityDemo demoVar={OPACITY_50} demoVarName={"OPACITY_50"} />
+            <OpacityDemo demoVar={OPACITY_15} demoVarName={"OPACITY_15"} />
           </DemoSubSection>
         </DemoSection>
 
