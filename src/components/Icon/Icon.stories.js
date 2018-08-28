@@ -187,7 +187,7 @@ const glyphNames = [
   "IconUserShare",
   "IconViewCollapse",
   "IconX",
-  "IconXSmall",
+  "IconXSmall"
 ];
 
 const iconBackgroundNames = [
