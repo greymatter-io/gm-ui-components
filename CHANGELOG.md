@@ -1,12 +1,3 @@
-<a name="0.5.3"></a>
-
-# 0.5.3 (2018-08-28)
-
-### Fixes
-
-- remove new line in IconFinagle SVG path expression
-- resolve console errors for Storybook stories
-
 <a name="0.5.2"></a>
 
 # 0.5.2 (2018-08-21)
