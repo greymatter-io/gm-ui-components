@@ -56,24 +56,40 @@ const DemoItem = styled.div.attrs({
     alert(`${props.demoVarName} copied to clipboard`);
   }
 })`
-  background: transparent;
+  box-sizing: border-box;
+  background: ${COLOR_BACKGROUND_A};
   border-radius: ${RADIUS_1};
   margin: ${spacingScale(1)};
+  width: ${spacingScale(16)};
   font-size: ${FONT_SIZE_SM};
   border: 1px solid #fff;
+  padding: 0;
   box-shadow: 0 0 0 1px ${COLOR_KEYLINE};
+  transition: all .3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: #000;
+  cursor: pointer;
 
   &:after {
     content: '${props => props.demoVarName}';
     margin-top: ${spacingScale(1)};
+    margin-bottom: ${spacingScale(1)};
     font-family: ${FONT_STACK_BASE};
     font-size: ${FONT_SIZE_SM};
     opacity: ${OPACITY_70};
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1.5px ${COLOR_INTENT_HIGHLIGHT};
+    transition: all .15s ease;
+  }
+
+  &:focus {
+    color: #000;
   }
 `;
 
@@ -82,6 +98,10 @@ const DemoSection = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   font-family: ${FONT_STACK_BASE};
+  flex: 0 0 100%;
+  line-height: 1.5;
+  margin: ${spacingScale(1)};
+  box-sizing: border-box;
 
   &:before { 
     content: '${props => props.name}';
@@ -91,16 +111,18 @@ const DemoSection = styled.div`
     user-select: text;
     font-size: ${FONT_SIZE_HERO};
     font-weight: ${FONT_WEIGHT_SEMIBOLD};
-    opacity: ${OPACITY_70};
   }
 
   &:not(:first-of-type) {
-    margin-top: ${spacingScale(24)};
+    margin-top: calc(${spacingScale(10)} + 10vw);
+    padding-top: ${spacingScale(2)};
+    border-top: 1.5px solid;
   }
 `;
 
 const DemoSubSection = DemoSection.extend`
-  margin-top: ${spacingScale(4)};
+  margin: 0;
+  margin-top: ${spacingScale(3)};
   flex: 0 0 100%;
 
   &:before {
@@ -111,43 +133,73 @@ const DemoSubSection = DemoSection.extend`
   }
 
   &:not(:first-of-type) {
-    margin-top: ${spacingScale(6)};
+    margin-top: ${spacingScale(3)};
+    padding-top: 0;
+    border: 0;
   }
 `;
 
 const ColorDemo = DemoItem.extend`
-  background-color: ${props => props.demoVar};
-  color: ${props => readableColor(props.demoVar)};
-  height: ${spacingScale(6)};
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) ${spacingScale(7)},
+      rgba(255, 255, 255, 1) ${spacingScale(7)},
+      rgba(255, 255, 255, 1)
+    ),
+    linear-gradient(
+      to right,
+      ${COLOR_BACKGROUND_A} 0%,
+      ${COLOR_BACKGROUND_A} 33%,
+      ${COLOR_BACKGROUND_B} 33%,
+      ${COLOR_BACKGROUND_B} 66%,
+      ${COLOR_BACKGROUND_C} 66%,
+      ${COLOR_BACKGROUND_C} 100%
+    );
+  height: ${spacingScale(11)};
   width: ${spacingScale(22)};
+  justify-content: stretch;
+  align-items: stretch;
+
+  &:before {
+    content: "";
+    height: ${spacingScale(4)};
+    margin: ${spacingScale(1.5)} ${spacingScale(1.5)} 0;
+    border-radius: ${RADIUS_05};
+    background-color: ${props => props.demoVar};
+  }
 
   &:after {
-    font-weight: ${FONT_WEIGHT_BOLD};
     opacity: ${OPACITY_70};
-    margin: ${spacingScale(0.25)};
+    margin: auto ${spacingScale(0.25)} ${spacingScale(1)};
   }
 `;
 
 const ColorLineDemo = ColorDemo.extend`
   align-items: stretch;
-  background-color: transparent;
+  background-color: ${COLOR_BACKGROUND_A};
 
   &:before {
     content: "";
     border-top: 1px solid ${props => props.demoVar};
-    margin: ${spacingScale(1)} ${spacingScale(2)} ${spacingScale(1)};
+    background: transparent;
+    height: 0;
+    margin: ${spacingScale(3.5)} ${spacingScale(1.5)} 0;
   }
+`;
 
-  &:after {
-    color: #000;
-    margin: 0;
+const ColorBackgroundDemo = ColorDemo.extend`
+  background: ${props => props.demoVar};
+  color: ${props => readableColor(props.demoVar)};
+
+  &:before {
+    content: none;
   }
 `;
 
 const FontDemo = DemoItem.extend`
   font-family: ${props => props.demoVar};
-  padding: ${spacingScale(1)};
-  flex: 0 0 100%;
+  padding: ${spacingScale(1)} ${spacingScale(1)} 0;
+  flex: 1 1 100%;
   align-items: stretch;
   justify-content: flex-start;
   text-align: left;
@@ -155,6 +207,10 @@ const FontDemo = DemoItem.extend`
   &:before {
     content: "The quick brown fox jumps over the lazy dog";
     font-size: ${FONT_SIZE_TITLE};
+  }
+
+  &:after {
+    margin-bottom: ${spacingScale(1)};
   }
 `;
 
@@ -168,7 +224,6 @@ const FontSizeDemo = FontDemo.extend`
 
 const FontWeightDemo = FontDemo.extend`
   &:before {
-    margin-top: ${spacingScale(1)};
     font-size: ${FONT_SIZE_BASE};
     font-weight: ${props => props.demoVar};
   }
@@ -176,11 +231,11 @@ const FontWeightDemo = FontDemo.extend`
 
 const RadiusDemo = DemoItem.extend`
   height: ${spacingScale(14)};
-  width: ${spacingScale(11)};
 
   &:before {
     content: "";
     border: 1px solid ${COLOR_BRAND_A};
+    margin: auto ${spacingScale(1)} 0;
     border-width: 1px 1px 0 0;
     height: ${spacingScale(8)};
     width: ${spacingScale(8)};
@@ -190,12 +245,13 @@ const RadiusDemo = DemoItem.extend`
 
 const OpacityDemo = DemoItem.extend`
   height: ${spacingScale(12)};
-  width: ${spacingScale(10)};
+  align-items: stretch;
 
   &:before {
     content: "";
+    flex: 1 1 100%;
     height: ${spacingScale(6)};
-    width: ${spacingScale(6)};
+    margin: ${spacingScale(1)} ${spacingScale(1)} 0;
     border-radius: ${RADIUS_05};
     background: ${COLOR_BRAND_A};
     opacity: ${props => props.demoVar};
@@ -203,15 +259,29 @@ const OpacityDemo = DemoItem.extend`
 `;
 
 const SpacingDemo = DemoItem.extend`
-  height: ${spacingScale(10)};
-  width: ${spacingScale(14)};
+  height: ${spacingScale(7)};
 
   &:before {
     content: "";
     height: ${spacingScale(0.5)};
+    margin: ${spacingScale(2)} auto ${spacingScale(0)};
     border: 1px solid ${COLOR_BRAND_A};
+    border-radius: 0 0 1.5px 1.5px;
     border-top: 0;
     width: ${props => props.demoVar};
+  }
+`;
+
+const DemoDescription = styled.p`
+  margin: ${spacingScale(-0.5)} ${spacingScale(1)} ${spacingScale(1.5)};
+  font-size: ${FONT_SIZE_BASE};
+  font-family: ${FONT_STACK_BASE};
+  display: flex;
+  flex: 1 0 100%;
+
+  &:after {
+    content: "";
+    flex: 1 0 calc(100% - 45em);
   }
 `;
 
