@@ -1,6 +1,6 @@
 import React from "react";
 import { readableColor } from "polished";
-import styled from 'styled-components';
+import styled from "styled-components";
 import copy from "copy-to-clipboard";
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs/react";
@@ -19,7 +19,6 @@ import {
   FONT_WEIGHT_BASE,
   FONT_WEIGHT_BOLD,
   FONT_WEIGHT_SEMIBOLD,
-
   COLOR_BACKGROUND_A,
   COLOR_BACKGROUND_B,
   COLOR_BACKGROUND_C,
@@ -32,12 +31,10 @@ import {
   COLOR_INTENT_WARNING,
   COLOR_KEYLINE,
   COLOR_KEYLINE_SOLID,
-
   OPACITY_100,
   OPACITY_70,
   OPACITY_50,
   OPACITY_15,
-
   RADIUS_05,
   RADIUS_1,
   RADIUS_2,
@@ -46,12 +43,11 @@ import {
   RADIUS_5,
   RADIUS_6,
   RADIUS_7,
-  RADIUS_8,
+  RADIUS_8
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
 const stories = storiesOf("Style Variables", module);
-
 
 const DemoCanvas = styled.div`
   background-color: ${COLOR_BACKGROUND_B};
@@ -102,7 +98,6 @@ const DemoItem = styled.button.attrs({
   }
 `;
 
-
 const DemoSection = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +130,7 @@ const DemoSubSection = DemoSection.extend`
   margin-top: ${spacingScale(3)};
   flex: 0 0 100%;
 
-  &:before { 
+  &:before {
     font-size: ${FONT_SIZE_MD};
     font-weight: ${FONT_WEIGHT_BOLD};
     letter-spacing: 0.03em;
@@ -177,7 +172,7 @@ const ColorLineDemo = ColorDemo.extend`
   background-color: ${COLOR_BACKGROUND_A};
 
   &:before {
-    content: '';
+    content: "";
     border-top: 1px solid ${props => props.demoVar};
     background: transparent;
     height: 0;
@@ -194,7 +189,6 @@ const ColorBackgroundDemo = ColorDemo.extend`
   }
 `;
 
-
 const FontDemo = DemoItem.extend`
   font-family: ${props => props.demoVar};
   padding: ${spacingScale(1)} ${spacingScale(1)} 0;
@@ -204,7 +198,7 @@ const FontDemo = DemoItem.extend`
   text-align: left;
 
   &:before {
-    content: 'The quick brown fox jumps over the lazy dog';
+    content: "The quick brown fox jumps over the lazy dog";
     font-size: ${FONT_SIZE_TITLE};
   }
 
@@ -221,9 +215,7 @@ const FontSizeDemo = FontDemo.extend`
   }
 `;
 
-
 const FontWeightDemo = FontDemo.extend`
-
   &:before {
     font-size: ${FONT_SIZE_BASE};
     font-weight: ${props => props.demoVar};
@@ -234,7 +226,7 @@ const RadiusDemo = DemoItem.extend`
   height: ${spacingScale(14)};
 
   &:before {
-    content: '';
+    content: "";
     border: 1px solid ${COLOR_BRAND_A};
     margin: auto ${spacingScale(1)} 0;
     border-width: 1px 1px 0 0;
@@ -242,7 +234,7 @@ const RadiusDemo = DemoItem.extend`
     width: ${spacingScale(8)};
     border-top-right-radius: ${props => props.demoVar};
   }
-`
+`;
 
 const OpacityDemo = DemoItem.extend`
   height: ${spacingScale(12)};
@@ -257,13 +249,13 @@ const OpacityDemo = DemoItem.extend`
     background: ${COLOR_BRAND_A};
     opacity: ${props => props.demoVar};
   }
-`
+`;
 
 const SpacingDemo = DemoItem.extend`
   height: ${spacingScale(7)};
 
   &:before {
-    content: '';
+    content: "";
     height: ${spacingScale(0.5)};
     margin: ${spacingScale(2)} auto ${spacingScale(0)};
     border: 1px solid ${COLOR_BRAND_A};
