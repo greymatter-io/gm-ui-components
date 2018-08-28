@@ -1,7 +1,7 @@
 
 // COLORS
 export const COLOR_BRAND_A = "#0aab2a";
-export const COLOR_BRAND_B = "#002e6e";
+export const COLOR_BRAND_B = "#0aab2a";
 export const COLOR_CONTENT = '#000';
 
 export const COLOR_BACKGROUND_A = '#fff';

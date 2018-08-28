@@ -1,6 +1,6 @@
 import React from "react";
 import { readableColor } from "polished";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import copy from "copy-to-clipboard";
 import { storiesOf } from "@storybook/react";
 
@@ -322,7 +322,7 @@ stories
           </DemoSubSection>
 
           <DemoSubSection name="Rounding">
-            <DemoDescription>Rounding corners can make shapes feel more cohesive and unified. Prefer rounded shapes to pointed shapes. In interfaces with high information density or overall visual complexity, use lower radii to save space, just as you would reduce font or margin size.</DemoDescription>
+            <DemoDescription>Rounding corners can make shapes feel more cohesive and unified. Prefer rounded shapes to pointed shapes. In interfaces with high information density or overall visual complexity, use smaller radii to save space, just as you would reduce font or margin size.</DemoDescription>
             <RadiusDemo demoVar={RADIUS_05} demoVarName={"RADIUS_05"} />
             <RadiusDemo demoVar={RADIUS_1} demoVarName={"RADIUS_1"} />
             <RadiusDemo demoVar={RADIUS_2} demoVarName={"RADIUS_2"} />
@@ -338,13 +338,13 @@ stories
         <DemoSection name="Colors">
 
           <DemoSubSection name="Brand Colors">
-            <DemoDescription>Use Brand colors where the company's visuals need to be represented directly. Consider using only in places where the logo may appear. Avoid using for interaction colors like links and buttons.</DemoDescription>
+            <DemoDescription>Use Brand colors where the company's visual style needs to be represented directly. Consider using only in places where the logo may appear. Avoid using for interaction colors like links and buttons.</DemoDescription>
             <ColorDemo demoVar={COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
             <ColorDemo demoVar={COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
           </DemoSubSection>
 
           <DemoSubSection name="Intent Colors">
-            <DemoDescription>Use Intent to hint at interactable elements, or to indicate the type of effect an action could have or has had. Use with links, buttons, notification badges, and the like.</DemoDescription>
+            <DemoDescription>Use Intent colors to hint at interactable elements, or to indicate the type of effect an action could have or has had. Use with links, buttons, notification badges, and the like.</DemoDescription>
             <ColorDemo demoVar={COLOR_INTENT_HIGHLIGHT} demoVarName={"COLOR_INTENT_HIGHLIGHT"} />
             <ColorDemo demoVar={COLOR_INTENT_SUCCESS} demoVarName={"COLOR_INTENT_SUCCESS"} />
             <ColorDemo demoVar={COLOR_INTENT_INFO} demoVarName={"COLOR_INTENT_INFO"} />
@@ -353,13 +353,13 @@ stories
           </DemoSubSection>
 
           <DemoSubSection name="Border Colors">
-            <DemoDescription>Use borders sparingly. Prefer using KEYLINE color, because it will be tinted by the colors underneath it. However, when many layers are required (consider a horizontal toolbar with a KEYLINE shadow, which overlaps a series of vertical file columns using KEYLINE borders), consider using KEYLINE_SOLID to prevent the a distracting accumulation of tints.</DemoDescription>
+            <DemoDescription>Use borders sparingly. Prefer using keyline color, because it will be tinted by the colors underneath it. However, when many layers are required (consider a horizontal toolbar with a shadow, above a series of vertical file columns using borders), consider using KEYLINE_SOLID to prevent the distracting accumulation of tints.</DemoDescription>
             <ColorLineDemo demoVar={COLOR_KEYLINE} demoVarName={"COLOR_KEYLINE"} />
             <ColorLineDemo demoVar={COLOR_KEYLINE_SOLID} demoVarName={"COLOR_KEYLINE_SOLID"} />
           </DemoSubSection>
 
           <DemoSubSection name="Background Colors">
-            <DemoDescription>Differences in background color should be used to represent clear divisions in application layout. Prefer visually simple layouts with few color changes.</DemoDescription>
+            <DemoDescription>Differences in background color should be used to represent clear divisions in application layout. Prefer visually simple layouts with few color changes. Too many backgrounds can make an interface feel blocky and incoherent.</DemoDescription>
             <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_A} demoVarName={"COLOR_BACKGROUND_A"} />
             <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_B} demoVarName={"COLOR_BACKGROUND_B"} />
             <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_C} demoVarName={"COLOR_BACKGROUND_C"} />
@@ -369,7 +369,7 @@ stories
         <DemoSection name="Typography">
 
           <DemoSubSection name="Fonts">
-            <DemoDescription>Font Stacks are compositions of Font Groups. All Font Stacks are backed by the operating system default sans-serif Font Group, and may include specialized fonts for more infrequent uses. Use FONT_STACK_BRAND sparingly, and keep it limited to large headings.</DemoDescription>
+            <DemoDescription>Font Stacks are compositions of Font Groups. All Font Stacks are backed by the operating system default sans-serif Font Group, and may include specialized fonts. Use FONT_STACK_BRAND sparingly, and keep it limited to large headings.</DemoDescription>
             <FontDemo demoVar={FONT_STACK_BRAND} demoVarName={"FONT_STACK_BRAND"} />
             <FontDemo demoVar={FONT_STACK_BASE} demoVarName={"FONT_STACK_BASE"} />
             <FontDemo demoVar={FONT_STACK_CODE} demoVarName={"FONT_STACK_CODE"} />
