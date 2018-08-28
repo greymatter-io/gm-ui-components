@@ -50,15 +50,12 @@ import { spacingScale } from "./styleFunctions";
 const stories = storiesOf("Style Variables", module);
 
 const DemoCanvas = styled.div`
-  background-color: ${COLOR_BACKGROUND_B};
 `;
 
 
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
   onClick: e => {
-    copy(e.target.title);
-    alert(`${e.target.title} copied to clipboard`);
   }
 })`
   box-sizing: border-box;
@@ -127,7 +124,7 @@ const DemoSection = styled.div`
 
 const DemoSubSection = DemoSection.extend`
   margin: 0;
-  margin-top: ${spacingScale(3)};
+  margin-top: ${spacingScale(4)};
   flex: 0 0 100%;
 
   &:before {
@@ -138,7 +135,7 @@ const DemoSubSection = DemoSection.extend`
   }
 
   &:not(:first-of-type) {
-    margin-top: ${spacingScale(3)};
+    margin-top: ${spacingScale(6)};
     padding-top: 0;
     border: 0;
   }
