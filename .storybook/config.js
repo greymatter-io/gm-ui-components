@@ -13,7 +13,7 @@ addDecorator(withKnobs);
 // addon-info
 setDefaults({
   header: true, // Toggles display of header with component name and description
-  inline: false, // Displays info inline vs click button to view
+  inline: true, // Displays info inline vs click button to view
   source: true, // Displays the source of story Component
   propTables: [
     /* Components used in story */
@@ -33,7 +33,7 @@ setOptions({
    * name to display in the top left corner
    * @type {String}
    */
-  name: "GM UI Components",
+  name: "Grey Matter UI Components",
   /**
    * URL for name in top left corner to link to
    * @type {String}
@@ -63,12 +63,12 @@ setOptions({
    * show horizontal addons panel as a vertical panel on the right
    * @type {Boolean}
    */
-  addonPanelInRight: false,
+  addonPanelInRight: true,
   /**
    * sorts stories
    * @type {Boolean}
    */
-  sortStoriesByKind: false,
+  sortStoriesByKind: true,
   /**
    * regex for finding the hierarchy separator
    * @example:
@@ -78,7 +78,7 @@ setOptions({
    *   /\/|\./ - split by `/` or `.`
    * @type {Regex}
    */
-  hierarchySeparator: null,
+  hierarchySeparator: /\/|\./,
 
   /**
    * sidebar tree animations

@@ -70,6 +70,7 @@ export default function Icon({
       aria-labelledby={ariaLabelledby || title}
       focusable="false"
       size={size}
+      id={glyphName}
       {...props}
     >
       {backgroundStyle && (

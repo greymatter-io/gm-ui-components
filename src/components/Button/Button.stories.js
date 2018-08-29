@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { number, select, text, boolean } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import { Bell } from "components/Glyphs";
+import { IconBell } from "components/Glyphs";
 import Button from "./Button";
 
 const wrapperStyle = {
@@ -65,7 +65,7 @@ storiesOf("Button", module)
           clickAction={() => {}}
           key={orientation}
         >
-          <Bell size="25px" />
+          <IconBell size="25px" />
         </Button>
       ))}
     </div>

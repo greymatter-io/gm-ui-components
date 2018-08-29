@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow matches snapshot 1`] = `
+<TableRowElement
+  accentColor="#0aab2a"
+>
+  <TableCell
+    data-column="name"
+    key="name|2"
+    onClick={[Function]}
+  >
+    Jane Green
+  </TableCell>
+  <TableCell
+    data-column="address"
+    key="address|2"
+    onClick={[Function]}
+  >
+    London No. 1 Lake Park
+  </TableCell>
+  <TableCell
+    data-column="age"
+    key="age|2"
+    onClick={[Function]}
+  />
+  <TableCell
+    data-column="favfood"
+    key="favfood|2"
+    onClick={[Function]}
+  >
+    Amatriciana
+  </TableCell>
+</TableRowElement>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconBullet matches snapshot 1`] = `
+<Icon
+  backgroundColor="currentColor"
+  backgroundOpacity={1}
+  backgroundSizeRatio={1}
+  borderColor="currentColor"
+  borderOpacity={1}
+  borderWidth={1}
+  glyph=""
+  glyphColor="currentColor"
+  glyphName="Bullet"
+  glyphSizeRatio={1}
+>
+  <circle
+    cx="12"
+    cy="12"
+    fillRule="nonzero"
+    r="5.00000002"
+  />
+</Icon>
+`;

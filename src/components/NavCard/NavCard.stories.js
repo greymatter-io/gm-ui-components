@@ -5,14 +5,14 @@ import { text, object } from "@storybook/addon-knobs/react";
 
 import NavCard from "components/NavCard";
 
-import { Summary } from "components";
+import { IconSummary } from "components";
 
 storiesOf("NavCard", module)
   .add("Basic NavCard", () => {
     return (
       <a href="#" style={{ textDecoration: "none" }}>
         <NavCard
-          icon={() => <Summary size="24px" />}
+          icon={() => <IconSummary size="24px" />}
           details={object("Detail Lines", [
             { name: "Memory Used", value: "116 MB" },
             { name: "CPU Usage", value: "99%" }
@@ -26,7 +26,7 @@ storiesOf("NavCard", module)
     return (
       <a href="#" style={{ textDecoration: "none" }}>
         <NavCard
-          icon={() => <Summary size="24px" />}
+          icon={() => <IconSummary size="24px" />}
           title={text("Title", "Summary")}
         >
           {() => (
