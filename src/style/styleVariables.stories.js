@@ -65,6 +65,7 @@ const DemoItem = styled.button.attrs({
   margin: ${spacingScale(1)};
   width: ${spacingScale(16)};
   font-size: ${FONT_SIZE_SM};
+  color: #000;
   border: 1px solid #fff;
   padding: 0;
   box-shadow: 0 0 0 1px ${COLOR_KEYLINE};
@@ -111,6 +112,7 @@ const DemoItem = styled.button.attrs({
   &:focus,
   &:active {
     outline: none;
+    color: #000;
   }
 `;
 
