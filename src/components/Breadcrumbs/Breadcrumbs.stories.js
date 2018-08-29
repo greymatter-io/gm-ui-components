@@ -1,11 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import {
-  withKnobs,
-  array,
-  number,
-  boolean
-} from "@storybook/addon-knobs/react";
+import { array, number, boolean } from "@storybook/addon-knobs/react";
 import Breadcrumbs from "./Breadcrumbs";
 import { withInfo } from "@storybook/addon-info";
 
@@ -13,8 +8,6 @@ const stories = storiesOf("Breadcrumbs", module);
 const defaultCrumbs = ["Home", "View", "Data", "Graphs"];
 const breadCrumbsInfo =
   "A React component that allows users to know their location. Use <Breadcrumbs> and pass it an array of crumbs and an optional maxItems prop.  If there are more children than the maximum, it will render a collapsed view.";
-
-stories.addDecorator(withKnobs);
 
 stories.add(
   "simple breadcrumbs",
