@@ -4,13 +4,13 @@ import { getLuminance, darken } from "polished";
 
 import {
   BORDER_RADIUS_BASE,
-  COLOR_GREY,
-  FONT_STACK_BASE
+  FONT_STACK_BASE,
+  COLOR_CONTENT
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const ReadoutDisplay = styled.div`
-  color: ${COLOR_GREY};
+  color: ${COLOR_CONTENT};
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;

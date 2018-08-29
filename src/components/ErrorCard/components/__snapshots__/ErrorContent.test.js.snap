@@ -6,7 +6,7 @@ exports[`ErrorContent matches snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #f8b400;
+  border: 1px solid #F7CD45;
   border-radius: 6px;
   color: #000;
   display: -webkit-inline-box;

@@ -2,7 +2,7 @@
 
 exports[`Span matches snapshot 1`] = `
 .c0 {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 <span

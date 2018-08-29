@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table matches snapshot 1`] = `
+<TableWrapper>
+  <colgroup>
+    <TableColumn
+      colWidth="50%"
+      key="50%|0"
+    />
+    <TableColumn
+      colWidth="20%"
+      key="20%|1"
+    />
+    <TableColumn
+      colWidth="10%"
+      key="10%|2"
+    />
+    <TableColumn
+      colWidth="10%"
+      key="10%|3"
+    />
+  </colgroup>
+  <TableHeader
+    columns={
+      Array [
+        Object {
+          "dataIndex": "name",
+          "key": "name",
+          "onSort": [Function],
+          "title": "Name",
+          "width": "50%",
+        },
+        Object {
+          "dataIndex": "address",
+          "key": "address",
+          "onSort": [Function],
+          "title": "Address",
+          "width": "20%",
+        },
+        Object {
+          "dataIndex": "age",
+          "key": "age",
+          "onSort": [Function],
+          "title": "Age",
+          "width": "10%",
+        },
+        Object {
+          "dataIndex": "favfood",
+          "key": "favfood",
+          "onSort": [Function],
+          "title": "Food",
+          "width": "10%",
+        },
+      ]
+    }
+  />
+  <tbody>
+    <TableRow
+      columns={
+        Array [
+          Object {
+            "dataIndex": "name",
+            "key": "name",
+            "onSort": [Function],
+            "title": "Name",
+            "width": "50%",
+          },
+          Object {
+            "dataIndex": "address",
+            "key": "address",
+            "onSort": [Function],
+            "title": "Address",
+            "width": "20%",
+          },
+          Object {
+            "dataIndex": "age",
+            "key": "age",
+            "onSort": [Function],
+            "title": "Age",
+            "width": "10%",
+          },
+          Object {
+            "dataIndex": "favfood",
+            "key": "favfood",
+            "onSort": [Function],
+            "title": "Food",
+            "width": "10%",
+          },
+        ]
+      }
+      data={
+        Object {
+          "address": "New York No. 1 Lake Park",
+          "age": 32,
+          "favfood": "Hotdogs",
+          "key": "1",
+          "name": "Adolph Blaine Charles David Earl Frederick Gerald Hubert Irvin John Kenneth Lloyd Martin Nero Oliver Paul Quincy Randolph Sherman Thomas Uncas Victor William Xerxes Yancy Wolfeschlegelsteinhausenbergerdorff, Senior",
+        }
+      }
+      isSelected={false}
+      key="1"
+      rowIndex={0}
+    />
+    <TableRow
+      columns={
+        Array [
+          Object {
+            "dataIndex": "name",
+            "key": "name",
+            "onSort": [Function],
+            "title": "Name",
+            "width": "50%",
+          },
+          Object {
+            "dataIndex": "address",
+            "key": "address",
+            "onSort": [Function],
+            "title": "Address",
+            "width": "20%",
+          },
+          Object {
+            "dataIndex": "age",
+            "key": "age",
+            "onSort": [Function],
+            "title": "Age",
+            "width": "10%",
+          },
+          Object {
+            "dataIndex": "favfood",
+            "key": "favfood",
+            "onSort": [Function],
+            "title": "Food",
+            "width": "10%",
+          },
+        ]
+      }
+      data={
+        Object {
+          "address": "London No. 1 Lake Park",
+          "age": 42,
+          "favfood": "Amatriciana",
+          "key": "2",
+          "name": "Jane Green",
+        }
+      }
+      isSelected={false}
+      key="2"
+      rowIndex={1}
+    />
+    <TableRow
+      columns={
+        Array [
+          Object {
+            "dataIndex": "name",
+            "key": "name",
+            "onSort": [Function],
+            "title": "Name",
+            "width": "50%",
+          },
+          Object {
+            "dataIndex": "address",
+            "key": "address",
+            "onSort": [Function],
+            "title": "Address",
+            "width": "20%",
+          },
+          Object {
+            "dataIndex": "age",
+            "key": "age",
+            "onSort": [Function],
+            "title": "Age",
+            "width": "10%",
+          },
+          Object {
+            "dataIndex": "favfood",
+            "key": "favfood",
+            "onSort": [Function],
+            "title": "Food",
+            "width": "10%",
+          },
+        ]
+      }
+      data={
+        Object {
+          "address": "Sidney No. 1 Lake Park",
+          "age": 32,
+          "favfood": "Grilled Cheese",
+          "key": "3",
+          "name": "Jenny Black",
+        }
+      }
+      isSelected={false}
+      key="3"
+      rowIndex={2}
+    />
+  </tbody>
+</TableWrapper>
+`;

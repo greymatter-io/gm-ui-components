@@ -1,6 +1,5 @@
 import React from "react";
-import { Summary } from "../";
-import { COLOR_SUCCESS } from "style/styleVariables";
+import { IconSummary } from "../";
 
 import { storiesOf } from "@storybook/react";
 import {
@@ -15,7 +14,7 @@ import Readout from "./Readout";
 
 const mockReadoutItem = [
   {
-    icon: () => <Summary size={"24px"} />,
+    icon: () => <IconSummary size={"24px"} />,
     title: "Avg. Response Time",
     value: "30000%"
   }
@@ -23,25 +22,25 @@ const mockReadoutItem = [
 
 const mockReadoutManyItems = [
   {
-    icon: () => <Summary size={"24px"} />,
+    icon: () => <IconSummary size={"24px"} />,
     title: "Avg. Response Time",
     value: "30000%",
     detail: "detail text 0"
   },
   {
-    icon: () => <Summary size={"24px"} />,
+    icon: () => <IconSummary size={"24px"} />,
     title: "Avg. Response Time",
     value: "33000%",
     detail: "detail text 1 "
   },
   {
-    icon: () => <Summary size={"24px"} />,
+    icon: () => <IconSummary size={"24px"} />,
     title: "Avg. Response Time",
     value: "31000%",
     detail: "detail text 2"
   },
   {
-    icon: () => <Summary size={"24px"} />,
+    icon: () => <IconSummary size={"24px"} />,
     title: "Avg. Response Time",
     value: "34000%",
     detail: "detail text 3"
