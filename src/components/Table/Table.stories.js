@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, select, object } from "@storybook/addon-knobs/react";
+import { select, object } from "@storybook/addon-knobs/react";
 
 import Table from "./Table";
 
@@ -77,21 +77,19 @@ const data = [
   }
 ];
 
-storiesOf("Table", module)
-  .addDecorator(withKnobs)
-  .add("default", () => {
-    return (
-      <Table
-        columns={object("columns", columns)}
-        data={object("data", data)}
-        sortDataIndex={select(
-          "sortDataIndex",
-          ["name", "address", "favfood", "age"],
-          "name"
-        )}
-        selectedRows={[0]}
-        onSort={sortIndex => alert(JSON.stringify(sortIndex))}
-        onCellClick={cellData => alert(JSON.stringify(cellData))}
-      />
-    );
-  });
+storiesOf("Table", module).add("default", () => {
+  return (
+    <Table
+      columns={object("columns", columns)}
+      data={object("data", data)}
+      sortDataIndex={select(
+        "sortDataIndex",
+        ["name", "address", "favfood", "age"],
+        "name"
+      )}
+      selectedRows={[0]}
+      onSort={sortIndex => alert(JSON.stringify(sortIndex))}
+      onCellClick={cellData => alert(JSON.stringify(cellData))}
+    />
+  );
+});

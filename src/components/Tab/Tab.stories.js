@@ -1,13 +1,11 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs/react";
+import { text, boolean } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Tab from "./Tab";
 
 const stories = storiesOf("Tab", module);
-
-stories.addDecorator(withKnobs);
 
 stories.add(
   "Tab",
