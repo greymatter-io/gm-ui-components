@@ -2,7 +2,12 @@ import React from "react";
 import { IconSummary } from "../";
 
 import { storiesOf } from "@storybook/react";
-import { boolean, object } from "@storybook/addon-knobs/react";
+import {
+  boolean,
+  object,
+  color,
+  withKnobs
+} from "@storybook/addon-knobs/react";
 
 import ReadoutGroup from "../ReadoutGroup/ReadoutGroup";
 import Readout from "./Readout";
@@ -43,16 +48,19 @@ const mockReadoutManyItems = [
 ];
 
 storiesOf("Readout", module)
+  .addDecorator(withKnobs)
   .add("Readout", () => (
     <Readout
-      primary={boolean("Readout is Primary", false)}
-      readoutItems={object("Readout Items", mockReadoutItem)}
+      primary={boolean("primary", false)}
+      color={color("color", COLOR_SUCCESS)}
+      readoutItems={object("readoutItems", mockReadoutItem)}
     />
   ))
   .add("A Readout with Many Items ", () => (
     <Readout
-      primary={boolean("Readout is Primary", false)}
-      readoutItems={object("Readout Items", mockReadoutManyItems)}
+      primary={boolean("primary", false)}
+      color={color("color", COLOR_SUCCESS)}
+      readoutItems={object("readoutItems", mockReadoutManyItems)}
     />
   ))
   .add("A Readout Group", () => (
