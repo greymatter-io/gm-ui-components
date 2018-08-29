@@ -57,7 +57,6 @@ const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
   onClick: props => () => {
     copy('${' + props.demoVarName + '}');
-    // alert('${' + `${props.demoVarName}} copied to clipboard`);
   }
 })`
   box-sizing: border-box;
