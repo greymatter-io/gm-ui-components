@@ -5,14 +5,12 @@ exports[`HeaderBanner component matches snapshot 1`] = `
   <Header>
     GM UI Header Banner
   </Header>
-  <React.Fragment>
-    <Extra
-      href="/settings"
-      key="Extra, Extra, Read all about it"
-      target="_blank"
-    >
-      Extra, Extra, Read all about it
-    </Extra>
-  </React.Fragment>
+  <Extra
+    href="/settings"
+    key="Extra, Extra, Read all about it"
+    target="_blank"
+  >
+    Extra, Extra, Read all about it
+  </Extra>
 </HeaderContainer>
 `;

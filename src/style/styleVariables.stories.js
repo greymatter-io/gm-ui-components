@@ -145,7 +145,7 @@ const DemoSection = styled.div.attrs({
   }
 `;
 
-const DemoSubSection = DemoSection.extend`
+const DemoSubSection = styled(DemoSection)`
   margin: 0;
   margin-top: ${spacingScale(4)};
   padding-top: 0;
@@ -165,7 +165,7 @@ const DemoSubSection = DemoSection.extend`
   }
 `;
 
-const ColorDemo = DemoItem.extend`
+const ColorDemo = styled(DemoItem)`
   background-image:
     linear-gradient(to bottom, rgba(255,255,255,0) ${spacingScale(7)}, rgba(255,255,255,1) ${spacingScale(7)}, rgba(255,255,255,1)),
     linear-gradient(to right, ${COLOR_BACKGROUND_A} 0%, ${COLOR_BACKGROUND_A} 33%, ${COLOR_BACKGROUND_B} 33%, ${COLOR_BACKGROUND_B} 66%, ${COLOR_BACKGROUND_C} 66%, ${COLOR_BACKGROUND_C} 100%);
@@ -188,7 +188,7 @@ const ColorDemo = DemoItem.extend`
   }
 `;
 
-const ColorLineDemo = ColorDemo.extend`
+const ColorLineDemo = styled(ColorDemo)`
   align-items: stretch;
   background-color: ${COLOR_BACKGROUND_A};
 
@@ -201,7 +201,7 @@ const ColorLineDemo = ColorDemo.extend`
   }
 `;
 
-const ColorBackgroundDemo = ColorDemo.extend`
+const ColorBackgroundDemo = styled(ColorDemo)`
   background: ${props => props.demoVar};
   color: ${props => readableColor(props.demoVar)};
 
@@ -210,7 +210,7 @@ const ColorBackgroundDemo = ColorDemo.extend`
   }
 `;
 
-const FontDemo = DemoItem.extend`
+const FontDemo = styled(DemoItem)`
   font-family: ${props => props.demoVar};
   padding: ${spacingScale(1)} ${spacingScale(1)} 0;
   flex: 1 1 100%;
@@ -228,7 +228,7 @@ const FontDemo = DemoItem.extend`
   }
 `;
 
-const FontSizeDemo = FontDemo.extend`
+const FontSizeDemo = styled(FontDemo)`
   font-family: ${FONT_STACK_BASE};
 
   &:before {
@@ -236,14 +236,14 @@ const FontSizeDemo = FontDemo.extend`
   }
 `;
 
-const FontWeightDemo = FontDemo.extend`
+const FontWeightDemo = styled(FontDemo)`
   &:before {
     font-size: ${FONT_SIZE_BASE};
     font-weight: ${props => props.demoVar};
   }
 `;
 
-const RadiusDemo = DemoItem.extend`
+const RadiusDemo = styled(DemoItem)`
   height: ${spacingScale(14)};
 
   &:before {
@@ -257,7 +257,7 @@ const RadiusDemo = DemoItem.extend`
   }
 `;
 
-const OpacityDemo = DemoItem.extend`
+const OpacityDemo = styled(DemoItem)`
   height: ${spacingScale(12)};
   align-items: stretch;
 
@@ -272,7 +272,7 @@ const OpacityDemo = DemoItem.extend`
   }
 `;
 
-const SpacingDemo = DemoItem.extend`
+const SpacingDemo = styled(DemoItem)`
   height: ${spacingScale(7)};
 
   &:before {
