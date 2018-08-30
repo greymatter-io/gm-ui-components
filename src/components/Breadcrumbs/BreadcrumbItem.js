@@ -46,12 +46,16 @@ export default function BreadcrumbItem({ item, expand }) {
         if (item === "...") expand();
       }}
     >
-      {item.length > 20 ? item.substr(0, 20).concat("...") : item}
+      {item}
     </Breadcrumb>
   );
 }
 
 BreadcrumbItem.propTypes = {
   expand: PropTypes.func,
-  item: PropTypes.string.isRequired
+  item: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.node,
+    PropTypes.element
+  ]).isRequired
 };
