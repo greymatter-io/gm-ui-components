@@ -5,7 +5,7 @@ import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
 
-import { FONT_WEIGHT_SEMIBOLD, FONT_STACK_BASE } from "style/styleVariables";
+import { FONT_STACK_BASE, FONT_WEIGHT_BASE } from "style/styleVariables";
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
@@ -16,7 +16,7 @@ const ButtonWrap = styled.button`
   cursor: pointer;
   display: flex;
   font-family: ${FONT_STACK_BASE};
-  font-weight: ${FONT_WEIGHT_SEMIBOLD};
+  font-weight: ${FONT_WEIGHT_BASE};
   justify-content: center;
   line-height: 1.4;
   text-align: center;

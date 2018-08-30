@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, object, text } from "@storybook/addon-knobs/react";
+import { object, text } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import {
@@ -62,7 +62,15 @@ const toolbarItems = () => {
 };
 
 storiesOf("App Header", module)
-  .addDecorator(withKnobs)
+  .addDecorator(story => (
+    <div
+      style={{
+        paddingTop: "30px"
+      }}
+    >
+      {story()}
+    </div>
+  ))
   .add(
     "default",
     withInfo(
