@@ -3,7 +3,6 @@ import renderer from "react-test-renderer";
 import { Breadcrumbs, BreadcrumbItem } from "./index.js";
 import { shallow } from "enzyme";
 
-
 const crumbs = [
   "Test 1",
   "Test 2",
@@ -50,17 +49,5 @@ describe("<Breadcrumbs>", () => {
       .dive()
       .simulate("click");
     expect(wrapper.state("isCollapsed")).toEqual(false);
-  });
-
-  test("a single breadcrumb is not longer than 20 characters", () => {
-    wrapper.find(BreadcrumbItem).forEach(item => {
-      expect(
-        item
-          .dive()
-          .dive()
-          .text().length
-      ).toBeLessThanOrEqual(23);
-      // 23 includes the elipsis...
-    });
   });
 });

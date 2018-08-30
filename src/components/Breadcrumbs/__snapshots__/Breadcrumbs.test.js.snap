@@ -82,7 +82,7 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
     className="c1"
     onClick={[Function]}
   >
-    Testing a really lon...
+    Testing a really long breadcrumb item
   </li>
 </ol>
 `;
@@ -175,7 +175,7 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
     className="c1"
     onClick={[Function]}
   >
-    Testing a really lon...
+    Testing a really long breadcrumb item
   </li>
 </ol>
 `;
