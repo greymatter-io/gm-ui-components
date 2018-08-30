@@ -108,7 +108,7 @@ import IconObjectAdd from "./IconObjectAdd";
 import IconObjectAudio from "./IconObjectAudio";
 import IconObjectBase from "./IconObjectBase";
 import IconObjectDocument from "./IconObjectDocument";
-import IconObjectDownload from "./IconObjectDownload ";
+import IconObjectDownload from "./IconObjectDownload";
 import IconObjectDuplicate from "./IconObjectDuplicate";
 import IconObjectExpand from "./IconObjectExpand";
 import IconObjectGhost from "./IconObjectGhost";
