@@ -46,28 +46,19 @@ class Breadcrumbs extends React.Component {
   expand = () => this.setState({ isCollapsed: false });
 
   renderCollapsed = crumbs => {
-    const elipsisItem = (
-      <BreadcrumbItem key={1} item={"..."} expand={this.expand} />
+    return (
+      <React.Fragment>
+        <BreadcrumbItem key={0} item={crumbs[0]} />
+        <BreadcrumbItem key={1} item={"..."} expand={this.expand} />
+        <BreadcrumbItem key={-1} item={crumbs[crumbs.length - 1]} />
+      </React.Fragment>
     );
-    const lastIndex = crumbs.length - 1;
-    const collapsedArr = [
-      <BreadcrumbItem key={0} item={crumbs[0]} />,
-      elipsisItem,
-      <BreadcrumbItem key={lastIndex} item={crumbs[lastIndex]} />
-    ];
-    return collapsedArr;
   };
 
   renderExpanded = crumbs => {
-    return crumbs.map((item, i) => {
-      return (
-        <BreadcrumbItem
-          key={i}
-          item={item}
-          hideDelimiter={crumbs.length === 1}
-        />
-      );
-    });
+    return crumbs.map((item, i) => (
+      <BreadcrumbItem key={i} item={item} hideDelimiter={crumbs.length === 1} />
+    ));
   };
 
   render() {
@@ -95,3 +86,5 @@ Breadcrumbs.propTypes = {
   crumbs: PropTypes.array.isRequired,
   maxItems: PropTypes.number
 };
+
+Breadcrumbs.displayName = "Breadcrumbs";
