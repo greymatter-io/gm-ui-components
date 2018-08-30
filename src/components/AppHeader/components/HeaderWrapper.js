@@ -1,27 +1,28 @@
 import styled from "styled-components";
+import { readableColor, transparentize } from 'polished';
 
 import {
-  COLOR_BLACK,
-  COLOR_WHITE,
-  FONT_STACK_BASE
+  FONT_STACK_BASE,
+  COLOR_BACKGROUND_C
 } from "style/styleVariables";
 import BannerBackgroundImage from "./images/mesh-web.jpg";
 
 const HeaderWrapper = styled.div`
+  font-family: ${FONT_STACK_BASE};
+  color: ${readableColor(COLOR_BACKGROUND_C)};
+  background-color: ${COLOR_BACKGROUND_C};
+  background-image:
+    linear-gradient(
+      to right,
+      ${COLOR_BACKGROUND_C},
+      ${transparentize(0.7, COLOR_BACKGROUND_C)},
+      ${transparentize(1, COLOR_BACKGROUND_C)}
+    ),
+    url(${BannerBackgroundImage});
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  font-family: ${FONT_STACK_BASE};
-  color: ${COLOR_WHITE};
   align-items: stretch;
-  background-color: ${COLOR_BLACK};
-  background-image: linear-gradient(
-      to right,
-      #000,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0)
-    ),
-    url(${BannerBackgroundImage});
   background-size: 100% 100%, 120% auto;
   background-position: center center, left center;
   background-repeat: no-repeat;

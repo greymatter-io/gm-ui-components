@@ -2,15 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import BreadcrumbItem from "./BreadcrumbItem";
-import { FONT_STACK_BASE } from "style/styleVariables";
+import { FONT_STACK_BASE, FONT_SIZE_SM } from "style/styleVariables";
 
 export const BreadcrumbsContainer = styled.ol`
+  font-family: ${FONT_STACK_BASE};
+  font-size: ${FONT_SIZE_SM};
   flex: 1 1 auto;
   display: flex;
   margin: 0;
   padding: 0;
   flex-direction: row;
-  font-family: ${FONT_STACK_BASE};
   height: inherit;
   align-items: stretch;
   flex-wrap: wrap;

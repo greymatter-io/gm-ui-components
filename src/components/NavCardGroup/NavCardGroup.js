@@ -1,24 +1,23 @@
 import styled from "styled-components";
-import { darken } from "polished";
+import { mix, darken } from "polished";
 
 import {
-  COLOR_WHITE,
-  COLOR_BLACK,
-  COLOR_CONTENT_BACKGROUND
-} from "style/styleVariables";
-import { contrastColor, spacingScale } from "style/styleFunctions";
+  OPACITY_15,
+  COLOR_BACKGROUND_B,
+  COLOR_BACKGROUND_C,
+ } from "style/styleVariables";
+import { spacingScale } from "style/styleFunctions";
 
-const TAB_BASE_COLOR = contrastColor(COLOR_CONTENT_BACKGROUND, 0.8);
-const COLOR_TAB_BACKGROUND_BASE = contrastColor(COLOR_WHITE, 0.175);
+const COLOR_TAB_BACKGROUND_BASE = mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C);
+
 const TAB_WIDTH_BASE = "1%";
 
 const NavCardGroup = styled.nav`
   display: flex;
   flex-flow: row wrap;
-  color: ${contrastColor(COLOR_TAB_BACKGROUND_BASE)};
   padding: ${spacingScale(0.25)};
   position: relative;
-  background-color: ${COLOR_BLACK};
+  background-color: ${COLOR_BACKGROUND_C};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {
@@ -26,7 +25,7 @@ const NavCardGroup = styled.nav`
     display: flex;
     position: relative;
     align-items: stretch;
-    min-height: ${spacingScale(10)};
+    min-height: ${spacingScale(8)};
     position: relative;
     text-decoration: none;
     /* When the link element is active, make NavCard's green border pseudo-element
@@ -39,7 +38,7 @@ const NavCardGroup = styled.nav`
         &:after {
           opacity: 1;
         }
-        background-color: ${darken(0.1, TAB_BASE_COLOR)};
+        background-color: ${darken(0.1, COLOR_TAB_BACKGROUND_BASE)};
       }
     }
   }

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconArrowRightSmall matches snapshot 1`] = `
+<Icon
+  backgroundColor="currentColor"
+  backgroundOpacity={1}
+  backgroundSizeRatio={1}
+  borderColor="currentColor"
+  borderOpacity={1}
+  borderWidth={1}
+  glyph=""
+  glyphColor="currentColor"
+  glyphName="ArrowRightSmall"
+  glyphSizeRatio={1}
+>
+  <polygon
+    fillRule="nonzero"
+    points="11 8.99999999 15 12 11 15"
+  />
+</Icon>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TableCell /> should match snapshot 1`] = `
+.c0 {
+  padding: 16px 16px 16px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0:first-of-type {
+  padding-left: 12px;
+}
+
+.c0:not(:first-child) {
+  text-align: right;
+}
+
+<td
+  className="c0"
+/>
+`;

@@ -1,9 +1,9 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { LayoutSection, Bell, Readout, ReadoutGroup } from "../";
+import { LayoutSection, IconBell, Readout, ReadoutGroup } from "../";
 
 const LayoutSectionWithReadouts = (
-  <LayoutSection title={"Test Layout"} icon={() => <Bell size={"24px"} />}>
+  <LayoutSection title={"Test Layout"} icon={() => <IconBell size={"24px"} />}>
     <ReadoutGroup>
       <Readout
         readoutItems={[
@@ -19,7 +19,7 @@ const LayoutSectionWithReadouts = (
           {
             title: "Error Rate",
             value: "0.000%",
-            icon: () => <Bell size={"24px"} />
+            icon: () => <IconBell size={"24px"} />
           }
         ]}
       />
@@ -47,7 +47,7 @@ describe("LayoutSection", () => {
     expect(tree.find(ReadoutGroup)).toHaveLength(1);
   });
   test("renders an Icon", () => {
-    expect(tree.find(Bell)).toHaveLength(1);
+    expect(tree.find(IconBell)).toHaveLength(1);
   });
   test("renders a Title", () => {
     expect(

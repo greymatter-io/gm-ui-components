@@ -1,28 +1,30 @@
 import styled from "styled-components";
+
 import {
-  COLOR_BRAND_PRIMARY,
   FONT_STACK_BASE,
   FONT_SIZE_BASE,
-  COLOR_GREY
+  COLOR_INTENT_HIGHLIGHT,
+  COLOR_KEYLINE_SOLID,
+  OPACITY_50
 } from "style/styleVariables";
-import { lighten } from "polished";
+import { spacingScale } from 'style/styleFunctions';
 
 const activeStyles = `
-    box-shadow: ${COLOR_BRAND_PRIMARY} 0px -2px inset;
+    box-shadow: ${COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
   `;
 
 const disabledStyles = `
     cursor: default;
-    opacity: .5;
+    opacity: ${OPACITY_50};
     box-shadow: none;
   `;
 
 const hoverStyles = `
-    box-shadow: ${lighten(0.5, COLOR_GREY)} 0px -1px inset;
+    box-shadow: ${COLOR_KEYLINE_SOLID} 0px -1px inset;
   `;
 
 const downStyles = `
-    box-shadow: ${COLOR_BRAND_PRIMARY} 0px -2px inset;
+    box-shadow: ${COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
   `;
 
 const TabWrap = styled.a.attrs({
@@ -30,8 +32,9 @@ const TabWrap = styled.a.attrs({
 })`
   font-family: ${FONT_STACK_BASE};
   font-size: ${FONT_SIZE_BASE};
+  padding-left: ${spacingScale(2)};
+  padding-right: ${spacingScale(2)};
   flex: 0 0 auto;
-  padding: 8px 16px;
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -4,7 +4,7 @@ import { text } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import ErrorCard from "./ErrorCard";
-import { Negation } from "../";
+import { IconNegation } from "../";
 
 storiesOf("ErrorCard", module)
   .add(
@@ -17,7 +17,7 @@ storiesOf("ErrorCard", module)
     <ErrorCard
       errorMsg={text("errorMsg", "Uh oh")}
       icon={() => (
-        <Negation
+        <IconNegation
           backgroundColor="#EFB53F"
           borderOpacity="0"
           backgroundStyle="BackgroundSquareSmall"

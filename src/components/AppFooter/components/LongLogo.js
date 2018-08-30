@@ -1,21 +1,24 @@
 import styled from "styled-components";
 import { spacingScale } from "../../../style/styleFunctions";
+import { OPACITY_70, OPACITY_100 } from "style/styleVariables";
 
 const LongLogo = styled.a`
+  padding: 0 ${spacingScale(1)};
+  opacity: ${OPACITY_70};
   flex: 0 1 auto;
   text-align: left;
-  padding: 0 ${spacingScale(1)};
   transition: all 0.2s ease;
-  opacity: 0.8;
   filter: grayscale(100%);
 
   &:hover {
-    opacity: 1;
+    opacity: ${OPACITY_100};
     transition: all 0.2s ease;
     filter: grayscale(0%);
   }
+  
   img {
-    max-width: 157px;
+    max-width: 140px; /* Magic number tied to image size */
+    vertical-align: -3px;
   }
 `;
 

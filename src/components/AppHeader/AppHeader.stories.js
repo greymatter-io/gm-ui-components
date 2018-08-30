@@ -1,9 +1,15 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs, object, text } from "@storybook/addon-knobs/react";
+import { object, text } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import { ButtonGroup, Cog, Button, AppHeader, Breadcrumbs } from "components";
+import {
+  ButtonGroup,
+  IconCog,
+  Button,
+  AppHeader,
+  Breadcrumbs
+} from "components";
 import { spacingScale } from "style/styleFunctions";
 
 const bannerExtras = [
@@ -14,10 +20,10 @@ const bannerExtras = [
 ];
 
 const breadcrumbs = [
-  <a href="#">Fabric</a>,
-  <a href="#">Instances</a>,
-  <a href="#">Routes</a>,
-  <a href="#">Grace Hopper Battleship Service</a>
+  "Fabric",
+  "Instances",
+  "Routes",
+  "Grace Hopper Battleship Service"
 ];
 
 const ToolbarButtonGroup = ButtonGroup.extend`
@@ -38,7 +44,7 @@ const toolbarItems = () => {
       <span>1.1.6</span>
       <ToolbarButtonGroup style={{ paddingRight: 0 }}>
         <Button
-          outline="none"
+          outline={false}
           size="xs"
           label=""
           type="info"
@@ -48,7 +54,7 @@ const toolbarItems = () => {
             color: "black"
           }}
         >
-          <Cog size={"24px"} />
+          <IconCog size={"24px"} />
         </Button>
       </ToolbarButtonGroup>
     </div>
@@ -56,7 +62,6 @@ const toolbarItems = () => {
 };
 
 storiesOf("App Header", module)
-  .addDecorator(withKnobs)
   .addDecorator(story => (
     <div
       style={{
@@ -75,7 +80,6 @@ storiesOf("App Header", module)
         <AppHeader
           title={text("title", "GM UI App Header")}
           extras={object("extras", bannerExtras)}
-          breadcrumbs={object("breadcrumbs", breadcrumbs)}
           toolbarItems={toolbarItems}
         />
       );

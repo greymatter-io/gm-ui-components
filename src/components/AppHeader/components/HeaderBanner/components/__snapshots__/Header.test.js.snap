@@ -2,12 +2,12 @@
 
 exports[`Header matches snapshot 1`] = `
 .c0 {
-  display: inline-block;
   font-size: 36px;
   font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
+  margin: 0;
+  display: inline-block;
   line-height: 1.2;
-  margin: 8px 0;
   max-width: 100%;
   position: relative;
   text-transform: capitalize;
@@ -15,7 +15,7 @@ exports[`Header matches snapshot 1`] = `
 }
 
 .c0::before {
-  background-color: rgba(0,0,0,1);
+  background-color: #000;
   content: "";
   display: block;
   -webkit-filter: blur(12px);

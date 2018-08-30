@@ -1,16 +1,10 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import {
-  withKnobs,
-  number,
-  select,
-  text,
-  boolean
-} from "@storybook/addon-knobs/react";
+import { number, select, text, boolean } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
-import { Bell } from "components/Glyphs";
+import { IconBell } from "components/Glyphs";
 import Button from "./Button";
 
 const wrapperStyle = {
@@ -26,7 +20,6 @@ const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
 storiesOf("Button", module)
-  .addDecorator(withKnobs)
   .add(
     "default",
     withInfo(
@@ -72,7 +65,7 @@ storiesOf("Button", module)
           clickAction={() => {}}
           key={orientation}
         >
-          <Bell size="25px" />
+          <IconBell size="25px" />
         </Button>
       ))}
     </div>

@@ -1,22 +1,22 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { text } from "@storybook/addon-knobs";
 
 import Tab from "components/Tab";
 import TabGroup from "./TabGroup";
 
 const stories = storiesOf("TabGroup", module);
 
-stories.addDecorator(withKnobs).add(
+stories.add(
   "TabGroup",
   withInfo("A TabGroup component that wraps individual Tab components")(() => {
     return (
       <div style={{ width: "100vw" }}>
         <TabGroup label={text("label", "Tab Group")}>
-          <Tab label="Active Tab" active />
-          <Tab label="Label" />
-          <Tab label="Disabled" disabled />
+          <Tab clickAction={() => {}} label="Active Tab" active />
+          <Tab clickAction={() => {}} label="Label" />
+          <Tab clickAction={() => {}} label="Disabled" disabled />
         </TabGroup>
       </div>
     );

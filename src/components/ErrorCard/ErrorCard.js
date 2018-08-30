@@ -1,7 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import { Exclamation } from "../Glyphs";
+import { IconExclamation } from "../Glyphs";
 import ErrorBox from "./components/ErrorBox";
 import ErrorContent from "./components/ErrorContent";
 import Span from "./components/Span";
@@ -20,7 +20,7 @@ const ErrorCard = ({ errorMsg = "Error", icon, ...props }) => {
           {icon ? (
             icon()
           ) : (
-            <Exclamation
+            <IconExclamation
               backgroundStyle="BackgroundTriangleSmall"
               size="72px"
               borderWidth="0.5"
