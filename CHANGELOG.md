@@ -1,3 +1,22 @@
+<a name="0.5.3"></a>
+
+## [0.5.3](https://github.com/DecipherNow/gm-ui-components/compare/v0.4.8-alpha.4...v0.5.3) (2018-08-30)
+
+### Bug Fixes
+
+- add styleSelectedRow prop ([#263](https://github.com/DecipherNow/gm-ui-components/issues/263)) ([d508808](https://github.com/DecipherNow/gm-ui-components/commit/d508808))
+- fix various errors ([#271](https://github.com/DecipherNow/gm-ui-components/issues/271)) ([8e5334a](https://github.com/DecipherNow/gm-ui-components/commit/8e5334a))
+- fixing flash of white text on button click ([#273](https://github.com/DecipherNow/gm-ui-components/issues/273)) ([5565872](https://github.com/DecipherNow/gm-ui-components/commit/5565872))
+- more consistent sizes for object icons ([#272](https://github.com/DecipherNow/gm-ui-components/issues/272)) ([ac44cba](https://github.com/DecipherNow/gm-ui-components/commit/ac44cba))
+- move changelog to version script ([#185](https://github.com/DecipherNow/gm-ui-components/issues/185)) ([ac22205](https://github.com/DecipherNow/gm-ui-components/commit/ac22205))
+
+### Features
+
+- add style variables story ([#268](https://github.com/DecipherNow/gm-ui-components/issues/268)) ([42c8317](https://github.com/DecipherNow/gm-ui-components/commit/42c8317))
+- add withKnobs decorator globally ([#244](https://github.com/DecipherNow/gm-ui-components/issues/244)) ([dfc34ac](https://github.com/DecipherNow/gm-ui-components/commit/dfc34ac))
+- less opinionated button styles ([#274](https://github.com/DecipherNow/gm-ui-components/issues/274)) ([e3952b1](https://github.com/DecipherNow/gm-ui-components/commit/e3952b1))
+- restyle indeterminate spinner ([#262](https://github.com/DecipherNow/gm-ui-components/issues/262)) ([5ccbea4](https://github.com/DecipherNow/gm-ui-components/commit/5ccbea4))
+
 <a name="0.5.2"></a>
 
 # 0.5.2 (2018-08-21)
