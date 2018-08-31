@@ -7,8 +7,8 @@ import NavCard from "components/NavCard";
 
 import { IconSummary } from "components";
 
-storiesOf("NavCard", module)
-  .add("Basic NavCard", () => {
+storiesOf("Components/NavCard", module)
+  .add("NavCard", () => {
     return (
       <a href="#" style={{ textDecoration: "none" }}>
         <NavCard

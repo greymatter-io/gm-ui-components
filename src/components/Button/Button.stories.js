@@ -19,9 +19,9 @@ const types = ["default", "danger", "info", "primary", "warning"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
-storiesOf("Button", module)
+storiesOf("Components/Buttons", module)
   .add(
-    "default",
+    "Button",
     withInfo(
       "A React component that renders a button and includes base styling, used to trigger actions."
     )(() => (
@@ -42,21 +42,21 @@ storiesOf("Button", module)
       </div>
     ))
   )
-  .add("types", () => (
+  .add("Button Types", () => (
     <div style={wrapperStyle}>
       {types.map(type => (
         <Button type={type} label={type} key={type} clickAction={() => {}} />
       ))}
     </div>
   ))
-  .add("sizes", () => (
+  .add("Button Sizes", () => (
     <div style={wrapperStyle}>
       {sizes.map(size => (
         <Button size={size} label={size} key={size} clickAction={() => {}} />
       ))}
     </div>
   ))
-  .add("orientations", () => (
+  .add("Button Orientations", () => (
     <div style={wrapperStyle}>
       {orientations.map(orientation => (
         <Button

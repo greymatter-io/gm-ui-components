@@ -77,7 +77,7 @@ const data = [
   }
 ];
 
-storiesOf("Table", module).add("default", () => {
+storiesOf("Components", module).add("Table", () => {
   return (
     <Table
       columns={object("columns", columns)}

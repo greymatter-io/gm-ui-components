@@ -61,7 +61,7 @@ const toolbarItems = () => {
   );
 };
 
-storiesOf("App Header", module)
+storiesOf("Components", module)
   .addDecorator(story => (
     <div
       style={{
@@ -72,7 +72,7 @@ storiesOf("App Header", module)
     </div>
   ))
   .add(
-    "default",
+    "App Header",
     withInfo(
       "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
     )(() => {

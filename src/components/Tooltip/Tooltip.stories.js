@@ -12,7 +12,7 @@ const wrapperStyle = {
   alignItems: "center"
 };
 
-storiesOf("Tooltip", module).add("default", () => {
+storiesOf("Components", module).add("Tooltip", () => {
   let content = text("Tooltip Content", "This is a super cool tooltip!");
   let position = select("Position", ["top", "right", "bottom", "left"], "top");
   return (

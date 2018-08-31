@@ -37,7 +37,7 @@ const mockTabs = [
   }
 ];
 
-storiesOf("NavCardGroup", module).add("NavCard with NavCardGroup", () => {
+storiesOf("Components/NavCard", module).add("NavCardGroup", () => {
   return (
     <NavCardGroup>
       {mockTabs.map(item => {

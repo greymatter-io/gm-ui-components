@@ -9,7 +9,7 @@ const orientations = {
   horizontal: "horizontal"
 };
 
-storiesOf("Spinner", module).add("default", () => (
+storiesOf("Components/Spinner", module).add("Indeterminate Spinner", () => (
   <Spinner
     orientation={select("orientation", orientations)}
     message={text("Loading Message")}

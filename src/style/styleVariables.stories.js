@@ -48,7 +48,7 @@ import {
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
-const stories = storiesOf("Style Variables", module);
+const stories = storiesOf("Theming", module);
 
 const DemoCanvas = styled.div`
 `;
@@ -302,7 +302,7 @@ const DemoDescription = styled.p`
 
 const DemoHeading = styled.h1`
   font-family: ${FONT_STACK_BASE};
-  margin: ${spacingScale(4)} ${spacingScale(1)};
+  margin: ${spacingScale(4)} ${spacingScale(1)} ${spacingScale(1)};
 `;
 
 const DemoNavigation = styled.nav`
@@ -381,6 +381,8 @@ stories
       <DemoCanvas>
 
         <DemoHeading>Style Variables</DemoHeading>
+        <DemoDescription>Use the style variables included in your project instead of hardcoding pixel and color values.</DemoDescription>
+
 
         <DemoNavigation>
           <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>

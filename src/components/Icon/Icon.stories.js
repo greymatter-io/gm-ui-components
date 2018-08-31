@@ -225,9 +225,9 @@ const GalleryIconLabel = styled.p`
   opacity: ${OPACITY_70}
 `;
 
-storiesOf("Icons", module)
+storiesOf("Components/Icons", module)
   .add(
-    "default",
+    "Icon",
     withInfo(
       "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
     )(() => {
@@ -251,7 +251,7 @@ storiesOf("Icons", module)
     })
   )
   .add(
-    "custom glyph",
+    "Icon with Custom Glyph",
     withInfo(
       "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
     )(() => {
@@ -276,7 +276,7 @@ storiesOf("Icons", module)
     })
   )
   .add(
-    "gallery",
+    "Glyph Gallery",
     withInfo(
       "A gallery of all native Glyphs. Import the desired Glyph by name and pass desired props as documented in Icons/default"
     )(() => {

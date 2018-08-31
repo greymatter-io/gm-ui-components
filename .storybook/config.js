@@ -63,7 +63,7 @@ setOptions({
    * show horizontal addons panel as a vertical panel on the right
    * @type {Boolean}
    */
-  addonPanelInRight: true,
+  addonPanelInRight: false,
   /**
    * sorts stories
    * @type {Boolean}
@@ -78,13 +78,9 @@ setOptions({
    *   /\/|\./ - split by `/` or `.`
    * @type {Regex}
    */
-  hierarchySeparator: /\/|\./,
-
-  /**
-   * sidebar tree animations
-   * @type {Boolean}
-   */
-  sidebarAnimations: true,
+  hierarchySeparator: /\//,
+  hierarchyRootSeparator: /\|/,
+  sidebarAnimations: false,
 
   /**
    * id to select an addon panel

@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 
 import Tab from "./Tab";
 
-const stories = storiesOf("Tab", module);
+const stories = storiesOf("Components/Tabs", module);
 
 stories.add(
   "Tab",

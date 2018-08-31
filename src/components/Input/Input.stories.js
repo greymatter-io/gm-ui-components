@@ -4,7 +4,7 @@ import { text, number, boolean } from "@storybook/addon-knobs/react";
 
 import Input from "./Input";
 
-storiesOf("Input", module).add("default", () => (
+storiesOf("Components", module).add("Input", () => (
   <Input
     autofocus={boolean("Autofocus", false)}
     hint={text("Hint", "Hint")}

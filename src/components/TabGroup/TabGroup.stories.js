@@ -6,7 +6,7 @@ import { text } from "@storybook/addon-knobs";
 import Tab from "components/Tab";
 import TabGroup from "./TabGroup";
 
-const stories = storiesOf("TabGroup", module);
+const stories = storiesOf("Components/Tabs", module);
 
 stories.add(
   "TabGroup",

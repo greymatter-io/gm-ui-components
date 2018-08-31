@@ -42,7 +42,7 @@ const mockReadoutManyItems = [
   }
 ];
 
-storiesOf("Readout", module)
+storiesOf("Components/Readout", module)
   .add("Readout", () => (
     <Readout
       primary={boolean("Readout is Primary", false)}
