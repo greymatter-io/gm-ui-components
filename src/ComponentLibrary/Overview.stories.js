@@ -23,9 +23,9 @@ const Introduction = styled.div`
   }
 `;
 
-storiesOf("Foundations", module)
+storiesOf(" Foundations", module)
   .addDecorator(backgrounds())
-  .add("Introduction", () => {
+  .add(" Introduction", () => {
     return (
       <Introduction>
         <h1>Introduction</h1>
