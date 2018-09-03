@@ -203,6 +203,7 @@ const GalleryIconList = styled.ul`
   font-family: ${FONT_STACK_BASE};
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
   border: 1px solid ${COLOR_KEYLINE_SOLID};
   border-width: 0 1px 1px 0;
 `;
