@@ -5,6 +5,8 @@ exports[`Input matches snapshot 1`] = `
   <InputLabel>
     Test
   </InputLabel>
-  <InputField />
+  <InputField
+    clickAction={[Function]}
+  />
 </InputWrap>
 `;
