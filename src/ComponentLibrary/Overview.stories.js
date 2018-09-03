@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 import { storiesOf } from "@storybook/react";
+import backgrounds from "@storybook/addon-backgrounds";
 import LinkTo from '@storybook/addon-links/react';
 import { FONT_STACK_BASE, FONT_STACK_BRAND, COLOR_KEYLINE } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
@@ -22,8 +23,9 @@ const Introduction = styled.div`
   }
 `;
 
-storiesOf("Overview|Introduction", module)
-  .add("Overview", () => {
+storiesOf("Foundations", module)
+  .addDecorator(backgrounds())
+  .add("Introduction", () => {
     return (
       <Introduction>
         <h1>Introduction</h1>

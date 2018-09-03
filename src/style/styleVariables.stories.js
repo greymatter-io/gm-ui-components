@@ -48,10 +48,9 @@ import {
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
-const stories = storiesOf("Theming", module);
+const stories = storiesOf("Foundations", module);
 
-const DemoCanvas = styled.div`
-`;
+const DemoCanvas = styled.div``;
 
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
@@ -376,7 +375,7 @@ const DemoNavigationItem = styled.a`
 
 stories
   .add(
-    "Style Variables",
+    "Styles",
     (() => (
       <DemoCanvas>
 
