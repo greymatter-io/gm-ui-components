@@ -30,7 +30,14 @@ setDefaults({
     /* Components used in story */
   ], // displays Prop Tables with this components
   propTablesExclude: [], // Exclude Components from being shoun in Prop Tables section
-  styles: {}, // Overrides styles of addon
+  styles: {
+    infoBody: {
+      boxShadow: 'inset 0 0 0 rgba(0,0,0,0.08)',
+      border: '0',
+      borderRadius: '8px',
+      backgroundColor: 'rgba(0,0,0,0.02)'
+    }
+  }, // Overrides styles of addon
   components: {}, // Overrides components used to display markdown. Warning! This option's name will be likely deprecated in favor to "components" with the same API in 3.3 release. Follow this PR #1501 for details
   maxPropsIntoLine: 1, // Max props to display per line in source code
   maxPropObjectKeys: 10,

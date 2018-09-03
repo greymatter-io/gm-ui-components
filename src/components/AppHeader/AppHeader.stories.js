@@ -62,15 +62,6 @@ const toolbarItems = () => {
 };
 
 storiesOf("Components", module)
-  .addDecorator(story => (
-    <div
-      style={{
-        paddingTop: "30px"
-      }}
-    >
-      {story()}
-    </div>
-  ))
   .add(
     "App Header",
     withInfo(
