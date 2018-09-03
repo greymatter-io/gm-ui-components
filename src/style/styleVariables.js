@@ -69,7 +69,7 @@ export const keen = {
   themeName: 'Keen',
   name: 'Keen',
   theme: {
-    COLOR_BRAND_A: "#0aab2a",
+    COLOR_BRAND_A: "purple",
     COLOR_BRAND_B: "#0aab2a",
     COLOR_CONTENT: '#000',
 
