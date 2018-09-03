@@ -4,15 +4,26 @@ import styled from 'styled-components';
 import { storiesOf } from "@storybook/react";
 import backgrounds from "@storybook/addon-backgrounds";
 import LinkTo from '@storybook/addon-links/react';
-import { FONT_STACK_BASE, FONT_STACK_BRAND, COLOR_KEYLINE } from "style/styleVariables";
+import { FONT_STACK_BASE, FONT_STACK_BRAND, COLOR_KEYLINE, COLOR_INTENT_HIGHLIGHT } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const Introduction = styled.div`
   padding: 4vh 4vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  max-width: 30em;
   font-family: ${FONT_STACK_BASE};
 
   h1 {
     font-family: ${FONT_STACK_BRAND};
+    margin: 0;
+  }
+
+  h2 {
+    margin: 1em 0 0;
   }
 
   hr {
@@ -21,38 +32,21 @@ const Introduction = styled.div`
     height: 1px;
     border: 0;
   }
+  
+  a {
+    color: ${COLOR_INTENT_HIGHLIGHT};
+  }
 `;
 
-storiesOf(" Foundations", module)
+storiesOf(" Overview", module)
   .addDecorator(backgrounds())
   .add(" Introduction", () => {
     return (
       <Introduction>
         <h1>Introduction</h1>
-        <hr />
-        <h2>Commonly Used Components</h2>
-        <ul>
-          <li><LinkTo kind="Components/Buttons" story="Button">Buttons!</LinkTo></li>
-          <li><LinkTo kind="Components/Icons" story="Icon">Icons!</LinkTo></li>
-          <li><LinkTo kind="Components" story="Input">Inputs!</LinkTo></li>
-        </ul>
-
-        <h2>Building a new component?</h2>
-        <p>Check out the <LinkTo kind="Style Variables">style variables.</LinkTo></p>
-        
-        <p>Components are awesome</p>
-        <p>You should use these awesome components.</p>
-        <p>Awesome components include...</p>
-        <hr />
-        <ul>
-          <li>This one</li>
-          <li>This one</li>
-          <li>This one</li>
-          <li>This one</li>
-          <li>This one</li>
-          <li>This one</li>
-          <li>And this one</li>
-        </ul>
+        <p>For detailed Readme, issues, suggestions, and related projects, view the <a href="https://github.com/DecipherNow/gm-ui-components">Project Source</a> on GitHub.</p>
+        <p><a href="">View component style tokens</a></p>
+        <p><a href="">Browse components</a></p>
       </Introduction>
     );
   });
