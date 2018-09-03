@@ -6,13 +6,14 @@ import { withInfo } from "@storybook/addon-info";
 
 import Spinner from "./Spinner";
 
+const stories = storiesOf("Components", module);
+
 const orientations = {
   vertical: "vertical",
   horizontal: "horizontal"
 };
 
-storiesOf("Components", module)
-  .add("Spinner",
+stories.add("Spinner",
   withInfo(
     "Spinner to indicate the loading state of an interface element or background process."
   )(() => {

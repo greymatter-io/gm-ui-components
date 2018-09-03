@@ -12,6 +12,9 @@ import {
 } from "components";
 import { spacingScale } from "style/styleFunctions";
 
+
+const stories = storiesOf("Components", module);
+
 const bannerExtras = [
   {
     path: "/settings",
@@ -61,18 +64,17 @@ const toolbarItems = () => {
   );
 };
 
-storiesOf("Components", module)
-  .add(
-    "App Header",
-    withInfo(
-      "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
-    )(() => {
-      return (
-        <AppHeader
-          title={text("title", "GM UI App Header")}
-          extras={object("extras", bannerExtras)}
-          toolbarItems={toolbarItems}
-        />
-      );
-    })
-  );
+stories.add(
+"App Header",
+  withInfo(
+    "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
+  )(() => {
+    return (
+      <AppHeader
+        title={text("title", "GM UI App Header")}
+        extras={object("extras", bannerExtras)}
+        toolbarItems={toolbarItems}
+      />
+    );
+  })
+);

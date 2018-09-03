@@ -6,7 +6,9 @@ import { withInfo } from "@storybook/addon-info";
 import LayoutSection from "./LayoutSection";
 import { Readout, ReadoutGroup, IconBell, IconSummary } from "../";
 
-storiesOf("Components", module).add(
+const stories = storiesOf("Components", module);
+
+stories.add(
   "Layout Section",
   withInfo("A flexbox layout component")(() => {
     return (

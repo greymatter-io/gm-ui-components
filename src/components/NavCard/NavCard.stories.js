@@ -8,8 +8,9 @@ import NavCard from "components/NavCard";
 
 import { IconSummary } from "components";
 
-storiesOf("Components/NavCard", module)
-  .add("NavCard",
+const stories = storiesOf("Components/NavCard", module);
+
+stories.add("NavCard",
   withInfo(
     "A complex card-style navigation tab element, with space for optional small data readouts."
   )(() => {

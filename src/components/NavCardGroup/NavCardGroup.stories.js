@@ -8,6 +8,8 @@ import { withInfo } from "@storybook/addon-info";
 import NavCard from "components/NavCard";
 import NavCardGroup from "components/NavCardGroup";
 
+const stories = storiesOf("Components/NavCard", module);
+
 const mockTabs = [
   {
     path: "/",
@@ -39,24 +41,25 @@ const mockTabs = [
   }
 ];
 
-storiesOf("Components/NavCard", module).add("NavCardGroup",
-withInfo(
-  "Groups of related NavCards should be displayed in a NavCardGroup."
-)(() => {
-  return (
-    <NavCardGroup>
-      {mockTabs.map(item => {
-        return (
-          <NavCard
-            key={item.title}
-            icon={item.icon}
-            details={item.details}
-            title={item.title}
-          />
-        );
-      })}
-    </NavCardGroup>
-    )
-  }
-));
+stories.add("NavCardGroup",
+  withInfo(
+    "Groups of related NavCards should be displayed in a NavCardGroup."
+  )(() => {
+    return (
+      <NavCardGroup>
+        {mockTabs.map(item => {
+          return (
+            <NavCard
+              key={item.title}
+              icon={item.icon}
+              details={item.details}
+              title={item.title}
+            />
+          );
+        })}
+      </NavCardGroup>
+      )
+    }
+  )
+);
 

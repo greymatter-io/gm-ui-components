@@ -226,8 +226,9 @@ const GalleryIconLabel = styled.p`
   opacity: ${OPACITY_70}
 `;
 
-storiesOf("Components/Icons", module)
-  .add(
+const stories = storiesOf("Components/Icons", module);
+
+stories.add(
     "Icon",
     withInfo(
       "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
