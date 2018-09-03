@@ -9,9 +9,7 @@ import Button from "./Button";
 
 const wrapperStyle = {
   display: "flex",
-  width: "100vw",
   justifyContent: "space-around",
-  height: "100vh",
   alignItems: "center"
 };
 
@@ -42,21 +40,32 @@ storiesOf("Components/Buttons", module)
       </div>
     ))
   )
-  .add("Button Types", () => (
+  .add("Button Types",
+  withInfo(
+    "Demonstrating Button types."
+  )(() => (
     <div style={wrapperStyle}>
       {types.map(type => (
         <Button type={type} label={type} key={type} clickAction={() => {}} />
       ))}
     </div>
-  ))
-  .add("Button Sizes", () => (
+    ))
+  )
+  .add("Button Sizes",
+  withInfo(
+    "Demonstrating Button sizes."
+  )(() => (
     <div style={wrapperStyle}>
       {sizes.map(size => (
         <Button size={size} label={size} key={size} clickAction={() => {}} />
       ))}
     </div>
-  ))
-  .add("Button Orientations", () => (
+    ))
+  )
+  .add("Button Orientations",
+  withInfo(
+    "Demonstrating Button orientations."
+  )(() => (
     <div style={wrapperStyle}>
       {orientations.map(orientation => (
         <Button
@@ -69,4 +78,5 @@ storiesOf("Components/Buttons", module)
         </Button>
       ))}
     </div>
-  ));
+    ))
+  );

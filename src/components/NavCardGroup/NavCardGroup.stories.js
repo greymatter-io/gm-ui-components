@@ -2,6 +2,8 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { IconSummary, IconFunctions, IconThreads, IconHTTP } from "components";
+import { withInfo } from "@storybook/addon-info";
+
 
 import NavCard from "components/NavCard";
 import NavCardGroup from "components/NavCardGroup";
@@ -37,7 +39,10 @@ const mockTabs = [
   }
 ];
 
-storiesOf("Components/NavCard", module).add("NavCardGroup", () => {
+storiesOf("Components/NavCard", module).add("NavCardGroup",
+withInfo(
+  "Groups of related NavCards should be displayed in a NavCardGroup."
+)(() => {
   return (
     <NavCardGroup>
       {mockTabs.map(item => {
@@ -51,5 +56,7 @@ storiesOf("Components/NavCard", module).add("NavCardGroup", () => {
         );
       })}
     </NavCardGroup>
-  );
-});
+    )
+  }
+));
+

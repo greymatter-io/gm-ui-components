@@ -2,13 +2,16 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { text, select } from "@storybook/addon-knobs/react";
+import { withInfo } from "@storybook/addon-info";
 import Checkbox from "./Checkbox";
 
 const stories = storiesOf("Components", module);
 
-stories.add("Checkbox", () => {
-  return (
-    <div style={{ width: "50vw" }}>
+stories.add("Checkbox",
+  withInfo(
+    "A checkbox form input with a label."
+  )(() => {
+    return (
       <Checkbox
         labelPosition={select(
           "labelPosition",
@@ -24,6 +27,6 @@ stories.add("Checkbox", () => {
           alert("checked: " + e.target.checked);
         }}
       />
-    </div>
-  );
-});
+    )
+  }
+));

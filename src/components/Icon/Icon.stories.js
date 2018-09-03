@@ -276,10 +276,8 @@ storiesOf("Components/Icons", module)
     })
   )
   .add(
-    "Glyph Gallery",
-    withInfo(
-      "A gallery of all native Glyphs. Import the desired Glyph by name and pass desired props as documented in Icons/default"
-    )(() => {
+    "Glyph Gallery", (() => {
+      // withInfo causes massive slowdown.
       return (
         <GalleryIconList>
           {glyphNames.map(glyph => {
