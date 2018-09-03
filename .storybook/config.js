@@ -2,6 +2,8 @@ import { configure, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs/react";
+import { withThemesProvider } from 'storybook-addon-styled-component-theme';
+
 
 const req = require.context("../src", true, /\.stories\.js$/);
 
@@ -26,6 +28,8 @@ setDefaults({
   maxPropArrayLength: 10,
   maxPropStringLength: 100
 });
+
+addDecorator(withThemesProvider([keen]));
 
 // Options:
 setOptions({
