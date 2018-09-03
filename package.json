@@ -20,7 +20,8 @@
   "dependencies": {
     "@storybook/addon-a11y": "^3.4.10",
     "@storybook/addon-viewport": "^3.4.10",
-    "polished": "^2.0.3"
+    "polished": "^2.0.3",
+    "storybook-addon-styled-component-theme": "^1.0.3"
   },
   "scripts": {
     "build": "webpack -p",

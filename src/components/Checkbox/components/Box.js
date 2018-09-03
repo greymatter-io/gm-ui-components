@@ -1,9 +1,8 @@
 import styled from "styled-components";
-
 import { COLOR_BRAND_A, BORDER_RADIUS_BASE, COLOR_BACKGROUND_A } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
-const CHECKBOX_COLOR = COLOR_BRAND_A;
+const CHECKBOX_COLOR = props => props.theme.theme.COLOR_BRAND_A || COLOR_BRAND_A;
 
 const Box = styled.input.attrs({
   type: "checkbox"
