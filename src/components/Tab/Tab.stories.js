@@ -13,14 +13,12 @@ stories.add(
     "An individual Tab component that is meant to be used as a child of TabGroup."
   )(() => {
     return (
-      <div style={{ width: "100vw", display: "flex", height: "40px" }}>
-        <Tab
-          clickAction={() => alert("hello")}
-          label={text("label", "Active Tab")}
-          active={boolean("active", true)}
-          disabled={boolean("disabled", false)}
-        />
-      </div>
+      <Tab
+        clickAction={() => alert("hello")}
+        label={text("label", "Active Tab")}
+        active={boolean("active", true)}
+        disabled={boolean("disabled", false)}
+      />
     );
   })
 );

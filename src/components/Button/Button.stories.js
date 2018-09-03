@@ -24,50 +24,48 @@ stories.add(
   withInfo(
     "A React component that renders a button and includes base styling, used to trigger actions."
   )(() => (
-    <div style={wrapperStyle}>
-      <Button
-        active={boolean("active", false)}
-        label={text("label", "Hello World")}
-        type={select("type", types, "default")}
-        disabled={boolean("disabled", false)}
-        clickAction={() => alert("clicked")}
-        orientation={select("orientation", orientations, "horizontal")}
-        outline={boolean("outline", false)}
-        prefix={text("prefix")}
-        suffix={text("suffix")}
-        size={select("size", sizes, "normal")}
-        tabIndex={number("tabIndex", 0)}
-      />
-    </div>
+    <Button
+      active={boolean("active", false)}
+      label={text("label", "Hello World")}
+      type={select("type", types, "default")}
+      disabled={boolean("disabled", false)}
+      clickAction={() => alert("clicked")}
+      orientation={select("orientation", orientations, "horizontal")}
+      outline={boolean("outline", false)}
+      prefix={text("prefix")}
+      suffix={text("suffix")}
+      size={select("size", sizes, "normal")}
+      tabIndex={number("tabIndex", 0)}
+    />
   ))
 )
 .add("Button Types",
 withInfo(
   "Demonstrating Button types."
 )(() => (
-  <div style={wrapperStyle}>
+  <React.Fragment>
     {types.map(type => (
       <Button type={type} label={type} key={type} clickAction={() => {}} />
     ))}
-  </div>
+  </React.Fragment>
   ))
 )
 .add("Button Sizes",
 withInfo(
   "Demonstrating Button sizes."
 )(() => (
-  <div style={wrapperStyle}>
+  <React.Fragment>
     {sizes.map(size => (
       <Button size={size} label={size} key={size} clickAction={() => {}} />
     ))}
-  </div>
+    </React.Fragment>
   ))
 )
 .add("Button Orientations",
 withInfo(
   "Demonstrating Button orientations."
 )(() => (
-  <div style={wrapperStyle}>
+  <React.Fragment>
     {orientations.map(orientation => (
       <Button
         orientation={orientation}
@@ -78,6 +76,6 @@ withInfo(
         <IconBell size="25px" />
       </Button>
     ))}
-  </div>
+    </React.Fragment>
   ))
 );
