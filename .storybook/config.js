@@ -10,7 +10,7 @@ import backgrounds from "@storybook/addon-backgrounds";
 
 import { StoryContainer } from 'ComponentLibrary/StoryComponents/StoryContainer';
 
-import { COLOR_BACKGROUND_A, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C, keen } from './../src/style/styleVariables';
+import { COLOR_BACKGROUND_A, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C, keen, keenDark } from './../src/style/styleVariables';
 
 
 const req = require.context("../src", true, /\.stories\.js$/);
@@ -50,7 +50,7 @@ setDefaults({
   maxPropStringLength: 100
 });
 
-addDecorator(withThemesProvider([keen]));
+addDecorator(withThemesProvider([keen, keenDark]));
 
 addDecorator(story => (
   <StoryContainer>
