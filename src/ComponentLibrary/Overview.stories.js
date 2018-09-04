@@ -1,0 +1,60 @@
+import React from "react";
+import styled from 'styled-components';
+import { darken } from 'polished';
+
+import { storiesOf } from "@storybook/react";
+import backgrounds from "@storybook/addon-backgrounds";
+import LinkTo from '@storybook/addon-links/react';
+import { FONT_STACK_BASE, FONT_STACK_BRAND, COLOR_KEYLINE, COLOR_INTENT_HIGHLIGHT } from "style/styleVariables";
+import { spacingScale } from "style/styleFunctions";
+
+import { IconChevronRight } from "../components/Glyphs";
+
+const Introduction = styled.div`
+  padding: 4vh 4vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  max-width: 30em;
+  font-family: ${FONT_STACK_BASE};
+
+  h1 {
+    font-family: ${FONT_STACK_BRAND};
+    margin: 0;
+  }
+
+  h2 {
+    margin: 1em 0 0;
+  }
+
+  hr {
+    margin: ${spacingScale(1)} 0;
+    box-shadow: 0 1px 0 0 ${COLOR_KEYLINE};
+    height: 1px;
+    border: 0;
+  }
+  
+  a {
+    color: ${darken(0.07, COLOR_INTENT_HIGHLIGHT)};
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+`;
+
+storiesOf(" Overview", module)
+  .addDecorator(backgrounds())
+  .add(" Introduction", () => {
+    return (
+      <Introduction>
+        <h1>Introduction</h1>
+        <p>For detailed readme, issues, suggestions, and related projects, view the <a href="https://github.com/DecipherNow/gm-ui-components">Project Source</a> on GitHub.</p>
+        <p><LinkTo kind=" Overview" story="Styles">Browse Style Tokens <IconChevronRight size="1.714em"/></LinkTo></p>
+        <p><LinkTo kind="Components/Buttons" story="Button">Browse Components <IconChevronRight size="1.714em"/></LinkTo></p>
+      </Introduction>
+    );
+  });

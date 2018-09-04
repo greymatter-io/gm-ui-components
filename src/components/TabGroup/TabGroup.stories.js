@@ -6,19 +6,17 @@ import { text } from "@storybook/addon-knobs";
 import Tab from "components/Tab";
 import TabGroup from "./TabGroup";
 
-const stories = storiesOf("TabGroup", module);
+const stories = storiesOf("Components/Tabs", module);
 
 stories.add(
   "TabGroup",
   withInfo("A TabGroup component that wraps individual Tab components")(() => {
     return (
-      <div style={{ width: "100vw" }}>
-        <TabGroup label={text("label", "Tab Group")}>
-          <Tab clickAction={() => {}} label="Active Tab" active />
-          <Tab clickAction={() => {}} label="Label" />
-          <Tab clickAction={() => {}} label="Disabled" disabled />
-        </TabGroup>
-      </div>
+      <TabGroup label={text("label", "Tab Group")}>
+        <Tab clickAction={() => {}} label="Active Tab" active />
+        <Tab clickAction={() => {}} label="Label" />
+        <Tab clickAction={() => {}} label="Disabled" disabled />
+      </TabGroup>
     );
   })
 );

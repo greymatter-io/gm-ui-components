@@ -2,13 +2,18 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { text, object } from "@storybook/addon-knobs/react";
+import { withInfo } from "@storybook/addon-info";
 
 import NavCard from "components/NavCard";
 
 import { IconSummary } from "components";
 
-storiesOf("NavCard", module)
-  .add("Basic NavCard", () => {
+const stories = storiesOf("Components/NavCard", module);
+
+stories.add("NavCard",
+  withInfo(
+    "A complex card-style navigation tab element, with space for optional small data readouts."
+  )(() => {
     return (
       <a href="#" style={{ textDecoration: "none" }}>
         <NavCard
@@ -20,9 +25,13 @@ storiesOf("NavCard", module)
           title={text("Title", "Summary")}
         />
       </a>
-    );
-  })
-  .add("NavCard with children", () => {
+    )
+  }
+))
+  .add("NavCard with children",
+  withInfo(
+    "NavCards may contain children for display purposes, such as sparklines."
+  )(() => {
     return (
       <a href="#" style={{ textDecoration: "none" }}>
         <NavCard
@@ -36,5 +45,6 @@ storiesOf("NavCard", module)
           )}
         </NavCard>
       </a>
-    );
-  });
+    )
+  }
+));

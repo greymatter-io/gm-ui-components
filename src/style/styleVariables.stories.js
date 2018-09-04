@@ -48,10 +48,9 @@ import {
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
-const stories = storiesOf("Style Variables", module);
+const stories = storiesOf(" Overview", module);
 
-const DemoCanvas = styled.div`
-`;
+const DemoCanvas = styled.div``;
 
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
@@ -59,16 +58,16 @@ const DemoItem = styled.button.attrs({
     copy('${' + props.demoVarName + '}');
   }
 })`
+  background: ${props => props.theme.COLOR_BACKGROUND_A || COLOR_BACKGROUND_A};
+  border-radius: ${props => props.theme.RADIUS_1 || RADIUS_1};
+  font-size: ${props => props.theme.FONT_SIZE_SM || FONT_SIZE_SM};
+  color: ${props => props.theme.COLOR_CONTENT || COLOR_CONTENT };
+  border: 1px solid ${props => props.theme.COLOR_BACKGROUND_A || COLOR_BACKGROUND_A };
+  box-shadow: 0 0 0 1px ${props => props.theme.COLOR_KEYLINE || COLOR_KEYLINE};
   box-sizing: border-box;
-  background: ${COLOR_BACKGROUND_A};
-  border-radius: ${RADIUS_1};
   margin: ${spacingScale(1)};
   width: ${spacingScale(16)};
-  font-size: ${FONT_SIZE_SM};
-  color: #000;
-  border: 1px solid #fff;
   padding: 0;
-  box-shadow: 0 0 0 1px ${COLOR_KEYLINE};
   transition: all .3s ease;
   display: flex;
   flex-direction: column;
@@ -82,29 +81,29 @@ const DemoItem = styled.button.attrs({
     margin-top: ${spacingScale(1)};
     margin-bottom: ${spacingScale(1)};
     transition: all .5s ease;
-    font-family: ${FONT_STACK_BASE};
-    font-size: ${FONT_SIZE_SM};
-    opacity: ${OPACITY_70};
+    font-family: ${props => props.theme.FONT_STACK_BASE || FONT_STACK_BASE};
+    font-size: ${props => props.theme.FONT_SIZE_SM || FONT_SIZE_SM};
+    opacity: ${props => props.theme.OPACITY_70 || OPACITY_70};
   }
 
   &:hover,
   &:focus {
-    box-shadow: 0 0 0 1.5px ${COLOR_INTENT_HIGHLIGHT};
+    box-shadow: 0 0 0 1.5px ${props => props.theme.COLOR_INTENT_HIGHLIGHT || COLOR_INTENT_HIGHLIGHT};
     transition: all .15s ease;
 
     &:after {
       transition: inherit;
       content: 'Copy to Clipboard';
-      opacity: ${OPACITY_100};
-      color: ${COLOR_INTENT_HIGHLIGHT};
+      opacity: ${props => props.theme.OPACITY_100 || OPACITY_100};
+      color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT || COLOR_INTENT_HIGHLIGHT};
     }
 
     &:active {
       transition: 0;
 
       &:after{
-        font-weight: ${FONT_WEIGHT_SEMIBOLD};
-        color: ${COLOR_INTENT_HIGHLIGHT};
+        font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD || FONT_WEIGHT_SEMIBOLD};
+        color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT || COLOR_INTENT_HIGHLIGHT};
       }
     }
   }
@@ -119,10 +118,12 @@ const DemoItem = styled.button.attrs({
 const DemoSection = styled.div.attrs({
   id: props => props.name
 })`
+  color: ${props => props.theme.COLOR_CONTENT || COLOR_CONTENT};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_A || COLOR_BACKGROUND_A};
+  font-family: ${props => props.theme.FONT_STACK_BASE || FONT_STACK_BASE};
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  font-family: ${FONT_STACK_BASE};
   flex: 0 0 100%;
   line-height: 1.5;
   margin-top: calc(${spacingScale(2)});
@@ -135,8 +136,8 @@ const DemoSection = styled.div.attrs({
     flex: 0 0 100%;
     margin: ${spacingScale(1)};
     user-select: text;
-    font-size: ${FONT_SIZE_HERO};
-    font-weight: ${FONT_WEIGHT_SEMIBOLD};
+    font-size: ${props => props.theme.FONT_SIZE_HERO || FONT_SIZE_HERO};
+    font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD || FONT_WEIGHT_SEMIBOLD};
   }
 
   &:not(:first-of-type) {
@@ -152,8 +153,8 @@ const DemoSubSection = styled(DemoSection)`
   flex: 0 0 100%;
 
   &:before {
-    font-size: ${FONT_SIZE_MD};
-    font-weight: ${FONT_WEIGHT_BOLD};
+    font-size: ${props => props.theme.FONT_SIZE_MD || FONT_SIZE_MD};
+    font-weight: ${props => props.theme.FONT_WEIGHT_BOLD || FONT_WEIGHT_BOLD};
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
@@ -178,19 +179,19 @@ const ColorDemo = styled(DemoItem)`
     content: '';
     height: ${spacingScale(4)};
     margin: ${spacingScale(1.5)} ${spacingScale(1.5)} 0;
-    border-radius: ${RADIUS_05};
+    border-radius: ${props => props.theme.RADIUS_05 || RADIUS_05};
     background-color: ${props => props.demoVar};
   }
 
   &:after {
-    opacity: ${OPACITY_70};
+    opacity: ${props => props.theme.OPACITY_70 || OPACITY_70};
     margin: auto ${spacingScale(0.25)} ${spacingScale(1)};
   }
 `;
 
 const ColorLineDemo = styled(ColorDemo)`
   align-items: stretch;
-  background-color: ${COLOR_BACKGROUND_A};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_A || COLOR_BACKGROUND_A};
 
   &:before {
     content: "";
@@ -220,7 +221,7 @@ const FontDemo = styled(DemoItem)`
 
   &:before {
     content: "The quick brown fox jumps over the lazy dog";
-    font-size: ${FONT_SIZE_TITLE};
+    font-size: ${props => props.theme.FONT_SIZE_TITLE || FONT_SIZE_TITLE};
   }
 
   &:after {
@@ -229,7 +230,7 @@ const FontDemo = styled(DemoItem)`
 `;
 
 const FontSizeDemo = styled(FontDemo)`
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE || FONT_STACK_BASE};
 
   &:before {
     font-size: ${props => props.demoVar};
@@ -238,7 +239,7 @@ const FontSizeDemo = styled(FontDemo)`
 
 const FontWeightDemo = styled(FontDemo)`
   &:before {
-    font-size: ${FONT_SIZE_BASE};
+    font-size: ${props => props.theme.FONT_SIZE_BASE || FONT_SIZE_BASE};
     font-weight: ${props => props.demoVar};
   }
 `;
@@ -248,7 +249,7 @@ const RadiusDemo = styled(DemoItem)`
 
   &:before {
     content: "";
-    border: 1px solid ${COLOR_BRAND_A};
+    border: 1px solid ${props => props.theme.COLOR_BRAND_A || COLOR_BRAND_A};
     margin: auto auto 0;
     border-width: 1px 1px 0 0;
     height: ${spacingScale(8)};
@@ -266,8 +267,8 @@ const OpacityDemo = styled(DemoItem)`
     flex: 1 1 100%;
     height: ${spacingScale(6)};
     margin: ${spacingScale(1)} ${spacingScale(1)} 0;
-    border-radius: ${RADIUS_05};
-    background: ${COLOR_BRAND_A};
+    border-radius: ${props => props.theme.RADIUS_05 || RADIUS_05};
+    background: ${props => props.theme.COLOR_BRAND_A || COLOR_BRAND_A};
     opacity: ${props => props.demoVar};
   }
 `;
@@ -279,7 +280,7 @@ const SpacingDemo = styled(DemoItem)`
     content: "";
     height: ${spacingScale(0.5)};
     margin: ${spacingScale(2)} auto ${spacingScale(0)};
-    border: 1px solid ${COLOR_BRAND_A};
+    border: 1px solid ${props => props.theme.COLOR_BRAND_A || COLOR_BRAND_A};
     border-radius: 0 0 1.5px 1.5px;
     border-top: 0;
     width: ${props => props.demoVar};
@@ -288,8 +289,8 @@ const SpacingDemo = styled(DemoItem)`
 
 const DemoDescription = styled.p`
   margin: ${spacingScale(-0.5)} ${spacingScale(1)} ${spacingScale(1.5)};
-  font-size: ${FONT_SIZE_BASE};
-  font-family: ${FONT_STACK_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_BASE || FONT_SIZE_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE || FONT_STACK_BASE};
   display: flex;
   flex: 1 0 100%;
 
@@ -301,8 +302,8 @@ const DemoDescription = styled.p`
 
 
 const DemoHeading = styled.h1`
-  font-family: ${FONT_STACK_BASE};
-  margin: ${spacingScale(4)} ${spacingScale(1)};
+  font-family: ${props => props.theme.FONT_STACK_BASE || FONT_STACK_BASE};
+  margin: ${spacingScale(4)} ${spacingScale(1)} ${spacingScale(1)};
 `;
 
 const DemoNavigation = styled.nav`
@@ -311,28 +312,30 @@ const DemoNavigation = styled.nav`
   justify-content: stretch;
   margin: ${spacingScale(5)} 0 ${spacingScale(2)};
   height: ${spacingScale(5)};
-  background-color: ${COLOR_BACKGROUND_A};
-  box-shadow: 0 1px 0 0 ${COLOR_KEYLINE};
-  z-index: ${ZINDEX_STICKY};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_A || COLOR_BACKGROUND_A};
+  box-shadow: 0 1px 0 0 ${props => props.theme.COLOR_KEYLINE || COLOR_KEYLINE};
+  z-index: ${props => props.theme.ZINDEX_STICKY || ZINDEX_STICKY};
   position: sticky;
   top: 0;
 `;
+
+const DemoWidgetBrandColor = props => props.theme.COLOR_BRAND_A;
 
 const DemoNavigationItem = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_BASE};
-  color: ${COLOR_CONTENT};
-  font-weight: ${FONT_WEIGHT_BOLD};
+  font-family: ${props => props.theme.FONT_STACK_BASE || FONT_STACK_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_BASE || FONT_SIZE_BASE};
+  color: ${props => props.theme.COLOR_CONTENT || COLOR_CONTENT};
+  font-weight: ${props => props.theme.FONT_WEIGHT_BOLD || FONT_WEIGHT_BOLD};
   flex: 1 1 100%;
   text-decoration: none;
 
   &:before {
     content: '';
     margin-right: ${spacingScale(1)};
-    color: ${COLOR_BRAND_A};
+    color: ${props => props.theme.COLOR_BRAND_A || COLOR_BRAND_A};
   }
 
   &[href="#Layout"] {
@@ -340,7 +343,7 @@ const DemoNavigationItem = styled.a`
       width: ${spacingScale(2)};
       height: ${spacingScale(2)};
       border-radius: 1.5px;
-      border: 1px solid ${COLOR_BACKGROUND_A};
+      border: 1px solid ${props => props.theme.COLOR_BACKGROUND_A || COLOR_BACKGROUND_A};
       box-shadow: 0 0 0 2px, inset 0 0 0 1px;
     }
   }
@@ -349,16 +352,16 @@ const DemoNavigationItem = styled.a`
 
     &:before {
       content: '';
-      border-radius: ${RADIUS_8};
+      border-radius: ${props => props.theme.RADIUS_8 || RADIUS_8};
       height: ${spacingScale(2)};
       width: ${spacingScale(2)};
       position: relative;
       right: ${spacingScale(0.5)};
       bottom: ${spacingScale(0.5)};
-      background-color: ${COLOR_BRAND_A};
+      background-color: ${DemoWidgetBrandColor};
       box-shadow:
-        ${spacingScale(0.5)} ${spacingScale(0.5)} 0 ${transparentize(1 - OPACITY_70, COLOR_BRAND_A)},
-        ${spacingScale(1)} ${spacingScale(1)} 0 ${transparentize(1 - OPACITY_50, COLOR_BRAND_A)}
+        ${spacingScale(0.5)} ${spacingScale(0.5)} 0 ${transparentize(1 - OPACITY_70, DemoWidgetBrandColor)},
+        ${spacingScale(1)} ${spacingScale(1)} 0 ${transparentize(1 - OPACITY_50, DemoWidgetBrandColor)}
       ;
     }
   }
@@ -367,8 +370,8 @@ const DemoNavigationItem = styled.a`
     &:before {
       content: 'Aa';
       transform: scale(1.15);
-      font-weight: ${FONT_WEIGHT_BASE};
-      font-size: ${FONT_SIZE_LG};
+      font-weight: ${props => props.theme.FONT_WEIGHT_BASE || FONT_WEIGHT_BASE};
+      font-size: ${props => props.theme.FONT_SIZE_LG || FONT_SIZE_LG};
     }
   }
 `;
@@ -376,11 +379,13 @@ const DemoNavigationItem = styled.a`
 
 stories
   .add(
-    "Style Variables",
+    "Styles",
     (() => (
       <DemoCanvas>
 
         <DemoHeading>Style Variables</DemoHeading>
+        <DemoDescription>Use the style variables included in your project instead of hardcoding pixel and color values.</DemoDescription>
+
 
         <DemoNavigation>
           <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>

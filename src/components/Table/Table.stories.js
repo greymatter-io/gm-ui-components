@@ -1,8 +1,11 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { select, object } from "@storybook/addon-knobs/react";
+import { withInfo } from "@storybook/addon-info";
 
 import Table from "./Table";
+
+const stories = storiesOf("Components", module);
 
 const columns = [
   {
@@ -77,19 +80,24 @@ const data = [
   }
 ];
 
-storiesOf("Table", module).add("default", () => {
-  return (
-    <Table
-      columns={object("columns", columns)}
-      data={object("data", data)}
-      sortDataIndex={select(
-        "sortDataIndex",
-        ["name", "address", "favfood", "age"],
-        "name"
-      )}
-      selectedRows={[0]}
-      onSort={sortIndex => alert(JSON.stringify(sortIndex))}
-      onCellClick={cellData => alert(JSON.stringify(cellData))}
-    />
-  );
-});
+stories.add("Table",
+  withInfo(
+    "A table component."
+  )(() => {
+    return (
+      <Table
+        columns={object("columns", columns)}
+        data={object("data", data)}
+        sortDataIndex={select(
+          "sortDataIndex",
+          ["name", "address", "favfood", "age"],
+          "name"
+        )}
+        selectedRows={[0]}
+        onSort={sortIndex => alert(JSON.stringify(sortIndex))}
+        onCellClick={cellData => alert(JSON.stringify(cellData))}
+      />
+    )
+  }
+));
+

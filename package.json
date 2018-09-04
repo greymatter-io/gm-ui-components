@@ -18,7 +18,10 @@
     "styled-components": "^3"
   },
   "dependencies": {
-    "polished": "^2.0.3"
+    "@storybook/addon-a11y": "^3.4.10",
+    "@storybook/addon-viewport": "^3.4.10",
+    "polished": "^2.0.3",
+    "storybook-addon-styled-component-theme": "^1.0.3"
   },
   "scripts": {
     "build": "webpack -p",
@@ -41,6 +44,7 @@
     "@commitlint/cli": "^7.1.1",
     "@commitlint/config-conventional": "^7.1.1",
     "@storybook/addon-actions": "^3.4.10",
+    "@storybook/addon-backgrounds": "^3.4.10",
     "@storybook/addon-info": "^3.4.10",
     "@storybook/addon-knobs": "^3.4.10",
     "@storybook/addon-links": "^3.4.10",

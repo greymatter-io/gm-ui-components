@@ -1,28 +1,29 @@
 import styled from "styled-components";
-
-import { COLOR_BRAND_A, BORDER_RADIUS_BASE, COLOR_BACKGROUND_A } from "style/styleVariables";
+import { COLOR_BRAND_A, RADIUS_05, COLOR_BACKGROUND_A } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
-const CHECKBOX_COLOR = COLOR_BRAND_A;
+const Color = props => props.theme.COLOR_BRAND_A || COLOR_BRAND_A;
+const CheckColor = props => props.theme.COLOR_BACKGROUND_A || COLOR_BACKGROUND_A;
+const Radius = props => props.theme.RADIUS_05 || RADIUS_05;
 
 const Box = styled.input.attrs({
   type: "checkbox"
 })`
-  box-shadow: inset 0 0 0 1px ${CHECKBOX_COLOR};
+  box-shadow: inset 0 0 0 1px ${Color};
   font-size: ${spacingScale(2)};
-  color: ${COLOR_BACKGROUND_A};
+  color: ${CheckColor};
   appearance: none;
   flex: 0 0 1em;
   height: 1em;
   width: 1em;
   position: relative;
-  border-radius: ${BORDER_RADIUS_BASE};
+  border-radius: ${Radius};
   display: flex;
   align-items: center;
   justify-content: center;
 
   &:checked {
-    background: ${CHECKBOX_COLOR};
+    background: ${Color};
 
     &:after {
       content: '';

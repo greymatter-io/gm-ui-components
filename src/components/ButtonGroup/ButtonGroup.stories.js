@@ -5,8 +5,10 @@ import { withInfo } from "@storybook/addon-info";
 import Button from "components/Button";
 import ButtonGroup from "./ButtonGroup";
 
-storiesOf("Button Group", module).add(
-  "default",
+const stories = storiesOf("Components/Buttons", module);
+
+stories.add(
+  "Button Group",
   withInfo(
     "An ButtonGroup component that takes any number of Button components as children"
   )(() => {
