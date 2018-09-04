@@ -4,6 +4,7 @@ import { setOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs/react";
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
+import { keen, keenDark } from 'style/styleVariables';
 
 const req = require.context("../src", true, /\.stories\.js$/);
 
@@ -29,7 +30,7 @@ setDefaults({
   maxPropStringLength: 100
 });
 
-addDecorator(withThemesProvider([keen]));
+addDecorator(withThemesProvider([keen, keenDark]));
 
 // Options:
 setOptions({
