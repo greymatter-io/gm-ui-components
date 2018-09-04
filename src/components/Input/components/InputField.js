@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { FONT_SIZE_BASE, FONT_STACK_BASE, COLOR_KEYLINE, COLOR_CONTENT, BORDER_RADIUS_BASE, COLOR_HIGHLIGHT } from 'style/styleVariables';
+import { FONT_SIZE_BASE, FONT_STACK_BASE, COLOR_KEYLINE, COLOR_CONTENT, COLOR_BACKGROUND_A, BORDER_RADIUS_BASE, COLOR_HIGHLIGHT } from 'style/styleVariables';
 import { spacingScale } from 'style/styleFunctions';
 
 export const InputField = styled.input.attrs({
@@ -17,7 +17,7 @@ export const InputField = styled.input.attrs({
   color: ${COLOR_CONTENT};
   font-family: ${FONT_STACK_BASE};
   font-size: ${FONT_SIZE_BASE};
-  background: transparent;
+  background: ${COLOR_BACKGROUND_A};
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.15s ease;
