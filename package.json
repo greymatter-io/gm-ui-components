@@ -30,6 +30,7 @@
     "lint-js": "node ./node_modules/eslint/bin/eslint 'src'",
     "preversion": "CI=true npm test",
     "version": "npm run changelog && git add -A",
+    "postversion": "git push --tags",
     "prepublishOnly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "webpack -w",
