@@ -7,7 +7,13 @@ import { withInfo } from "@storybook/addon-info";
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
 import { spacingScale } from "style/styleFunctions";
-import { FONT_STACK_BASE, COLOR_KEYLINE_SOLID, FONT_SIZE_SM, COLOR_BACKGROUND_A, OPACITY_70 } from "style/styleVariables";
+import {
+  FONT_STACK_BASE,
+  COLOR_KEYLINE_SOLID,
+  FONT_SIZE_SM,
+  COLOR_BACKGROUND_A,
+  OPACITY_70
+} from "style/styleVariables";
 
 const glyphNames = [
   "IconArrowDown",
@@ -223,12 +229,13 @@ const GalleryIconDemo = styled.li`
 const GalleryIconLabel = styled.p`
   margin: ${spacingScale(1)};
   font-size: ${FONT_SIZE_SM};
-  opacity: ${OPACITY_70}
+  opacity: ${OPACITY_70};
 `;
 
 const stories = storiesOf("Components/Icons", module);
 
-stories.add(
+stories
+  .add(
     "Icon",
     withInfo(
       "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
@@ -277,23 +284,21 @@ stories.add(
       );
     })
   )
-  .add(
-    "Glyph Gallery", (() => {
-      // withInfo causes massive slowdown.
-      return (
-        <GalleryIconList>
-          {glyphNames.map(glyph => {
-            let Glyph = Glyphs[glyph];
-            return (
-              <GalleryIconDemo key={glyph}>
-                <Icon size={text("size", "40px")}>
-                  <Glyph />
-                </Icon>
-                <GalleryIconLabel>{glyph}</GalleryIconLabel>
-              </GalleryIconDemo>
-            );
-          })}
-        </GalleryIconList>
-      );
-    })
-  );
+  .add("Glyph Gallery", () => {
+    // withInfo causes massive slowdown.
+    return (
+      <GalleryIconList>
+        {glyphNames.map(glyph => {
+          let Glyph = Glyphs[glyph];
+          return (
+            <GalleryIconDemo key={glyph}>
+              <Icon size={text("size", "40px")}>
+                <Glyph />
+              </Icon>
+              <GalleryIconLabel>{glyph}</GalleryIconLabel>
+            </GalleryIconDemo>
+          );
+        })}
+      </GalleryIconList>
+    );
+  });

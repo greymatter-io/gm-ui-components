@@ -10,41 +10,44 @@ import { IconSummary } from "components";
 
 const stories = storiesOf("Components/NavCard", module);
 
-stories.add("NavCard",
-  withInfo(
-    "A complex card-style navigation tab element, with space for optional small data readouts."
-  )(() => {
-    return (
-      <a href="#" style={{ textDecoration: "none" }}>
-        <NavCard
-          icon={() => <IconSummary size="24px" />}
-          details={object("Detail Lines", [
-            { name: "Memory Used", value: "116 MB" },
-            { name: "CPU Usage", value: "99%" }
-          ])}
-          title={text("Title", "Summary")}
-        />
-      </a>
-    )
-  }
-))
-  .add("NavCard with children",
-  withInfo(
-    "NavCards may contain children for display purposes, such as sparklines."
-  )(() => {
-    return (
-      <a href="#" style={{ textDecoration: "none" }}>
-        <NavCard
-          icon={() => <IconSummary size="24px" />}
-          title={text("Title", "Summary")}
-        >
-          {() => (
-            <span style={{ paddingLeft: "38px", color: "white" }}>
-              NavCard Child Element
-            </span>
-          )}
-        </NavCard>
-      </a>
-    )
-  }
-));
+stories
+  .add(
+    "NavCard",
+    withInfo(
+      "A complex card-style navigation tab element, with space for optional small data readouts."
+    )(() => {
+      return (
+        <a href="#" style={{ textDecoration: "none" }}>
+          <NavCard
+            icon={() => <IconSummary size="24px" />}
+            details={object("Detail Lines", [
+              { name: "Memory Used", value: "116 MB" },
+              { name: "CPU Usage", value: "99%" }
+            ])}
+            title={text("Title", "Summary")}
+          />
+        </a>
+      );
+    })
+  )
+  .add(
+    "NavCard with children",
+    withInfo(
+      "NavCards may contain children for display purposes, such as sparklines."
+    )(() => {
+      return (
+        <a href="#" style={{ textDecoration: "none" }}>
+          <NavCard
+            icon={() => <IconSummary size="24px" />}
+            title={text("Title", "Summary")}
+          >
+            {() => (
+              <span style={{ paddingLeft: "38px", color: "white" }}>
+                NavCard Child Element
+              </span>
+            )}
+          </NavCard>
+        </a>
+      );
+    })
+  );

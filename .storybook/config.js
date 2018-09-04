@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
 
 import { configure, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs/react";
-import { checkA11y } from '@storybook/addon-a11y';
+import { checkA11y } from "@storybook/addon-a11y";
 import backgrounds from "@storybook/addon-backgrounds";
 
-import { StoryContainer } from 'ComponentLibrary/StoryComponents/StoryContainer';
+import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
 
-import { COLOR_BACKGROUND_A, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C } from './../src/style/styleVariables';
-
+import {
+  COLOR_BACKGROUND_A,
+  COLOR_BACKGROUND_B,
+  COLOR_BACKGROUND_C
+} from "./../src/style/styleVariables";
 
 const req = require.context("../src", true, /\.stories\.js$/);
 
@@ -20,11 +23,13 @@ function loadStories() {
 // add withKnobs globally so we don't need to import it into individual stories
 addDecorator(checkA11y);
 addDecorator(withKnobs);
-addDecorator(backgrounds([
-  { name: "COLOR_BACKGROUND_A", value: COLOR_BACKGROUND_A, default: true },
-  { name: "COLOR_BACKGROUND_B", value: COLOR_BACKGROUND_B },
-  { name: "COLOR_BACKGROUND_C", value: COLOR_BACKGROUND_C },
-]))
+addDecorator(
+  backgrounds([
+    { name: "COLOR_BACKGROUND_A", value: COLOR_BACKGROUND_A, default: true },
+    { name: "COLOR_BACKGROUND_B", value: COLOR_BACKGROUND_B },
+    { name: "COLOR_BACKGROUND_C", value: COLOR_BACKGROUND_C }
+  ])
+);
 // addon-info
 setDefaults({
   header: true, // Toggles display of header with component name and description
@@ -36,10 +41,10 @@ setDefaults({
   propTablesExclude: [], // Exclude Components from being shoun in Prop Tables section
   styles: {
     infoBody: {
-      boxShadow: 'inset 0 0 0 rgba(0,0,0,0.08)',
-      border: '0',
-      borderRadius: '8px',
-      backgroundColor: 'rgba(200,200,200,.2)'
+      boxShadow: "inset 0 0 0 rgba(0,0,0,0.08)",
+      border: "0",
+      borderRadius: "8px",
+      backgroundColor: "rgba(200,200,200,.2)"
     }
   }, // Overrides styles of addon
   components: {}, // Overrides components used to display markdown. Warning! This option's name will be likely deprecated in favor to "components" with the same API in 3.3 release. Follow this PR #1501 for details
@@ -49,11 +54,7 @@ setDefaults({
   maxPropStringLength: 100
 });
 
-addDecorator(story => (
-  <StoryContainer>
-    {story()}
-  </StoryContainer>
-));
+addDecorator(story => <StoryContainer>{story()}</StoryContainer>);
 
 // Options:
 setOptions({

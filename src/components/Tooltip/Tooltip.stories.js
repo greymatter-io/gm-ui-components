@@ -7,12 +7,15 @@ import Tooltip from "./Tooltip";
 
 const stories = storiesOf("Components", module);
 
-stories.add("Tooltip",
-  withInfo(
-    "A tooltip form input with a label."
-  )(() => {
+stories.add(
+  "Tooltip",
+  withInfo("A tooltip form input with a label.")(() => {
     let content = text("Tooltip Content", "This is a super cool tooltip!");
-    let position = select("Position", ["top", "right", "bottom", "left"], "top");
+    let position = select(
+      "Position",
+      ["top", "right", "bottom", "left"],
+      "top"
+    );
     return (
       <Tooltip
         content={content}
@@ -22,6 +25,6 @@ stories.add("Tooltip",
       >
         {text("children", "Hover over me")}
       </Tooltip>
-    )
+    );
   })
 );

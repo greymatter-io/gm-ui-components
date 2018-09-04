@@ -12,7 +12,6 @@ import {
 } from "components";
 import { spacingScale } from "style/styleFunctions";
 
-
 const stories = storiesOf("Components", module);
 
 const bannerExtras = [
@@ -65,7 +64,7 @@ const toolbarItems = () => {
 };
 
 stories.add(
-"App Header",
+  "App Header",
   withInfo(
     "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
   )(() => {

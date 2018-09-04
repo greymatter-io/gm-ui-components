@@ -80,10 +80,9 @@ const data = [
   }
 ];
 
-stories.add("Table",
-  withInfo(
-    "A table component."
-  )(() => {
+stories.add(
+  "Table",
+  withInfo("A table component.")(() => {
     return (
       <Table
         columns={object("columns", columns)}
@@ -97,7 +96,6 @@ stories.add("Table",
         onSort={sortIndex => alert(JSON.stringify(sortIndex))}
         onCellClick={cellData => alert(JSON.stringify(cellData))}
       />
-    )
-  }
-));
-
+    );
+  })
+);

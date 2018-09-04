@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StoryContainer = styled.div`
   width: 100%;
@@ -14,13 +14,15 @@ export const StoryContainer = styled.div`
     box-sizing: border-box;
 
     > div {
-
       /* Header container */
-      &:nth-child(1) {}
+      &:nth-child(1) {
+      }
       /* Story container */
-      &:nth-child(2) {}
+      &:nth-child(2) {
+      }
       /* Documentation container */
-      &:nth-child(3) {}
+      &:nth-child(3) {
+      }
     }
   }
 `;

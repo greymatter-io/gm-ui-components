@@ -8,10 +8,9 @@ import Checkbox from "./Checkbox";
 
 const stories = storiesOf("Components", module);
 
-stories.add("Checkbox",
-  withInfo(
-    "A checkbox form input with a label."
-  )(() => {
+stories.add(
+  "Checkbox",
+  withInfo("A checkbox form input with a label.")(() => {
     return (
       <Checkbox
         labelPosition={select(
@@ -19,15 +18,12 @@ stories.add("Checkbox",
           ["top", "bottom", "left", "right"],
           "right"
         )}
-        label={text(
-          "label",
-          "this is a checkbox"
-        )}
+        label={text("label", "this is a checkbox")}
         defaultChecked={true}
         onChange={e => {
           alert("checked: " + e.target.checked);
         }}
       />
-    )
-  }
-));
+    );
+  })
+);
