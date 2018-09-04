@@ -1,3 +1,11 @@
+<a name="0.5.4"></a>
+
+## [0.5.4](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.3...v0.5.4) (2018-09-04)
+
+### Bug Fixes
+
+* spread props onto Input component ([7a7acb8](https://github.com/DecipherNow/gm-ui-components/commit/7a7acb8))
+
 <a name="0.5.3"></a>
 
 ## [0.5.3](https://github.com/DecipherNow/gm-ui-components/compare/v0.4.8-alpha.4...v0.5.3) (2018-08-30)
