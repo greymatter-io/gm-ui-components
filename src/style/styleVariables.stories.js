@@ -416,7 +416,7 @@ stories
 
           <DemoSubSection name="Background Colors">
             <DemoDescription>Differences in background color should be used to represent clear divisions in application layout. Prefer visually simple layouts with few color changes. Too many backgrounds can make an interface feel blocky and incoherent.</DemoDescription>
-            <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_A} demoVarName={"COLOR_BACKGROUND_A"} />
+            <ColorBackgroundDemo demoVar={props => props.theme.COLOR_BACKGROUND_A} demoVarName={"COLOR_BACKGROUND_A"} />
             <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_B} demoVarName={"COLOR_BACKGROUND_B"} />
             <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_C} demoVarName={"COLOR_BACKGROUND_C"} />
           </DemoSubSection>
