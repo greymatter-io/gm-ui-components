@@ -67,12 +67,12 @@ storiesOf(" Overview", module)
         </p>
         <p>
           <LinkTo kind=" Overview" story="Styles">
-            Browse Style Tokens <IconChevronRight size="1.714em" />
+            Browse Style Tokens <IconChevronRight />
           </LinkTo>
         </p>
         <p>
           <LinkTo kind="Components/Buttons" story="Button">
-            Browse Components <IconChevronRight size="1.714em" />
+            Browse Components <IconChevronRight />
           </LinkTo>
         </p>
       </Introduction>
