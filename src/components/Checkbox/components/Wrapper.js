@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE, FONT_SIZE_BASE } from "style/styleVariables";
+import { COLOR_CONTENT, FONT_STACK_BASE, FONT_SIZE_BASE } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
+
+const fontFamily = props => props.theme.FONT_STACK_BASE || FONT_STACK_BASE;
+const fontSize = props => props.theme.FONT_SIZE_BASE || FONT_SIZE_BASE;
+const color = props => props.theme.COLOR_CONTENT || COLOR_CONTENT;
 
 const Wrapper = styled.label`
   ${props => getPosition(props.labelPosition)};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_BASE};
+  font-family: ${fontFamily};
+  font-size: ${fontSize};
+  color: ${color};
   display: flex;
   width: fit-content;
   align-items: center;
