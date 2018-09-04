@@ -10,8 +10,8 @@ const StyledSVG = styled.svg.attrs({
   preserveAspectRatio: "xMaxYMax meet"
 })`
   z-index: 1;
-  width: ${props => (props.size ? props.size : "100%")};
-  height: ${props => (props.size ? props.size : "auto")};
+  width: ${props => (props.size ? props.size : "1.714em")};
+  height: ${props => (props.size ? props.size : "1.714em")};
   word-spacing: 0;
   vertical-align: middle;
   &:not(:root) {
