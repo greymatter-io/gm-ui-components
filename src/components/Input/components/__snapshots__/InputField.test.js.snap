@@ -9,7 +9,7 @@ exports[`InputField matches snapshot 1`] = `
   color: #000;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 14px;
-  background: transparent;
+  background: #fff;
   box-sizing: border-box;
   line-height: 1.5;
   -webkit-transition: all 0.15s ease;
