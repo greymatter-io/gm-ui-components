@@ -8,4 +8,13 @@ describe("Wrapper", () => {
     const aWrapper = shallow(<Wrapper />);
     expect(aWrapper).toMatchSnapshot();
   });
+
+  it("should render different label positions", () => {
+    const positions = ["left", "right", "top", "bottom"];
+
+    positions.forEach(position => {
+      const aWrapper = shallow(<Wrapper labelPosition={position} />);
+      expect(aWrapper).toMatchSnapshot();
+    });
+  });
 });

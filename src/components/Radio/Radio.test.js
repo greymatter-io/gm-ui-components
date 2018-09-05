@@ -8,15 +8,4 @@ describe("Radio", () => {
     const aRadio = shallow(<Radio label="label" />).dive();
     expect(aRadio).toMatchSnapshot();
   });
-
-  it("should different positions", () => {
-    const positions = ["left", "right", "top", "bottom"];
-
-    positions.forEach(position => {
-      const aRadio = shallow(
-        <Radio label="label" position={position} />
-      ).dive();
-      expect(aRadio).toMatchSnapshot();
-    });
-  });
 });
