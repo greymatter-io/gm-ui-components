@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { darken } from "polished";
 
 import { storiesOf } from "@storybook/react";
-import backgrounds from "@storybook/addon-backgrounds";
 import LinkTo from "@storybook/addon-links/react";
 import {
   FONT_STACK_BASE,
