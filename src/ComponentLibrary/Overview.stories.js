@@ -61,16 +61,6 @@ storiesOf(" Overview|Introduction", module).add("Introduction", () => {
         </a>
         on GitHub.
       </p>
-      <p>
-        <LinkTo kind=" Overview" story="Styles">
-          Browse Style Tokens <IconChevronRight />
-        </LinkTo>
-      </p>
-      <p>
-        <LinkTo kind="Components/Buttons" story="Button">
-          Browse Components <IconChevronRight />
-        </LinkTo>
-      </p>
     </Introduction>
   );
 });
