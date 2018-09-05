@@ -6,11 +6,11 @@ import Input from "./Input";
 
 storiesOf("Input", module).add("default", () => (
   <Input
-    autofocus={boolean("Autofocus", false)}
-    hint={text("Hint", "Hint")}
-    label={text("Label", "Label")}
+    autoFocus={boolean("autoFocus", false)}
+    hint={text("hint", "hint")}
+    label={text("label", "label")}
     defaultValue={text("defaultValue", "defaultValue")}
-    placeholder={text("Placeholder", "Placeholder")}
+    placeholder={text("placeholder", "placeholder")}
     maxLength={number("maxLength", 25)}
   />
 ));

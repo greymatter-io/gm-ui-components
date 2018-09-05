@@ -4,7 +4,7 @@ import { FONT_SIZE_BASE, FONT_STACK_BASE, COLOR_KEYLINE, COLOR_CONTENT, COLOR_BA
 import { spacingScale } from 'style/styleFunctions';
 
 export const InputField = styled.input.attrs({
-  autoFocus: props => props.autofocus,
+  autoFocus: props => props.autoFocus,
   defaultValue: props => props.defaultValue,
   placeholder: props => props.placeholder,
   maxLength: props => props.maxlength,
