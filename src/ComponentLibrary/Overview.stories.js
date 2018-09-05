@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { darken } from "polished";
 
 import { storiesOf } from "@storybook/react";
-import LinkTo from "@storybook/addon-links/react";
 import {
   FONT_STACK_BASE,
   FONT_STACK_BRAND,
@@ -11,8 +10,6 @@ import {
   COLOR_INTENT_HIGHLIGHT
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
-
-import { IconChevronRight } from "../components/Glyphs";
 
 const Introduction = styled.div`
   padding: 4vh 4vw;
@@ -43,6 +40,7 @@ const Introduction = styled.div`
   a {
     color: ${darken(0.07, COLOR_INTENT_HIGHLIGHT)};
     text-decoration: underline;
+    padding: 0 0.25em;
 
     &:hover {
       text-decoration: none;
