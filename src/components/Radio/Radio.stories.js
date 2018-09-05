@@ -13,7 +13,7 @@ stories.add("standard", () => {
         labelPosition={select(
           "labelPosition",
           ["top", "bottom", "left", "right"],
-          "top"
+          "right"
         )}
         label={text("label", "this is a radio input")}
       />
