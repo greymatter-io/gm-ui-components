@@ -1,3 +1,13 @@
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.5...v0.5.6) (2018-09-05)
+
+
+### Bug Fixes
+
+* camel case Input component autoFocus prop ([#320](https://github.com/DecipherNow/gm-ui-components/issues/320)) ([e871611](https://github.com/DecipherNow/gm-ui-components/commit/e871611))
+
+
+
 <a name="0.5.5"></a>
 ## [0.5.5](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.4...v0.5.5) (2018-09-04)
 
