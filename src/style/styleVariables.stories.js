@@ -48,7 +48,7 @@ import {
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
-const stories = storiesOf(" Overview", module);
+const stories = storiesOf(" Overview|Styles", module);
 
 const DemoCanvas = styled.div``;
 

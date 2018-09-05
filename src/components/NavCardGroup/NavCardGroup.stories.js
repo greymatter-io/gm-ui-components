@@ -7,7 +7,7 @@ import { withInfo } from "@storybook/addon-info";
 import NavCard from "components/NavCard";
 import NavCardGroup from "components/NavCardGroup";
 
-const stories = storiesOf("Components/NavCard", module);
+const stories = storiesOf("Components|NavCard", module);
 
 const mockTabs = [
   {

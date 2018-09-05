@@ -6,10 +6,10 @@ import { withInfo } from "@storybook/addon-info";
 
 import Checkbox from "./Checkbox";
 
-const stories = storiesOf("Components", module);
+const stories = storiesOf("Components|Checkbox", module);
 
 stories.add(
-  "Checkbox",
+  "default",
   withInfo("A checkbox form input with a label.")(() => {
     return (
       <Checkbox

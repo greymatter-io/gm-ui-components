@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 import Button from "components/Button";
 import ButtonGroup from "./ButtonGroup";
 
-const stories = storiesOf("Components/Buttons", module);
+const stories = storiesOf("Components|Buttons", module);
 
 stories.add(
   "Button Group",

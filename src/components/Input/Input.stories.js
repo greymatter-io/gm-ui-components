@@ -5,10 +5,10 @@ import { withInfo } from "@storybook/addon-info";
 
 import Input from "./Input";
 
-const stories = storiesOf("Components", module);
+const stories = storiesOf("Components|Input", module);
 
 stories.add(
-  "Input",
+  "default",
   withInfo("A general form input component with label and optional hint.")(
     () => {
       return (

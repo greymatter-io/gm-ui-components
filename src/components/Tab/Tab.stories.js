@@ -5,10 +5,10 @@ import { withInfo } from "@storybook/addon-info";
 
 import Tab from "./Tab";
 
-const stories = storiesOf("Components/Tabs", module);
+const stories = storiesOf("Components|Tabs", module);
 
 stories.add(
-  "Tab",
+  "default",
   withInfo(
     "An individual Tab component that is meant to be used as a child of TabGroup."
   )(() => {

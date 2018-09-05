@@ -51,30 +51,27 @@ const Introduction = styled.div`
   }
 `;
 
-storiesOf(" Overview", module)
-  .addDecorator(backgrounds())
-  .add(" Introduction", () => {
-    return (
-      <Introduction>
-        <h1>Introduction</h1>
-        <p>
-          For detailed readme, issues, suggestions, and related projects, view
-          the{" "}
-          <a href="https://github.com/DecipherNow/gm-ui-components">
-            Project Source
-          </a>{" "}
-          on GitHub.
-        </p>
-        <p>
-          <LinkTo kind=" Overview" story="Styles">
-            Browse Style Tokens <IconChevronRight />
-          </LinkTo>
-        </p>
-        <p>
-          <LinkTo kind="Components/Buttons" story="Button">
-            Browse Components <IconChevronRight />
-          </LinkTo>
-        </p>
-      </Introduction>
-    );
-  });
+storiesOf(" Overview|Introduction", module).add("Introduction", () => {
+  return (
+    <Introduction>
+      <h1>Introduction</h1>
+      <p>
+        For detailed readme, issues, suggestions, and related projects, view the
+        <a href="https://github.com/DecipherNow/gm-ui-components">
+          Project Source
+        </a>
+        on GitHub.
+      </p>
+      <p>
+        <LinkTo kind=" Overview" story="Styles">
+          Browse Style Tokens <IconChevronRight />
+        </LinkTo>
+      </p>
+      <p>
+        <LinkTo kind="Components/Buttons" story="Button">
+          Browse Components <IconChevronRight />
+        </LinkTo>
+      </p>
+    </Introduction>
+  );
+});

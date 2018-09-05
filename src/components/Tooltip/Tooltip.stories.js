@@ -5,10 +5,10 @@ import { withInfo } from "@storybook/addon-info";
 
 import Tooltip from "./Tooltip";
 
-const stories = storiesOf("Components", module);
+const stories = storiesOf("Components|Tooltip", module);
 
 stories.add(
-  "Tooltip",
+  "default",
   withInfo("A tooltip form input with a label.")(() => {
     let content = text("Tooltip Content", "This is a super cool tooltip!");
     let position = select(

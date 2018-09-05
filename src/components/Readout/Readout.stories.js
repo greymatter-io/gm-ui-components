@@ -8,7 +8,7 @@ import { withInfo } from "@storybook/addon-info";
 import ReadoutGroup from "../ReadoutGroup/ReadoutGroup";
 import Readout from "./Readout";
 
-const stories = storiesOf("Components/Readout", module);
+const stories = storiesOf("Components|Readout", module);
 
 const mockReadoutItem = [
   {

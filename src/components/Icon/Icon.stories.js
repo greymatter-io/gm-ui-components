@@ -232,7 +232,7 @@ const GalleryIconLabel = styled.p`
   opacity: ${OPACITY_70};
 `;
 
-const stories = storiesOf("Components/Icons", module);
+const stories = storiesOf("Components|Icons", module);
 
 stories
   .add(

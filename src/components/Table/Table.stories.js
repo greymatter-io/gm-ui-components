@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 
 import Table from "./Table";
 
-const stories = storiesOf("Components", module);
+const stories = storiesOf("Components|Table", module);
 
 const columns = [
   {
@@ -81,7 +81,7 @@ const data = [
 ];
 
 stories.add(
-  "Table",
+  "default",
   withInfo("A table component.")(() => {
     return (
       <Table

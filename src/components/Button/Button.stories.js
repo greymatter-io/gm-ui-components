@@ -7,7 +7,7 @@ import { withInfo } from "@storybook/addon-info";
 import { IconBell } from "components/Glyphs";
 import Button from "./Button";
 
-const stories = storiesOf("Components/Buttons", module);
+const stories = storiesOf("Components|Buttons", module);
 
 const types = ["default", "danger", "info", "primary", "warning"];
 const sizes = ["normal", "xs", "sm", "lg", "xl"];

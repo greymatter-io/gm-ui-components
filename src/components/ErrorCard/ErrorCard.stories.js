@@ -6,10 +6,10 @@ import { withInfo } from "@storybook/addon-info";
 import ErrorCard from "./ErrorCard";
 import { IconNegation } from "../";
 
-const stories = storiesOf("Components", module);
+const stories = storiesOf("Components|Error Card", module);
 
 stories.add(
-  "Error Card",
+  "default",
   withInfo(
     "A stateless card component that renders an error message and an icon. By default the card renders an 'exclamation' icon, but you can pass it any icon you'd like using a render prop."
   )(() => (
