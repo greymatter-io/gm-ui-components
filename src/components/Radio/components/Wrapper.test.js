@@ -1,11 +1,11 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 
 import Wrapper from "./Wrapper";
 
 describe("Wrapper", () => {
   it("should render", () => {
-    const aWrapper = renderer.create(<Wrapper />).toJSON();
+    const aWrapper = shallow(<Wrapper />);
     expect(aWrapper).toMatchSnapshot();
   });
 });
