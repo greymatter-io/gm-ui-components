@@ -1,3 +1,29 @@
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.5...v0.5.6) (2018-09-05)
+
+
+### Bug Fixes
+
+* camel case Input component autoFocus prop ([#320](https://github.com/DecipherNow/gm-ui-components/issues/320)) ([e871611](https://github.com/DecipherNow/gm-ui-components/commit/e871611))
+
+
+
+<a name="0.5.5"></a>
+## [0.5.5](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.4...v0.5.5) (2018-09-04)
+
+
+### Bug Fixes
+
+* adding missing background color for inputs ([#293](https://github.com/DecipherNow/gm-ui-components/issues/293)) ([b23448f](https://github.com/DecipherNow/gm-ui-components/commit/b23448f))
+
+
+### Features
+
+* add git push --tags to post version lifecycle ([#291](https://github.com/DecipherNow/gm-ui-components/issues/291)) ([ea0079f](https://github.com/DecipherNow/gm-ui-components/commit/ea0079f))
+* better default size for icons ([#288](https://github.com/DecipherNow/gm-ui-components/issues/288)) ([f71a15a](https://github.com/DecipherNow/gm-ui-components/commit/f71a15a))
+
+
+
 <a name="0.5.4"></a>
 
 ## [0.5.4](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.3...v0.5.4) (2018-09-04)
