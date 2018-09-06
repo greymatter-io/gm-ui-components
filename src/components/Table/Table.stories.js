@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, object } from "@storybook/addon-knobs/react";
+import { select, object, color } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Table from "./Table";
@@ -63,20 +63,6 @@ const data = [
     age: 32,
     address: "Sidney No. 1 Lake Park",
     favfood: "Grilled Cheese"
-  },
-  {
-    key: 4,
-    name: "Jenny Black",
-    age: 32,
-    address: "Sidney No. 1 Lake Park",
-    favfood: "Grilled Cheese"
-  },
-  {
-    key: 5,
-    name: "Jenny Black",
-    age: 32,
-    address: "Sidney No. 1 Lake Park",
-    favfood: "Grilled Cheese"
   }
 ];
 
@@ -85,6 +71,7 @@ stories.add(
   withInfo("A table component.")(() => {
     return (
       <Table
+        accentColor={color("accentColor")}
         columns={object("columns", columns)}
         data={object("data", data)}
         sortDataIndex={select(
