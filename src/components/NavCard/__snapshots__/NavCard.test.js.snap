@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavCard matches snapshot 1`] = `
+exports[`Components|NavCard matches snapshot 1`] = `
 <NavCardWrapper>
   <NavCardTitle>
     <NavCardIcon>

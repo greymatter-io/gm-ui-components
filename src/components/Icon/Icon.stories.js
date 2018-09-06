@@ -211,6 +211,7 @@ const GalleryIconList = styled.ul`
   font-family: ${FONT_STACK_BASE};
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
   border: 1px solid ${COLOR_KEYLINE_SOLID};
   border-width: 0 1px 1px 0;
 `;
@@ -233,9 +234,11 @@ const GalleryIconLabel = styled.p`
   opacity: ${OPACITY_70};
 `;
 
-storiesOf("Icons", module)
+const stories = storiesOf("Components|Icons", module);
+
+stories
   .add(
-    "default",
+    "Icon",
     withInfo(
       "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
     )(() => {
@@ -259,7 +262,7 @@ storiesOf("Icons", module)
     })
   )
   .add(
-    "custom glyph",
+    "Icon with Custom Glyph",
     withInfo(
       "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
     )(() => {
@@ -283,25 +286,21 @@ storiesOf("Icons", module)
       );
     })
   )
-  .add(
-    "gallery",
-    withInfo(
-      "A gallery of all native Glyphs. Import the desired Glyph by name and pass desired props as documented in Icons/default"
-    )(() => {
-      return (
-        <GalleryIconList>
-          {glyphNames.map(glyph => {
-            let Glyph = Glyphs[glyph];
-            return (
-              <GalleryIconDemo key={glyph}>
-                <Icon size={text("size", "40px")}>
-                  <Glyph />
-                </Icon>
-                <GalleryIconLabel>{glyph}</GalleryIconLabel>
-              </GalleryIconDemo>
-            );
-          })}
-        </GalleryIconList>
-      );
-    })
-  );
+  .add("Glyph Gallery", () => {
+    // withInfo causes massive slowdown.
+    return (
+      <GalleryIconList>
+        {glyphNames.map(glyph => {
+          let Glyph = Glyphs[glyph];
+          return (
+            <GalleryIconDemo key={glyph}>
+              <Icon size={text("size", "40px")}>
+                <Glyph />
+              </Icon>
+              <GalleryIconLabel>{glyph}</GalleryIconLabel>
+            </GalleryIconDemo>
+          );
+        })}
+      </GalleryIconList>
+    );
+  });
