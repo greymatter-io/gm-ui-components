@@ -14,7 +14,7 @@ stories.add(
     let position = select(
       "Position",
       ["top", "right", "bottom", "left"],
-      "top"
+      "right"
     );
     return (
       <Tooltip
