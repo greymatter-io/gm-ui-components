@@ -2,13 +2,12 @@ import styled, { css } from "styled-components";
 import { ZINDEX_TOOLTIP, FONT_STACK_BASE } from "style/styleVariables";
 
 const TooltipWrap = styled.div`
-  cursor: default;
   display: inline-block;
   position: relative;
   font-family: ${FONT_STACK_BASE};
   :hover > :last-child {
     ${props =>
-      props.hideTooltip &&
+      !props.hideTooltip &&
       css`
         opacity: 1;
         visibility: visible;
