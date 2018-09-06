@@ -7,7 +7,13 @@ import { withInfo } from "@storybook/addon-info";
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
 import { spacingScale } from "style/styleFunctions";
-import { FONT_STACK_BASE, COLOR_KEYLINE_SOLID, FONT_SIZE_SM, COLOR_BACKGROUND_A, OPACITY_70 } from "style/styleVariables";
+import {
+  FONT_STACK_BASE,
+  COLOR_KEYLINE_SOLID,
+  FONT_SIZE_SM,
+  COLOR_BACKGROUND_A,
+  OPACITY_70
+} from "style/styleVariables";
 
 const glyphNames = [
   "IconArrowDown",
@@ -28,8 +34,10 @@ const glyphNames = [
   "IconChevronDown",
   "IconChevronDownSmall",
   "IconChevronLeft",
+  "IconChevronLeftDouble",
   "IconChevronLeftSmall",
   "IconChevronRight",
+  "IconChevronRightDouble",
   "IconChevronRightSmall",
   "IconChevronUp",
   "IconChevronUpSmall",
@@ -222,7 +230,7 @@ const GalleryIconDemo = styled.li`
 const GalleryIconLabel = styled.p`
   margin: ${spacingScale(1)};
   font-size: ${FONT_SIZE_SM};
-  opacity: ${OPACITY_70}
+  opacity: ${OPACITY_70};
 `;
 
 storiesOf("Icons", module)

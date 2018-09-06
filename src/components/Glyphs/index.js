@@ -16,8 +16,10 @@ import IconChecklist from "./IconChecklist";
 import IconChevronDown from "./IconChevronDown";
 import IconChevronDownSmall from "./IconChevronDownSmall";
 import IconChevronLeft from "./IconChevronLeft";
+import IconChevronLeftDouble from "./IconChevronLeftDouble";
 import IconChevronLeftSmall from "./IconChevronLeftSmall";
 import IconChevronRight from "./IconChevronRight";
+import IconChevronRightDouble from "./IconChevronRightDouble";
 import IconChevronRightSmall from "./IconChevronRightSmall";
 import IconChevronUp from "./IconChevronUp";
 import IconChevronUpSmall from "./IconChevronUpSmall";
@@ -192,8 +194,10 @@ export {
   IconChevronDown,
   IconChevronDownSmall,
   IconChevronLeft,
+  IconChevronLeftDouble,
   IconChevronLeftSmall,
   IconChevronRight,
+  IconChevronRightDouble,
   IconChevronRightSmall,
   IconChevronUp,
   IconChevronUpSmall,
