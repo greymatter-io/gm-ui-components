@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box should render 1`] = `
+.c0 {
+  box-shadow: inset 0 0 0 1px #0aab2a;
+  font-size: 16px;
+  color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-flex: 0 0 1em;
+  -ms-flex: 0 0 1em;
+  flex: 0 0 1em;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  border-radius: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.c0:after {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: currentColor;
+  border-radius: 200px;
+  opacity: 0;
+}
+
+.c0:checked {
+  background: #0aab2a;
+}
+
+.c0:checked:after {
+  opacity: 1;
+  width: 0.25em;
+  height: 0.25em;
+}
+
+.c0:active {
+  box-shadow: inset 0 0 0 2px #0aab2a;
+}
+
+<input
+  className="c0"
+  type="radio"
+/>
+`;
