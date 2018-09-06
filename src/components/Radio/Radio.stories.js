@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { text, select } from "@storybook/addon-knobs/react";
 import { Radio } from "components";
 
-const stories = storiesOf("Radio", module);
+const stories = storiesOf("Components|Radio", module);
 
 stories.add("standard", () => {
   return (
