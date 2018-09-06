@@ -21,11 +21,11 @@ const Required = styled.span`
 
 const PropTypesTable = ({ propDefinitions }) => {
   const props = propDefinitions.map(
-    ({ property, propType, required, description, defaultValue }) => {
+    ({ property, propType, required, defaultValue }) => {
       let type;
 
       if (propType.name === "enum") {
-        type = propType.value.map(val => val.value || val.name).join(", \n");
+        type = propType.value.map(val => val.value).join(", \n");
       } else if (propType.name === "union") {
         type = propType.value.map(val => val.name).join(", \n");
       } else {
