@@ -1,6 +1,6 @@
 <a name="0.6.0"></a>
 
-# [0.6.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.6...v0.6.0) (2018-09-06)
+# [0.6.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.7...v0.6.0) (2018-09-06)
 
 ### Bug Fixes
 
@@ -9,6 +9,7 @@
 
 ### Features
 
+- add IconChevronRightDouble and IconChevronLeftDouble ([#327](https://github.com/DecipherNow/gm-ui-components/issues/327)) ([24a48b8](https://github.com/DecipherNow/gm-ui-components/commit/24a48b8))
 - add radio button component ([#326](https://github.com/DecipherNow/gm-ui-components/issues/326)) ([789b457](https://github.com/DecipherNow/gm-ui-components/commit/789b457))
 - story cleanup and organization ([#286](https://github.com/DecipherNow/gm-ui-components/issues/286)) ([d479f55](https://github.com/DecipherNow/gm-ui-components/commit/d479f55))
 
