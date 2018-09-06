@@ -6,7 +6,7 @@ import { setOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs/react";
 import { checkA11y } from "@storybook/addon-a11y";
 import backgrounds from "@storybook/addon-backgrounds";
-
+import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
 
 import {
@@ -47,6 +47,7 @@ setDefaults({
       backgroundColor: "rgba(200,200,200,.2)"
     }
   }, // Overrides styles of addon
+  TableComponent: PropTypesTable,
   components: {}, // Overrides components used to display markdown. Warning! This option's name will be likely deprecated in favor to "components" with the same API in 3.3 release. Follow this PR #1501 for details
   maxPropsIntoLine: 1, // Max props to display per line in source code
   maxPropObjectKeys: 10,
