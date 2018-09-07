@@ -1,7 +1,9 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import Wrapper from "./components/Wrapper";
+import InputLabel from "../../components/InputLabel";
+import InputWrap from "../../components/InputWrap";
+
 import Box from "./components/Box";
 
 const Checkbox = ({
@@ -12,10 +14,12 @@ const Checkbox = ({
   ...props
 }) => {
   return (
-    <Wrapper labelPosition={labelPosition}>
-      <Box defaultChecked={defaultChecked} value={value} {...props} />
-      {label}
-    </Wrapper>
+    <InputWrap>
+      <InputLabel labelPosition={labelPosition}>
+        <Box defaultChecked={defaultChecked} value={value} {...props} />
+        {label}
+      </InputLabel>
+    </InputWrap>
   );
 };
 
