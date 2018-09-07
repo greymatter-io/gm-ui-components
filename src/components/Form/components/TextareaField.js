@@ -14,7 +14,7 @@ import { formInteractionStyles } from "../components/InputFieldStyles";
 
 const BORDER_WIDTH = 1;
 
-export const InputField = styled.input.attrs({
+const TextareaField = styled.textarea.attrs({
   autoFocus: props => props.autoFocus,
   disabled: props => props.disabled,
   readonly: props => props.readonly,
@@ -25,6 +25,8 @@ export const InputField = styled.input.attrs({
 })`
   ${formInteractionStyles};
   min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
+  max-width: 100%;
+  min-width: 8em;
   border-radius: calc(${RADIUS_05} + ${BORDER_WIDTH}px);
   border: ${BORDER_WIDTH}px solid ${COLOR_KEYLINE};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
@@ -45,4 +47,4 @@ export const InputField = styled.input.attrs({
   }
 `;
 
-export default InputField;
+export default TextareaField;

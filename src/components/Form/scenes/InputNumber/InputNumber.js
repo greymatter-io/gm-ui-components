@@ -6,7 +6,7 @@ import InputWrap from "../../components/InputWrap";
 import InputHint from "../../components/InputHint";
 import InputField from "../../components/InputField";
 
-InputPassword.propTypes = {
+InputNumber.propTypes = {
   autoFocus: PropTypes.bool,
   defaultValue: PropTypes.string,
   hint: PropTypes.string,
@@ -15,7 +15,7 @@ InputPassword.propTypes = {
   placeholder: PropTypes.string
 };
 
-export default function InputPassword({
+export default function InputNumber({
   autoFocus,
   defaultValue,
   hint,
@@ -28,7 +28,7 @@ export default function InputPassword({
     <InputWrap>
       {label && <InputLabel>{label}</InputLabel>}
       <InputField
-        type="password"
+        type="number"
         autoFocus={autoFocus}
         defaultValue={defaultValue}
         placeholder={placeholder}

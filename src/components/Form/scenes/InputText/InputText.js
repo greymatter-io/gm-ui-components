@@ -9,21 +9,23 @@ import InputField from "../../components/InputField";
 InputText.propTypes = {
   autoFocus: PropTypes.bool,
   defaultValue: PropTypes.string,
+  disabled: PropTypes.bool,
   hint: PropTypes.string,
   label: PropTypes.string,
   maxLength: PropTypes.number,
   placeholder: PropTypes.string,
-  type: PropTypes.oneOf(["text"])
+  readonly: PropTypes.bool
 };
 
 export default function InputText({
   autoFocus,
   defaultValue,
+  readonly,
+  disabled,
   hint,
   label,
   maxLength,
   placeholder,
-  type,
   ...props
 }) {
   return (
@@ -33,8 +35,10 @@ export default function InputText({
         type="text"
         autoFocus={autoFocus}
         defaultValue={defaultValue}
-        placeholder={placeholder}
+        disabled={disabled}
+        readonly={readonly}
         maxLength={maxLength}
+        placeholder={placeholder}
         {...props}
       />
       {hint && <InputHint>{hint}</InputHint>}

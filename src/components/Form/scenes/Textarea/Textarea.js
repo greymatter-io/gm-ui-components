@@ -4,20 +4,24 @@ import PropTypes from "prop-types";
 import InputLabel from "../../components/InputLabel";
 import InputWrap from "../../components/InputWrap";
 import InputHint from "../../components/InputHint";
-import InputField from "../../components/InputField";
+import TextareaField from "../../components/TextareaField";
 
-InputPassword.propTypes = {
+Textarea.propTypes = {
   autoFocus: PropTypes.bool,
   defaultValue: PropTypes.string,
+  disabled: PropTypes.bool,
   hint: PropTypes.string,
   label: PropTypes.string,
   maxLength: PropTypes.number,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
+  readonly: PropTypes.bool
 };
 
-export default function InputPassword({
+export default function Textarea({
   autoFocus,
   defaultValue,
+  readonly,
+  disabled,
   hint,
   label,
   maxLength,
@@ -27,12 +31,13 @@ export default function InputPassword({
   return (
     <InputWrap>
       {label && <InputLabel>{label}</InputLabel>}
-      <InputField
-        type="password"
+      <TextareaField
         autoFocus={autoFocus}
         defaultValue={defaultValue}
-        placeholder={placeholder}
+        disabled={disabled}
+        readonly={readonly}
         maxLength={maxLength}
+        placeholder={placeholder}
         {...props}
       />
       {hint && <InputHint>{hint}</InputHint>}
