@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 
 import InputLabelText from "./InputLabelText";
 
-describe("InputHint", () => {
+describe("InputLabel", () => {
   it("matches snapshot", () => {
     const aInputLabelText = shallow(<InputLabelText />);
     expect(aInputLabelText).toMatchSnapshot();

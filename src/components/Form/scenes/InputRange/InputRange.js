@@ -4,39 +4,34 @@ import PropTypes from "prop-types";
 import InputLabelText from "../../components/InputLabelText";
 import InputWrap from "../../components/InputWrap";
 import InputHint from "../../components/InputHint";
-import InputField from "../../components/InputField";
+import InputRangeControl from "./components/InputRangeControl.js";
 
-Input.propTypes = {
+InputRange.propTypes = {
   autoFocus: PropTypes.bool,
   defaultValue: PropTypes.string,
   hint: PropTypes.string,
   label: PropTypes.string,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   maxLength: PropTypes.number,
-  placeholder: PropTypes.string,
-  type: PropTypes.oneOf(["text"])
+  placeholder: PropTypes.string
 };
 
-export default function Input({
+export default function InputRange({
   autoFocus,
   defaultValue,
   hint,
   label,
+  list,
   labelPosition,
-  maxLength,
-  placeholder,
-  type,
   ...props
 }) {
   return (
     <InputWrap labelPosition={labelPosition}>
       {label && <InputLabelText>{label}</InputLabelText>}
-      <InputField
-        type={type}
+      <InputRangeControl
         autoFocus={autoFocus}
         defaultValue={defaultValue}
-        placeholder={placeholder}
-        maxLength={maxLength}
+        list={list}
         {...props}
       />
       {hint && <InputHint>{hint}</InputHint>}

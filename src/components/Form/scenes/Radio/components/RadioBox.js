@@ -16,7 +16,8 @@ const RadioBox = styled(InputBox).attrs({
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%) scale(0.1);
+    transition: all 0.3s ease;
   }
 
   &:checked {
@@ -28,6 +29,7 @@ const RadioBox = styled(InputBox).attrs({
       background-color: #fff;
       width: 5px;
       height: 5px;
+      transform: translateX(-50%) translateY(-50%) scale(1);
     }
   }
 `;

@@ -1,32 +1,29 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import InputLabel from "../../components/InputLabel";
+import InputLabelText from "../../components/InputLabelText";
 import InputWrap from "../../components/InputWrap";
 
 import CheckboxBox from "./components/CheckboxBox";
 
 const Checkbox = ({
   label,
+  labelPosition,
   value,
   defaultChecked,
   readonly,
   disabled,
-  labelPosition = "left",
   ...props
 }) => {
   return (
-    <InputWrap>
-      <InputLabel labelPosition={labelPosition}>
-        <CheckboxBox
-          defaultChecked={defaultChecked}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          {...props}
-        />
-        {label}
-      </InputLabel>
+    <InputWrap labelPosition={labelPosition}>
+      {label && <InputLabelText>{label}</InputLabelText>}
+      <CheckboxBox
+        defaultChecked={defaultChecked}
+        value={value}
+        disabled={disabled}
+        {...props}
+      />
     </InputWrap>
   );
 };

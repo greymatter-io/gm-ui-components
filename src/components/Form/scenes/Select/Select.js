@@ -1,43 +1,44 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import InputLabelText from "../../components/InputLabelText";
+import InputLabelText from "components/Form/components/InputLabelText";
 import InputWrap from "components/Form/components/InputWrap";
 
-import RadioBox from "./components/RadioBox";
+import SelectField from "./components/SelectField";
 
-const Radio = ({
+const Select = ({
+  autoFocus,
+  children,
   label,
+  labelPosition,
   value,
-  defaultChecked,
   disabled,
-  readonly,
-  labelPosition = "left",
   ...props
 }) => {
   return (
     <InputWrap labelPosition={labelPosition}>
       {label && <InputLabelText>{label}</InputLabelText>}
-      <RadioBox
-        defaultChecked={defaultChecked}
+      <SelectField
+        autoFocus={autoFocus}
         value={value}
         disabled={disabled}
         {...props}
-      />
+      >
+        {children}
+      </SelectField>
     </InputWrap>
   );
 };
 
-Radio.propTypes = {
-  defaultChecked: PropTypes.bool,
+Select.propTypes = {
+  autoFocus: PropTypes.bool,
   disabled: PropTypes.bool.isRequired,
   label: PropTypes.string.isRequired,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   onChange: PropTypes.func,
-  readonly: PropTypes.bool.isRequired,
   value: PropTypes.string
 };
 
-Radio.displayName = "Radio";
+Select.displayName = "Select";
 
-export default Radio;
+export default Select;

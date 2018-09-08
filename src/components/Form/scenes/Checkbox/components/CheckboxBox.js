@@ -2,25 +2,30 @@ import styled from "styled-components";
 
 import {
   COLOR_BACKGROUND_A,
-  COLOR_INTENT_HIGHLIGHT
+  COLOR_INTENT_HIGHLIGHT,
+  RADIUS_05
 } from "style/styleVariables";
 
 import InputBox from "components/Form/components/InputBox";
 
 const CheckboxBox = styled(InputBox).attrs({
-  type: "radio"
+  type: "checkbox"
 })`
-  border-radius: 2px;
+  border-radius: ${parseInt(RADIUS_05, 10) / 2 + 1}px;
 
   &:after {
     width: 25%;
     height: 50%;
-    border: 2px solid;
-    border-radius: 1px;
-    border-color: ${COLOR_BACKGROUND_A};
-    background: none;
+    border-style: solid;
     border-width: 0 2px 2px 0;
-    transform: translateY(-15%) rotate(45deg);
+    border-color: ${COLOR_BACKGROUND_A};
+    transform: translateY(-20%) rotate(45deg) translateX(15%) scale(0.1);
+    background: none;
+    transition: all 0.3s ease;
+  }
+
+  &:checked:after {
+    transform: translateY(-20%) rotate(45deg) translateX(15%) scale(1);
   }
 
   &:indeterminate {

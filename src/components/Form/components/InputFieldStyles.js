@@ -30,7 +30,8 @@ export function formInteractionStyles() {
     &:disabled {
     }
 
-    &:read-only {
+    &:not([type="checkbox"]):read-only,
+    &:not([type="radio"]):read-only,
       border-style: dotted;
     }
 

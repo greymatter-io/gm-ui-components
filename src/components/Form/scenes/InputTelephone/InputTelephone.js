@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import InputLabel from "../../components/InputLabel";
+import InputLabelText from "../../components/InputLabelText";
 import InputWrap from "../../components/InputWrap";
 import InputHint from "../../components/InputHint";
 import InputField from "../../components/InputField";
@@ -11,6 +11,7 @@ InputTelephone.propTypes = {
   defaultValue: PropTypes.string,
   hint: PropTypes.string,
   label: PropTypes.string,
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   maxLength: PropTypes.number,
   placeholder: PropTypes.string
 };
@@ -20,13 +21,14 @@ export default function InputTelephone({
   defaultValue,
   hint,
   label,
+  labelPosition,
   maxLength,
   placeholder,
   ...props
 }) {
   return (
-    <InputWrap>
-      {label && <InputLabel>{label}</InputLabel>}
+    <InputWrap labelPosition={labelPosition}>
+      {label && <InputLabelText>{label}</InputLabelText>}
       <InputField
         type="tel"
         autoFocus={autoFocus}
