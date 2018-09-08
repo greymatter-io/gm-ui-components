@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input matches snapshot 1`] = `
+exports[`InputRange matches snapshot 1`] = `
 <InputWrap>
-  <InputLabel>
+  <InputLabelText>
     Test
-  </InputLabel>
-  <InputField
+  </InputLabelText>
+  <InputRangeControl
     clickAction={[Function]}
   />
 </InputWrap>

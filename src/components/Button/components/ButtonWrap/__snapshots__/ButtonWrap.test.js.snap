@@ -45,10 +45,19 @@ exports[`ButtonWrap should match snapshot 1`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
 }
 
 .c0 > * {

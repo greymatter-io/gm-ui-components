@@ -6,6 +6,7 @@ import {
   COLOR_CONTENT,
   COLOR_BACKGROUND_A,
   OPACITY_50,
+  OPACITY_15,
   COLOR_INTENT_HIGHLIGHT
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
@@ -49,6 +50,7 @@ const InputRangeControl = styled.input.attrs({
   }
 
   ::-webkit-slider-thumb {
+    /* Style the slider shuttle */
     background-color: ${mix(OPACITY_50, COLOR_BACKGROUND_A, COLOR_CONTENT)};
     box-shadow: 0 0 0 ${BORDER_WIDTH}px ${COLOR_BACKGROUND_A},
       ${PLACEHOLDER_SHADOW};
@@ -59,9 +61,11 @@ const InputRangeControl = styled.input.attrs({
     cursor: pointer;
     border-radius: 100px;
     transition: all 0.15s ease;
+    z-index: 1; /* Fix for clipping issue noticed in Safari 12 */
   }
 
   ::-webkit-slider-runnable-track {
+    /* Style the slider track */
     height: ${TRACK_HEIGHT};
     background-color: ${COLOR_KEYLINE};
     border-radius: 100px;
@@ -71,19 +75,32 @@ const InputRangeControl = styled.input.attrs({
   }
 
   &:hover::-webkit-slider-thumb {
+    /* Style the slider shuttle when the form field is hovered */
     background-color: ${COLOR_INTENT_HIGHLIGHT};
+
+    &:hover {
+      /* Style the slider shuttle when the form field is hovered and the shuttle is hovered */
+      background-color: ${mix(
+        OPACITY_15,
+        COLOR_BACKGROUND_A,
+        COLOR_INTENT_HIGHLIGHT
+      )};
+    }
   }
 
   &:focus::-webkit-slider-thumb {
+    /* Style the slider shuttle when the form field is focused */
     box-shadow: ${FOCUS_SHADOW}, ${PLACEHOLDER_SHADOW};
     background-color: ${COLOR_INTENT_HIGHLIGHT};
   }
 
   &:active::-webkit-slider-thumb {
+    /* Style the slider shuttle when the form field is active */
     box-shadow: ${ACTIVE_SHADOW}, ${PLACEHOLDER_SHADOW};
     background-color: ${COLOR_INTENT_HIGHLIGHT};
 
     &:focus::-webkit-slider-thumb {
+      /* Style the slider shuttle when the form field is active and focused */
       box-shadow: ${FOCUS_SHADOW}, ${ACTIVE_SHADOW};
     }
   }

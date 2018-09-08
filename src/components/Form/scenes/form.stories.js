@@ -17,6 +17,7 @@ import InputNumber from "./InputNumber";
 import InputEmail from "./InputEmail";
 import InputRange from "./InputRange";
 import Select from "./Select";
+import Button from "../../Button";
 
 const stories = storiesOf("Components|Form", module);
 
@@ -137,6 +138,9 @@ stories.add(
           labelPosition={labelPosition}
           disabled={disabled}
         />
+        <Button type="danger" label="Cancel button" />
+        <Button label="Normal button" />
+        <Button type="primary" label="Submit button" />
       </div>
     );
   })

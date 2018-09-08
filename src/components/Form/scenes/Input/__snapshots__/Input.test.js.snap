@@ -2,9 +2,9 @@
 
 exports[`Input matches snapshot 1`] = `
 <InputWrap>
-  <InputLabel>
+  <InputLabelText>
     Test
-  </InputLabel>
+  </InputLabelText>
   <InputField
     clickAction={[Function]}
   />

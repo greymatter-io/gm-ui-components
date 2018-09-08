@@ -2,7 +2,7 @@ import { AppFooter } from "./AppFooter";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
-import { Checkbox } from "./Checkbox";
+import { Checkbox } from "./Form/scenes/Checkbox";
 import Icon from "./Icon";
 import Input from "./Input";
 import Spinner from "./Spinner";

@@ -32,7 +32,7 @@ const Select = ({
 
 Select.propTypes = {
   autoFocus: PropTypes.bool,
-  disabled: PropTypes.bool.isRequired,
+  disabled: PropTypes.bool,
   label: PropTypes.string.isRequired,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   onChange: PropTypes.func,
