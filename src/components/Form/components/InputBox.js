@@ -8,12 +8,12 @@ import {
   COLOR_BACKGROUND_C
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
-import { formInteractionStyles } from "./InputFieldStyles";
+import { FORM_HIGHLIGHT_SIZE, formInteractionStyles } from "./InputFieldStyles";
 
 const BORDER_WIDTH = 1;
 
 const ACTIVE_SHADOW = `inset 0 0 0 1px ${COLOR_INTENT_HIGHLIGHT}`;
-const FOCUS_SHADOW = `0 0 0 2px ${transparentize(
+const FOCUS_SHADOW = `0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
   1 - OPACITY_50,
   COLOR_INTENT_HIGHLIGHT
 )}`;
@@ -49,6 +49,10 @@ const InputBox = styled.input`
   &:after {
     content: "";
     opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
     background-color: ${COLOR_BACKGROUND_A};
   }
 

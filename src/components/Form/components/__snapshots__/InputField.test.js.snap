@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField matches snapshot 1`] = `
+.c0 {
+  min-height: calc(24px - 2px);
+  border-radius: calc(4px + 1px);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 4px 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  color: #000;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  background: #fff;
+  box-sizing: border-box;
+  line-height: 1.5;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c0:invalid {
+  box-shadow: 0 0 0 0 transparent,0 0 0 0 transparent;
+}
+
+.c0:invalid:required {
+  background-color: #f9e1dd;
+}
+
+.c0:valid:required {
+  background-color: #daf2df;
+}
+
+.c0:readonly[type="text"],
+.c0:readonly[type="password"],
+.c0:readonly[type="search"],
+.c0:readonly[type="url"],
+.c0:readonly[type="tel"],
+.c0:readonly[type="number"],
+.c0:readonly[type="email"] {
+  border-style: dashed;
+}
+
+.c0:disabled {
+  background-color: #F8F8F8;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5);
+}
+
+.c0::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.c0:hover {
+  background-color: #F8F8F8;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #000;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.5;
+}
+
+.c0::-moz-placeholder {
+  color: #000;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.5;
+}
+
+.c0:-ms-input-placeholder {
+  color: #000;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.5;
+}
+
+.c0::placeholder {
+  color: #000;
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0.5;
+}
+
+<input
+  className="c0"
+/>
+`;

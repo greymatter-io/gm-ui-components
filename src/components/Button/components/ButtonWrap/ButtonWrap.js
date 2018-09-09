@@ -7,6 +7,8 @@ import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
 
+import { FORM_HIGHLIGHT_SIZE } from "components/Form/components/InputFieldStyles";
+
 import {
   FONT_STACK_BASE,
   FONT_WEIGHT_BASE,
@@ -53,11 +55,15 @@ const ButtonWrap = styled.button`
   &:focus:active {
     outline: none;
     border: 1px solid ${COLOR_INTENT_HIGHLIGHT};
-    box-shadow: 0 0 0 2px
+    box-shadow: 0 0 0 ${FORM_HIGHLIGHT_SIZE}px
         ${transparentize(1 - OPACITY_50, COLOR_INTENT_HIGHLIGHT)},
       inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)};
     z-index: 10;
     position: relative;
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
   }
 
   > * {

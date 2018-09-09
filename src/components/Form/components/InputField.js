@@ -6,6 +6,7 @@ import {
   COLOR_KEYLINE,
   COLOR_CONTENT,
   COLOR_BACKGROUND_A,
+  COLOR_BACKGROUND_B,
   RADIUS_05,
   OPACITY_50
 } from "style/styleVariables";
@@ -28,6 +29,8 @@ export const InputField = styled.input.attrs({
   border-radius: calc(${RADIUS_05} + ${BORDER_WIDTH}px);
   border: ${BORDER_WIDTH}px solid ${COLOR_KEYLINE};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
+  appearance: none;
+  margin: 0;
   color: ${COLOR_CONTENT};
   font-family: ${FONT_STACK_BASE};
   font-size: ${FONT_SIZE_BASE};
@@ -37,6 +40,14 @@ export const InputField = styled.input.attrs({
   transition: all 0.15s ease;
   user-select: auto;
   flex: 1 1 auto;
+
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  &:hover {
+    background-color: ${COLOR_BACKGROUND_B};
+  }
 
   &::placeholder {
     color: ${COLOR_CONTENT};

@@ -19,13 +19,14 @@ const CheckboxBox = styled(InputBox).attrs({
     border-style: solid;
     border-width: 0 2px 2px 0;
     border-color: ${COLOR_BACKGROUND_A};
-    transform: translateY(-20%) rotate(45deg) translateX(15%) scale(0.1);
+    margin-top: -1px;
+    transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
     background: none;
     transition: all 0.3s ease;
   }
 
   &:checked:after {
-    transform: translateY(-20%) rotate(45deg) translateX(15%) scale(1);
+    transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
   }
 
   &:indeterminate {

@@ -11,18 +11,19 @@ exports[`CheckboxBox should render 1`] = `
   border-style: solid;
   border-width: 0 2px 2px 0;
   border-color: #fff;
-  -webkit-transform: translateY(-20%) rotate(45deg) translateX(15%) scale(0.1);
-  -ms-transform: translateY(-20%) rotate(45deg) translateX(15%) scale(0.1);
-  transform: translateY(-20%) rotate(45deg) translateX(15%) scale(0.1);
+  margin-top: -1px;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
   background: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .c0:checked:after {
-  -webkit-transform: translateY(-20%) rotate(45deg) translateX(15%) scale(1);
-  -ms-transform: translateY(-20%) rotate(45deg) translateX(15%) scale(1);
-  transform: translateY(-20%) rotate(45deg) translateX(15%) scale(1);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
 }
 
 .c0:indeterminate:enabled {

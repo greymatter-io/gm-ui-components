@@ -27,10 +27,14 @@ stories.add(
     const labelPosition = select(
       "labelPosition",
       ["top", "bottom", "left", "right"],
-      "right"
+      "left"
     );
-    const readonly = boolean("readonly", false);
-    const disabled = boolean("disabled", false);
+    const label = text("Label", "");
+    const value = text("Value", "");
+    const hint = text("Hint", "");
+    const readonly = boolean("Read-only", false);
+    const disabled = boolean("Disabled", false);
+    const required = boolean("Required", false);
 
     return (
       <div>
@@ -44,37 +48,38 @@ stories.add(
         >
           <Checkbox
             labelPosition={labelPosition}
-            label={text("label", "Checkbox")}
+            label={label || "Checkbox"}
             disabled={disabled}
+            hint={hint}
           />
           <Checkbox
             labelPosition={labelPosition}
-            label={text("label", "Checkbox")}
+            label={label || "Checkbox"}
             disabled={disabled}
-          />
-          <Checkbox
-            labelPosition={labelPosition}
-            label={text("label", "Checkbox")}
-            disabled={disabled}
+            hint={hint}
           />
           <Radio
             labelPosition={labelPosition}
             name="radioGroup"
-            label={text("label", "Radio Button")}
+            label={label || "Radio Button"}
             disabled={disabled}
             defaultChecked={true}
+            hint={hint}
           />
           <Radio
             labelPosition={labelPosition}
             name="radioGroup"
-            label={text("label", "Radio Button")}
+            label={label || "Radio Button"}
             disabled={disabled}
+            hint={hint}
           />
         </Fieldset>
         <Select
           labelPosition={labelPosition}
-          label="Select input"
+          label={label || "Select input"}
           disabled={disabled}
+          required={required}
+          hint={hint}
         >
           <optgroup label="Swedish Cars">
             <option value="volvo">Volvo</option>
@@ -85,62 +90,87 @@ stories.add(
             <option value="audi">Audi</option>
           </optgroup>
         </Select>
+        <InputRange
+          label={label || "Range input"}
+          labelPosition={labelPosition}
+          disabled={disabled}
+          hint={hint}
+        />
+        <Button type="danger" label={label || "Cancel"} />
+        <Button label={label || "Default"} />
+        <Button type="primary" label={label || "Submit"} />
         <Textarea
           labelPosition={labelPosition}
-          label="Textarea"
+          label={label || "Textarea"}
+          value={value}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
         <InputText
           labelPosition={labelPosition}
-          label="Text input"
+          label={label || "Text input"}
+          value={value}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
         <InputEmail
           labelPosition={labelPosition}
-          label="Email input"
+          label={label || "Email input"}
+          value={value}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
         <InputNumber
           labelPosition={labelPosition}
-          label="Number input"
+          label={label || "Number input"}
+          value={value}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
         <InputPassword
           labelPosition={labelPosition}
-          label="Password input"
+          label={label || "Password input"}
+          value={value}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
         <InputSearch
           labelPosition={labelPosition}
-          label="Search input"
+          label={label || "Search input"}
+          value={value}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
         <InputTelephone
           labelPosition={labelPosition}
-          label="Telephone input"
+          label={label || "Telephone input"}
+          value={value}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
         <InputUrl
-          label="Url input"
+          label={label || "Url input"}
+          value={value}
           labelPosition={labelPosition}
           disabled={disabled}
           readonly={readonly}
+          required={required}
+          hint={hint}
         />
-        <InputRange
-          label="Range input"
-          labelPosition={labelPosition}
-          disabled={disabled}
-        />
-        <Button type="danger" label="Cancel button" />
-        <Button label="Normal button" />
-        <Button type="primary" label="Submit button" />
       </div>
     );
   })

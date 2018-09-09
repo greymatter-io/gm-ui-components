@@ -13,9 +13,6 @@ const RadioBox = styled(InputBox).attrs({
     width: 0;
     height: 0;
     border-radius: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
     transform: translateX(-50%) translateY(-50%) scale(0.1);
     transition: all 0.3s ease;
   }
