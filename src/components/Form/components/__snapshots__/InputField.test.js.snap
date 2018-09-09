@@ -35,22 +35,37 @@ exports[`InputField matches snapshot 1`] = `
   background-color: #f9e1dd;
 }
 
+.c0:disabled {
+  background-color: #F8F8F8;
+}
+
 .c0:valid:required {
   background-color: #daf2df;
 }
 
-.c0:readonly[type="text"],
-.c0:readonly[type="password"],
-.c0:readonly[type="search"],
-.c0:readonly[type="url"],
-.c0:readonly[type="tel"],
-.c0:readonly[type="number"],
-.c0:readonly[type="email"] {
-  border-style: dashed;
+.c0:valid:required[type="checkbox"]:after,
+.c0:valid:required[type="radio"]:after {
+  border-color: #0aab2a;
 }
 
-.c0:disabled {
-  background-color: #F8F8F8;
+.c0:-moz-read-only[type="text"],
+.c0:-moz-read-only[type="password"],
+.c0:-moz-read-only[type="search"],
+.c0:-moz-read-only[type="url"],
+.c0:-moz-read-only[type="tel"],
+.c0:-moz-read-only[type="number"],
+.c0:-moz-read-only[type="email"] {
+  border-style: dashed !important;
+}
+
+.c0:read-only[type="text"],
+.c0:read-only[type="password"],
+.c0:read-only[type="search"],
+.c0:read-only[type="url"],
+.c0:read-only[type="tel"],
+.c0:read-only[type="number"],
+.c0:read-only[type="email"] {
+  border-style: dashed !important;
 }
 
 .c0:focus,
@@ -62,10 +77,6 @@ exports[`InputField matches snapshot 1`] = `
 
 .c0::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-.c0:hover {
-  background-color: #F8F8F8;
 }
 
 .c0::-webkit-input-placeholder {

@@ -46,7 +46,6 @@ export const InputField = styled.input.attrs({
   }
 
   &:hover {
-    background-color: ${COLOR_BACKGROUND_B};
   }
 
   &::placeholder {

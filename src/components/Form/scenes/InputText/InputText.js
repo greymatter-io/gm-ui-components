@@ -38,7 +38,7 @@ export default function InputText({
         autoFocus={autoFocus}
         defaultValue={defaultValue}
         disabled={disabled}
-        readonly={readonly}
+        readonly
         maxLength={maxLength}
         placeholder={placeholder}
         {...props}

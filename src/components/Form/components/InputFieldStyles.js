@@ -30,31 +30,37 @@ export function formInteractionStyles() {
 
     }
 
+    &:disabled {
+      background-color: ${COLOR_BACKGROUND_B};
+    }
+
     &:valid {
+
       &:required {
         background-color: ${mix(
           OPACITY_15,
           COLOR_INTENT_SUCCESS,
           COLOR_BACKGROUND_A
         )};
+
+        &[type="checkbox"],
+        &[type="radio"] {
+          &:after {
+            border-color: ${COLOR_INTENT_HIGHLIGHT};
+          }
+        }
       }
     }
 
-    &:readonly {
-      /* Need to explicitly choose inputs to style */
-      &[type="text"],
-      &[type="password"],
-      &[type="search"],
-      &[type="url"],
-      &[type="tel"],
-      &[type="number"],
-      &[type="email"] {
-        border-style: dashed;
-      }
-    }
-
-    &:disabled {
-      background-color: ${COLOR_BACKGROUND_B};
+    /* Need to explicitly choose inputs to style */
+    &:read-only[type="text"],
+    &:read-only[type="password"],
+    &:read-only[type="search"],
+    &:read-only[type="url"],
+    &:read-only[type="tel"],
+    &:read-only[type="number"],
+    &:read-only[type="email"] {
+      border-style: dashed !important;
     }
 
     &:hover { }

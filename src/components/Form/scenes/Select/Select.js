@@ -5,10 +5,12 @@ import InputLabelText from "components/Form/components/InputLabelText";
 import InputWrap from "components/Form/components/InputWrap";
 
 import SelectField from "./components/SelectField";
+import { InputHint } from "../../components/InputHint";
 
 const Select = ({
   autoFocus,
   children,
+  hint,
   label,
   labelPosition,
   value,
@@ -26,6 +28,7 @@ const Select = ({
       >
         {children}
       </SelectField>
+      {hint && <InputHint>{hint}</InputHint>}
     </InputWrap>
   );
 };
@@ -33,6 +36,7 @@ const Select = ({
 Select.propTypes = {
   autoFocus: PropTypes.bool,
   disabled: PropTypes.bool,
+  hint: PropTypes.string,
   label: PropTypes.string.isRequired,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   onChange: PropTypes.func,

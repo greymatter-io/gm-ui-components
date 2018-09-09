@@ -21,65 +21,62 @@ import Button from "../../Button";
 
 const stories = storiesOf("Components|Form", module);
 
-stories.add(
-  "Form Inputs",
-  withInfo("A checkbox form input with a label.")(() => {
-    const labelPosition = select(
+const props = {
+  base: () => ({
+    hint: text("Hint", "Hint lorem ipsum dolor sit amet"),
+    disabled: boolean("Disabled", false),
+    required: boolean("Required", false)
+  }),
+  button: () => ({}),
+  inputField: () => ({
+    placeholder: text("Placeholder", ""),
+    labelPosition: select(
       "labelPosition",
       ["top", "bottom", "left", "right"],
-      "left"
-    );
-    const label = text("Label", "");
-    const value = text("Value", "");
-    const hint = text("Hint", "");
-    const readonly = boolean("Read-only", false);
-    const disabled = boolean("Disabled", false);
-    const required = boolean("Required", false);
+      "top"
+    )
+  })
+};
+
+stories.add(
+  "Form Inputs",
+  //
+  withInfo("A checkbox form input with a label.")(() => {
+    // () => {
+    const baseProps = props.base();
+    const buttonProps = props.button();
+    const inputFieldProps = props.inputField();
 
     return (
       <div>
-        <Fieldset
-          style={{
-            display: "flex",
-            flexDirection: "row"
-          }}
-          name="Buttons"
-          disabled={disabled}
-        >
+        <Fieldset>
           <Checkbox
-            labelPosition={labelPosition}
-            label={label || "Checkbox"}
-            disabled={disabled}
-            hint={hint}
-          />
-          <Checkbox
-            labelPosition={labelPosition}
-            label={label || "Checkbox"}
-            disabled={disabled}
-            hint={hint}
-          />
-          <Radio
-            labelPosition={labelPosition}
-            name="radioGroup"
-            label={label || "Radio Button"}
-            disabled={disabled}
+            {...baseProps}
+            labelPosition="right"
+            label={"Checkbox"}
             defaultChecked={true}
-            hint={hint}
+          />
+          <Checkbox {...baseProps} labelPosition="right" label={"Checkbox"} />
+          <Radio
+            {...baseProps}
+            labelPosition="right"
+            name="radioGroup"
+            group="radioGroup"
+            label={"Radio Button"}
+            defaultChecked={true}
           />
           <Radio
-            labelPosition={labelPosition}
+            {...baseProps}
+            labelPosition="right"
             name="radioGroup"
-            label={label || "Radio Button"}
-            disabled={disabled}
-            hint={hint}
+            group="radioGroup"
+            label={"Radio Button"}
           />
         </Fieldset>
         <Select
-          labelPosition={labelPosition}
-          label={label || "Select input"}
-          disabled={disabled}
-          required={required}
-          hint={hint}
+          {...baseProps}
+          labelPosition={inputFieldProps.labelPosition}
+          label={"Select input"}
         >
           <optgroup label="Swedish Cars">
             <option value="volvo">Volvo</option>
@@ -91,86 +88,55 @@ stories.add(
           </optgroup>
         </Select>
         <InputRange
-          label={label || "Range input"}
-          labelPosition={labelPosition}
-          disabled={disabled}
-          hint={hint}
+          {...baseProps}
+          labelPosition={inputFieldProps.labelPosition}
+          label={"Range input"}
         />
-        <Button type="danger" label={label || "Cancel"} />
-        <Button label={label || "Default"} />
-        <Button type="primary" label={label || "Submit"} />
-        <Textarea
-          labelPosition={labelPosition}
-          label={label || "Textarea"}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
-        />
-        <InputText
-          labelPosition={labelPosition}
-          label={label || "Text input"}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
-        />
-        <InputEmail
-          labelPosition={labelPosition}
-          label={label || "Email input"}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
-        />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between"
+          }}
+        >
+          <Button
+            type="danger"
+            {...baseProps}
+            {...buttonProps}
+            label={"Cancel"}
+          />
+          <Button {...baseProps} {...buttonProps} label={"Default"} />
+          <Button
+            type="primary"
+            {...baseProps}
+            {...buttonProps}
+            label={"Submit"}
+          />
+        </div>
+        <Textarea {...baseProps} {...inputFieldProps} label={"Textarea"} />
+        <InputText {...baseProps} {...inputFieldProps} label={"Text input"} />
+        <InputEmail {...baseProps} {...inputFieldProps} label={"Email input"} />
         <InputNumber
-          labelPosition={labelPosition}
-          label={label || "Number input"}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
+          {...baseProps}
+          {...inputFieldProps}
+          label={"Number input"}
         />
         <InputPassword
-          labelPosition={labelPosition}
-          label={label || "Password input"}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
+          {...baseProps}
+          {...inputFieldProps}
+          label={"Password input"}
         />
         <InputSearch
-          labelPosition={labelPosition}
-          label={label || "Search input"}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
+          {...baseProps}
+          {...inputFieldProps}
+          label={"Search input"}
         />
         <InputTelephone
-          labelPosition={labelPosition}
-          label={label || "Telephone input"}
-          value={value}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
+          {...baseProps}
+          {...inputFieldProps}
+          label={"Telephone input"}
         />
-        <InputUrl
-          label={label || "Url input"}
-          value={value}
-          labelPosition={labelPosition}
-          disabled={disabled}
-          readonly={readonly}
-          required={required}
-          hint={hint}
-        />
+        <InputUrl {...baseProps} {...inputFieldProps} label={"Url input"} />
       </div>
     );
   })

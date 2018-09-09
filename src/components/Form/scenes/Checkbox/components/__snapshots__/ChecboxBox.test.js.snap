@@ -35,9 +35,9 @@ exports[`CheckboxBox should render 1`] = `
   width: 50%;
   height: 0;
   border-width: 0 0 2px;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
 }
 
 <InputBox

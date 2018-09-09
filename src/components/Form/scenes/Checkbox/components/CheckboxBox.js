@@ -39,7 +39,7 @@ const CheckboxBox = styled(InputBox).attrs({
       width: 50%;
       height: 0;
       border-width: 0 0 2px;
-      transform: none;
+      transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
     }
   }
 `;
