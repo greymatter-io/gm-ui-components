@@ -40,9 +40,7 @@ const props = {
 
 stories.add(
   "Form Inputs",
-  //
   withInfo("A checkbox form input with a label.")(() => {
-    // () => {
     const baseProps = props.base();
     const buttonProps = props.button();
     const inputFieldProps = props.inputField();
