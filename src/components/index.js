@@ -4,7 +4,7 @@ import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
 import { Checkbox } from "./Form/scenes/Checkbox";
 import Icon from "./Icon";
-import Input from "./Input";
+import InputText from "./InputText";
 import Spinner from "./Spinner";
 import Tab from "./Tab";
 import TabGroup from "./TabGroup";
@@ -31,7 +31,7 @@ const library = {
   Checkbox,
   ErrorCard,
   Icon,
-  Input,
+  InputText,
   LayoutSection,
   NavCard,
   NavCardGroup,

@@ -7,9 +7,9 @@ exports[`Select should render 1`] = `
   flex-direction: column;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   margin-top: 8px;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

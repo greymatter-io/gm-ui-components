@@ -48,28 +48,36 @@ stories.add(
     return (
       <div>
         <Fieldset>
-          <Checkbox
-            {...baseProps}
-            labelPosition="right"
-            label={"Checkbox"}
-            defaultChecked={true}
-          />
-          <Checkbox {...baseProps} labelPosition="right" label={"Checkbox"} />
-          <Radio
-            {...baseProps}
-            labelPosition="right"
-            name="radioGroup"
-            group="radioGroup"
-            label={"Radio Button"}
-            defaultChecked={true}
-          />
-          <Radio
-            {...baseProps}
-            labelPosition="right"
-            name="radioGroup"
-            group="radioGroup"
-            label={"Radio Button"}
-          />
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            <Checkbox
+              {...baseProps}
+              labelPosition="right"
+              label={"Checkbox"}
+              defaultChecked={true}
+            />
+            <Checkbox {...baseProps} labelPosition="right" label={"Checkbox"} />
+            <Radio
+              {...baseProps}
+              labelPosition="right"
+              name="radioGroup"
+              group="radioGroup"
+              label={"Radio Button"}
+              defaultChecked={true}
+            />
+            <Radio
+              {...baseProps}
+              labelPosition="right"
+              name="radioGroup"
+              group="radioGroup"
+              label={"Radio Button"}
+            />
+          </div>
         </Fieldset>
         <Select
           {...baseProps}

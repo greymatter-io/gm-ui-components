@@ -11,7 +11,6 @@ const Radio = ({
   value,
   defaultChecked,
   disabled,
-  readonly,
   labelPosition = "left",
   ...props
 }) => {
@@ -30,11 +29,10 @@ const Radio = ({
 
 Radio.propTypes = {
   defaultChecked: PropTypes.bool,
-  disabled: PropTypes.bool.isRequired,
+  disabled: PropTypes.bool,
   label: PropTypes.string.isRequired,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   onChange: PropTypes.func,
-  readonly: PropTypes.bool.isRequired,
   value: PropTypes.string
 };
 
