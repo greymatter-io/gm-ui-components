@@ -18,7 +18,7 @@ import {
   RADIUS_5,
   RADIUS_6,
   RADIUS_7,
-  RADIUS_8,
+  RADIUS_8
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
@@ -33,7 +33,7 @@ const DemoCanvas = styled.div`
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
   onClick: props => () => {
-    copy('${props => props.theme.' + props.demoVarName + '}');
+    copy("${props => props.theme." + props.demoVarName + "}");
   }
 })`
   box-sizing: border-box;
@@ -145,16 +145,29 @@ const DemoSubSection = styled(DemoSection)`
 `;
 
 const ColorDemo = styled(DemoItem)`
-  background-image:
-    linear-gradient(to bottom, ${props => transparentize(1, props.theme.COLOR_BACKGROUND_A)} ${spacingScale(7)}, ${props => props.theme.COLOR_BACKGROUND_A} ${spacingScale(7)}, ${props => props.theme.COLOR_BACKGROUND_A}),
-    linear-gradient(to right, ${props => props.theme.COLOR_BACKGROUND_A} 0%, ${props => props.theme.COLOR_BACKGROUND_A} 33%, ${props => props.theme.COLOR_BACKGROUND_B} 33%, ${props => props.theme.COLOR_BACKGROUND_B} 66%, ${props => props.theme.COLOR_BACKGROUND_C} 66%, ${props => props.theme.COLOR_BACKGROUND_C} 100%);
+  background-image: linear-gradient(
+      to bottom,
+      ${props => transparentize(1, props.theme.COLOR_BACKGROUND_A)}
+        ${spacingScale(7)},
+      ${props => props.theme.COLOR_BACKGROUND_A} ${spacingScale(7)},
+      ${props => props.theme.COLOR_BACKGROUND_A}
+    ),
+    linear-gradient(
+      to right,
+      ${props => props.theme.COLOR_BACKGROUND_A} 0%,
+      ${props => props.theme.COLOR_BACKGROUND_A} 33%,
+      ${props => props.theme.COLOR_BACKGROUND_B} 33%,
+      ${props => props.theme.COLOR_BACKGROUND_B} 66%,
+      ${props => props.theme.COLOR_BACKGROUND_C} 66%,
+      ${props => props.theme.COLOR_BACKGROUND_C} 100%
+    );
   height: ${spacingScale(11)};
   width: ${spacingScale(22)};
   justify-content: stretch;
   align-items: stretch;
 
   &:before {
-    content: '';
+    content: "";
     height: ${spacingScale(4)};
     margin: ${spacingScale(1.5)} ${spacingScale(1.5)} 0;
     border-radius: ${props => props.theme.RADIUS_05};
@@ -241,7 +254,7 @@ const OpacityDemo = styled(DemoItem)`
   align-items: stretch;
 
   &:before {
-    content: '';
+    content: "";
     flex: 1 1 100%;
     height: ${spacingScale(6)};
     margin: ${spacingScale(1)} ${spacingScale(1)} 0;
@@ -263,7 +276,7 @@ const SpacingDemo = styled(DemoItem)`
     border-top: 0;
     width: ${props => props.demoVar};
   }
-`
+`;
 
 const DemoDescription = styled.p`
   margin: ${spacingScale(-0.5)} ${spacingScale(1)} ${spacingScale(1.5)};
@@ -273,11 +286,10 @@ const DemoDescription = styled.p`
   flex: 1 0 100%;
 
   &:after {
-    content: '';
+    content: "";
     flex: 1 0 calc(100% - 45em);
   }
 `;
-
 
 const DemoHeading = styled.h1`
   font-family: ${props => props.theme.FONT_STACK_BASE};
@@ -309,7 +321,7 @@ const DemoNavigationItem = styled.a`
   text-decoration: none;
 
   &:before {
-    content: '';
+    content: "";
     margin-right: ${spacingScale(1)};
     color: ${props => props.theme.COLOR_BRAND_A};
   }
@@ -325,9 +337,8 @@ const DemoNavigationItem = styled.a`
   }
 
   &[href="#Color"] {
-
     &:before {
-      content: '';
+      content: "";
       border-radius: ${props => props.theme.RADIUS_8};
       height: ${spacingScale(2)};
       width: ${spacingScale(2)};
@@ -335,17 +346,16 @@ const DemoNavigationItem = styled.a`
       right: ${spacingScale(0.5)};
       bottom: ${spacingScale(0.5)};
       background-color: ${props => props.theme.COLOR_BRAND_A};
-      box-shadow:
-        ${spacingScale(0.5)} ${spacingScale(0.5)} 0 ${props => transparentize(1 - OPACITY_70, props.theme.COLOR_BRAND_A)},
-        ${spacingScale(1)} ${spacingScale(1)} 0 ${props => transparentize(1 - OPACITY_50, props.theme.COLOR_BRAND_A)}
-      ;
-
+      box-shadow: ${spacingScale(0.5)} ${spacingScale(0.5)} 0
+          ${props => transparentize(1 - OPACITY_70, props.theme.COLOR_BRAND_A)},
+        ${spacingScale(1)} ${spacingScale(1)} 0
+          ${props => transparentize(1 - OPACITY_50, props.theme.COLOR_BRAND_A)};
     }
   }
 
   &[href="#Typography"] {
     &:before {
-      content: 'Aa';
+      content: "Aa";
       transform: scale(1.15);
       font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
       font-size: ${props => props.theme.FONT_SIZE_LG};
@@ -353,118 +363,292 @@ const DemoNavigationItem = styled.a`
   }
 `;
 
+stories.add("Style Variables", () => (
+  <DemoCanvas>
+    <DemoHeading>Style Variables</DemoHeading>
 
-stories
-  .add(
-    "Style Variables",
-    (() => (
-      <DemoCanvas>
+    <DemoNavigation>
+      <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>
+      <DemoNavigationItem href="#Color">Color</DemoNavigationItem>
+      <DemoNavigationItem href="#Typography">Typography</DemoNavigationItem>
+    </DemoNavigation>
 
-        <DemoHeading>Style Variables</DemoHeading>
+    <DemoSection name="Layout">
+      <DemoSubSection name="Spacing">
+        <DemoDescription>
+          Instead of using pixel values for object sizing attributes, use a
+          multiple of the theme's spacing size. This will help to maintain
+          overall consistency in layout and component sizing.
+        </DemoDescription>
+        <SpacingDemo
+          demoVar={spacingScale(0.25)}
+          demoVarName={"spacingScale(0.25)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(0.5)}
+          demoVarName={"spacingScale(0.5)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(1)}
+          demoVarName={"spacingScale(1)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(1.5)}
+          demoVarName={"spacingScale(1.5)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(2)}
+          demoVarName={"spacingScale(2)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(3)}
+          demoVarName={"spacingScale(3)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(4)}
+          demoVarName={"spacingScale(4)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(5)}
+          demoVarName={"spacingScale(5)"}
+        />
+        <SpacingDemo
+          demoVar={spacingScale(6)}
+          demoVarName={"spacingScale(6)"}
+        />
+      </DemoSubSection>
 
-        <DemoNavigation>
-          <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>
-          <DemoNavigationItem href="#Color">Color</DemoNavigationItem>
-          <DemoNavigationItem href="#Typography">Typography</DemoNavigationItem>
-        </DemoNavigation>
+      <DemoSubSection name="Rounding">
+        <DemoDescription>
+          Rounding corners can make shapes feel more cohesive and unified.
+          Prefer rounded shapes to pointed shapes. In interfaces with high
+          information density or overall visual complexity, use smaller radii to
+          save space, just as you would reduce font or margin size.
+        </DemoDescription>
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_05}
+          demoVarName={"RADIUS_05"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_1}
+          demoVarName={"RADIUS_1"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_2}
+          demoVarName={"RADIUS_2"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_3}
+          demoVarName={"RADIUS_3"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_4}
+          demoVarName={"RADIUS_4"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_5}
+          demoVarName={"RADIUS_5"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_6}
+          demoVarName={"RADIUS_6"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_7}
+          demoVarName={"RADIUS_7"}
+        />
+        <RadiusDemo
+          demoVar={props => props.theme.RADIUS_8}
+          demoVarName={"RADIUS_8"}
+        />
+      </DemoSubSection>
+    </DemoSection>
 
-        <DemoSection name="Layout">
+    <DemoSection name="Color">
+      <DemoSubSection name="Intent Colors">
+        <DemoDescription>
+          Use Intent colors to hint at interactable elements, or to indicate the
+          type of effect an action could have or has had. Use with links,
+          buttons, notification badges, and the like.
+        </DemoDescription>
+        <ColorDemo
+          demoVar={props => props.theme.COLOR_INTENT_HIGHLIGHT}
+          demoVarName={"COLOR_INTENT_HIGHLIGHT"}
+        />
+        <ColorDemo
+          demoVar={props => props.theme.COLOR_INTENT_SUCCESS}
+          demoVarName={"COLOR_INTENT_SUCCESS"}
+        />
+        <ColorDemo
+          demoVar={props => props.theme.COLOR_INTENT_INFO}
+          demoVarName={"COLOR_INTENT_INFO"}
+        />
+        <ColorDemo
+          demoVar={props => props.theme.COLOR_INTENT_WARNING}
+          demoVarName={"COLOR_INTENT_WARNING"}
+        />
+        <ColorDemo
+          demoVar={props => props.theme.COLOR_INTENT_DANGER}
+          demoVarName={"COLOR_INTENT_DANGER"}
+        />
+      </DemoSubSection>
 
-          <DemoSubSection name="Spacing">
-            <DemoDescription>Instead of using pixel values for object sizing attributes, use a multiple of the theme's spacing size. This will help to maintain overall consistency in layout and component sizing.</DemoDescription>
-            <SpacingDemo demoVar={spacingScale(0.25)} demoVarName={"spacingScale(0.25)"} />
-            <SpacingDemo demoVar={spacingScale(0.5)} demoVarName={"spacingScale(0.5)"} />
-            <SpacingDemo demoVar={spacingScale(1)} demoVarName={"spacingScale(1)"} />
-            <SpacingDemo demoVar={spacingScale(1.5)} demoVarName={"spacingScale(1.5)"} />
-            <SpacingDemo demoVar={spacingScale(2)} demoVarName={"spacingScale(2)"} />
-            <SpacingDemo demoVar={spacingScale(3)} demoVarName={"spacingScale(3)"} />
-            <SpacingDemo demoVar={spacingScale(4)} demoVarName={"spacingScale(4)"} />
-            <SpacingDemo demoVar={spacingScale(5)} demoVarName={"spacingScale(5)"} />
-            <SpacingDemo demoVar={spacingScale(6)} demoVarName={"spacingScale(6)"} />
-          </DemoSubSection>
+      <DemoSubSection name="Border Colors">
+        <DemoDescription>
+          Use borders sparingly. Prefer using keyline color, because it will be
+          tinted by the colors underneath it. However, when many layers are
+          required (consider a horizontal toolbar with a shadow, above a series
+          of vertical file columns using borders), consider using KEYLINE_SOLID
+          to prevent the distracting accumulation of tints. Consider
+          implementing borders using the spread attribute of a box shadow.
+        </DemoDescription>
+        <ColorLineDemo
+          demoVar={props => props.theme.COLOR_KEYLINE}
+          demoVarName={"COLOR_KEYLINE"}
+        />
+        <ColorLineDemo
+          demoVar={props => props.theme.COLOR_KEYLINE_SOLID}
+          demoVarName={"COLOR_KEYLINE_SOLID"}
+        />
+      </DemoSubSection>
 
-          <DemoSubSection name="Rounding">
-            <DemoDescription>Rounding corners can make shapes feel more cohesive and unified. Prefer rounded shapes to pointed shapes. In interfaces with high information density or overall visual complexity, use smaller radii to save space, just as you would reduce font or margin size.</DemoDescription>
-            <RadiusDemo demoVar={props => props.theme.RADIUS_05} demoVarName={"RADIUS_05"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_1} demoVarName={"RADIUS_1"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_2} demoVarName={"RADIUS_2"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_3} demoVarName={"RADIUS_3"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_4} demoVarName={"RADIUS_4"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_5} demoVarName={"RADIUS_5"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_6} demoVarName={"RADIUS_6"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_8} demoVarName={"RADIUS_8"} />
-            <RadiusDemo demoVar={props => props.theme.RADIUS_7} demoVarName={"RADIUS_7"} />
-          </DemoSubSection>
-        </DemoSection>
+      <DemoSubSection name="Background Colors">
+        <DemoDescription>
+          Differences in background color should be used to represent clear
+          divisions in application layout. Prefer visually simple layouts with
+          few color changes. Too many backgrounds can make an interface feel
+          blocky and incoherent.
+        </DemoDescription>
+        <ColorBackgroundDemo
+          demoVar={COLOR_BACKGROUND_A}
+          demoVarName={"COLOR_BACKGROUND_A"}
+        />
+        <ColorBackgroundDemo
+          demoVar={COLOR_BACKGROUND_B}
+          demoVarName={"COLOR_BACKGROUND_B"}
+        />
+        <ColorBackgroundDemo
+          demoVar={COLOR_BACKGROUND_C}
+          demoVarName={"COLOR_BACKGROUND_C"}
+        />
+      </DemoSubSection>
 
-        <DemoSection name="Color">
+      <DemoSubSection name="Brand Colors">
+        <DemoDescription>
+          Use Brand colors where the company's visual style needs to be
+          represented directly. Consider using only in places where the logo may
+          appear. Avoid using for interaction colors like links and buttons.
+        </DemoDescription>
+        <ColorDemo
+          demoVar={props => props.theme.COLOR_BRAND_A}
+          demoVarName={"COLOR_BRAND_A"}
+        />
+        <ColorDemo
+          demoVar={props => props.theme.COLOR_BRAND_B}
+          demoVarName={"COLOR_BRAND_B"}
+        />
+      </DemoSubSection>
 
-          <DemoSubSection name="Intent Colors">
-            <DemoDescription>Use Intent colors to hint at interactable elements, or to indicate the type of effect an action could have or has had. Use with links, buttons, notification badges, and the like.</DemoDescription>
-            <ColorDemo demoVar={props => props.theme.COLOR_INTENT_HIGHLIGHT} demoVarName={"COLOR_INTENT_HIGHLIGHT"} />
-            <ColorDemo demoVar={props => props.theme.COLOR_INTENT_SUCCESS} demoVarName={"COLOR_INTENT_SUCCESS"} />
-            <ColorDemo demoVar={props => props.theme.COLOR_INTENT_INFO} demoVarName={"COLOR_INTENT_INFO"} />
-            <ColorDemo demoVar={props => props.theme.COLOR_INTENT_WARNING} demoVarName={"COLOR_INTENT_WARNING"} />
-            <ColorDemo demoVar={props => props.theme.COLOR_INTENT_DANGER} demoVarName={"COLOR_INTENT_DANGER"} />
-          </DemoSubSection>
+      <DemoSubSection name="Opacity">
+        <DemoDescription>
+          Stick to the basic palette of opacity values to limit subjective
+          colors across an application. Levels 100, 70, and 50 may be used to
+          lighten text for captions or similar uses, where appropriate.
+        </DemoDescription>
+        <OpacityDemo
+          demoVar={props => props.theme.OPACITY_100}
+          demoVarName={"OPACITY_100"}
+        />
+        <OpacityDemo
+          demoVar={props => props.theme.OPACITY_70}
+          demoVarName={"OPACITY_70"}
+        />
+        <OpacityDemo
+          demoVar={props => props.theme.OPACITY_50}
+          demoVarName={"OPACITY_50"}
+        />
+        <OpacityDemo
+          demoVar={props => props.theme.OPACITY_15}
+          demoVarName={"OPACITY_15"}
+        />
+      </DemoSubSection>
+    </DemoSection>
 
-          <DemoSubSection name="Border Colors">
-            <DemoDescription>Use borders sparingly. Prefer using keyline color, because it will be tinted by the colors underneath it. However, when many layers are required (consider a horizontal toolbar with a shadow, above a series of vertical file columns using borders), consider using KEYLINE_SOLID to prevent the distracting accumulation of tints. Consider implementing borders using the spread attribute of a box shadow.</DemoDescription>
-            <ColorLineDemo demoVar={props => props.theme.COLOR_KEYLINE} demoVarName={"COLOR_KEYLINE"} />
-            <ColorLineDemo demoVar={props => props.theme.COLOR_KEYLINE_SOLID} demoVarName={"COLOR_KEYLINE_SOLID"} />
-          </DemoSubSection>
+    <DemoSection name="Typography">
+      <DemoSubSection name="Font Sizes">
+        <DemoDescription>
+          When in doubt, use the base size. Prefer using horizontal or vertical
+          negative space to differentiate elements, when possible.
+        </DemoDescription>
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_XS}
+          demoVarName={"FONT_SIZE_XS"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_SM}
+          demoVarName={"FONT_SIZE_SM"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_BASE}
+          demoVarName={"FONT_SIZE_BASE"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_MD}
+          demoVarName={"FONT_SIZE_MD"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_LG}
+          demoVarName={"FONT_SIZE_LG"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_TITLE}
+          demoVarName={"FONT_SIZE_TITLE"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_HERO}
+          demoVarName={"FONT_SIZE_HERO"}
+        />
+      </DemoSubSection>
 
-          <DemoSubSection name="Background Colors">
-            <DemoDescription>Differences in background color should be used to represent clear divisions in application layout. Prefer visually simple layouts with few color changes. Too many backgrounds can make an interface feel blocky and incoherent.</DemoDescription>
-            <ColorBackgroundDemo demoVar={props => props.theme.COLOR_BACKGROUND_A} demoVarName={"COLOR_BACKGROUND_A"} />
-            <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_B} demoVarName={"COLOR_BACKGROUND_B"} />
-            <ColorBackgroundDemo demoVar={COLOR_BACKGROUND_C} demoVarName={"COLOR_BACKGROUND_C"} />
-          </DemoSubSection>
+      <DemoSubSection name="Font Weights">
+        <DemoDescription>
+          When in doubt, use the base weight. Use special weights only where
+          necessary to reinforce visual heirarchy.
+        </DemoDescription>
+        <FontWeightDemo
+          demoVar={props => props.theme.FONT_WEIGHT_BASE}
+          demoVarName={"FONT_WEIGHT_BASE"}
+        />
+        <FontWeightDemo
+          demoVar={props => props.theme.FONT_WEIGHT_SEMIBOLD}
+          demoVarName={"FONT_WEIGHT_SEMIBOLD"}
+        />
+        <FontWeightDemo
+          demoVar={props => props.theme.FONT_WEIGHT_BOLD}
+          demoVarName={"FONT_WEIGHT_BOLD"}
+        />
+      </DemoSubSection>
 
-          <DemoSubSection name="Brand Colors">
-            <DemoDescription>Use Brand colors where the company's visual style needs to be represented directly. Consider using only in places where the logo may appear. Avoid using for interaction colors like links and buttons.</DemoDescription>
-            <ColorDemo demoVar={props => props.theme.COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
-            <ColorDemo demoVar={props => props.theme.COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
-          </DemoSubSection>
-
-          <DemoSubSection name="Opacity">
-            <DemoDescription>Stick to the basic palette of opacity values to limit subjective colors across an application. Levels 100, 70, and 50 may be used to lighten text for captions or similar uses, where appropriate.</DemoDescription>
-            <OpacityDemo demoVar={props => props.theme.OPACITY_100} demoVarName={"OPACITY_100"} />
-            <OpacityDemo demoVar={props => props.theme.OPACITY_70} demoVarName={"OPACITY_70"} />
-            <OpacityDemo demoVar={props => props.theme.OPACITY_50} demoVarName={"OPACITY_50"} />
-            <OpacityDemo demoVar={props => props.theme.OPACITY_15} demoVarName={"OPACITY_15"} />
-          </DemoSubSection>
-        </DemoSection>
-
-        <DemoSection name="Typography">
-
-          <DemoSubSection name="Font Sizes">
-            <DemoDescription>When in doubt, use the base size. Prefer using horizontal or vertical negative space to differentiate elements, when possible.</DemoDescription>
-            <FontSizeDemo demoVar={props => props.theme.FONT_SIZE_XS} demoVarName={"FONT_SIZE_XS"} />
-            <FontSizeDemo demoVar={props => props.theme.FONT_SIZE_SM} demoVarName={"FONT_SIZE_SM"} />
-            <FontSizeDemo demoVar={props => props.theme.FONT_SIZE_BASE} demoVarName={"FONT_SIZE_BASE"} />
-            <FontSizeDemo demoVar={props => props.theme.FONT_SIZE_MD} demoVarName={"FONT_SIZE_MD"} />
-            <FontSizeDemo demoVar={props => props.theme.FONT_SIZE_LG} demoVarName={"FONT_SIZE_LG"} />
-            <FontSizeDemo demoVar={props => props.theme.FONT_SIZE_TITLE} demoVarName={"FONT_SIZE_TITLE"} />
-            <FontSizeDemo demoVar={props => props.theme.FONT_SIZE_HERO} demoVarName={"FONT_SIZE_HERO"} />
-          </DemoSubSection>
-
-          <DemoSubSection name="Font Weights">
-            <DemoDescription>When in doubt, use the base weight. Use special weights only where necessary to reinforce visual heirarchy.</DemoDescription>
-            <FontWeightDemo demoVar={props => props.theme.FONT_WEIGHT_BASE} demoVarName={"FONT_WEIGHT_BASE"} />
-            <FontWeightDemo demoVar={props => props.theme.FONT_WEIGHT_SEMIBOLD} demoVarName={"FONT_WEIGHT_SEMIBOLD"} />
-            <FontWeightDemo demoVar={props => props.theme.FONT_WEIGHT_BOLD} demoVarName={"FONT_WEIGHT_BOLD"} />
-          </DemoSubSection>
-
-          <DemoSubSection name="Fonts">
-            <DemoDescription>Font Stacks are compositions of Font Groups. All Font Stacks are backed by the operating system default sans-serif Font Group, and may include specialized fonts. Use FONT_STACK_BRAND sparingly, and keep it limited to large headings.</DemoDescription>
-            <FontDemo demoVar={props => props.theme.FONT_STACK_BRAND} demoVarName={"FONT_STACK_BRAND"} />
-            <FontDemo demoVar={props => props.theme.FONT_STACK_BASE} demoVarName={"FONT_STACK_BASE"} />
-            <FontDemo demoVar={props => props.theme.FONT_STACK_CODE} demoVarName={"FONT_STACK_CODE"} />
-          </DemoSubSection>
-        </DemoSection>
-
-      </DemoCanvas>
-    )
-    )
-  );
+      <DemoSubSection name="Fonts">
+        <DemoDescription>
+          Font Stacks are compositions of Font Groups. All Font Stacks are
+          backed by the operating system default sans-serif Font Group, and may
+          include specialized fonts. Use FONT_STACK_BRAND sparingly, and keep it
+          limited to large headings.
+        </DemoDescription>
+        <FontDemo
+          demoVar={props => props.theme.FONT_STACK_BRAND}
+          demoVarName={"FONT_STACK_BRAND"}
+        />
+        <FontDemo
+          demoVar={props => props.theme.FONT_STACK_BASE}
+          demoVarName={"FONT_STACK_BASE"}
+        />
+        <FontDemo
+          demoVar={props => props.theme.FONT_STACK_CODE}
+          demoVarName={"FONT_STACK_CODE"}
+        />
+      </DemoSubSection>
+    </DemoSection>
+  </DemoCanvas>
+));
