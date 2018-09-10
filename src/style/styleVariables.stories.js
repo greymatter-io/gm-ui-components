@@ -34,9 +34,9 @@ const DemoItem = styled.button.attrs({
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
   text-align: center;
   cursor: pointer;
+  position: relative;
 
   &:after {
     content: '${props => props.demoVarName}';
@@ -147,20 +147,28 @@ const ColorDemo = styled(DemoItem)`
     );
   height: ${spacingScale(11)};
   width: ${spacingScale(22)};
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: stretch;
 
   &:before {
     content: "";
     height: ${spacingScale(4)};
-    margin: ${spacingScale(1.5)} ${spacingScale(1.5)} 0;
+    margin: ${spacingScale(1.5)} 0 0;
     border-radius: ${props => props.theme.RADIUS_05};
     background-color: ${props => props.demoVar};
+    position: absolute;
+    top: 0;
+    left: ${spacingScale(1.5)};
+    right: ${spacingScale(1.5)};
   }
 
   &:after {
     opacity: ${props => props.theme.OPACITY_70};
     margin: auto ${spacingScale(0.25)} ${spacingScale(1)};
+    position: absolute;
+    bottom: 0;
+    left: ${spacingScale(0.25)};
+    right: ${spacingScale(0.25)};
   }
 `;
 
@@ -255,8 +263,8 @@ const OpacityDemo = styled(DemoItem)`
 
   &:before {
     content: "";
-    flex: 1 1 100%;
-    height: ${spacingScale(6)};
+    flex: 1 1 ${spacingScale(7)};
+    height: ${spacingScale(7)};
     margin: ${spacingScale(1)} ${spacingScale(1)} 0;
     border-radius: ${props => props.theme.RADIUS_05};
     background: ${props => props.theme.COLOR_BRAND_A};
