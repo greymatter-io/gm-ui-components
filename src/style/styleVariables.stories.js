@@ -4,11 +4,6 @@ import styled from "styled-components";
 import copy from "copy-to-clipboard";
 import { storiesOf } from "@storybook/react";
 
-import {
-  COLOR_BACKGROUND_A,
-  COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C
-} from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
 const stories = storiesOf("Style Variables", module);
