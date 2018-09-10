@@ -41,49 +41,55 @@ function _buttonSizeStyleBlockGenerator({
  * @returns
  */
 function generateButtonSize(size) {
+  let style = "";
   switch (size) {
     case "xs": {
-      return _buttonSizeStyleBlockGenerator({
+      style = _buttonSizeStyleBlockGenerator({
         fontSize: FONT_SIZE_XS,
         horizontalPadding: spacingScale(1),
         verticalPadding: spacingScale(0.25),
         textIsUppercase: true
       });
+      break;
     }
     case "sm": {
-      return _buttonSizeStyleBlockGenerator({
+      style = _buttonSizeStyleBlockGenerator({
         fontSize: FONT_SIZE_SM,
         horizontalPadding: spacingScale(1),
         verticalPadding: spacingScale(0.25),
         textIsUppercase: true
       });
+      break;
     }
     case "lg": {
-      return _buttonSizeStyleBlockGenerator({
+      style = _buttonSizeStyleBlockGenerator({
         fontSize: FONT_SIZE_LG,
         horizontalPadding: spacingScale(1.25),
         verticalPadding: spacingScale(0.25),
         textIsUppercase: false
       });
+      break;
     }
     case "xl": {
-      return _buttonSizeStyleBlockGenerator({
+      style = _buttonSizeStyleBlockGenerator({
         fontSize: FONT_SIZE_LG,
         horizontalPadding: spacingScale(1.25),
         verticalPadding: spacingScale(0.25),
         textIsUppercase: false
       });
+      break;
     }
     default:
-    case "normal": {
-      return _buttonSizeStyleBlockGenerator({
+    case "normal":
+      style = _buttonSizeStyleBlockGenerator({
         fontSize: FONT_SIZE_BASE,
         horizontalPadding: spacingScale(1),
         verticalPadding: spacingScale(0.25),
         textIsUppercase: false
       });
-    }
+      break;
   }
+  return style;
 }
 
 export default generateButtonSize;
