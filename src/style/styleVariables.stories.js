@@ -7,18 +7,7 @@ import { storiesOf } from "@storybook/react";
 import {
   COLOR_BACKGROUND_A,
   COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C,
-  OPACITY_70,
-  OPACITY_50,
-  RADIUS_05,
-  RADIUS_1,
-  RADIUS_2,
-  RADIUS_3,
-  RADIUS_4,
-  RADIUS_5,
-  RADIUS_6,
-  RADIUS_7,
-  RADIUS_8
+  COLOR_BACKGROUND_C
 } from "style/styleVariables";
 import { spacingScale } from "./styleFunctions";
 
@@ -193,9 +182,25 @@ const ColorLineDemo = styled(ColorDemo)`
   }
 `;
 
-const ColorBackgroundDemo = styled(ColorDemo)`
-  background: ${props => props.demoVar};
-  color: ${props => readableColor(props.demoVar)};
+const ColorBackgroundDemoA = styled(ColorDemo)`
+  background: ${props => props.theme.COLOR_BACKGROUND_A};
+  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_A)};
+
+  &:before {
+    content: none;
+  }
+`;
+const ColorBackgroundDemoB = styled(ColorDemo)`
+  background: ${props => props.theme.COLOR_BACKGROUND_B};
+  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_B)};
+
+  &:before {
+    content: none;
+  }
+`;
+const ColorBackgroundDemoC = styled(ColorDemo)`
+  background: ${props => props.theme.COLOR_BACKGROUND_C};
+  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_C)};
 
   &:before {
     content: none;
@@ -347,9 +352,17 @@ const DemoNavigationItem = styled.a`
       bottom: ${spacingScale(0.5)};
       background-color: ${props => props.theme.COLOR_BRAND_A};
       box-shadow: ${spacingScale(0.5)} ${spacingScale(0.5)} 0
-          ${props => transparentize(1 - OPACITY_70, props.theme.COLOR_BRAND_A)},
+          ${props =>
+            transparentize(
+              1 - props.theme.OPACITY_70,
+              props.theme.COLOR_BRAND_A
+            )},
         ${spacingScale(1)} ${spacingScale(1)} 0
-          ${props => transparentize(1 - OPACITY_50, props.theme.COLOR_BRAND_A)};
+          ${props =>
+            transparentize(
+              1 - props.theme.OPACITY_50,
+              props.theme.COLOR_BRAND_A
+            )};
     }
   }
 
@@ -519,16 +532,16 @@ stories.add("Style Variables", () => (
           few color changes. Too many backgrounds can make an interface feel
           blocky and incoherent.
         </DemoDescription>
-        <ColorBackgroundDemo
-          demoVar={COLOR_BACKGROUND_A}
+        <ColorBackgroundDemoA
+          demoVar={props => props.theme.COLOR_BACKGROUND_A}
           demoVarName={"COLOR_BACKGROUND_A"}
         />
-        <ColorBackgroundDemo
-          demoVar={COLOR_BACKGROUND_B}
+        <ColorBackgroundDemoB
+          demoVar={props => props.theme.COLOR_BACKGROUND_B}
           demoVarName={"COLOR_BACKGROUND_B"}
         />
-        <ColorBackgroundDemo
-          demoVar={COLOR_BACKGROUND_C}
+        <ColorBackgroundDemoC
+          demoVar={props => props.theme.COLOR_BACKGROUND_C}
           demoVarName={"COLOR_BACKGROUND_C"}
         />
       </DemoSubSection>
