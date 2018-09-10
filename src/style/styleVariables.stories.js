@@ -6,7 +6,7 @@ import { storiesOf } from "@storybook/react";
 
 import { spacingScale } from "./styleFunctions";
 
-const stories = storiesOf("Style Variables", module);
+const stories = storiesOf(" Overview|Styles", module);
 
 const DemoCanvas = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_A};
@@ -293,7 +293,7 @@ const DemoDescription = styled.p`
 
 const DemoHeading = styled.h1`
   font-family: ${props => props.theme.FONT_STACK_BASE};
-  margin: ${spacingScale(4)} ${spacingScale(1)};
+  margin: ${spacingScale(4)} ${spacingScale(1)} ${spacingScale(1)};
 `;
 
 const DemoNavigation = styled.nav`
@@ -371,9 +371,13 @@ const DemoNavigationItem = styled.a`
   }
 `;
 
-stories.add("Style Variables", () => (
+stories.add("Styles", () => (
   <DemoCanvas>
     <DemoHeading>Style Variables</DemoHeading>
+    <DemoDescription>
+      Use the style variables included in your project instead of hardcoding
+      pixel and color values.
+    </DemoDescription>
 
     <DemoNavigation>
       <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>

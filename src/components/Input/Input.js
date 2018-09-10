@@ -7,7 +7,7 @@ import InputHint from "./components/InputHint";
 import InputField from "./components/InputField";
 
 Input.propTypes = {
-  autofocus: PropTypes.bool,
+  autoFocus: PropTypes.bool,
   defaultValue: PropTypes.string,
   hint: PropTypes.string,
   label: PropTypes.string,
@@ -17,7 +17,7 @@ Input.propTypes = {
 };
 
 export default function Input({
-  autofocus,
+  autoFocus,
   defaultValue,
   hint,
   label,
@@ -31,7 +31,7 @@ export default function Input({
       {label && <InputLabel>{label}</InputLabel>}
       <InputField
         type={type}
-        autofocus={autofocus}
+        autoFocus={autoFocus}
         defaultValue={defaultValue}
         placeholder={placeholder}
         maxLength={maxLength}
