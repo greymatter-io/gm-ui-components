@@ -21,7 +21,6 @@ export default function InputRange({
   defaultValue,
   hint,
   label,
-  list,
   labelPosition,
   ...props
 }) {
@@ -31,7 +30,6 @@ export default function InputRange({
       <InputRangeControl
         autoFocus={autoFocus}
         defaultValue={defaultValue}
-        list={list}
         {...props}
       />
       {hint && <InputHint>{hint}</InputHint>}
