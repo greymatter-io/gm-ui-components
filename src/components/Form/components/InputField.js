@@ -6,7 +6,6 @@ import {
   COLOR_KEYLINE,
   COLOR_CONTENT,
   COLOR_BACKGROUND_A,
-  COLOR_BACKGROUND_B,
   RADIUS_05,
   OPACITY_50
 } from "style/styleVariables";
@@ -15,15 +14,7 @@ import { formInteractionStyles } from "../components/InputFieldStyles";
 
 const BORDER_WIDTH = 1;
 
-export const InputField = styled.input.attrs({
-  autoFocus: props => props.autoFocus,
-  disabled: props => props.disabled,
-  readonly: props => props.readonly,
-  defaultValue: props => props.defaultValue,
-  placeholder: props => props.placeholder,
-  maxLength: props => props.maxlength,
-  type: props => props.type
-})`
+export const InputField = styled.input`
   ${formInteractionStyles};
   min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
   border-radius: calc(${RADIUS_05} + ${BORDER_WIDTH}px);

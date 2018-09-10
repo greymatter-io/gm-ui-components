@@ -35,6 +35,7 @@ const Select = ({
 
 Select.propTypes = {
   autoFocus: PropTypes.bool,
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   disabled: PropTypes.bool,
   hint: PropTypes.string,
   label: PropTypes.string.isRequired,

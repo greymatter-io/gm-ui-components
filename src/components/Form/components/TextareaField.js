@@ -14,15 +14,7 @@ import { formInteractionStyles } from "../components/InputFieldStyles";
 
 const BORDER_WIDTH = 1;
 
-const TextareaField = styled.textarea.attrs({
-  autoFocus: props => props.autoFocus,
-  disabled: props => props.disabled,
-  readonly: props => props.readonly,
-  defaultValue: props => props.defaultValue,
-  placeholder: props => props.placeholder,
-  maxLength: props => props.maxlength,
-  type: props => props.type
-})`
+const TextareaField = styled.textarea`
   ${formInteractionStyles};
   min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
   max-width: 100%;
