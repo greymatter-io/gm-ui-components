@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { COLOR_KEYLINE } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const Copyright = styled.p`
@@ -10,7 +9,7 @@ const Copyright = styled.p`
   text-align: center;
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid ${COLOR_KEYLINE};
+  border-top: 1px solid ${props => props.theme.COLOR_KEYLINE};
   margin-top: ${spacingScale(1)};
   padding: ${spacingScale(1)};
   text-transform: uppercase;
