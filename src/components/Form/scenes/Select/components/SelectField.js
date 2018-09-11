@@ -15,12 +15,7 @@ import { formInteractionStyles } from "../../../components/InputFieldInteraction
 const BORDER_WIDTH = 1;
 const CHEVRON_ICON_DEFAULT = `"data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.155 12.784l2.47-2.47a.75.75 0 0 1 1.06 1.061l-3.53 3.53-3.53-3.53a.75.75 0 0 1 1.06-1.06l2.47 2.469z' fill='${COLOR_CONTENT}' fill-rule='nonzero'/%3E%3C/svg%3E"`;
 
-const SelectField = styled.select.attrs({
-  autoFocus: props => props.autoFocus,
-  disabled: props => props.disabled,
-  defaultValue: props => props.defaultValue,
-  placeholder: props => props.placeholder
-})`
+const SelectField = styled.select`
   ${formInteractionStyles};
   height: calc(${spacingScale(4)} - ${BORDER_WIDTH * 2}px);
   border-radius: calc(${RADIUS_05} + ${BORDER_WIDTH}px);
