@@ -5,22 +5,20 @@ import { withInfo } from "@storybook/addon-info";
 
 import Tab from "./Tab";
 
-const stories = storiesOf("Tab", module);
+const stories = storiesOf("Components|Tabs", module);
 
 stories.add(
-  "Tab",
+  "default",
   withInfo(
     "An individual Tab component that is meant to be used as a child of TabGroup."
   )(() => {
     return (
-      <div style={{ width: "100vw", display: "flex", height: "40px" }}>
-        <Tab
-          clickAction={() => alert("hello")}
-          label={text("label", "Active Tab")}
-          active={boolean("active", true)}
-          disabled={boolean("disabled", false)}
-        />
-      </div>
+      <Tab
+        clickAction={() => alert("hello")}
+        label={text("label", "Active Tab")}
+        active={boolean("active", true)}
+        disabled={boolean("disabled", false)}
+      />
     );
   })
 );

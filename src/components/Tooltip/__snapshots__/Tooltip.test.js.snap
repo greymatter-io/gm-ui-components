@@ -18,7 +18,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
 }
 
 .c0 {
-  cursor: help;
   display: inline-block;
   position: relative;
 }
@@ -63,7 +62,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
 }
 
 .c0 {
-  cursor: help;
   display: inline-block;
   position: relative;
 }
@@ -107,7 +105,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
 }
 
 .c0 {
-  cursor: help;
   display: inline-block;
   position: relative;
 }
@@ -151,7 +148,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
 }
 
 .c0 {
-  cursor: help;
   display: inline-block;
   position: relative;
 }

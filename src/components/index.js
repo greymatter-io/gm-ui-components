@@ -17,6 +17,7 @@ import AppHeader from "./AppHeader";
 import ErrorCard from "./ErrorCard";
 import NavCard from "./NavCard";
 import NavCardGroup from "./NavCardGroup";
+import Radio from "./Radio";
 import * as Glyphs from "./Glyphs";
 
 const library = {
@@ -34,6 +35,7 @@ const library = {
   LayoutSection,
   NavCard,
   NavCardGroup,
+  Radio,
   Readout,
   ReadoutGroup,
   Spinner,
