@@ -7,7 +7,7 @@ import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
 
-import { FORM_HIGHLIGHT_SIZE } from "components/Form/components/InputFieldStyles";
+import { FORM_HIGHLIGHT_SIZE } from "../../../Form/components/InputFieldInteractionStyles";
 
 import {
   FONT_STACK_BASE,

@@ -10,7 +10,7 @@ import {
   OPACITY_50
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
-import { formInteractionStyles } from "../../../components/InputFieldStyles";
+import { formInteractionStyles } from "../../../components/InputFieldInteractionStyles";
 
 const BORDER_WIDTH = 1;
 const CHEVRON_ICON_DEFAULT = `"data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.155 12.784l2.47-2.47a.75.75 0 0 1 1.06 1.061l-3.53 3.53-3.53-3.53a.75.75 0 0 1 1.06-1.06l2.47 2.469z' fill='${COLOR_CONTENT}' fill-rule='nonzero'/%3E%3C/svg%3E"`;

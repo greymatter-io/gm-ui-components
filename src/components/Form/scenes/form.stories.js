@@ -8,13 +8,7 @@ import Fieldset from "./../components/Fieldset";
 import Checkbox from "./Checkbox";
 import Radio from "./Radio";
 import Textarea from "./Textarea";
-import InputText from "./InputText";
-import InputPassword from "./InputPassword";
-import InputSearch from "./InputSearch";
-import InputUrl from "./InputUrl";
-import InputTelephone from "./InputTelephone";
-import InputNumber from "./InputNumber";
-import InputEmail from "./InputEmail";
+import InputField from "./InputField";
 import InputRange from "./InputRange";
 import Select from "./Select";
 import Button from "../../Button";
@@ -44,6 +38,12 @@ stories.add(
     const baseProps = props.base();
     const buttonProps = props.button();
     const inputFieldProps = props.inputField();
+
+    const FormFieldType = select(
+      "Field Type",
+      ["text", "search", "number", "password", "email", "telephone", "url"],
+      "text"
+    );
 
     return (
       <div>
@@ -120,29 +120,12 @@ stories.add(
           />
         </div>
         <Textarea {...baseProps} {...inputFieldProps} label={"Textarea"} />
-        <InputText {...baseProps} {...inputFieldProps} label={"Text input"} />
-        <InputEmail {...baseProps} {...inputFieldProps} label={"Email input"} />
-        <InputNumber
+        <InputField
           {...baseProps}
           {...inputFieldProps}
-          label={"Number input"}
+          label={FormFieldType + " input"}
+          type={FormFieldType}
         />
-        <InputPassword
-          {...baseProps}
-          {...inputFieldProps}
-          label={"Password input"}
-        />
-        <InputSearch
-          {...baseProps}
-          {...inputFieldProps}
-          label={"Search input"}
-        />
-        <InputTelephone
-          {...baseProps}
-          {...inputFieldProps}
-          label={"Telephone input"}
-        />
-        <InputUrl {...baseProps} {...inputFieldProps} label={"Url input"} />
       </div>
     );
   })

@@ -7,14 +7,8 @@ import AppHeader from "./AppHeader";
 import ErrorCard from "./ErrorCard";
 import Icon from "./Icon";
 import Input from "./Form/scenes/Input";
-import InputEmail from "./Form/scenes/InputEmail";
-import InputNumber from "./Form/scenes/InputNumber";
-import InputPassword from "./Form/scenes/InputPassword";
+import InputField from "./Form/scenes/InputField";
 import InputRange from "./Form/scenes/InputRange";
-import InputSearch from "./Form/scenes/InputSearch";
-import InputTelephone from "./Form/scenes/InputTelephone";
-import InputText from "./Form/scenes/InputText";
-import InputUrl from "./Form/scenes/InputUrl";
 import LayoutSection from "./LayoutSection";
 import NavCard from "./NavCard";
 import NavCardGroup from "./NavCardGroup";
@@ -42,14 +36,8 @@ const library = {
   ErrorCard,
   Icon,
   Input,
-  InputEmail,
-  InputNumber,
-  InputPassword,
+  InputField,
   InputRange,
-  InputSearch,
-  InputTelephone,
-  InputText,
-  InputUrl,
   LayoutSection,
   NavCard,
   NavCardGroup,

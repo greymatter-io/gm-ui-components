@@ -10,7 +10,7 @@ import {
   OPACITY_50
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
-import { formInteractionStyles } from "../components/InputFieldStyles";
+import { formInteractionStyles } from "./InputFieldInteractionStyles";
 
 const BORDER_WIDTH = 1;
 

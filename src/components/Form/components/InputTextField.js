@@ -10,11 +10,11 @@ import {
   OPACITY_50
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
-import { formInteractionStyles } from "../components/InputFieldStyles";
+import { formInteractionStyles } from "./InputFieldInteractionStyles";
 
 const BORDER_WIDTH = 1;
 
-export const InputField = styled.input`
+export const InputTextField = styled.input`
   ${formInteractionStyles};
   min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
   border-radius: calc(${RADIUS_05} + ${BORDER_WIDTH}px);
@@ -46,4 +46,4 @@ export const InputField = styled.input`
   }
 `;
 
-export default InputField;
+export default InputTextField;

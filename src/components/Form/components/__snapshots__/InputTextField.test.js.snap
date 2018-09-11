@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputField matches snapshot 1`] = `
+exports[`InputTextField matches snapshot 1`] = `
 .c0 {
   min-height: calc(24px - 2px);
   border-radius: calc(4px + 1px);

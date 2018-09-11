@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import InputLabelText from "../../components/InputLabelText";
 import InputWrap from "../../components/InputWrap";
 import InputHint from "../../components/InputHint";
-import InputField from "../../components/InputField";
+import InputTextField from "../../components/InputTextField";
 
 Input.propTypes = {
   autoFocus: PropTypes.bool,
@@ -14,7 +14,7 @@ Input.propTypes = {
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   maxLength: PropTypes.number,
   placeholder: PropTypes.string,
-  type: PropTypes.oneOf(["text"])
+  type: PropTypes.string
 };
 
 export default function Input({
@@ -31,7 +31,7 @@ export default function Input({
   return (
     <InputWrap labelPosition={labelPosition}>
       {label && <InputLabelText>{label}</InputLabelText>}
-      <InputField
+      <InputTextField
         type={type}
         autoFocus={autoFocus}
         defaultValue={defaultValue}

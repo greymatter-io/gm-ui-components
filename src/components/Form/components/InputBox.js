@@ -8,7 +8,10 @@ import {
   COLOR_BACKGROUND_C
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
-import { FORM_HIGHLIGHT_SIZE, formInteractionStyles } from "./InputFieldStyles";
+import {
+  FORM_HIGHLIGHT_SIZE,
+  formInteractionStyles
+} from "./InputFieldInteractionStyles";
 
 const BORDER_WIDTH = 1;
 

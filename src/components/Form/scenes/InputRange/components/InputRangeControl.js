@@ -14,7 +14,7 @@ import { mix, transparentize } from "polished";
 import {
   formInteractionStyles,
   FORM_HIGHLIGHT_SIZE
-} from "../../../components/InputFieldStyles";
+} from "../../../components/InputFieldInteractionStyles";
 
 const BORDER_WIDTH = 2;
 const THUMB_SIZE = "1em";

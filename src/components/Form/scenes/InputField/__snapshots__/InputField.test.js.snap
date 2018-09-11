@@ -1,13 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputUrl matches snapshot 1`] = `
+exports[`InputField matches snapshot 1`] = `
 <InputWrap>
   <InputLabelText>
     Test
   </InputLabelText>
-  <InputField
+  <InputTextField
     clickAction={[Function]}
-    type="url"
+    readonly={true}
+    type="text"
   />
 </InputWrap>
 `;
