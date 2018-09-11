@@ -1,8 +1,7 @@
-import styled from 'styled-components';
-import { FONT_STACK_BASE } from 'style/styleVariables';
+import styled from "styled-components";
 
 const InputWrap = styled.label`
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   position: relative;
 `;
 
