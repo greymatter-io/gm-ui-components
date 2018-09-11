@@ -6,9 +6,11 @@ import { withInfo } from "@storybook/addon-info";
 import LayoutSection from "./LayoutSection";
 import { Readout, ReadoutGroup, IconBell, IconSummary } from "../";
 
-storiesOf("Layout Section", module).add(
+const stories = storiesOf("Components|Layout Section", module);
+
+stories.add(
   "default",
-  withInfo("An flexbox layout component")(() => {
+  withInfo("A flexbox layout component")(() => {
     return (
       <LayoutSection
         title={text("title", "Test Layout")}

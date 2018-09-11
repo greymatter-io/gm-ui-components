@@ -6,7 +6,7 @@ import NavCard from "./NavCard";
 
 const details = [{ name: "Uptime", value: "15 Days" }];
 
-describe("NavCard", () => {
+describe("Components|NavCard", () => {
   let aNavCard;
   beforeEach(() => {
     aNavCard = shallow(

@@ -12,6 +12,8 @@ import {
 } from "components";
 import { spacingScale } from "style/styleFunctions";
 
+const stories = storiesOf("Components|App Header", module);
+
 const bannerExtras = [
   {
     path: "/settings",
@@ -61,27 +63,17 @@ const toolbarItems = () => {
   );
 };
 
-storiesOf("App Header", module)
-  .addDecorator(story => (
-    <div
-      style={{
-        paddingTop: "30px"
-      }}
-    >
-      {story()}
-    </div>
-  ))
-  .add(
-    "default",
-    withInfo(
-      "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
-    )(() => {
-      return (
-        <AppHeader
-          title={text("title", "GM UI App Header")}
-          extras={object("extras", bannerExtras)}
-          toolbarItems={toolbarItems}
-        />
-      );
-    })
-  );
+stories.add(
+  "default",
+  withInfo(
+    "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
+  )(() => {
+    return (
+      <AppHeader
+        title={text("title", "GM UI App Header")}
+        extras={object("extras", bannerExtras)}
+        toolbarItems={toolbarItems}
+      />
+    );
+  })
+);

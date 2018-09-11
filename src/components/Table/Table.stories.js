@@ -1,8 +1,11 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, object } from "@storybook/addon-knobs/react";
+import { select, object, color } from "@storybook/addon-knobs/react";
+import { withInfo } from "@storybook/addon-info";
 
 import Table from "./Table";
+
+const stories = storiesOf("Components|Table", module);
 
 const columns = [
   {
@@ -60,36 +63,26 @@ const data = [
     age: 32,
     address: "Sidney No. 1 Lake Park",
     favfood: "Grilled Cheese"
-  },
-  {
-    key: 4,
-    name: "Jenny Black",
-    age: 32,
-    address: "Sidney No. 1 Lake Park",
-    favfood: "Grilled Cheese"
-  },
-  {
-    key: 5,
-    name: "Jenny Black",
-    age: 32,
-    address: "Sidney No. 1 Lake Park",
-    favfood: "Grilled Cheese"
   }
 ];
 
-storiesOf("Table", module).add("default", () => {
-  return (
-    <Table
-      columns={object("columns", columns)}
-      data={object("data", data)}
-      sortDataIndex={select(
-        "sortDataIndex",
-        ["name", "address", "favfood", "age"],
-        "name"
-      )}
-      selectedRows={[0]}
-      onSort={sortIndex => alert(JSON.stringify(sortIndex))}
-      onCellClick={cellData => alert(JSON.stringify(cellData))}
-    />
-  );
-});
+stories.add(
+  "default",
+  withInfo("A table component.")(() => {
+    return (
+      <Table
+        accentColor={color("accentColor")}
+        columns={object("columns", columns)}
+        data={object("data", data)}
+        sortDataIndex={select(
+          "sortDataIndex",
+          ["name", "address", "favfood", "age"],
+          "name"
+        )}
+        selectedRows={[0]}
+        onSort={sortIndex => alert(JSON.stringify(sortIndex))}
+        onCellClick={cellData => alert(JSON.stringify(cellData))}
+      />
+    );
+  })
+);
