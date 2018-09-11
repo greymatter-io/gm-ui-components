@@ -2,8 +2,9 @@
 
 exports[`Box should render 1`] = `
 .c0 {
-  box-shadow: inset 0 0 0 1px;
+  box-shadow: inset 0 0 0 1px #0aab2a;
   font-size: 16px;
+  color: #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -13,6 +14,7 @@ exports[`Box should render 1`] = `
   height: 1em;
   width: 1em;
   position: relative;
+  border-radius: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27,8 +29,12 @@ exports[`Box should render 1`] = `
   justify-content: center;
 }
 
+.c0:checked {
+  background: #0aab2a;
+}
+
 .c0:checked:after {
-  content: "";
+  content: '';
   width: 25%;
   height: 50%;
   border: 2px solid;

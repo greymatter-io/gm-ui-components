@@ -5,6 +5,8 @@ exports[`Wrapper should render 1`] = `
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
