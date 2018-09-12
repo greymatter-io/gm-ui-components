@@ -17,15 +17,15 @@ exports[`LoadingSpinner matches snapshot 1`] = `
     >
       <stop
         offset="0%"
-        stop-color="rgba(10,171,42,0.15)"
+        stopColor="rgba(10,171,42,0.15)"
       />
       <stop
         offset="33%"
-        stop-color="rgba(10,171,42,0.15)"
+        stopColor="rgba(10,171,42,0.15)"
       />
       <stop
         offset="100%"
-        stop-color="#0aab2a"
+        stopColor="#0aab2a"
       />
     </linearGradient>
   </defs>
