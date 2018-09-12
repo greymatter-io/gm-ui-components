@@ -56,23 +56,4 @@ export function LoadingSpinner(props) {
   );
 }
 
-// export const LoadingSpinner = styled.div`
-//   border-radius: 100px;
-//   background-image: linear-gradient( to right, ${transparentize(1, SPINNER_COLOR)} 40%, ${SPINNER_COLOR} 60%, ${transparentize(1, SPINNER_COLOR)} );
-//   background-size: 200% 200%;
-//   position: relative;
-
-//   &:after {
-//     box-shadow: 0 0 1px ${transparentize(0.8, SPINNER_COLOR)};
-//     background-color: ${COLOR_BACKGROUND_A};
-//     left: 1px;
-//     top: 1px;
-//     right: 1px;
-//     bottom: 1px;
-//     content: '';
-//     position: absolute;
-//     border-radius: inherit;
-//   }
-// `;
-
 export default LoadingSpinner;
