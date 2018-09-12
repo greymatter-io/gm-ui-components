@@ -37,9 +37,9 @@ export function LoadingSpinner(props) {
     >
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color={transparentize(0.85, SPINNER_COLOR)} />
-          <stop offset="33%" stop-color={transparentize(0.85, SPINNER_COLOR)} />
-          <stop offset="100%" stop-color={SPINNER_COLOR} />
+          <stop offset="0%" stopColor={transparentize(0.85, SPINNER_COLOR)} />
+          <stop offset="33%" stopColor={transparentize(0.85, SPINNER_COLOR)} />
+          <stop offset="100%" stopColor={SPINNER_COLOR} />
         </linearGradient>
       </defs>
       <circle
