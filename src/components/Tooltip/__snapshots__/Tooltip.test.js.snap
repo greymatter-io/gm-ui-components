@@ -27,10 +27,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
   visibility: visible;
 }
 
-.c0:hover >:last-child z-index:function (props) {
-  return: props.theme.ZINDEX_TOOLTIP;
-}
-
 <div
   className="c0"
 >
@@ -69,10 +65,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
 .c0:hover >:last-child {
   opacity: 1;
   visibility: visible;
-}
-
-.c0:hover >:last-child z-index:function (props) {
-  return: props.theme.ZINDEX_TOOLTIP;
 }
 
 <div
@@ -114,10 +106,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
   visibility: visible;
 }
 
-.c0:hover >:last-child z-index:function (props) {
-  return: props.theme.ZINDEX_TOOLTIP;
-}
-
 <div
   className="c0"
 >
@@ -155,10 +143,6 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
 .c0:hover >:last-child {
   opacity: 1;
   visibility: visible;
-}
-
-.c0:hover >:last-child z-index:function (props) {
-  return: props.theme.ZINDEX_TOOLTIP;
 }
 
 <div
