@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { transparentize } from "polished";
 
@@ -55,5 +56,9 @@ export function LoadingSpinner(props) {
     </SpinnerSVG>
   );
 }
+
+LoadingSpinner.propTypes = {
+  orientation: PropTypes.oneOf(["vertical", "horizontal"])
+};
 
 export default LoadingSpinner;
