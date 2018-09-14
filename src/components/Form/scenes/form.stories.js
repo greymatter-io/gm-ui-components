@@ -13,17 +13,17 @@ import InputRange from "./InputRange";
 import Select from "./Select";
 import Button from "../../Button";
 
-const stories = storiesOf("Components|Form", module);
+const stories = storiesOf("Scenes|Form", module);
 
 const props = {
   base: () => ({
-    hint: text("Hint", "Hint lorem ipsum dolor sit amet"),
-    disabled: boolean("Disabled", false),
-    required: boolean("Required", false)
+    hint: text("hint", "Hint lorem ipsum dolor sit amet"),
+    disabled: boolean("disabled", false),
+    required: boolean("required", false)
   }),
   button: () => ({}),
   inputField: () => ({
-    placeholder: text("Placeholder", ""),
+    placeholder: text("placeholder", ""),
     labelPosition: select(
       "labelPosition",
       ["top", "bottom", "left", "right"],
@@ -38,12 +38,6 @@ stories.add(
     const baseProps = props.base();
     const buttonProps = props.button();
     const inputFieldProps = props.inputField();
-
-    const FormFieldType = select(
-      "Field Type",
-      ["text", "search", "number", "password", "email", "telephone", "url"],
-      "text"
-    );
 
     return (
       <div>
@@ -123,8 +117,20 @@ stories.add(
         <InputField
           {...baseProps}
           {...inputFieldProps}
-          label={FormFieldType + " input"}
-          type={FormFieldType}
+          label={text("label")}
+          type={select(
+            "type",
+            [
+              "text",
+              "search",
+              "number",
+              "password",
+              "email",
+              "telephone",
+              "url"
+            ],
+            "text"
+          )}
         />
       </div>
     );

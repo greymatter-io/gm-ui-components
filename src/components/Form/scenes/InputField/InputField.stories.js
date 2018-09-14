@@ -12,7 +12,7 @@ stories.add(
   withInfo("A general text input component with label and optional hint.")(
     () => {
       const FormFieldType = select(
-        "Field Type",
+        "type",
         ["text", "search", "number", "password", "email", "telephone", "url"],
         "text"
       );
@@ -20,8 +20,8 @@ stories.add(
       return (
         <InputField
           autoFocus={boolean("autoFocus", false)}
-          required={boolean("Required", false)}
-          readonly={boolean("Readonly", false)}
+          required={boolean("required", false)}
+          readonly={boolean("readonly", false)}
           hint={text("hint", "hint")}
           type={FormFieldType}
           label={text("label", "label")}

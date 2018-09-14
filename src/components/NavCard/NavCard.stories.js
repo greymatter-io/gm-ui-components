@@ -20,11 +20,11 @@ stories
         <a href="#" style={{ textDecoration: "none" }}>
           <NavCard
             icon={() => <IconSummary size="24px" />}
-            details={object("Detail Lines", [
+            details={object("details", [
               { name: "Memory Used", value: "116 MB" },
               { name: "CPU Usage", value: "99%" }
             ])}
-            title={text("Title", "Summary")}
+            title={text("title", "Summary")}
           />
         </a>
       );
