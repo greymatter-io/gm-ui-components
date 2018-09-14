@@ -86,12 +86,7 @@ const FIELD_ACTIVE_AND_FOCUSED_THUMB_STYLE = css`
 
 const InputRangeControl = styled.input.attrs({
   type: "range",
-  autoFocus: props => props.autoFocus,
-  disabled: props => props.disabled,
   defaultValue: props => props.defaultValue,
-  min: props => props.min || 0,
-  max: props => props.max || 100,
-  step: props => props.step || 1
 })`
   ${formInteractionStyles};
   font-size: ${FONT_SIZE_BASE};
