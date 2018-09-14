@@ -6,7 +6,6 @@ import { Checkbox } from "./Form/scenes/Checkbox";
 import AppHeader from "./AppHeader";
 import ErrorCard from "./ErrorCard";
 import Icon from "./Icon";
-import Input from "./Form/scenes/Input";
 import InputField from "./Form/scenes/InputField";
 import InputRange from "./Form/scenes/InputRange";
 import LayoutSection from "./LayoutSection";
@@ -35,7 +34,6 @@ const library = {
   Checkbox,
   ErrorCard,
   Icon,
-  Input,
   InputField,
   InputRange,
   LayoutSection,
