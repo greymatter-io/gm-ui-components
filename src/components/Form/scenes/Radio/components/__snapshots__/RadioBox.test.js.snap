@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioBox should render 1`] = `
+.c0 {
+  border-radius: 200px;
+}
+
+.c0:after {
+  width: 0;
+  height: 0;
+  border-radius: 200px;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.1);
+  -ms-transform: translateX(-50%) translateY(-50%) scale(0.1);
+  transform: translateX(-50%) translateY(-50%) scale(0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c0:checked:enabled {
+  background: #0aab2a;
+}
+
+.c0:checked:after {
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+  -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+<InputBox
+  className="c0"
+  type="radio"
+/>
+`;
