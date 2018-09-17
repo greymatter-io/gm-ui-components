@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Spinner matches snapshot 1`] = `
+exports[`Horizontal Spinner matches snapshot 1`] = `
+<LoadingSpinnerWrap
+  orientation="horizontal"
+>
+  <LoadingSpinner
+    orientation="horizontal"
+  />
+  <LoadingMessage>
+    Loading...
+  </LoadingMessage>
+</LoadingSpinnerWrap>
+`;
+
+exports[`Vertical Spinner matches snapshot 1`] = `
 <LoadingSpinnerWrap
   orientation="vertical"
 >
