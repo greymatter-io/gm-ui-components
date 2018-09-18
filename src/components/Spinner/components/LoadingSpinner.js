@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
@@ -10,21 +10,25 @@ import spinGradient from "./spinGradient";
 
 const SPINNER_COLOR = COLOR_BRAND_A;
 
-const SpinnerSVG = styled.svg`
+export const SpinnerSVG = styled.svg`
   animation: ${spinGradient} 16s ease infinite;
   margin: ${spacingScale(1)};
   overflow: visible;
 
   ${props =>
-    props.orientation === "vertical"
-      ? `
-     height: ${spacingScale(6)};
-     width: ${spacingScale(6)};
-   `
-      : `
-     height: ${spacingScale(2)};
-     width: ${spacingScale(2)};
-   `};
+    props.orientation === "vertical" ? verticalStyles : horizontalStyles};
+`;
+
+SpinnerSVG.displayName = "SpinnerSVG";
+
+export const verticalStyles = css`
+  height: ${spacingScale(6)};
+  width: ${spacingScale(6)};
+`;
+
+export const horizontalStyles = css`
+  height: ${spacingScale(2)};
+  width: ${spacingScale(2)};
 `;
 
 export function LoadingSpinner(props) {
