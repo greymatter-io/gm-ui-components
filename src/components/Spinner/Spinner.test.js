@@ -2,8 +2,6 @@ import React from "react";
 import { shallow } from "enzyme";
 import Spinner from "./Spinner";
 
-import { verticalStyles, horizontalStyles } from "./components/LoadingSpinner";
-
 describe("Spinner", () => {
   it("matches snapshot", () => {
     const aSpinner = shallow(<Spinner />).dive();
