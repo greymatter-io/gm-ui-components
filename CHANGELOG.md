@@ -1,3 +1,21 @@
+<a name="0.6.1"></a>
+
+## [0.6.1](https://github.com/DecipherNow/gm-ui-components/compare/v0.6.0...v0.6.1) (2018-09-18)
+
+### Bug Fixes
+
+- removing duplicate issue template ([#355](https://github.com/DecipherNow/gm-ui-components/issues/355)) ([ef4bc16](https://github.com/DecipherNow/gm-ui-components/commit/ef4bc16))
+- table updates ([#338](https://github.com/DecipherNow/gm-ui-components/issues/338)) ([f201870](https://github.com/DecipherNow/gm-ui-components/commit/f201870))
+
+### Features
+
+- cleaner more consistent button sizing and radius ([#337](https://github.com/DecipherNow/gm-ui-components/issues/337)) ([594c1b0](https://github.com/DecipherNow/gm-ui-components/commit/594c1b0))
+- minor improvements to radio button story ([#356](https://github.com/DecipherNow/gm-ui-components/issues/356)) ([5c3c5d1](https://github.com/DecipherNow/gm-ui-components/commit/5c3c5d1))
+- new inputs ([#335](https://github.com/DecipherNow/gm-ui-components/issues/335)) ([f768417](https://github.com/DecipherNow/gm-ui-components/commit/f768417))
+- move Radio button stories to the correct place in the sidebar ([#331](https://github.com/DecipherNow/gm-ui-components/issues/331)) ([13fa196](https://github.com/DecipherNow/gm-ui-components/commit/13fa196))
+- svg spinner ([#352](https://github.com/DecipherNow/gm-ui-components/issues/352)) ([aa7477e](https://github.com/DecipherNow/gm-ui-components/commit/aa7477e))
+- update issue templates ([#353](https://github.com/DecipherNow/gm-ui-components/issues/353)) ([12adfcc](https://github.com/DecipherNow/gm-ui-components/commit/12adfcc))
+
 <a name="0.6.0"></a>
 
 # [0.6.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.5.7...v0.6.0) (2018-09-06)

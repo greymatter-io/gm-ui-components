@@ -30,7 +30,7 @@ function TableHeader({ columns, sortDataIndex, onSort }) {
             onClick={() => onSort(dataIndex)}
             isSorting={sortDataIndex === dataIndex}
           >
-            {title}
+            {typeof title === "function" ? title(dataIndex) : title}
           </TableHeaderCell>
         ))}
       </tr>

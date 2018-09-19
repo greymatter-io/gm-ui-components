@@ -54,7 +54,9 @@ function TableRow({
             data-column={dataIndex}
           >
             {/* Cell content can be either text or a render prop */}
-            {typeof cellContent === "function" ? cellContent() : cellContent}
+            {typeof cellContent === "function"
+              ? cellContent(dataIndex, data, rowIndex)
+              : cellContent}
           </TableCell>
         );
       })}

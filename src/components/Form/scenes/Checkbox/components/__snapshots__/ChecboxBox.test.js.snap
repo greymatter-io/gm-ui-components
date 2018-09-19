@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxBox should render 1`] = `
+.c0 {
+  border-radius: 3px;
+}
+
+.c0:after {
+  width: 25%;
+  height: 50%;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  border-color: #fff;
+  margin-top: -1px;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  background: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c0:checked:after {
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+}
+
+.c0:indeterminate:enabled {
+  background: #0aab2a;
+}
+
+.c0:indeterminate:after {
+  opacity: 1;
+  width: 50%;
+  height: 0;
+  border-width: 0 0 2px;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+}
+
+<InputBox
+  className="c0"
+  type="checkbox"
+/>
+`;
