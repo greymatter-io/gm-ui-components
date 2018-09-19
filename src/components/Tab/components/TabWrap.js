@@ -1,27 +1,25 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
 
-const activeStyles = `
-    box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
-  `;
+const activeStyles = css`
+  box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
+`;
 
-const disabledStyles = `
-  `;
+const hoverStyles = css`
+  box-shadow: ${props => props.theme.COLOR_BRAND_A} 0px -1px inset;
+`;
 
-const hoverStyles = `
-    box-shadow: ${props => props.theme.COLOR_KEYLINE_SOLID} 0px -1px inset;
-  `;
-
-const downStyles = `
-    box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
-  `;
+const downStyles = css`
+  box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
+`;
 
 const TabWrap = styled.a.attrs({
   disabled: props => props.disabled
 })`
   font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.theme.FONT_SIZE_BASE};
+  color: ${props => props.theme.COLOR_CONTENT};
   padding-left: ${spacingScale(2)};
   padding-right: ${spacingScale(2)};
   flex: 0 0 auto;
@@ -41,7 +39,7 @@ const TabWrap = styled.a.attrs({
   // if active...
   ${props =>
     props.active &&
-    `
+    css`
       &,
       &:hover,
       &:active {
@@ -51,7 +49,7 @@ const TabWrap = styled.a.attrs({
 
   ${props =>
     props.disabled &&
-    `
+    css`
       &,
       &:hover,
       &:active {

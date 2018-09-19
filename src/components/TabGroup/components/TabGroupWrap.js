@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const TabGroupWrap = styled.nav`
@@ -8,7 +7,8 @@ const TabGroupWrap = styled.nav`
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  color: ${props => props.theme.COLOR_CONTENT};
   min-height: ${spacingScale(4)};
 `;
 
