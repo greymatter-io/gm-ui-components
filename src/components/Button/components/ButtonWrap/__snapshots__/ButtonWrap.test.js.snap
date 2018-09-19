@@ -14,8 +14,6 @@ exports[`ButtonWrap should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -29,9 +27,8 @@ exports[`ButtonWrap should match snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #fff;
-  color: #000;
-  border-color: transparent;
+  background-color: ,;
+  border-color: ,transparent,;
   font-size: 14px;
   border-radius: 3px;
   padding: 2px 7px;

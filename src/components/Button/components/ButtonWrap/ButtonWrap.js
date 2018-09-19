@@ -5,8 +5,6 @@ import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
 
-import { FONT_STACK_BASE, FONT_WEIGHT_BASE } from "style/styleVariables";
-
 // The start of the CSS style output
 const ButtonWrap = styled.button`
   align-items: center;
@@ -15,8 +13,8 @@ const ButtonWrap = styled.button`
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-family: ${FONT_STACK_BASE};
-  font-weight: ${FONT_WEIGHT_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
   justify-content: center;
   line-height: 1.4;
   text-align: center;
@@ -44,8 +42,8 @@ const ButtonWrap = styled.button`
     flex: 0 1 auto;
   }
 
-  ${props => `
-    ${generateButtonStyle(props.type, props.outline)}
+  ${props => css`
+    ${generateButtonStyle(props.theme, props.type, props.outline)}
     ${generateButtonSize(props.size)} 
     ${generateButtonOrientation(props.orientation)} 
   `};
