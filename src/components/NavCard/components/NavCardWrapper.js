@@ -11,6 +11,7 @@ const backgroundColor = css`
       props.theme.COLOR_BACKGROUND_C
     )};
 `;
+
 const backgroundColorHover = css`
   background-color: ${props =>
     darken(
