@@ -1,10 +1,8 @@
-import { AppFooter } from "./AppFooter";
+import AppFooter from "./AppFooter";
 import { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
 import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
-import { Checkbox } from "./Checkbox";
 import Icon from "./Icon";
-import Input from "./Input";
 import Spinner from "./Spinner";
 import Tab from "./Tab";
 import TabGroup from "./TabGroup";
@@ -19,6 +17,12 @@ import NavCard from "./NavCard";
 import NavCardGroup from "./NavCardGroup";
 import Radio from "./Radio";
 import * as Glyphs from "./Glyphs";
+import Checkbox from "./Form/scenes/Checkbox";
+import InputField from "./Form/scenes/InputField";
+import InputRange from "./Form/scenes/InputRange";
+import Textarea from "./Form/scenes/Textarea";
+import Radio from "./Form/scenes/Radio";
+import Select from "./Form/scenes/Select";
 
 const library = {
   ...Glyphs,
@@ -31,17 +35,20 @@ const library = {
   Checkbox,
   ErrorCard,
   Icon,
-  Input,
+  InputField,
+  InputRange,
   LayoutSection,
   NavCard,
   NavCardGroup,
   Radio,
   Readout,
   ReadoutGroup,
+  Select,
   Spinner,
   Tab,
   TabGroup,
   Table,
+  Textarea,
   Tooltip
 };
 

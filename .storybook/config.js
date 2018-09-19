@@ -4,10 +4,10 @@ import { configure, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs/react";
-import { withThemesProvider } from 'storybook-addon-styled-component-theme';
-
-import { keen, keenDark } from 'style/styleVariables';
+import { withThemesProvider } from "storybook-addon-styled-component-theme";
 import { checkA11y } from "@storybook/addon-a11y";
+
+import { keen, keenDark } from "style/styleVariables";
 import backgrounds from "@storybook/addon-backgrounds";
 import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
