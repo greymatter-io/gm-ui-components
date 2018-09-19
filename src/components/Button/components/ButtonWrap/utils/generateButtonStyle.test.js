@@ -1,11 +1,19 @@
 import generateButtonStyle from "./generateButtonStyle";
 
+const theme = {
+  COLOR_INTENT_DANGER: "red",
+  COLOR_INTENT_INFO: "blue",
+  COLOR_INTENT_WARNING: "yellow",
+  COLOR_INTENT_HIGHLIGHT: "green",
+  COLOR_BACKGROUND_A: "white"
+};
+
 describe("generateButtonStyle", () => {
   test("takes a button type and a boolean for rendering an outline and returns CSS", () => {
     // Only test for all CSS for the default button style, because
     // other types only touch background and border colors
-    expect(generateButtonStyle("default", false)).toEqual(`
-  background-color: #fff;
+    expect(generateButtonStyle(theme, "default", false)).toEqual(`
+  background-color: white;
   color: #000;
   border-color: transparent;
 
@@ -31,41 +39,41 @@ describe("generateButtonStyle", () => {
   }
 `);
 
-    expect(generateButtonStyle("danger", false)).toContain(`
-  background-color: #D83D22;
+    expect(generateButtonStyle(theme, "danger", false)).toContain(`
+  background-color: red;
   color: #fff;
 `);
 
-    expect(generateButtonStyle("info", false)).toContain(`
-  background-color: #1E6DF6;
+    expect(generateButtonStyle(theme, "info", false)).toContain(`
+  background-color: blue;
   color: #fff;
 `);
 
-    expect(generateButtonStyle("warning", false)).toContain(`
-  background-color: #F7CD45;
+    expect(generateButtonStyle(theme, "warning", false)).toContain(`
+  background-color: yellow;
   color: #fff;
 `);
 
-    expect(generateButtonStyle("primary", false)).toContain(`
-  background-color: #0aab2a;
+    expect(generateButtonStyle(theme, "primary", false)).toContain(`
+  background-color: green;
   color: #fff;
 `);
 
     // Test outlines
-    expect(generateButtonStyle("default", true)).toContain(`
-  border-color: #e6e6e6;
+    expect(generateButtonStyle(theme, "default", true)).toContain(`
+  border-color: white;
 `);
-    expect(generateButtonStyle("danger", true)).toContain(`
-  border-color: #ac311b;
+    expect(generateButtonStyle(theme, "danger", true)).toContain(`
+  border-color: red;
 `);
-    expect(generateButtonStyle("info", true)).toContain(`
-  border-color: #0955d8;
+    expect(generateButtonStyle(theme, "info", true)).toContain(`
+  border-color: blue;
 `);
-    expect(generateButtonStyle("warning", true)).toContain(`
-  border-color: #f5c014;
+    expect(generateButtonStyle(theme, "warning", true)).toContain(`
+  border-color: yellow;
 `);
-    expect(generateButtonStyle("primary", true)).toContain(`
-  border-color: #077b1e;
+    expect(generateButtonStyle(theme, "primary", true)).toContain(`
+  border-color: green;
 `);
   });
 });
