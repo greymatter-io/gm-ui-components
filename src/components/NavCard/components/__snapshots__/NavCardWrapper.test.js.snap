@@ -9,7 +9,6 @@ exports[`NavCardWrapper matches snapshot 1`] = `
   background-color: #252525;
   border-radius: 3px;
   min-height: 64px;
-  margin: 2px;
   position: relative;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;

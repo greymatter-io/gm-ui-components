@@ -3,13 +3,20 @@ import { mix, darken } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
 import {
-  OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C, COLOR_INTENT_HIGHLIGHT,
+  OPACITY_15,
+  COLOR_BACKGROUND_B,
+  COLOR_BACKGROUND_C,
+  COLOR_INTENT_HIGHLIGHT,
   FONT_WEIGHT_REGULAR,
   BORDER_RADIUS_BASE,
-  FONT_STACK_BASE,
+  FONT_STACK_BASE
 } from "style/styleVariables";
 
-const COLOR_TAB_BACKGROUND_BASE = mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C);
+const COLOR_TAB_BACKGROUND_BASE = mix(
+  OPACITY_15,
+  COLOR_BACKGROUND_B,
+  COLOR_BACKGROUND_C
+);
 
 const TAB_WIDTH_BASE = "1%";
 
@@ -22,7 +29,6 @@ const NavCardWrapper = styled.div`
   background-color: ${COLOR_TAB_BACKGROUND_BASE};
   border-radius: ${BORDER_RADIUS_BASE};
   min-height: ${spacingScale(8)};
-  margin: ${spacingScale(0.25)};
   position: relative;
   transition: all 0.15s ease;
   display: flex;

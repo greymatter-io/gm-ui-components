@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { FONT_SIZE_XS } from 'style/styleVariables';
-import { spacingScale } from 'style/styleFunctions';
+import { FONT_SIZE_XS } from "style/styleVariables";
+import { spacingScale } from "style/styleFunctions";
 
 export const InputHint = styled.small`
   margin: ${spacingScale(0.5)} 0;
