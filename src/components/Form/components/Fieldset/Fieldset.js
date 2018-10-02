@@ -5,7 +5,6 @@ import { spacingScale } from "style/styleFunctions";
 const Fieldset = styled.fieldset`
   border: 1px solid ${COLOR_KEYLINE};
   padding: ${spacingScale(2)};
-  margin-top: ${spacingScale(1)};
   border-radius: ${RADIUS_1};
 `;
 
