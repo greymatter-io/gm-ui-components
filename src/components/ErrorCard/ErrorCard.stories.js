@@ -15,15 +15,7 @@ stories.add(
   )(() => (
     <ErrorCard
       errorMsg={text("errorMsg", "Uh oh")}
-      icon={() => (
-        <IconNegation
-          backgroundColor="#EFB53F"
-          borderOpacity="0"
-          backgroundStyle="BackgroundSquareSmall"
-          glyphColor="white"
-          size="72px"
-        />
-      )}
+      errorDetail={text("errorDetail", "Maybe you should just give up")}
     />
   ))
 );

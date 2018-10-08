@@ -1,10 +1,10 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import { IconExclamation } from "../Glyphs";
 import ErrorBox from "./components/ErrorBox";
-import ErrorContent from "./components/ErrorContent";
-import Span from "./components/Span";
+import ErrorMessage from "./components/ErrorMessage";
+import ErrorDetail from "./components/ErrorDetail";
+import ErrorGraphic from "./components/ErrorGraphic";
 
 /**Stateless functional React component that renders the error message box
  * Takes an error message and returns error message box
@@ -12,29 +12,18 @@ import Span from "./components/Span";
  * @param {function} icon
  * @returns react component
  */
-const ErrorCard = ({ errorMsg = "Error", icon, ...props }) => {
+const ErrorCard = ({ errorMsg = "Error", errorDetail, icon, ...props }) => {
   return (
     <ErrorBox {...props}>
-      <ErrorContent>
-        <Span>
-          {icon ? (
-            icon()
-          ) : (
-            <IconExclamation
-              backgroundStyle="BackgroundTriangleSmall"
-              size="72px"
-              borderWidth="0.5"
-              backgroundColor="transparent"
-            />
-          )}
-        </Span>
-        <Span>{errorMsg}</Span>
-      </ErrorContent>
+      <ErrorGraphic />
+      <ErrorMessage>{errorMsg}</ErrorMessage>
+      <ErrorDetail>{errorDetail}</ErrorDetail>
     </ErrorBox>
   );
 };
 
 ErrorCard.propTypes = {
+  errorDetail: PropTypes.string,
   errorMsg: PropTypes.string,
   icon: PropTypes.func
 };
