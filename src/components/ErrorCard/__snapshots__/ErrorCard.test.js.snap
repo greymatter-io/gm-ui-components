@@ -2,36 +2,20 @@
 
 exports[`ErrorCard matches snapshot 1`] = `
 <ErrorBox>
-  <ErrorContent>
-    <Span>
-      <Exclamation
-        backgroundColor="transparent"
-        backgroundStyle="BackgroundTriangleSmall"
-        borderWidth="0.5"
-        size="72px"
-      />
-    </Span>
-    <Span>
-      Error
-    </Span>
-  </ErrorContent>
+  <ErrorGraphic />
+  <ErrorMessage>
+    Error
+  </ErrorMessage>
+  <ErrorDetail />
 </ErrorBox>
 `;
 
 exports[`ErrorCard renders an error message 1`] = `
 <ErrorBox>
-  <ErrorContent>
-    <Span>
-      <Exclamation
-        backgroundColor="transparent"
-        backgroundStyle="BackgroundTriangleSmall"
-        borderWidth="0.5"
-        size="72px"
-      />
-    </Span>
-    <Span>
-      Woopsie
-    </Span>
-  </ErrorContent>
+  <ErrorGraphic />
+  <ErrorMessage>
+    Woopsie
+  </ErrorMessage>
+  <ErrorDetail />
 </ErrorBox>
 `;
