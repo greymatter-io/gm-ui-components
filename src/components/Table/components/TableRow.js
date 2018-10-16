@@ -8,7 +8,9 @@ import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
 
-const TableRowElement = styled.tr`
+const TableRowElement = styled.tr.attrs({
+  tabIndex: 0
+})`
   cursor: pointer;
   position: relative;
   box-shadow: 0 -1px 0 ${COLOR_KEYLINE};
@@ -34,6 +36,7 @@ function TableRow({
   columns,
   isSelected,
   onCellClick,
+  onRowClick,
   rowIndex,
   accentColor = COLOR_BRAND_A,
   selectedRowStyle
@@ -43,6 +46,11 @@ function TableRow({
       isSelected={isSelected}
       accentColor={accentColor}
       selectedRowStyle={selectedRowStyle}
+      onKeyDown={e => {
+        if (e.keyCode === 13 || e.keyCode === 32) {
+          onRowClick({ clicked: data, rowIndex });
+        }
+      }}
     >
       {/* Because the `columns` array determines the desired column order, 
         we need to map through it and use the dataIndex property to pick out 
@@ -73,6 +81,7 @@ TableRow.propTypes = {
   isRowSelected: PropTypes.bool,
   isSelected: PropTypes.bool,
   onCellClick: PropTypes.func,
+  onRowClick: PropTypes.func,
   rowIndex: PropTypes.number,
   selectedRowStyle: PropTypes.object
 };

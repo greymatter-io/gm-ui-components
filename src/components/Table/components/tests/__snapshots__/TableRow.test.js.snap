@@ -3,6 +3,7 @@
 exports[`TableRow matches snapshot 1`] = `
 <TableRowElement
   accentColor="#0aab2a"
+  onKeyDown={[Function]}
 >
   <TableCell
     data-column="name"
