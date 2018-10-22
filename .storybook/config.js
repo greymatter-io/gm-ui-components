@@ -8,8 +8,10 @@ import { withKnobs } from "@storybook/addon-knobs/react";
 import backgrounds from "@storybook/addon-backgrounds";
 import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
+import { withThemesProvider } from "storybook-addon-styled-component-theme";
 
 import {
+  COLOR_BRAND_A,
   COLOR_BACKGROUND_A,
   COLOR_BACKGROUND_B,
   COLOR_BACKGROUND_C
@@ -30,6 +32,13 @@ addDecorator(
     { name: "COLOR_BACKGROUND_C", value: COLOR_BACKGROUND_C }
   ])
 );
+
+const themes = [
+  { name: "decipher", brandColor: COLOR_BRAND_A },
+  { name: "data", brandColor: "#1A66DF" }
+];
+addDecorator(withThemesProvider(themes));
+
 // addon-info
 setDefaults({
   header: true, // Toggles display of header with component name and description

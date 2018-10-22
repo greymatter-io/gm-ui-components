@@ -17,7 +17,7 @@ const TableRowElement = styled.tr`
   ${props =>
     props.isSelected &&
     css`
-      background-color: ${transparentize(0.85, props.accentColor)};
+      background-color: ${transparentize(0.85, props.theme.brandColor)};
       &,
       & + &,
       & + tr {
@@ -41,7 +41,6 @@ function TableRow({
   return (
     <TableRowElement
       isSelected={isSelected}
-      accentColor={accentColor}
       selectedRowStyle={selectedRowStyle}
     >
       {/* Because the `columns` array determines the desired column order, 
@@ -67,7 +66,6 @@ function TableRow({
 }
 
 TableRow.propTypes = {
-  accentColor: PropTypes.string,
   columns: PropTypes.arrayOf(columnItemShape),
   data: dataItemShape,
   isRowSelected: PropTypes.bool,
