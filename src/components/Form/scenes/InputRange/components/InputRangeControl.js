@@ -19,8 +19,10 @@ import {
 const BORDER_WIDTH = 2;
 const THUMB_SIZE = "1em";
 const TRACK_HEIGHT = spacingScale(0.25);
+
 const ACTIVE_SHADOW = ({ theme }) =>
   css`inset 0 0 0 1px ${theme.brandColor || COLOR_INTENT_HIGHLIGHT}`;
+
 const FOCUS_SHADOW = ({ theme }) =>
   css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
     1 - OPACITY_50,
@@ -72,16 +74,14 @@ const FIELD_HOVERED_THUMB_STYLE = ({ theme }) => css`
   }
 `;
 
-const FIELD_FOCUSED_THUMB_STYLE = css`
+const FIELD_FOCUSED_THUMB_STYLE = ({ theme }) => css`
   box-shadow: ${FOCUS_SHADOW}, ${PLACEHOLDER_SHADOW};
-  background-color: ${({ theme }) =>
-    theme.brandColor || COLOR_INTENT_HIGHLIGHT};
+  background-color: ${theme.brandColor || COLOR_INTENT_HIGHLIGHT};
 `;
 
-const FIELD_ACTIVE_THUMB_STYLE = css`
+const FIELD_ACTIVE_THUMB_STYLE = ({ theme }) => css`
   box-shadow: ${ACTIVE_SHADOW}, ${PLACEHOLDER_SHADOW};
-  background-color: ${({ theme }) =>
-    theme.brandColor || COLOR_INTENT_HIGHLIGHT};
+  background-color: ${theme.brandColor || COLOR_INTENT_HIGHLIGHT};
 `;
 
 const FIELD_ACTIVE_AND_FOCUSED_THUMB_STYLE = css`
