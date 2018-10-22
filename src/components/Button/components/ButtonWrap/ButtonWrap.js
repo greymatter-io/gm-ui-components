@@ -12,16 +12,11 @@ import { FORM_HIGHLIGHT_SIZE } from "../../../Form/components/InputFieldInteract
 import {
   FONT_STACK_BASE,
   FONT_WEIGHT_BASE,
-  COLOR_INTENT_HIGHLIGHT,
   COLOR_INTENT_INFO,
   OPACITY_50,
   OPACITY_15,
   COLOR_BACKGROUND_A
 } from "style/styleVariables";
-
-const boxShadow = `0 0 0 ${FORM_HIGHLIGHT_SIZE}px
-        ${transparentize(1 - OPACITY_50, COLOR_INTENT_INFO)},
-      inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)}`;
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
@@ -59,7 +54,7 @@ const ButtonWrap = styled.button`
   &:focus,
   &:focus:active {
     outline: none;
-    border: ${COLOR_INTENT_INFO};
+    border: 1px solid ${COLOR_INTENT_INFO};
     box-shadow: ${css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px
         ${transparentize(1 - OPACITY_50, COLOR_INTENT_INFO)},
       inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)}`};
