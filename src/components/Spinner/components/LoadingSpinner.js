@@ -77,7 +77,8 @@ export function LoadingSpinner(props) {
 }
 
 LoadingSpinner.propTypes = {
-  orientation: PropTypes.oneOf(["vertical", "horizontal"])
+  orientation: PropTypes.oneOf(["vertical", "horizontal"]),
+  theme: PropTypes.shape({ brandColor: PropTypes.string })
 };
 
 LoadingSpinner.displayName = "LoadingSpinner";
