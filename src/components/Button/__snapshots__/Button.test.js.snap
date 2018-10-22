@@ -77,7 +77,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -188,7 +188,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -302,7 +302,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -429,7 +429,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -544,7 +544,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -659,7 +659,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -773,7 +773,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -887,7 +887,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -1001,7 +1001,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -1116,7 +1116,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -1231,7 +1231,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
@@ -1346,7 +1346,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: #1E6DF6;
+  border: 1px solid #1E6DF6;
   box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
