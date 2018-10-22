@@ -54,8 +54,8 @@ exports[`ButtonWrap should match snapshot 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
-  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  border: #1E6DF6;
+  box-shadow: 0 0 0 2.5px rgba(30,109,246,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
   z-index: 10;
   position: relative;
 }

@@ -80,4 +80,6 @@ LoadingSpinner.propTypes = {
   orientation: PropTypes.oneOf(["vertical", "horizontal"])
 };
 
+LoadingSpinner.displayName = "LoadingSpinner";
+
 export default withTheme(LoadingSpinner);
