@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Media-Play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Media-Play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.95271149,4.47756246 L19.3207801,11.5759165 C19.5550102,11.7221725 19.6263274,12.0306176 19.4800713,12.2648478 C19.4397822,12.329371 19.3853021,12.383851 19.3207787,12.4241399 L7.95271009,19.5224419 C7.71847942,19.6686972 7.41003462,19.597379 7.26377935,19.3631483 C7.21418551,19.2837229 7.18789149,19.1919671 7.18789149,19.0983297 L7.18789149,4.90167373 C7.18789149,4.62553135 7.41174911,4.40167373 7.68789149,4.40167373 C7.78152941,4.40167373 7.87328568,4.42796807 7.95271149,4.47756246 Z" id="Play" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>
