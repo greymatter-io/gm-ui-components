@@ -35,7 +35,18 @@ module.exports = {
       // },
       {
         use: ["url-loader"],
-        test: /\.(eot|png|jpg|gif|svg|ttf|woff|woff2)$/
+        test: /\.(eot|png|jpg|gif|ttf|woff|woff2)$/
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "@svgr/webpack",
+            options: {
+              configFile: path.resolve(__dirname, "config", "svgr.config.js")
+            }
+          }
+        ]
       },
       {
         test: /\.(css|scss|less)$/,

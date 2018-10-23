@@ -62,7 +62,8 @@ export function LoadingSpinner(props) {
 }
 
 LoadingSpinner.propTypes = {
-  orientation: PropTypes.oneOf(["vertical", "horizontal"])
+  orientation: PropTypes.oneOf(["vertical", "horizontal"]),
+  theme: PropTypes.object
 };
 
 export default LoadingSpinner;
