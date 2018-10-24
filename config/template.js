@@ -1,11 +1,8 @@
 const { getProps } = require("@svgr/core");
 
-/* svgr always wraps the glyph in an svg, but we want to 
-   use our own custom Icon component as the svg element. */
-function stripSVG(code) {
-  return code.slice(code.indexOf(">"), code.indexOf("</svg>"));
-}
-
+/* This file exports a template used by webpack to create React components from our 
+svg files. The template is based on svgr docs and modified for our use case: 
+https://github.com/smooth-code/svgr/blob/master/packages/core/src/templates/reactDomTemplate.js */
 module.exports = (code, config, state) => {
   const props = getProps(config);
 
@@ -26,3 +23,9 @@ module.exports = (code, config, state) => {
 
   return result;
 };
+
+/* svgr always wraps the glyph in an svg, but we want to 
+   use our own custom Icon component as the svg element. */
+function stripSVG(code) {
+  return code.slice(code.indexOf(">"), code.indexOf("</svg>"));
+}
