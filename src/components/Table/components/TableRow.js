@@ -47,13 +47,18 @@ function TableRow({
       selectedRowStyle={selectedRowStyle}
       onKeyDown={event => {
         if (event.keyCode === 13) {
-          onRowClick({ clicked: data, rowIndex, event });
+          const targetCell = event.target.getAttribute("data-column");
+          onRowClick({ clicked: data, rowIndex, event, targetCell });
         }
       }}
       onContextMenu={event => {
-        onRowClick({ clicked: data, rowIndex, event });
+        const targetCell = event.target.getAttribute("data-column");
+        onRowClick({ clicked: data, rowIndex, event, targetCell });
       }}
-      onClick={event => onRowClick({ clicked: data, rowIndex, event })}
+      onClick={event => {
+        const targetCell = event.target.getAttribute("data-column");
+        onRowClick({ clicked: data, rowIndex, event, targetCell });
+      }}
     >
       {/* Because the `columns` array determines the desired column order, 
         we need to map through it and use the dataIndex property to pick out 
