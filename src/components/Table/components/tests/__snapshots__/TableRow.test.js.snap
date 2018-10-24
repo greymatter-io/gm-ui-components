@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableRow matches snapshot 1`] = `
+
 <TableRowElement
   accentColor="#0aab2a"
   onClick={[Function]}
   onContextMenu={[Function]}
   onKeyDown={[Function]}
 >
+
   <TableCell
     data-column="name"
     key="name|2"

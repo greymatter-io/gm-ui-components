@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
-import { COLOR_BRAND_A, COLOR_KEYLINE } from "style/styleVariables";
+import { COLOR_KEYLINE } from "style/styleVariables";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
@@ -19,7 +19,7 @@ const TableRowElement = styled.tr.attrs({
   ${props =>
     props.isSelected &&
     css`
-      background-color: ${transparentize(0.85, props.accentColor)};
+      background-color: ${transparentize(0.85, props.theme.brandColor)};
       &,
       & + &,
       & + tr {
@@ -37,13 +37,11 @@ function TableRow({
   isSelected,
   onRowClick,
   rowIndex,
-  accentColor = COLOR_BRAND_A,
   selectedRowStyle
 }) {
   return (
     <TableRowElement
       isSelected={isSelected}
-      accentColor={accentColor}
       selectedRowStyle={selectedRowStyle}
       onKeyDown={event => {
         if (event.keyCode === 13) {
@@ -79,7 +77,6 @@ function TableRow({
 }
 
 TableRow.propTypes = {
-  accentColor: PropTypes.string,
   columns: PropTypes.arrayOf(columnItemShape),
   data: dataItemShape,
   isRowSelected: PropTypes.bool,

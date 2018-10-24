@@ -51,6 +51,8 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: transparent;
@@ -79,12 +81,9 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -163,6 +162,8 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: transparent;
@@ -190,12 +191,9 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -277,6 +275,8 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: #e6e6e6;
@@ -304,12 +304,9 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -404,6 +401,8 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: transparent;
@@ -431,12 +430,9 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -518,6 +514,8 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: transparent;
@@ -546,12 +544,9 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -633,6 +628,8 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: transparent;
@@ -661,12 +658,9 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -748,6 +742,8 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: transparent;
@@ -775,12 +771,9 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -862,6 +855,8 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #fff;
   color: #000;
   border-color: transparent;
@@ -889,12 +884,9 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -976,6 +968,8 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #D83D22;
   color: #fff;
   border-color: transparent;
@@ -1003,12 +997,9 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -1091,6 +1082,8 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #1E6DF6;
   color: #fff;
   border-color: transparent;
@@ -1118,12 +1111,9 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -1206,6 +1196,8 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #0aab2a;
   color: #fff;
   border-color: transparent;
@@ -1233,12 +1225,9 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 
@@ -1321,6 +1310,8 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 10;
+  position: relative;
   background-color: #F7CD45;
   color: #fff;
   border-color: transparent;
@@ -1348,12 +1339,9 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   outline: none;
   border: 1px solid #0aab2a;
   box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
-  z-index: 10;
-  position: relative;
 }
 
-.c0:focus::-moz-focus-inner,
-.c0:focus:active::-moz-focus-inner {
+.c0::-moz-focus-inner {
   border: 0;
 }
 

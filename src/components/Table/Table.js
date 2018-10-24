@@ -15,7 +15,6 @@ export default function Table({
   onSort = () => {},
   selectedRows = [],
   sortDataIndex,
-  accentColor,
   selectedRowStyle,
   ...props
 }) {
@@ -35,7 +34,6 @@ export default function Table({
       <tbody>
         {data.map((item, rowIndex) => (
           <TableRow
-            accentColor={accentColor}
             data={item}
             key={item.key}
             columns={columns}
@@ -53,7 +51,6 @@ export default function Table({
 }
 
 Table.propTypes = {
-  accentColor: PropTypes.string,
   columns: PropTypes.arrayOf(columnItemShape), // An array of objects used to label and size columns
   data: PropTypes.arrayOf(dataItemShape), // An array of objects to populate the rows
   onRowClick: PropTypes.func, // A function called when a user clicks a row. Passes the row data, row index, and column dataIndex.

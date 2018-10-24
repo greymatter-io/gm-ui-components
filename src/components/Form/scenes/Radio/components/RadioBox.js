@@ -19,7 +19,7 @@ const RadioBox = styled(InputBox).attrs({
 
   &:checked {
     &:enabled {
-      background: ${COLOR_INTENT_HIGHLIGHT};
+      background: ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
     }
 
     &:after {
