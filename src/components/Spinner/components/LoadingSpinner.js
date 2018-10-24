@@ -31,7 +31,7 @@ export const horizontalStyles = css`
   width: ${spacingScale(2)};
 `;
 
-export function LoadingSpinner(props) {
+export function LoadingSpinner({ theme = {}, ...props }) {
   return (
     <SpinnerSVG
       xmlns="http://www.w3.org/2000/svg"
@@ -44,22 +44,13 @@ export function LoadingSpinner(props) {
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop
             offset="0%"
-            stopColor={transparentize(
-              0.85,
-              props.theme.brandColor || SPINNER_COLOR
-            )}
+            stopColor={transparentize(0.85, theme.brandColor || SPINNER_COLOR)}
           />
           <stop
             offset="33%"
-            stopColor={transparentize(
-              0.85,
-              props.theme.brandColor || SPINNER_COLOR
-            )}
+            stopColor={transparentize(0.85, theme.brandColor || SPINNER_COLOR)}
           />
-          <stop
-            offset="100%"
-            stopColor={props.theme.brandColor || SPINNER_COLOR}
-          />
+          <stop offset="100%" stopColor={theme.brandColor || SPINNER_COLOR} />
         </linearGradient>
       </defs>
       <circle
