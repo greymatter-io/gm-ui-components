@@ -34,7 +34,7 @@
     "prepublishOnly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "npm run storybook",
-    "storybook": "start-storybook -p 1234 -s public",
+    "storybook": "start-storybook -p 9009 -s public",
     "test": "node scripts/test.js --env=jsdom",
     "update-deps": "npm-check . --skip-unused -u"
   },
@@ -158,7 +158,7 @@
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "\\.svg": "<rootDir>/__mocks__/svgMock.js"
+      "\\.svg": "<rootDir>/config/svgMock.js"
     },
     "moduleDirectories": [
       "node_modules",
