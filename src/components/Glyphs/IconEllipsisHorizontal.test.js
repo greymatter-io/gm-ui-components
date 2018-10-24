@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
-
-import IconEllipsisHorizontal from "./IconEllipsisHorizontal";
-
+import IconEllipsisHorizontal from "./IconEllipsisHorizontal.svg";
 describe("IconEllipsisHorizontal", () => {
   it("matches snapshot", () => {
-    const aIconEllipsisHorizontal = shallow(<IconEllipsisHorizontal />);
+    
+    const aIconEllipsisHorizontal = shallow(<IconEllipsisHorizontal />).find("IconEllipsisHorizontal.svg").dive();
+    console.log(aIconEllipsisHorizontal.debug())
     expect(aIconEllipsisHorizontal).toMatchSnapshot();
   });
 });

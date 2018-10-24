@@ -156,7 +156,8 @@
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
     ],
     "moduleNameMapper": {
-      "^react-native$": "react-native-web"
+      "^react-native$": "react-native-web",
+      "\\.svg": "@svgr/webpack"
     },
     "moduleDirectories": [
       "node_modules",

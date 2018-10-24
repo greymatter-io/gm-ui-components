@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
-
-import IconCheck from "./IconCheck";
-
+import IconCheck from "./IconCheck.svg";
 describe("IconCheck", () => {
   it("matches snapshot", () => {
-    const aIconCheck = shallow(<IconCheck />);
+    
+    const aIconCheck = shallow(<IconCheck />).find("IconCheck.svg").dive();
+    console.log(aIconCheck.debug())
     expect(aIconCheck).toMatchSnapshot();
   });
 });

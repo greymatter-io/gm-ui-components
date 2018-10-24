@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
-
-import IconFileText from "./IconFileText";
-
+import IconFileText from "./IconFileText.svg";
 describe("IconFileText", () => {
   it("matches snapshot", () => {
-    const aIconFileText = shallow(<IconFileText />);
+    
+    const aIconFileText = shallow(<IconFileText />).find("IconFileText.svg").dive();
+    console.log(aIconFileText.debug())
     expect(aIconFileText).toMatchSnapshot();
   });
 });

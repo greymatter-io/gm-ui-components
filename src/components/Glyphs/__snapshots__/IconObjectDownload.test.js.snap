@@ -20,3 +20,5 @@ exports[`IconObjectDownload  matches snapshot 1`] = `
   />
 </Icon>
 `;
+
+exports[`IconObjectDownload matches snapshot 1`] = `<IconObjectDownload.svg />`;

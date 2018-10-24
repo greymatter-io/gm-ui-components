@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
-
-import IconObjectMove from "./IconObjectMove";
-
+import IconObjectMove from "./IconObjectMove.svg";
 describe("IconObjectMove", () => {
   it("matches snapshot", () => {
-    const aIconObjectMove = shallow(<IconObjectMove />);
+    
+    const aIconObjectMove = shallow(<IconObjectMove />).find("IconObjectMove.svg").dive();
+    console.log(aIconObjectMove.debug())
     expect(aIconObjectMove).toMatchSnapshot();
   });
 });

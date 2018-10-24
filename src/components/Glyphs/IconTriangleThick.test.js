@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
-
-import IconTriangleThick from "./IconTriangleThick";
-
+import IconTriangleThick from "./IconTriangleThick.svg";
 describe("IconTriangleThick", () => {
   it("matches snapshot", () => {
-    const aIconTriangleThick = shallow(<IconTriangleThick />);
+    
+    const aIconTriangleThick = shallow(<IconTriangleThick />).find("IconTriangleThick.svg").dive();
+    console.log(aIconTriangleThick.debug())
     expect(aIconTriangleThick).toMatchSnapshot();
   });
 });

@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
-
-import IconClassTopSecret from "./IconClassTopSecret";
-
+import IconClassTopSecret from "./IconClassTopSecret.svg";
 describe("IconClassTopSecret", () => {
   it("matches snapshot", () => {
-    const aIconClassTopSecret = shallow(<IconClassTopSecret />);
+    
+    const aIconClassTopSecret = shallow(<IconClassTopSecret />).find("IconClassTopSecret.svg").dive();
+    console.log(aIconClassTopSecret.debug())
     expect(aIconClassTopSecret).toMatchSnapshot();
   });
 });
