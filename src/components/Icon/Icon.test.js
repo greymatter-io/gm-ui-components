@@ -41,8 +41,7 @@ describe("Icon", () => {
     expect(tree.find("StyledSVG").props()).toMatchObject({
       glyphSizeRatio: 1,
       id: "IconBell",
-      size: "24px",
-      backgroundSizeRatio: 1
+      size: "24px"
     });
   });
 

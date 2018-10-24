@@ -3,7 +3,6 @@
 exports[`Icon matches snapshot 1`] = `
 <StyledSVG
   aria-labelledby="IconBell"
-  backgroundSizeRatio={1}
   focusable="false"
   glyph=""
   glyphSizeRatio={1}
