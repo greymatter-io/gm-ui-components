@@ -4,7 +4,7 @@ exports[`Components|NavCard matches snapshot 1`] = `
 <NavCardWrapper>
   <NavCardTitle>
     <NavCardIcon>
-      <Exclamation />
+      <IconMock />
     </NavCardIcon>
     <h1>
       NavCard

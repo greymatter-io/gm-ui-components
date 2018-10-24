@@ -1,22 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconCircleThick matches snapshot 1`] = `
-<Icon
-  backgroundColor="currentColor"
-  backgroundOpacity={1}
-  backgroundSizeRatio={1}
-  borderColor="currentColor"
-  borderOpacity={1}
-  borderWidth={1}
-  glyph=""
-  glyphColor="currentColor"
-  glyphName="CircleThick"
-  glyphSizeRatio={1}
->
-  <path
-    d="M12.2222223,20.4444445 C7.68121429,20.4444445 4,16.7632302 4,12.2222223 C4,7.68121429 7.68121429,4 12.2222223,4 C16.7632302,4 20.4444445,7.68121429 20.4444445,12.2222223 C20.4444445,16.7632302 16.7632302,20.4444445 12.2222223,20.4444445 Z M12.2222223,19.1111112 C16.0268505,19.1111112 19.1111112,16.0268505 19.1111112,12.2222223 C19.1111112,8.41759396 16.0268505,5.33333334 12.2222223,5.33333334 C8.41759396,5.33333334 5.33333334,8.41759396 5.33333334,12.2222223 C5.33333334,16.0268505 8.41759396,19.1111112 12.2222223,19.1111112 Z"
-    fillRule="nonzero"
-    id="A"
-  />
-</Icon>
-`;
+exports[`IconCircleThick matches snapshot 1`] = `<IconMock />`;

@@ -1,22 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconChevronRight matches snapshot 1`] = `
-<Icon
-  backgroundColor="currentColor"
-  backgroundOpacity={1}
-  backgroundSizeRatio={1}
-  borderColor="currentColor"
-  borderOpacity={1}
-  borderWidth={1}
-  glyph=""
-  glyphColor="currentColor"
-  glyphName="ChevronRight"
-  glyphSizeRatio={1}
->
-  <path
-    d="M9.4696699,7.53033007 C9.17677668,7.23743685 9.17677668,6.76256311 9.4696699,6.46966989 C9.76256312,6.17677667 10.2374369,6.17677667 10.5303301,6.46966989 L16.0606602,12 L10.5303301,17.5303301 C10.2374369,17.8232233 9.76256312,17.8232233 9.4696699,17.5303301 C9.17677668,17.2374369 9.17677668,16.7625632 9.4696699,16.4696699 L13.9393398,12 L9.4696699,7.53033007 Z"
-    fillRule="nonzero"
-    id="ChevronRight"
-  />
-</Icon>
-`;
+exports[`IconChevronRight matches snapshot 1`] = `<IconMock />`;
