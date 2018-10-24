@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
 import {
@@ -15,16 +15,20 @@ import {
 
 const BORDER_WIDTH = 1;
 
-const ACTIVE_SHADOW = `inset 0 0 0 1px ${COLOR_INTENT_HIGHLIGHT}`;
-const FOCUS_SHADOW = `0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
-  1 - OPACITY_50,
-  COLOR_INTENT_HIGHLIGHT
-)}`;
+const ACTIVE_SHADOW = ({ theme }) =>
+  css`inset 0 0 0 1px ${theme.brandColor || COLOR_INTENT_HIGHLIGHT}`;
+
+const FOCUS_SHADOW = ({ theme }) =>
+  css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
+    1 - OPACITY_50,
+    theme.brandColor || COLOR_INTENT_HIGHLIGHT
+  )}`;
 
 const InputBox = styled.input`
   ${formInteractionStyles};
-  border: ${BORDER_WIDTH}px solid ${COLOR_INTENT_HIGHLIGHT};
-  color: ${COLOR_INTENT_HIGHLIGHT};
+  border: ${({ theme }) =>
+    css`${BORDER_WIDTH}px solid ${theme.brandColor || COLOR_INTENT_HIGHLIGHT}`};
+  color: ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
   font-size: ${spacingScale(2)};
   margin: ${spacingScale(0.25)};
   appearance: none;
@@ -60,7 +64,7 @@ const InputBox = styled.input`
   }
 
   &:checked {
-    background: ${COLOR_INTENT_HIGHLIGHT};
+    background: ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
 
     &:after {
       opacity: 1;

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled, { css, withTheme } from "styled-components";
 import { transparentize } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
@@ -42,9 +42,24 @@ export function LoadingSpinner(props) {
     >
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor={transparentize(0.85, SPINNER_COLOR)} />
-          <stop offset="33%" stopColor={transparentize(0.85, SPINNER_COLOR)} />
-          <stop offset="100%" stopColor={SPINNER_COLOR} />
+          <stop
+            offset="0%"
+            stopColor={transparentize(
+              0.85,
+              props.theme.brandColor || SPINNER_COLOR
+            )}
+          />
+          <stop
+            offset="33%"
+            stopColor={transparentize(
+              0.85,
+              props.theme.brandColor || SPINNER_COLOR
+            )}
+          />
+          <stop
+            offset="100%"
+            stopColor={props.theme.brandColor || SPINNER_COLOR}
+          />
         </linearGradient>
       </defs>
       <circle
@@ -63,7 +78,9 @@ export function LoadingSpinner(props) {
 
 LoadingSpinner.propTypes = {
   orientation: PropTypes.oneOf(["vertical", "horizontal"]),
-  theme: PropTypes.object
+  theme: PropTypes.shape({ brandColor: PropTypes.string })
 };
 
-export default LoadingSpinner;
+LoadingSpinner.displayName = "LoadingSpinner";
+
+export default withTheme(LoadingSpinner);
