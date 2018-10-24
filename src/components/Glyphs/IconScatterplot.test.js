@@ -5,7 +5,7 @@ import IconScatterplot from "./IconScatterplot.svg";
 
 describe("IconScatterplot", () => {
   it("matches snapshot", () => {
-    const aIconScatterplot = shallow(<IconScatterplot />).find("IconScatterplot.svg");
+    const aIconScatterplot = shallow(<IconScatterplot />);
     expect(aIconScatterplot).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconClassConfidential from "./IconClassConfidential.svg";
 
 describe("IconClassConfidential", () => {
   it("matches snapshot", () => {
-    const aIconClassConfidential = shallow(<IconClassConfidential />).find("IconClassConfidential.svg");
+    const aIconClassConfidential = shallow(<IconClassConfidential />);
     expect(aIconClassConfidential).toMatchSnapshot();
   });
 });

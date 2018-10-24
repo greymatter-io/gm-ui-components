@@ -5,7 +5,7 @@ import IconLinkedIn from "./IconLinkedIn.svg";
 
 describe("IconLinkedIn", () => {
   it("matches snapshot", () => {
-    const aIconLinkedIn = shallow(<IconLinkedIn />).find("IconLinkedIn.svg");
+    const aIconLinkedIn = shallow(<IconLinkedIn />);
     expect(aIconLinkedIn).toMatchSnapshot();
   });
 });

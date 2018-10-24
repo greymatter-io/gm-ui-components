@@ -5,7 +5,7 @@ import IconObjectExpand from "./IconObjectExpand.svg";
 
 describe("IconObjectExpand", () => {
   it("matches snapshot", () => {
-    const aIconObjectExpand = shallow(<IconObjectExpand />).find("IconObjectExpand.svg");
+    const aIconObjectExpand = shallow(<IconObjectExpand />);
     expect(aIconObjectExpand).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconCard from "./IconCard.svg";
 
 describe("IconCard", () => {
   it("matches snapshot", () => {
-    const aIconCard = shallow(<IconCard />).find("IconCard.svg");
+    const aIconCard = shallow(<IconCard />);
     expect(aIconCard).toMatchSnapshot();
   });
 });

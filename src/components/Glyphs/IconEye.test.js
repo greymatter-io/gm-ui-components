@@ -5,7 +5,7 @@ import IconEye from "./IconEye.svg";
 
 describe("IconEye", () => {
   it("matches snapshot", () => {
-    const aIconEye = shallow(<IconEye />).find("IconEye.svg");
+    const aIconEye = shallow(<IconEye />);
     expect(aIconEye).toMatchSnapshot();
   });
 });

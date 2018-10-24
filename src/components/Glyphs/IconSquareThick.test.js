@@ -5,7 +5,7 @@ import IconSquareThick from "./IconSquareThick.svg";
 
 describe("IconSquareThick", () => {
   it("matches snapshot", () => {
-    const aIconSquareThick = shallow(<IconSquareThick />).find("IconSquareThick.svg");
+    const aIconSquareThick = shallow(<IconSquareThick />);
     expect(aIconSquareThick).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconCPU from "./IconCPU.svg";
 
 describe("IconCPU", () => {
   it("matches snapshot", () => {
-    const aIconCPU = shallow(<IconCPU />).find("IconCPU.svg");
+    const aIconCPU = shallow(<IconCPU />);
     expect(aIconCPU).toMatchSnapshot();
   });
 });

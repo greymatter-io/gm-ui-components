@@ -5,7 +5,7 @@ import IconTimer from "./IconTimer.svg";
 
 describe("IconTimer", () => {
   it("matches snapshot", () => {
-    const aIconTimer = shallow(<IconTimer />).find("IconTimer.svg");
+    const aIconTimer = shallow(<IconTimer />);
     expect(aIconTimer).toMatchSnapshot();
   });
 });

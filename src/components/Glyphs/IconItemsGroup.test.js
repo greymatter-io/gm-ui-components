@@ -5,7 +5,7 @@ import IconItemsGroup from "./IconItemsGroup.svg";
 
 describe("IconItemsGroup", () => {
   it("matches snapshot", () => {
-    const aIconItemsGroup = shallow(<IconItemsGroup />).find("IconItemsGroup.svg");
+    const aIconItemsGroup = shallow(<IconItemsGroup />);
     expect(aIconItemsGroup).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconFileText from "./IconFileText.svg";
 
 describe("IconFileText", () => {
   it("matches snapshot", () => {
-    const aIconFileText = shallow(<IconFileText />).find("IconFileText.svg");
+    const aIconFileText = shallow(<IconFileText />);
     expect(aIconFileText).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconIdle from "./IconIdle.svg";
 
 describe("IconIdle", () => {
   it("matches snapshot", () => {
-    const aIconIdle = shallow(<IconIdle />).find("IconIdle.svg");
+    const aIconIdle = shallow(<IconIdle />);
     expect(aIconIdle).toMatchSnapshot();
   });
 });

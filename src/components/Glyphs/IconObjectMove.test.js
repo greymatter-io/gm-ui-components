@@ -5,7 +5,7 @@ import IconObjectMove from "./IconObjectMove.svg";
 
 describe("IconObjectMove", () => {
   it("matches snapshot", () => {
-    const aIconObjectMove = shallow(<IconObjectMove />).find("IconObjectMove.svg");
+    const aIconObjectMove = shallow(<IconObjectMove />);
     expect(aIconObjectMove).toMatchSnapshot();
   });
 });

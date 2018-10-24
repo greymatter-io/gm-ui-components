@@ -5,7 +5,7 @@ import IconCheck from "./IconCheck.svg";
 
 describe("IconCheck", () => {
   it("matches snapshot", () => {
-    const aIconCheck = shallow(<IconCheck />).find("IconCheck.svg");
+    const aIconCheck = shallow(<IconCheck />);
     expect(aIconCheck).toMatchSnapshot();
   });
 });

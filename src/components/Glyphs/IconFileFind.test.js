@@ -5,7 +5,7 @@ import IconFileFind from "./IconFileFind.svg";
 
 describe("IconFileFind", () => {
   it("matches snapshot", () => {
-    const aIconFileFind = shallow(<IconFileFind />).find("IconFileFind.svg");
+    const aIconFileFind = shallow(<IconFileFind />);
     expect(aIconFileFind).toMatchSnapshot();
   });
 });

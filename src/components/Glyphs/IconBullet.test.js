@@ -5,7 +5,7 @@ import IconBullet from "./IconBullet.svg";
 
 describe("IconBullet", () => {
   it("matches snapshot", () => {
-    const aIconBullet = shallow(<IconBullet />).find("IconBullet.svg");
+    const aIconBullet = shallow(<IconBullet />);
     expect(aIconBullet).toMatchSnapshot();
   });
 });

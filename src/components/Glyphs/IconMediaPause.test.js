@@ -5,7 +5,7 @@ import IconMediaPause from "./IconMediaPause.svg";
 
 describe("IconMediaPause", () => {
   it("matches snapshot", () => {
-    const aIconMediaPause = shallow(<IconMediaPause />).find("IconMediaPause.svg");
+    const aIconMediaPause = shallow(<IconMediaPause />);
     expect(aIconMediaPause).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconTape from "./IconTape.svg";
 
 describe("IconTape", () => {
   it("matches snapshot", () => {
-    const aIconTape = shallow(<IconTape />).find("IconTape.svg");
+    const aIconTape = shallow(<IconTape />);
     expect(aIconTape).toMatchSnapshot();
   });
 });

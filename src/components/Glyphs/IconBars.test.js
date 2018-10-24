@@ -5,7 +5,7 @@ import IconBars from "./IconBars.svg";
 
 describe("IconBars", () => {
   it("matches snapshot", () => {
-    const aIconBars = shallow(<IconBars />).find("IconBars.svg");
+    const aIconBars = shallow(<IconBars />);
     expect(aIconBars).toMatchSnapshot();
   });
 });

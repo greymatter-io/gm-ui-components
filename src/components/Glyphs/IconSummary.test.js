@@ -5,7 +5,7 @@ import IconSummary from "./IconSummary.svg";
 
 describe("IconSummary", () => {
   it("matches snapshot", () => {
-    const aIconSummary = shallow(<IconSummary />).find("IconSummary.svg");
+    const aIconSummary = shallow(<IconSummary />);
     expect(aIconSummary).toMatchSnapshot();
   });
 });

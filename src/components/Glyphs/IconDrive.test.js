@@ -5,7 +5,7 @@ import IconDrive from "./IconDrive.svg";
 
 describe("IconDrive", () => {
   it("matches snapshot", () => {
-    const aIconDrive = shallow(<IconDrive />).find("IconDrive.svg");
+    const aIconDrive = shallow(<IconDrive />);
     expect(aIconDrive).toMatchSnapshot();
   });
 });

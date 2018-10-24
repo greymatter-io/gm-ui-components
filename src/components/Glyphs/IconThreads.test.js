@@ -5,7 +5,7 @@ import IconThreads from "./IconThreads.svg";
 
 describe("IconThreads", () => {
   it("matches snapshot", () => {
-    const aIconThreads = shallow(<IconThreads />).find("IconThreads.svg");
+    const aIconThreads = shallow(<IconThreads />);
     expect(aIconThreads).toMatchSnapshot();
   });
 });

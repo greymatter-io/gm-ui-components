@@ -5,7 +5,7 @@ import IconClassUnclassified from "./IconClassUnclassified.svg";
 
 describe("IconClassUnclassified", () => {
   it("matches snapshot", () => {
-    const aIconClassUnclassified = shallow(<IconClassUnclassified />).find("IconClassUnclassified.svg");
+    const aIconClassUnclassified = shallow(<IconClassUnclassified />);
     expect(aIconClassUnclassified).toMatchSnapshot();
   });
 });

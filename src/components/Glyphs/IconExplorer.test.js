@@ -5,7 +5,7 @@ import IconExplorer from "./IconExplorer.svg";
 
 describe("IconExplorer", () => {
   it("matches snapshot", () => {
-    const aIconExplorer = shallow(<IconExplorer />).find("IconExplorer.svg");
+    const aIconExplorer = shallow(<IconExplorer />);
     expect(aIconExplorer).toMatchSnapshot();
   });
 });

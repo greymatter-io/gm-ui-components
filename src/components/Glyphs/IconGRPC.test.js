@@ -5,7 +5,7 @@ import IconGRPC from "./IconGRPC.svg";
 
 describe("IconGRPC", () => {
   it("matches snapshot", () => {
-    const aIconGRPC = shallow(<IconGRPC />).find("IconGRPC.svg");
+    const aIconGRPC = shallow(<IconGRPC />);
     expect(aIconGRPC).toMatchSnapshot();
   });
 });

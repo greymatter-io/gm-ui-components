@@ -5,7 +5,7 @@ import IconFileSpreadsheet from "./IconFileSpreadsheet.svg";
 
 describe("IconFileSpreadsheet", () => {
   it("matches snapshot", () => {
-    const aIconFileSpreadsheet = shallow(<IconFileSpreadsheet />).find("IconFileSpreadsheet.svg");
+    const aIconFileSpreadsheet = shallow(<IconFileSpreadsheet />);
     expect(aIconFileSpreadsheet).toMatchSnapshot();
   });
 });

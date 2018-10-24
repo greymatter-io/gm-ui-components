@@ -5,7 +5,7 @@ import IconScale from "./IconScale.svg";
 
 describe("IconScale", () => {
   it("matches snapshot", () => {
-    const aIconScale = shallow(<IconScale />).find("IconScale.svg");
+    const aIconScale = shallow(<IconScale />);
     expect(aIconScale).toMatchSnapshot();
   });
 });

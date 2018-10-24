@@ -5,7 +5,7 @@ import IconPencil from "./IconPencil.svg";
 
 describe("IconPencil", () => {
   it("matches snapshot", () => {
-    const aIconPencil = shallow(<IconPencil />).find("IconPencil.svg");
+    const aIconPencil = shallow(<IconPencil />);
     expect(aIconPencil).toMatchSnapshot();
   });
 });

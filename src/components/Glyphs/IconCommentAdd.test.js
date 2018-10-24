@@ -5,7 +5,7 @@ import IconCommentAdd from "./IconCommentAdd.svg";
 
 describe("IconCommentAdd", () => {
   it("matches snapshot", () => {
-    const aIconCommentAdd = shallow(<IconCommentAdd />).find("IconCommentAdd.svg");
+    const aIconCommentAdd = shallow(<IconCommentAdd />);
     expect(aIconCommentAdd).toMatchSnapshot();
   });
 });

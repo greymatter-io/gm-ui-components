@@ -5,7 +5,7 @@ import IconClassTopSecret from "./IconClassTopSecret.svg";
 
 describe("IconClassTopSecret", () => {
   it("matches snapshot", () => {
-    const aIconClassTopSecret = shallow(<IconClassTopSecret />).find("IconClassTopSecret.svg");
+    const aIconClassTopSecret = shallow(<IconClassTopSecret />);
     expect(aIconClassTopSecret).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconCalendar from "./IconCalendar.svg";
 
 describe("IconCalendar", () => {
   it("matches snapshot", () => {
-    const aIconCalendar = shallow(<IconCalendar />).find("IconCalendar.svg");
+    const aIconCalendar = shallow(<IconCalendar />);
     expect(aIconCalendar).toMatchSnapshot();
   });
 });

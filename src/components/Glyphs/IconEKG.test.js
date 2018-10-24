@@ -5,7 +5,7 @@ import IconEKG from "./IconEKG.svg";
 
 describe("IconEKG", () => {
   it("matches snapshot", () => {
-    const aIconEKG = shallow(<IconEKG />).find("IconEKG.svg");
+    const aIconEKG = shallow(<IconEKG />);
     expect(aIconEKG).toMatchSnapshot();
   });
 });

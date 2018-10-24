@@ -5,7 +5,7 @@ import IconIngressEgress from "./IconIngressEgress.svg";
 
 describe("IconIngressEgress", () => {
   it("matches snapshot", () => {
-    const aIconIngressEgress = shallow(<IconIngressEgress />).find("IconIngressEgress.svg");
+    const aIconIngressEgress = shallow(<IconIngressEgress />);
     expect(aIconIngressEgress).toMatchSnapshot();
   });
 });

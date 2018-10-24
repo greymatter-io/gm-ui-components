@@ -5,7 +5,7 @@ import IconStateWarning from "./IconStateWarning.svg";
 
 describe("IconStateWarning", () => {
   it("matches snapshot", () => {
-    const aIconStateWarning = shallow(<IconStateWarning />).find("IconStateWarning.svg");
+    const aIconStateWarning = shallow(<IconStateWarning />);
     expect(aIconStateWarning).toMatchSnapshot();
   });
 });

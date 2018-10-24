@@ -5,7 +5,7 @@ import IconChevronUp from "./IconChevronUp.svg";
 
 describe("IconChevronUp", () => {
   it("matches snapshot", () => {
-    const aIconChevronUp = shallow(<IconChevronUp />).find("IconChevronUp.svg");
+    const aIconChevronUp = shallow(<IconChevronUp />);
     expect(aIconChevronUp).toMatchSnapshot();
   });
 });

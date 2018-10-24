@@ -5,7 +5,7 @@ import IconLinkOut from "./IconLinkOut.svg";
 
 describe("IconLinkOut", () => {
   it("matches snapshot", () => {
-    const aIconLinkOut = shallow(<IconLinkOut />).find("IconLinkOut.svg");
+    const aIconLinkOut = shallow(<IconLinkOut />);
     expect(aIconLinkOut).toMatchSnapshot();
   });
 });

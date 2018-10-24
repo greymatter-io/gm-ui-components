@@ -5,7 +5,7 @@ import IconPoll from "./IconPoll.svg";
 
 describe("IconPoll", () => {
   it("matches snapshot", () => {
-    const aIconPoll = shallow(<IconPoll />).find("IconPoll.svg");
+    const aIconPoll = shallow(<IconPoll />);
     expect(aIconPoll).toMatchSnapshot();
   });
 });

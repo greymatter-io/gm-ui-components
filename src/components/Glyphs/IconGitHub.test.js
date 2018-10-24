@@ -5,7 +5,7 @@ import IconGitHub from "./IconGitHub.svg";
 
 describe("IconGitHub", () => {
   it("matches snapshot", () => {
-    const aIconGitHub = shallow(<IconGitHub />).find("IconGitHub.svg");
+    const aIconGitHub = shallow(<IconGitHub />);
     expect(aIconGitHub).toMatchSnapshot();
   });
 });

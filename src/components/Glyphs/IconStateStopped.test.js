@@ -5,7 +5,7 @@ import IconStateStopped from "./IconStateStopped.svg";
 
 describe("IconStateStopped", () => {
   it("matches snapshot", () => {
-    const aIconStateStopped = shallow(<IconStateStopped />).find("IconStateStopped.svg");
+    const aIconStateStopped = shallow(<IconStateStopped />);
     expect(aIconStateStopped).toMatchSnapshot();
   });
 });

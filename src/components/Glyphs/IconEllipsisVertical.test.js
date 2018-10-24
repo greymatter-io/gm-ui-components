@@ -5,7 +5,7 @@ import IconEllipsisVertical from "./IconEllipsisVertical.svg";
 
 describe("IconEllipsisVertical", () => {
   it("matches snapshot", () => {
-    const aIconEllipsisVertical = shallow(<IconEllipsisVertical />).find("IconEllipsisVertical.svg");
+    const aIconEllipsisVertical = shallow(<IconEllipsisVertical />);
     expect(aIconEllipsisVertical).toMatchSnapshot();
   });
 });

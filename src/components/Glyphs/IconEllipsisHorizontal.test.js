@@ -5,7 +5,7 @@ import IconEllipsisHorizontal from "./IconEllipsisHorizontal.svg";
 
 describe("IconEllipsisHorizontal", () => {
   it("matches snapshot", () => {
-    const aIconEllipsisHorizontal = shallow(<IconEllipsisHorizontal />).find("IconEllipsisHorizontal.svg");
+    const aIconEllipsisHorizontal = shallow(<IconEllipsisHorizontal />);
     expect(aIconEllipsisHorizontal).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconEditGraph from "./IconEditGraph.svg";
 
 describe("IconEditGraph", () => {
   it("matches snapshot", () => {
-    const aIconEditGraph = shallow(<IconEditGraph />).find("IconEditGraph.svg");
+    const aIconEditGraph = shallow(<IconEditGraph />);
     expect(aIconEditGraph).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconNoLock from "./IconNoLock.svg";
 
 describe("IconNoLock", () => {
   it("matches snapshot", () => {
-    const aIconNoLock = shallow(<IconNoLock />).find("IconNoLock.svg");
+    const aIconNoLock = shallow(<IconNoLock />);
     expect(aIconNoLock).toMatchSnapshot();
   });
 });

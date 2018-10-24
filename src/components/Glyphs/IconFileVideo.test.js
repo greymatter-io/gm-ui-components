@@ -5,7 +5,7 @@ import IconFileVideo from "./IconFileVideo.svg";
 
 describe("IconFileVideo", () => {
   it("matches snapshot", () => {
-    const aIconFileVideo = shallow(<IconFileVideo />).find("IconFileVideo.svg");
+    const aIconFileVideo = shallow(<IconFileVideo />);
     expect(aIconFileVideo).toMatchSnapshot();
   });
 });

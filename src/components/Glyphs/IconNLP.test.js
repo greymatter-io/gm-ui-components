@@ -5,7 +5,7 @@ import IconNLP from "./IconNLP.svg";
 
 describe("IconNLP", () => {
   it("matches snapshot", () => {
-    const aIconNLP = shallow(<IconNLP />).find("IconNLP.svg");
+    const aIconNLP = shallow(<IconNLP />);
     expect(aIconNLP).toMatchSnapshot();
   });
 });

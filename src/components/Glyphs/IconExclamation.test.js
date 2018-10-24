@@ -5,7 +5,7 @@ import IconExclamation from "./IconExclamation.svg";
 
 describe("IconExclamation", () => {
   it("matches snapshot", () => {
-    const aIconExclamation = shallow(<IconExclamation />).find("IconExclamation.svg");
+    const aIconExclamation = shallow(<IconExclamation />);
     expect(aIconExclamation).toMatchSnapshot();
   });
 });

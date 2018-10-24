@@ -5,7 +5,7 @@ import IconLatency from "./IconLatency.svg";
 
 describe("IconLatency", () => {
   it("matches snapshot", () => {
-    const aIconLatency = shallow(<IconLatency />).find("IconLatency.svg");
+    const aIconLatency = shallow(<IconLatency />);
     expect(aIconLatency).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconEKGMagnifier from "./IconEKGMagnifier.svg";
 
 describe("IconEKGMagnifier", () => {
   it("matches snapshot", () => {
-    const aIconEKGMagnifier = shallow(<IconEKGMagnifier />).find("IconEKGMagnifier.svg");
+    const aIconEKGMagnifier = shallow(<IconEKGMagnifier />);
     expect(aIconEKGMagnifier).toMatchSnapshot();
   });
 });

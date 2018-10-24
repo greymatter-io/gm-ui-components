@@ -5,7 +5,7 @@ import IconTwitter from "./IconTwitter.svg";
 
 describe("IconTwitter", () => {
   it("matches snapshot", () => {
-    const aIconTwitter = shallow(<IconTwitter />).find("IconTwitter.svg");
+    const aIconTwitter = shallow(<IconTwitter />);
     expect(aIconTwitter).toMatchSnapshot();
   });
 });

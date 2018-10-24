@@ -5,7 +5,7 @@ import IconErrorList from "./IconErrorList.svg";
 
 describe("IconErrorList", () => {
   it("matches snapshot", () => {
-    const aIconErrorList = shallow(<IconErrorList />).find("IconErrorList.svg");
+    const aIconErrorList = shallow(<IconErrorList />);
     expect(aIconErrorList).toMatchSnapshot();
   });
 });

@@ -5,7 +5,7 @@ import IconCollapse from "./IconCollapse.svg";
 
 describe("IconCollapse", () => {
   it("matches snapshot", () => {
-    const aIconCollapse = shallow(<IconCollapse />).find("IconCollapse.svg");
+    const aIconCollapse = shallow(<IconCollapse />);
     expect(aIconCollapse).toMatchSnapshot();
   });
 });

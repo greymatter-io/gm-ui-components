@@ -5,7 +5,7 @@ import IconMagnifier from "./IconMagnifier.svg";
 
 describe("IconMagnifier", () => {
   it("matches snapshot", () => {
-    const aIconMagnifier = shallow(<IconMagnifier />).find("IconMagnifier.svg");
+    const aIconMagnifier = shallow(<IconMagnifier />);
     expect(aIconMagnifier).toMatchSnapshot();
   });
 });

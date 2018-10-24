@@ -5,7 +5,7 @@ import IconChecklist from "./IconChecklist.svg";
 
 describe("IconChecklist", () => {
   it("matches snapshot", () => {
-    const aIconChecklist = shallow(<IconChecklist />).find("IconChecklist.svg");
+    const aIconChecklist = shallow(<IconChecklist />);
     expect(aIconChecklist).toMatchSnapshot();
   });
 });

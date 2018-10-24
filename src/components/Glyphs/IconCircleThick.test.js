@@ -5,7 +5,7 @@ import IconCircleThick from "./IconCircleThick.svg";
 
 describe("IconCircleThick", () => {
   it("matches snapshot", () => {
-    const aIconCircleThick = shallow(<IconCircleThick />).find("IconCircleThick.svg");
+    const aIconCircleThick = shallow(<IconCircleThick />);
     expect(aIconCircleThick).toMatchSnapshot();
   });
 });

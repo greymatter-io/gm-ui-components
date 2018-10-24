@@ -5,7 +5,7 @@ import IconObjectDuplicate from "./IconObjectDuplicate.svg";
 
 describe("IconObjectDuplicate", () => {
   it("matches snapshot", () => {
-    const aIconObjectDuplicate = shallow(<IconObjectDuplicate />).find("IconObjectDuplicate.svg");
+    const aIconObjectDuplicate = shallow(<IconObjectDuplicate />);
     expect(aIconObjectDuplicate).toMatchSnapshot();
   });
 });

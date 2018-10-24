@@ -5,7 +5,7 @@ import IconFileAudio from "./IconFileAudio.svg";
 
 describe("IconFileAudio", () => {
   it("matches snapshot", () => {
-    const aIconFileAudio = shallow(<IconFileAudio />).find("IconFileAudio.svg");
+    const aIconFileAudio = shallow(<IconFileAudio />);
     expect(aIconFileAudio).toMatchSnapshot();
   });
 });

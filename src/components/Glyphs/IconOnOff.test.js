@@ -5,7 +5,7 @@ import IconOnOff from "./IconOnOff.svg";
 
 describe("IconOnOff", () => {
   it("matches snapshot", () => {
-    const aIconOnOff = shallow(<IconOnOff />).find("IconOnOff.svg");
+    const aIconOnOff = shallow(<IconOnOff />);
     expect(aIconOnOff).toMatchSnapshot();
   });
 });

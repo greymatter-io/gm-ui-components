@@ -5,7 +5,7 @@ import IconHTTP from "./IconHTTP.svg";
 
 describe("IconHTTP", () => {
   it("matches snapshot", () => {
-    const aIconHTTP = shallow(<IconHTTP />).find("IconHTTP.svg");
+    const aIconHTTP = shallow(<IconHTTP />);
     expect(aIconHTTP).toMatchSnapshot();
   });
 });

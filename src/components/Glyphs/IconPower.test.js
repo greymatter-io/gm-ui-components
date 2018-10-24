@@ -5,7 +5,7 @@ import IconPower from "./IconPower.svg";
 
 describe("IconPower", () => {
   it("matches snapshot", () => {
-    const aIconPower = shallow(<IconPower />).find("IconPower.svg");
+    const aIconPower = shallow(<IconPower />);
     expect(aIconPower).toMatchSnapshot();
   });
 });

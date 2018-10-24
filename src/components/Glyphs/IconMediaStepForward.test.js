@@ -5,7 +5,7 @@ import IconMediaStepForward from "./IconMediaStepForward.svg";
 
 describe("IconMediaStepForward", () => {
   it("matches snapshot", () => {
-    const aIconMediaStepForward = shallow(<IconMediaStepForward />).find("IconMediaStepForward.svg");
+    const aIconMediaStepForward = shallow(<IconMediaStepForward />);
     expect(aIconMediaStepForward).toMatchSnapshot();
   });
 });

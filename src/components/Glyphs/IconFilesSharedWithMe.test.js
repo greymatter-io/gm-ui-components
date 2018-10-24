@@ -5,7 +5,7 @@ import IconFilesSharedWithMe from "./IconFilesSharedWithMe.svg";
 
 describe("IconFilesSharedWithMe", () => {
   it("matches snapshot", () => {
-    const aIconFilesSharedWithMe = shallow(<IconFilesSharedWithMe />).find("IconFilesSharedWithMe.svg");
+    const aIconFilesSharedWithMe = shallow(<IconFilesSharedWithMe />);
     expect(aIconFilesSharedWithMe).toMatchSnapshot();
   });
 });

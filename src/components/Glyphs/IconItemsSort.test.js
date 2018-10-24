@@ -5,7 +5,7 @@ import IconItemsSort from "./IconItemsSort.svg";
 
 describe("IconItemsSort", () => {
   it("matches snapshot", () => {
-    const aIconItemsSort = shallow(<IconItemsSort />).find("IconItemsSort.svg");
+    const aIconItemsSort = shallow(<IconItemsSort />);
     expect(aIconItemsSort).toMatchSnapshot();
   });
 });

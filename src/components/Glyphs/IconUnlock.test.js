@@ -5,7 +5,7 @@ import IconUnlock from "./IconUnlock.svg";
 
 describe("IconUnlock", () => {
   it("matches snapshot", () => {
-    const aIconUnlock = shallow(<IconUnlock />).find("IconUnlock.svg");
+    const aIconUnlock = shallow(<IconUnlock />);
     expect(aIconUnlock).toMatchSnapshot();
   });
 });
