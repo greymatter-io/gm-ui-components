@@ -5,8 +5,6 @@ const template = require(path.resolve(__dirname, "template.js"));
 // https://github.com/smooth-code/svgr#command-line-usage
 module.exports = {
   template,
-  filenameCase: "pascal",
-  ref: true,
   replaceAttrValues: {
     "#000": "inherit",
     "#000000": "inherit"
