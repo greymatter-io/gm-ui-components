@@ -29,5 +29,5 @@ module.exports = (code, config, state) => {
 function stripSVG(code) {
   return code
     .slice(code.indexOf(">"), code.indexOf("</svg>"))
-    .replace(/fill="([^"]*)"/, "");
+    .replace(/fill="([^"]*)"/g, ""); // Strip out any hard coded fills https://regexr.com/41skv
 }
