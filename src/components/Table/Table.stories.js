@@ -71,7 +71,6 @@ stories.add(
   withInfo("A table component.")(() => {
     return (
       <Table
-        accentColor={color("accentColor")}
         columns={object("columns", columns)}
         data={object("data", data)}
         sortDataIndex={select(
@@ -81,7 +80,7 @@ stories.add(
         )}
         selectedRows={[0]}
         onSort={sortIndex => alert(JSON.stringify(sortIndex))}
-        onCellClick={cellData => alert(JSON.stringify(cellData))}
+        onRowClick={rowData => console.log(rowData)}
       />
     );
   })
