@@ -11,7 +11,6 @@ import { columnItemShape, dataItemShape } from "./types";
 export default function Table({
   columns = [],
   data = [],
-  onCellClick = () => {},
   onRowClick = () => {},
   onSort = () => {},
   selectedRows = [],
@@ -40,7 +39,6 @@ export default function Table({
             data={item}
             key={item.key}
             columns={columns}
-            onCellClick={onCellClick}
             onRowClick={onRowClick}
             rowIndex={rowIndex}
             selectedRowStyle={selectedRowStyle}
@@ -58,8 +56,7 @@ Table.propTypes = {
   accentColor: PropTypes.string,
   columns: PropTypes.arrayOf(columnItemShape), // An array of objects used to label and size columns
   data: PropTypes.arrayOf(dataItemShape), // An array of objects to populate the rows
-  onCellClick: PropTypes.func, // A function called when a user clicks a cell. Passes the row data, row index, and column dataIndex.
-  onRowClick: PropTypes.func, // A function called when a user tabs over a row and pressed enter or spacebar. Passes the row data and row index.
+  onRowClick: PropTypes.func, // A function called when a user clicks a cell. Passes the row data, row index, and column dataIndex.
   onSort: PropTypes.func, // A function called when a user sorts a column. Passes the dataIndex of the column being sorted.
   selectedRowStyle: PropTypes.object, // A style object to pass to a row when selected
   selectedRows: PropTypes.arrayOf(PropTypes.number), // An array of indices of the currently selected rows

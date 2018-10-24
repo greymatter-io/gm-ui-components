@@ -100,7 +100,6 @@ exports[`Table matches snapshot 1`] = `
       }
       isSelected={false}
       key="1"
-      onCellClick={[Function]}
       onRowClick={[Function]}
       rowIndex={0}
     />
@@ -148,7 +147,6 @@ exports[`Table matches snapshot 1`] = `
       }
       isSelected={false}
       key="2"
-      onCellClick={[Function]}
       onRowClick={[Function]}
       rowIndex={1}
     />
@@ -196,7 +194,6 @@ exports[`Table matches snapshot 1`] = `
       }
       isSelected={false}
       key="3"
-      onCellClick={[Function]}
       onRowClick={[Function]}
       rowIndex={2}
     />

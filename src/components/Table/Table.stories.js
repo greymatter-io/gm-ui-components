@@ -81,8 +81,7 @@ stories.add(
         )}
         selectedRows={[0]}
         onSort={sortIndex => alert(JSON.stringify(sortIndex))}
-        onCellClick={cellData => alert(JSON.stringify(cellData))}
-        onRowClick={rowData => alert(JSON.stringify(rowData))}
+        onRowClick={rowData => console.log(rowData)}
       />
     );
   })

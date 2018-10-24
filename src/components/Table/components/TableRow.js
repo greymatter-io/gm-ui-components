@@ -35,7 +35,6 @@ function TableRow({
   data,
   columns,
   isSelected,
-  onCellClick,
   onRowClick,
   rowIndex,
   accentColor = COLOR_BRAND_A,
@@ -46,11 +45,15 @@ function TableRow({
       isSelected={isSelected}
       accentColor={accentColor}
       selectedRowStyle={selectedRowStyle}
-      onKeyDown={e => {
-        if (e.keyCode === 13 || e.keyCode === 32) {
-          onRowClick({ clicked: data, rowIndex });
+      onKeyDown={event => {
+        if (event.keyCode === 13) {
+          onRowClick({ clicked: data, rowIndex, event });
         }
       }}
+      onContextMenu={event => {
+        onRowClick({ clicked: data, rowIndex, event });
+      }}
+      onClick={event => onRowClick({ clicked: data, rowIndex, event })}
     >
       {/* Because the `columns` array determines the desired column order, 
         we need to map through it and use the dataIndex property to pick out 
@@ -58,11 +61,7 @@ function TableRow({
       {columns.map(({ dataIndex }) => {
         const cellContent = data[dataIndex];
         return (
-          <TableCell
-            onClick={() => onCellClick({ clicked: dataIndex, data, rowIndex })}
-            key={`${dataIndex}|${data.key}`}
-            data-column={dataIndex}
-          >
+          <TableCell key={`${dataIndex}|${data.key}`} data-column={dataIndex}>
             {/* Cell content can be either text or a render prop */}
             {typeof cellContent === "function"
               ? cellContent(dataIndex, data, rowIndex)
@@ -80,7 +79,6 @@ TableRow.propTypes = {
   data: dataItemShape,
   isRowSelected: PropTypes.bool,
   isSelected: PropTypes.bool,
-  onCellClick: PropTypes.func,
   onRowClick: PropTypes.func,
   rowIndex: PropTypes.number,
   selectedRowStyle: PropTypes.object
