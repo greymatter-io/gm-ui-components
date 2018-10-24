@@ -11,12 +11,12 @@ let files = [];
 const generateTestContent = fileName => {
   return `import React from "react";
 import { shallow } from "enzyme";
+
 import ${fileName} from "./${fileName}.svg";
+
 describe("${fileName}", () => {
   it("matches snapshot", () => {
-    
-    const a${fileName} = shallow(<${fileName} />).find("${fileName}.svg").dive();
-    console.log(a${fileName}.debug())
+    const a${fileName} = shallow(<${fileName} />).find("${fileName}.svg");
     expect(a${fileName}).toMatchSnapshot();
   });
 });`;

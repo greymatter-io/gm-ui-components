@@ -157,7 +157,7 @@
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "\\.svg": "@svgr/webpack"
+      "\\.svg": "<rootDir>/__mocks__/svgMock.js"
     },
     "moduleDirectories": [
       "node_modules",
