@@ -85,7 +85,6 @@ export default function Icon({
       )}
       <g title={glyphName} fill={glyphColor}>
         <title>{title ? title : glyphName}</title>
-        {/* render a custom svg as children or a built in glyph */}
         {children}
       </g>
     </StyledSVG>
