@@ -27,5 +27,7 @@ module.exports = (code, config, state) => {
 /* svgr always wraps the glyph in an svg, but we want to 
    use our own custom Icon component as the svg element. */
 function stripSVG(code) {
-  return code.slice(code.indexOf(">"), code.indexOf("</svg>"));
+  return code
+    .slice(code.indexOf(">"), code.indexOf("</svg>"))
+    .replace(/fill="([^"]*)"/, "");
 }
