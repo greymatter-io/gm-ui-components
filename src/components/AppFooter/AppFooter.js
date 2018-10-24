@@ -15,56 +15,69 @@ AppFooter.propTypes = {
     PropTypes.element,
     PropTypes.node,
     PropTypes.string
-  ])
+  ]),
+  useExternalLinks: PropTypes.bool
 };
 
 AppFooter.defaultProps = {
   copyrightText:
-    "Copyright \u00A9 2018 Decipher Technology Studios. All rights reserved. \n Copyright \u00A9 2018 Grey Matter, a Decipher Technology Studios product. All rights reserved."
+    "Copyright \u00A9 2018 Decipher Technology Studios. All rights reserved. \n Copyright \u00A9 2018 Grey Matter, a Decipher Technology Studios product. All rights reserved.",
+  useExternalLinks: true
 };
 
 /**
  * Stateless functional React component that renders company branding and social media footer content
  * @returns JSX.Element
  */
-export default function AppFooter({ copyrightText, ...props }) {
+export default function AppFooter({
+  copyrightText,
+  useExternalLinks,
+  ...props
+}) {
+  const logoProps = useExternalLinks
+    ? {
+        href: "http://deciphernow.com",
+        rel: "noopener noreferrer",
+        target: "_blank"
+      }
+    : {};
   return (
     <Footer {...props}>
-      <LongLogo
-        href="http://deciphernow.com"
-        rel="noopener noreferrer"
-        target="_blank"
-        title="Decipher Technology Studios website"
-      >
+      <LongLogo {...logoProps} title="Decipher Technology Studios website">
         <img alt="Decipher Technology Studios" src={longLogo} />
       </LongLogo>
-      <Copyright> {copyrightText} </Copyright>
-      <Links>
-        <Link
-          href="http://github.com/DecipherNow"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Decipher Technology Studios Github"
-        >
-          <IconGitHub size="20px" />
-        </Link>
-        <Link
-          href="http://twitter.com/deciphernow"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Decipher Technology Studios Twitter"
-        >
-          <IconTwitter size="20px" />
-        </Link>
-        <Link
-          href="http://www.linkedin.com/company/decipher-technology-studios"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Decipher Technology Studios LinkedIn"
-        >
-          <IconLinkedIn size="20px" />
-        </Link>
-      </Links>
+      <Copyright useExternalLinks={useExternalLinks}>
+        {" "}
+        {copyrightText}{" "}
+      </Copyright>
+      {useExternalLinks && (
+        <Links>
+          <Link
+            href="http://github.com/DecipherNow"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Decipher Technology Studios Github"
+          >
+            <IconGitHub size="20px" />
+          </Link>
+          <Link
+            href="http://twitter.com/deciphernow"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Decipher Technology Studios Twitter"
+          >
+            <IconTwitter size="20px" />
+          </Link>
+          <Link
+            href="http://www.linkedin.com/company/decipher-technology-studios"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Decipher Technology Studios LinkedIn"
+          >
+            <IconLinkedIn size="20px" />
+          </Link>
+        </Links>
+      )}
     </Footer>
   );
 }
