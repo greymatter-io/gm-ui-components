@@ -29,7 +29,7 @@ exports[`Spinner matches snapshot 1`] = `
   className="c0"
   orientation="vertical"
 >
-  <LoadingSpinner
+  <WithTheme(LoadingSpinner)
     orientation="vertical"
   />
   <LoadingMessage>
