@@ -71,7 +71,6 @@ stories.add(
   withInfo("A table component.")(() => {
     return (
       <Table
-        accentColor={color("accentColor")}
         columns={object("columns", columns)}
         data={object("data", data)}
         sortDataIndex={select(
