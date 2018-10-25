@@ -21,10 +21,12 @@ import InputField from "./Form/scenes/InputField";
 import InputRange from "./Form/scenes/InputRange";
 import Textarea from "./Form/scenes/Textarea";
 import Radio from "./Form/scenes/Radio";
+
 import Select from "./Form/scenes/Select";
 
 const library = {
   ...Glyphs,
+
   AppFooter,
   AppHeader,
   BreadcrumbItem,
