@@ -171,7 +171,6 @@ const glyphNames = [
   "IconSquareThin",
   "IconStack",
   "IconStar",
-  "IconStarFilled",
   "IconStatePaused",
   "IconStateRunning",
   "IconStateRunningSmall",
@@ -294,9 +293,7 @@ stories
           let Glyph = Glyphs[glyph];
           return (
             <GalleryIconDemo key={glyph}>
-              <Icon size={text("size", "40px")}>
-                <Glyph />
-              </Icon>
+              <Glyph glyphColor="#000000" size="40px" />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>
           );
