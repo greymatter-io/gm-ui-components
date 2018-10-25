@@ -4,7 +4,7 @@ exports[`LayoutSection matches snapshot 1`] = `
 <LayoutSectionWrap>
   <Header>
     <SectionIcon>
-      <Bell
+      <IconMock
         size="24px"
       />
     </SectionIcon>
