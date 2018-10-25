@@ -1,0 +1,71 @@
+# Contributing
+
+## Run in development mode
+
+The component library uses React Storybook for development. To start developing, run:
+
+```sh
+npm start
+```
+
+Visit [http://localhost:9009](http://localhost:9009). Storybook will render whatever is in your `MyComponent.stories.js` file and hot reload when changes are made to that file or the component source code.
+
+## Testing
+
+To run tests in watch mode, run:
+
+```
+npm test
+```
+
+When testing a component, be sure to write tests that cover all props and user interactions. If you are using an icon from the Glyphs directory, note that svgs are mocked in our testing environment, so you will see `<IconMock />` instead of the actual Icon displayName.
+
+## Updating an existing component
+
+When making modifications to an existing component, be sure to complete the following items:
+
+- Update tests to cover new props or user interactions
+- Update the story file with any new props or component states
+- Test keyboard interactions
+- Test responsiveness
+
+## Adding a new component
+
+To generate a new component in the src/components directory, run:
+
+```sh
+npm run generate-component -- MyComponent
+```
+
+This will give you the following structure:
+
+```
+├── src/
+|   └─ components/
+|       └─ MyComponent/
+|            ├── components/
+|            ├── MyComponent.js
+|            ├── MyComponent.stories.js
+|            ├── MyComponent.test.js
+|            └── index.js
+```
+
+- `components/`: Directory that contains all subcomponents used by `MyComponent.js`.
+- `MyComponent.js`: File that contains the main component. Be sure to fill out all propTypes and default props.
+- `MyComponent.stories.js`: Story code rendered by react/storybook for use in development and documentation.
+  - The `default` story is meant to render the component in it's default state and document props using the Storybook knobs package. This is used as prop documentation, so be sure that the knob name is 1:1 with the prop it is controlling. See `Button.stories.js` for reference on how to use storybook knobs.
+  - Use the `withInfo()` function from the `@storybook/addon-info` package to provide a 1 or 2 sentence description of the component and it's intended use case. See `Button.stories.js` for reference.
+  - Add any additional stories as needed to illustrate different states of the component
+- `MyComponent.test.js`: Basic test scaffold that renders a simple snapshot test
+- `index.js`: Imports and exports the component. There should be no reason to modify this file.
+
+Make sure that your new component considers responsiveness and accessibility.
+
+## Adding a new SVG
+
+To add a new SVG to the component library, create an .svg file under the src/components/Glyphs folder. Please be sensitive to naming conventions and try to follow existing patterns. The file name should always be prefixed with `Icon`.
+
+You will also need to update the following files after adding the SVG:
+
+- `src/components/Glyphs/index.js`: import and export the new SVG
+- `src/components/Icon/Icon.stories.js`: add the new SVG file name to the glyphNames array
