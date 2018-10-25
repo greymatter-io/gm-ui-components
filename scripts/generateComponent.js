@@ -1,7 +1,8 @@
 const fs = require("fs");
 const { promisify } = require("util");
-const readFile = promisify(fs.readFile);
 const path = require("path");
+
+const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 
 const {
@@ -20,15 +21,7 @@ const fileName = process.argv[2];
 
 const PATH_PREFIX = `src/components/${fileName}`;
 
-// Array of file template functions and their corresponding filenames
-const templates = [
-  [componentTemplate, `${PATH_PREFIX}/${fileName}.js`],
-  [indexTemplate, `${PATH_PREFIX}/index.js`],
-  [storyTemplate, `${PATH_PREFIX}/${fileName}.stories.js`],
-  [testTemplate, `${PATH_PREFIX}/${fileName}.test.js`]
-];
-
-// Create the directories
+// Create the directories if the component name doesn't already exist
 if (!fs.existsSync(`src/components/${fileName}`)) {
   fs.mkdirSync(`src/components/${fileName}`);
   fs.mkdirSync(`src/components/${fileName}/components`);
@@ -36,6 +29,14 @@ if (!fs.existsSync(`src/components/${fileName}`)) {
   console.log("This component already exists. Please choose a different name.");
   process.exit(-1);
 }
+
+// Array of file template functions and their corresponding filenames
+const templates = [
+  [componentTemplate, `${PATH_PREFIX}/${fileName}.js`],
+  [indexTemplate, `${PATH_PREFIX}/index.js`],
+  [storyTemplate, `${PATH_PREFIX}/${fileName}.stories.js`],
+  [testTemplate, `${PATH_PREFIX}/${fileName}.test.js`]
+];
 
 // Generate files with templates
 async function generateFiles() {
@@ -48,7 +49,7 @@ async function generateFiles() {
   }
 }
 
-// Reads in the entry file at src/components/index.js and updates the
+// Read in the entry file at src/components/index.js and update the
 // the import/export statements with the newly generated component
 async function updateEntryFile() {
   try {
