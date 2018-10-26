@@ -34,7 +34,7 @@
 
 gm-ui-components is available as an npm package:
 
-```bash
+```sh
 npm install --save gm-ui-components
 ```
 

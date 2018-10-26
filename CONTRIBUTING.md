@@ -20,15 +20,15 @@ It is also possible to install your branch of the library in another app using `
 
 1. On your branch of gm-ui-components, run:
 
-```
-npm link && npm run build -- --watch
-```
+    ```sh
+    npm link && npm run build -- --watch
+    ```
 
 2. In the target app, run:
 
-```
-npm link gm-ui-components
-```
+    ```sh
+    npm link gm-ui-components
+    ```
 
 #### npm pack
 
@@ -37,25 +37,25 @@ The disadvantage is that you will need to regenerate the tarball whenever you ma
 
 1. On your branch of gm-ui-components, run:
 
-```
-npm run build && npm pack
-```
+    ```sh
+    npm run build && npm pack
+    ```
 
 2. A tarball will be generated in the root of the project. Drag that into the root of your target app.
 
 3. In the target app, run:
 
-```
-npm install gm-ui-components-{version}.tgz
-```
+    ```sh
+    npm install gm-ui-components-{version}.tgz
+    ```
 
 ## Testing
 
 To run tests in watch mode, run:
 
-```
-npm test
-```
+  ```sh
+  npm test
+  ```
 
 When testing a component, be sure to write tests that cover all props and user interactions. If you are using an icon from the Glyphs directory, note that svgs are mocked in our testing environment, so you will see `<IconMock />` instead of the actual Icon displayName.
 
@@ -78,7 +78,7 @@ npm run generate-component -- MyComponent
 
 This will give you the following structure:
 
-```
+```sh
 ├── src/
 |   └─ components/
 |       └─ MyComponent/
