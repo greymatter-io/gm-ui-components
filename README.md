@@ -30,18 +30,19 @@
   <a href="#license">License</a>
 </p>
 
-## Installation
+# Installation
 
 gm-ui-components is available as an npm package:
 
-```
+```bash
 npm install --save gm-ui-components
 ```
 
-## Usage
+# Usage
+
 An example using the Icon component:
 
-```
+```javascript
 import React from 'react';
 import { render } from 'react-dom';
 import { Button } from 'gm-ui-components';
@@ -59,20 +60,21 @@ function App() {
 
 render(<App />, document.querySelector('#app'));
 ```
-## Documentation
+
+# Documentation
 
 See the [Grey Matter UI Components storybook](https://deciphernow.github.io/gm-ui-components) for more usage examples and documentation.
 
-## Compatability
+# Compatability
 
 * [Full list of browser support matrix](http://browserl.ist/?q=last+2+Chrome+versions%2C+last+2+ChromeAndroid+versions%2C+last+2+Safari+versions%2C+last+2+iOS+versions%2C+last+2+Firefox+versions%2C+last+2+Edge+versions)
 
-## Related Projects
+# Related Projects
 
 * [Grey Matter Fabric JVM SDK](https://github.com/DecipherNow/gm-fabric-jvm)
 * [Grey Matter Fabric Go SDK](https://github.com/DecipherNow/gm-fabric-go)
 * [Grey Matter Fabric Passthrough Agent](https://github.com/DecipherNow/gm-fabric-jvmagent)
 
-## License
+# License
 
 MIT
