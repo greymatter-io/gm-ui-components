@@ -23,8 +23,12 @@ const PATH_PREFIX = `src/components/${fileName}`;
 
 // Create the directories if the component name doesn't already exist
 if (!fs.existsSync(`src/components/${fileName}`)) {
-  fs.mkdirSync(`src/components/${fileName}`);
-  fs.mkdirSync(`src/components/${fileName}/components`);
+  try {
+    fs.mkdirSync(`src/components/${fileName}`);
+    fs.mkdirSync(`src/components/${fileName}/components`);
+  } catch (err) {
+    throw new Error(err);
+  }
 } else {
   console.log("This component already exists. Please choose a different name.");
   process.exit(-1);
