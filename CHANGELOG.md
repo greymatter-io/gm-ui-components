@@ -1,6 +1,42 @@
+<a name="0.7.0"></a>
+
+# [0.7.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.6.1...v0.7.0) (2018-10-26)
+
+### Breaking Changes
+
+- The `Input` component is now `InputField`
+- Checkbox, InputRange, Select, Radio, and Textarea are all separate components
+- Icon display names have changed to reflect the component name. It's likely you will have to update your tests if you were making assertions on the old Icons using the displayName.
+- Table accentColor prop has been deprecated. Use the new theming interface instead. Note: `brandColor` is the only theme variable exposed in 0.7.0.
+
+```javascript
+import { ThemeProvider } from "styled-components";
+
+<ThemeProvider theme={{ brandColor: "blue" }}>
+  <App />
+</ThemeProvider>;
+```
+
+### Bug Fixes
+
+- provide fallback for theme obj ([#376](https://github.com/DecipherNow/gm-ui-components/issues/376)) ([1fe7960](https://github.com/DecipherNow/gm-ui-components/commit/1fe7960))
+- remove external margins ([#367](https://github.com/DecipherNow/gm-ui-components/issues/367)) ([d615a07](https://github.com/DecipherNow/gm-ui-components/commit/d615a07))
+- remove flex property from InputWrap ([#381](https://github.com/DecipherNow/gm-ui-components/issues/381)) ([a3e281e](https://github.com/DecipherNow/gm-ui-components/commit/a3e281e))
+
+### Features
+
+- add ability to disable external links in the footer ([#374](https://github.com/DecipherNow/gm-ui-components/issues/374)) ([be83af2](https://github.com/DecipherNow/gm-ui-components/commit/be83af2))
+- add contributing guide & script to generate component templates ([#380](https://github.com/DecipherNow/gm-ui-components/issues/380)) ([8df24f4](https://github.com/DecipherNow/gm-ui-components/commit/8df24f4))
+- place Radio button stories in the correct place in the sidebar ([#331](https://github.com/DecipherNow/gm-ui-components/issues/331)) ([13fa196](https://github.com/DecipherNow/gm-ui-components/commit/13fa196))
+- Table Accessibility ([#369](https://github.com/DecipherNow/gm-ui-components/issues/369)) ([8f17d15](https://github.com/DecipherNow/gm-ui-components/commit/8f17d15))
+- theme brand color ([#370](https://github.com/DecipherNow/gm-ui-components/issues/370)) ([ae72411](https://github.com/DecipherNow/gm-ui-components/commit/ae72411))
+- use svg loader for icons ([#375](https://github.com/DecipherNow/gm-ui-components/issues/375)) ([5f84cdd](https://github.com/DecipherNow/gm-ui-components/commit/5f84cdd))
+
 <a name="0.6.1"></a>
 
 ## [0.6.1](https://github.com/DecipherNow/gm-ui-components/compare/v0.6.0...v0.6.1) (2018-09-18)
+
+## NOTE: This version has been deprecated on npm. Please use the latest version of gm-ui-components.
 
 ### Bug Fixes
 
