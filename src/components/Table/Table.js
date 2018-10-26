@@ -11,8 +11,8 @@ import { columnItemShape, dataItemShape } from "./types";
 export default function Table({
   columns = [],
   data = [],
-  onCellClick,
-  onSort,
+  onCellClick = () => {},
+  onSort = () => {},
   selectedRows = [],
   sortDataIndex,
   accentColor,

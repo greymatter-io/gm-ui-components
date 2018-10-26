@@ -55,8 +55,8 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   color: #000;
   border-color: transparent;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -68,10 +68,24 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -153,8 +167,8 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   color: #000;
   border-color: transparent;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -165,10 +179,24 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -253,8 +281,8 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   color: #000;
   border-color: #e6e6e6;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -265,10 +293,24 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -366,8 +408,8 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   color: #000;
   border-color: transparent;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -378,10 +420,24 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -465,9 +521,9 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   background-color: #fff;
   color: #000;
   border-color: transparent;
-  font-size: 7px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  font-size: 9px;
+  border-radius: 4px;
+  padding: 2px 8px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -479,10 +535,24 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -567,8 +637,8 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   color: #000;
   border-color: transparent;
   font-size: 11px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -580,10 +650,24 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -668,8 +752,8 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   color: #000;
   border-color: transparent;
   font-size: 18px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 10px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -680,10 +764,24 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -767,9 +865,9 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   background-color: #fff;
   color: #000;
   border-color: transparent;
-  font-size: 21px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 2px 10px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -780,10 +878,24 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -868,8 +980,8 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   color: #fff;
   border-color: transparent;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -880,10 +992,24 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -969,8 +1095,8 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   color: #fff;
   border-color: transparent;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -981,10 +1107,24 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -1070,8 +1210,8 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   color: #fff;
   border-color: transparent;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1082,10 +1222,24 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {
@@ -1171,8 +1325,8 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   color: #fff;
   border-color: transparent;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1183,10 +1337,24 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {

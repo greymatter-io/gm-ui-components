@@ -3,8 +3,8 @@
 exports[`StyledSVG matches snapshot 1`] = `
 .c0 {
   z-index: 1;
-  width: 100%;
-  height: auto;
+  width: 1.714em;
+  height: 1.714em;
   word-spacing: 0;
   vertical-align: middle;
 }

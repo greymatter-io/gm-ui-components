@@ -1,17 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TableColumn /> should match snapshot 1`] = `
-@media (max-width:540px) {
-  .c0:not(:first-child) {
-    width: 0;
-  }
-
-  .c0:first-child {
-    width: 100%;
-  }
-}
-
 <col
-  className="c0"
+  className=""
 />
 `;

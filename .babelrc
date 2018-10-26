@@ -11,6 +11,7 @@
     ],
     "transform-class-properties",
     "add-module-exports",
-    "transform-object-rest-spread"
+    "transform-object-rest-spread",
+    "react-docgen"
   ]
 }
