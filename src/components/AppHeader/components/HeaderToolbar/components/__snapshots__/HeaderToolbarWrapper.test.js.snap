@@ -2,13 +2,13 @@
 
 exports[`HeaderToolbarWrapper matches snapshot 1`] = `
 .c0 {
+  background-image: linear-gradient( to top,rgba(0,0,255,0),blue );
   background-color: transparent;
   color: #fff;
   -webkit-flex: 0 0 32px;
   -ms-flex: 0 0 32px;
   flex: 0 0 32px;
-  font-size: 14px;
-  background-image: linear-gradient(to top,rgba(0,0,0,0),#000);
+  font-size: 12px;
   padding: 0 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
