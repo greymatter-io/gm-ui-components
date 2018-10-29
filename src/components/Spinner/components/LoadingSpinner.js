@@ -32,7 +32,8 @@ export const horizontalStyles = css`
 `;
 
 // Inherit theme from styled components class, vs through wrapping LoadingSpinner in
-// the withComponent() HOC https://github.com/styled-components/styled-components/issues/1709#issuecomment-428460130
+// the withComponent() HOC to avoid a production bug:
+// https://github.com/styled-components/styled-components/issues/1709#issuecomment-428460130
 // TODO: Refactor this after upgrading to v4
 export const Stop = styled.stop.attrs({
   stopColor: ({ theme }) =>
