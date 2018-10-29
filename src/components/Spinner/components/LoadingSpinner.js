@@ -31,7 +31,15 @@ export const horizontalStyles = css`
   width: ${spacingScale(2)};
 `;
 
-export function LoadingSpinner({ theme = {}, ...props }) {
+// Inherit theme from styled components class, vs through wrapping LoadingSpinner in
+// the withComponent() HOC https://github.com/styled-components/styled-components/issues/1709#issuecomment-428460130
+// TODO: Refactor this after upgrading to v4
+export const Stop = styled.stop.attrs({
+  stopColor: ({ theme }) =>
+    transparentize(0.85, theme.brandColor || SPINNER_COLOR)
+})``;
+
+export function LoadingSpinner(props) {
   return (
     <SpinnerSVG
       xmlns="http://www.w3.org/2000/svg"
@@ -42,15 +50,9 @@ export function LoadingSpinner({ theme = {}, ...props }) {
     >
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop
-            offset="0%"
-            stopColor={transparentize(0.85, theme.brandColor || SPINNER_COLOR)}
-          />
-          <stop
-            offset="33%"
-            stopColor={transparentize(0.85, theme.brandColor || SPINNER_COLOR)}
-          />
-          <stop offset="100%" stopColor={theme.brandColor || SPINNER_COLOR} />
+          <Stop offset="0%" />
+          <Stop offset="33%" />
+          <Stop offset="100%" />
         </linearGradient>
       </defs>
       <circle
@@ -74,4 +76,4 @@ LoadingSpinner.propTypes = {
 
 LoadingSpinner.displayName = "LoadingSpinner";
 
-export default withTheme(LoadingSpinner);
+export default LoadingSpinner;
