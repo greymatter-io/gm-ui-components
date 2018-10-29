@@ -1,3 +1,11 @@
+<a name="0.7.1"></a>
+
+## [0.7.1](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.0...v0.7.1) (2018-10-29)
+
+### Bug Fixes
+
+- refactor LoadingSpinner ([#386](https://github.com/DecipherNow/gm-ui-components/issues/386)) ([82ff859](https://github.com/DecipherNow/gm-ui-components/commit/82ff859))
+
 <a name="0.7.0"></a>
 
 # [0.7.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.6.1...v0.7.0) (2018-10-26)
