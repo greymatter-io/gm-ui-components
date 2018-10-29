@@ -4,13 +4,6 @@ import { Button } from "../";
 
 import AppHeader from "./AppHeader";
 
-const breadcrumbs = [
-  "Fabric",
-  "Grace Hopper Battleship Service",
-  "Instances",
-  "Routes"
-];
-
 const bannerExtras = [
   {
     path: "/settings",

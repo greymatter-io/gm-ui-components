@@ -12,7 +12,7 @@ const stories = storiesOf("Components|Readout", module);
 
 const mockReadoutItem = [
   {
-    icon: () => <IconSummary size={"24px"} />,
+    icon: () => <IconSummary />,
     title: "Avg. Response Time",
     value: "30000%"
   }
@@ -20,25 +20,25 @@ const mockReadoutItem = [
 
 const mockReadoutManyItems = [
   {
-    icon: () => <IconSummary size={"24px"} />,
+    icon: () => <IconSummary />,
     title: "Avg. Response Time",
     value: "30000%",
     detail: "detail text 0"
   },
   {
-    icon: () => <IconSummary size={"24px"} />,
+    icon: () => <IconSummary />,
     title: "Avg. Response Time",
     value: "33000%",
     detail: "detail text 1 "
   },
   {
-    icon: () => <IconSummary size={"24px"} />,
+    icon: () => <IconSummary />,
     title: "Avg. Response Time",
     value: "31000%",
     detail: "detail text 2"
   },
   {
-    icon: () => <IconSummary size={"24px"} />,
+    icon: () => <IconSummary />,
     title: "Avg. Response Time",
     value: "34000%",
     detail: "detail text 3"
@@ -52,8 +52,8 @@ stories
       () => {
         return (
           <Readout
-            primary={boolean("Readout is Primary", false)}
-            readoutItems={object("Readout Items", mockReadoutItem)}
+            primary={boolean("primary", false)}
+            readoutItems={object("readoutItems", mockReadoutItem)}
           />
         );
       }
@@ -64,8 +64,8 @@ stories
     withInfo("Readouts may display many related values.")(() => {
       return (
         <Readout
-          primary={boolean("Readout is Primary", false)}
-          readoutItems={object("Readout Items", mockReadoutManyItems)}
+          primary={boolean("primary", false)}
+          readoutItems={object("readoutItems", mockReadoutManyItems)}
         />
       );
     })

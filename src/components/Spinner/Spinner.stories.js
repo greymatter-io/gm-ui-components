@@ -20,7 +20,7 @@ stories.add(
     return (
       <Spinner
         orientation={select("orientation", orientations)}
-        message={text("Loading Message")}
+        message={text("message")}
       />
     );
   })

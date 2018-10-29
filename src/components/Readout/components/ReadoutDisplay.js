@@ -1,25 +1,20 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
-import {
-  BORDER_RADIUS_BASE,
-  FONT_STACK_BASE,
-  COLOR_CONTENT
-} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const ReadoutDisplay = styled.div`
-  color: ${COLOR_CONTENT};
+  color: ${props => props.theme.COLOR_CONTENT};
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  border-radius: ${BORDER_RADIUS_BASE};
+  border-radius: ${props => props.theme.RADIUS_05};
   margin: 0 ${spacingScale(1)} ${spacingScale(1)} 0;
   position: relative;
   overflow: hidden;
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
 
   &:before {
     content: "";
