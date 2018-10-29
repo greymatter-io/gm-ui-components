@@ -36,8 +36,10 @@ export const horizontalStyles = css`
 // https://github.com/styled-components/styled-components/issues/1709#issuecomment-428460130
 // TODO: Refactor this after upgrading to v4
 export const Stop = styled.stop.attrs({
-  stopColor: ({ theme }) =>
-    transparentize(0.85, theme.brandColor || SPINNER_COLOR)
+  stopColor: ({ theme, transparent }) =>
+    transparent
+      ? transparentize(0.85, theme.brandColor || SPINNER_COLOR)
+      : theme.brandColor || SPINNER_COLOR
 })``;
 
 export function LoadingSpinner(props) {
@@ -51,8 +53,8 @@ export function LoadingSpinner(props) {
     >
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <Stop offset="0%" />
-          <Stop offset="33%" />
+          <Stop offset="0%" transparent />
+          <Stop offset="33%" transparent />
           <Stop offset="100%" />
         </linearGradient>
       </defs>

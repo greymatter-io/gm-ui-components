@@ -22,9 +22,11 @@ exports[`LoadingSpinner matches snapshot 1`] = `
     >
       <Stop
         offset="0%"
+        transparent={true}
       />
       <Stop
         offset="33%"
+        transparent={true}
       />
       <Stop
         offset="100%"
