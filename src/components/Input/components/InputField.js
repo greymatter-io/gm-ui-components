@@ -1,23 +1,22 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { FONT_SIZE_BASE, FONT_STACK_BASE, COLOR_KEYLINE, COLOR_CONTENT, COLOR_BACKGROUND_A, BORDER_RADIUS_BASE, COLOR_HIGHLIGHT } from 'style/styleVariables';
-import { spacingScale } from 'style/styleFunctions';
+import { spacingScale } from "style/styleFunctions";
 
 export const InputField = styled.input.attrs({
-  autoFocus: props => props.autoFocus,
+  autoFocus: props => props.autofocus,
   defaultValue: props => props.defaultValue,
   placeholder: props => props.placeholder,
   maxLength: props => props.maxlength,
-  type: props => props.type,
+  type: props => props.type
 })`
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
   height: ${spacingScale(4)};
-  border: 1px solid ${COLOR_KEYLINE};
-  border-radius: ${BORDER_RADIUS_BASE};
-  color: ${COLOR_CONTENT};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_BASE};
-  background: ${COLOR_BACKGROUND_A};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE};
+  border-radius: ${props => props.theme.BORDER_RADIUS_BASE};
+  color: ${props => props.theme.COLOR_CONTENT};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  background: ${props => props.theme.COLOR_BACKGROUND_A};
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.15s ease;
@@ -25,13 +24,13 @@ export const InputField = styled.input.attrs({
   flex: 1 1 auto;
 
   &::placeholder {
-    color: ${COLOR_CONTENT};
+    color: ${props => props.theme.COLOR_CONTENT};
     transition: inherit;
     opacity: 0.5;
   }
 
   &:focus {
-    border-color: ${COLOR_HIGHLIGHT};
+    border-color: ${props => props.theme.COLOR_HIGHLIGHT};
     outline: none;
   }
 `;

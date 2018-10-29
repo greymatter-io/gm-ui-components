@@ -4,11 +4,11 @@ import { configure, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs/react";
-import { withThemesProvider } from 'storybook-addon-styled-component-theme';
-
-import { keen, keenDark } from 'style/styleVariables';
-import { checkA11y } from "@storybook/addon-a11y";
+import { withThemesProvider } from "storybook-addon-styled-component-theme";
+// import { checkA11y } from "@storybook/addon-a11y";
 import backgrounds from "@storybook/addon-backgrounds";
+
+import { keen, keenDark } from "style/styleVariables";
 import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
 
@@ -24,7 +24,7 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 // add withKnobs globally so we don't need to import it into individual stories
-addDecorator(checkA11y);
+// addDecorator(checkA11y);
 addDecorator(withKnobs);
 addDecorator(
   backgrounds([

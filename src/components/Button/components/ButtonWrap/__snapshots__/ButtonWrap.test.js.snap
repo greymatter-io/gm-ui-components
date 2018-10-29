@@ -31,8 +31,8 @@ exports[`ButtonWrap should match snapshot 1`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  border-radius: 3px;
-  padding: 2px 7px;
+  border-radius: 4px;
+  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -43,10 +43,24 @@ exports[`ButtonWrap should match snapshot 1`] = `
   transition: all 0.1s ease;
 }
 
-.c0:focus,
-.c0:active {
+.c0:hover:focus,
+.c0:hover:active {
   -webkit-transition: all 0 ease;
   transition: all 0 ease;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #0aab2a;
+  box-shadow: 0 0 0 2.5px rgba(10,171,42,0.5),inset 0 0 0 1px rgba(255,255,255,0.15);
+  z-index: 10;
+  position: relative;
+}
+
+.c0:focus::-moz-focus-inner,
+.c0:focus:active::-moz-focus-inner {
+  border: 0;
 }
 
 .c0 > * {

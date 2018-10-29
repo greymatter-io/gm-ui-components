@@ -11,7 +11,7 @@ exports[`A Footer container should render 1`] = `
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid;
   margin-top: 8px;
   padding: 8px;
   text-transform: uppercase;
@@ -28,7 +28,6 @@ exports[`A Footer container should render 1`] = `
   user-select: none;
   overflow: hidden;
   padding: 0 4px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,9 +35,6 @@ exports[`A Footer container should render 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  color: #000;
-  background: #fff;
-  font-size: 14px;
   height: auto;
   min-height: 32px;
   -webkit-align-items: stretch;
@@ -60,14 +56,7 @@ exports[`A Footer container should render 1`] = `
 }
 
 .c4 {
-  color: #000;
-  opacity: 0.7;
   padding: 0 4px;
-}
-
-.c4:hover {
-  color: #0aab2a;
-  opacity: 1;
 }
 
 .c4 svg {
@@ -88,7 +77,6 @@ exports[`A Footer container should render 1`] = `
 
 .c1 {
   padding: 0 8px;
-  opacity: 0.7;
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
@@ -100,7 +88,6 @@ exports[`A Footer container should render 1`] = `
 }
 
 .c1:hover {
-  opacity: 1;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-filter: grayscale(0%);
@@ -128,6 +115,7 @@ exports[`A Footer container should render 1`] = `
 
 @media all and (min-width:800px) {
   .c0 {
+    height: 40px;
     -webkit-flex-wrap: no-wrap;
     -ms-flex-wrap: no-wrap;
     flex-wrap: no-wrap;
@@ -143,7 +131,6 @@ exports[`A Footer container should render 1`] = `
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1010;
   }
 
   .c0 + * {

@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
-import { OPACITY_50 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 export const Breadcrumb = styled.li`
@@ -11,7 +10,7 @@ export const Breadcrumb = styled.li`
   max-width: 100%;
 
   &:before {
-    opacity: ${props => (props.hideDelimiter ? 0 : OPACITY_50)};
+    opacity: ${props => (props.hideDelimiter ? 0 : props.theme.OPACITY_50)};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
     transform: scaleX(0.5);

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea matches snapshot 1`] = `
+<InputWrap>
+  <InputLabelText>
+    Test
+  </InputLabelText>
+  <TextareaField
+    clickAction={[Function]}
+  />
+</InputWrap>
+`;

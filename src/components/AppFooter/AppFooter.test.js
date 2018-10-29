@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { AppFooter } from "./index.js";
+import AppFooter from "./AppFooter.js";
 
 describe("A Footer container", () => {
   it("should render", () => {

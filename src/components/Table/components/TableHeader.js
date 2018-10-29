@@ -4,18 +4,17 @@ import styled, { css } from "styled-components";
 
 import { columnItemShape } from "../types";
 import TableCell from "./TableCell";
-import { FONT_WEIGHT_BASE, FONT_WEIGHT_SEMIBOLD } from "style/styleVariables";
 
 // Use all of TableCell's styles, but with a <th> element instead of <td>
 const TableHeaderCell = styled(TableCell.withComponent("th"))`
-  font-weight: ${FONT_WEIGHT_BASE};
+  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
   text-align: left;
   cursor: pointer;
   border-top: none;
   ${props =>
     props.isSorting &&
     css`
-      font-weight: ${FONT_WEIGHT_SEMIBOLD};
+      font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
     `};
 `;
 
@@ -31,7 +30,7 @@ function TableHeader({ columns, sortDataIndex, onSort }) {
             onClick={() => onSort(dataIndex)}
             isSorting={sortDataIndex === dataIndex}
           >
-            {title}
+            {typeof title === "function" ? title(dataIndex) : title}
           </TableHeaderCell>
         ))}
       </tr>

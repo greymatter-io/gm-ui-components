@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
+import { transparentize } from "polished";
+
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
@@ -33,9 +35,24 @@ const ButtonWrap = styled.button`
     transition: all 0.1s ease;
   }
 
-  &:focus,
-  &:active {
+  &:hover:focus,
+  &:hover:active {
     transition: all 0 ease;
+  }
+
+  &:focus,
+  &:focus:active {
+    outline: none;
+    border: 1px solid ${COLOR_INTENT_HIGHLIGHT};
+    box-shadow: 0 0 0 ${FORM_HIGHLIGHT_SIZE}px
+        ${transparentize(1 - OPACITY_50, COLOR_INTENT_HIGHLIGHT)},
+      inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)};
+    z-index: 10;
+    position: relative;
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
   }
 
   > * {
