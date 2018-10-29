@@ -1,14 +1,13 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import { COLOR_INTENT_SUCCESS } from "style/styleVariables";
 import ReadoutDisplay from "./components/ReadoutDisplay";
 import ReadoutItem, { ReadoutItemShape } from "./components/ReadoutItem";
 
 export default function Readout({
   children,
   primary,
-  color = COLOR_INTENT_SUCCESS,
+  color = props => props.theme.COLOR_INTENT_SUCCESS,
   readoutItems = [],
   ...props
 }) {

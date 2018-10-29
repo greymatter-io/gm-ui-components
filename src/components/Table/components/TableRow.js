@@ -36,7 +36,7 @@ function TableRow({
   onCellClick,
   rowIndex,
   accentColor = COLOR_BRAND_A,
-  selectedRowStyle,
+  selectedRowStyle
 }) {
   return (
     <TableRowElement
@@ -56,7 +56,9 @@ function TableRow({
             data-column={dataIndex}
           >
             {/* Cell content can be either text or a render prop */}
-            {typeof cellContent === "function" ? cellContent() : cellContent}
+            {typeof cellContent === "function"
+              ? cellContent(dataIndex, data, rowIndex)
+              : cellContent}
           </TableCell>
         );
       })}

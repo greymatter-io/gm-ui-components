@@ -1,2 +1,2 @@
 import AppFooter from "./AppFooter";
-export { AppFooter };
+export default AppFooter;
