@@ -14,8 +14,7 @@ describe("Spinner", () => {
     );
 
     const SpinnerSVG = aSpinner
-      .find("WithTheme(LoadingSpinner)")
-      .dive()
+      .find("LoadingSpinner")
       .dive()
       .find("SpinnerSVG");
 
@@ -28,8 +27,7 @@ describe("Spinner", () => {
       <Spinner orientation="horizontal" theme={{ brandColor: "blue" }} />
     );
     const SpinnerSVG = aSpinner
-      .find("WithTheme(LoadingSpinner)")
-      .dive()
+      .find("LoadingSpinner")
       .dive()
       .find("SpinnerSVG");
 
