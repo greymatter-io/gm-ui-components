@@ -1,3 +1,10 @@
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.1...v0.7.2) (2018-11-20)
+
+### Features
+
+* updating key icons ([#388](https://github.com/DecipherNow/gm-ui-components/issues/388)) ([5ecd980](https://github.com/DecipherNow/gm-ui-components/commit/5ecd980)
+
 <a name="0.7.1"></a>
 
 ## [0.7.1](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.0...v0.7.1) (2018-10-29)
