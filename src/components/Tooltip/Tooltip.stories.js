@@ -17,14 +17,16 @@ stories.add(
       "right"
     );
     return (
-      <Tooltip
-        content={content}
-        position={position}
-        hideTooltip={boolean("hideTooltip", false)}
-        tooltipStyle={object("tooltipStyle", {})}
-      >
-        {text("children", "Hover over me")}
-      </Tooltip>
+      <div style={{ textAlign: "center" }}>
+        <Tooltip
+          content={content}
+          position={position}
+          hideTooltip={boolean("hideTooltip", false)}
+          tooltipStyle={object("tooltipStyle", {})}
+        >
+          {text("children", "Hover over me")}
+        </Tooltip>
+      </div>
     );
   })
 );
