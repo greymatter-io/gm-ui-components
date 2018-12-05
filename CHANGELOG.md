@@ -4,7 +4,7 @@
 
 ### Features
 
-- updating key icons ([#392](https://github.com/DecipherNow/gm-ui-components/issues/392)) ([5ecd980](https://github.com/DecipherNow/gm-ui-components/commit/d898167)
+- update Tooltip to use Popper.js positioning engine ([#392](https://github.com/DecipherNow/gm-ui-components/issues/392)) ([5ecd980](https://github.com/DecipherNow/gm-ui-components/commit/d898167)
 
 <a name="0.7.2"></a>
 
