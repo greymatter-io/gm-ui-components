@@ -1,26 +1,57 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Manager, Reference, Popper } from "react-popper";
 import TooltipContent from "./components/TooltipContent";
 import TooltipWrap from "./components/TooltipWrap";
 
-export default function Tooltip({
-  children,
-  content,
-  position,
-  hideTooltip,
-  tooltipStyle = {},
-  ...props
-}) {
-  // Always hide the tooltip if the content is empty
-  if (!content) hideTooltip = true;
-  return (
-    <TooltipWrap hideTooltip={hideTooltip} {...props}>
-      {children}
-      <TooltipContent style={tooltipStyle} position={position}>
-        {content}
-      </TooltipContent>
-    </TooltipWrap>
-  );
+export default class Tooltip extends React.Component {
+  state = {
+    visible: false
+  };
+
+  toggleVisibility = () => this.setState({ visible: !this.state.visible });
+
+  render() {
+    let {
+      children,
+      content,
+      position,
+      hideTooltip,
+      tooltipStyle = {},
+      ...props
+    } = this.props;
+    // Always hide the tooltip if the content is empty
+    if (!content) hideTooltip = true;
+    return (
+      <Manager>
+        <Reference>
+          {({ ref }) => (
+            <TooltipWrap
+              innerRef={ref}
+              onMouseEnter={this.toggleVisibility}
+              onMouseLeave={this.toggleVisibility}
+              {...props}
+            >
+              {children}
+            </TooltipWrap>
+          )}
+        </Reference>
+        <Popper placement={position}>
+          {({ ref, style, placement }) => {
+            return (
+              <TooltipContent
+                innerRef={ref}
+                style={{ ...style, ...tooltipStyle }}
+                visible={!hideTooltip && this.state.visible}
+              >
+                {content}
+              </TooltipContent>
+            );
+          }}
+        </Popper>
+      </Manager>
+    );
+  }
 }
 
 Tooltip.propTypes = {

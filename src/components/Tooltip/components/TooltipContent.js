@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import {
+  FONT_STACK_BASE,
   FONT_SIZE_BASE,
   ZINDEX_TOOLTIP,
   BORDER_RADIUS_BASE,
@@ -20,38 +21,12 @@ const TooltipContent = styled.div`
   padding: ${spacingScale(1)};
   width: ${spacingScale(20)};
   z-index: ${ZINDEX_TOOLTIP};
-  opacity: 0;
-  position: absolute;
   text-align: left;
   transition: opacity 1s;
-  visibility: hidden;
+  opacity: ${props => (props.visible ? 1 : 0)};
   white-space: normal;
-  /* Position the tooltip */
-  ${props => getPosition(props.position)};
+  font-family: ${FONT_STACK_BASE};
+  margin: ${spacingScale(1)};
 `;
-
-function getPosition(position) {
-  switch (position) {
-    case "top":
-      return `
-      bottom: 150%;
-      left: 50%; 
-      margin-left: -80px;`;
-    case "left":
-      return `
-      right: 120%;
-      top: -5px;`;
-    case "right":
-      return `
-      top: -5px;
-      left: 120%;`;
-    case "bottom":
-    default:
-      return `
-      top: 150%;
-      left: 50%; 
-      margin-left: -80px`;
-  }
-}
 
 export default TooltipContent;
