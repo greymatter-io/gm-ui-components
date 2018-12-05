@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip correctly positions tooltip content based on position prop 1`] = `
-.c1 {
+Array [
+  .c0 {
+  display: inline-block;
+  position: relative;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+<div
+    className="c0"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Hover over me
+  </div>,
+  .c0 {
   background-color: #fff;
   border-radius: 3px;
   color: #000;
@@ -10,45 +24,48 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
   padding: 8px;
   width: 160px;
   z-index: 1070;
-  opacity: 0;
-  position: absolute;
   text-align: left;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
-  visibility: hidden;
+  opacity: 0;
   white-space: normal;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-  z-index: 1070;
+  margin: 8px;
 }
 
 <div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+    className="c0"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "top": 0,
+      }
+    }
   >
     Hello!
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 2`] = `
-.c1 {
+Array [
+  .c0 {
+  display: inline-block;
+  position: relative;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+<div
+    className="c0"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Hover over me
+  </div>,
+  .c0 {
   background-color: #fff;
   border-radius: 3px;
   color: #000;
@@ -57,45 +74,48 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
   padding: 8px;
   width: 160px;
   z-index: 1070;
-  opacity: 0;
-  position: absolute;
   text-align: left;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
-  visibility: hidden;
+  opacity: 0;
   white-space: normal;
-  top: 150%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-  z-index: 1070;
+  margin: 8px;
 }
 
 <div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+    className="c0"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "top": 0,
+      }
+    }
   >
     Hello!
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 3`] = `
-.c1 {
+Array [
+  .c0 {
+  display: inline-block;
+  position: relative;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+<div
+    className="c0"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Hover over me
+  </div>,
+  .c0 {
   background-color: #fff;
   border-radius: 3px;
   color: #000;
@@ -104,44 +124,48 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
   padding: 8px;
   width: 160px;
   z-index: 1070;
-  opacity: 0;
-  position: absolute;
   text-align: left;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
-  visibility: hidden;
+  opacity: 0;
   white-space: normal;
-  right: 120%;
-  top: -5px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-  z-index: 1070;
+  margin: 8px;
 }
 
 <div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+    className="c0"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "top": 0,
+      }
+    }
   >
     Hello!
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 4`] = `
-.c1 {
+Array [
+  .c0 {
+  display: inline-block;
+  position: relative;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+<div
+    className="c0"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Hover over me
+  </div>,
+  .c0 {
   background-color: #fff;
   border-radius: 3px;
   color: #000;
@@ -150,38 +174,28 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
   padding: 8px;
   width: 160px;
   z-index: 1070;
-  opacity: 0;
-  position: absolute;
   text-align: left;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
-  visibility: hidden;
+  opacity: 0;
   white-space: normal;
-  top: -5px;
-  left: 120%;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-  z-index: 1070;
+  margin: 8px;
 }
 
 <div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+    className="c0"
+    style={
+      Object {
+        "left": 0,
+        "opacity": 0,
+        "pointerEvents": "none",
+        "position": "absolute",
+        "top": 0,
+      }
+    }
   >
     Hello!
-  </div>
-</div>
+  </div>,
+]
 `;
