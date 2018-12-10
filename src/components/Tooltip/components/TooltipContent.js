@@ -24,6 +24,7 @@ const TooltipContent = styled.div`
   text-align: left;
   transition: opacity 1s;
   opacity: ${props => (props.visible ? 1 : 0)};
+  visibility: ${props => (props.visible ? "visible" : "hidden")};
   white-space: normal;
   font-family: ${FONT_STACK_BASE};
   margin: ${spacingScale(1)};
