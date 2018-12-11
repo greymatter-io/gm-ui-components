@@ -1,3 +1,11 @@
+<a name="0.7.4"></a>
+
+## [0.7.4](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.3...v0.7.4) (2018-12-11)
+
+### Bug Fixes 👻
+
+- tooltip visibility issue ([#395](https://github.com/DecipherNow/gm-ui-components/issues/395)) ([8443596](https://github.com/DecipherNow/gm-ui-components/commit/8443596))
+
 <a name="0.7.3"></a>
 
 ## [0.7.3](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.2...v0.7.3) (2018-12-05)
