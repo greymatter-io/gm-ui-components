@@ -20,8 +20,7 @@ AppFooter.propTypes = {
 };
 
 AppFooter.defaultProps = {
-  copyrightText:
-    "Copyright \u00A9 2018 Decipher Technology Studios. All rights reserved. \n Copyright \u00A9 2018 Grey Matter, a Decipher Technology Studios product. All rights reserved.",
+  copyrightText: "TM and \u00A9 2019 Decipher Technology Studios",
   useExternalLinks: true
 };
 
