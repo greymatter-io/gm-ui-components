@@ -2,7 +2,7 @@
 
 exports[`A Footer container should render 1`] = `
 .c2 {
-  font-size: 50%;
+  font-size: 60%;
   margin: 0;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
@@ -166,8 +166,7 @@ exports[`A Footer container should render 1`] = `
     className="c2"
   >
      
-    Copyright © 2018 Decipher Technology Studios. All rights reserved. 
- Copyright © 2018 Grey Matter, a Decipher Technology Studios product. All rights reserved.
+    TM and © 2019 Decipher Technology Studios
      
   </p>
   <div
