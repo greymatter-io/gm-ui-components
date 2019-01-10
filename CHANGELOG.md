@@ -1,3 +1,13 @@
+<a name="0.7.5"></a>
+## [0.7.5](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.4...v0.7.5) (2019-01-10)
+
+
+### Bug Fixes
+
+* update footer font size and default text ([#398](https://github.com/DecipherNow/gm-ui-components/issues/398)) ([f0ced09](https://github.com/DecipherNow/gm-ui-components/commit/f0ced09))
+
+
+
 <a name="0.7.4"></a>
 
 ## [0.7.4](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.3...v0.7.4) (2018-12-11)
