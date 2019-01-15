@@ -78,6 +78,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.11.1",
     "husky": "^0.14.3",
+    "image-webpack-loader": "^4.6.0",
     "jest": "^23.5.0",
     "jest-cli": "^23.5.0",
     "jest-junit": "^5.1.0",
@@ -94,7 +95,9 @@
     "react-test-renderer": "^16.4.2",
     "storybook-addon-styled-component-theme": "^1.0.7",
     "styled-components": "^3.4.8",
-    "webpack": "^3.10.0"
+    "webpack": "^4.28.4",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.2.1"
   },
   "resolutions": {
     "eslint-scope": "3.7.1"

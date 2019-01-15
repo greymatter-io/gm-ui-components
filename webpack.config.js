@@ -1,6 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = {
   entry: "./src/components/index.js",
@@ -27,15 +29,26 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/
       },
-      // TODO: Troubleshoot path resolution for static assets. We're using url-loader for jpg/gif files in the meantime.
-      // See issue https://github.com/DecipherNow/gm-ui-components/issues/213
-      // {
-      //   use: ["file-loader"],
-      //   test: /\.(jpg|gif)$/
-      // },
       {
-        use: ["url-loader"],
-        test: /\.(eot|png|jpg|gif|ttf|woff|woff2)$/
+        test: /\.(jpg|gif)$/,
+        use: [
+          "file-loader",
+          {
+            loader: "image-webpack-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(eot|png|jpg|gif|ttf|woff|woff2)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              // Images larger than 10 KB won’t be inlined
+              limit: 10 * 1024
+            }
+          }
+        ]
       },
       {
         test: /\.svg$/,
@@ -79,5 +92,6 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [new BundleAnalyzerPlugin({ analyzerMode: "static" })]
 };
