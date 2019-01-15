@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, select } from "@storybook/addon-knobs/react";
+import { text, select } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 import { Radio } from "components";
 

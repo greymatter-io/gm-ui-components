@@ -5,6 +5,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 
 module.exports = {
+  mode: "production",
   entry: "./src/components/index.js",
   resolve: {
     modules: [path.resolve(__dirname, "src"), "node_modules"],
@@ -25,8 +26,11 @@ module.exports = {
   module: {
     rules: [
       {
-        use: "babel-loader",
+        use: {
+          loader: "babel-loader"
+        },
         test: /\.js$/,
+
         exclude: /node_modules/
       },
       {

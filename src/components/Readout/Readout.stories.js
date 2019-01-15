@@ -2,7 +2,7 @@ import React from "react";
 import { IconSummary } from "../";
 
 import { storiesOf } from "@storybook/react";
-import { boolean, object } from "@storybook/addon-knobs/react";
+import { boolean, object } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import ReadoutGroup from "../ReadoutGroup/ReadoutGroup";

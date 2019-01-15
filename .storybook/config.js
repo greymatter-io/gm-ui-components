@@ -3,7 +3,7 @@ import React from "react";
 import { configure, addDecorator } from "@storybook/react";
 import { setDefaults } from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
-import { withKnobs } from "@storybook/addon-knobs/react";
+import { withKnobs } from "@storybook/addon-knobs";
 // import { checkA11y } from "@storybook/addon-a11y";
 import backgrounds from "@storybook/addon-backgrounds";
 import PropTypesTable from "./PropTypesTable";

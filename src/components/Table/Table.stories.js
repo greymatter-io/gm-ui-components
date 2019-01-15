@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, object, color } from "@storybook/addon-knobs/react";
+import { select, object, color } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import Table from "./Table";

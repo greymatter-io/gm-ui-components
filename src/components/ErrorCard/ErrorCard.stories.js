@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { text } from "@storybook/addon-knobs/react";
+import { text } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import ErrorCard from "./ErrorCard";

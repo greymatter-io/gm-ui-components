@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { text, number, select, boolean } from "@storybook/addon-knobs/react";
+import { text, number, select, boolean } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import InputField from "./InputField";

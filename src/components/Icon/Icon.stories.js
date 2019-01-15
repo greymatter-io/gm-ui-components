@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
-import { select, number, color, text } from "@storybook/addon-knobs/react";
+import { select, number, color, text } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import Icon from ".";
