@@ -4,7 +4,7 @@ import { text } from "@storybook/addon-knobs";
 import { withInfo } from "@storybook/addon-info";
 
 import LayoutSection from "./LayoutSection";
-import { Readout, ReadoutGroup, IconBell, IconSummary } from "../";
+import { Readout, ReadoutGroup, IconBell, IconSummary } from "../index.js";
 
 const stories = storiesOf("Components|Layout Section", module);
 
