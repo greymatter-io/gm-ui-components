@@ -4,7 +4,7 @@ import { configure, addDecorator } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs";
-// import { checkA11y } from "@storybook/addon-a11y";
+
 import { withBackgrounds } from "@storybook/addon-backgrounds";
 import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
@@ -23,7 +23,6 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 // add withKnobs globally so we don't need to import it into individual stories
-// addDecorator(checkA11y);
 addDecorator(withKnobs);
 addDecorator(
   withBackgrounds([
@@ -51,7 +50,7 @@ addDecorator(
         backgroundColor: "rgba(200,200,200,.2)"
       }
     }, // Overrides styles of addon
-    // TableComponent: PropTypesTable,
+    TableComponent: PropTypesTable,
     components: {}, // Overrides components used to display markdown. Warning! This option's name will be likely deprecated in favor to "components" with the same API in 3.3 release. Follow this PR #1501 for details
     maxPropsIntoLine: 1, // Max props to display per line in source code
     maxPropObjectKeys: 10,
