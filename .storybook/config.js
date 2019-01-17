@@ -22,17 +22,8 @@ const req = require.context("../src/", true, /\.stories\.js$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
-// add withKnobs globally so we don't need to import it into individual stories
-addDecorator(withKnobs);
-addDecorator(
-  withBackgrounds([
-    { name: "COLOR_BACKGROUND_A", value: COLOR_BACKGROUND_A, default: true },
-    { name: "COLOR_BACKGROUND_B", value: COLOR_BACKGROUND_B },
-    { name: "COLOR_BACKGROUND_C", value: COLOR_BACKGROUND_C }
-  ])
-);
 
-// addon-info
+// addon-info. This should always be the first decorator.
 addDecorator(
   withInfo({
     header: true, // Toggles display of header with component name and description
@@ -57,6 +48,15 @@ addDecorator(
     maxPropArrayLength: 10,
     maxPropStringLength: 100
   })
+);
+// add withKnobs globally so we don't need to import it into individual stories
+addDecorator(withKnobs);
+addDecorator(
+  withBackgrounds([
+    { name: "COLOR_BACKGROUND_A", value: COLOR_BACKGROUND_A, default: true },
+    { name: "COLOR_BACKGROUND_B", value: COLOR_BACKGROUND_B },
+    { name: "COLOR_BACKGROUND_C", value: COLOR_BACKGROUND_C }
+  ])
 );
 
 const themes = [

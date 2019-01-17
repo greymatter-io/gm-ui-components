@@ -43,7 +43,6 @@ function storyTemplate(fileName) {
   return `import React from "react";
 import { storiesOf } from "@storybook/react";
 import { text, boolean } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 import ${fileName} from "./${fileName}";
 
@@ -51,9 +50,14 @@ const stories = storiesOf("Components|${fileName}", module);
 
 stories.add(
   "default",
-  withInfo("Add component description here")(() => {
+  () => {
     return <${fileName} />;
-  })
+  },
+  {
+    info: {
+      text: "Add component description here. Accepts markdown."
+    }
+  }
 );
 `;
 }

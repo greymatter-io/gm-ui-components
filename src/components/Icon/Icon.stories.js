@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { select, number, color, text } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
@@ -238,9 +237,7 @@ const stories = storiesOf("Components|Icons", module);
 stories
   .add(
     "Icon",
-    withInfo(
-      "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
-    )(() => {
+    () => {
       const IconBell = Glyphs.IconBell;
       return (
         <IconBell
@@ -258,13 +255,17 @@ stories
           size={text("size", "100px")}
         />
       );
-    })
+    },
+    {
+      info: {
+        text:
+          "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
+      }
+    }
   )
   .add(
     "Icon with Custom Glyph",
-    withInfo(
-      "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
-    )(() => {
+    () => {
       return (
         <Icon
           backgroundStyle={select(
@@ -283,21 +284,35 @@ stories
           </svg>
         </Icon>
       );
-    })
+    },
+    {
+      info: {
+        text:
+          "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
+      }
+    }
   )
-  .add("Glyph Gallery", () => {
-    // withInfo causes massive slowdown.
-    return (
-      <GalleryIconList>
-        {glyphNames.map(glyph => {
-          let Glyph = Glyphs[glyph];
-          return (
-            <GalleryIconDemo key={glyph}>
-              <Glyph glyphColor="#000000" size="40px" />
-              <GalleryIconLabel>{glyph}</GalleryIconLabel>
-            </GalleryIconDemo>
-          );
-        })}
-      </GalleryIconList>
-    );
-  });
+  .add(
+    "Glyph Gallery",
+    () => {
+      return (
+        <GalleryIconList>
+          {glyphNames.map(glyph => {
+            let Glyph = Glyphs[glyph];
+            return (
+              <GalleryIconDemo key={glyph}>
+                <Glyph glyphColor="#000000" size="40px" />
+                <GalleryIconLabel>{glyph}</GalleryIconLabel>
+              </GalleryIconDemo>
+            );
+          })}
+        </GalleryIconList>
+      );
+    },
+    {
+      info: {
+        text:
+          "An gallery of all available glyphs with their respective component names."
+      }
+    }
+  );

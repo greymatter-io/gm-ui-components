@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { text, number, boolean } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 import Textarea from "./Textarea";
 
@@ -9,7 +8,7 @@ const stories = storiesOf("Components|Textarea", module);
 
 stories.add(
   "default",
-  withInfo("A text input component with label and optional hint.")(() => {
+  () => {
     return (
       <Textarea
         autoFocus={boolean("autoFocus", false)}
@@ -20,5 +19,10 @@ stories.add(
         maxLength={number("maxLength", 25)}
       />
     );
-  })
+  },
+  {
+    info: {
+      text: "A text input component with label and optional hint."
+    }
+  }
 );

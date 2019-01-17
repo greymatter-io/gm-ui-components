@@ -2,7 +2,6 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { number, select, text, boolean } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 import { IconBell } from "components/Glyphs";
 import Button from "./Button";
@@ -16,9 +15,7 @@ const orientations = ["vertical", "horizontal"];
 stories
   .add(
     "Button",
-    withInfo(
-      "A React component that renders a button and includes base styling, used to trigger actions."
-    )(() => (
+    () => (
       <Button
         active={boolean("active", false)}
         label={text("label", "Hello World")}
@@ -32,7 +29,13 @@ stories
         size={select("size", sizes, "normal")}
         tabIndex={number("tabIndex", 0)}
       />
-    ))
+    ),
+    {
+      info: {
+        text:
+          "A React component that renders a button and includes base styling, used to trigger actions."
+      }
+    }
   )
   .add(
     "Button Types",

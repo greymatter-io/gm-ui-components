@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, object, color } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
+import { select, object } from "@storybook/addon-knobs";
 
 import Table from "./Table";
 
@@ -68,7 +67,7 @@ const data = [
 
 stories.add(
   "default",
-  withInfo("A table component.")(() => {
+  () => {
     return (
       <Table
         columns={object("columns", columns)}
@@ -83,5 +82,10 @@ stories.add(
         onRowClick={rowData => console.log(rowData)}
       />
     );
-  })
+  },
+  {
+    info: {
+      text: "A table component."
+    }
+  }
 );

@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { text, boolean } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 import Tab from "./Tab";
 
@@ -9,9 +8,7 @@ const stories = storiesOf("Components|Tabs", module);
 
 stories.add(
   "default",
-  withInfo(
-    "An individual Tab component that is meant to be used as a child of TabGroup."
-  )(() => {
+  () => {
     return (
       <Tab
         clickAction={() => alert("hello")}
@@ -20,5 +17,11 @@ stories.add(
         disabled={boolean("disabled", false)}
       />
     );
-  })
+  },
+  {
+    info: {
+      text:
+        "An individual Tab component that is meant to be used as a child of TabGroup."
+    }
+  }
 );
