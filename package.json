@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "webpack -p",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "deploy-storybook": "storybook-to-ghpages",
@@ -35,7 +35,7 @@
     "prepublishOnly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "npm run storybook",
-    "storybook": "start-storybook -p 9009 -s public",
+    "storybook": "start-storybook -p 9009",
     "test": "node scripts/test.js --env=jsdom",
     "update-deps": "npm-check . --skip-unused -u"
   },
@@ -83,7 +83,6 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3",
     "husky": "^0.14.3",
-    "image-webpack-loader": "^4.6.0",
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0",
     "jest-junit": "^5.1.0",
