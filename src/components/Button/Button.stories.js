@@ -39,27 +39,37 @@ stories
   )
   .add(
     "Button Types",
-    withInfo("Demonstrating Button types.")(() => (
+    () => (
       <React.Fragment>
         {types.map(type => (
           <Button type={type} label={type} key={type} clickAction={() => {}} />
         ))}
       </React.Fragment>
-    ))
+    ),
+    {
+      info: {
+        text: "Demonstrating Button types."
+      }
+    }
   )
   .add(
     "Button Sizes",
-    withInfo("Demonstrating Button sizes.")(() => (
+    () => (
       <React.Fragment>
         {sizes.map(size => (
           <Button size={size} label={size} key={size} clickAction={() => {}} />
         ))}
       </React.Fragment>
-    ))
+    ),
+    {
+      info: {
+        text: "Demonstrating Button sizes."
+      }
+    }
   )
   .add(
     "Button Orientations",
-    withInfo("Demonstrating Button orientations.")(() => (
+    () => (
       <React.Fragment>
         {orientations.map(orientation => (
           <Button
@@ -72,5 +82,10 @@ stories
           </Button>
         ))}
       </React.Fragment>
-    ))
+    ),
+    {
+      info: {
+        text: "Demonstrating Button orientations."
+      }
+    }
   );
