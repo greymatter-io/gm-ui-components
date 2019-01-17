@@ -292,27 +292,18 @@ stories
       }
     }
   )
-  .add(
-    "Glyph Gallery",
-    () => {
-      return (
-        <GalleryIconList>
-          {glyphNames.map(glyph => {
-            let Glyph = Glyphs[glyph];
-            return (
-              <GalleryIconDemo key={glyph}>
-                <Glyph glyphColor="#000000" size="40px" />
-                <GalleryIconLabel>{glyph}</GalleryIconLabel>
-              </GalleryIconDemo>
-            );
-          })}
-        </GalleryIconList>
-      );
-    },
-    {
-      info: {
-        text:
-          "An gallery of all available glyphs with their respective component names."
-      }
-    }
-  );
+  .add("Glyph Gallery", () => {
+    return (
+      <GalleryIconList>
+        {glyphNames.map(glyph => {
+          let Glyph = Glyphs[glyph];
+          return (
+            <GalleryIconDemo key={glyph}>
+              <Glyph glyphColor="#000000" size="40px" />
+              <GalleryIconLabel>{glyph}</GalleryIconLabel>
+            </GalleryIconDemo>
+          );
+        })}
+      </GalleryIconList>
+    );
+  });
