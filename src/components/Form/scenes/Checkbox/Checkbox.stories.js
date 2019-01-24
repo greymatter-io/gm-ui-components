@@ -1,8 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, select } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
+import { text, select } from "@storybook/addon-knobs";
 
 import Checkbox from "./Checkbox";
 
@@ -10,7 +9,7 @@ const stories = storiesOf("Components|Checkbox", module);
 
 stories.add(
   "default",
-  withInfo("A checkbox form input with a label.")(() => {
+  () => {
     return (
       <Checkbox
         labelPosition={select(
@@ -25,5 +24,10 @@ stories.add(
         }}
       />
     );
-  })
+  },
+  {
+    info: {
+      text: "A checkbox form input with a label."
+    }
+  }
 );

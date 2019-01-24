@@ -382,221 +382,241 @@ const DemoNavigationItem = styled.a`
   }
 `;
 
-stories.add("Styles", () => (
-  <DemoCanvas>
-    <DemoHeading>Style Variables</DemoHeading>
-    <DemoDescription>
-      Use the style variables included in your project instead of hardcoding
-      pixel and color values.
-    </DemoDescription>
+stories.add(
+  "Styles",
+  () => (
+    <DemoCanvas>
+      <DemoHeading>Style Variables</DemoHeading>
+      <DemoDescription>
+        Use the style variables included in your project instead of hardcoding
+        pixel and color values.
+      </DemoDescription>
 
-    <DemoNavigation>
-      <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>
-      <DemoNavigationItem href="#Color">Color</DemoNavigationItem>
-      <DemoNavigationItem href="#Typography">Typography</DemoNavigationItem>
-    </DemoNavigation>
+      <DemoNavigation>
+        <DemoNavigationItem href="#Layout">Layout</DemoNavigationItem>
+        <DemoNavigationItem href="#Color">Color</DemoNavigationItem>
+        <DemoNavigationItem href="#Typography">Typography</DemoNavigationItem>
+      </DemoNavigation>
 
-    <DemoSection name="Layout">
-      <DemoSubSection name="Spacing">
-        <DemoDescription>
-          Instead of using pixel values for object sizing attributes, use a
-          multiple of the theme's spacing size. This will help to maintain
-          overall consistency in layout and component sizing.
-        </DemoDescription>
-        <SpacingDemo
-          demoVar={spacingScale(0.25)}
-          demoVarName={"spacingScale(0.25)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(0.5)}
-          demoVarName={"spacingScale(0.5)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(1)}
-          demoVarName={"spacingScale(1)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(1.5)}
-          demoVarName={"spacingScale(1.5)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(2)}
-          demoVarName={"spacingScale(2)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(3)}
-          demoVarName={"spacingScale(3)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(4)}
-          demoVarName={"spacingScale(4)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(5)}
-          demoVarName={"spacingScale(5)"}
-        />
-        <SpacingDemo
-          demoVar={spacingScale(6)}
-          demoVarName={"spacingScale(6)"}
-        />
-      </DemoSubSection>
+      <DemoSection name="Layout">
+        <DemoSubSection name="Spacing">
+          <DemoDescription>
+            Instead of using pixel values for object sizing attributes, use a
+            multiple of the theme's spacing size. This will help to maintain
+            overall consistency in layout and component sizing.
+          </DemoDescription>
+          <SpacingDemo
+            demoVar={spacingScale(0.25)}
+            demoVarName={"spacingScale(0.25)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(0.5)}
+            demoVarName={"spacingScale(0.5)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(1)}
+            demoVarName={"spacingScale(1)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(1.5)}
+            demoVarName={"spacingScale(1.5)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(2)}
+            demoVarName={"spacingScale(2)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(3)}
+            demoVarName={"spacingScale(3)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(4)}
+            demoVarName={"spacingScale(4)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(5)}
+            demoVarName={"spacingScale(5)"}
+          />
+          <SpacingDemo
+            demoVar={spacingScale(6)}
+            demoVarName={"spacingScale(6)"}
+          />
+        </DemoSubSection>
 
-      <DemoSubSection name="Rounding">
-        <DemoDescription>
-          Rounding corners can make shapes feel more cohesive and unified.
-          Prefer rounded shapes to pointed shapes. In interfaces with high
-          information density or overall visual complexity, use smaller radii to
-          save space, just as you would reduce font or margin size.
-        </DemoDescription>
-        <RadiusDemo demoVar={RADIUS_05} demoVarName={"RADIUS_05"} />
-        <RadiusDemo demoVar={RADIUS_1} demoVarName={"RADIUS_1"} />
-        <RadiusDemo demoVar={RADIUS_2} demoVarName={"RADIUS_2"} />
-        <RadiusDemo demoVar={RADIUS_3} demoVarName={"RADIUS_3"} />
-        <RadiusDemo demoVar={RADIUS_4} demoVarName={"RADIUS_4"} />
-        <RadiusDemo demoVar={RADIUS_5} demoVarName={"RADIUS_5"} />
-        <RadiusDemo demoVar={RADIUS_6} demoVarName={"RADIUS_6"} />
-        <RadiusDemo demoVar={RADIUS_7} demoVarName={"RADIUS_7"} />
-        <RadiusDemo demoVar={RADIUS_8} demoVarName={"RADIUS_8"} />
-      </DemoSubSection>
-    </DemoSection>
+        <DemoSubSection name="Rounding">
+          <DemoDescription>
+            Rounding corners can make shapes feel more cohesive and unified.
+            Prefer rounded shapes to pointed shapes. In interfaces with high
+            information density or overall visual complexity, use smaller radii
+            to save space, just as you would reduce font or margin size.
+          </DemoDescription>
+          <RadiusDemo demoVar={RADIUS_05} demoVarName={"RADIUS_05"} />
+          <RadiusDemo demoVar={RADIUS_1} demoVarName={"RADIUS_1"} />
+          <RadiusDemo demoVar={RADIUS_2} demoVarName={"RADIUS_2"} />
+          <RadiusDemo demoVar={RADIUS_3} demoVarName={"RADIUS_3"} />
+          <RadiusDemo demoVar={RADIUS_4} demoVarName={"RADIUS_4"} />
+          <RadiusDemo demoVar={RADIUS_5} demoVarName={"RADIUS_5"} />
+          <RadiusDemo demoVar={RADIUS_6} demoVarName={"RADIUS_6"} />
+          <RadiusDemo demoVar={RADIUS_7} demoVarName={"RADIUS_7"} />
+          <RadiusDemo demoVar={RADIUS_8} demoVarName={"RADIUS_8"} />
+        </DemoSubSection>
+      </DemoSection>
 
-    <DemoSection name="Color">
-      <DemoSubSection name="Intent Colors">
-        <DemoDescription>
-          Use Intent colors to hint at interactable elements, or to indicate the
-          type of effect an action could have or has had. Use with links,
-          buttons, notification badges, and the like.
-        </DemoDescription>
-        <ColorDemo
-          demoVar={COLOR_INTENT_HIGHLIGHT}
-          demoVarName={"COLOR_INTENT_HIGHLIGHT"}
-        />
-        <ColorDemo
-          demoVar={COLOR_INTENT_SUCCESS}
-          demoVarName={"COLOR_INTENT_SUCCESS"}
-        />
-        <ColorDemo
-          demoVar={COLOR_INTENT_INFO}
-          demoVarName={"COLOR_INTENT_INFO"}
-        />
-        <ColorDemo
-          demoVar={COLOR_INTENT_WARNING}
-          demoVarName={"COLOR_INTENT_WARNING"}
-        />
-        <ColorDemo
-          demoVar={COLOR_INTENT_DANGER}
-          demoVarName={"COLOR_INTENT_DANGER"}
-        />
-      </DemoSubSection>
+      <DemoSection name="Color">
+        <DemoSubSection name="Intent Colors">
+          <DemoDescription>
+            Use Intent colors to hint at interactable elements, or to indicate
+            the type of effect an action could have or has had. Use with links,
+            buttons, notification badges, and the like.
+          </DemoDescription>
+          <ColorDemo
+            demoVar={COLOR_INTENT_HIGHLIGHT}
+            demoVarName={"COLOR_INTENT_HIGHLIGHT"}
+          />
+          <ColorDemo
+            demoVar={COLOR_INTENT_SUCCESS}
+            demoVarName={"COLOR_INTENT_SUCCESS"}
+          />
+          <ColorDemo
+            demoVar={COLOR_INTENT_INFO}
+            demoVarName={"COLOR_INTENT_INFO"}
+          />
+          <ColorDemo
+            demoVar={COLOR_INTENT_WARNING}
+            demoVarName={"COLOR_INTENT_WARNING"}
+          />
+          <ColorDemo
+            demoVar={COLOR_INTENT_DANGER}
+            demoVarName={"COLOR_INTENT_DANGER"}
+          />
+        </DemoSubSection>
 
-      <DemoSubSection name="Border Colors">
-        <DemoDescription>
-          Use borders sparingly. Prefer using keyline color, because it will be
-          tinted by the colors underneath it. However, when many layers are
-          required (consider a horizontal toolbar with a shadow, above a series
-          of vertical file columns using borders), consider using KEYLINE_SOLID
-          to prevent the distracting accumulation of tints. Consider
-          implementing borders using the spread attribute of a box shadow.
-        </DemoDescription>
-        <ColorLineDemo demoVar={COLOR_KEYLINE} demoVarName={"COLOR_KEYLINE"} />
-        <ColorLineDemo
-          demoVar={COLOR_KEYLINE_SOLID}
-          demoVarName={"COLOR_KEYLINE_SOLID"}
-        />
-      </DemoSubSection>
+        <DemoSubSection name="Border Colors">
+          <DemoDescription>
+            Use borders sparingly. Prefer using keyline color, because it will
+            be tinted by the colors underneath it. However, when many layers are
+            required (consider a horizontal toolbar with a shadow, above a
+            series of vertical file columns using borders), consider using
+            KEYLINE_SOLID to prevent the distracting accumulation of tints.
+            Consider implementing borders using the spread attribute of a box
+            shadow.
+          </DemoDescription>
+          <ColorLineDemo
+            demoVar={COLOR_KEYLINE}
+            demoVarName={"COLOR_KEYLINE"}
+          />
+          <ColorLineDemo
+            demoVar={COLOR_KEYLINE_SOLID}
+            demoVarName={"COLOR_KEYLINE_SOLID"}
+          />
+        </DemoSubSection>
 
-      <DemoSubSection name="Background Colors">
-        <DemoDescription>
-          Differences in background color should be used to represent clear
-          divisions in application layout. Prefer visually simple layouts with
-          few color changes. Too many backgrounds can make an interface feel
-          blocky and incoherent.
-        </DemoDescription>
-        <ColorBackgroundDemo
-          demoVar={COLOR_BACKGROUND_A}
-          demoVarName={"COLOR_BACKGROUND_A"}
-        />
-        <ColorBackgroundDemo
-          demoVar={COLOR_BACKGROUND_B}
-          demoVarName={"COLOR_BACKGROUND_B"}
-        />
-        <ColorBackgroundDemo
-          demoVar={COLOR_BACKGROUND_C}
-          demoVarName={"COLOR_BACKGROUND_C"}
-        />
-      </DemoSubSection>
+        <DemoSubSection name="Background Colors">
+          <DemoDescription>
+            Differences in background color should be used to represent clear
+            divisions in application layout. Prefer visually simple layouts with
+            few color changes. Too many backgrounds can make an interface feel
+            blocky and incoherent.
+          </DemoDescription>
+          <ColorBackgroundDemo
+            demoVar={COLOR_BACKGROUND_A}
+            demoVarName={"COLOR_BACKGROUND_A"}
+          />
+          <ColorBackgroundDemo
+            demoVar={COLOR_BACKGROUND_B}
+            demoVarName={"COLOR_BACKGROUND_B"}
+          />
+          <ColorBackgroundDemo
+            demoVar={COLOR_BACKGROUND_C}
+            demoVarName={"COLOR_BACKGROUND_C"}
+          />
+        </DemoSubSection>
 
-      <DemoSubSection name="Brand Colors">
-        <DemoDescription>
-          Use Brand colors where the company's visual style needs to be
-          represented directly. Consider using only in places where the logo may
-          appear. Avoid using for interaction colors like links and buttons.
-        </DemoDescription>
-        <ColorDemo demoVar={COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
-        <ColorDemo demoVar={COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
-      </DemoSubSection>
+        <DemoSubSection name="Brand Colors">
+          <DemoDescription>
+            Use Brand colors where the company's visual style needs to be
+            represented directly. Consider using only in places where the logo
+            may appear. Avoid using for interaction colors like links and
+            buttons.
+          </DemoDescription>
+          <ColorDemo demoVar={COLOR_BRAND_A} demoVarName={"COLOR_BRAND_A"} />
+          <ColorDemo demoVar={COLOR_BRAND_B} demoVarName={"COLOR_BRAND_B"} />
+        </DemoSubSection>
 
-      <DemoSubSection name="Opacity">
-        <DemoDescription>
-          Stick to the basic palette of opacity values to limit subjective
-          colors across an application. Levels 100, 70, and 50 may be used to
-          lighten text for captions or similar uses, where appropriate.
-        </DemoDescription>
-        <OpacityDemo demoVar={OPACITY_100} demoVarName={"OPACITY_100"} />
-        <OpacityDemo demoVar={OPACITY_70} demoVarName={"OPACITY_70"} />
-        <OpacityDemo demoVar={OPACITY_50} demoVarName={"OPACITY_50"} />
-        <OpacityDemo demoVar={OPACITY_15} demoVarName={"OPACITY_15"} />
-      </DemoSubSection>
-    </DemoSection>
+        <DemoSubSection name="Opacity">
+          <DemoDescription>
+            Stick to the basic palette of opacity values to limit subjective
+            colors across an application. Levels 100, 70, and 50 may be used to
+            lighten text for captions or similar uses, where appropriate.
+          </DemoDescription>
+          <OpacityDemo demoVar={OPACITY_100} demoVarName={"OPACITY_100"} />
+          <OpacityDemo demoVar={OPACITY_70} demoVarName={"OPACITY_70"} />
+          <OpacityDemo demoVar={OPACITY_50} demoVarName={"OPACITY_50"} />
+          <OpacityDemo demoVar={OPACITY_15} demoVarName={"OPACITY_15"} />
+        </DemoSubSection>
+      </DemoSection>
 
-    <DemoSection name="Typography">
-      <DemoSubSection name="Font Sizes">
-        <DemoDescription>
-          When in doubt, use the base size. Prefer using horizontal or vertical
-          negative space to differentiate elements, when possible.
-        </DemoDescription>
-        <FontSizeDemo demoVar={FONT_SIZE_XS} demoVarName={"FONT_SIZE_XS"} />
-        <FontSizeDemo demoVar={FONT_SIZE_SM} demoVarName={"FONT_SIZE_SM"} />
-        <FontSizeDemo demoVar={FONT_SIZE_BASE} demoVarName={"FONT_SIZE_BASE"} />
-        <FontSizeDemo demoVar={FONT_SIZE_MD} demoVarName={"FONT_SIZE_MD"} />
-        <FontSizeDemo demoVar={FONT_SIZE_LG} demoVarName={"FONT_SIZE_LG"} />
-        <FontSizeDemo
-          demoVar={FONT_SIZE_TITLE}
-          demoVarName={"FONT_SIZE_TITLE"}
-        />
-        <FontSizeDemo demoVar={FONT_SIZE_HERO} demoVarName={"FONT_SIZE_HERO"} />
-      </DemoSubSection>
+      <DemoSection name="Typography">
+        <DemoSubSection name="Font Sizes">
+          <DemoDescription>
+            When in doubt, use the base size. Prefer using horizontal or
+            vertical negative space to differentiate elements, when possible.
+          </DemoDescription>
+          <FontSizeDemo demoVar={FONT_SIZE_XS} demoVarName={"FONT_SIZE_XS"} />
+          <FontSizeDemo demoVar={FONT_SIZE_SM} demoVarName={"FONT_SIZE_SM"} />
+          <FontSizeDemo
+            demoVar={FONT_SIZE_BASE}
+            demoVarName={"FONT_SIZE_BASE"}
+          />
+          <FontSizeDemo demoVar={FONT_SIZE_MD} demoVarName={"FONT_SIZE_MD"} />
+          <FontSizeDemo demoVar={FONT_SIZE_LG} demoVarName={"FONT_SIZE_LG"} />
+          <FontSizeDemo
+            demoVar={FONT_SIZE_TITLE}
+            demoVarName={"FONT_SIZE_TITLE"}
+          />
+          <FontSizeDemo
+            demoVar={FONT_SIZE_HERO}
+            demoVarName={"FONT_SIZE_HERO"}
+          />
+        </DemoSubSection>
 
-      <DemoSubSection name="Font Weights">
-        <DemoDescription>
-          When in doubt, use the base weight. Use special weights only where
-          necessary to reinforce visual heirarchy.
-        </DemoDescription>
-        <FontWeightDemo
-          demoVar={FONT_WEIGHT_BASE}
-          demoVarName={"FONT_WEIGHT_BASE"}
-        />
-        <FontWeightDemo
-          demoVar={FONT_WEIGHT_SEMIBOLD}
-          demoVarName={"FONT_WEIGHT_SEMIBOLD"}
-        />
-        <FontWeightDemo
-          demoVar={FONT_WEIGHT_BOLD}
-          demoVarName={"FONT_WEIGHT_BOLD"}
-        />
-      </DemoSubSection>
+        <DemoSubSection name="Font Weights">
+          <DemoDescription>
+            When in doubt, use the base weight. Use special weights only where
+            necessary to reinforce visual heirarchy.
+          </DemoDescription>
+          <FontWeightDemo
+            demoVar={FONT_WEIGHT_BASE}
+            demoVarName={"FONT_WEIGHT_BASE"}
+          />
+          <FontWeightDemo
+            demoVar={FONT_WEIGHT_SEMIBOLD}
+            demoVarName={"FONT_WEIGHT_SEMIBOLD"}
+          />
+          <FontWeightDemo
+            demoVar={FONT_WEIGHT_BOLD}
+            demoVarName={"FONT_WEIGHT_BOLD"}
+          />
+        </DemoSubSection>
 
-      <DemoSubSection name="Fonts">
-        <DemoDescription>
-          Font Stacks are compositions of Font Groups. All Font Stacks are
-          backed by the operating system default sans-serif Font Group, and may
-          include specialized fonts. Use FONT_STACK_BRAND sparingly, and keep it
-          limited to large headings.
-        </DemoDescription>
-        <FontDemo demoVar={FONT_STACK_BRAND} demoVarName={"FONT_STACK_BRAND"} />
-        <FontDemo demoVar={FONT_STACK_BASE} demoVarName={"FONT_STACK_BASE"} />
-        <FontDemo demoVar={FONT_STACK_CODE} demoVarName={"FONT_STACK_CODE"} />
-      </DemoSubSection>
-    </DemoSection>
-  </DemoCanvas>
-));
+        <DemoSubSection name="Fonts">
+          <DemoDescription>
+            Font Stacks are compositions of Font Groups. All Font Stacks are
+            backed by the operating system default sans-serif Font Group, and
+            may include specialized fonts. Use FONT_STACK_BRAND sparingly, and
+            keep it limited to large headings.
+          </DemoDescription>
+          <FontDemo
+            demoVar={FONT_STACK_BRAND}
+            demoVarName={"FONT_STACK_BRAND"}
+          />
+          <FontDemo demoVar={FONT_STACK_BASE} demoVarName={"FONT_STACK_BASE"} />
+          <FontDemo demoVar={FONT_STACK_CODE} demoVarName={"FONT_STACK_CODE"} />
+        </DemoSubSection>
+      </DemoSection>
+    </DemoCanvas>
+  ),
+  {
+    info: { header: false }
+  }
+);

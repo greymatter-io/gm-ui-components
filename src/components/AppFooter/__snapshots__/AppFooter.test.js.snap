@@ -116,6 +116,7 @@ exports[`A Footer container should render 1`] = `
 
 @media all and (min-width:800px) {
   .c0 {
+    height: 40px;
     -webkit-flex-wrap: no-wrap;
     -ms-flex-wrap: no-wrap;
     flex-wrap: no-wrap;

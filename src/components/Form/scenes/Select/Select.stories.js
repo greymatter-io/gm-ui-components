@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, select } from "@storybook/addon-knobs/react";
+import { text, select } from "@storybook/addon-knobs";
 import { Select } from "components";
 
 const stories = storiesOf("Components|Select", module);
