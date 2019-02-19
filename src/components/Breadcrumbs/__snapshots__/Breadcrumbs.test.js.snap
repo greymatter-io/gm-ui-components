@@ -5,15 +5,24 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
+  min-width: 2.5em;
   max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c1:hover,
+.c1:focus {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c1:before {
+  display: inline-block;
   opacity: 0.5;
   padding: 0 4px;
   content: ">";
@@ -23,7 +32,6 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 }
 
 .c1 > * {
-  text-overflow: ellipsis;
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -58,9 +66,9 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 <ol
@@ -68,21 +76,18 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
 >
   <li
     className="c1"
-    onClick={[Function]}
   >
     Test 1
   </li>
   <li
     className="c1"
-    onClick={[Function]}
   >
     ...
   </li>
   <li
     className="c1"
-    onClick={[Function]}
   >
-    Testing a really lon...
+    Testing a really long breadcrumb item
   </li>
 </ol>
 `;
@@ -92,15 +97,24 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
+  min-width: 2.5em;
   max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c1:hover,
+.c1:focus {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c1:before {
+  display: inline-block;
   opacity: 0.5;
   padding: 0 4px;
   content: ">";
@@ -110,7 +124,6 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 }
 
 .c1 > * {
-  text-overflow: ellipsis;
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -145,9 +158,9 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 <ol
@@ -155,27 +168,23 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 >
   <li
     className="c1"
-    onClick={[Function]}
   >
     Test 1
   </li>
   <li
     className="c1"
-    onClick={[Function]}
   >
     Test 2
   </li>
   <li
     className="c1"
-    onClick={[Function]}
   >
     Test 3
   </li>
   <li
     className="c1"
-    onClick={[Function]}
   >
-    Testing a really lon...
+    Testing a really long breadcrumb item
   </li>
 </ol>
 `;
