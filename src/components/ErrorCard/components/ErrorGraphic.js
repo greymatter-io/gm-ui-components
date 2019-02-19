@@ -1,5 +1,9 @@
 import React from "react";
 
+import { COLOR_INTENT_HIGHLIGHT } from "style/styleVariables";
+
+const GRAPHIC_COLOR = COLOR_INTENT_HIGHLIGHT;
+
 export function ErrorGraphic() {
   return (
     <svg
@@ -19,7 +23,7 @@ export function ErrorGraphic() {
           id="Desktop-HD"
           transform="translate(-628, -358)"
           fillRule="nonzero"
-          stroke="#00AB2A"
+          stroke={GRAPHIC_COLOR}
           strokeWidth="2"
         >
           <g id="Group" transform="translate(629, 359)">
@@ -27,7 +31,7 @@ export function ErrorGraphic() {
               <path
                 d="M87.5,175 C135.824916,175 175,135.824916 175,87.5 C175,39.1750844 135.824916,-5.68434189e-14 87.5,-5.68434189e-14 C39.1750844,-5.68434189e-14 -5.68434189e-14,39.1750844 -5.68434189e-14,87.5 C-5.68434189e-14,135.824916 39.1750844,175 87.5,175 Z"
                 id="Oval-Copy-2"
-                fill="#FFFFFF"
+                fill="none"
                 strokeLinecap="round"
                 strokeDasharray="1,8"
                 transform="translate(87.500000, 87.500000) scale(-1, 1) translate(-87.500000, -87.500000) "
