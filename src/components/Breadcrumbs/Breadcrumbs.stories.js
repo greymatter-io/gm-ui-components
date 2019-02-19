@@ -10,18 +10,6 @@ const defaultCrumbs = [
   "Breadcrumb Item With Longer Text",
   "System",
   "Data",
-  "System",
-  "Data",
-  "System",
-  "Data",
-  "System",
-  "Data",
-  "System",
-  "Data",
-  "System",
-  "Data",
-  "System",
-  "Data",
   "Graphs"
 ];
 const breadCrumbsInfo =

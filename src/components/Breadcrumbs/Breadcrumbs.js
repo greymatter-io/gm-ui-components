@@ -14,7 +14,6 @@ export const BreadcrumbsContainer = styled.ol`
   flex-direction: row;
   height: inherit;
   align-items: stretch;
-  flex-wrap: wrap;
   flex-wrap: nowrap;
 `;
 
