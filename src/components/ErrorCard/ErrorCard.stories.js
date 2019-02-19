@@ -9,9 +9,7 @@ const stories = storiesOf("Components|Error Card", module);
 
 stories.add(
   "default",
-  withInfo(
-    "A stateless card component that renders an error message and an icon. By default the card renders an 'exclamation' icon, but you can pass it any icon you'd like using a render prop."
-  )(() => (
+  withInfo("A stateless card component that renders an error message.")(() => (
     <ErrorCard
       errorMsg={text("errorMsg", "Uh oh")}
       errorDetail={text("errorDetail", "Something went wrong.")}

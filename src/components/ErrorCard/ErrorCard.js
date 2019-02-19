@@ -12,7 +12,7 @@ import ErrorGraphic from "./components/ErrorGraphic";
  * @param {function} icon
  * @returns react component
  */
-const ErrorCard = ({ errorMsg = "Error", errorDetail, icon, ...props }) => {
+const ErrorCard = ({ errorMsg = "Error", errorDetail, ...props }) => {
   return (
     <ErrorBox {...props}>
       <ErrorGraphic />
@@ -24,8 +24,7 @@ const ErrorCard = ({ errorMsg = "Error", errorDetail, icon, ...props }) => {
 
 ErrorCard.propTypes = {
   errorDetail: PropTypes.string,
-  errorMsg: PropTypes.string,
-  icon: PropTypes.func
+  errorMsg: PropTypes.string
 };
 
 ErrorCard.displayName = "ErrorCard";
