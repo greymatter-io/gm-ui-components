@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled, { css, withTheme } from "styled-components";
 import { transparentize } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
@@ -31,6 +31,17 @@ export const horizontalStyles = css`
   width: ${spacingScale(2)};
 `;
 
+// Inherit theme from styled components class, vs through wrapping LoadingSpinner in
+// the withComponent() HOC to avoid a production bug:
+// https://github.com/styled-components/styled-components/issues/1709#issuecomment-428460130
+// TODO: Refactor this after upgrading to v4
+export const Stop = styled.stop.attrs({
+  stopColor: ({ theme, transparent }) =>
+    transparent
+      ? transparentize(0.85, theme.brandColor || SPINNER_COLOR)
+      : theme.brandColor || SPINNER_COLOR
+})``;
+
 export function LoadingSpinner(props) {
   return (
     <SpinnerSVG
@@ -42,9 +53,9 @@ export function LoadingSpinner(props) {
     >
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor={transparentize(0.85, SPINNER_COLOR)} />
-          <stop offset="33%" stopColor={transparentize(0.85, SPINNER_COLOR)} />
-          <stop offset="100%" stopColor={SPINNER_COLOR} />
+          <Stop offset="0%" transparent />
+          <Stop offset="33%" transparent />
+          <Stop offset="100%" />
         </linearGradient>
       </defs>
       <circle
@@ -62,7 +73,10 @@ export function LoadingSpinner(props) {
 }
 
 LoadingSpinner.propTypes = {
-  orientation: PropTypes.oneOf(["vertical", "horizontal"])
+  orientation: PropTypes.oneOf(["vertical", "horizontal"]),
+  theme: PropTypes.shape({ brandColor: PropTypes.string })
 };
+
+LoadingSpinner.displayName = "LoadingSpinner";
 
 export default LoadingSpinner;

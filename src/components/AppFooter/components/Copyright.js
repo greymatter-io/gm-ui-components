@@ -4,10 +4,10 @@ import { COLOR_KEYLINE } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const Copyright = styled.p`
-  font-size: 50%; /* Unique instance of font size. Do not associate with theme variable. */
+  font-size: 60%; /* Unique instance of font size. Do not associate with theme variable. */
   margin: 0;
   flex: 0 0 100%;
-  text-align: center;
+  text-align: ${props => (props.useExternalLinks ? "center" : "right")};
   transition: opacity 0.2s ease;
   cursor: default;
   border-top: 1px solid ${COLOR_KEYLINE};

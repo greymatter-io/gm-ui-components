@@ -9,7 +9,10 @@ describe("Spinner", () => {
   });
 
   it("renders the correct styles when passed a vertical prop", () => {
-    const aSpinner = shallow(<Spinner orientation="vertical" />);
+    const aSpinner = shallow(
+      <Spinner orientation="vertical" theme={{ brandColor: "blue" }} />
+    );
+
     const SpinnerSVG = aSpinner
       .find("LoadingSpinner")
       .dive()
@@ -20,7 +23,9 @@ describe("Spinner", () => {
   });
 
   it("renders the correct styles when passed a horizontal prop", () => {
-    const aSpinner = shallow(<Spinner orientation="horizontal" />);
+    const aSpinner = shallow(
+      <Spinner orientation="horizontal" theme={{ brandColor: "blue" }} />
+    );
     const SpinnerSVG = aSpinner
       .find("LoadingSpinner")
       .dive()

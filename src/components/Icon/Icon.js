@@ -26,7 +26,7 @@ Icon.propTypes = {
   borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   glyphColor: PropTypes.string,
   glyphName: PropTypes.string,
   size: PropTypes.string,
@@ -36,7 +36,6 @@ Icon.propTypes = {
 Icon.defaultProps = {
   backgroundColor: "currentColor",
   backgroundOpacity: 1,
-  backgroundSizeRatio: 1,
   borderColor: "currentColor",
   borderOpacity: 1,
   borderWidth: 1,
@@ -85,7 +84,6 @@ export default function Icon({
       )}
       <g title={glyphName} fill={glyphColor}>
         <title>{title ? title : glyphName}</title>
-        {/* render a custom svg as children or a built in glyph */}
         {children}
       </g>
     </StyledSVG>

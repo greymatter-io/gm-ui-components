@@ -3,6 +3,11 @@
 exports[`LoadingSpinner matches snapshot 1`] = `
 <SpinnerSVG
   height="100"
+  theme={
+    Object {
+      "brandColor": "blue",
+    }
+  }
   viewBox="0 0 100 100"
   width="100"
   xmlns="http://www.w3.org/2000/svg"
@@ -15,17 +20,16 @@ exports[`LoadingSpinner matches snapshot 1`] = `
       y1="0%"
       y2="100%"
     >
-      <stop
+      <Stop
         offset="0%"
-        stopColor="rgba(10,171,42,0.15)"
+        transparent={true}
       />
-      <stop
+      <Stop
         offset="33%"
-        stopColor="rgba(10,171,42,0.15)"
+        transparent={true}
       />
-      <stop
+      <Stop
         offset="100%"
-        stopColor="#0aab2a"
       />
     </linearGradient>
   </defs>

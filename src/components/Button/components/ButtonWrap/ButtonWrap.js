@@ -54,10 +54,14 @@ const ButtonWrap = styled.button`
   &:focus,
   &:focus:active {
     outline: none;
-    border: 1px solid ${COLOR_INTENT_HIGHLIGHT};
-    box-shadow: 0 0 0 ${FORM_HIGHLIGHT_SIZE}px
-        ${transparentize(1 - OPACITY_50, COLOR_INTENT_HIGHLIGHT)},
-      inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)};
+    border: 1px solid
+      ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
+    box-shadow: ${({ theme }) => css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px
+        ${transparentize(
+          1 - OPACITY_50,
+          theme.brandColor || COLOR_INTENT_HIGHLIGHT
+        )},
+      inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)}`}};
     z-index: 10;
     position: relative;
 

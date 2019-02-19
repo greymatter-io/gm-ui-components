@@ -1,3 +1,5 @@
+import { css } from "styled-components";
+
 import {
   COLOR_INTENT_HIGHLIGHT,
   OPACITY_50,
@@ -12,11 +14,10 @@ import { transparentize, mix } from "polished";
 export const FORM_HIGHLIGHT_SIZE = 2.5;
 
 export function formInteractionStyles() {
-  return `
-
+  return css`
     &:invalid {
       box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
-      
+
       &:required {
         background-color: ${mix(
           OPACITY_15,
@@ -27,7 +28,6 @@ export function formInteractionStyles() {
     }
 
     &:required {
-
     }
 
     &:disabled {
@@ -35,7 +35,6 @@ export function formInteractionStyles() {
     }
 
     &:valid {
-
       &:required {
         background-color: ${mix(
           OPACITY_15,
@@ -46,7 +45,8 @@ export function formInteractionStyles() {
         &[type="checkbox"],
         &[type="radio"] {
           &:after {
-            border-color: ${COLOR_INTENT_HIGHLIGHT};
+            border-color: ${({ theme }) =>
+              theme.brandColor || COLOR_INTENT_HIGHLIGHT};
           }
         }
       }
@@ -63,16 +63,22 @@ export function formInteractionStyles() {
       border-style: dashed !important;
     }
 
-    &:hover { }
+    &:hover {
+    }
 
     &:focus,
     &:focus:active {
       outline: none;
-      border: 1px solid ${COLOR_INTENT_HIGHLIGHT};
-      box-shadow: 0 0 0 ${FORM_HIGHLIGHT_SIZE}px
-        ${transparentize(1 - OPACITY_50, COLOR_INTENT_HIGHLIGHT)};
+      border: ${({ theme }) =>
+        css`1px solid ${theme.brandColor || COLOR_INTENT_HIGHLIGHT}`};
+      box-shadow: ${({ theme }) =>
+        css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
+          1 - OPACITY_50,
+          theme.brandColor || COLOR_INTENT_HIGHLIGHT
+        )}`};
     }
 
-    &:active { }
+    &:active {
+    }
   `;
 }
