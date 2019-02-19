@@ -6,11 +6,20 @@ import { spacingScale } from "style/styleFunctions";
 
 export const Breadcrumb = styled.li`
   flex: 0 1 auto;
-  display: flex;
   overflow: hidden;
+  min-width: 2.5em;
   max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    flex-shrink: 0;
+  }
 
   &:before {
+    display: inline-block;
     opacity: ${props => (props.hideDelimiter ? 0 : OPACITY_50)};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
@@ -18,7 +27,6 @@ export const Breadcrumb = styled.li`
   }
 
   > * {
-    text-overflow: ellipsis;
     color: inherit;
     text-decoration: none;
 
@@ -39,16 +47,8 @@ export const Breadcrumb = styled.li`
  * @returns JSX.Element
  */
 
-export default function BreadcrumbItem({ item, expand }) {
-  return (
-    <Breadcrumb
-      onClick={() => {
-        if (item === "...") expand();
-      }}
-    >
-      {item.length > 20 ? item.substr(0, 20).concat("...") : item}
-    </Breadcrumb>
-  );
+export default function BreadcrumbItem({ item }) {
+  return <Breadcrumb>{item}</Breadcrumb>;
 }
 
 BreadcrumbItem.propTypes = {

@@ -15,6 +15,7 @@ export const BreadcrumbsContainer = styled.ol`
   height: inherit;
   align-items: stretch;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
 `;
 
 class Breadcrumbs extends React.Component {
