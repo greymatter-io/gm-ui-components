@@ -59,7 +59,7 @@
     "autoprefixer": "^9.4.8",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.5",
     "babel-plugin-react-docgen": "^2.0.2",
     "babel-plugin-styled-components": "^1.10.0",
@@ -81,11 +81,11 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3",
     "husky": "^1.3.1",
-    "jest": "^23.6.0",
-    "jest-cli": "^23.6.0",
-    "jest-junit": "^5.1.0",
+    "jest": "^24.1.0",
+    "jest-cli": "^24.1.0",
+    "jest-junit": "^6.3.0",
     "jest-styled-components": "^6.3.1",
-    "junit-merge": "^1.3.0",
+    "junit-merge": "^2.0.0",
     "npm-check": "^5.9.0",
     "prettier": "^1.16.4",
     "prop-types": "^15.7.2",
@@ -144,7 +144,9 @@
       "raf/polyfill",
       "<rootDir>/config/setupTests.js"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/config/jestSetupTestFramework.js",
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/jestSetupTestFramework.js"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
