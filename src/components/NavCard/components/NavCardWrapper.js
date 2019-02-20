@@ -7,7 +7,7 @@ import {
   COLOR_BACKGROUND_B,
   COLOR_BACKGROUND_C,
   COLOR_INTENT_HIGHLIGHT,
-  FONT_WEIGHT_REGULAR,
+  FONT_WEIGHT_BASE,
   BORDER_RADIUS_BASE,
   FONT_STACK_BASE
 } from "style/styleVariables";
@@ -23,7 +23,7 @@ const TAB_WIDTH_BASE = "1%";
 // Note: Edge requires the overflow: hidden property to maintian
 // equal sized cards. flex-basis is not sufficient!
 const NavCardWrapper = styled.div`
-  font-weight: ${FONT_WEIGHT_REGULAR};
+  font-weight: ${FONT_WEIGHT_BASE};
   font-family: ${FONT_STACK_BASE};
   flex: 1 1 ${TAB_WIDTH_BASE};
   background-color: ${COLOR_TAB_BACKGROUND_BASE};

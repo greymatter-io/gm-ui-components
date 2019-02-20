@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import {
   FONT_SIZE_BASE,
-  APP_FOOTER_HEIGHT,
   ZINDEX_STICKY,
   COLOR_CONTENT,
   FONT_STACK_BASE,
   COLOR_BACKGROUND_A
 } from "style/styleVariables";
+
+const APP_FOOTER_HEIGHT = spacingScale(5);
 
 const Footer = styled.footer`
   user-select: none;

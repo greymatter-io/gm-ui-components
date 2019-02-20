@@ -1,16 +1,15 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { text } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 import LayoutSection from "./LayoutSection";
-import { Readout, ReadoutGroup, IconBell, IconSummary } from "../";
+import { Readout, ReadoutGroup, IconBell, IconSummary } from "../index.js";
 
 const stories = storiesOf("Components|Layout Section", module);
 
 stories.add(
   "default",
-  withInfo("A flexbox layout component")(() => {
+  () => {
     return (
       <LayoutSection
         title={text("title", "Test Layout")}
@@ -46,5 +45,10 @@ stories.add(
         </ReadoutGroup>
       </LayoutSection>
     );
-  })
+  },
+  {
+    info: {
+      text: `A flexbox layout component`
+    }
+  }
 );
