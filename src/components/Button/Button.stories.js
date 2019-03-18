@@ -1,8 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { number, select, text, boolean } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
+import { number, select, text, boolean } from "@storybook/addon-knobs";
 
 import { IconBell } from "components/Glyphs";
 import Button from "./Button";
@@ -16,9 +15,7 @@ const orientations = ["vertical", "horizontal"];
 stories
   .add(
     "Button",
-    withInfo(
-      "A React component that renders a button and includes base styling, used to trigger actions."
-    )(() => (
+    () => (
       <Button
         active={boolean("active", false)}
         label={text("label", "Hello World")}
@@ -32,31 +29,47 @@ stories
         size={select("size", sizes, "normal")}
         tabIndex={number("tabIndex", 0)}
       />
-    ))
+    ),
+    {
+      info: {
+        text:
+          "A React component that renders a button and includes base styling, used to trigger actions."
+      }
+    }
   )
   .add(
     "Button Types",
-    withInfo("Demonstrating Button types.")(() => (
+    () => (
       <React.Fragment>
         {types.map(type => (
           <Button type={type} label={type} key={type} clickAction={() => {}} />
         ))}
       </React.Fragment>
-    ))
+    ),
+    {
+      info: {
+        text: "Demonstrating Button types."
+      }
+    }
   )
   .add(
     "Button Sizes",
-    withInfo("Demonstrating Button sizes.")(() => (
+    () => (
       <React.Fragment>
         {sizes.map(size => (
           <Button size={size} label={size} key={size} clickAction={() => {}} />
         ))}
       </React.Fragment>
-    ))
+    ),
+    {
+      info: {
+        text: "Demonstrating Button sizes."
+      }
+    }
   )
   .add(
     "Button Orientations",
-    withInfo("Demonstrating Button orientations.")(() => (
+    () => (
       <React.Fragment>
         {orientations.map(orientation => (
           <Button
@@ -69,5 +82,10 @@ stories
           </Button>
         ))}
       </React.Fragment>
-    ))
+    ),
+    {
+      info: {
+        text: "Demonstrating Button orientations."
+      }
+    }
   );

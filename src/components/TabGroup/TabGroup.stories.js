@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { text } from "@storybook/addon-knobs";
 
 import Tab from "components/Tab";
@@ -10,7 +9,7 @@ const stories = storiesOf("Components|Tabs", module);
 
 stories.add(
   "TabGroup",
-  withInfo("A TabGroup component that wraps individual Tab components")(() => {
+  () => {
     return (
       <TabGroup label={text("label", "Tab Group")}>
         <Tab clickAction={() => {}} label="Active Tab" active />
@@ -18,5 +17,10 @@ stories.add(
         <Tab clickAction={() => {}} label="Disabled" disabled />
       </TabGroup>
     );
-  })
+  },
+  {
+    info: {
+      text: "A TabGroup component that wraps individual Tab components"
+    }
+  }
 );

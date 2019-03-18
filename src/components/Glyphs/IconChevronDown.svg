@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Chevron-Down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Chevron-Down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12.1553301,13.7840097 L16.625,9.31433982 C16.9178932,9.0214466 17.392767,9.0214466 17.6856602,9.31433982 C17.9785534,9.60723304 17.9785534,10.0821068 17.6856602,10.375 L12.1553301,15.9053301 L6.62499998,10.375 C6.33210676,10.0821068 6.33210676,9.60723304 6.62499998,9.31433982 C6.9178932,9.0214466 7.39276693,9.0214466 7.68566015,9.31433982 L12.1553301,13.7840097 Z" id="Down" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

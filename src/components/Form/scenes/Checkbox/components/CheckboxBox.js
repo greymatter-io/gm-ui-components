@@ -31,7 +31,7 @@ const CheckboxBox = styled(InputBox).attrs({
 
   &:indeterminate {
     &:enabled {
-      background: ${COLOR_INTENT_HIGHLIGHT};
+      background: ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
     }
 
     &:after {

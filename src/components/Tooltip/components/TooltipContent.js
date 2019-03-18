@@ -13,35 +13,22 @@ const TooltipContent = styled.div`
   opacity: 0;
   position: absolute;
   text-align: left;
-  transition: opacity 1s;
-  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
   white-space: normal;
-  /* Position the tooltip */
-  ${props => getPosition(props.position)};
-`;
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  margin: ${spacingScale(1)};
 
-function getPosition(position) {
-  switch (position) {
-    case "top":
-      return `
-      bottom: 150%;
-      left: 50%; 
-      margin-left: -80px;`;
-    case "left":
-      return `
-      right: 120%;
-      top: -5px;`;
-    case "right":
-      return `
-      top: -5px;
-      left: 120%;`;
-    case "bottom":
-    default:
-      return `
-      top: 150%;
-      left: 50%; 
-      margin-left: -80px`;
-  }
-}
+  ${props =>
+    props.visible
+      ? `
+          opacity: 1;
+          visibility: visible;
+        `
+      : `
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+        `};
+`;
 
 export default TooltipContent;

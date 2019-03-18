@@ -2,12 +2,12 @@
 
 exports[`Copyright should render when screen is 800px or higher 1`] = `
 .c0 {
-  font-size: 50%;
+  font-size: 60%;
   margin: 0;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  text-align: center;
+  text-align: right;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
   cursor: default;

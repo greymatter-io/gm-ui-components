@@ -1,8 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, object } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
+import { text, object } from "@storybook/addon-knobs";
 
 import NavCard from "components/NavCard";
 
@@ -13,9 +12,7 @@ const stories = storiesOf("Components|NavCard", module);
 stories
   .add(
     "default",
-    withInfo(
-      "A complex card-style navigation tab element, with space for optional small data readouts."
-    )(() => {
+    () => {
       return (
         <a href="#" style={{ textDecoration: "none" }}>
           <NavCard
@@ -28,13 +25,17 @@ stories
           />
         </a>
       );
-    })
+    },
+    {
+      info: {
+        text:
+          "A complex card-style navigation tab element, with space for optional small data readouts."
+      }
+    }
   )
   .add(
     "NavCard with children",
-    withInfo(
-      "NavCards may contain children for display purposes, such as sparklines."
-    )(() => {
+    () => {
       return (
         <a href="#" style={{ textDecoration: "none" }}>
           <NavCard
@@ -49,5 +50,11 @@ stories
           </NavCard>
         </a>
       );
-    })
+    },
+    {
+      info: {
+        text:
+          "NavCards may contain children for display purposes, such as sparklines."
+      }
+    }
   );

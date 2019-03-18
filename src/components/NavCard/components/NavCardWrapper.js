@@ -35,7 +35,6 @@ const NavCardWrapper = styled.div`
   flex: 1 1 ${TAB_WIDTH_BASE};
   border-radius: ${props => props.theme.RADIUS_05};
   min-height: ${spacingScale(8)};
-  margin: ${spacingScale(0.25)};
   position: relative;
   transition: all 0.15s ease;
   display: flex;

@@ -48,17 +48,24 @@ const Introduction = styled.div`
   }
 `;
 
-storiesOf(" Overview|Introduction", module).add("Introduction", () => {
-  return (
-    <Introduction>
-      <h1>Introduction</h1>
-      <p>
-        For detailed readme, issues, suggestions, and related projects, view the
-        <a href="https://github.com/DecipherNow/gm-ui-components">
-          Project Source
-        </a>
-        on GitHub.
-      </p>
-    </Introduction>
-  );
-});
+storiesOf(" Overview|Introduction", module).add(
+  "Introduction",
+  () => {
+    return (
+      <Introduction>
+        <h1>Introduction</h1>
+        <p>
+          For detailed readme, issues, suggestions, and related projects, view
+          the
+          <a href="https://github.com/DecipherNow/gm-ui-components">
+            Project Source
+          </a>
+          on GitHub.
+        </p>
+      </Introduction>
+    );
+  },
+  {
+    info: { header: false }
+  }
+);

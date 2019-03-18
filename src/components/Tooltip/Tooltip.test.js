@@ -1,17 +1,14 @@
 import React from "react";
-import renderer from "react-test-renderer";
-import { render } from "enzyme";
+import { shallow } from "enzyme";
 
 import Tooltip from "./Tooltip";
 
 function renderTooltip(position) {
-  return renderer
-    .create(
-      <Tooltip content="Hello!" position={position}>
-        Hover over me
-      </Tooltip>
-    )
-    .toJSON();
+  return shallow(
+    <Tooltip content="Hello!" position={position}>
+      Hover over me
+    </Tooltip>
+  );
 }
 
 describe("Tooltip", () => {
@@ -28,7 +25,7 @@ describe("Tooltip", () => {
   });
 
   it("renders a tooltip div with the correct content", () => {
-    const wrapper = render(
+    const wrapper = shallow(
       <Tooltip content="Hello!" position={"top"}>
         Hover over me
       </Tooltip>

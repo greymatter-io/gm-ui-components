@@ -11,11 +11,10 @@ import { columnItemShape, dataItemShape } from "./types";
 export default function Table({
   columns = [],
   data = [],
-  onCellClick = () => {},
+  onRowClick = () => {},
   onSort = () => {},
   selectedRows = [],
   sortDataIndex,
-  accentColor,
   selectedRowStyle,
   ...props
 }) {
@@ -35,11 +34,10 @@ export default function Table({
       <tbody>
         {data.map((item, rowIndex) => (
           <TableRow
-            accentColor={accentColor}
             data={item}
             key={item.key}
             columns={columns}
-            onCellClick={onCellClick}
+            onRowClick={onRowClick}
             rowIndex={rowIndex}
             selectedRowStyle={selectedRowStyle}
             isSelected={selectedRows.some(
@@ -53,10 +51,9 @@ export default function Table({
 }
 
 Table.propTypes = {
-  accentColor: PropTypes.string,
   columns: PropTypes.arrayOf(columnItemShape), // An array of objects used to label and size columns
   data: PropTypes.arrayOf(dataItemShape), // An array of objects to populate the rows
-  onCellClick: PropTypes.func, // A function called when a user clicks a cell. Passes the row data, row index, and column dataIndex.
+  onRowClick: PropTypes.func, // A function called when a user clicks a row. Passes the row data, row index, and column dataIndex.
   onSort: PropTypes.func, // A function called when a user sorts a column. Passes the dataIndex of the column being sorted.
   selectedRowStyle: PropTypes.object, // A style object to pass to a row when selected
   selectedRows: PropTypes.arrayOf(PropTypes.number), // An array of indices of the currently selected rows

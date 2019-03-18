@@ -6,16 +6,17 @@ import { spacingScale } from "style/styleFunctions";
 import spinGradient from "./spinGradient";
 
 const backgroundImage = css`
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     ${props => transparentize(1, props.theme.COLOR_BRAND_A)} 40%,
     ${props => props.theme.COLOR_BRAND_A} 60%,
     ${props => transparentize(1, props.theme.COLOR_BRAND_A)}
-  );
+  ); */
 `;
 
 const pseudoElementShadow = css`
-  box-shadow: 0 0 1px ${props => transparentize(0.8, props.theme.COLOR_BRAND_A)};
+  /* box-shadow: 0 0 1px ${props =>
+    transparentize(0.8, props.theme.COLOR_BRAND_A)}; */
 `;
 
 export const LoadingSpinner = styled.div`
@@ -49,5 +50,7 @@ export const LoadingSpinner = styled.div`
     width: ${spacingScale(2)};
   `};
 `;
+
+LoadingSpinner.displayName = "LoadingSpinner";
 
 export default LoadingSpinner;

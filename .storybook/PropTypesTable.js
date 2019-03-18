@@ -23,7 +23,6 @@ const PropTypesTable = ({ propDefinitions }) => {
   const props = propDefinitions.map(
     ({ property, propType, required, defaultValue }) => {
       let type;
-
       if (propType.name === "enum") {
         type = propType.value.map(val => val.value).join(", \n");
       } else if (propType.name === "union") {
@@ -36,7 +35,7 @@ const PropTypesTable = ({ propDefinitions }) => {
         <tr key={property}>
           <td>{property}</td>
           <td>{type}</td>
-          <td>{defaultValue}</td>
+          <td>{String(defaultValue)}</td>
           <td>
             <Required>{required && "true"}</Required>
           </td>

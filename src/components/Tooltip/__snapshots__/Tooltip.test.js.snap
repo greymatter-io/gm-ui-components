@@ -1,159 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip correctly positions tooltip content based on position prop 1`] = `
-.c1 {
-  box-shadow: 0 0 0 1px;
-  padding: 8px;
-  width: 160px;
-  opacity: 0;
-  position: absolute;
-  text-align: left;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  visibility: hidden;
-  white-space: normal;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-}
-
-<div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+<Manager>
+  <Reference>
+    <Component />
+  </Reference>
+  <Popper
+    placement="top"
   >
-    Hello!
-  </div>
-</div>
+    <Component />
+  </Popper>
+</Manager>
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 2`] = `
-.c1 {
-  box-shadow: 0 0 0 1px;
-  padding: 8px;
-  width: 160px;
-  opacity: 0;
-  position: absolute;
-  text-align: left;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  visibility: hidden;
-  white-space: normal;
-  top: 150%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-}
-
-<div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+<Manager>
+  <Reference>
+    <Component />
+  </Reference>
+  <Popper
+    placement="bottom"
   >
-    Hello!
-  </div>
-</div>
+    <Component />
+  </Popper>
+</Manager>
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 3`] = `
-.c1 {
-  box-shadow: 0 0 0 1px;
-  padding: 8px;
-  width: 160px;
-  opacity: 0;
-  position: absolute;
-  text-align: left;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  visibility: hidden;
-  white-space: normal;
-  right: 120%;
-  top: -5px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-}
-
-<div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+<Manager>
+  <Reference>
+    <Component />
+  </Reference>
+  <Popper
+    placement="left"
   >
-    Hello!
-  </div>
-</div>
+    <Component />
+  </Popper>
+</Manager>
 `;
 
 exports[`Tooltip correctly positions tooltip content based on position prop 4`] = `
-.c1 {
-  box-shadow: 0 0 0 1px;
-  padding: 8px;
-  width: 160px;
-  opacity: 0;
-  position: absolute;
-  text-align: left;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  visibility: hidden;
-  white-space: normal;
-  top: -5px;
-  left: 120%;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
-}
-
-.c0:hover >:last-child {
-  opacity: 1;
-  visibility: visible;
-}
-
-<div
-  className="c0"
->
-  Hover over me
-  <div
-    className="c1"
-    style={Object {}}
+<Manager>
+  <Reference>
+    <Component />
+  </Reference>
+  <Popper
+    placement="right"
   >
-    Hello!
-  </div>
-</div>
+    <Component />
+  </Popper>
+</Manager>
 `;

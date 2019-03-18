@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { text } from "@storybook/addon-knobs";
-import { withInfo } from "@storybook/addon-info";
 
 import LayoutSection from "./LayoutSection";
-import { Readout, ReadoutGroup, IconBell, IconSummary } from "../";
+import { Readout, ReadoutGroup, IconBell, IconSummary } from "../index.js";
 
 const ThemedBackground = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_A};
@@ -15,7 +14,7 @@ const stories = storiesOf("Components|Layout Section", module);
 
 stories.add(
   "default",
-  withInfo("A flexbox layout component")(() => {
+  () => {
     return (
       <ThemedBackground>
         <LayoutSection
@@ -53,5 +52,10 @@ stories.add(
         </LayoutSection>
       </ThemedBackground>
     );
-  })
+  },
+  {
+    info: {
+      text: `A flexbox layout component`
+    }
+  }
 );

@@ -34,10 +34,9 @@ function generateButtonStyle(theme, type, renderBorder) {
 
   const colorStyles = css`
     background-color: ${baseColor};
-    border-color: ${renderBorder ? darken(0.1, baseColor) : `transparent`};
-    color: ${readableColor(
-      darken(0.1, baseColor)
-    )}; /* darkening the color first gives a more appealing result */
+    /* border-color: ${renderBorder ? darken(0.1, baseColor) : `transparent`};
+    color: ${readableColor(darken(0.1, baseColor))}; */
+    /* darkening the color first gives a more appealing result */
   `;
 
   return css`
