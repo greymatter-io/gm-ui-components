@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StoryContainer = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  color: ${props => props.theme.COLOR_CONTENT};
   width: 100%;
   display: flex;
   flex: 1 1 100%;
