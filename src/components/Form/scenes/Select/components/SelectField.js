@@ -17,7 +17,7 @@ const SelectField = styled.select`
   color: ${props => props.theme.COLOR_CONTENT};
   font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.theme.FONT_SIZE_BASE};
-  background: ${props => props.theme.COLOR_BACKGROUND_A};
+  background: ${props => props.theme.COLOR_BACKGROUND_B};
   position: relative;
   box-sizing: border-box;
   line-height: 1.5;
