@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { object, text } from "@storybook/addon-knobs";
+import { keenDark } from "style/styleVariables";
 
 import {
   ButtonGroup,
@@ -41,7 +42,7 @@ const toolbarItems = () => {
         flex: "1 1 auto"
       }}
     >
-      <Breadcrumbs crumbs={breadcrumbs} />
+      <Breadcrumbs crumbs={breadcrumbs} theme={keenDark} />
       <span>1.1.6</span>
       <ToolbarButtonGroup style={{ paddingRight: 0 }}>
         <Button

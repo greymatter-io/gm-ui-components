@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-import {
-  FONT_SIZE_BASE,
-  FONT_STACK_BASE,
-  COLOR_KEYLINE,
-  COLOR_CONTENT,
-  COLOR_BACKGROUND_A,
-  RADIUS_05,
-  OPACITY_50
-} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 import { formInteractionStyles } from "./InputFieldInteractionStyles";
 
@@ -17,15 +8,15 @@ const BORDER_WIDTH = 1;
 export const InputTextField = styled.input`
   ${formInteractionStyles};
   min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
-  border-radius: calc(${RADIUS_05} + ${BORDER_WIDTH}px);
-  border: ${BORDER_WIDTH}px solid ${COLOR_KEYLINE};
+  border-radius: calc(${props => props.theme.RADIUS_05} + ${BORDER_WIDTH}px);
+  border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_KEYLINE};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
   appearance: none;
   margin: 0;
-  color: ${COLOR_CONTENT};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_BASE};
-  background: ${COLOR_BACKGROUND_A};
+  color: ${props => props.theme.COLOR_CONTENT};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  background: ${props => props.theme.COLOR_BACKGROUND_B};
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.15s ease;
@@ -40,9 +31,9 @@ export const InputTextField = styled.input`
   }
 
   &::placeholder {
-    color: ${COLOR_CONTENT};
+    color: ${props => props.theme.COLOR_CONTENT};
     transition: inherit;
-    opacity: ${OPACITY_50};
+    opacity: ${props => props.theme.OPACITY_50};
   }
 `;
 

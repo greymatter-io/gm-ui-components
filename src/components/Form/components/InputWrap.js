@@ -4,6 +4,7 @@ import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`
   ${props => getPosition(props.labelPosition)};
+  color: ${props => props.theme.COLOR_CONTENT};
   font-family: ${FONT_STACK_BASE};
   display: flex;
   position: relative;

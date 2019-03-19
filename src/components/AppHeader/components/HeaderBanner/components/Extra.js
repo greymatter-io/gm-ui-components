@@ -1,18 +1,13 @@
 import styled from "styled-components";
-import { readableColor, mix } from "polished";
+import { mix } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
 
 // Z-index positions these above the preceding Banner Title in order to ensure they're visible above the Banner Title's shadow
 const Extra = styled.a`
   font-family: ${props => props.theme.FONT_STACK_BASE};
-  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_C)};
-  background: ${props =>
-    mix(
-      props.theme.OPACITY_15,
-      props.theme.COLOR_BACKGROUND_A,
-      props.theme.COLOR_BACKGROUND_C
-    )};
+  color: ${props => props.theme.COLOR_CONTENT};
+  background: ${props => mix(props.theme.OPACITY_15, "#fff", "#000")};
   border-radius: ${props => props.theme.RADIUS_05};
   font-size: ${props => props.theme.FONT_SIZE_SM};
   font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
@@ -30,12 +25,7 @@ const Extra = styled.a`
   }
 
   &:hover {
-    background: ${props =>
-      mix(
-        props.theme.OPACITY_50,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
-      )};
+    ${props => mix(props.theme.OPACITY_50, "#fff", "#000")};
   }
 `;
 

@@ -6,12 +6,12 @@ import BannerBackgroundImage from "./images/mesh-web.jpg";
 const HeaderWrapper = styled.div`
   font-family: ${props => props.theme.FONT_STACK_BASE};
   color: ${props => props.theme.COLOR_CONTENT};
-  background-color: ${props => props.theme.COLOR_BACKGROUND_C};
+  background-color: #000;
   background-image: linear-gradient(
       to right,
-      ${props => props.theme.COLOR_BACKGROUND_C},
-      ${props => transparentize(0.7, props.theme.COLOR_BACKGROUND_C)},
-      ${props => transparentize(1, props.theme.COLOR_BACKGROUND_C)}
+      #000,
+      ${transparentize(0.7, "#000")},
+      ${transparentize(1, "#000")}
     ),
     url(${BannerBackgroundImage});
   display: flex;
