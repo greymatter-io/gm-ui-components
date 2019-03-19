@@ -1,13 +1,11 @@
 import styled, { css } from "styled-components";
 
-import { readableColor } from "polished";
-
 import { spacingScale } from "style/styleFunctions";
 
 const APP_TOOLBAR_HEIGHT = spacingScale(4);
 const APP_TOOLBAR_FONT_SIZE = props => props.theme.FONT_SIZE_BASE;
 const APP_TOOLBAR_BACKGROUND_COLOR = "transparent";
-const APP_TOOLBAR_TEXT_COLOR = props => readableColor("#000");
+const APP_TOOLBAR_TEXT_COLOR = "#fff";
 
 const backgroundImage = css`
   background-image: linear-gradient(to top, transparent, #000);

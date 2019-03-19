@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { keenDark } from "style/styleVariables";
+
 import HeaderWrapper from "./components/HeaderWrapper";
 import HeaderToolbar from "./components/HeaderToolbar";
 import HeaderBanner from "./components/HeaderBanner";
@@ -18,9 +20,9 @@ AppHeader.propTypes = {
 
 function AppHeader({ title, extras = [], toolbarItems, ...props }) {
   return (
-    <HeaderWrapper {...props}>
-      <HeaderToolbar toolbarItems={toolbarItems} />
-      <HeaderBanner title={title} extras={extras} />
+    <HeaderWrapper {...props} theme={keenDark}>
+      <HeaderToolbar toolbarItems={toolbarItems} theme={keenDark} />
+      <HeaderBanner title={title} extras={extras} theme={keenDark} />
     </HeaderWrapper>
   );
 }
