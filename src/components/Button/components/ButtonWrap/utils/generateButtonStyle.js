@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { darken, readableColor } from "polished";
+import { darken, readableColor, getLuminance } from "polished";
 
 // Maps button types to a particular color
 function generateButtonTypeColors(theme, type) {
@@ -39,29 +39,56 @@ function generateButtonStyle(theme, type, renderBorder) {
     /* darkening the color first gives a more appealing result */
   `;
 
+  const interactionStyles =
+    getLuminance(baseColor) >= 0.5
+      ? css`
+          &:hover {
+            filter: saturate(120%) brightness(95%);
+          }
+
+          &:active {
+            transition-duration: 0s;
+            filter: saturate(80%) brightness(90%) contrast(110%);
+          }
+
+          &:focus {
+            z-index: 1;
+          }
+
+          &[disabled],
+          &[disabled]:hover,
+          &[disabled]:focus,
+          &[disabled]:active {
+            cursor: not-allowed;
+            filter: saturate(0) opacity(70%);
+          }
+        `
+      : css`
+          &:hover {
+            filter: saturate(120%) contrast(80%) brightness(1.1);
+          }
+
+          &:active {
+            transition-duration: 0s;
+            filter: saturate(120%) contrast(75%) brightness(1.15);
+          }
+
+          &:focus {
+            z-index: 1;
+          }
+
+          &[disabled],
+          &[disabled]:hover,
+          &[disabled]:focus,
+          &[disabled]:active {
+            cursor: not-allowed;
+            filter: saturate(0) opacity(70%);
+          }
+        `;
+
   return css`
     ${colorStyles};
-
-    &:hover {
-      filter: saturate(120%) brightness(95%);
-    }
-
-    &:active {
-      transition-duration: 0s;
-      filter: saturate(80%) brightness(90%) contrast(110%);
-    }
-
-    &:focus {
-      z-index: 1;
-    }
-
-    &[disabled],
-    &[disabled]:hover,
-    &[disabled]:focus,
-    &[disabled]:active {
-      cursor: not-allowed;
-      filter: saturate(0) opacity(70%);
-    }
+    ${interactionStyles};
   `;
 }
 
