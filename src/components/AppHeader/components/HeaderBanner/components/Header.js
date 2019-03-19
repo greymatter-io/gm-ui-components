@@ -15,7 +15,7 @@ const Header = styled.h1`
   z-index: 1;
 
   &::before {
-    background-color: ${props => props.theme.COLOR_BACKGROUND_C};
+    background-color: #000;
     content: "";
     display: block;
     filter: blur(${spacingScale(1.5)});

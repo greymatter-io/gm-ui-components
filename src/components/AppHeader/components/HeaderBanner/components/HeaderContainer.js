@@ -4,7 +4,7 @@ import { readableColor } from "polished";
 import { spacingScale } from "style/styleFunctions";
 
 const HeaderContainer = styled.div`
-  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_C)};
+  color: ${readableColor("#000")};
   padding: ${spacingScale(1)} ${spacingScale(2)} ${spacingScale(1)};
   transition: all 0.1s ease;
 
