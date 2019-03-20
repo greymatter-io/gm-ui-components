@@ -7,7 +7,7 @@ import { keen } from "style/styleVariables";
 // Z-index positions these above the preceding Banner Title in order to ensure they're visible above the Banner Title's shadow
 const Extra = styled.a`
   font-family: ${props => props.theme.FONT_STACK_BASE};
-  color: ${props => props.theme.COLOR_CONTENT};
+  color: #fff;
   background: ${props => mix(props.theme.OPACITY_15, "#fff", "#000")};
   border-radius: ${props => props.theme.RADIUS_05};
   font-size: ${props => props.theme.FONT_SIZE_SM};

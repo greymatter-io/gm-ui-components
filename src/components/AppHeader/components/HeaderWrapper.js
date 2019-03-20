@@ -6,7 +6,7 @@ import { keen } from "style/styleVariables";
 
 const HeaderWrapper = styled.div`
   font-family: ${props => props.theme.FONT_STACK_BASE};
-  color: ${props => props.theme.COLOR_CONTENT};
+  color: #fff;
   background-color: #000;
   background-image: linear-gradient(
       to right,
