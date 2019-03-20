@@ -6,6 +6,7 @@ import {
   FORM_HIGHLIGHT_SIZE,
   formInteractionStyles
 } from "./InputFieldInteractionStyles";
+import { keen } from "style/styleVariables";
 
 const BORDER_WIDTH = 1;
 
@@ -80,5 +81,9 @@ const InputBox = styled.input`
     }
   }
 `;
+
+InputBox.defaultProps = {
+  theme: keen
+};
 
 export default InputBox;

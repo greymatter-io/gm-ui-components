@@ -20,9 +20,9 @@ AppHeader.propTypes = {
 
 function AppHeader({ title, extras = [], toolbarItems, ...props }) {
   return (
-    <HeaderWrapper {...props} theme={keenDark}>
-      <HeaderToolbar toolbarItems={toolbarItems} theme={keenDark} />
-      <HeaderBanner title={title} extras={extras} theme={keenDark} />
+    <HeaderWrapper {...props}>
+      <HeaderToolbar toolbarItems={toolbarItems} />
+      <HeaderBanner title={title} extras={extras} />
     </HeaderWrapper>
   );
 }

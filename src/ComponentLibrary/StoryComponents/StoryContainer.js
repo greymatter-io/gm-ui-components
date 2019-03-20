@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keen } from "style/styleVariables";
 
 export const StoryContainer = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_A};
@@ -28,3 +29,7 @@ export const StoryContainer = styled.div`
     }
   }
 `;
+
+StoryContainer.defaultProps = {
+  theme: keen
+};

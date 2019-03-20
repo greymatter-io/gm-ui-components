@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { readableColor, mix } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const color = css`
   color: ${props =>
@@ -20,5 +21,9 @@ const NavCardKey = styled.dt`
   padding-right: ${spacingScale(1)};
   display: inline-block;
 `;
+
+NavCardKey.defaultProps = {
+  theme: keen
+};
 
 export default NavCardKey;

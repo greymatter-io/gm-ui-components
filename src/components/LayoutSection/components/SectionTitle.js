@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keen } from "style/styleVariables";
 
 const SectionTitle = styled.h3`
   color: inherit;
@@ -6,5 +7,9 @@ const SectionTitle = styled.h3`
   font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
   margin: 0;
 `;
+
+SectionTitle.defaultProps = {
+  theme: keen
+};
 
 export default SectionTitle;

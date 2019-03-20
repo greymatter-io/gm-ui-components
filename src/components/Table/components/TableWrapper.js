@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keen } from "style/styleVariables";
 
 const TableWrapper = styled.table`
   width: 100%;
@@ -10,6 +11,10 @@ const TableWrapper = styled.table`
   border-collapse: separate;
   border-spacing: 0;
 `;
+
+TableWrapper.defaultProps = {
+  theme: keen
+};
 
 TableWrapper.displayName = "TableWrapper";
 

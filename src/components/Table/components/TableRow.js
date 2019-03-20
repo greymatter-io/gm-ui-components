@@ -6,6 +6,7 @@ import { transparentize } from "polished";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
+import { keen } from "style/styleVariables";
 
 const TableRowElement = styled.tr.attrs({
   tabIndex: 0
@@ -28,6 +29,10 @@ const TableRowElement = styled.tr.attrs({
       ${props.selectedRowStyle};
     `};
 `;
+
+TableRowElement.defaultProps = {
+  theme: keen
+};
 
 TableRowElement.displayName = "TableRowElement";
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "../../../style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const LongLogo = styled.a`
   padding: 0 ${spacingScale(1)};
@@ -20,5 +21,9 @@ const LongLogo = styled.a`
     vertical-align: -3px;
   }
 `;
+
+LongLogo.defaultProps = {
+  theme: keen
+};
 
 export default LongLogo;

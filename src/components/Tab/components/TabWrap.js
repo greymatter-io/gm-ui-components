@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const activeStyles = css`
   box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
@@ -36,7 +37,7 @@ const TabWrap = styled.a.attrs({
     ${downStyles};
   }
 
-  // if active...
+  /* if active... */
   ${props =>
     props.active &&
     css`
@@ -59,5 +60,9 @@ const TabWrap = styled.a.attrs({
       }
     `};
 `;
+
+TabWrap.defaultProps = {
+  theme: keen
+};
 
 export default TabWrap;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const Header = styled.h1`
   font-size: ${props => props.theme.FONT_SIZE_TITLE};
@@ -27,5 +28,9 @@ const Header = styled.h1`
     z-index: -1;
   }
 `;
+
+Header.defaultProps = {
+  theme: keen
+};
 
 export default Header;

@@ -4,8 +4,8 @@ exports[`HeaderWrapper matches snapshot 1`] = `
 .c0 {
   font-family: sans-serif;
   color: blue;
-  background-color: red;
-  background-image: linear-gradient( to right,red,rgba(255,0,0,0.3),rgba(255,0,0,0) ),url(mesh-web.jpg);
+  background-color: #000;
+  background-image: linear-gradient( to right,#000,rgba(0,0,0,0.3),rgba(0,0,0,0) ),url(mesh-web.jpg);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

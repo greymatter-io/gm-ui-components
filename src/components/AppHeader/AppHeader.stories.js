@@ -42,7 +42,7 @@ const toolbarItems = () => {
         flex: "1 1 auto"
       }}
     >
-      <Breadcrumbs crumbs={breadcrumbs} theme={keenDark} />
+      <Breadcrumbs crumbs={breadcrumbs} />
       <span>1.1.6</span>
       <ToolbarButtonGroup style={{ paddingRight: 0 }}>
         <Button

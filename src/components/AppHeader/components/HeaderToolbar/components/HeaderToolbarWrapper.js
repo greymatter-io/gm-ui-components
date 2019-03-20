@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const APP_TOOLBAR_HEIGHT = spacingScale(4);
 const APP_TOOLBAR_FONT_SIZE = props => props.theme.FONT_SIZE_BASE;
@@ -24,5 +25,9 @@ const HeaderToolbarWrapper = styled.nav`
   background-size: 100% 100%;
   background-repeat: no-repeat;
 `;
+
+HeaderToolbarWrapper.defaultProps = {
+  theme: keen
+};
 
 export default HeaderToolbarWrapper;

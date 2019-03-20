@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
 import { formInteractionStyles } from "./InputFieldInteractionStyles";
+import { keen } from "style/styleVariables";
 
 const BORDER_WIDTH = 1;
 
@@ -29,5 +30,9 @@ const TextareaField = styled.textarea`
     opacity: ${props => props.theme.OPACITY_50};
   }
 `;
+
+TextareaField.defaultProps = {
+  theme: keen
+};
 
 export default TextareaField;

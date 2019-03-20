@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const ErrorContent = styled.div`
   align-items: center;
@@ -17,5 +18,9 @@ const ErrorContent = styled.div`
   padding-top: ${spacingScale(8)};
   padding-bottom: ${spacingScale(8)};
 `;
+
+ErrorContent.defaultProps = {
+  theme: keen
+};
 
 export default ErrorContent;

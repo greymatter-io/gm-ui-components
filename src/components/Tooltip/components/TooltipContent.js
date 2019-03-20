@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const TooltipContent = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_A};
@@ -30,5 +31,9 @@ const TooltipContent = styled.div`
           pointer-events: none;
         `};
 `;
+
+TooltipContent.defaultProps = {
+  theme: keen
+};
 
 export default TooltipContent;

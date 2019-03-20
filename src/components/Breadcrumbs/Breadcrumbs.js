@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import BreadcrumbItem from "./BreadcrumbItem";
+import { keen } from "style/styleVariables";
 
 export const BreadcrumbsContainer = styled.ol`
   font-family: ${props => props.theme.FONT_STACK_BASE};
@@ -16,6 +17,10 @@ export const BreadcrumbsContainer = styled.ol`
   align-items: stretch;
   flex-wrap: wrap;
 `;
+
+BreadcrumbsContainer.defaultProps = {
+  theme: keen
+};
 
 class Breadcrumbs extends React.Component {
   constructor(props) {

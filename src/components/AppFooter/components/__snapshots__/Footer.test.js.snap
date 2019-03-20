@@ -8,6 +8,7 @@ exports[`Footer should render 1`] = `
   user-select: none;
   overflow: hidden;
   padding: 0 4px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,6 +16,9 @@ exports[`Footer should render 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  color: #000;
+  background: #ffffff;
+  font-size: 14px;
   height: auto;
   min-height: 32px;
   -webkit-align-items: stretch;
@@ -45,6 +49,7 @@ exports[`Footer should render 1`] = `
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1010;
   }
 
   .c0 + * {

@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { keen } from "style/styleVariables";
 
 export const LoadingSpinnerWrap = styled.div`
   display: flex;
@@ -20,5 +21,9 @@ export const LoadingSpinnerWrap = styled.div`
     flex-direction: row;
   `};
 `;
+
+LoadingSpinnerWrap.defaultProps = {
+  theme: keen
+};
 
 export default LoadingSpinnerWrap;

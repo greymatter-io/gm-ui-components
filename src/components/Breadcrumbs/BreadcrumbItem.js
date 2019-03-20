@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 export const Breadcrumb = styled.li`
   flex: 0 1 auto;
@@ -32,6 +33,10 @@ export const Breadcrumb = styled.li`
     }
   }
 `;
+
+Breadcrumb.defaultProps = {
+  theme: keen
+};
 
 /**
  * Stateless functional React component that renders an individual breadcrumb item

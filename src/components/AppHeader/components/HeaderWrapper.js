@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { transparentize } from "polished";
 
 import BannerBackgroundImage from "./images/mesh-web.jpg";
+import { keen } from "style/styleVariables";
 
 const HeaderWrapper = styled.div`
   font-family: ${props => props.theme.FONT_STACK_BASE};
@@ -23,5 +24,9 @@ const HeaderWrapper = styled.div`
   background-repeat: no-repeat;
   overflow: hidden;
 `;
+
+HeaderWrapper.defaultProps = {
+  theme: keen
+};
 
 export default HeaderWrapper;

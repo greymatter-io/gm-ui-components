@@ -1,6 +1,5 @@
 import { PropTypes } from "prop-types";
 import React from "react";
-import { keenDark } from "style/styleVariables";
 
 import HeaderToolbarWrapper from "./components/HeaderToolbarWrapper";
 
@@ -15,7 +14,7 @@ HeaderToolbar.propTypes = {
  */
 function HeaderToolbar({ toolbarItems }) {
   return (
-    <HeaderToolbarWrapper theme={keenDark}>
+    <HeaderToolbarWrapper>
       {typeof toolbarItems === "function" && toolbarItems()}
     </HeaderToolbarWrapper>
   );

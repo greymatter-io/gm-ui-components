@@ -9,13 +9,8 @@ const ButtonGroup = styled.div`
   * + * {
     margin-left: ${spacingScale(0.5)};
   }
-  ${props => props.style};
 `;
 
 ButtonGroup.displayName = "ButtonGroup";
-
-ButtonGroup.propTypes = {
-  style: PropTypes.object
-};
 
 export default ButtonGroup;

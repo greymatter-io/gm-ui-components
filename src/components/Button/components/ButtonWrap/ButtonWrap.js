@@ -6,6 +6,7 @@ import { transparentize } from "polished";
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
+import { keen } from "style/styleVariables";
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
@@ -78,6 +79,10 @@ ButtonWrap.propTypes = {
   outline: PropTypes.bool,
   size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),
   type: PropTypes.oneOf(["default", "danger", "info", "warning", "primary"])
+};
+
+ButtonWrap.defaultProps = {
+  theme: keen
 };
 
 export default ButtonWrap;

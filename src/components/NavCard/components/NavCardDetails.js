@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { mix, readableColor } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const color = css`
   color: ${props =>
@@ -24,5 +25,9 @@ const NavCardDetails = styled.dl`
     margin-bottom: ${spacingScale(1)};
   }
 `;
+
+NavCardDetails.defaultProps = {
+  theme: keen
+};
 
 export default NavCardDetails;

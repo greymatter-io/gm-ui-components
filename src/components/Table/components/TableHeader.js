@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 
 import { columnItemShape } from "../types";
 import TableCell from "./TableCell";
+import { keen } from "style/styleVariables";
 
 // Use all of TableCell's styles, but with a <th> element instead of <td>
 const TableHeaderCell = styled(TableCell.withComponent("th"))`
@@ -17,6 +18,10 @@ const TableHeaderCell = styled(TableCell.withComponent("th"))`
       font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
     `};
 `;
+
+TableHeaderCell.defaultProps = {
+  theme: keen
+};
 
 TableHeaderCell.displayName = "TableHeaderCell";
 

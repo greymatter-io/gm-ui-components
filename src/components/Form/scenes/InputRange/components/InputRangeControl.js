@@ -6,6 +6,7 @@ import {
   formInteractionStyles,
   FORM_HIGHLIGHT_SIZE
 } from "../../../components/InputFieldInteractionStyles";
+import { keen } from "style/styleVariables";
 
 const BORDER_WIDTH = 2;
 const THUMB_SIZE = "1em";
@@ -165,5 +166,9 @@ const InputRangeControl = styled.input.attrs({
     }
   }
 `;
+
+InputRangeControl.defaultProps = {
+  theme: keen
+};
 
 export default InputRangeControl;

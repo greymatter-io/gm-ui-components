@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { mix, readableColor } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const color = css`
   color: ${props =>
@@ -36,5 +37,9 @@ const NavCardTitle = styled.div`
     text-transform: capitalize;
   }
 `;
+
+NavCardTitle.defaultProps = {
+  theme: keen
+};
 
 export default NavCardTitle;

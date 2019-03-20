@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE } from "style/styleVariables";
+import { FONT_STACK_BASE, keen } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`
@@ -15,6 +15,10 @@ const InputWrap = styled.label`
     user-select: none;
   }
 `;
+
+InputWrap.defaultProps = {
+  theme: keen
+};
 
 function getPosition(position) {
   switch (position) {

@@ -4,7 +4,8 @@ import { mix, darken } from "polished";
 import {
   OPACITY_15,
   COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C
+  COLOR_BACKGROUND_C,
+  keen
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
@@ -48,5 +49,9 @@ const NavCardGroup = styled.nav`
     }
   }
 `;
+
+NavCardGroup.defaultProps = {
+  theme: keen
+};
 
 export default NavCardGroup;

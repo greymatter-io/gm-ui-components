@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const Wrapper = styled.label`
   ${props => getPosition(props.labelPosition)};
@@ -10,6 +11,10 @@ const Wrapper = styled.label`
   width: fit-content;
   align-items: center;
 `;
+
+Wrapper.defaultProps = {
+  theme: keen
+};
 
 const CONTROL_SPACING = spacingScale(1);
 

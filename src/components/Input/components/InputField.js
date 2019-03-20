@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 export const InputField = styled.input.attrs({
   autoFocus: props => props.autofocus,
@@ -34,5 +35,9 @@ export const InputField = styled.input.attrs({
     outline: none;
   }
 `;
+
+InputField.defaultProps = {
+  theme: keen
+};
 
 export default InputField;

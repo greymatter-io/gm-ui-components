@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const LayoutSectionWrap = styled.section`
   color: ${props => props.theme.COLOR_CONTENT};
@@ -15,5 +16,9 @@ const LayoutSectionWrap = styled.section`
     margin-top: ${spacingScale(4)};
   }
 `;
+
+LayoutSectionWrap.defaultProps = {
+  theme: keen
+};
 
 export default LayoutSectionWrap;

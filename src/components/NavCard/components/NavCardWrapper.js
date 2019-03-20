@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { mix, darken } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const backgroundColor = css`
   background-color: ${props =>
@@ -59,5 +60,9 @@ const NavCardWrapper = styled.div`
     ${backgroundColorHover};
   }
 `;
+
+NavCardWrapper.defaultProps = {
+  theme: keen
+};
 
 export default NavCardWrapper;

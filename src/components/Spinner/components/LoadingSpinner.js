@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { transparentize } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
 
 import spinGradient from "./spinGradient";
+import { keen } from "style/styleVariables";
 
 export const SpinnerSVG = styled.svg`
   animation: ${spinGradient} 16s ease infinite;
@@ -15,6 +15,10 @@ export const SpinnerSVG = styled.svg`
   ${props =>
     props.orientation === "vertical" ? verticalStyles : horizontalStyles};
 `;
+
+SpinnerSVG.defaultProps = {
+  theme: keen
+};
 
 SpinnerSVG.displayName = "SpinnerSVG";
 
@@ -59,8 +63,7 @@ export function LoadingSpinner(props) {
 }
 
 LoadingSpinner.propTypes = {
-  orientation: PropTypes.oneOf(["vertical", "horizontal"]),
-  theme: PropTypes.shape({ brandColor: PropTypes.string })
+  orientation: PropTypes.oneOf(["vertical", "horizontal"])
 };
 
 LoadingSpinner.displayName = "LoadingSpinner";
