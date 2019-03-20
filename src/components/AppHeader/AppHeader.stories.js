@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { object, text } from "@storybook/addon-knobs";
+import { keenDark } from "style/styleVariables";
 
 import {
   ButtonGroup,

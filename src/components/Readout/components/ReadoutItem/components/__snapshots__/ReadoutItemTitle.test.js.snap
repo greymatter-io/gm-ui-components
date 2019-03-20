@@ -5,7 +5,7 @@ exports[`ReadoutItemTitle matches snapshot 1`] = `
   font-size: 14px;
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 600;
   min-height: 1em;
   display: inline-block;
 }

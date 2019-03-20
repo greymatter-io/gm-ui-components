@@ -1,18 +1,15 @@
 import styled from "styled-components";
-
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/styleVariables";
 
-export const InputHint = styled.small`
+const InputLabel = styled.p`
   margin: ${spacingScale(0.5)} 0;
-  font-size: ${props => props.theme.FONT_SIZE_XS};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
   color: ${props => props.theme.COLOR_CONTENT};
-  opacity: ${props => props.theme.OPACITY_50};
-  display: block;
 `;
 
-InputHint.defaultProps = {
+InputLabel.defaultProps = {
   theme: keen
 };
 
-export default InputHint;
+export default InputLabel;

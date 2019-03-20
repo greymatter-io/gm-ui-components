@@ -1,21 +1,13 @@
 import React from "react";
-
 import { configure, addDecorator } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs";
-
-import { withBackgrounds } from "@storybook/addon-backgrounds";
-import PropTypesTable from "./PropTypesTable";
-import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
 import { withThemesProvider } from "storybook-addon-styled-component-theme";
 
-import {
-  COLOR_BRAND_A,
-  COLOR_BACKGROUND_A,
-  COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C
-} from "./../src/style/styleVariables";
+import PropTypesTable from "./PropTypesTable";
+import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
+import { keen, keenDark } from "style/styleVariables";
 
 const req = require.context("../src/", true, /\.stories\.js$/);
 
@@ -51,18 +43,10 @@ addDecorator(
 );
 // add withKnobs globally so we don't need to import it into individual stories
 addDecorator(withKnobs);
-addDecorator(
-  withBackgrounds([
-    { name: "COLOR_BACKGROUND_A", value: COLOR_BACKGROUND_A, default: true },
-    { name: "COLOR_BACKGROUND_B", value: COLOR_BACKGROUND_B },
-    { name: "COLOR_BACKGROUND_C", value: COLOR_BACKGROUND_C }
-  ])
-);
 
-const themes = [
-  { name: "decipher", brandColor: COLOR_BRAND_A },
-  { name: "data", brandColor: "#1A66DF" }
-];
+addDecorator(story => <StoryContainer>{story()}</StoryContainer>);
+
+const themes = [keen, keenDark];
 addDecorator(withThemesProvider(themes));
 
 // Options:
@@ -128,7 +112,5 @@ addDecorator(
     selectedAddonPanel: undefined // The order of addons in the "Addons Panel" is the same as you import them in 'addons.js'. The first panel will be opened by default as you run Storybook
   })
 );
-
-addDecorator(story => <StoryContainer>{story()}</StoryContainer>);
 
 configure(loadStories, module);

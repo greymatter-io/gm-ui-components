@@ -6,13 +6,6 @@ import { select, number, color, text } from "@storybook/addon-knobs";
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
 import { spacingScale } from "style/styleFunctions";
-import {
-  FONT_STACK_BASE,
-  COLOR_KEYLINE_SOLID,
-  FONT_SIZE_SM,
-  COLOR_BACKGROUND_A,
-  OPACITY_70
-} from "style/styleVariables";
 
 const glyphNames = [
   "IconArrowDown",
@@ -206,18 +199,18 @@ const iconBackgroundNames = [
 
 const GalleryIconList = styled.ul`
   margin: 0;
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  border: 1px solid ${COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 0 1px 1px 0;
 `;
 
 const GalleryIconDemo = styled.li`
-  border: 1px solid ${COLOR_KEYLINE_SOLID};
-  background-color: ${COLOR_BACKGROUND_A};
-  box-shadow: 1px 1px 0 0 ${COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 1px 0 0 1px;
   flex: 1 0 20%;
   display: flex;
@@ -228,8 +221,8 @@ const GalleryIconDemo = styled.li`
 
 const GalleryIconLabel = styled.p`
   margin: ${spacingScale(1)};
-  font-size: ${FONT_SIZE_SM};
-  opacity: ${OPACITY_70};
+  font-size: ${props => props.theme.FONT_SIZE_SM};
+  opacity: ${props => props.theme.OPACITY_70};
 `;
 
 const stories = storiesOf("Components|Icons", module);
@@ -299,7 +292,7 @@ stories
           let Glyph = Glyphs[glyph];
           return (
             <GalleryIconDemo key={glyph}>
-              <Glyph glyphColor="#000000" size="40px" />
+              <Glyph size="40px" />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>
           );

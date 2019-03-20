@@ -11,7 +11,7 @@ exports[`A Footer container should render 1`] = `
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid;
   margin-top: 8px;
   padding: 8px;
   text-transform: uppercase;
@@ -37,7 +37,7 @@ exports[`A Footer container should render 1`] = `
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   color: #000;
-  background: #fff;
+  background: #ffffff;
   font-size: 14px;
   height: auto;
   min-height: 32px;

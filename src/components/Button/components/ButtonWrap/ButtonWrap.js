@@ -6,17 +6,7 @@ import { transparentize } from "polished";
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
-
-import { FORM_HIGHLIGHT_SIZE } from "../../../Form/components/InputFieldInteractionStyles";
-
-import {
-  FONT_STACK_BASE,
-  FONT_WEIGHT_BASE,
-  COLOR_INTENT_HIGHLIGHT,
-  OPACITY_50,
-  OPACITY_15,
-  COLOR_BACKGROUND_A
-} from "style/styleVariables";
+import { keen } from "style/styleVariables";
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
@@ -26,8 +16,8 @@ const ButtonWrap = styled.button`
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-family: ${FONT_STACK_BASE};
-  font-weight: ${FONT_WEIGHT_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
   justify-content: center;
   line-height: 1.4;
   text-align: center;
@@ -55,13 +45,15 @@ const ButtonWrap = styled.button`
   &:focus:active {
     outline: none;
     border: 1px solid
-      ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
-    box-shadow: ${({ theme }) => css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px
-        ${transparentize(
-          1 - OPACITY_50,
-          theme.brandColor || COLOR_INTENT_HIGHLIGHT
-        )},
-      inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)}`}};
+      ${({ theme }) => theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT};
+    /* box-shadow: ${({ theme }) => css`0 0 0 ${theme.FORM_HIGHLIGHT_SIZE}px
+        ${({ theme }) =>
+          transparentize(
+            1 - theme.OPACITY_50,
+            theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT
+          )},
+      inset 0 0 0 1px ${({ theme }) =>
+        transparentize(1 - theme.OPACITY_15, theme.COLOR_BACKGROUND_A)}`}}; */
     z-index: 10;
     position: relative;
 
@@ -74,8 +66,8 @@ const ButtonWrap = styled.button`
     flex: 0 1 auto;
   }
 
-  ${props => `
-    ${generateButtonStyle(props.type, props.outline)}
+  ${props => css`
+    ${generateButtonStyle(props.theme, props.type, props.outline)}
     ${generateButtonSize(props.size)} 
     ${generateButtonOrientation(props.orientation)} 
   `};
@@ -87,6 +79,10 @@ ButtonWrap.propTypes = {
   outline: PropTypes.bool,
   size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),
   type: PropTypes.oneOf(["default", "danger", "info", "warning", "primary"])
+};
+
+ButtonWrap.defaultProps = {
+  theme: keen
 };
 
 export default ButtonWrap;

@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
-import { OPACITY_50 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 export const Breadcrumb = styled.li`
   flex: 0 1 auto;
@@ -11,7 +11,7 @@ export const Breadcrumb = styled.li`
   max-width: 100%;
 
   &:before {
-    opacity: ${props => (props.hideDelimiter ? 0 : OPACITY_50)};
+    opacity: ${props => (props.hideDelimiter ? 0 : props.theme.OPACITY_50)};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
     transform: scaleX(0.5);
@@ -33,6 +33,10 @@ export const Breadcrumb = styled.li`
     }
   }
 `;
+
+Breadcrumb.defaultProps = {
+  theme: keen
+};
 
 /**
  * Stateless functional React component that renders an individual breadcrumb item

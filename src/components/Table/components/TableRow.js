@@ -3,23 +3,24 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
-import { COLOR_KEYLINE } from "style/styleVariables";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
+import { keen } from "style/styleVariables";
 
 const TableRowElement = styled.tr.attrs({
   tabIndex: 0
 })`
   cursor: pointer;
   position: relative;
-  box-shadow: 0 -1px 0 ${COLOR_KEYLINE};
+  box-shadow: 0 -1px 0 ${props => props.theme.COLOR_KEYLINE};
 
   /* Give the table row a border when selected */
   ${props =>
     props.isSelected &&
     css`
-      background-color: ${transparentize(0.85, props.theme.brandColor)};
+      background-color: ${props =>
+        transparentize(0.85, props.theme.COLOR_BRAND_A)};
       &,
       & + &,
       & + tr {
@@ -28,6 +29,10 @@ const TableRowElement = styled.tr.attrs({
       ${props.selectedRowStyle};
     `};
 `;
+
+TableRowElement.defaultProps = {
+  theme: keen
+};
 
 TableRowElement.displayName = "TableRowElement";
 

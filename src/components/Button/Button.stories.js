@@ -78,7 +78,7 @@ stories
             clickAction={() => {}}
             key={orientation}
           >
-            <IconBell size="25px" />
+            <IconBell />
           </Button>
         ))}
       </React.Fragment>

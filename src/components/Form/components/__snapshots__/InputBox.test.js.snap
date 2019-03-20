@@ -100,7 +100,7 @@ exports[`InputBox should render 1`] = `
   -webkit-transform: translateY(-50%) translateX(-50%);
   -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .c0:checked {
@@ -112,13 +112,13 @@ exports[`InputBox should render 1`] = `
 }
 
 .c0:disabled {
-  border-color: #000;
+  border-color: #000000;
   opacity: 0.5;
   box-shadow: none;
 }
 
 .c0:disabled:checked {
-  background-color: #000;
+  background-color: #000000;
 }
 
 <input

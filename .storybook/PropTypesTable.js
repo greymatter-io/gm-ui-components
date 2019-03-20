@@ -21,7 +21,7 @@ const Required = styled.span`
 
 const PropTypesTable = ({ propDefinitions }) => {
   const props = propDefinitions.map(
-    ({ property, propType, required, defaultValue }) => {
+    ({ property, propType = {}, required, defaultValue }) => {
       let type;
       if (propType.name === "enum") {
         type = propType.value.map(val => val.value).join(", \n");
