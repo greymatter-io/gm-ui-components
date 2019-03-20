@@ -9,13 +9,6 @@ import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
 import { keen, keenDark } from "style/styleVariables";
 
-import {
-  COLOR_BRAND_A,
-  COLOR_BACKGROUND_A,
-  COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C
-} from "./../src/style/styleVariables";
-
 const req = require.context("../src/", true, /\.stories\.js$/);
 
 function loadStories() {
