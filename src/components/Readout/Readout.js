@@ -7,12 +7,12 @@ import ReadoutItem, { ReadoutItemShape } from "./components/ReadoutItem";
 export default function Readout({
   children,
   primary,
-  color = props => props.theme.COLOR_INTENT_SUCCESS,
+  color,
   readoutItems = [],
   ...props
 }) {
   return (
-    <ReadoutDisplay primary={primary} color={color} {...props}>
+    <ReadoutDisplay primary={primary} {...props}>
       {readoutItems.map(item => (
         <ReadoutItem
           key={`${item.title}|${item.value}|${item.detail}`}

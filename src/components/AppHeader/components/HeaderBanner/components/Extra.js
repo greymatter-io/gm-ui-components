@@ -26,7 +26,7 @@ const Extra = styled.a`
   }
 
   &:hover {
-    ${props => mix(props.theme.OPACITY_50, "#fff", "#000")};
+    background: ${props => mix(props.theme.OPACITY_50, "#fff", "#000")};
   }
 `;
 
