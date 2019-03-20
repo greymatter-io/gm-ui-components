@@ -7,7 +7,6 @@ import { keen } from "style/styleVariables";
 export const BreadcrumbsContainer = styled.ol`
   font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.theme.FONT_SIZE_SM};
-  color: ${props => props.theme.COLOR_CONTENT};
   flex: 1 1 auto;
   display: flex;
   margin: 0;
