@@ -2,8 +2,8 @@
 
 exports[`HeaderWrapper matches snapshot 1`] = `
 .c0 {
-  font-family: sans-serif;
-  color: blue;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  color: #000;
   background-color: #000;
   background-image: linear-gradient( to right,#000,rgba(0,0,0,0.3),rgba(0,0,0,0) ),url(mesh-web.jpg);
   display: -webkit-box;

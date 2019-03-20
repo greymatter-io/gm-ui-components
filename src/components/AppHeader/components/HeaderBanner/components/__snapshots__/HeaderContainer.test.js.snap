@@ -2,6 +2,7 @@
 
 exports[`HeaderContainer matches snapshot 1`] = `
 .c0 {
+  color: #000;
   padding: 8px 16px 8px;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;

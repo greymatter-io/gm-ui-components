@@ -26,7 +26,8 @@ exports[`NavCardTitle matches snapshot 1`] = `
 }
 
 .c0 h1 {
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   padding-left: 4px;
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;

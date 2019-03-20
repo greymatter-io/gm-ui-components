@@ -2,9 +2,9 @@
 
 exports[`Header matches snapshot 1`] = `
 .c0 {
-  font-size: 12px;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-size: 36px;
+  font-family: "Avenir Next","Metropolis","Helvetica Neue",Arial,sans-serif;
+  font-weight: 400;
   margin: 0;
   display: inline-block;
   line-height: 1.2;

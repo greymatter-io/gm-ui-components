@@ -8,7 +8,7 @@ exports[`HeaderToolbarWrapper matches snapshot 1`] = `
   -webkit-flex: 0 0 32px;
   -ms-flex: 0 0 32px;
   flex: 0 0 32px;
-  font-size: 12px;
+  font-size: 14px;
   padding: 0 16px;
   -webkit-align-items: center;
   -webkit-box-align: center;
