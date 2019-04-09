@@ -1,20 +1,24 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
-import { COLOR_CONTENT, FONT_STACK_BASE } from "style/styleVariables";
+import { keen } from "style/styleVariables";
 
 const LayoutSectionWrap = styled.section`
+  color: ${props => props.theme.COLOR_CONTENT};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   align-items: stretch;
-  color: ${COLOR_CONTENT};
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   padding: ${spacingScale(1)};
-  font-family: ${FONT_STACK_BASE};
 
   &:not(:first-of-type) {
     margin-top: ${spacingScale(4)};
   }
 `;
+
+LayoutSectionWrap.defaultProps = {
+  theme: keen
+};
 
 export default LayoutSectionWrap;

@@ -11,7 +11,7 @@ exports[`NavCardGroup matches snapshot 1`] = `
   flex-flow: row wrap;
   padding: 2px;
   position: relative;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .c0 > * {

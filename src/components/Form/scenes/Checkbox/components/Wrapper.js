@@ -1,15 +1,20 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE, FONT_SIZE_BASE } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const Wrapper = styled.label`
   ${props => getPosition(props.labelPosition)};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  color: ${props => props.theme.COLOR_CONTENT};
   display: flex;
   width: fit-content;
   align-items: center;
 `;
+
+Wrapper.defaultProps = {
+  theme: keen
+};
 
 const CONTROL_SPACING = spacingScale(1);
 

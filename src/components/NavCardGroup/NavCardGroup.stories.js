@@ -2,7 +2,6 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { IconSummary, IconFunctions, IconThreads, IconHTTP } from "components";
-import { withInfo } from "@storybook/addon-info";
 
 import NavCard from "components/NavCard";
 import NavCardGroup from "components/NavCardGroup";
@@ -42,22 +41,25 @@ const mockTabs = [
 
 stories.add(
   "NavCardGroup",
-  withInfo("Groups of related NavCards should be displayed in a NavCardGroup.")(
-    () => {
-      return (
-        <NavCardGroup>
-          {mockTabs.map(item => {
-            return (
-              <NavCard
-                key={item.title}
-                icon={item.icon}
-                details={item.details}
-                title={item.title}
-              />
-            );
-          })}
-        </NavCardGroup>
-      );
+  () => {
+    return (
+      <NavCardGroup>
+        {mockTabs.map(item => {
+          return (
+            <NavCard
+              key={item.title}
+              icon={item.icon}
+              details={item.details}
+              title={item.title}
+            />
+          );
+        })}
+      </NavCardGroup>
+    );
+  },
+  {
+    info: {
+      text: "Groups of related NavCards should be displayed in a NavCardGroup."
     }
-  )
+  }
 );

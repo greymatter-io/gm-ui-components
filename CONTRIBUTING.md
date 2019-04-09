@@ -93,7 +93,7 @@ This will give you the following structure:
 - `MyComponent.js`: File that contains the main component. Be sure to fill out all propTypes and default props.
 - `MyComponent.stories.js`: Story code rendered by react/storybook for use in development and documentation.
   - The `default` story is meant to render the component in it's default state and document props using the Storybook knobs package. This is used as prop documentation, so be sure that the knob name is 1:1 with the prop it is controlling. See `Button.stories.js` for reference on how to use storybook knobs.
-  - Use the `withInfo()` function from the `@storybook/addon-info` package to provide a 1 or 2 sentence description of the component and it's intended use case. See `Button.stories.js` for reference.
+  - Provide a 1 or 2 sentence description of the component and it's intended use case by adding an `info` object as the second argument to `stories.add`. See `Button.stories.js` for reference.
   - Add any additional stories as needed to illustrate different states of the component
 - `MyComponent.test.js`: Basic test scaffold that renders a simple snapshot test
 - `index.js`: Imports and exports the component. There should be no reason to modify this file.

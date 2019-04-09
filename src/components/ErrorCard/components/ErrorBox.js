@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE } from "style/styleVariables";
+import { keen } from "style/styleVariables";
 
 const ErrorBox = styled.div`
   align-items: center;
@@ -9,7 +9,11 @@ const ErrorBox = styled.div`
   height: auto;
   justify-content: center;
   user-select: none;
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
 `;
+
+ErrorBox.defaultProps = {
+  theme: keen
+};
 
 export default ErrorBox;

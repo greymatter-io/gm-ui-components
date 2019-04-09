@@ -21,7 +21,7 @@ exports[`ReadoutDisplay matches snapshot when primary is false 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 3px;
+  border-radius: 4px;
   margin: 0 8px 8px 0;
   position: relative;
   overflow: hidden;
@@ -81,7 +81,7 @@ exports[`ReadoutDisplay matches snapshot when primary is true 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 3px;
+  border-radius: 4px;
   margin: 0 8px 8px 0;
   position: relative;
   overflow: hidden;

@@ -1,27 +1,17 @@
 import styled from "styled-components";
-import { readableColor, mix } from 'polished';
+import { mix } from "polished";
 
-import {
-  FONT_WEIGHT_SEMIBOLD,
-  FONT_SIZE_SM,
-  BORDER_RADIUS_BASE,
-  COLOR_BACKGROUND_A,
-  COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C,
-  OPACITY_15,
-  OPACITY_50,
-  FONT_STACK_BASE
-} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 // Z-index positions these above the preceding Banner Title in order to ensure they're visible above the Banner Title's shadow
 const Extra = styled.a`
-  font-family: ${FONT_STACK_BASE};
-  color: ${readableColor(COLOR_BACKGROUND_C)};
-  background: ${mix(OPACITY_15, COLOR_BACKGROUND_A, COLOR_BACKGROUND_C)};
-  border-radius: ${BORDER_RADIUS_BASE};
-  font-size: ${FONT_SIZE_SM};
-  font-weight: ${FONT_WEIGHT_SEMIBOLD};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  color: #fff;
+  background: ${props => mix(props.theme.OPACITY_15, "#fff", "#000")};
+  border-radius: ${props => props.theme.RADIUS_05};
+  font-size: ${props => props.theme.FONT_SIZE_SM};
+  font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
   padding: ${spacingScale(0.25)} ${spacingScale(1)};
   margin: ${spacingScale(1)};
   bottom: ${spacingScale(0.5)};
@@ -36,8 +26,12 @@ const Extra = styled.a`
   }
 
   &:hover {
-    background: ${mix(OPACITY_50, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C)};
+    background: ${props => mix(props.theme.OPACITY_50, "#fff", "#000")};
   }
 `;
+
+Extra.defaultProps = {
+  theme: keen
+};
 
 export default Extra;

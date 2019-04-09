@@ -1,12 +1,15 @@
 import styled from "styled-components";
-
-import { FONT_SIZE_XS } from 'style/styleVariables';
+import { keen } from "style/styleVariables";
 
 export const LoadingMessage = styled.p`
-  opacity: 0.7;
-  font-size: ${FONT_SIZE_XS};
+  opacity: ${props => props.theme.OPACITY_70};
+  font-size: ${props => props.theme.FONT_SIZE_XS};
   max-width: 50%;
   margin: 0;
 `;
+
+LoadingMessage.defaultProps = {
+  theme: keen
+};
 
 export default LoadingMessage;

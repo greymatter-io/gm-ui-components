@@ -1,32 +1,22 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
-import {
-  FONT_STACK_BASE,
-  FONT_SIZE_BASE,
-  ZINDEX_TOOLTIP,
-  BORDER_RADIUS_BASE,
-  COLOR_BACKGROUND_A,
-  COLOR_KEYLINE_SOLID
-} from "style/styleVariables";
-import { readableColor } from "polished";
-
-const TOOLTIP_BACKGROUND_COLOR = COLOR_BACKGROUND_A;
+import { keen } from "style/styleVariables";
 
 const TooltipContent = styled.div`
-  background-color: ${TOOLTIP_BACKGROUND_COLOR};
-  border-radius: ${BORDER_RADIUS_BASE};
-  color: ${readableColor(TOOLTIP_BACKGROUND_COLOR)};
-  border: 1px solid ${COLOR_KEYLINE_SOLID};
-  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.05),
-    0 8px 32px -16px rgba(0, 0, 0, 0.25);
-  font-size: ${FONT_SIZE_BASE};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  border-radius: ${props => props.theme.RADIUS_05};
+  box-shadow: 0 0 0 1px ${props => props.theme.COLOR_KEYLINE_SOLID};
+  color: ${props => props.theme.COLOR_CONTENT};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  z-index: ${props => props.theme.ZINDEX_TOOLTIP};
   padding: ${spacingScale(1)};
   width: ${spacingScale(20)};
-  z-index: ${ZINDEX_TOOLTIP};
+  opacity: 0;
+  position: absolute;
   text-align: left;
   transition: opacity 0.5s, visibility 0.5s;
   white-space: normal;
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   margin: ${spacingScale(1)};
 
   ${props =>
@@ -41,5 +31,9 @@ const TooltipContent = styled.div`
           pointer-events: none;
         `};
 `;
+
+TooltipContent.defaultProps = {
+  theme: keen
+};
 
 export default TooltipContent;
