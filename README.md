@@ -93,7 +93,7 @@ render(
 
 To extend the theme, you must pass a theme object that follows our schema. Here is an example of the schema and its defaults:
 
-```json
+```javascript
 {
   name: "Keen",
 
