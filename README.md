@@ -40,7 +40,7 @@ npm install --save gm-ui-components
 
 # Usage
 
-An example using the Icon component:
+An example using the Button component:
 
 ```javascript
 import React from 'react';
@@ -60,6 +60,126 @@ function App() {
 
 render(<App />, document.querySelector('#app'));
 ```
+
+## Theming
+The component library provides 2 themes out of the box - `keen` and `keenDark`. All components use the `keen` theme by default. 
+
+To use `keenDark` or a custom theme, wrap your app in a `ThemeProvider` and pass the theme object:
+
+```javascript
+// App.js
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { render } from 'react-dom';
+import { Button, keenDark } from 'gm-ui-components';
+
+function Button() {
+  return (
+    <Button
+        label="Hello World!"
+        type="default"
+        size="xl"
+        active={true}
+    />
+  );
+}
+
+render(
+  <ThemeProvider theme={keenDark}>
+    <App />
+  </ThemeProvider>, 
+  document.querySelector('#app'));
+```
+
+To extend the theme, you must pass a theme object that follows our schema. Here is an example of the schema and its defaults:
+
+```json
+{
+  name: "Keen",
+
+  COLOR_BRAND_A: "#0aab2a",
+  COLOR_BRAND_B: "#0aab2a",
+  COLOR_CONTENT: "#000",
+
+  COLOR_BACKGROUND_A: "#ffffff",
+  COLOR_BACKGROUND_B: "#F8F8F8",
+  COLOR_BACKGROUND_C: "#000000",
+
+  COLOR_INTENT_HIGHLIGHT: COLOR_BRAND_A,
+  COLOR_INTENT_SUCCESS: COLOR_BRAND_A,
+  COLOR_INTENT_DANGER: "#D83D22",
+  COLOR_INTENT_WARNING: "#F7CD45",
+  COLOR_INTENT_INFO: "#1E6DF6",
+
+  COLOR_KEYLINE: "rgba(0,0,0,0.08)",
+  COLOR_KEYLINE_SOLID: "#EBEBEB",
+
+  OPACITY_100: "1",
+  OPACITY_70: "0.7",
+  OPACITY_50: "0.5",
+  OPACITY_15: "0.15",
+
+  // LAYOUT
+  BORDER_RADIUS_BASE: "3px",
+  SPACING_BASE: 8,
+  ICON_VIEWBOX_SIZE: 24,
+
+  ZINDEX_TOOLTIP: "1070",
+  ZINDEX_STICKY: "1010",
+
+  RADIUS_05: "4px",
+  RADIUS_1: "8px",
+  RADIUS_2: "16px",
+  RADIUS_3: "24px",
+  RADIUS_4: "32px",
+  RADIUS_5: "40px",
+  RADIUS_6: "48px",
+  RADIUS_7: "56px",
+  RADIUS_8: "64px",
+
+  // TYPOGRAPHY
+  FONTS_SYSTEM: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  FONTS_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
+  FONTS_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
+
+  FONT_STACK_BASE: FONTS_SYSTEM,
+  FONT_STACK_BRAND: FONTS_BRAND,
+  FONT_STACK_CODE: FONTS_CODE,
+
+  FONT_SIZE_HERO: "40px",
+  FONT_SIZE_TITLE: "36px",
+  FONT_SIZE_LG: "18px",
+  FONT_SIZE_MD: "16px",
+  FONT_SIZE_BASE: "14px",
+  FONT_SIZE_SM: "11px",
+  FONT_SIZE_XS: "9px",
+
+  LINE_HEIGHT_BASE: 1.4,
+  FONT_WEIGHT_BASE: 400,
+  FONT_WEIGHT_SEMIBOLD: 600,
+  FONT_WEIGHT_BOLD: 800
+};
+```
+
+You can extend this base theme like so:
+
+```javascript
+// ...App.js
+
+keenDark = {
+  ...keenDark,
+  COLOR_BRAND_A: "#03aaed"
+}
+
+render(
+  <ThemeProvider theme={keenDark}>
+    <App />
+  </ThemeProvider>, 
+  document.querySelector('#app'));
+```
+
+You can find more information on style variables [here](https://deciphernow.github.io/gm-ui-components/?selectedKind=%20Overview%7CStyles&selectedStory=Styles&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Fthemes%2Fpanel).
+
 
 # Documentation
 
