@@ -166,13 +166,13 @@ You can extend this base theme like so:
 ```javascript
 // ...App.js
 
-keenDark = {
-  ...keenDark,
+keen = {
+  ...keen,
   COLOR_BRAND_A: "#03aaed"
 }
 
 render(
-  <ThemeProvider theme={keenDark}>
+  <ThemeProvider theme={keen}>
     <App />
   </ThemeProvider>, 
   document.querySelector('#app'));
