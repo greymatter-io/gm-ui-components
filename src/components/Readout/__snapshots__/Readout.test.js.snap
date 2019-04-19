@@ -120,6 +120,7 @@ exports[`Readout matches snapshot when primary is true or false 2`] = `
 
 exports[`Readout matches snapshot when rendering readoutItems 1`] = `
 <ReadoutDisplay
+  color="#0a2"
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",
@@ -190,6 +191,7 @@ exports[`Readout matches snapshot when rendering readoutItems 1`] = `
 
 exports[`Readout matches snapshot when taking a color prop 1`] = `
 <ReadoutDisplay
+  color="#0a2"
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",
