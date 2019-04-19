@@ -1,3 +1,14 @@
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.4...v0.8.0) (2019-04-19)
+
+
+### Bug Fixes
+
+* readout styles, add missing theme exports ([#412](https://github.com/DecipherNow/gm-ui-components/issues/412)) ([d25a911](https://github.com/DecipherNow/gm-ui-components/commit/d25a911))
+* update footer font size and default text ([#398](https://github.com/DecipherNow/gm-ui-components/issues/398)) ([f0ced09](https://github.com/DecipherNow/gm-ui-components/commit/f0ced09))
+
+
+
 <a name="0.7.5"></a>
 ## [0.7.5](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.4...v0.7.5) (2019-01-10)
 
