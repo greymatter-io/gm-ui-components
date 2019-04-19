@@ -2,7 +2,7 @@ import React from "react";
 import { IconSummary } from "../";
 
 import { storiesOf } from "@storybook/react";
-import { boolean, object } from "@storybook/addon-knobs";
+import { boolean, object, color } from "@storybook/addon-knobs";
 
 import ReadoutGroup from "../ReadoutGroup/ReadoutGroup";
 import Readout from "./Readout";
@@ -50,6 +50,7 @@ stories
     () => {
       return (
         <Readout
+          color={color("color")}
           primary={boolean("primary", false)}
           readoutItems={object("readoutItems", mockReadoutItem)}
         />
@@ -66,6 +67,7 @@ stories
     () => {
       return (
         <Readout
+          color={color("color")}
           primary={boolean("primary", false)}
           readoutItems={object("readoutItems", mockReadoutManyItems)}
         />
