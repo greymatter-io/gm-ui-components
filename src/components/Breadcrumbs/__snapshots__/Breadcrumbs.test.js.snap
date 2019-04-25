@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
-.c1 {
+exports[`Breadcrumb matches snapshot 1`] = `
+.c0 {
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
@@ -14,16 +14,15 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   transition: all 0.3s ease;
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c1:before {
+.c0:before {
   display: inline-block;
-  opacity: 0.5;
   padding: 0 4px;
   content: ">";
   -webkit-transform: scaleX(0.5);
@@ -31,113 +30,27 @@ exports[`<Breadcrumbs> Snapshot renders collapsed breadcrumbs correctly 1`] = `
   transform: scaleX(0.5);
 }
 
-.c1 > * {
+.c0 > * {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > *:link:hover {
+.c0 > *:link:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1:first-child:before {
+.c0:first-child:before {
   content: none;
 }
 
-.c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  font-size: 11px;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  height: inherit;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-}
-
-<ol
+<li
   className="c0"
->
-  <li
-    className="c1"
-  >
-    Test 1
-  </li>
-  <li
-    className="c1"
-  >
-    ...
-  </li>
-  <li
-    className="c1"
-  >
-    Testing a really long breadcrumb item
-  </li>
-</ol>
+/>
 `;
 
-exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
-.c1 {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  overflow: hidden;
-  min-width: 2.5em;
-  max-width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.c1:hover,
-.c1:focus {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c1:before {
-  display: inline-block;
-  opacity: 0.5;
-  padding: 0 4px;
-  content: ">";
-  -webkit-transform: scaleX(0.5);
-  -ms-transform: scaleX(0.5);
-  transform: scaleX(0.5);
-}
-
-.c1 > * {
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 > *:link:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:first-child:before {
-  content: none;
-}
-
+exports[`Breadcrumbs matches snapshot 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 11px;
@@ -166,25 +79,29 @@ exports[`<Breadcrumbs> Snapshot renders expanded breadcrumbs correctly 1`] = `
 <ol
   className="c0"
 >
-  <li
-    className="c1"
+  <Breadcrumb
+    hideDelimiter={false}
+    key="\\"Test 1\\""
   >
     Test 1
-  </li>
-  <li
-    className="c1"
+  </Breadcrumb>
+  <Breadcrumb
+    hideDelimiter={false}
+    key="\\"Test 2\\""
   >
     Test 2
-  </li>
-  <li
-    className="c1"
+  </Breadcrumb>
+  <Breadcrumb
+    hideDelimiter={false}
+    key="\\"Test 3\\""
   >
     Test 3
-  </li>
-  <li
-    className="c1"
+  </Breadcrumb>
+  <Breadcrumb
+    hideDelimiter={false}
+    key="\\"Testing a really long breadcrumb item\\""
   >
     Testing a really long breadcrumb item
-  </li>
+  </Breadcrumb>
 </ol>
 `;
