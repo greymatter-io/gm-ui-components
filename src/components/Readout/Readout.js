@@ -12,7 +12,7 @@ export default function Readout({
   ...props
 }) {
   return (
-    <ReadoutDisplay primary={primary} {...props}>
+    <ReadoutDisplay color={color} primary={primary} {...props}>
       {readoutItems.map(item => (
         <ReadoutItem
           key={`${item.title}|${item.value}|${item.detail}`}
