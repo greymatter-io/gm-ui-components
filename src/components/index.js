@@ -1,6 +1,6 @@
 export * from "./Glyphs";
 export { default as AppFooter } from "./AppFooter";
-export { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
+export { default as Breadcrumbs } from "./Breadcrumbs";
 export { default as Button } from "./Button";
 export { default as ButtonGroup } from "./ButtonGroup";
 export { default as Icon } from "./Icon";
