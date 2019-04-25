@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { object, text } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
+import { object, text } from "@storybook/addon-knobs";
+import { keenDark } from "style/styleVariables";
 
 import {
   ButtonGroup,
@@ -65,9 +65,7 @@ const toolbarItems = () => {
 
 stories.add(
   "default",
-  withInfo(
-    "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
-  )(() => {
+  () => {
     return (
       <AppHeader
         title={text("title", "GM UI App Header")}
@@ -75,5 +73,11 @@ stories.add(
         toolbarItems={toolbarItems}
       />
     );
-  })
+  },
+  {
+    info: {
+      text:
+        "An AppHeader component that renders a title and other various toolbarItems that you can render by providing a render function."
+    }
+  }
 );

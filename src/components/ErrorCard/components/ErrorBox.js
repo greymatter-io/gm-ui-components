@@ -1,10 +1,6 @@
 import styled from "styled-components";
-import {
-  FONT_STACK_BASE,
-  COLOR_CONTENT,
-  COLOR_KEYLINE,
-  RADIUS_4
-} from "style/styleVariables";
+
+import { keen } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const ErrorBox = styled.div`
@@ -16,10 +12,14 @@ const ErrorBox = styled.div`
   align-items: center;
   margin: ${spacingScale(4)};
   padding: ${spacingScale(6)} ${spacingScale(4)};
-  border-radius: ${RADIUS_4};
-  border: 1px solid ${COLOR_KEYLINE};
-  font-family: ${FONT_STACK_BASE};
-  color: ${COLOR_CONTENT};
+  border-radius: ${props => props.theme.RADIUS_4};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  color: ${props => props.theme.COLOR_CONTENT};
 `;
+
+ErrorBox.defaultProps = {
+  theme: keen
+};
 
 export default ErrorBox;

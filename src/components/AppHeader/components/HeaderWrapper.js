@@ -1,22 +1,18 @@
 import styled from "styled-components";
-import { readableColor, transparentize } from 'polished';
+import { transparentize } from "polished";
 
-import {
-  FONT_STACK_BASE,
-  COLOR_BACKGROUND_C
-} from "style/styleVariables";
 import BannerBackgroundImage from "./images/mesh-web.jpg";
+import { keen } from "style/styleVariables";
 
 const HeaderWrapper = styled.div`
-  font-family: ${FONT_STACK_BASE};
-  color: ${readableColor(COLOR_BACKGROUND_C)};
-  background-color: ${COLOR_BACKGROUND_C};
-  background-image:
-    linear-gradient(
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  color: #fff;
+  background-color: #000;
+  background-image: linear-gradient(
       to right,
-      ${COLOR_BACKGROUND_C},
-      ${transparentize(0.7, COLOR_BACKGROUND_C)},
-      ${transparentize(1, COLOR_BACKGROUND_C)}
+      #000,
+      ${transparentize(0.7, "#000")},
+      ${transparentize(1, "#000")}
     ),
     url(${BannerBackgroundImage});
   display: flex;
@@ -28,5 +24,9 @@ const HeaderWrapper = styled.div`
   background-repeat: no-repeat;
   overflow: hidden;
 `;
+
+HeaderWrapper.defaultProps = {
+  theme: keen
+};
 
 export default HeaderWrapper;

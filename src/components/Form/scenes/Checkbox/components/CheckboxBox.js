@@ -3,7 +3,8 @@ import styled from "styled-components";
 import {
   COLOR_BACKGROUND_A,
   COLOR_INTENT_HIGHLIGHT,
-  RADIUS_05
+  RADIUS_05,
+  keen
 } from "style/styleVariables";
 
 import InputBox from "components/Form/components/InputBox";
@@ -43,5 +44,9 @@ const CheckboxBox = styled(InputBox).attrs({
     }
   }
 `;
+
+CheckboxBox.defaultProps = {
+  theme: keen
+};
 
 export default CheckboxBox;

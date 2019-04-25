@@ -4,6 +4,7 @@ exports[`InputHint matches snapshot 1`] = `
 .c0 {
   margin: 4px 0;
   font-size: 9px;
+  color: #000;
   opacity: 0.5;
   display: block;
 }

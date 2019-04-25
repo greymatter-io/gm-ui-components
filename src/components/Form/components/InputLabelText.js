@@ -1,9 +1,13 @@
 import styled from "styled-components";
-import { FONT_SIZE_BASE } from "style/styleVariables";
+import { keen } from "style/styleVariables";
 
 const InputLabelText = styled.p`
   margin: 0;
-  font-size: ${FONT_SIZE_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
 `;
+
+InputLabelText.defaultProps = {
+  theme: keen
+};
 
 export default InputLabelText;

@@ -2,8 +2,7 @@ import React from "react";
 import { IconSummary } from "../";
 
 import { storiesOf } from "@storybook/react";
-import { boolean, object } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
+import { boolean, object, color } from "@storybook/addon-knobs";
 
 import ReadoutGroup from "../ReadoutGroup/ReadoutGroup";
 import Readout from "./Readout";
@@ -48,39 +47,52 @@ const mockReadoutManyItems = [
 stories
   .add(
     "Readout",
-    withInfo("A generalized display component for key performance indicators.")(
-      () => {
-        return (
-          <Readout
-            primary={boolean("primary", false)}
-            readoutItems={object("readoutItems", mockReadoutItem)}
-          />
-        );
+    () => {
+      return (
+        <Readout
+          color={color("color")}
+          primary={boolean("primary", false)}
+          readoutItems={object("readoutItems", mockReadoutItem)}
+        />
+      );
+    },
+    {
+      info: {
+        text: "A generalized display component for key performance indicators."
       }
-    )
+    }
   )
   .add(
     "A Readout with Many Items ",
-    withInfo("Readouts may display many related values.")(() => {
+    () => {
       return (
         <Readout
+          color={color("color")}
           primary={boolean("primary", false)}
           readoutItems={object("readoutItems", mockReadoutManyItems)}
         />
       );
-    })
+    },
+    {
+      info: {
+        text: "Readouts may display many related values."
+      }
+    }
   )
   .add(
     "A Readout Group",
-    withInfo("Readouts may be grouped into a dashboard-like Readout Group.")(
-      () => {
-        return (
-          <ReadoutGroup>
-            <Readout readoutItems={mockReadoutItem} />
-            <Readout primary={true} readoutItems={mockReadoutItem} />
-            <Readout readoutItems={mockReadoutItem} />
-          </ReadoutGroup>
-        );
+    () => {
+      return (
+        <ReadoutGroup>
+          <Readout readoutItems={mockReadoutItem} />
+          <Readout primary={true} readoutItems={mockReadoutItem} />
+          <Readout readoutItems={mockReadoutItem} />
+        </ReadoutGroup>
+      );
+    },
+    {
+      info: {
+        text: "Readouts may be grouped into a dashboard-like Readout Group."
       }
-    )
+    }
   );

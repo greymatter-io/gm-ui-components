@@ -4,7 +4,7 @@ exports[`ReadoutItemDetail matches snapshot 1`] = `
 .c0 {
   font-size: 14px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
   min-height: 1em;
 }
 

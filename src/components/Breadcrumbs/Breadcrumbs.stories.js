@@ -1,8 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { array, number, boolean } from "@storybook/addon-knobs/react";
+import { array, number, boolean } from "@storybook/addon-knobs";
 import Breadcrumbs from "./Breadcrumbs";
-import { withInfo } from "@storybook/addon-info";
 
 const stories = storiesOf("Components|Breadcrumbs", module);
 const defaultCrumbs = ["Home", "View", "System", "Data", "Graphs"];
@@ -11,7 +10,7 @@ const breadCrumbsInfo =
 
 stories.add(
   "default",
-  withInfo(breadCrumbsInfo)(() => {
+  () => {
     return (
       <Breadcrumbs
         crumbs={array("crumbs", defaultCrumbs)}
@@ -19,5 +18,10 @@ stories.add(
         collapse={boolean("collapse", false)}
       />
     );
-  })
+  },
+  {
+    info: {
+      text: breadCrumbsInfo
+    }
+  }
 );

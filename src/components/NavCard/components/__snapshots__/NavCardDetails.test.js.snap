@@ -2,9 +2,9 @@
 
 exports[`NavCardDetails matches snapshot 1`] = `
 .c0 {
+  color: #fff;
   margin: 0 4px 2px 36px;
   font-size: 11px;
-  color: #fff;
   line-height: 1.2;
 }
 

@@ -1,8 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, select, boolean } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
+import { text, select, boolean } from "@storybook/addon-knobs";
 
 import Fieldset from "./../components/Fieldset";
 import Checkbox from "./Checkbox";
@@ -34,7 +33,7 @@ const props = {
 
 stories.add(
   "Form Inputs",
-  withInfo("A checkbox form input with a label.")(() => {
+  () => {
     const baseProps = props.base();
     const buttonProps = props.button();
     const inputFieldProps = props.inputField();
@@ -134,5 +133,10 @@ stories.add(
         />
       </div>
     );
-  })
+  },
+  {
+    info: {
+      text: "A checkbox form input with a label."
+    }
+  }
 );

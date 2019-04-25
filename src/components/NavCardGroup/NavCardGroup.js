@@ -1,14 +1,20 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { mix, darken } from "polished";
 
 import {
   OPACITY_15,
   COLOR_BACKGROUND_B,
   COLOR_BACKGROUND_C,
- } from "style/styleVariables";
+  keen
+} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
-const COLOR_TAB_BACKGROUND_BASE = mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C);
+const activeBackgroundColor = css`
+  background-color: ${darken(
+    0.1,
+    mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C)
+  )};
+`;
 
 const TAB_WIDTH_BASE = "1%";
 
@@ -17,7 +23,7 @@ const NavCardGroup = styled.nav`
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
   position: relative;
-  background-color: ${COLOR_BACKGROUND_C};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_C};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {
@@ -38,10 +44,14 @@ const NavCardGroup = styled.nav`
         &:after {
           opacity: 1;
         }
-        background-color: ${darken(0.1, COLOR_TAB_BACKGROUND_BASE)};
+        ${activeBackgroundColor};
       }
     }
   }
 `;
+
+NavCardGroup.defaultProps = {
+  theme: keen
+};
 
 export default NavCardGroup;

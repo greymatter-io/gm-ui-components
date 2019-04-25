@@ -1,19 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
-import { select, number, color, text } from "@storybook/addon-knobs/react";
-import { withInfo } from "@storybook/addon-info";
+import { select, number, color, text } from "@storybook/addon-knobs";
 
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
 import { spacingScale } from "style/styleFunctions";
-import {
-  FONT_STACK_BASE,
-  COLOR_KEYLINE_SOLID,
-  FONT_SIZE_SM,
-  COLOR_BACKGROUND_A,
-  OPACITY_70
-} from "style/styleVariables";
 
 const glyphNames = [
   "IconArrowDown",
@@ -207,18 +199,18 @@ const iconBackgroundNames = [
 
 const GalleryIconList = styled.ul`
   margin: 0;
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  border: 1px solid ${COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 0 1px 1px 0;
 `;
 
 const GalleryIconDemo = styled.li`
-  border: 1px solid ${COLOR_KEYLINE_SOLID};
-  background-color: ${COLOR_BACKGROUND_A};
-  box-shadow: 1px 1px 0 0 ${COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 1px 0 0 1px;
   flex: 1 0 20%;
   display: flex;
@@ -229,8 +221,8 @@ const GalleryIconDemo = styled.li`
 
 const GalleryIconLabel = styled.p`
   margin: ${spacingScale(1)};
-  font-size: ${FONT_SIZE_SM};
-  opacity: ${OPACITY_70};
+  font-size: ${props => props.theme.FONT_SIZE_SM};
+  opacity: ${props => props.theme.OPACITY_70};
 `;
 
 const stories = storiesOf("Components|Icons", module);
@@ -238,9 +230,7 @@ const stories = storiesOf("Components|Icons", module);
 stories
   .add(
     "Icon",
-    withInfo(
-      "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
-    )(() => {
+    () => {
       const IconBell = Glyphs.IconBell;
       return (
         <IconBell
@@ -258,13 +248,17 @@ stories
           size={text("size", "100px")}
         />
       );
-    })
+    },
+    {
+      info: {
+        text:
+          "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
+      }
+    }
   )
   .add(
     "Icon with Custom Glyph",
-    withInfo(
-      "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
-    )(() => {
+    () => {
       return (
         <Icon
           backgroundStyle={select(
@@ -283,17 +277,22 @@ stories
           </svg>
         </Icon>
       );
-    })
+    },
+    {
+      info: {
+        text:
+          "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
+      }
+    }
   )
   .add("Glyph Gallery", () => {
-    // withInfo causes massive slowdown.
     return (
       <GalleryIconList>
         {glyphNames.map(glyph => {
           let Glyph = Glyphs[glyph];
           return (
             <GalleryIconDemo key={glyph}>
-              <Glyph glyphColor="#000000" size="40px" />
+              <Glyph size="40px" />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>
           );

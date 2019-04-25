@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { COLOR_INTENT_HIGHLIGHT } from "style/styleVariables";
+import { COLOR_INTENT_HIGHLIGHT, keen } from "style/styleVariables";
 
 import InputBox from "components/Form/components/InputBox";
 
@@ -30,5 +30,9 @@ const RadioBox = styled(InputBox).attrs({
     }
   }
 `;
+
+RadioBox.defaultProps = {
+  theme: keen
+};
 
 export default RadioBox;

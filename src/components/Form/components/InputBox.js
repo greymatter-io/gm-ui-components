@@ -1,34 +1,33 @@
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
-import {
-  COLOR_INTENT_HIGHLIGHT,
-  OPACITY_50,
-  COLOR_BACKGROUND_A,
-  COLOR_BACKGROUND_C
-} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 import {
   FORM_HIGHLIGHT_SIZE,
   formInteractionStyles
 } from "./InputFieldInteractionStyles";
+import { keen } from "style/styleVariables";
 
 const BORDER_WIDTH = 1;
 
 const ACTIVE_SHADOW = ({ theme }) =>
-  css`inset 0 0 0 1px ${theme.brandColor || COLOR_INTENT_HIGHLIGHT}`;
+  css`inset 0 0 0 1px ${props =>
+    theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT}`;
 
 const FOCUS_SHADOW = ({ theme }) =>
-  css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
-    1 - OPACITY_50,
-    theme.brandColor || COLOR_INTENT_HIGHLIGHT
-  )}`;
+  css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${props =>
+    transparentize(
+      1 - props.theme.OPACITY_50,
+      theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT
+    )}`;
 
 const InputBox = styled.input`
   ${formInteractionStyles};
   border: ${({ theme }) =>
-    css`${BORDER_WIDTH}px solid ${theme.brandColor || COLOR_INTENT_HIGHLIGHT}`};
-  color: ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
+    css`${BORDER_WIDTH}px solid ${props =>
+      theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT}`};
+  color: ${props => ({ theme }) =>
+    theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT};
   font-size: ${spacingScale(2)};
   margin: ${spacingScale(0.25)};
   appearance: none;
@@ -60,11 +59,12 @@ const InputBox = styled.input`
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    background-color: ${COLOR_BACKGROUND_A};
+    background-color: ${props => props.theme.COLOR_BACKGROUND_A};
   }
 
   &:checked {
-    background: ${({ theme }) => theme.brandColor || COLOR_INTENT_HIGHLIGHT};
+    background: ${props => ({ theme }) =>
+      theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT};
 
     &:after {
       opacity: 1;
@@ -72,14 +72,18 @@ const InputBox = styled.input`
   }
 
   &:disabled {
-    border-color: ${COLOR_BACKGROUND_C};
-    opacity: ${OPACITY_50};
+    border-color: ${props => props.theme.COLOR_BACKGROUND_C};
+    opacity: ${props => props.theme.OPACITY_50};
     box-shadow: none;
 
     &:checked {
-      background-color: ${COLOR_BACKGROUND_C};
+      background-color: ${props => props.theme.COLOR_BACKGROUND_C};
     }
   }
 `;
+
+InputBox.defaultProps = {
+  theme: keen
+};
 
 export default InputBox;

@@ -1,17 +1,12 @@
 import styled from "styled-components";
 
-import {
-  FONT_SIZE_TITLE,
-  FONT_STACK_BRAND,
-  FONT_WEIGHT_BASE,
-  COLOR_BACKGROUND_C
-} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/styleVariables";
 
 const Header = styled.h1`
-  font-size: ${FONT_SIZE_TITLE};
-  font-family: ${FONT_STACK_BRAND};
-  font-weight: ${FONT_WEIGHT_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_TITLE};
+  font-family: ${props => props.theme.FONT_STACK_BRAND};
+  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
   margin: 0;
   display: inline-block;
   line-height: 1.2;
@@ -21,7 +16,7 @@ const Header = styled.h1`
   z-index: 1;
 
   &::before {
-    background-color: ${COLOR_BACKGROUND_C};
+    background-color: #000;
     content: "";
     display: block;
     filter: blur(${spacingScale(1.5)});
@@ -33,5 +28,9 @@ const Header = styled.h1`
     z-index: -1;
   }
 `;
+
+Header.defaultProps = {
+  theme: keen
+};
 
 export default Header;
