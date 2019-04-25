@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { keen } from "style/styleVariables";
 
-const ErrorMessage = styled.p`
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
-  font-weight: ${props => props.theme.FONT_WEIGHT_DEMI};
+const ErrorMessage = styled.div`
+  opacity: ${props => props.theme.OPACITY_70};
+  font-size: ${props => props.theme.FONT_SIZE_XS};
+  max-width: 50%;
   margin: 0;
 `;
 

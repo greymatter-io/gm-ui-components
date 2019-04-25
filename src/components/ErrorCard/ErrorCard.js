@@ -5,6 +5,7 @@ import ErrorBox from "./components/ErrorBox";
 import ErrorMessage from "./components/ErrorMessage";
 import ErrorDetail from "./components/ErrorDetail";
 import ErrorGraphic from "./components/ErrorGraphic";
+import ErrorInfo from "./components/ErrorInfo";
 
 /**Stateless functional React component that renders the error message box
  * Takes an error message and returns error message box
@@ -12,19 +13,22 @@ import ErrorGraphic from "./components/ErrorGraphic";
  * @param {function} icon
  * @returns react component
  */
-const ErrorCard = ({ errorMsg = "Error", errorDetail, ...props }) => {
+const ErrorCard = ({ message = "Error", detail, orientation, ...props }) => {
   return (
-    <ErrorBox {...props}>
-      <ErrorGraphic />
-      <ErrorMessage>{errorMsg}</ErrorMessage>
-      <ErrorDetail>{errorDetail}</ErrorDetail>
+    <ErrorBox orientation={orientation}>
+      <ErrorGraphic orientation={orientation} />
+      <ErrorInfo>
+        <ErrorMessage>{message}</ErrorMessage>
+        <ErrorDetail>{detail}</ErrorDetail>
+      </ErrorInfo>
     </ErrorBox>
   );
 };
 
 ErrorCard.propTypes = {
-  errorDetail: PropTypes.string,
-  errorMsg: PropTypes.string
+  detail: PropTypes.string,
+  message: PropTypes.string,
+  orientation: PropTypes.oneOf(["vertical", "horizontal"])
 };
 
 ErrorCard.displayName = "ErrorCard";
