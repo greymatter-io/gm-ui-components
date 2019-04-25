@@ -1,26 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`A Footer container should render 1`] = `
-.c2 {
-  font-size: 60%;
-  margin: 0;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
-  cursor: default;
-  border-top: 1px solid;
-  margin-top: 8px;
-  padding: 8px;
-  text-transform: uppercase;
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-  white-space: pre-wrap;
-}
-
+exports[`AppFooter should match snapshot 1`] = `
 .c0 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -45,73 +25,10 @@ exports[`A Footer container should render 1`] = `
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  -webkit-box-pack: stretch;
-  -webkit-justify-content: stretch;
-  -ms-flex-pack: stretch;
-  justify-content: stretch;
-}
-
-.c3 {
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  text-align: right;
-  padding: 0 0 4px 8px;
-}
-
-.c4 {
-  color: #000;
-  opacity: 0.7;
-  padding: 0 4px;
-}
-
-.c4:hover {
-  color: #0aab2a;
-  opacity: 1;
-}
-
-.c4 svg {
-  height: 18px;
-}
-
-.c1 {
-  padding: 0 8px;
-  opacity: 0.7;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  text-align: left;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.c1:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.c1 img {
-  max-width: 140px;
-  vertical-align: -3px;
-}
-
-@media all and (min-width:800px) {
-  .c2 {
-    -webkit-order: initial;
-    -ms-flex-order: initial;
-    order: initial;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 0;
-    margin: 0;
-    border: none;
-  }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media all and (min-width:800px) {
@@ -124,10 +41,6 @@ exports[`A Footer container should render 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -140,72 +53,11 @@ exports[`A Footer container should render 1`] = `
   }
 }
 
-@media all and (min-width:800px) {
-  .c3 {
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-}
-
 <footer
   className="c0"
 >
-  <a
-    className="c1"
-    href="http://deciphernow.com"
-    rel="noopener noreferrer"
-    target="_blank"
-    title="Decipher Technology Studios website"
-  >
-    <img
-      alt="Decipher Technology Studios"
-      src="decipher-logo-long.png"
-    />
-  </a>
-  <p
-    className="c2"
-  >
-     
-    TM and © 2019 Decipher Technology Studios
-     
-  </p>
-  <div
-    className="c3"
-  >
-    <a
-      className="c4"
-      href="http://github.com/DecipherNow"
-      rel="noopener noreferrer"
-      target="_blank"
-      title="Decipher Technology Studios Github"
-    >
-      <IconMock
-        size="20px"
-      />
-    </a>
-    <a
-      className="c4"
-      href="http://twitter.com/deciphernow"
-      rel="noopener noreferrer"
-      target="_blank"
-      title="Decipher Technology Studios Twitter"
-    >
-      <IconMock
-        size="20px"
-      />
-    </a>
-    <a
-      className="c4"
-      href="http://www.linkedin.com/company/decipher-technology-studios"
-      rel="noopener noreferrer"
-      target="_blank"
-      title="Decipher Technology Studios LinkedIn"
-    >
-      <IconMock
-        size="20px"
-      />
-    </a>
-  </div>
+  <FooterLeftContent />
+  <FooterCenterContent />
+  <FooterRightContent />
 </footer>
 `;

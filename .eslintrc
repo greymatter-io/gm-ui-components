@@ -61,5 +61,13 @@
       "modules": true
     }
   },
-  "plugins": ["react", "prettier"]
+  "plugins": ["react", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
 }
