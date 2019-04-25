@@ -102,7 +102,7 @@ export default function AppFooter({
     </>
   );
 
-  return <Footer {...props}>{children || footerContent}</Footer>;
+  return <Footer {...props}>{footerContent}</Footer>;
 }
 
 AppFooter.displayName = "AppFooter";
