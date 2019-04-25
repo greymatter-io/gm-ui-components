@@ -89,5 +89,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [new BundleAnalyzerPlugin({ analyzerMode: "static" })]
+  plugins: [
+    new BundleAnalyzerPlugin({ analyzerMode: "static", openAnalyzer: false })
+  ]
 };
