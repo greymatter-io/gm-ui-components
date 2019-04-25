@@ -1,5 +1,12 @@
 # Contributing
 
+## Guidelines
+
+The intent of this library is to provide apps with a set of re-usable components that have purpose and meaning. We do not seek to create dopelgangers of HTML primitives like `<p/>`, `<h1/>`, `<a/>`, etc. Therefore, when proposing or creating new components consider these things:
+
+1. Can I achieve the same result by stlying an HTML primitive? If so, do not add it to this library.
+2. Does this component add significant features by adding behavior to an HTML primitive? For example, adding a tooltip to a `<p/>` tag is actually a Tooltip component, not an extenstion of a `<p/>` tag.
+
 ## Development
 
 ### Develop in Storybook
@@ -10,7 +17,7 @@ The component library uses React Storybook for local development. To start codin
 npm start
 ```
 
-Visit [http://localhost:9009](http://localhost:9009). Storybook will render whatever is in your `MyComponent.stories.js` file and hot reload when changes are made to that file or the component source code.
+Visit <http://localhost:9009>. Storybook will render whatever is in your `MyComponent.stories.js` file and hot reload when changes are made to that file or the component source code.
 
 ### Develop using a linked app
 
@@ -20,34 +27,33 @@ It is also possible to install your branch of the library in another app using `
 
 1. On your branch of gm-ui-components, run:
 
-   ```sh
-   npm link && npm run build -- --watch
-   ```
+  ```sh
+  npm link && npm run build -- --watch
+  ```
 
 2. In the target app, run:
 
-   ```sh
-   npm link gm-ui-components
-   ```
+  ```sh
+  npm link gm-ui-components
+  ```
 
 #### npm pack
 
-An alternative method is to use `npm pack` to generate a tarball of the library and install that in your target app. This is a good alternative for dockerized environments.
-The disadvantage is that you will need to regenerate the tarball whenever you make a change to the library code.
+An alternative method is to use `npm pack` to generate a tarball of the library and install that in your target app. This is a good alternative for dockerized environments. The disadvantage is that you will need to regenerate the tarball whenever you make a change to the library code.
 
 1. On your branch of gm-ui-components, run:
 
-   ```sh
-   npm run build && npm pack
-   ```
+  ```sh
+  npm run build && npm pack
+  ```
 
 2. A tarball will be generated in the root of the project. Drag that into the root of your target app.
 
 3. In the target app, run:
 
-   ```sh
-   npm install gm-ui-components-{version}.tgz
-   ```
+  ```sh
+  npm install gm-ui-components-{version}.tgz
+  ```
 
 ## Testing
 
@@ -92,10 +98,13 @@ This will give you the following structure:
 - `components/`: Directory that contains all subcomponents used by `MyComponent.js`.
 - `MyComponent.js`: File that contains the main component. Be sure to fill out all propTypes and default props.
 - `MyComponent.stories.js`: Story code rendered by react/storybook for use in development and documentation.
+
   - The `default` story is meant to render the component in it's default state and document props using the Storybook knobs package. This is used as prop documentation, so be sure that the knob name is 1:1 with the prop it is controlling. See `Button.stories.js` for reference on how to use storybook knobs.
   - Provide a 1 or 2 sentence description of the component and it's intended use case by adding an `info` object as the second argument to `stories.add`. See `Button.stories.js` for reference.
   - Add any additional stories as needed to illustrate different states of the component
+
 - `MyComponent.test.js`: Basic test scaffold that renders a simple snapshot test
+
 - `index.js`: Imports and exports the component. There should be no reason to modify this file.
 
 Make sure that your new component considers responsiveness and accessibility.
