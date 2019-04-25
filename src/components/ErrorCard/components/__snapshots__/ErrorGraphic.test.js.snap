@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorGraphic matches snapshot 1`] = `
+<svg
+  height="177px"
+  viewBox="0 0 177 177"
+  width="177px"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+    id="Page-1"
+    stroke="none"
+    strokeWidth="1"
+  >
+    <g
+      fillRule="nonzero"
+      id="Desktop-HD"
+      stroke="#0aab2a"
+      strokeWidth="2"
+      transform="translate(-628, -358)"
+    >
+      <g
+        id="Group"
+        transform="translate(629, 359)"
+      >
+        <g
+          id="Group-2"
+        >
+          <path
+            d="M87.5,175 C135.824916,175 175,135.824916 175,87.5 C175,39.1750844 135.824916,-5.68434189e-14 87.5,-5.68434189e-14 C39.1750844,-5.68434189e-14 -5.68434189e-14,39.1750844 -5.68434189e-14,87.5 C-5.68434189e-14,135.824916 39.1750844,175 87.5,175 Z"
+            fill="none"
+            id="Oval-Copy-2"
+            strokeDasharray="1,8"
+            strokeLinecap="round"
+            transform="translate(87.500000, 87.500000) scale(-1, 1) translate(-87.500000, -87.500000) "
+          />
+          <path
+            d="M60.6511628,60.6511628 L115.109738,115.109738"
+            id="Line"
+            strokeLinecap="square"
+          />
+          <path
+            d="M60.6511628,60.6511628 L115.109738,115.109738"
+            id="Line"
+            strokeLinecap="square"
+            transform="translate(88.000000, 88.000000) scale(1, -1) translate(-88.000000, -88.000000) "
+          />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+`;

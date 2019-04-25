@@ -5,11 +5,27 @@ import { ErrorCard } from "../";
 
 describe("ErrorCard", () => {
   it("matches snapshot", () => {
-    const anErrorCard = shallow(<ErrorCard />);
+    const anErrorCard = shallow(<ErrorCard />).dive();
     expect(anErrorCard).toMatchSnapshot();
   });
   it("renders an error message", () => {
-    const aErrorCard = shallow(<ErrorCard errorMsg="Woopsie" />);
-    expect(aErrorCard).toMatchSnapshot();
+    const aErrorCard = shallow(<ErrorCard errorMsg="Woopsie" />).dive();
+    expect(
+      aErrorCard
+        .find("ErrorMessage")
+        .dive()
+        .text()
+    ).toContain("Woopsie");
+  });
+  it("renders an error detail message", () => {
+    const aErrorCard = shallow(
+      <ErrorCard errorDetail="Something went wrong!" />
+    ).dive();
+    expect(
+      aErrorCard
+        .find("ErrorDetail")
+        .dive()
+        .text()
+    ).toContain("Something went wrong!");
   });
 });

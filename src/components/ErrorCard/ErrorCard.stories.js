@@ -16,8 +16,7 @@ stories.add(
   ),
   {
     info: {
-      text:
-        "A stateless card component that renders an error message and an icon. By default the card renders an 'exclamation' icon, but you can pass it any icon you'd like using a render prop."
+      text: "A stateless card component that renders an error message."
     }
   }
 );
