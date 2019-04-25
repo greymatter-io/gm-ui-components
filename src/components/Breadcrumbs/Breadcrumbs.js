@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import BreadcrumbItem from "./BreadcrumbItem";
+
 import { keen } from "style/styleVariables";
+import { spacingScale } from "style/styleFunctions";
 
 export const BreadcrumbsContainer = styled.ol`
   font-family: ${props => props.theme.FONT_STACK_BASE};
@@ -17,85 +18,65 @@ export const BreadcrumbsContainer = styled.ol`
   flex-wrap: nowrap;
 `;
 
-BreadcrumbsContainer.defaultProps = {
-  theme: keen
-};
+export const Breadcrumb = styled.li`
+  flex: 0 1 auto;
+  overflow: hidden;
+  min-width: 2.5em;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
 
-class Breadcrumbs extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isCollapsed: false };
+  &:hover,
+  &:focus {
+    flex-shrink: 0;
   }
 
-  componentDidMount() {
-    this.updateView(this.props);
+  &:before {
+    display: inline-block;
+    opacity: ${props => (props.hideDelimiter ? 0 : props.theme.OPACITY_50)};
+    padding: 0 ${spacingScale(0.5)};
+    content: ">";
+    transform: scaleX(0.5);
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
-    this.updateView(nextProps);
-  }
+  > * {
+    color: inherit;
+    text-decoration: none;
 
-  updateView = props => {
-    const { crumbs, maxItems, collapse } = props;
-    const childrenLen = crumbs.length;
-    if (collapse || maxItems < childrenLen) {
-      this.collapse();
-    } else {
-      this.expand();
+    &:link:hover {
+      text-decoration: underline;
     }
-  };
-
-  collapse = () => this.setState({ isCollapsed: true });
-
-  expand = () => this.setState({ isCollapsed: false });
-
-  renderCollapsed = crumbs => {
-    const elipsisItem = (
-      <BreadcrumbItem key={1} item={"..."} expand={this.expand} />
-    );
-    const lastIndex = crumbs.length - 1;
-    const collapsedArr = [
-      <BreadcrumbItem key={0} item={crumbs[0]} />,
-      elipsisItem,
-      <BreadcrumbItem key={lastIndex} item={crumbs[lastIndex]} />
-    ];
-    return collapsedArr;
-  };
-
-  renderExpanded = crumbs => {
-    return crumbs.map((item, i) => {
-      return (
-        <BreadcrumbItem
-          key={i}
-          item={item}
-          hideDelimiter={crumbs.length === 1}
-        />
-      );
-    });
-  };
-
-  render() {
-    const { crumbs, ...props } = this.props;
-    const { isCollapsed } = this.state;
-    return (
-      <BreadcrumbsContainer {...props}>
-        {isCollapsed && crumbs.length > 2
-          ? this.renderCollapsed(crumbs)
-          : this.renderExpanded(crumbs)}
-      </BreadcrumbsContainer>
-    );
   }
+
+  &:first-child {
+    &:before {
+      content: none;
+    }
+  }
+`;
+
+function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
+  return (
+    <BreadcrumbsContainer {...props}>
+      {crumbs.map(crumb => (
+        <Breadcrumb hideDelimiter={hideDelimiter} key={JSON.stringify(crumb)}>
+          {crumb}
+        </Breadcrumb>
+      ))}
+    </BreadcrumbsContainer>
+  );
 }
 
 export default Breadcrumbs;
 
 Breadcrumbs.defaultProps = {
-  maxItems: 10,
-  collapse: false
+  crumbs: [],
+  theme: keen,
+  hideDelimiter: false
 };
 
 Breadcrumbs.propTypes = {
-  collapse: PropTypes.bool,
-  crumbs: PropTypes.array.isRequired,
-  maxItems: PropTypes.number
+  crumbs: PropTypes.array,
+  hideDelimiter: PropTypes.bool
 };
