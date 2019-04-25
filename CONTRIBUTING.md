@@ -4,8 +4,8 @@
 
 The intent of this library is to provide apps with a set of re-usable components that have purpose and meaning. We do not seek to create dopelgangers of HTML primitives like `<p/>`, `<h1/>`, `<a/>`, etc. Therefore, when proposing or creating new components consider these things:
 
-1. Can I achieve the same result by stlying an HTML primitive? If so, do not add it to this library.
-2. Does this component add significant features by adding behavior to an HTML primitive? For example, adding a tooltip to a `<p/>` tag is actually a Tooltip component, not an extenstion of a `<p/>` tag.
+1. Can you achieve the same result by styling an HTML primitive? If so, do not add it to this library.
+2. Does this component add significant features by adding behavior to an HTML primitive? For example, adding a tooltip to a `<p/>` tag is actually a Tooltip component, not an extenstion of a `<p/>` tag and would thus warrant a new Tooltip component.
 
 ## Development
 
