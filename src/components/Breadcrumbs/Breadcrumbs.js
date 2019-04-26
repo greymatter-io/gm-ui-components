@@ -60,7 +60,7 @@ function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   return (
     <BreadcrumbsContainer {...props}>
       {crumbs.map(crumb => (
-        <Breadcrumb hideDelimiter={hideDelimiter} key={JSON.stringify(crumb)}>
+        <Breadcrumb hideDelimiter={hideDelimiter} key={crumb}>
           {crumb}
         </Breadcrumb>
       ))}
