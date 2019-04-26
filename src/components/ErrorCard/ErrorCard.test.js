@@ -9,7 +9,7 @@ describe("ErrorCard", () => {
     expect(anErrorCard).toMatchSnapshot();
   });
   it("renders an error message", () => {
-    const aErrorCard = shallow(<ErrorCard errorMsg="Woopsie" />).dive();
+    const aErrorCard = shallow(<ErrorCard message="Woopsie" />).dive();
     expect(
       aErrorCard
         .find("ErrorMessage")
@@ -19,7 +19,7 @@ describe("ErrorCard", () => {
   });
   it("renders an error detail message", () => {
     const aErrorCard = shallow(
-      <ErrorCard errorDetail="Something went wrong!" />
+      <ErrorCard detail="Something went wrong!" />
     ).dive();
     expect(
       aErrorCard

@@ -1,55 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ErrorGraphic matches snapshot 1`] = `
-<svg
-  height="177px"
+<ErrorGraphicSVG
+  height="177"
+  theme={
+    Object {
+      "BORDER_RADIUS_BASE": "3px",
+      "COLOR_BACKGROUND_A": "#ffffff",
+      "COLOR_BACKGROUND_B": "#F8F8F8",
+      "COLOR_BACKGROUND_C": "#000000",
+      "COLOR_BRAND_A": "#0aab2a",
+      "COLOR_BRAND_B": "#0aab2a",
+      "COLOR_CONTENT": "#000",
+      "COLOR_INTENT_DANGER": "#D83D22",
+      "COLOR_INTENT_HIGHLIGHT": "#0aab2a",
+      "COLOR_INTENT_INFO": "#1E6DF6",
+      "COLOR_INTENT_SUCCESS": "#0aab2a",
+      "COLOR_INTENT_WARNING": "#F7CD45",
+      "COLOR_KEYLINE": "rgba(0,0,0,0.08)",
+      "COLOR_KEYLINE_SOLID": "#EBEBEB",
+      "FONTS_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+      "FONTS_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+      "FONTS_SYSTEM": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+      "FONT_SIZE_BASE": "14px",
+      "FONT_SIZE_HERO": "40px",
+      "FONT_SIZE_LG": "18px",
+      "FONT_SIZE_MD": "16px",
+      "FONT_SIZE_SM": "11px",
+      "FONT_SIZE_TITLE": "36px",
+      "FONT_SIZE_XS": "9px",
+      "FONT_STACK_BASE": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+      "FONT_STACK_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+      "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+      "FONT_WEIGHT_BASE": 400,
+      "FONT_WEIGHT_BOLD": 800,
+      "FONT_WEIGHT_SEMIBOLD": 600,
+      "ICON_VIEWBOX_SIZE": 24,
+      "LINE_HEIGHT_BASE": 1.4,
+      "OPACITY_100": "1",
+      "OPACITY_15": "0.15",
+      "OPACITY_50": "0.5",
+      "OPACITY_70": "0.7",
+      "RADIUS_05": "4px",
+      "RADIUS_1": "8px",
+      "RADIUS_2": "16px",
+      "RADIUS_3": "24px",
+      "RADIUS_4": "32px",
+      "RADIUS_5": "40px",
+      "RADIUS_6": "48px",
+      "RADIUS_7": "56px",
+      "RADIUS_8": "64px",
+      "SPACING_BASE": 8,
+      "ZINDEX_STICKY": "1010",
+      "ZINDEX_TOOLTIP": "1070",
+      "name": "Keen",
+    }
+  }
   viewBox="0 0 177 177"
-  width="177px"
+  width="177"
   xmlns="http://www.w3.org/2000/svg"
 >
   <g
-    fill="none"
-    fillRule="evenodd"
-    id="Page-1"
-    stroke="none"
+    fillRule="nonzero"
+    stroke="currentColor"
     strokeWidth="1"
   >
-    <g
-      fillRule="nonzero"
-      id="Desktop-HD"
-      stroke="#0aab2a"
-      strokeWidth="2"
-      transform="translate(-628, -358)"
-    >
-      <g
-        id="Group"
-        transform="translate(629, 359)"
-      >
-        <g
-          id="Group-2"
-        >
-          <path
-            d="M87.5,175 C135.824916,175 175,135.824916 175,87.5 C175,39.1750844 135.824916,-5.68434189e-14 87.5,-5.68434189e-14 C39.1750844,-5.68434189e-14 -5.68434189e-14,39.1750844 -5.68434189e-14,87.5 C-5.68434189e-14,135.824916 39.1750844,175 87.5,175 Z"
-            fill="none"
-            id="Oval-Copy-2"
-            strokeDasharray="1,8"
-            strokeLinecap="round"
-            transform="translate(87.500000, 87.500000) scale(-1, 1) translate(-87.500000, -87.500000) "
-          />
-          <path
-            d="M60.6511628,60.6511628 L115.109738,115.109738"
-            id="Line"
-            strokeLinecap="square"
-          />
-          <path
-            d="M60.6511628,60.6511628 L115.109738,115.109738"
-            id="Line"
-            strokeLinecap="square"
-            transform="translate(88.000000, 88.000000) scale(1, -1) translate(-88.000000, -88.000000) "
-          />
-        </g>
-      </g>
-    </g>
+    <path
+      d="M87.5,175 C135.824916,175 175,135.824916 175,87.5 C175,39.1750844 135.824916,-5.68434189e-14 87.5,-5.68434189e-14 C39.1750844,-5.68434189e-14 -5.68434189e-14,39.1750844 -5.68434189e-14,87.5 C-5.68434189e-14,135.824916 39.1750844,175 87.5,175 Z"
+      fill="none"
+      opacity="0.5"
+      strokeLinecap="round"
+      transform="translate(87, 87) scale(-1, 1) translate(-87, -87) "
+    />
+    <path
+      d="M60.6511628,60.6511628 L115.109738,115.109738"
+      strokeLinecap="square"
+    />
+    <path
+      d="M60.6511628,60.6511628 L115.109738,115.109738"
+      strokeLinecap="square"
+      transform="translate(88, 88) scale(1, -1) translate(-88, -88) "
+    />
   </g>
-</svg>
+</ErrorGraphicSVG>
 `;

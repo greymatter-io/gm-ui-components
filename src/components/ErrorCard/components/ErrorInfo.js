@@ -1,15 +1,12 @@
 import styled from "styled-components";
 import { keen } from "style/styleVariables";
 
-const ErrorMessage = styled.div`
-  opacity: ${props => props.theme.OPACITY_70};
-  font-size: ${props => props.theme.FONT_SIZE_XS};
-  max-width: 50%;
-  margin: 0;
-`;
+const ErrorInfo = styled.div``;
 
-ErrorMessage.defaultProps = {
+ErrorInfo.defaultProps = {
   theme: keen
 };
 
-export default ErrorMessage;
+ErrorInfo.displayName = "ErrorInfo";
+
+export default ErrorInfo;

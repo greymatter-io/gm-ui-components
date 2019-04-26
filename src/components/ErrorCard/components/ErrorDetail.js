@@ -17,4 +17,6 @@ ErrorDetail.defaultProps = {
   theme: keen
 };
 
+ErrorDetail.displayName = "ErrorDetail";
+
 export default ErrorDetail;

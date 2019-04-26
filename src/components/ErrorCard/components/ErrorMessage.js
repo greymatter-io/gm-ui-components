@@ -11,4 +11,6 @@ ErrorMessage.defaultProps = {
   theme: keen
 };
 
+ErrorMessage.displayName = "ErrorMessage";
+
 export default ErrorMessage;
