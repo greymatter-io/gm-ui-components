@@ -81,25 +81,25 @@ exports[`Breadcrumbs matches snapshot 1`] = `
 >
   <Breadcrumb
     hideDelimiter={false}
-    key="Test 1"
+    key="Test 1|0"
   >
     Test 1
   </Breadcrumb>
   <Breadcrumb
     hideDelimiter={false}
-    key="Test 2"
+    key="Test 2|1"
   >
     Test 2
   </Breadcrumb>
   <Breadcrumb
     hideDelimiter={false}
-    key="Test 3"
+    key="Test 3|2"
   >
     Test 3
   </Breadcrumb>
   <Breadcrumb
     hideDelimiter={false}
-    key="Testing a really long breadcrumb item"
+    key="Testing a really long breadcrumb item|3"
   >
     Testing a really long breadcrumb item
   </Breadcrumb>

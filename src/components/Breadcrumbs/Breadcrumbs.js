@@ -59,8 +59,8 @@ export const Breadcrumb = styled.li`
 function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   return (
     <BreadcrumbsContainer {...props}>
-      {crumbs.map(crumb => (
-        <Breadcrumb hideDelimiter={hideDelimiter} key={crumb}>
+      {crumbs.map((crumb, i) => (
+        <Breadcrumb hideDelimiter={hideDelimiter} key={`${crumb}|${i}`}>
           {crumb}
         </Breadcrumb>
       ))}
