@@ -10,12 +10,18 @@ import LongLogo from "./components/LongLogo";
 
 import longLogo from "./assets/decipher-logo-long.png";
 
+const nodePropType = PropTypes.oneOfType([
+  PropTypes.element,
+  PropTypes.node,
+  PropTypes.string
+]);
+
 AppFooter.propTypes = {
-  copyrightText: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.node,
-    PropTypes.string
-  ]),
+  children: nodePropType,
+  copyrightText: nodePropType,
+  footerCenter: nodePropType,
+  footerLeft: nodePropType,
+  footerRight: nodePropType,
   useExternalLinks: PropTypes.bool
 };
 
@@ -31,6 +37,10 @@ AppFooter.defaultProps = {
 export default function AppFooter({
   copyrightText,
   useExternalLinks,
+  footerLeft,
+  footerCenter,
+  footerRight,
+  children,
   ...props
 }) {
   const logoProps = useExternalLinks
@@ -40,45 +50,59 @@ export default function AppFooter({
         target: "_blank"
       }
     : {};
-  return (
-    <Footer {...props}>
+
+  const FooterLeftContent = () =>
+    footerLeft || (
       <LongLogo {...logoProps} title="Decipher Technology Studios website">
         <img alt="Decipher Technology Studios" src={longLogo} />
       </LongLogo>
-      <Copyright useExternalLinks={useExternalLinks}>
-        {" "}
-        {copyrightText}{" "}
-      </Copyright>
-      {useExternalLinks && (
-        <Links>
-          <Link
-            href="http://github.com/DecipherNow"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Decipher Technology Studios Github"
-          >
-            <IconGitHub size="20px" />
-          </Link>
-          <Link
-            href="http://twitter.com/deciphernow"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Decipher Technology Studios Twitter"
-          >
-            <IconTwitter size="20px" />
-          </Link>
-          <Link
-            href="http://www.linkedin.com/company/decipher-technology-studios"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Decipher Technology Studios LinkedIn"
-          >
-            <IconLinkedIn size="20px" />
-          </Link>
-        </Links>
-      )}
-    </Footer>
+    );
+
+  const FooterCenterContent = () =>
+    footerCenter || (
+      <Copyright useExternalLinks={useExternalLinks}>{copyrightText}</Copyright>
+    );
+
+  const FooterRightContent = () =>
+    footerRight ||
+    (useExternalLinks && (
+      <Links>
+        <Link
+          href="http://github.com/DecipherNow"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Decipher Technology Studios Github"
+        >
+          <IconGitHub size="20px" />
+        </Link>
+        <Link
+          href="http://twitter.com/deciphernow"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Decipher Technology Studios Twitter"
+        >
+          <IconTwitter size="20px" />
+        </Link>
+        <Link
+          href="http://www.linkedin.com/company/decipher-technology-studios"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Decipher Technology Studios LinkedIn"
+        >
+          <IconLinkedIn size="20px" />
+        </Link>
+      </Links>
+    ));
+
+  const footerContent = children || (
+    <>
+      <FooterLeftContent />
+      <FooterCenterContent />
+      <FooterRightContent />
+    </>
   );
+
+  return <Footer {...props}>{footerContent}</Footer>;
 }
 
 AppFooter.displayName = "AppFooter";
