@@ -1,15 +1,16 @@
 import styled from "styled-components";
+import { spacingScale } from "style/styleFunctions";
 
 import { keen } from "style/styleVariables";
 
 const ErrorBox = styled.div`
+  font-family: ${props => props.theme.FONT_STACK_BASE};
+  color: ${props => props.theme.COLOR_CONTENT};
+  padding: ${spacingScale(1)};
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  color: ${props => props.theme.COLOR_CONTENT};
   margin: auto;
-  flex: 0 0 auto;
 
   ${props =>
     props.orientation === "vertical"
