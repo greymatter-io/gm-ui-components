@@ -1,9 +1,10 @@
 import React from "react";
-import { configure, addDecorator } from "@storybook/react";
+import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs";
 import { withThemesProvider } from "storybook-addon-styled-component-theme";
+import gmTheme from "./gmTheme";
 
 import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
@@ -14,6 +15,12 @@ const req = require.context("../src/", true, /\.stories\.js$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
+
+addParameters({
+  options: {
+    theme: gmTheme
+  }
+});
 
 // addon-info. This should always be the first decorator.
 addDecorator(
