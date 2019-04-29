@@ -317,7 +317,7 @@ const DemoNavigation = styled.nav`
   top: 0;
 `;
 
-const DemoNavigationItem = styled.a`
+const DemoNavigationItem = styled.a.attrs({ target: "_self" })`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,8 +383,8 @@ stories.add("Styles", () => (
   <DemoCanvas>
     <DemoHeading>Style Variables</DemoHeading>
     <DemoDescription>
-      Use the style variables included in your project instead of hardcoding
-      pixel and color values.
+      Use style variables instead of hardcoding pixel and color values. You can
+      import these variables like any other library component.
     </DemoDescription>
 
     <DemoNavigation>
