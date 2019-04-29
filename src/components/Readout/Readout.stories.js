@@ -50,7 +50,7 @@ stories
     () => {
       return (
         <Readout
-          color={color("color")}
+          color={color("color", "#eee")}
           primary={boolean("primary", false)}
           readoutItems={object("readoutItems", mockReadoutItem)}
         />
@@ -67,7 +67,7 @@ stories
     () => {
       return (
         <Readout
-          color={color("color")}
+          color={color("color", "#eee")}
           primary={boolean("primary", false)}
           readoutItems={object("readoutItems", mockReadoutManyItems)}
         />
