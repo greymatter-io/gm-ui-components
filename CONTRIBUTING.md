@@ -2,9 +2,9 @@
 
 ## Guidelines
 
-The intent of this library is to provide apps with a set of re-usable components that have purpose and meaning. We do not seek to create dopelgangers of HTML primitives like `<p/>`, `<h1/>`, `<a/>`, etc. Therefore, when proposing or creating new components consider these things:
+The intent of this library is to provide apps with a set of re-usable components that have a beneficial, re-usable purpose. When creating or updating components, please keep these guidelines in mind.
 
-1. Can you achieve the same result by styling an HTML primitive? If so, do not add it to this library.
+1. Semantic naming is important and should clearly communicate the components purpose. When naming a component, choose one that's contextual to its use. For example, a component built around an `h1` element should be named `Heading` rather than `H1`. This has the added benefit of clearly separating custom components with primitive HTML elements.
 2. Components should serve a single clear use case: "Shell panel headings", "App navigation tabs", "Context menu action button". If you find yourself frequently having to provide style overrides, that's a sign the component is not well-targeted to where it's being used. If you find yourself frequently having to provide the same style overrides over and over to a component, that's a sign you should extend the component to better target its use context.
 
 ## Development
