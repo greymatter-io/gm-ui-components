@@ -5,7 +5,7 @@
 The intent of this library is to provide apps with a set of re-usable components that have purpose and meaning. We do not seek to create dopelgangers of HTML primitives like `<p/>`, `<h1/>`, `<a/>`, etc. Therefore, when proposing or creating new components consider these things:
 
 1. Can you achieve the same result by styling an HTML primitive? If so, do not add it to this library.
-2. Does this component add significant features by adding behavior to an HTML primitive? For example, adding a tooltip to a `<p/>` tag is actually a Tooltip component, not an extenstion of a `<p/>` tag and would thus warrant a new Tooltip component.
+2. Components should serve a single clear use case: "Shell panel headings", "App navigation tabs", "Context menu action button". If you find yourself frequently having to provide style overrides, that's a sign the component is not well-targeted to where it's being used. If you find yourself frequently having to provide the same style overrides over and over to a component, that's a sign you should extend the component to better target its use context.
 
 ## Development
 
