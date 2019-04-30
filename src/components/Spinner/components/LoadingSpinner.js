@@ -54,7 +54,7 @@ export function LoadingSpinner(props) {
         r="47"
         stroke="url(#gradient)"
         vectorEffect="non-scaling-stroke"
-        strokeWidth="1"
+        strokeWidth="1.0001"
         fill="none"
         transform="rotate(90 50 50)"
       />
