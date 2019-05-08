@@ -67,7 +67,12 @@ const ButtonWrap = styled.button`
   }
 
   ${props => css`
-    ${generateButtonStyle(props.theme, props.type, props.outline)}
+    ${generateButtonStyle(
+      props.theme,
+      props.type,
+      props.dangerouslySetColor,
+      props.outline
+    )}
     ${generateButtonSize(props.size)} 
     ${generateButtonOrientation(props.orientation)} 
   `};
@@ -75,6 +80,7 @@ const ButtonWrap = styled.button`
 
 ButtonWrap.propTypes = {
   active: PropTypes.bool,
+  dangerouslySetColor: PropTypes.string,
   orientation: PropTypes.string,
   outline: PropTypes.bool,
   size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]),

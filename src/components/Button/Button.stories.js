@@ -19,6 +19,7 @@ stories
       <Button
         active={boolean("active", false)}
         label={text("label", "Hello World")}
+        dangerouslySetColor={text("dangerouslySetColor", "")}
         type={select("type", types, "default")}
         disabled={boolean("disabled", false)}
         clickAction={() => alert("clicked")}
