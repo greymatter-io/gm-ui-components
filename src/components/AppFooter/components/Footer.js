@@ -15,13 +15,12 @@ const Footer = styled.footer`
   height: auto;
   min-height: ${spacingScale(4)};
   align-items: stretch;
-  justify-content: stretch;
+  justify-content: space-between;
 
   @media all and (min-width: 800px) {
     height: ${spacingScale(5)};
     flex-wrap: no-wrap;
     align-items: center;
-    justify-content: flex-start;
     position: fixed;
     bottom: 0;
     left: 0;

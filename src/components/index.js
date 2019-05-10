@@ -1,6 +1,6 @@
 export * from "./Glyphs";
 export { default as AppFooter } from "./AppFooter";
-export { Breadcrumbs, BreadcrumbItem } from "./Breadcrumbs";
+export { default as Breadcrumbs } from "./Breadcrumbs";
 export { default as Button } from "./Button";
 export { default as ButtonGroup } from "./ButtonGroup";
 export { default as Icon } from "./Icon";
@@ -22,4 +22,5 @@ export { default as InputRange } from "./Form/scenes/InputRange";
 export { default as Textarea } from "./Form/scenes/Textarea";
 export { default as Radio } from "./Form/scenes/Radio";
 export { default as Select } from "./Form/scenes/Select";
-export { keen, keenDark } from "../style/styleVariables";
+export * from "../style/styleVariables";
+export * from "../style/styleFunctions";

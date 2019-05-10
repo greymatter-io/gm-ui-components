@@ -8,6 +8,7 @@ exports[`Button Snapshots matches active snapshot 1`] = `
   label="Button"
   orientation="horizontal"
   size="normal"
+  type="default"
 />
 `;
 
@@ -19,6 +20,7 @@ exports[`Button Snapshots matches disabled snapshot 1`] = `
   label="Button"
   orientation="horizontal"
   size="normal"
+  type="default"
 />
 `;
 
@@ -126,6 +128,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   class="c0"
   orientation="vertical"
   title="vertical"
+  type="default"
 >
   <span>
     vertical
@@ -239,6 +242,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   class="c0"
   orientation="horizontal"
   title="horizontal"
+  type="default"
 >
   <span>
     horizontal
@@ -352,6 +356,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   class="c0"
   orientation="horizontal"
   title="outline"
+  type="default"
 >
   <span>
     outline
@@ -369,6 +374,7 @@ exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
   prefix="Prefix"
   size="normal"
   suffix="Suffix"
+  type="default"
 />
 `;
 
@@ -478,6 +484,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   class="c0"
   orientation="horizontal"
   title="normal"
+  type="default"
 >
   <span>
     normal
@@ -592,6 +599,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   class="c0"
   orientation="horizontal"
   title="xs"
+  type="default"
 >
   <span>
     xs
@@ -706,6 +714,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   class="c0"
   orientation="horizontal"
   title="sm"
+  type="default"
 >
   <span>
     sm
@@ -819,6 +828,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   class="c0"
   orientation="horizontal"
   title="lg"
+  type="default"
 >
   <span>
     lg
@@ -932,6 +942,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   class="c0"
   orientation="horizontal"
   title="xl"
+  type="default"
 >
   <span>
     xl

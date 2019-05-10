@@ -14,8 +14,10 @@ import IconCard from "./IconCard.svg";
 import IconCheck from "./IconCheck.svg";
 import IconChecklist from "./IconChecklist.svg";
 import IconChevronDown from "./IconChevronDown.svg";
+import IconChevronDownDouble from "./IconChevronDownDouble.svg";
 import IconChevronDownSmall from "./IconChevronDownSmall.svg";
 import IconChevronLeft from "./IconChevronLeft.svg";
+import IconChevronUpDouble from "./IconChevronUpDouble.svg";
 import IconChevronLeftDouble from "./IconChevronLeftDouble.svg";
 import IconChevronLeftSmall from "./IconChevronLeftSmall.svg";
 import IconChevronRight from "./IconChevronRight.svg";
@@ -191,6 +193,7 @@ export {
   IconCheck,
   IconChecklist,
   IconChevronDown,
+  IconChevronDownDouble,
   IconChevronDownSmall,
   IconChevronLeft,
   IconChevronLeftDouble,
@@ -199,6 +202,7 @@ export {
   IconChevronRightDouble,
   IconChevronRightSmall,
   IconChevronUp,
+  IconChevronUpDouble,
   IconChevronUpSmall,
   IconChild,
   IconCircleThick,

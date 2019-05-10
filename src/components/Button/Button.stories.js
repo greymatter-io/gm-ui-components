@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { number, select, text, boolean } from "@storybook/addon-knobs";
+import { number, select, text, color, boolean } from "@storybook/addon-knobs";
 
 import { IconBell } from "components/Glyphs";
 import Button from "./Button";
@@ -19,6 +19,7 @@ stories
       <Button
         active={boolean("active", false)}
         label={text("label", "Hello World")}
+        dangerouslySetColor={color("dangerouslySetColor", "")}
         type={select("type", types, "default")}
         disabled={boolean("disabled", false)}
         clickAction={() => alert("clicked")}

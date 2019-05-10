@@ -20,7 +20,7 @@ function generateButtonTypeColors(theme, type) {
 
 /**
  * Utility function that transforms an object containing different attributes
- * into a block of CSS attributes dealing with buton styles
+ * into a block of CSS attributes dealing with button styles
  *
  * @param {any} {
  *   buttonBackgroundColorBase = COLOR_BACKGROUND_A,
@@ -29,8 +29,10 @@ function generateButtonTypeColors(theme, type) {
  * }
  * @returns string
  */
-function generateButtonStyle(theme, type, renderBorder) {
-  const baseColor = generateButtonTypeColors(theme, type);
+function generateButtonStyle(theme, type, dangerouslySetColor, renderBorder) {
+  const baseColor = dangerouslySetColor
+    ? dangerouslySetColor
+    : generateButtonTypeColors(theme, type);
 
   const colorStyles = css`
     background-color: ${baseColor};

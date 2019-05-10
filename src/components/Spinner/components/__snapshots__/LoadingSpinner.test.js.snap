@@ -90,7 +90,7 @@ exports[`LoadingSpinner matches snapshot 1`] = `
     fill="none"
     r="47"
     stroke="url(#gradient)"
-    strokeWidth="1"
+    strokeWidth="1.0001"
     transform="rotate(90 50 50)"
     vectorEffect="non-scaling-stroke"
   />
