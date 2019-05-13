@@ -355,15 +355,81 @@ const NORMALIZE = css`
   }
 `;
 
+const CUSTOM_PROPERTIES = css`
+  :root {
+    --COLOR_BRAND_A: ${props => props.theme.COLOR_BRAND_A};
+    --COLOR_BRAND_B: ${props => props.theme.COLOR_BRAND_B};
+    --COLOR_CONTENT: ${props => props.theme.COLOR_CONTENT};
+
+    --COLOR_BACKGROUND_A: ${props => props.theme.COLOR_BACKGROUND_A};
+    --COLOR_BACKGROUND_B: ${props => props.theme.COLOR_BACKGROUND_B};
+    --COLOR_BACKGROUND_C: ${props => props.theme.COLOR_BACKGROUND_C};
+
+    --COLOR_INTENT_HIGHLIGHT: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+    --COLOR_INTENT_SUCCESS: ${props => props.theme.COLOR_INTENT_SUCCESS};
+    --COLOR_INTENT_DANGER: ${props => props.theme.COLOR_INTENT_DANGER};
+    --COLOR_INTENT_WARNING: ${props => props.theme.COLOR_INTENT_WARNING};
+    --COLOR_INTENT_INFO: ${props => props.theme.COLOR_INTENT_INFO};
+
+    --COLOR_KEYLINE: ${props => props.theme.COLOR_KEYLINE};
+    --COLOR_KEYLINE_SOLID: ${props => props.theme.COLOR_KEYLINE_SOLID};
+
+    --OPACITY_100: ${props => props.theme.OPACITY_100};
+    --OPACITY_70: ${props => props.theme.OPACITY_70};
+    --OPACITY_50: ${props => props.theme.OPACITY_50};
+    --OPACITY_15: ${props => props.theme.OPACITY_15};
+
+    --BORDER_RADIUS_BASE: ${props => props.theme.BORDER_RADIUS_BASE};
+    --SPACING_BASE: ${props => props.theme.SPACING_BASE};
+
+    --ZINDEX_TOOLTIP: ${props => props.theme.ZINDEX_TOOLTIP};
+    --ZINDEX_STICKY: ${props => props.theme.ZINDEX_STICKY};
+
+    --RADIUS_05: ${props => props.theme.RADIUS_05};
+    --RADIUS_1: ${props => props.theme.RADIUS_1};
+    --RADIUS_2: ${props => props.theme.RADIUS_2};
+    --RADIUS_3: ${props => props.theme.RADIUS_3};
+    --RADIUS_4: ${props => props.theme.RADIUS_4};
+    --RADIUS_5: ${props => props.theme.RADIUS_5};
+    --RADIUS_6: ${props => props.theme.RADIUS_6};
+    --RADIUS_7: ${props => props.theme.RADIUS_7};
+    --RADIUS_8: ${props => props.theme.RADIUS_8};
+
+    --FONTS_SYSTEM: ${props => props.theme.FONTS_SYSTEM};
+    --FONTS_BRAND: ${props => props.theme.FONTS_BRAND};
+    --FONTS_CODE: -- ${props => props.theme.FONTS_CODE};
+
+    --FONT_STACK_BASE: ${props => props.theme.FONT_STACK_BASE};
+    --FONT_STACK_BRAND: ${props => props.theme.FONT_STACK_BRAND};
+    --FONT_STACK_CODE: ${props => props.theme.FONT_STACK_CODE};
+
+    --FONT_SIZE_HERO: ${props => props.theme.FONT_SIZE_HERO};
+    --FONT_SIZE_TITLE: ${props => props.theme.FONT_SIZE_TITLE};
+    --FONT_SIZE_LG: ${props => props.theme.FONT_SIZE_LG};
+    --FONT_SIZE_MD: ${props => props.theme.FONT_SIZE_MD};
+    --FONT_SIZE_BASE: ${props => props.theme.FONT_SIZE_BASE};
+    --FONT_SIZE_SM: ${props => props.theme.FONT_SIZE_SM};
+    --FONT_SIZE_XS: ${props => props.theme.FONT_SIZE_XS};
+
+    --LINE_HEIGHT_BASE: ${props => props.theme.LINE_HEIGHT_BASE};
+
+    --FONT_WEIGHT_BASE: ${props => props.theme.FONT_WEIGHT_BASE};
+    --FONT_WEIGHT_SEMIBOLD: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
+    --FONT_WEIGHT_BOLD: ${props => props.theme.FONT_WEIGHT_BOLD};
+  }
+`;
+
 const GlobalStyle = createGlobalStyle`
 
   ${NORMALIZE};
+
+  ${CUSTOM_PROPERTIES};
 
   html {
     font-family: ${props => props.theme.FONTS_SYSTEM};
     font-size: ${props => props.theme.FONT_SIZE_BASE};
     color: ${props => props.theme.COLOR_CONTENT};
-  } 
+  }
 
   a:link {
     color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
