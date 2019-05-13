@@ -397,7 +397,7 @@ const CUSTOM_PROPERTIES = css`
 
     --FONTS_SYSTEM: ${props => props.theme.FONTS_SYSTEM};
     --FONTS_BRAND: ${props => props.theme.FONTS_BRAND};
-    --FONTS_CODE: -- ${props => props.theme.FONTS_CODE};
+    --FONTS_CODE: ${props => props.theme.FONTS_CODE};
 
     --FONT_STACK_BASE: ${props => props.theme.FONT_STACK_BASE};
     --FONT_STACK_BRAND: ${props => props.theme.FONT_STACK_BRAND};
