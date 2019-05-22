@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/checkbox-negative</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/checkbox-negative" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,16 L44,16 C46.209139,16 48,17.790861 48,20 L48,44 C48,46.209139 46.209139,48 44,48 L20,48 C17.790861,48 16,46.209139 16,44 L16,20 C16,17.790861 17.790861,16 20,16 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M20,16 L44,16 C46.209139,16 48,17.790861 48,20 L48,44 C48,46.209139 46.209139,48 44,48 L20,48 C17.790861,48 16,46.209139 16,44 L16,20 C16,17.790861 17.790861,16 20,16 Z M18,46 L46,18 M46,46 L18,18" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

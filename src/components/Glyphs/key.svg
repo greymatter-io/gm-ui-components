@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/key</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/key" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M33.0710678,33.0710678 L48,48 L33.0710678,33.0710678 C31.2614237,34.8807119 28.7614237,36 26,36 C20.4771525,36 16,31.5228475 16,26 C16,20.4771525 20.4771525,16 26,16 C31.5228475,16 36,20.4771525 36,26 C36,28.7614237 34.8807119,31.2614237 33.0710678,33.0710678 Z M42,50 L36,44 L42,50 Z" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

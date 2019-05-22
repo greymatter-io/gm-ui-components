@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/newWorkspace</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/newWorkspace" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M44,52 L20,52 C15.581722,52 12,48.418278 12,44 L12,20 C12,15.581722 15.581722,12 20,12 L44,12 C48.418278,12 52,15.581722 52,20 L52,44 C52,48.418278 48.418278,52 44,52 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M44,52 L20,52 C15.581722,52 12,48.418278 12,44 L12,20 C12,15.581722 15.581722,12 20,12 L44,12 C48.418278,12 52,15.581722 52,20 L52,44 C52,48.418278 48.418278,52 44,52 Z M32,19.5 L32,44.5 M44,32 L20,32" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

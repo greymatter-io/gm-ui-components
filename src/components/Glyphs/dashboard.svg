@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18,16 L46,16 C47.1045695,16 48,16.8954305 48,18 L48,46 C48,47.1045695 47.1045695,48 46,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,18 C16,16.8954305 16.8954305,16 18,16 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M18,16 L46,16 C47.1045695,16 48,16.8954305 48,18 L48,46 C48,47.1045695 47.1045695,48 46,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,18 C16,16.8954305 16.8954305,16 18,16 Z M16,39 L24,43 L32,36 L40,40 L48,24 M24,24 L32,24 M24,28 L32,28" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

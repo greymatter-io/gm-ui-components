@@ -10,17 +10,46 @@ const StyledSVG = styled.svg.attrs({
   preserveAspectRatio: "xMaxYMax meet"
 })`
   z-index: 1;
-  width: ${props => (props.size ? props.size : "1.714em")};
-  height: ${props => (props.size ? props.size : "1.714em")};
+  width: ${props => props.size};
+  height: ${props => props.size};
   word-spacing: 0;
   vertical-align: middle;
+
   &:not(:root) {
     overflow: visible;
+  }
+
+  * {
+    fill: none;
+    stroke: 0;
+    vector-effect: non-scaling-stroke;
+  }
+
+  *[class*="border"] {
+    stroke-width: ${props => props.borderWidth};
+    stroke: ${props => props.borderColor};
+  }
+
+  *[class*="fill"] {
+    fill: ${props => props.fillColor};
+    fill-opacity: ${props => props.fillOpacity};
   }
 `;
 
 StyledSVG.propTypes = {
+  borderColor: PropTypes.string,
+  borderWidth: PropTypes.string,
+  fillColor: PropTypes.string,
+  fillOpacity: PropTypes.string,
   size: PropTypes.string
+};
+
+StyledSVG.defaultProps = {
+  borderColor: "currentColor",
+  borderWidth: "1px",
+  fillColor: "currentColor",
+  fillOpacity: "0.15",
+  size: "1.714em"
 };
 
 export default StyledSVG;

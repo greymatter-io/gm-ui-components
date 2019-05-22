@@ -24,7 +24,7 @@ export const OPACITY_15 = "0.15";
 // LAYOUT
 export const BORDER_RADIUS_BASE = "3px"; // Will be changed to 4px
 export const SPACING_BASE = 8;
-export const ICON_VIEWBOX_SIZE = SPACING_BASE * 3; // Move to Icons component?
+export const ICON_VIEWBOX_SIZE = "64"; // Move to Icons component?
 
 export const ZINDEX_TOOLTIP = "1070";
 export const ZINDEX_STICKY = "1010";

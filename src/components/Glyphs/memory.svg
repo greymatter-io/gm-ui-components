@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/memory</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/memory" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M17.5,23 L46.5,23 C47.3284271,23 48,23.6715729 48,24.5 L48,33.5 C48,34.3284271 47.3284271,35 46.5,35 L17.5,35 C16.6715729,35 16,34.3284271 16,33.5 L16,24.5 C16,23.6715729 16.6715729,23 17.5,23 Z M46,38 C46.5522847,38 47,38.4477153 47,39 C47,39.5522847 46.5522847,40 46,40 L18,40 C17.4477153,40 17,39.5522847 17,39 C17,38.4477153 17.4477153,38 18,38 L46,38 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M46,39 L18,39 L46,39 Z M17.5,23 L46.5,23 C47.3284271,23 48,23.6715729 48,24.5 L48,33.5 C48,34.3284271 47.3284271,35 46.5,35 L17.5,35 C16.6715729,35 16,34.3284271 16,33.5 L16,24.5 C16,23.6715729 16.6715729,23 17.5,23 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

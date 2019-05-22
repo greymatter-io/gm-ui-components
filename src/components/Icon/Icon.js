@@ -1,47 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import IconBackground from "./components/IconBackground";
 import StyledSVG from "./components/StyledSVG";
 
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
-  backgroundColor: PropTypes.string,
-  backgroundOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  backgroundSizeRatio: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ]),
-  backgroundStyle: PropTypes.oneOf([
-    "BackgroundCircleSmall",
-    "BackgroundSquareSmall",
-    "BackgroundTriangleSmall",
-    "BackgroundSquare",
-    "BackgroundSquareBeveled",
-    "BackgroundSquareRounded",
-    "BackgroundSquareRoundedSmooth",
-    "BackgroundTriangle"
-  ]),
   borderColor: PropTypes.string,
-  borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  glyphColor: PropTypes.string,
+  fillColor: PropTypes.string,
+  fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
   size: PropTypes.string,
   title: PropTypes.string
-};
-
-Icon.defaultProps = {
-  backgroundColor: "currentColor",
-  backgroundOpacity: 1,
-  borderColor: "currentColor",
-  borderOpacity: 1,
-  borderWidth: 1,
-  glyph: "",
-  glyphColor: "currentColor",
-  glyphSizeRatio: 1
 };
 
 /**
@@ -51,14 +23,10 @@ Icon.defaultProps = {
  */
 export default function Icon({
   ariaLabelledby,
-  backgroundColor,
-  backgroundOpacity,
-  backgroundStyle,
   borderColor,
-  borderOpacity,
   borderWidth,
   children,
-  glyphColor,
+  fillColor,
   glyphName,
   title,
   size,
@@ -70,19 +38,12 @@ export default function Icon({
       focusable="false"
       size={size}
       id={glyphName}
+      fillColor={fillColor}
+      borderWidth={borderWidth}
+      borderColor={borderColor}
       {...props}
     >
-      {backgroundStyle && (
-        <IconBackground
-          name={backgroundStyle}
-          backgroundColor={backgroundColor}
-          backgroundOpacity={backgroundOpacity}
-          borderColor={borderColor}
-          borderOpacity={borderOpacity}
-          borderWidth={parseFloat(borderWidth, 10)}
-        />
-      )}
-      <g title={glyphName} fill={glyphColor}>
+      <g title={glyphName}>
         <title>{title ? title : glyphName}</title>
         {children}
       </g>
@@ -91,3 +52,11 @@ export default function Icon({
 }
 
 Icon.displayName = "Icon";
+
+Icon.defaultProps = {
+  borderColor: "currentColor",
+  borderWidth: "1px",
+  fillColor: "currentColor",
+  fillOpacity: "currentColor",
+  size: "1.714em"
+};

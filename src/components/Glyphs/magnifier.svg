@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/magnifier</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/magnifier" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" cx="28.5" cy="28.5" r="14.5"></circle>
+        <path d="M28.5,43 C20.4918711,43 14,36.5081289 14,28.5 C14,20.4918711 20.4918711,14 28.5,14 C36.5081289,14 43,20.4918711 43,28.5 C43,36.5081289 36.5081289,43 28.5,43 Z M39,39 L50,50 L39,39 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

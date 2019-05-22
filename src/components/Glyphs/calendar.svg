@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18,18 L46,18 C47.1045695,18 48,18.8954305 48,20 L48,46 C48,47.1045695 47.1045695,48 46,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,20 C16,18.8954305 16.8954305,18 18,18 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M18,18 L46,18 C47.1045695,18 48,18.8954305 48,20 L48,46 C48,47.1045695 47.1045695,48 46,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,20 C16,18.8954305 16.8954305,18 18,18 Z M24,30.5 L26,28 L26,38 M33,28 L40,28 L35.3333333,38 M40,16 L40,20 M24,16 L24,20" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

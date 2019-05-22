@@ -28,6 +28,7 @@ module.exports = (code, config, state) => {
    use our own custom Icon component as the svg element. */
 function stripSVG(code) {
   return code
-    .slice(code.indexOf(">"), code.indexOf("</svg>"))
-    .replace(/fill="([^"]*)"/g, ""); // Strip out any hard coded fills https://regexr.com/41skv
+  .slice(code.indexOf(">"), code.indexOf("</svg>"))
+  .replace(/id=/g, 'class=') // Replace ids with classes
+  .replace(/fill="([^"]*)"/g, ""); // Strip out any hard coded fills https://regexr.com/41skv
 }

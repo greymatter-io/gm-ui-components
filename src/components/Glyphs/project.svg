@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/project</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M37,38 L37,46 C37,47.1045695 36.1045695,48 35,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,22 C16,20.8954305 16.8954305,20 18,20 L26,20 M45,20.4 L45,38 C45,39.1045695 44.1045695,40 43,40 L26,40 C24.8954305,40 24,39.1045695 24,38 L24,14 C24,12.8954305 24.8954305,12 26,12 L36.6,12 L45,20.4 L36.6,12" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M37,40 L37,46 C37,47.1045695 36.1045695,48 35,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,22 C16,20.8954305 16.8954305,20 18,20 L24,20 M45,20.4 L45,38 C45,39.1045695 44.1045695,40 43,40 L26,40 C24.8954305,40 24,39.1045695 24,38 L24,14 C24,12.8954305 24.8954305,12 26,12 L36.6,12 L36.6,18.4 C36.6,19.5045695 37.4954305,20.4 38.6,20.4 L45,20.4 L36.6,12" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>
