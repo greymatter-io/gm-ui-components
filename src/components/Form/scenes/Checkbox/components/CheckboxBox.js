@@ -57,6 +57,24 @@ const CheckboxBox = styled(InputBox).attrs({
         )};
       border-color: transparent;
     }
+
+    *:active > & {
+      background: ${props =>
+        transparentize(
+          1 - props.theme.OPACITY_50,
+          props.theme.COLOR_INTENT_HIGHLIGHT
+        )};
+
+      &:checked,
+      &:indeterminate {
+        background: ${props =>
+          transparentize(
+            1 - props.theme.OPACITY_50,
+            props.theme.COLOR_INTENT_HIGHLIGHT
+          )};
+        border-color: transparent;
+      }
+    }
   }
 `;
 

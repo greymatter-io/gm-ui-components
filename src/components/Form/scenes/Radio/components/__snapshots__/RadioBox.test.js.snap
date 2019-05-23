@@ -9,6 +9,7 @@ exports[`RadioBox should render 1`] = `
   width: 0;
   height: 0;
   border-radius: 200px;
+  box-sizing: border-box;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(0.1);
   -ms-transform: translateX(-50%) translateY(-50%) scale(0.1);
   transform: translateX(-50%) translateY(-50%) scale(0.1);
@@ -27,6 +28,15 @@ exports[`RadioBox should render 1`] = `
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
   -ms-transform: translateX(-50%) translateY(-50%) scale(1);
   transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+*:hover > .c0 {
+  background: rgba(10,171,42,0.15);
+}
+
+*:hover > .c0:checked {
+  background: rgba(10,171,42,0.7);
+  border-color: transparent;
 }
 
 <InputBox
