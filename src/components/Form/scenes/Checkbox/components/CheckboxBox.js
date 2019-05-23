@@ -41,6 +41,23 @@ const CheckboxBox = styled(InputBox).attrs({
       transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
     }
   }
+
+  *:hover > & {
+    background: ${props =>
+      transparentize(
+        1 - props.theme.OPACITY_15,
+        props.theme.COLOR_INTENT_HIGHLIGHT
+      )};
+
+    &:checked {
+      background: ${props =>
+        transparentize(
+          1 - props.theme.OPACITY_70,
+          props.theme.COLOR_INTENT_HIGHLIGHT
+        )};
+      border-color: transparent;
+    }
+  }
 `;
 
 CheckboxBox.defaultProps = {
