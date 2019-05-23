@@ -3,14 +3,16 @@
 exports[`CheckboxBox should render 1`] = `
 .c0 {
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .c0:after {
-  width: 25%;
-  height: 50%;
+  width: 45%;
+  height: 80%;
+  box-sizing: border-box;
   border-style: solid;
   border-width: 0 2px 2px 0;
-  border-color: #fff;
+  border-color: #ffffff;
   margin-top: -1px;
   -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
   -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
@@ -38,6 +40,15 @@ exports[`CheckboxBox should render 1`] = `
   -webkit-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
   -ms-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
   transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+}
+
+*:hover > .c0 {
+  background: rgba(10,171,42,0.15);
+}
+
+*:hover > .c0:checked {
+  background: rgba(10,171,42,0.7);
+  border-color: transparent;
 }
 
 <InputBox
