@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { transparentize } from "polished";
 
 import { keen } from "style/styleVariables";
 
@@ -11,8 +12,9 @@ const CheckboxBox = styled(InputBox).attrs({
   box-sizing: border-box;
 
   &:after {
-    width: 25%;
-    height: 50%;
+    width: 45%;
+    height: 80%;
+    box-sizing: border-box;
     border-style: solid;
     border-width: 0 2px 2px 0;
     border-color: ${props => props.theme.COLOR_BACKGROUND_A};
