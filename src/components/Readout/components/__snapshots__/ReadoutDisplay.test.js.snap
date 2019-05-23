@@ -1,125 +1,309 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ReadoutDisplay matches snapshot when primary is false 1`] = `
-.c0 {
-  color: #000;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  margin: 0 8px 8px 0;
-  position: relative;
-  overflow: hidden;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
-
-.c0:before {
-  content: "";
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.c0:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 3px solid;
-}
-
-.c0:first-child:last-child {
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ReadoutDisplay-sc-843n99-0",
+        "isStatic": false,
+        "rules": Array [
+          "color:",
+          [Function],
+          ";display:flex;flex:1 1 auto;flex-direction:column;align-items:stretch;justify-content:center;border-radius:",
+          [Function],
+          ";margin:0 ",
+          "8px",
+          " ",
+          "8px",
+          " 0;position:relative;overflow:hidden;font-family:",
+          [Function],
+          ";&:before{content:\\"\\";opacity:0.2;background-color:",
+          [Function],
+          ";position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;}&:after{content:\\"\\";position:absolute;bottom:0;left:0;right:0;border-bottom:3px solid ",
+          [Function],
+          ";}&:first-child:last-child{flex-grow:0;}",
+          [Function],
+          ";",
+        ],
+      },
+      "defaultProps": Object {
+        "theme": Object {
+          "BORDER_RADIUS_BASE": "3px",
+          "COLOR_BACKGROUND_A": "#ffffff",
+          "COLOR_BACKGROUND_B": "#F8F8F8",
+          "COLOR_BACKGROUND_C": "#000000",
+          "COLOR_BRAND_A": "#0aab2a",
+          "COLOR_BRAND_B": "#0aab2a",
+          "COLOR_CONTENT": "#000",
+          "COLOR_INTENT_DANGER": "#D83D22",
+          "COLOR_INTENT_HIGHLIGHT": "#0aab2a",
+          "COLOR_INTENT_INFO": "#1E6DF6",
+          "COLOR_INTENT_SUCCESS": "#0aab2a",
+          "COLOR_INTENT_WARNING": "#F7CD45",
+          "COLOR_KEYLINE": "rgba(0,0,0,0.08)",
+          "COLOR_KEYLINE_SOLID": "#EBEBEB",
+          "FONTS_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+          "FONTS_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+          "FONTS_SYSTEM": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+          "FONT_SIZE_BASE": "14px",
+          "FONT_SIZE_HERO": "40px",
+          "FONT_SIZE_LG": "18px",
+          "FONT_SIZE_MD": "16px",
+          "FONT_SIZE_SM": "11px",
+          "FONT_SIZE_TITLE": "36px",
+          "FONT_SIZE_XS": "9px",
+          "FONT_STACK_BASE": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+          "FONT_STACK_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+          "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+          "FONT_WEIGHT_BASE": 400,
+          "FONT_WEIGHT_BOLD": 800,
+          "FONT_WEIGHT_SEMIBOLD": 600,
+          "ICON_VIEWBOX_SIZE": 24,
+          "LINE_HEIGHT_BASE": 1.4,
+          "OPACITY_100": "1",
+          "OPACITY_15": "0.15",
+          "OPACITY_50": "0.5",
+          "OPACITY_70": "0.7",
+          "RADIUS_05": "4px",
+          "RADIUS_1": "8px",
+          "RADIUS_2": "16px",
+          "RADIUS_3": "24px",
+          "RADIUS_4": "32px",
+          "RADIUS_5": "40px",
+          "RADIUS_6": "48px",
+          "RADIUS_7": "56px",
+          "RADIUS_8": "64px",
+          "SPACING_BASE": 8,
+          "ZINDEX_STICKY": "1010",
+          "ZINDEX_TOOLTIP": "1070",
+          "name": "Keen",
+        },
+      },
+      "displayName": "ReadoutDisplay",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "color": [Function],
+        "primary": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "ReadoutDisplay-sc-843n99-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  primary={false}
+  theme={
+    Object {
+      "BORDER_RADIUS_BASE": "3px",
+      "COLOR_BACKGROUND_A": "#ffffff",
+      "COLOR_BACKGROUND_B": "#F8F8F8",
+      "COLOR_BACKGROUND_C": "#000000",
+      "COLOR_BRAND_A": "#0aab2a",
+      "COLOR_BRAND_B": "#0aab2a",
+      "COLOR_CONTENT": "#000",
+      "COLOR_INTENT_DANGER": "#D83D22",
+      "COLOR_INTENT_HIGHLIGHT": "#0aab2a",
+      "COLOR_INTENT_INFO": "#1E6DF6",
+      "COLOR_INTENT_SUCCESS": "#0aab2a",
+      "COLOR_INTENT_WARNING": "#F7CD45",
+      "COLOR_KEYLINE": "rgba(0,0,0,0.08)",
+      "COLOR_KEYLINE_SOLID": "#EBEBEB",
+      "FONTS_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+      "FONTS_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+      "FONTS_SYSTEM": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+      "FONT_SIZE_BASE": "14px",
+      "FONT_SIZE_HERO": "40px",
+      "FONT_SIZE_LG": "18px",
+      "FONT_SIZE_MD": "16px",
+      "FONT_SIZE_SM": "11px",
+      "FONT_SIZE_TITLE": "36px",
+      "FONT_SIZE_XS": "9px",
+      "FONT_STACK_BASE": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+      "FONT_STACK_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+      "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+      "FONT_WEIGHT_BASE": 400,
+      "FONT_WEIGHT_BOLD": 800,
+      "FONT_WEIGHT_SEMIBOLD": 600,
+      "ICON_VIEWBOX_SIZE": 24,
+      "LINE_HEIGHT_BASE": 1.4,
+      "OPACITY_100": "1",
+      "OPACITY_15": "0.15",
+      "OPACITY_50": "0.5",
+      "OPACITY_70": "0.7",
+      "RADIUS_05": "4px",
+      "RADIUS_1": "8px",
+      "RADIUS_2": "16px",
+      "RADIUS_3": "24px",
+      "RADIUS_4": "32px",
+      "RADIUS_5": "40px",
+      "RADIUS_6": "48px",
+      "RADIUS_7": "56px",
+      "RADIUS_8": "64px",
+      "SPACING_BASE": 8,
+      "ZINDEX_STICKY": "1010",
+      "ZINDEX_TOOLTIP": "1070",
+      "name": "Keen",
+    }
+  }
 />
 `;
 
 exports[`ReadoutDisplay matches snapshot when primary is true 1`] = `
-.c0 {
-  color: #000;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  margin: 0 8px 8px 0;
-  position: relative;
-  overflow: hidden;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
-
-.c0:before {
-  content: "";
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.c0:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 3px solid;
-}
-
-.c0:first-child:last-child {
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-}
-
-.c0:before {
-  opacity: 0.3;
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ReadoutDisplay-sc-843n99-0",
+        "isStatic": false,
+        "rules": Array [
+          "color:",
+          [Function],
+          ";display:flex;flex:1 1 auto;flex-direction:column;align-items:stretch;justify-content:center;border-radius:",
+          [Function],
+          ";margin:0 ",
+          "8px",
+          " ",
+          "8px",
+          " 0;position:relative;overflow:hidden;font-family:",
+          [Function],
+          ";&:before{content:\\"\\";opacity:0.2;background-color:",
+          [Function],
+          ";position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;}&:after{content:\\"\\";position:absolute;bottom:0;left:0;right:0;border-bottom:3px solid ",
+          [Function],
+          ";}&:first-child:last-child{flex-grow:0;}",
+          [Function],
+          ";",
+        ],
+      },
+      "defaultProps": Object {
+        "theme": Object {
+          "BORDER_RADIUS_BASE": "3px",
+          "COLOR_BACKGROUND_A": "#ffffff",
+          "COLOR_BACKGROUND_B": "#F8F8F8",
+          "COLOR_BACKGROUND_C": "#000000",
+          "COLOR_BRAND_A": "#0aab2a",
+          "COLOR_BRAND_B": "#0aab2a",
+          "COLOR_CONTENT": "#000",
+          "COLOR_INTENT_DANGER": "#D83D22",
+          "COLOR_INTENT_HIGHLIGHT": "#0aab2a",
+          "COLOR_INTENT_INFO": "#1E6DF6",
+          "COLOR_INTENT_SUCCESS": "#0aab2a",
+          "COLOR_INTENT_WARNING": "#F7CD45",
+          "COLOR_KEYLINE": "rgba(0,0,0,0.08)",
+          "COLOR_KEYLINE_SOLID": "#EBEBEB",
+          "FONTS_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+          "FONTS_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+          "FONTS_SYSTEM": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+          "FONT_SIZE_BASE": "14px",
+          "FONT_SIZE_HERO": "40px",
+          "FONT_SIZE_LG": "18px",
+          "FONT_SIZE_MD": "16px",
+          "FONT_SIZE_SM": "11px",
+          "FONT_SIZE_TITLE": "36px",
+          "FONT_SIZE_XS": "9px",
+          "FONT_STACK_BASE": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+          "FONT_STACK_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+          "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+          "FONT_WEIGHT_BASE": 400,
+          "FONT_WEIGHT_BOLD": 800,
+          "FONT_WEIGHT_SEMIBOLD": 600,
+          "ICON_VIEWBOX_SIZE": 24,
+          "LINE_HEIGHT_BASE": 1.4,
+          "OPACITY_100": "1",
+          "OPACITY_15": "0.15",
+          "OPACITY_50": "0.5",
+          "OPACITY_70": "0.7",
+          "RADIUS_05": "4px",
+          "RADIUS_1": "8px",
+          "RADIUS_2": "16px",
+          "RADIUS_3": "24px",
+          "RADIUS_4": "32px",
+          "RADIUS_5": "40px",
+          "RADIUS_6": "48px",
+          "RADIUS_7": "56px",
+          "RADIUS_8": "64px",
+          "SPACING_BASE": 8,
+          "ZINDEX_STICKY": "1010",
+          "ZINDEX_TOOLTIP": "1070",
+          "name": "Keen",
+        },
+      },
+      "displayName": "ReadoutDisplay",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "color": [Function],
+        "primary": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "ReadoutDisplay-sc-843n99-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  primary={true}
+  theme={
+    Object {
+      "BORDER_RADIUS_BASE": "3px",
+      "COLOR_BACKGROUND_A": "#ffffff",
+      "COLOR_BACKGROUND_B": "#F8F8F8",
+      "COLOR_BACKGROUND_C": "#000000",
+      "COLOR_BRAND_A": "#0aab2a",
+      "COLOR_BRAND_B": "#0aab2a",
+      "COLOR_CONTENT": "#000",
+      "COLOR_INTENT_DANGER": "#D83D22",
+      "COLOR_INTENT_HIGHLIGHT": "#0aab2a",
+      "COLOR_INTENT_INFO": "#1E6DF6",
+      "COLOR_INTENT_SUCCESS": "#0aab2a",
+      "COLOR_INTENT_WARNING": "#F7CD45",
+      "COLOR_KEYLINE": "rgba(0,0,0,0.08)",
+      "COLOR_KEYLINE_SOLID": "#EBEBEB",
+      "FONTS_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+      "FONTS_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+      "FONTS_SYSTEM": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+      "FONT_SIZE_BASE": "14px",
+      "FONT_SIZE_HERO": "40px",
+      "FONT_SIZE_LG": "18px",
+      "FONT_SIZE_MD": "16px",
+      "FONT_SIZE_SM": "11px",
+      "FONT_SIZE_TITLE": "36px",
+      "FONT_SIZE_XS": "9px",
+      "FONT_STACK_BASE": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+      "FONT_STACK_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+      "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+      "FONT_WEIGHT_BASE": 400,
+      "FONT_WEIGHT_BOLD": 800,
+      "FONT_WEIGHT_SEMIBOLD": 600,
+      "ICON_VIEWBOX_SIZE": 24,
+      "LINE_HEIGHT_BASE": 1.4,
+      "OPACITY_100": "1",
+      "OPACITY_15": "0.15",
+      "OPACITY_50": "0.5",
+      "OPACITY_70": "0.7",
+      "RADIUS_05": "4px",
+      "RADIUS_1": "8px",
+      "RADIUS_2": "16px",
+      "RADIUS_3": "24px",
+      "RADIUS_4": "32px",
+      "RADIUS_5": "40px",
+      "RADIUS_6": "48px",
+      "RADIUS_7": "56px",
+      "RADIUS_8": "64px",
+      "SPACING_BASE": 8,
+      "ZINDEX_STICKY": "1010",
+      "ZINDEX_TOOLTIP": "1070",
+      "name": "Keen",
+    }
+  }
 />
 `;

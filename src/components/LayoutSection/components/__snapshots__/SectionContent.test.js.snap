@@ -1,24 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionContent matches snapshot 1`] = `
-.c0 {
-  margin: 0 auto;
-  padding: 8px;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "SectionContent-sc-1uv9h83-0",
+        "isStatic": true,
+        "rules": Array [
+          "margin:0 auto;padding:",
+          "8px",
+          ";width:100%;display:flex;justify-content:center;flex:1 0 auto;",
+        ],
+      },
+      "displayName": "SectionContent",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "SectionContent-sc-1uv9h83-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;
