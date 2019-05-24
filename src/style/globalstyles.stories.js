@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
-import GlobalStyle from "style/globalStyles";
 
 const stories = storiesOf(" Overview|Global Styles", module);
 
@@ -9,7 +8,6 @@ const DemoCanvas = styled.div``;
 
 stories.add("Global Styles", () => (
   <>
-    <GlobalStyle />
     <DemoCanvas>
       <div id="top" class="page" role="document">
         <header role="banner">

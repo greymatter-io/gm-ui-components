@@ -355,7 +355,7 @@ const NORMALIZE = css`
   }
 `;
 
-const CUSTOM_PROPERTIES = css`
+const CSS_CUSTOM_PROPERTIES = css`
   :root {
     --COLOR_BRAND_A: ${props => props.theme.COLOR_BRAND_A};
     --COLOR_BRAND_B: ${props => props.theme.COLOR_BRAND_B};
@@ -419,11 +419,11 @@ const CUSTOM_PROPERTIES = css`
   }
 `;
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
   ${NORMALIZE};
 
-  ${CUSTOM_PROPERTIES};
+  ${CSS_CUSTOM_PROPERTIES};
 
   html {
     font-family: ${props => props.theme.FONTS_SYSTEM};
@@ -434,10 +434,16 @@ const GlobalStyle = createGlobalStyle`
   a:link {
     color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
   }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
 `;
 
-GlobalStyle.defaultProps = {
+GlobalStyles.defaultProps = {
   theme: keen
 };
 
-export default GlobalStyle;
+export default GlobalStyles;
