@@ -7,7 +7,7 @@ import { withThemesProvider } from "storybook-addon-styled-component-theme";
 import gmTheme from "./gmTheme";
 
 import PropTypesTable from "./PropTypesTable";
-import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
+import StoryContainer from "ComponentLibrary/StoryComponents/StoryContainer";
 import { keen, keenDark } from "style/styleVariables";
 
 const req = require.context("../src/", true, /\.stories\.js$/);
