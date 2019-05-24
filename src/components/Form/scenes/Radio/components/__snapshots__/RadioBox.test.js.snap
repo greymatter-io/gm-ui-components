@@ -39,6 +39,15 @@ exports[`RadioBox should render 1`] = `
   border-color: transparent;
 }
 
+*:active > *:hover > .c0 {
+  background: rgba(10,171,42,0.5);
+}
+
+*:active > *:hover > .c0:checked {
+  background: rgba(10,171,42,0.5);
+  border-color: transparent;
+}
+
 <InputBox
   className="c0"
   theme={
