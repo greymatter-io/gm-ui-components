@@ -431,12 +431,6 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.COLOR_CONTENT};
   }
 
-  hr {
-    border: 0;
-    opacity: ${props => props.theme.OPACITY_15};
-    border-top: 1px solid;
-  }
-
   a:link {
     color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
   }
