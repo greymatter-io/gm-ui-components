@@ -9,6 +9,7 @@ Button.propTypes = {
   active: PropTypes.bool, // If the button should be style as active or not
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   clickAction: PropTypes.any.isRequired, // click handler
+  dangerouslySetColor: PropTypes.string, // set baseColor irrespective of type-appropriate color
   disabled: PropTypes.bool, // disables the button
   label: PropTypes.string, // label for the button
   labelStyle: PropTypes.object,
@@ -35,6 +36,7 @@ Button.defaultProps = {
   label: "",
   disabled: false,
   size: "normal",
+  type: "default",
   orientation: "horizontal"
 };
 
@@ -47,6 +49,7 @@ export default function Button({
   active,
   children,
   clickAction,
+  dangerouslySetColor,
   disabled,
   label,
   orientation,
@@ -63,6 +66,7 @@ export default function Button({
   return (
     <ButtonWrap
       active={active}
+      dangerouslySetColor={dangerouslySetColor}
       type={type}
       size={size}
       outline={outline}
