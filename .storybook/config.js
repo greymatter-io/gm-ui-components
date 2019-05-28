@@ -9,6 +9,7 @@ import gmTheme from "./gmTheme";
 import PropTypesTable from "./PropTypesTable";
 import StoryContainer from "ComponentLibrary/StoryComponents/StoryContainer";
 import { keen, keenDark } from "style/styleVariables";
+import { transparentize } from "polished";
 
 const req = require.context("../src/", true, /\.stories\.js$/);
 
@@ -46,10 +47,11 @@ addDecorator(
     propTablesExclude: [], // Exclude Components from being shoun in Prop Tables section
     styles: {
       infoBody: {
-        boxShadow: "inset 0 0 0 rgba(0,0,0,0.08)",
-        border: "0",
-        borderRadius: "8px",
-        backgroundColor: "rgba(200,200,200,.2)"
+        background: "transparent",
+        fontFamily: "inherit",
+        color: "inherit",
+        opacity: "0.9",
+        border: "0"
       }
     }, // Overrides styles of addon
     TableComponent: PropTypesTable,

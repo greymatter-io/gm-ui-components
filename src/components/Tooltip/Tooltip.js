@@ -27,7 +27,7 @@ export default class Tooltip extends React.Component {
         <Reference>
           {({ ref }) => (
             <TooltipWrap
-              innerRef={ref}
+              ref={ref}
               onMouseEnter={this.toggleVisibility}
               onMouseLeave={this.toggleVisibility}
               {...props}
@@ -40,7 +40,7 @@ export default class Tooltip extends React.Component {
           {({ ref, style, placement }) => {
             return (
               <TooltipContent
-                innerRef={ref}
+                ref={ref}
                 style={{ ...style, ...tooltipStyle }}
                 visible={!hideTooltip && this.state.visible}
               >
