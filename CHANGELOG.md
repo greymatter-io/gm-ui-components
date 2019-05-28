@@ -1,3 +1,25 @@
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/DecipherNow/gm-ui-components/compare/v0.8.0...v0.8.1) (2019-05-10)
+
+
+### Bug Fixes
+
+* blank page when clicking anchor links in styles story ([#425](https://github.com/DecipherNow/gm-ui-components/issues/425)) ([11c9226](https://github.com/DecipherNow/gm-ui-components/commit/11c9226))
+* breadcrumbs error ([#428](https://github.com/DecipherNow/gm-ui-components/issues/428)) ([4f02b79](https://github.com/DecipherNow/gm-ui-components/commit/4f02b79))
+* workaround for spinner issue in chrome ([#430](https://github.com/DecipherNow/gm-ui-components/issues/430)) ([11210e9](https://github.com/DecipherNow/gm-ui-components/commit/11210e9))
+
+
+### Features
+
+* add double chevrons for up and down directions ([#431](https://github.com/DecipherNow/gm-ui-components/issues/431)) ([5d2cfac](https://github.com/DecipherNow/gm-ui-components/commit/5d2cfac))
+* add prop to buttons to allow custom color ([#437](https://github.com/DecipherNow/gm-ui-components/issues/437)) ([297f6a5](https://github.com/DecipherNow/gm-ui-components/commit/297f6a5))
+* customizable footer ([#423](https://github.com/DecipherNow/gm-ui-components/issues/423)) ([36225c6](https://github.com/DecipherNow/gm-ui-components/commit/36225c6))
+* export style variables and functions ([#422](https://github.com/DecipherNow/gm-ui-components/issues/422)) ([f0e07ca](https://github.com/DecipherNow/gm-ui-components/commit/f0e07ca))
+* fluid CSS solution to the breadcrumb overflow problem ([#402](https://github.com/DecipherNow/gm-ui-components/issues/402)) ([e21309d](https://github.com/DecipherNow/gm-ui-components/commit/e21309d))
+* update storybook to 5 ([#429](https://github.com/DecipherNow/gm-ui-components/issues/429)) ([625c4af](https://github.com/DecipherNow/gm-ui-components/commit/625c4af))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.7.5...v0.8.0) (2019-04-19)
 

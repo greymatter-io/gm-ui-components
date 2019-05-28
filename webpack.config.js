@@ -33,7 +33,19 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(eot|png|jpg|jpeg|gif|ttf|woff|woff2)$/,
+        test: /\.svg$/,
+        include: /src\/components\/Glyphs/,
+        use: [
+          {
+            loader: "@svgr/webpack",
+            options: {
+              configFile: path.resolve(__dirname, "config", "svgr.config.js")
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(eot|svg|png|jpg|jpeg|gif|ttf|woff|woff2)$/,
         use: [
           {
             loader: "url-loader",
@@ -42,17 +54,6 @@ module.exports = {
               // If the file is greater than the limit, file-loader is used by default and all query parameters are passed to it.
               // Using an alternative to file-loader is enabled via the fallback option.
               limit: 10 * 1024
-            }
-          }
-        ]
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: "@svgr/webpack",
-            options: {
-              configFile: path.resolve(__dirname, "config", "svgr.config.js")
             }
           }
         ]
