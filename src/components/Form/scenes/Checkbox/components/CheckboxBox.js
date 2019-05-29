@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import { transparentize } from "polished";
+import { transparentize, readableColor, darken } from "polished";
 
 import { keen } from "style/styleVariables";
 
 import InputBox from "components/Form/components/InputBox";
+
+const CheckmarkColor = props =>
+  readableColor(darken(0.1, props.theme.COLOR_INTENT_HIGHLIGHT));
 
 const CheckboxBox = styled(InputBox).attrs({
   type: "checkbox"
@@ -17,7 +20,7 @@ const CheckboxBox = styled(InputBox).attrs({
     box-sizing: border-box;
     border-style: solid;
     border-width: 0 2px 2px 0;
-    border-color: ${props => props.theme.COLOR_BACKGROUND_A};
+    border-color: ${CheckmarkColor};
     margin-top: -1px;
     transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
     background: none;

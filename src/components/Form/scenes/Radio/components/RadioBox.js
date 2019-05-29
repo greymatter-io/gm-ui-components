@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import { transparentize } from "polished";
+import { transparentize, readableColor, darken } from "polished";
 
 import { keen } from "style/styleVariables";
 
 import InputBox from "components/Form/components/InputBox";
+
+const CheckmarkColor = props =>
+  readableColor(darken(0.1, props.theme.COLOR_INTENT_HIGHLIGHT));
 
 const RadioBox = styled(InputBox).attrs({
   type: "radio"
@@ -25,7 +28,7 @@ const RadioBox = styled(InputBox).attrs({
     }
 
     &:after {
-      background-color: #fff;
+      background-color: ${CheckmarkColor};
       width: 5px;
       height: 5px;
       transform: translateX(-50%) translateY(-50%) scale(1);
