@@ -3,7 +3,7 @@
 exports[`LongLogo should render 1`] = `
 .c0 {
   padding: 0 8px;
-  opacity: 0.7;
+  color: #000;
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
@@ -15,16 +15,17 @@ exports[`LongLogo should render 1`] = `
 }
 
 .c0:hover {
-  opacity: 1;
+  color: #000;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
-.c0 img {
-  max-width: 140px;
-  vertical-align: -3px;
+.c0 svg {
+  max-width: 142px;
+  height: auto;
+  width: 100%;
 }
 
 <a
