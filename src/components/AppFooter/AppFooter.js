@@ -8,7 +8,7 @@ import Link from "./components/Link";
 import { IconTwitter, IconGitHub, IconLinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
 
-import longLogo from "./assets/decipher-logo-long.png";
+import LongLogoImg from "./assets/decipher-logo-rgb-left.js";
 
 const nodePropType = PropTypes.oneOfType([
   PropTypes.element,
@@ -54,7 +54,7 @@ export default function AppFooter({
   const FooterLeftContent = () =>
     footerLeft || (
       <LongLogo {...logoProps} title="Decipher Technology Studios website">
-        <img alt="Decipher Technology Studios" src={longLogo} />
+        <LongLogoImg />
       </LongLogo>
     );
 
