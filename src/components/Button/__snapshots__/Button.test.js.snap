@@ -62,7 +62,6 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
 }
 
 .c0:hover {
@@ -118,10 +117,6 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   cursor: not-allowed;
   -webkit-filter: saturate(0) opacity(70%);
   filter: saturate(0) opacity(70%);
-}
-
-.c0 > :not(:first-child) {
-  margin-top: 0.25px;
 }
 
 <button
@@ -231,8 +226,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -345,8 +339,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -473,8 +466,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -588,8 +580,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -703,8 +694,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -817,8 +807,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -931,8 +920,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1045,8 +1033,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1159,8 +1146,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1273,8 +1259,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1387,8 +1372,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+.c0 >:not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
