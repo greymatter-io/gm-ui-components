@@ -1,22 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  COLOR_KEYLINE_SOLID,
-  COLOR_INTENT_DANGER
-} from "../src/style/styleVariables";
 
 const Table = styled.table`
   border-collapse: collapse;
   td,
   th {
     text-align: left;
-    border: 1px solid ${COLOR_KEYLINE_SOLID};
+    border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
     padding: 4px;
   }
 `;
 
 const Required = styled.span`
-  color: ${COLOR_INTENT_DANGER};
+  color: ${props => props.theme.COLOR_INTENT_DANGER};
 `;
 
 const PropTypesTable = ({ propDefinitions }) => {

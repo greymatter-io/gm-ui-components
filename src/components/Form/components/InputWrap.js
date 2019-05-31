@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE, keen } from "style/styleVariables";
+import { keen } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`
   ${props => getPosition(props.labelPosition)};
   color: ${props => props.theme.COLOR_CONTENT};
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   display: flex;
   position: relative;
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
-import { ICON_VIEWBOX_SIZE } from "../../../style/styleVariables";
+
+const ICON_VIEWBOX_SIZE = props => props.theme.SPACING_BASE * 3;
 
 const StyledSVG = styled.svg.attrs({
   version: "1.1",
