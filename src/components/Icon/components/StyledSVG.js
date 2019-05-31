@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
-// const Input = styled.input.attrs(({ inputType }) => ({
-//   type: inputType
-// }))`
-
 const StyledSVG = styled.svg.attrs(({ props }) => ({
   version: "1.1",
   xmlns: "http://www.w3.org/2000/svg",
