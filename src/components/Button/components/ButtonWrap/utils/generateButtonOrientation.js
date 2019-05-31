@@ -1,5 +1,3 @@
-import { css } from "styled-components";
-
 /**
  * Utility function that generates a CSS mixin containing button orientation rulesets
  *
@@ -8,14 +6,14 @@ import { css } from "styled-components";
  */
 function generateButtonOrientation(alignment = "horizontal") {
   if (alignment === "horizontal") {
-    return css`
+    return `
       flex-direction: row;
       > :not(:first-child) {
         flex-basis: auto;
       }
     `;
   } else if (alignment === "vertical") {
-    return css`
+    return `
       flex-direction: column;
     `;
   }

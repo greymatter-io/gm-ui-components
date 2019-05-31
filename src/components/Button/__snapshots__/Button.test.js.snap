@@ -226,7 +226,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -339,7 +339,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -466,7 +466,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -580,7 +580,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -694,7 +694,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -807,7 +807,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -920,7 +920,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1033,7 +1033,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1146,7 +1146,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1259,7 +1259,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1372,7 +1372,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 >:not(:first-child) {
+.c0 > :not(:first-child) {
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
