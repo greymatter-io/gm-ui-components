@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const Fieldset = styled.fieldset`
   border: 1px solid ${props => props.theme.COLOR_KEYLINE};

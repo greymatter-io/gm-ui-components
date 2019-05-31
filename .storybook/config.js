@@ -8,7 +8,7 @@ import gmTheme from "./gmTheme";
 
 import PropTypesTable from "./PropTypesTable";
 import StoryContainer from "ComponentLibrary/StoryComponents/StoryContainer";
-import { keen, keenDark } from "style/styleVariables";
+import { keen, keenDark } from "style/theme";
 import { transparentize } from "polished";
 
 const req = require.context("../src/", true, /\.stories\.js$/);

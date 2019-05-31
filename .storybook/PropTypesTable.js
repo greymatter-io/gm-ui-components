@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   COLOR_KEYLINE_SOLID,
   COLOR_INTENT_DANGER
-} from "../src/style/styleVariables";
+} from "../src/style/theme";
 
 const Table = styled.table`
   border-collapse: collapse;

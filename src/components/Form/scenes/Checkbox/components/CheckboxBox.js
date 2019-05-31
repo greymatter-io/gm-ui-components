@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { transparentize } from "polished";
 
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 import InputBox from "components/Form/components/InputBox";
 

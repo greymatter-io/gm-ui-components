@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const TooltipWrap = styled.div`
   display: inline-block;

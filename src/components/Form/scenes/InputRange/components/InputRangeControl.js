@@ -6,7 +6,7 @@ import {
   formInteractionStyles,
   FORM_HIGHLIGHT_SIZE
 } from "../../../components/InputFieldInteractionStyles";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const BORDER_WIDTH = 2;
 const THUMB_SIZE = "1em";

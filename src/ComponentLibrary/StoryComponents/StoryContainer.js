@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 import GlobalStyles from "style/GlobalStyles";
 
 const Wrap = styled.div`

@@ -6,7 +6,7 @@ import {
   FORM_HIGHLIGHT_SIZE,
   formInteractionStyles
 } from "./InputFieldInteractionStyles";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const BORDER_WIDTH = 1;
 
