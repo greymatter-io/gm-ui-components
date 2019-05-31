@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
-const StyledSVG = styled.svg.attrs(({ props }) => ({
+/* SVG_VIEWBOX is tied to the content of the SVG glyphs */
+/* Modify width and height to change the size of your icon */
+const SVG_VIEWBOX = "0 0 24 24";
+
+const StyledSVG = styled.svg.attrs({
+  viewBox: SVG_VIEWBOX,
   version: "1.1",
   xmlns: "http://www.w3.org/2000/svg",
   xmlnsXlink: "http://www.w3.org/1999/xlink",
-  preserveAspectRatio: "xMaxYMax meet",
-  viewBox:
-    "0 0 " + props.theme.SPACING_SCALE * 3 + " " + props.theme.SPACING_SCALE * 3
-}))`
+  preserveAspectRatio: "xMaxYMax meet"
+})`
   z-index: 1;
   width: ${props => (props.size ? props.size : "1.714em")};
   height: ${props => (props.size ? props.size : "1.714em")};
