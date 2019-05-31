@@ -2,6 +2,7 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { number, select, text, color, boolean } from "@storybook/addon-knobs";
+import withPropsCombinations from "react-storybook-addon-props-combinations";
 
 import { IconBell } from "components/Glyphs";
 import Button from "./Button";
@@ -9,7 +10,7 @@ import Button from "./Button";
 const stories = storiesOf("Components|Buttons", module);
 
 const types = ["default", "danger", "info", "primary", "warning"];
-const sizes = ["normal", "xs", "sm", "lg", "xl"];
+const sizes = ["xs", "sm", "normal", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
 stories
@@ -35,6 +36,33 @@ stories
       info: {
         text:
           "A React component that renders a button and includes base styling, used to trigger actions."
+      }
+    }
+  )
+  .add(
+    "Props Gallery",
+    withPropsCombinations(
+      Button,
+      {
+        type: types,
+        active: [false, true],
+        outline: [false, true],
+        disabled: [false, true],
+        size: sizes,
+        label: ["Label"]
+      },
+      {
+        showSource: false,
+        style: {
+          float: "left",
+          margin: "0.25rem"
+        }
+      }
+    ),
+    {
+      info: {
+        text:
+          "All Button types, active states, disabled states, sizes, and outline states."
       }
     }
   )
