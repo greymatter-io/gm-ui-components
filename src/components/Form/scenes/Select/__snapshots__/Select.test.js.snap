@@ -14,7 +14,7 @@ exports[`Select should render 1`] = `
           ";color:",
           [Function],
           ";font-family:",
-          "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+          [Function],
           ";display:flex;position:relative;&:active{user-select:none;}",
         ],
       },

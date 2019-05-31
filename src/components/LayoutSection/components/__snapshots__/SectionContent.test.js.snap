@@ -8,10 +8,11 @@ exports[`SectionContent matches snapshot 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "SectionContent-sc-1uv9h83-0",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "margin:0 auto;padding:",
-          "8px",
+          [Function],
+          "px",
           ";width:100%;display:flex;justify-content:center;flex:1 0 auto;",
         ],
       },

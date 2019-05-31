@@ -8,10 +8,11 @@ exports[`ReadoutGroup matches snapshot 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "ReadoutGroup-suhds2-0",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "display:flex;flex-flow:row wrap;justify-content:center;orphans:2;margin-right:-",
-          "8px",
+          [Function],
+          "px",
           ";flex:1 1 100%;",
         ],
       },

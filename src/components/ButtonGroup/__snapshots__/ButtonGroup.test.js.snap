@@ -12,7 +12,7 @@ exports[`ButtonGroup matches snapshot 1`] = `
 }
 
 .c0 * + * {
-  margin-left: 4px;
+  margin-left: NaNpx;
 }
 
 <div

@@ -12,8 +12,8 @@ exports[`Copyright should render when screen is 800px or higher 1`] = `
   transition: opacity 0.2s ease;
   cursor: default;
   border-top: 1px solid;
-  margin-top: 8px;
-  padding: 8px;
+  margin-top: NaNpx;
+  padding: NaNpx;
   text-transform: uppercase;
   -webkit-order: 3;
   -ms-flex-order: 3;

@@ -8,10 +8,11 @@ exports[`Span matches snapshot 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "Span-sc-1dy593y-0",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "margin-left:",
-          "16px",
+          [Function],
+          "px",
           ";",
         ],
       },
