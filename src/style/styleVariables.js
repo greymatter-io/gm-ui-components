@@ -108,13 +108,9 @@ export const keen = {
   RADIUS_8: "64px", // spacingScale(8)
 
   // TYPOGRAPHY
-  FONTS_SYSTEM: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
-  FONTS_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
-  FONTS_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
-
-  FONT_STACK_BASE: FONTS_SYSTEM,
-  FONT_STACK_BRAND: FONTS_BRAND,
-  FONT_STACK_CODE: FONTS_CODE,
+  FONT_STACK_BASE: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  FONT_STACK_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
+  FONT_STACK_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
   FONT_SIZE_HERO: "40px",
   FONT_SIZE_TITLE: "36px", // Will be changed to 32px
@@ -174,13 +170,9 @@ export const keenDark = {
   RADIUS_8: "64px", // spacingScale(8)
 
   // TYPOGRAPHY
-  FONTS_SYSTEM: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
-  FONTS_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
-  FONTS_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
-
-  FONT_STACK_BASE: FONTS_SYSTEM,
-  FONT_STACK_BRAND: FONTS_BRAND,
-  FONT_STACK_CODE: FONTS_CODE,
+  FONT_STACK_BASE: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  FONT_STACK_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
+  FONT_STACK_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
   FONT_SIZE_HERO: "40px",
   FONT_SIZE_TITLE: "36px", // Will be changed to 32px
