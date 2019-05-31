@@ -15,7 +15,7 @@ describe("generateButtonSize", () => {
     text-transform: uppercase;
   `);
     expect(generateButtonSize("lg")).toContain(`
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 4px;
     padding: 2px 10px;
   `);
