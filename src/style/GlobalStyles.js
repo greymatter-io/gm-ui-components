@@ -431,7 +431,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.COLOR_CONTENT};
   }
 
-  a:link {
+  a {
     color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
   }
 
