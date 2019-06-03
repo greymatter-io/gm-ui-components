@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { keen, keenDark } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
-import { IconCog } from "components/Glyphs";
+import { IconCog, IconChevronRight } from "components/Glyphs";
 import Breadcrumbs from "components/Breadcrumbs";
 import Button from "components/Button";
 import ButtonGroup from "components/ButtonGroup";
@@ -40,6 +40,17 @@ const Space = styled.span`
   display: inline-block;
   height: ${spacingScale(1)};
   width: ${spacingScale(1)};
+`;
+
+const DocumentationLink = styled.h2`
+  text-align: center;
+  border-bottom: 1px solid ${props => props.theme.COLOR_KEYLINE};
+  padding-bottom: ${spacingScale(2)};
+  margin-bottom: ${spacingScale(2)};
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 function DemoContent({ themeName }) {
@@ -97,12 +108,20 @@ function DemoContent({ themeName }) {
 }
 
 stories.add("Themes", () => (
-  <DemoCols>
-    <ThemeProvider theme={keen}>
-      <DemoContent themeName="keen" />
-    </ThemeProvider>
-    <ThemeProvider theme={keenDark}>
-      <DemoContent themeName="keenDark" />
-    </ThemeProvider>
-  </DemoCols>
+  <>
+    <DocumentationLink>
+      <a href="https://github.com/DecipherNow/gm-ui-components#theming">
+        Theming the Component Library
+        <IconChevronRight />
+      </a>
+    </DocumentationLink>
+    <DemoCols>
+      <ThemeProvider theme={keen}>
+        <DemoContent themeName="keen" />
+      </ThemeProvider>
+      <ThemeProvider theme={keenDark}>
+        <DemoContent themeName="keenDark" />
+      </ThemeProvider>
+    </DemoCols>
+  </>
 ));
