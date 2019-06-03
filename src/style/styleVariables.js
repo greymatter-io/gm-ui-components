@@ -1,5 +1,3 @@
-// export const SPACING_BASE = 8;
-
 export const keen = {
   name: "Keen",
 
