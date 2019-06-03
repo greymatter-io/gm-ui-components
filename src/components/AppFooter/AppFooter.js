@@ -54,7 +54,7 @@ export default function AppFooter({
   const FooterLeftContent = () =>
     footerLeft || (
       <LongLogo {...logoProps} title="Decipher Technology Studios website">
-        <LongLogoImg />
+        <LongLogoImg alt="Decipher Technology Studios Logo" />
       </LongLogo>
     );
 
