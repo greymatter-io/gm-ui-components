@@ -19,3 +19,33 @@ exports[`ButtonGroup matches snapshot 1`] = `
   className="c0"
 />
 `;
+
+exports[`ButtonGroup should match snapshot 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ButtonGroup-sc-1jcyll7-0",
+        "isStatic": false,
+        "rules": Array [
+          "display:flex;flex-direction:row;* + *{margin-left:",
+          [Function],
+          "px",
+          ";}",
+        ],
+      },
+      "displayName": "ButtonGroup",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "ButtonGroup-sc-1jcyll7-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;

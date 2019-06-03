@@ -1,5 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Copyright should match snapshot 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Copyright-sc-12wu9cy-0",
+        "isStatic": false,
+        "rules": Array [
+          "font-size:60%;margin:0;flex:0 0 100%;text-align:",
+          [Function],
+          ";transition:opacity 0.2s ease;cursor:default;border-top:1px solid ",
+          [Function],
+          ";margin-top:",
+          [Function],
+          "px",
+          ";padding:",
+          [Function],
+          "px",
+          ";text-transform:uppercase;order:3;white-space:pre-wrap;@media all and (min-width:800px){order:initial;flex:1 1 auto;padding:0;margin:0;border:none;}",
+        ],
+      },
+      "displayName": "Copyright",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "Copyright-sc-12wu9cy-0",
+      "target": "p",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
 exports[`Copyright should render when screen is 800px or higher 1`] = `
 .c0 {
   font-size: 60%;
