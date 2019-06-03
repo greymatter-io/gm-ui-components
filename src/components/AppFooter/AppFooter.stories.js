@@ -1,18 +1,25 @@
 import React from "react";
+import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { boolean, text, object } from "@storybook/addon-knobs";
 import AppFooter from "./AppFooter";
 import { IconBell } from "../";
 const stories = storiesOf("Components|App Footer", module);
 
+const FooterDemoArea = styled.div`
+  width: 85vw;
+`;
+
 stories
   .add(
     "default",
     () => (
-      <AppFooter
-        copyrightText={text("copyrightText")}
-        useExternalLinks={boolean("useExternalLinks", true)}
-      />
+      <FooterDemoArea>
+        <AppFooter
+          copyrightText={text("copyrightText")}
+          useExternalLinks={boolean("useExternalLinks", true)}
+        />
+      </FooterDemoArea>
     ),
     {
       info: {
@@ -23,11 +30,13 @@ stories
   .add(
     "with custom children",
     () => (
-      <AppFooter>
-        <span>Custom Content</span>
-        <span>Custom Content</span>
-        <span>Custom Content</span>
-      </AppFooter>
+      <FooterDemoArea>
+        <AppFooter>
+          <span>Custom Content</span>
+          <span>Custom Content</span>
+          <span>Custom Content</span>
+        </AppFooter>
+      </FooterDemoArea>
     ),
     {
       info: {
@@ -38,10 +47,12 @@ stories
   .add(
     "with footer section overrides",
     () => (
-      <AppFooter
-        footerLeft={<IconBell />}
-        footerCenter={<span>My custom footer center!</span>}
-      />
+      <FooterDemoArea>
+        <AppFooter
+          footerLeft={<IconBell />}
+          footerCenter={<span>My custom footer center!</span>}
+        />
+      </FooterDemoArea>
     ),
     {
       info: {
