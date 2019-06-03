@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { storiesOf } from "@storybook/react";
-import { keen, keenDark } from "style/styleVariables";
+import { keen, keenDark } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 import { IconCog, IconChevronRight } from "components/Glyphs";

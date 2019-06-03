@@ -11,7 +11,8 @@ exports[`InputHint matches snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "margin:",
-          "4px",
+          [Function],
+          "px",
           " 0;font-size:",
           [Function],
           ";color:",
