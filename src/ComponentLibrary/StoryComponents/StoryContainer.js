@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 import GlobalStyles from "style/GlobalStyles";
 
 const Wrap = styled.div`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  color: ${props => props.theme.COLOR_CONTENT};
   width: 100%;
   display: flex;
   flex: 1 1 100%;

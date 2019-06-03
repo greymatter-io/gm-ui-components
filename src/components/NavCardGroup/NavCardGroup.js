@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { mix, darken } from "polished";
 
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const activeBackgroundColor = css`

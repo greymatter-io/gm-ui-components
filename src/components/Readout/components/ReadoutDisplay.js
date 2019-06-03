@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const ReadoutDisplay = styled.div`
   color: ${props => props.theme.COLOR_CONTENT};

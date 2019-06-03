@@ -31,7 +31,7 @@ function generateButtonSize(size) {
     }
     case "lg": {
       style = css`
-        font-size: ${props => props.theme.FONT_SIZE_LG};
+        font-size: ${props => props.theme.FONT_SIZE_BASE};
         padding: ${spacingScale(0.25)} ${spacingScale(1.25)};
         border-radius: ${props => props.theme.RADIUS_05};
       `;

@@ -6,7 +6,7 @@ import { transparentize } from "polished";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const TableRowElement = styled.tr.attrs({
   tabIndex: 0

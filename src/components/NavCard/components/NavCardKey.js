@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { readableColor, mix } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const color = css`
   color: ${props =>

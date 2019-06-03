@@ -744,7 +744,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   background-color: #ffffff;
   border-color: transparent;
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
   padding: 2px 10px;
   border-radius: 4px;
   -webkit-flex-direction: row;

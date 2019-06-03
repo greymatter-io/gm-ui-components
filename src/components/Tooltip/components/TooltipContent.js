@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const TooltipContent = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_A};
@@ -18,6 +18,7 @@ const TooltipContent = styled.div`
   white-space: normal;
   font-family: ${props => props.theme.FONT_STACK_BASE};
   margin: ${spacingScale(1)};
+  word-wrap: break-word;
 
   ${props =>
     props.visible

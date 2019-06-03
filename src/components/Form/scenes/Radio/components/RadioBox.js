@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import { transparentize } from "polished";
+import { transparentize, readableColor, darken } from "polished";
 
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 import InputBox from "components/Form/components/InputBox";
+
+const CheckmarkColor = props =>
+  readableColor(darken(0.1, props.theme.COLOR_INTENT_HIGHLIGHT));
 
 const RadioBox = styled(InputBox).attrs({
   type: "radio"
@@ -11,11 +14,12 @@ const RadioBox = styled(InputBox).attrs({
   border-radius: 200px;
 
   &:after {
+    position: static;
     width: 0;
     height: 0;
     border-radius: 200px;
     box-sizing: border-box;
-    transform: translateX(-50%) translateY(-50%) scale(0.1);
+    transform: scale(0);
     transition: all 0.3s ease;
   }
 
@@ -25,10 +29,10 @@ const RadioBox = styled(InputBox).attrs({
     }
 
     &:after {
-      background-color: #fff;
-      width: 5px;
-      height: 5px;
-      transform: translateX(-50%) translateY(-50%) scale(1);
+      background-color: ${CheckmarkColor};
+      width: 50%;
+      height: 50%;
+      transform: scale(1);
     }
   }
 

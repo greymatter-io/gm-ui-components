@@ -41,11 +41,7 @@ exports[`Footer should render 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1010;
+    justify-self: stretch;
   }
 
   .c0 + * {
