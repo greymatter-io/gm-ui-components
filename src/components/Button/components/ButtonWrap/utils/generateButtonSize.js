@@ -9,52 +9,41 @@ import { css } from "styled-components";
  * @returns
  */
 function generateButtonSize(size) {
-  let style = "";
   switch (size) {
-    case "xs": {
-      style = css`
+    case "xs":
+      return css`
         font-size: ${props => props.theme.FONT_SIZE_XS};
         padding: ${spacingScale(0.25)} ${spacingScale(1)};
         border-radius: ${props => props.theme.RADIUS_05};
         text-transform: uppercase;
       `;
-      break;
-    }
-    case "sm": {
-      style = css`
+    case "sm":
+      return css`
         font-size: ${props => props.theme.FONT_SIZE_SM};
         padding: ${spacingScale(0.25)} ${spacingScale(1)};
         border-radius: ${props => props.theme.RADIUS_05};
         text-transform: uppercase;
       `;
-      break;
-    }
-    case "lg": {
-      style = css`
+    case "lg":
+      return css`
         font-size: ${props => props.theme.FONT_SIZE_BASE};
         padding: ${spacingScale(0.25)} ${spacingScale(1.25)};
         border-radius: ${props => props.theme.RADIUS_05};
       `;
-      break;
-    }
-    case "xl": {
-      style = css`
+    case "xl":
+      return css`
         font-size: ${props => props.theme.FONT_SIZE_LG};
         padding: ${spacingScale(0.25)} ${spacingScale(1.25)};
         border-radius: ${props => props.theme.RADIUS_05};
       `;
-      break;
-    }
     default:
     case "normal":
-      style = css`
+      return css`
         font-size: ${props => props.theme.FONT_SIZE_BASE};
         padding: ${spacingScale(0.25)} ${spacingScale(1)};
         border-radius: ${props => props.theme.RADIUS_05};
       `;
-      break;
   }
-  return style;
 }
 
 export default generateButtonSize;
