@@ -6,7 +6,6 @@ describe("generateButtonOrientation", () => {
       `
       flex-direction: row;
       > :not(:first-child) {
-        margin-left: 4px;
         flex-basis: auto;
       }
     `
@@ -14,10 +13,6 @@ describe("generateButtonOrientation", () => {
     expect(generateButtonOrientation("vertical")).toEqual(
       `
       flex-direction: column;
-      padding-top: 4px;
-      > :not(:first-child) {
-        margin-top: 0.25px;
-      }
     `
     );
   });

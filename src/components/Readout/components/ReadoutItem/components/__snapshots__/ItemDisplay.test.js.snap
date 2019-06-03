@@ -8,10 +8,11 @@ exports[`ItemDisplay matches snapshot 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "ItemDisplay-limczf-0",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "position:relative;padding:",
-          "12px",
+          [Function],
+          "px",
           ";",
         ],
       },

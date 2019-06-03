@@ -8,12 +8,14 @@ exports[`Header matches snapshot 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "Header-u1waum-0",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "align-items:center;display:flex;flex-direction:row;padding:0 ",
-          "8px",
+          [Function],
+          "px",
           " 0;width:100%;flex:0 0 ",
-          "24px",
+          [Function],
+          "px",
           ";",
         ],
       },

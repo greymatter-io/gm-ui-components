@@ -8,12 +8,14 @@ exports[`ReadoutItemGraph matches snapshot 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "ReadoutItemGraph-sc-1wv3dsg-0",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "align-items:stretch;display:flex;height:",
-          "32px",
+          [Function],
+          "px",
           ";max-width:",
-          "400px",
+          [Function],
+          "px",
           ";width:100%;& > svg{flex:1 1 auto;}",
         ],
       },

@@ -11,7 +11,8 @@ exports[`ReadoutItemData matches snapshot 1`] = `
         "isStatic": false,
         "rules": Array [
           "align-items:stretch;display:flex;flex:1 1 100%;flex-direction:column;padding:",
-          "8px",
+          [Function],
+          "px",
           " 0;&:first-child{padding-left:",
           [Function],
           ";}",

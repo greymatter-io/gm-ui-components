@@ -8,10 +8,11 @@ exports[`SectionIcon matches snapshot 1`] = `
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "SectionIcon-sc-1pml02w-0",
-        "isStatic": true,
+        "isStatic": false,
         "rules": Array [
           "flex:0 0 auto;padding-right:",
-          "4px",
+          [Function],
+          "px",
           " !important;",
         ],
       },
