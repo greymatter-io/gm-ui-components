@@ -3,6 +3,7 @@ import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs";
+import { setDefaults } from "react-storybook-addon-props-combinations";
 import { withThemesProvider } from "storybook-addon-styled-component-theme";
 import gmTheme from "./gmTheme";
 

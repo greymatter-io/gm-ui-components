@@ -18,6 +18,7 @@ const TooltipContent = styled.div`
   white-space: normal;
   font-family: ${props => props.theme.FONT_STACK_BASE};
   margin: ${spacingScale(1)};
+  word-wrap: break-word;
 
   ${props =>
     props.visible
