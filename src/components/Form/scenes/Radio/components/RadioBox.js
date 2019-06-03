@@ -14,11 +14,12 @@ const RadioBox = styled(InputBox).attrs({
   border-radius: 200px;
 
   &:after {
+    position: static;
     width: 0;
     height: 0;
     border-radius: 200px;
     box-sizing: border-box;
-    transform: translateX(-50%) translateY(-50%) scale(0.1);
+    transform: scale(0);
     transition: all 0.3s ease;
   }
 
@@ -29,9 +30,9 @@ const RadioBox = styled(InputBox).attrs({
 
     &:after {
       background-color: ${CheckmarkColor};
-      width: 5px;
-      height: 5px;
-      transform: translateX(-50%) translateY(-50%) scale(1);
+      width: 50%;
+      height: 50%;
+      transform: scale(1);
     }
   }
 
