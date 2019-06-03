@@ -57,12 +57,11 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 4px;
 }
 
 .c0:hover {
@@ -120,10 +119,6 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   filter: saturate(0) opacity(70%);
 }
 
-.c0 > :not(:first-child) {
-  margin-top: 0.25px;
-}
-
 <button
   class="c0"
   orientation="vertical"
@@ -169,8 +164,8 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -232,7 +227,6 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -283,8 +277,8 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   border-color: #e6e6e6;
   color: #000;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -346,7 +340,6 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -411,8 +404,8 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -474,7 +467,6 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -525,8 +517,8 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   border-color: transparent;
   color: #000;
   font-size: 9px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -589,7 +581,6 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -640,8 +631,8 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   border-color: transparent;
   color: #000;
   font-size: 11px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -704,7 +695,6 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -754,9 +744,9 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   background-color: #ffffff;
   border-color: transparent;
   color: #000;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 14px;
   padding: 2px 10px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -818,7 +808,6 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -869,8 +858,8 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   border-color: transparent;
   color: #000;
   font-size: 18px;
-  border-radius: 4px;
   padding: 2px 10px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -932,7 +921,6 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -983,8 +971,8 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1046,7 +1034,6 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1097,8 +1084,8 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1160,7 +1147,6 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1211,8 +1197,8 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1274,7 +1260,6 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1325,8 +1310,8 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1388,7 +1373,6 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;

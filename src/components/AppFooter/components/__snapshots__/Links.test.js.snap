@@ -1,23 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link should render 1`] = `
-.c0 {
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  text-align: right;
-  padding: 0 0 4px 8px;
-}
-
-@media all and (min-width:800px) {
-  .c0 {
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+exports[`Link should match snapshot 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Links-vm1fnq-0",
+        "isStatic": false,
+        "rules": Array [
+          "flex:1 0 auto;text-align:right;padding:0 0 ",
+          [Function],
+          "px",
+          " ",
+          [Function],
+          "px",
+          ";@media all and (min-width:800px){flex:0 0 auto;}",
+        ],
+      },
+      "displayName": "Links",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "Links-vm1fnq-0",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
   }
-}
-
-<div
-  className="c0"
+  forwardedRef={null}
 />
 `;
