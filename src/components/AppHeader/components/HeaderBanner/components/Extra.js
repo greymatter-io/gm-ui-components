@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { mix } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 // Z-index positions these above the preceding Banner Title in order to ensure they're visible above the Banner Title's shadow
 const Extra = styled.a`

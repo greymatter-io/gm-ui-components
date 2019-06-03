@@ -6,7 +6,7 @@ import {
   FORM_HIGHLIGHT_SIZE,
   formInteractionStyles
 } from "./InputFieldInteractionStyles";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const BORDER_WIDTH = 1;
 
@@ -39,6 +39,7 @@ const InputBox = styled.input`
   align-items: center;
   justify-content: center;
   transition: all 0.15s ease;
+  box-sizing: border-box;
 
   &:focus {
     box-shadow: ${FOCUS_SHADOW}, 0;
@@ -54,12 +55,11 @@ const InputBox = styled.input`
 
   &:after {
     content: "";
+    box-sizing: border-box;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    background-color: ${props => props.theme.COLOR_BACKGROUND_A};
   }
 
   &:checked {

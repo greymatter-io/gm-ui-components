@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const ReadoutItemTitle = styled.h2`
   font-size: ${props => props.theme.FONT_SIZE_BASE};

@@ -6,7 +6,7 @@ import {
   COLOR_BACKGROUND_B,
   COLOR_BACKGROUND_C,
   keen
-} from "style/styleVariables";
+} from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const activeBackgroundColor = css`

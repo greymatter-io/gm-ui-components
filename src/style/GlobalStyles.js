@@ -1,5 +1,5 @@
 import { css, createGlobalStyle } from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const NORMALIZE = css`
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -431,7 +431,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.COLOR_CONTENT};
   }
 
-  a:link {
+  a {
     color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
   }
 

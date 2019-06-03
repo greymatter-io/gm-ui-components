@@ -8,7 +8,7 @@ import {
   COLOR_BACKGROUND_B,
   COLOR_INTENT_SUCCESS,
   OPACITY_15
-} from "style/styleVariables";
+} from "style/theme";
 import { transparentize, mix } from "polished";
 
 export const FORM_HIGHLIGHT_SIZE = 2.5;
