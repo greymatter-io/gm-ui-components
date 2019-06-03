@@ -21,11 +21,7 @@ const Footer = styled.footer`
     height: ${spacingScale(5)};
     flex-wrap: no-wrap;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: ${props => props.theme.ZINDEX_STICKY};
+    justify-self: stretch;
 
     & + * {
       padding-bottom: ${spacingScale(4)};
