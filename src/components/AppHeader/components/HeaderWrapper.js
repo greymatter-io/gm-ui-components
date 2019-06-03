@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { transparentize } from "polished";
 
 import BannerBackgroundImage from "./images/mesh-web.jpg";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const HeaderWrapper = styled.div`
   font-family: ${props => props.theme.FONT_STACK_BASE};

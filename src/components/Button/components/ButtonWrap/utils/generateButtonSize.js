@@ -6,7 +6,7 @@ import {
   FONT_SIZE_LG,
   FONT_SIZE_MD,
   RADIUS_05
-} from "style/styleVariables";
+} from "style/theme";
 
 /**
  * Utility function that transforms an object containing different attributes

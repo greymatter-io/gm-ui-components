@@ -10,7 +10,7 @@ import {
 import {
   DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO,
   SPACING_BASE
-} from "./styleVariables";
+} from "./theme";
 
 /**
  * Utility to generate a readable content color from the background color of an element

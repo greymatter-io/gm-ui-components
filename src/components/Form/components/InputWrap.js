@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE, keen } from "style/styleVariables";
+import { FONT_STACK_BASE, keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`

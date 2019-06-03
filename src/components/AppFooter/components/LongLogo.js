@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "../../../style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const LongLogo = styled.a`
   padding: 0 ${spacingScale(1)};

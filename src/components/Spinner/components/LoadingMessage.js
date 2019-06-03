@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 export const LoadingMessage = styled.p`
   opacity: ${props => props.theme.OPACITY_70};

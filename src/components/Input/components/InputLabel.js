@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const InputLabel = styled.p`
   margin: ${spacingScale(0.5)} 0;
