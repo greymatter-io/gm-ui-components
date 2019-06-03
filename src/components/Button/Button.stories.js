@@ -6,6 +6,8 @@ import withPropsCombinations from "react-storybook-addon-props-combinations";
 
 import { IconBell } from "components/Glyphs";
 import Button from "./Button";
+import copy from "copy-to-clipboard";
+import Tooltip from "components/Tooltip";
 
 const stories = storiesOf("Components|Buttons", module);
 
@@ -56,6 +58,21 @@ stories
         style: {
           float: "left",
           margin: "0.25rem"
+        },
+        CombinationRenderer: ({ Component, props, options }) => {
+          const prettyJSON = JSON.stringify(props)
+            .split(",")
+            .join("\n");
+          return (
+            <Tooltip content={prettyJSON}>
+              <Component
+                {...props}
+                title="Click to copy props"
+                style={options.style}
+                onClick={() => copy(JSON.stringify(props))}
+              />
+            </Tooltip>
+          );
         }
       }
     ),
