@@ -426,7 +426,7 @@ const GlobalStyles = createGlobalStyle`
   ${CSS_CUSTOM_PROPERTIES};
 
   html {
-    font-family: ${props => props.theme.FONTS_SYSTEM};
+    font-family: ${props => props.theme.FONT_STACK_BASE};
     font-size: ${props => props.theme.FONT_SIZE_BASE};
     color: ${props => props.theme.COLOR_CONTENT};
   }
