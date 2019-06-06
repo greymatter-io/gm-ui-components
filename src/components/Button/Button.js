@@ -20,14 +20,7 @@ Button.propTypes = {
   style: PropTypes.object, // style prop
   suffix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add suffix text to button label
   tabIndex: PropTypes.number,
-  type: PropTypes.oneOf([
-    "default",
-    "danger",
-    "info",
-    "primary",
-    "secondary",
-    "warning"
-  ])
+  type: PropTypes.oneOf(["default", "danger", "info", "primary", "warning"])
 };
 
 Button.defaultProps = {
