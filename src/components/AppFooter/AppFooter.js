@@ -10,31 +10,11 @@ import LongLogo from "./components/LongLogo";
 
 import LongLogoImg from "./assets/decipher-logo-rgb-left.js";
 
-const nodePropType = PropTypes.oneOfType([
-  PropTypes.element,
-  PropTypes.node,
-  PropTypes.string
-]);
-
-AppFooter.propTypes = {
-  children: nodePropType,
-  copyrightText: nodePropType,
-  footerCenter: nodePropType,
-  footerLeft: nodePropType,
-  footerRight: nodePropType,
-  useExternalLinks: PropTypes.bool
-};
-
-AppFooter.defaultProps = {
-  copyrightText: "TM and \u00A9 2019 Decipher Technology Studios",
-  useExternalLinks: true
-};
-
 /**
  * Stateless functional React component that renders company branding and social media footer content
  * @returns JSX.Element
  */
-export default function AppFooter({
+function AppFooter({
   copyrightText,
   useExternalLinks,
   footerLeft,
@@ -105,4 +85,26 @@ export default function AppFooter({
   return <Footer {...props}>{footerContent}</Footer>;
 }
 
+const nodePropType = PropTypes.oneOfType([
+  PropTypes.element,
+  PropTypes.node,
+  PropTypes.string
+]);
+
+AppFooter.propTypes = {
+  children: nodePropType,
+  copyrightText: nodePropType,
+  footerCenter: nodePropType,
+  footerLeft: nodePropType,
+  footerRight: nodePropType,
+  useExternalLinks: PropTypes.bool
+};
+
+AppFooter.defaultProps = {
+  copyrightText: "TM and \u00A9 2019 Decipher Technology Studios",
+  useExternalLinks: true
+};
+
 AppFooter.displayName = "AppFooter";
+
+export default AppFooter;

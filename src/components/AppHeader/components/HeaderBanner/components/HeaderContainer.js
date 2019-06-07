@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/theme";
 
 const HeaderContainer = styled.div`
   color: #fff;
@@ -12,9 +11,5 @@ const HeaderContainer = styled.div`
     padding: ${spacingScale(2)} ${spacingScale(2)} ${spacingScale(1)};
   }
 `;
-
-HeaderContainer.defaultProps = {
-  theme: keen
-};
 
 export default HeaderContainer;

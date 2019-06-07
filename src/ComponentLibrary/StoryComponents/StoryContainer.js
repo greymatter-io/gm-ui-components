@@ -58,6 +58,7 @@ StoryContainer.propTypes = {
 };
 
 StoryContainer.defaultProps = {
+  children: null,
   theme: keen
 };
 

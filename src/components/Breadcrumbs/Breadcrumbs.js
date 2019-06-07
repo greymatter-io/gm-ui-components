@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 export const BreadcrumbsContainer = styled.ol`
@@ -68,15 +67,14 @@ function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   );
 }
 
-export default Breadcrumbs;
-
-Breadcrumbs.defaultProps = {
-  crumbs: [],
-  theme: keen,
-  hideDelimiter: false
-};
-
 Breadcrumbs.propTypes = {
   crumbs: PropTypes.array,
   hideDelimiter: PropTypes.bool
 };
+
+Breadcrumbs.defaultProps = {
+  crumbs: [],
+  hideDelimiter: false
+};
+
+export default Breadcrumbs;
