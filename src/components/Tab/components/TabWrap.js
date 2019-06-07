@@ -8,7 +8,7 @@ const activeStyles = css`
 `;
 
 const hoverStyles = css`
-  box-shadow: ${props => props.theme.COLOR_BRAND_A} 0px -1px inset;
+  box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -1px inset;
 `;
 
 const downStyles = css`
