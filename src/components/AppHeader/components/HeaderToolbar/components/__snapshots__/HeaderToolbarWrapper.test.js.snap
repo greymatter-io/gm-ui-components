@@ -5,28 +5,7 @@ exports[`HeaderToolbarWrapper matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "HeaderToolbarWrapper-ts7v0l-0",
-        "isStatic": false,
-        "rules": Array [
-          "background-image:linear-gradient(to top,transparent,#000);",
-          ";background-color:",
-          "transparent",
-          ";color:",
-          "#fff",
-          ";flex:0 0 ",
-          [Function],
-          "px",
-          ";font-size:",
-          [Function],
-          ";padding:0 ",
-          [Function],
-          "px",
-          ";align-items:center;display:flex;flex-wrap:nowrap;background-size:100% 100%;background-repeat:no-repeat;",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -75,6 +54,27 @@ exports[`HeaderToolbarWrapper matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "HeaderToolbarWrapper-ts7v0l-0",
+        "isStatic": false,
+        "rules": Array [
+          "background-image:linear-gradient(to top,transparent,#000);",
+          ";background-color:",
+          "transparent",
+          ";color:",
+          "#fff",
+          ";flex:0 0 ",
+          [Function],
+          "px",
+          ";font-size:",
+          [Function],
+          ";padding:0 ",
+          [Function],
+          "px",
+          ";align-items:center;display:flex;flex-wrap:nowrap;background-size:100% 100%;background-repeat:no-repeat;",
+        ],
       },
       "displayName": "HeaderToolbarWrapper",
       "foldedComponentIds": Array [],

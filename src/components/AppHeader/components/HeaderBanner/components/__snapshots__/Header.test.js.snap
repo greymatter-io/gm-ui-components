@@ -5,24 +5,7 @@ exports[`Header matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "Header-sc-1q5kxkh-0",
-        "isStatic": false,
-        "rules": Array [
-          "font-size:",
-          [Function],
-          ";font-family:",
-          [Function],
-          ";font-weight:",
-          [Function],
-          ";margin:0;display:inline-block;line-height:1.2;max-width:100%;position:relative;text-transform:capitalize;z-index:1;&::before{background-color:#000;content:\\"\\";display:block;filter:blur(",
-          [Function],
-          "px",
-          ");height:100%;left:0;position:absolute;top:0;width:108%;z-index:-1;}",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -71,6 +54,23 @@ exports[`Header matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "Header-sc-1q5kxkh-0",
+        "isStatic": false,
+        "rules": Array [
+          "font-size:",
+          [Function],
+          ";font-family:",
+          [Function],
+          ";font-weight:",
+          [Function],
+          ";margin:0;display:inline-block;line-height:1.2;max-width:100%;position:relative;text-transform:capitalize;z-index:1;&::before{background-color:#000;content:\\"\\";display:block;filter:blur(",
+          [Function],
+          "px",
+          ");height:100%;left:0;position:absolute;top:0;width:108%;z-index:-1;}",
+        ],
       },
       "displayName": "Header",
       "foldedComponentIds": Array [],

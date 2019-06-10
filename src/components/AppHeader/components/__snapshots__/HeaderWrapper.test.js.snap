@@ -5,23 +5,7 @@ exports[`HeaderWrapper matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "HeaderWrapper-sc-7hjs1g-0",
-        "isStatic": false,
-        "rules": Array [
-          "font-family:",
-          [Function],
-          ";color:#fff;background-color:#000;background-image:linear-gradient( to right,#000,",
-          "rgba(0,0,0,0.3)",
-          ",",
-          "rgba(0,0,0,0)",
-          " ),url(",
-          "mesh-web.jpg",
-          ");display:flex;flex:0 0 auto;flex-direction:column;align-items:stretch;background-size:100% 100%,120% auto;background-position:center center,left center;background-repeat:no-repeat;overflow:hidden;",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -70,6 +54,22 @@ exports[`HeaderWrapper matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "HeaderWrapper-sc-7hjs1g-0",
+        "isStatic": false,
+        "rules": Array [
+          "font-family:",
+          [Function],
+          ";color:#fff;background-color:#000;background-image:linear-gradient( to right,#000,",
+          "rgba(0,0,0,0.3)",
+          ",",
+          "rgba(0,0,0,0)",
+          " ),url(",
+          "mesh-web.jpg",
+          ");display:flex;flex:0 0 auto;flex-direction:column;align-items:stretch;background-size:100% 100%,120% auto;background-position:center center,left center;background-repeat:no-repeat;overflow:hidden;",
+        ],
       },
       "displayName": "HeaderWrapper",
       "foldedComponentIds": Array [],
