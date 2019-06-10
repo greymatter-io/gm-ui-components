@@ -97,27 +97,27 @@ To extend the theme, you must pass a theme object that follows our schema. Here 
 {
   name: "Keen",
 
-  COLOR_BRAND_A: "#0aab2a",
-  COLOR_BRAND_B: "#0aab2a",
-  COLOR_CONTENT: "#000",
+  COLOR_BRAND_PRIMARY: "#0aab2a",
+  COLOR_BRAND_SECONDARY: "#0aab2a",
+  COLOR_CONTENT_DEFAULT: "#000",
 
-  COLOR_BACKGROUND_A: "#ffffff",
-  COLOR_BACKGROUND_B: "#F8F8F8",
-  COLOR_BACKGROUND_C: "#000000",
+  COLOR_BACKGROUND_DEFAULT: "#ffffff",
+  COLOR_BACKGROUND_TWO: "#F8F8F8",
+  COLOR_BACKGROUND_THREE: "#000000",
 
-  COLOR_INTENT_HIGHLIGHT: COLOR_BRAND_A,
-  COLOR_INTENT_SUCCESS: COLOR_BRAND_A,
+  COLOR_INTENT_HIGHLIGHT: COLOR_BRAND_PRIMARY,
+  COLOR_INTENT_SUCCESS: COLOR_BRAND_PRIMARY,
   COLOR_INTENT_DANGER: "#D83D22",
   COLOR_INTENT_WARNING: "#F7CD45",
   COLOR_INTENT_INFO: "#1E6DF6",
 
-  COLOR_KEYLINE: "rgba(0,0,0,0.08)",
-  COLOR_KEYLINE_SOLID: "#EBEBEB",
+  COLOR_KEYLINE_DEFAULT: "rgba(0,0,0,0.08)",
+  COLOR_KEYLINE_DEFAULT_SOLID: "#EBEBEB",
 
-  OPACITY_100: "1",
-  OPACITY_70: "0.7",
-  OPACITY_50: "0.5",
-  OPACITY_15: "0.15",
+  OPACITY_FULL: "1",
+  OPACITY_LIGHT: "0.7",
+  OPACITY_LIGHTER: "0.5",
+  OPACITY_LIGHTEST: "0.15",
 
   // LAYOUT
   BORDER_RADIUS_BASE: "3px",
@@ -127,8 +127,8 @@ To extend the theme, you must pass a theme object that follows our schema. Here 
   ZINDEX_TOOLTIP: "1070",
   ZINDEX_STICKY: "1010",
 
-  RADIUS_05: "4px",
-  RADIUS_1: "8px",
+  CORNER_RADIUS_SHARP: "4px",
+  CORNER_RADIUS_INPUT: "8px",
   RADIUS_2: "16px",
   RADIUS_3: "24px",
   RADIUS_4: "32px",
@@ -142,20 +142,20 @@ To extend the theme, you must pass a theme object that follows our schema. Here 
   FONTS_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
   FONTS_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
-  FONT_STACK_BASE: FONTS_SYSTEM,
+  FONT_STACK_DEFAULT: FONTS_SYSTEM,
   FONT_STACK_BRAND: FONTS_BRAND,
   FONT_STACK_CODE: FONTS_CODE,
 
-  FONT_SIZE_HERO: "40px",
-  FONT_SIZE_TITLE: "36px",
-  FONT_SIZE_LG: "18px",
-  FONT_SIZE_MD: "16px",
-  FONT_SIZE_BASE: "14px",
-  FONT_SIZE_SM: "11px",
-  FONT_SIZE_XS: "9px",
+  FONT_SIZE_PAGE_TITLE: "40px",
+  FONT_SIZE_HEADING_DEFAULT: "36px",
+  FONT_SIZE_TEXT_XL: "18px",
+  FONT_SIZE_TEXT_LG: "16px",
+  FONT_SIZE_TEXT_DEFAULT: "14px",
+  FONT_SIZE_TEXT_SM: "11px",
+  FONT_SIZE_TEXT_XS: "9px",
 
-  LINE_HEIGHT_BASE: 1.4,
-  FONT_WEIGHT_BASE: 400,
+  LINE_HEIGHT_DEFAULT: 1.4,
+  FONT_WEIGHT_DEFAULT: 400,
   FONT_WEIGHT_SEMIBOLD: 600,
   FONT_WEIGHT_BOLD: 800
 };
@@ -168,7 +168,7 @@ You can extend this base theme like so:
 
 keen = {
   ...keen,
-  COLOR_BRAND_A: "#03aaed"
+  COLOR_BRAND_PRIMARY: "#03aaed"
 }
 
 render(

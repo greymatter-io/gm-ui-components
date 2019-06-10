@@ -3,7 +3,7 @@ import { keen } from "style/theme";
 
 const SectionTitle = styled.h3`
   color: inherit;
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
   font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
   margin: 0;
 `;

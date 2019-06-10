@@ -28,12 +28,12 @@ const DemoCols = styled.div`
 
 const DemoCanvas = styled.div`
   padding: 1rem;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  color: ${props => props.theme.COLOR_CONTENT};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
 `;
 
 const StyledFieldset = styled(Fieldset)`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_B};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_TWO};
 `;
 
 const Space = styled.span`
@@ -44,7 +44,7 @@ const Space = styled.span`
 
 const DocumentationLink = styled.h2`
   text-align: center;
-  border-bottom: 1px solid ${props => props.theme.COLOR_KEYLINE};
+  border-bottom: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   padding-bottom: ${spacingScale(2)};
   margin-bottom: ${spacingScale(2)};
 

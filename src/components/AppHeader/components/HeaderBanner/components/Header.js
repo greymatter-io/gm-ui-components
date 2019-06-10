@@ -4,9 +4,9 @@ import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const Header = styled.h1`
-  font-size: ${props => props.theme.FONT_SIZE_TITLE};
+  font-size: ${props => props.theme.FONT_SIZE_HEADING_DEFAULT};
   font-family: ${props => props.theme.FONT_STACK_BRAND};
-  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
+  font-weight: ${props => props.theme.FONT_WEIGHT_DEFAULT};
   margin: 0;
   display: inline-block;
   line-height: 1.2;

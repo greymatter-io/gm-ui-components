@@ -6,7 +6,7 @@ const Table = styled.table`
   td,
   th {
     text-align: left;
-    border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
+    border: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
     padding: 4px;
   }
 `;

@@ -39,14 +39,14 @@ const RadioBox = styled(InputBox).attrs({
   *:hover > & {
     background: ${props =>
       transparentize(
-        1 - props.theme.OPACITY_15,
+        1 - props.theme.OPACITY_LIGHTEST,
         props.theme.COLOR_INTENT_HIGHLIGHT
       )};
 
     &:checked {
       background: ${props =>
         transparentize(
-          1 - props.theme.OPACITY_70,
+          1 - props.theme.OPACITY_LIGHT,
           props.theme.COLOR_INTENT_HIGHLIGHT
         )};
       border-color: transparent;
@@ -55,14 +55,14 @@ const RadioBox = styled(InputBox).attrs({
     *:active > & {
       background: ${props =>
         transparentize(
-          1 - props.theme.OPACITY_50,
+          1 - props.theme.OPACITY_LIGHTER,
           props.theme.COLOR_INTENT_HIGHLIGHT
         )};
 
       &:checked {
         background: ${props =>
           transparentize(
-            1 - props.theme.OPACITY_50,
+            1 - props.theme.OPACITY_LIGHTER,
             props.theme.COLOR_INTENT_HIGHLIGHT
           )};
         border-color: transparent;

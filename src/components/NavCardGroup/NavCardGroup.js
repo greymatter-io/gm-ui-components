@@ -9,9 +9,9 @@ const activeBackgroundColor = css`
     darken(
       0.1,
       mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
+        props.theme.OPACITY_LIGHTEST,
+        props.theme.COLOR_BACKGROUND_TWO,
+        props.theme.COLOR_BACKGROUND_THREE
       )
     )};
 `;
@@ -23,7 +23,7 @@ const NavCardGroup = styled.nav`
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
   position: relative;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_C};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {

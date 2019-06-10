@@ -11,7 +11,8 @@ const CheckmarkColor = props =>
 const CheckboxBox = styled(InputBox).attrs({
   type: "checkbox"
 })`
-  border-radius: ${props => parseInt(props.theme.RADIUS_05, 10) / 2 + 1}px;
+  border-radius: ${props =>
+    parseInt(props.theme.CORNER_RADIUS_SHARP, 10) / 2 + 1}px;
 
   &:after {
     width: 45%;
@@ -46,14 +47,14 @@ const CheckboxBox = styled(InputBox).attrs({
   *:hover > & {
     background: ${props =>
       transparentize(
-        1 - props.theme.OPACITY_15,
+        1 - props.theme.OPACITY_LIGHTEST,
         props.theme.COLOR_INTENT_HIGHLIGHT
       )};
 
     &:checked {
       background: ${props =>
         transparentize(
-          1 - props.theme.OPACITY_70,
+          1 - props.theme.OPACITY_LIGHT,
           props.theme.COLOR_INTENT_HIGHLIGHT
         )};
       border-color: transparent;
@@ -62,7 +63,7 @@ const CheckboxBox = styled(InputBox).attrs({
     *:active > & {
       background: ${props =>
         transparentize(
-          1 - props.theme.OPACITY_50,
+          1 - props.theme.OPACITY_LIGHTER,
           props.theme.COLOR_INTENT_HIGHLIGHT
         )};
 
@@ -70,7 +71,7 @@ const CheckboxBox = styled(InputBox).attrs({
       &:indeterminate {
         background: ${props =>
           transparentize(
-            1 - props.theme.OPACITY_50,
+            1 - props.theme.OPACITY_LIGHTER,
             props.theme.COLOR_INTENT_HIGHLIGHT
           )};
         border-color: transparent;

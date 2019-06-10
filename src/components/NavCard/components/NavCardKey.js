@@ -8,16 +8,16 @@ const color = css`
   color: ${props =>
     readableColor(
       mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
+        props.theme.OPACITY_LIGHTEST,
+        props.theme.COLOR_BACKGROUND_TWO,
+        props.theme.COLOR_BACKGROUND_THREE
       )
     )};
 `;
 
 const NavCardKey = styled.dt`
   ${color};
-  opacity: ${props => props.theme.OPACITY_70};
+  opacity: ${props => props.theme.OPACITY_LIGHT};
   padding-right: ${spacingScale(1)};
   display: inline-block;
 `;

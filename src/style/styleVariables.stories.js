@@ -9,8 +9,8 @@ import { spacingScale } from "./styleFunctions";
 const stories = storiesOf(" Overview|Styles", module);
 
 const DemoCanvas = styled.div`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  color: ${props => props.theme.COLOR_CONTENT};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
   padding: ${spacingScale(2)};
 `;
 
@@ -21,15 +21,15 @@ const DemoItem = styled.button.attrs({
   }
 })`
   box-sizing: border-box;
-  background: ${props => props.theme.COLOR_BACKGROUND_A};
-  border-radius: ${props => props.theme.RADIUS_1};
+  background: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  border-radius: ${props => props.theme.CORNER_RADIUS_INPUT};
   margin: ${spacingScale(1)};
   width: ${spacingScale(16)};
-  font-size: ${props => props.theme.FONT_SIZE_SM};
-  color: ${props => props.theme.COLOR_CONTENT};
-  border: 1px solid ${props => props.theme.COLOR_BACKGROUND_A};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+  border: 1px solid ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
   padding: 0;
-  box-shadow: 0 0 0 1px ${props => props.theme.COLOR_KEYLINE};
+  box-shadow: 0 0 0 1px ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   transition: all .3s ease;
   display: flex;
   flex-direction: column;
@@ -43,9 +43,9 @@ const DemoItem = styled.button.attrs({
     margin-top: ${spacingScale(1)};
     margin-bottom: ${spacingScale(1)};
     transition: all .5s ease;
-    font-family: ${props => props.theme.FONT_STACK_BASE};
-    font-size: ${props => props.theme.FONT_SIZE_SM};
-    opacity: ${props => props.theme.OPACITY_70};
+    font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+    font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
+    opacity: ${props => props.theme.OPACITY_LIGHT};
   }
 
   &:hover,
@@ -56,7 +56,7 @@ const DemoItem = styled.button.attrs({
     &:after {
       transition: inherit;
       content: 'Copy to Clipboard';
-      opacity: ${props => props.theme.OPACITY_100};
+      opacity: ${props => props.theme.OPACITY_FULL};
       color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
     }
 
@@ -73,7 +73,7 @@ const DemoItem = styled.button.attrs({
   &:focus,
   &:active {
     outline: none;
-    color: ${props => props.theme.COLOR_CONTENT};
+    color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
   }
 `;
 
@@ -83,14 +83,14 @@ const DemoSection = styled.div.attrs({
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   flex: 0 0 100%;
   line-height: 1.5;
   margin-top: calc(${spacingScale(2)});
   padding-top: ${spacingScale(4)};
   box-sizing: border-box;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  color: ${props => props.theme.COLOR_CONTENT};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
 
   &:before { 
     content: '${props => props.name}';
@@ -98,7 +98,7 @@ const DemoSection = styled.div.attrs({
     flex: 0 0 100%;
     margin: ${spacingScale(1)};
     user-select: text;
-    font-size: ${props => props.theme.FONT_SIZE_HERO};
+    font-size: ${props => props.theme.FONT_SIZE_PAGE_TITLE};
     font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
   }
 
@@ -115,7 +115,7 @@ const DemoSubSection = styled(DemoSection)`
   flex: 0 0 100%;
 
   &:before {
-    font-size: ${props => props.theme.FONT_SIZE_MD};
+    font-size: ${props => props.theme.FONT_SIZE_TEXT_LG};
     font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -131,19 +131,19 @@ const DemoSubSection = styled(DemoSection)`
 const ColorDemo = styled(DemoItem)`
   background-image: linear-gradient(
       to bottom,
-      ${props => transparentize(1, props.theme.COLOR_BACKGROUND_A)}
+      ${props => transparentize(1, props.theme.COLOR_BACKGROUND_DEFAULT)}
         ${spacingScale(7)},
-      ${props => props.theme.COLOR_BACKGROUND_A} ${spacingScale(7)},
-      ${props => props.theme.COLOR_BACKGROUND_A}
+      ${props => props.theme.COLOR_BACKGROUND_DEFAULT} ${spacingScale(7)},
+      ${props => props.theme.COLOR_BACKGROUND_DEFAULT}
     ),
     linear-gradient(
       to right,
-      ${props => props.theme.COLOR_BACKGROUND_A} 0%,
-      ${props => props.theme.COLOR_BACKGROUND_A} 33%,
-      ${props => props.theme.COLOR_BACKGROUND_B} 33%,
-      ${props => props.theme.COLOR_BACKGROUND_B} 66%,
-      ${props => props.theme.COLOR_BACKGROUND_C} 66%,
-      ${props => props.theme.COLOR_BACKGROUND_C} 100%
+      ${props => props.theme.COLOR_BACKGROUND_DEFAULT} 0%,
+      ${props => props.theme.COLOR_BACKGROUND_DEFAULT} 33%,
+      ${props => props.theme.COLOR_BACKGROUND_TWO} 33%,
+      ${props => props.theme.COLOR_BACKGROUND_TWO} 66%,
+      ${props => props.theme.COLOR_BACKGROUND_THREE} 66%,
+      ${props => props.theme.COLOR_BACKGROUND_THREE} 100%
     );
   height: ${spacingScale(11)};
   width: ${spacingScale(22)};
@@ -154,7 +154,7 @@ const ColorDemo = styled(DemoItem)`
     content: "";
     height: ${spacingScale(4)};
     margin: ${spacingScale(1.5)} 0 0;
-    border-radius: ${props => props.theme.RADIUS_05};
+    border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
     background-color: ${props => props.demoVar};
     position: absolute;
     top: 0;
@@ -163,7 +163,7 @@ const ColorDemo = styled(DemoItem)`
   }
 
   &:after {
-    opacity: ${props => props.theme.OPACITY_70};
+    opacity: ${props => props.theme.OPACITY_LIGHT};
     margin: auto ${spacingScale(0.25)} ${spacingScale(1)};
     position: absolute;
     bottom: 0;
@@ -174,7 +174,7 @@ const ColorDemo = styled(DemoItem)`
 
 const ColorLineDemo = styled(ColorDemo)`
   align-items: stretch;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
 
   &:before {
     content: "";
@@ -186,24 +186,24 @@ const ColorLineDemo = styled(ColorDemo)`
 `;
 
 const ColorBackgroundDemoA = styled(ColorDemo)`
-  background: ${props => props.theme.COLOR_BACKGROUND_A};
-  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_A)};
+  background: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_DEFAULT)};
 
   &:before {
     content: none;
   }
 `;
 const ColorBackgroundDemoB = styled(ColorDemo)`
-  background: ${props => props.theme.COLOR_BACKGROUND_B};
-  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_B)};
+  background: ${props => props.theme.COLOR_BACKGROUND_TWO};
+  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_TWO)};
 
   &:before {
     content: none;
   }
 `;
 const ColorBackgroundDemoC = styled(ColorDemo)`
-  background: ${props => props.theme.COLOR_BACKGROUND_C};
-  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_C)};
+  background: ${props => props.theme.COLOR_BACKGROUND_THREE};
+  color: ${props => readableColor(props.theme.COLOR_BACKGROUND_THREE)};
 
   &:before {
     content: none;
@@ -220,7 +220,7 @@ const FontDemo = styled(DemoItem)`
 
   &:before {
     content: "The quick brown fox jumps over the lazy dog";
-    font-size: ${props => props.theme.FONT_SIZE_TITLE};
+    font-size: ${props => props.theme.FONT_SIZE_HEADING_DEFAULT};
   }
 
   &:after {
@@ -229,7 +229,7 @@ const FontDemo = styled(DemoItem)`
 `;
 
 const FontSizeDemo = styled(FontDemo)`
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
 
   &:before {
     font-size: ${props => props.demoVar};
@@ -238,7 +238,7 @@ const FontSizeDemo = styled(FontDemo)`
 
 const FontWeightDemo = styled(FontDemo)`
   &:before {
-    font-size: ${props => props.theme.FONT_SIZE_BASE};
+    font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
     font-weight: ${props => props.demoVar};
   }
 `;
@@ -248,7 +248,7 @@ const RadiusDemo = styled(DemoItem)`
 
   &:before {
     content: "";
-    border: 1px solid ${props => props.theme.COLOR_BRAND_A};
+    border: 1px solid ${props => props.theme.COLOR_BRAND_PRIMARY};
     margin: auto auto 0;
     border-width: 1px 1px 0 0;
     height: ${spacingScale(8)};
@@ -266,8 +266,8 @@ const OpacityDemo = styled(DemoItem)`
     flex: 1 1 ${spacingScale(7)};
     height: ${spacingScale(7)};
     margin: ${spacingScale(1)} ${spacingScale(1)} 0;
-    border-radius: ${props => props.theme.RADIUS_05};
-    background: ${props => props.theme.COLOR_BRAND_A};
+    border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+    background: ${props => props.theme.COLOR_BRAND_PRIMARY};
     opacity: ${props => props.demoVar};
   }
 `;
@@ -279,7 +279,7 @@ const SpacingDemo = styled(DemoItem)`
     content: "";
     height: ${spacingScale(0.5)};
     margin: ${spacingScale(2)} auto ${spacingScale(0)};
-    border: 1px solid ${props => props.theme.COLOR_BRAND_A};
+    border: 1px solid ${props => props.theme.COLOR_BRAND_PRIMARY};
     border-radius: 0 0 1.5px 1.5px;
     border-top: 0;
     width: ${props => props.demoVar};
@@ -288,8 +288,8 @@ const SpacingDemo = styled(DemoItem)`
 
 const DemoDescription = styled.p`
   margin: ${spacingScale(-0.5)} ${spacingScale(1)} ${spacingScale(1.5)};
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   display: flex;
   flex: 1 0 100%;
 
@@ -300,7 +300,7 @@ const DemoDescription = styled.p`
 `;
 
 const DemoHeading = styled.h1`
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   margin: ${spacingScale(4)} ${spacingScale(1)} ${spacingScale(1)};
 `;
 
@@ -310,8 +310,8 @@ const DemoNavigation = styled.nav`
   justify-content: stretch;
   margin: ${spacingScale(5)} 0 ${spacingScale(2)};
   height: ${spacingScale(5)};
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  box-shadow: 0 1px 0 0 ${props => props.theme.COLOR_KEYLINE};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  box-shadow: 0 1px 0 0 ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   z-index: ${props => props.theme.ZINDEX_STICKY};
   position: sticky;
   top: 0;
@@ -321,9 +321,9 @@ const DemoNavigationItem = styled.a.attrs({ target: "_self" })`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
-  color: ${props => props.theme.COLOR_CONTENT};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
   font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
   flex: 1 1 100%;
   text-decoration: none;
@@ -331,7 +331,7 @@ const DemoNavigationItem = styled.a.attrs({ target: "_self" })`
   &:before {
     content: "";
     margin-right: ${spacingScale(1)};
-    color: ${props => props.theme.COLOR_BRAND_A};
+    color: ${props => props.theme.COLOR_BRAND_PRIMARY};
   }
 
   &[href="#Layout"] {
@@ -339,7 +339,7 @@ const DemoNavigationItem = styled.a.attrs({ target: "_self" })`
       width: ${spacingScale(2)};
       height: ${spacingScale(2)};
       border-radius: 1.5px;
-      border: 1px solid ${props => props.theme.COLOR_BACKGROUND_A};
+      border: 1px solid ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
       box-shadow: 0 0 0 2px, inset 0 0 0 1px;
     }
   }
@@ -353,18 +353,18 @@ const DemoNavigationItem = styled.a.attrs({ target: "_self" })`
       position: relative;
       right: ${spacingScale(0.5)};
       bottom: ${spacingScale(0.5)};
-      background-color: ${props => props.theme.COLOR_BRAND_A};
+      background-color: ${props => props.theme.COLOR_BRAND_PRIMARY};
       box-shadow: ${spacingScale(0.5)} ${spacingScale(0.5)} 0
           ${props =>
             transparentize(
-              1 - props.theme.OPACITY_70,
-              props.theme.COLOR_BRAND_A
+              1 - props.theme.OPACITY_LIGHT,
+              props.theme.COLOR_BRAND_PRIMARY
             )},
         ${spacingScale(1)} ${spacingScale(1)} 0
           ${props =>
             transparentize(
-              1 - props.theme.OPACITY_50,
-              props.theme.COLOR_BRAND_A
+              1 - props.theme.OPACITY_LIGHTER,
+              props.theme.COLOR_BRAND_PRIMARY
             )};
     }
   }
@@ -373,8 +373,8 @@ const DemoNavigationItem = styled.a.attrs({ target: "_self" })`
     &:before {
       content: "Aa";
       transform: scale(1.15);
-      font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
-      font-size: ${props => props.theme.FONT_SIZE_LG};
+      font-weight: ${props => props.theme.FONT_WEIGHT_DEFAULT};
+      font-size: ${props => props.theme.FONT_SIZE_TEXT_XL};
     }
   }
 `;
@@ -392,7 +392,7 @@ stories.add("Styles", () => (
         Style variables are also exposed to the browser as CSS Custom
         Properties:
         <code>
-          <pre>{"opacity: var(--OPACITY_70)"}</pre>
+          <pre>{"opacity: var(--OPACITY_LIGHT)"}</pre>
         </code>
       </p>
     </DemoDescription>
@@ -456,12 +456,12 @@ stories.add("Styles", () => (
           save space, just as you would reduce font or margin size.
         </DemoDescription>
         <RadiusDemo
-          demoVar={props => props.theme.RADIUS_05}
-          demoVarName={"RADIUS_05"}
+          demoVar={props => props.theme.CORNER_RADIUS_SHARP}
+          demoVarName={"CORNER_RADIUS_SHARP"}
         />
         <RadiusDemo
-          demoVar={props => props.theme.RADIUS_1}
-          demoVarName={"RADIUS_1"}
+          demoVar={props => props.theme.CORNER_RADIUS_INPUT}
+          demoVarName={"CORNER_RADIUS_INPUT"}
         />
         <RadiusDemo
           demoVar={props => props.theme.RADIUS_2}
@@ -533,12 +533,12 @@ stories.add("Styles", () => (
           implementing borders using the spread attribute of a box shadow.
         </DemoDescription>
         <ColorLineDemo
-          demoVar={props => props.theme.COLOR_KEYLINE}
-          demoVarName={"COLOR_KEYLINE"}
+          demoVar={props => props.theme.COLOR_KEYLINE_DEFAULT}
+          demoVarName={"COLOR_KEYLINE_DEFAULT"}
         />
         <ColorLineDemo
-          demoVar={props => props.theme.COLOR_KEYLINE_SOLID}
-          demoVarName={"COLOR_KEYLINE_SOLID"}
+          demoVar={props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID}
+          demoVarName={"COLOR_KEYLINE_DEFAULT_SOLID"}
         />
       </DemoSubSection>
 
@@ -550,16 +550,16 @@ stories.add("Styles", () => (
           blocky and incoherent.
         </DemoDescription>
         <ColorBackgroundDemoA
-          demoVar={props => props.theme.COLOR_BACKGROUND_A}
-          demoVarName={"COLOR_BACKGROUND_A"}
+          demoVar={props => props.theme.COLOR_BACKGROUND_DEFAULT}
+          demoVarName={"COLOR_BACKGROUND_DEFAULT"}
         />
         <ColorBackgroundDemoB
-          demoVar={props => props.theme.COLOR_BACKGROUND_B}
-          demoVarName={"COLOR_BACKGROUND_B"}
+          demoVar={props => props.theme.COLOR_BACKGROUND_TWO}
+          demoVarName={"COLOR_BACKGROUND_TWO"}
         />
         <ColorBackgroundDemoC
-          demoVar={props => props.theme.COLOR_BACKGROUND_C}
-          demoVarName={"COLOR_BACKGROUND_C"}
+          demoVar={props => props.theme.COLOR_BACKGROUND_THREE}
+          demoVarName={"COLOR_BACKGROUND_THREE"}
         />
       </DemoSubSection>
 
@@ -570,12 +570,12 @@ stories.add("Styles", () => (
           appear. Avoid using for interaction colors like links and buttons.
         </DemoDescription>
         <ColorDemo
-          demoVar={props => props.theme.COLOR_BRAND_A}
-          demoVarName={"COLOR_BRAND_A"}
+          demoVar={props => props.theme.COLOR_BRAND_PRIMARY}
+          demoVarName={"COLOR_BRAND_PRIMARY"}
         />
         <ColorDemo
-          demoVar={props => props.theme.COLOR_BRAND_B}
-          demoVarName={"COLOR_BRAND_B"}
+          demoVar={props => props.theme.COLOR_BRAND_SECONDARY}
+          demoVarName={"COLOR_BRAND_SECONDARY"}
         />
       </DemoSubSection>
 
@@ -586,20 +586,20 @@ stories.add("Styles", () => (
           lighten text for captions or similar uses, where appropriate.
         </DemoDescription>
         <OpacityDemo
-          demoVar={props => props.theme.OPACITY_100}
-          demoVarName={"OPACITY_100"}
+          demoVar={props => props.theme.OPACITY_FULL}
+          demoVarName={"OPACITY_FULL"}
         />
         <OpacityDemo
-          demoVar={props => props.theme.OPACITY_70}
-          demoVarName={"OPACITY_70"}
+          demoVar={props => props.theme.OPACITY_LIGHT}
+          demoVarName={"OPACITY_LIGHT"}
         />
         <OpacityDemo
-          demoVar={props => props.theme.OPACITY_50}
-          demoVarName={"OPACITY_50"}
+          demoVar={props => props.theme.OPACITY_LIGHTER}
+          demoVarName={"OPACITY_LIGHTER"}
         />
         <OpacityDemo
-          demoVar={props => props.theme.OPACITY_15}
-          demoVarName={"OPACITY_15"}
+          demoVar={props => props.theme.OPACITY_LIGHTEST}
+          demoVarName={"OPACITY_LIGHTEST"}
         />
       </DemoSubSection>
     </DemoSection>
@@ -611,32 +611,32 @@ stories.add("Styles", () => (
           negative space to differentiate elements, when possible.
         </DemoDescription>
         <FontSizeDemo
-          demoVar={props => props.theme.FONT_SIZE_XS}
-          demoVarName={"FONT_SIZE_XS"}
+          demoVar={props => props.theme.FONT_SIZE_TEXT_XS}
+          demoVarName={"FONT_SIZE_TEXT_XS"}
         />
         <FontSizeDemo
-          demoVar={props => props.theme.FONT_SIZE_SM}
-          demoVarName={"FONT_SIZE_SM"}
+          demoVar={props => props.theme.FONT_SIZE_TEXT_SM}
+          demoVarName={"FONT_SIZE_TEXT_SM"}
         />
         <FontSizeDemo
-          demoVar={props => props.theme.FONT_SIZE_BASE}
-          demoVarName={"FONT_SIZE_BASE"}
+          demoVar={props => props.theme.FONT_SIZE_TEXT_DEFAULT}
+          demoVarName={"FONT_SIZE_TEXT_DEFAULT"}
         />
         <FontSizeDemo
-          demoVar={props => props.theme.FONT_SIZE_MD}
-          demoVarName={"FONT_SIZE_MD"}
+          demoVar={props => props.theme.FONT_SIZE_TEXT_LG}
+          demoVarName={"FONT_SIZE_TEXT_LG"}
         />
         <FontSizeDemo
-          demoVar={props => props.theme.FONT_SIZE_LG}
-          demoVarName={"FONT_SIZE_LG"}
+          demoVar={props => props.theme.FONT_SIZE_TEXT_XL}
+          demoVarName={"FONT_SIZE_TEXT_XL"}
         />
         <FontSizeDemo
-          demoVar={props => props.theme.FONT_SIZE_TITLE}
-          demoVarName={"FONT_SIZE_TITLE"}
+          demoVar={props => props.theme.FONT_SIZE_HEADING_DEFAULT}
+          demoVarName={"FONT_SIZE_HEADING_DEFAULT"}
         />
         <FontSizeDemo
-          demoVar={props => props.theme.FONT_SIZE_HERO}
-          demoVarName={"FONT_SIZE_HERO"}
+          demoVar={props => props.theme.FONT_SIZE_PAGE_TITLE}
+          demoVarName={"FONT_SIZE_PAGE_TITLE"}
         />
       </DemoSubSection>
 
@@ -646,8 +646,8 @@ stories.add("Styles", () => (
           necessary to reinforce visual heirarchy.
         </DemoDescription>
         <FontWeightDemo
-          demoVar={props => props.theme.FONT_WEIGHT_BASE}
-          demoVarName={"FONT_WEIGHT_BASE"}
+          demoVar={props => props.theme.FONT_WEIGHT_DEFAULT}
+          demoVarName={"FONT_WEIGHT_DEFAULT"}
         />
         <FontWeightDemo
           demoVar={props => props.theme.FONT_WEIGHT_SEMIBOLD}
@@ -671,8 +671,8 @@ stories.add("Styles", () => (
           demoVarName={"FONT_STACK_BRAND"}
         />
         <FontDemo
-          demoVar={props => props.theme.FONT_STACK_BASE}
-          demoVarName={"FONT_STACK_BASE"}
+          demoVar={props => props.theme.FONT_STACK_DEFAULT}
+          demoVarName={"FONT_STACK_DEFAULT"}
         />
         <FontDemo
           demoVar={props => props.theme.FONT_STACK_CODE}

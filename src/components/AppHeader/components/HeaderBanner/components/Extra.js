@@ -6,11 +6,11 @@ import { keen } from "style/theme";
 
 // Z-index positions these above the preceding Banner Title in order to ensure they're visible above the Banner Title's shadow
 const Extra = styled.a`
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   color: #fff;
-  background: ${props => mix(props.theme.OPACITY_15, "#fff", "#000")};
-  border-radius: ${props => props.theme.RADIUS_05};
-  font-size: ${props => props.theme.FONT_SIZE_SM};
+  background: ${props => mix(props.theme.OPACITY_LIGHTEST, "#fff", "#000")};
+  border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
   font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
   padding: ${spacingScale(0.25)} ${spacingScale(1)};
   margin: ${spacingScale(1)};
@@ -26,7 +26,7 @@ const Extra = styled.a`
   }
 
   &:hover {
-    background: ${props => mix(props.theme.OPACITY_50, "#fff", "#000")};
+    background: ${props => mix(props.theme.OPACITY_LIGHTER, "#fff", "#000")};
   }
 `;
 

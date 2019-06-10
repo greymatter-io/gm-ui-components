@@ -201,18 +201,18 @@ const iconBackgroundNames = [
 
 const GalleryIconList = styled.ul`
   margin: 0;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
   border-width: 0 1px 1px 0;
 `;
 
 const GalleryIconDemo = styled.li`
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
   border-width: 1px 0 0 1px;
   flex: 1 0 20%;
   display: flex;
@@ -223,8 +223,8 @@ const GalleryIconDemo = styled.li`
 
 const GalleryIconLabel = styled.p`
   margin: ${spacingScale(1)};
-  font-size: ${props => props.theme.FONT_SIZE_SM};
-  opacity: ${props => props.theme.OPACITY_70};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
+  opacity: ${props => props.theme.OPACITY_LIGHT};
 `;
 
 const stories = storiesOf("Components|Icons", module);

@@ -5,7 +5,7 @@ const theme = {
   COLOR_INTENT_INFO: "blue",
   COLOR_INTENT_WARNING: "yellow",
   COLOR_INTENT_HIGHLIGHT: "green",
-  COLOR_BACKGROUND_A: "white"
+  COLOR_BACKGROUND_DEFAULT: "white"
 };
 
 describe("generateButtonStyle", () => {

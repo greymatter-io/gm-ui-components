@@ -5,7 +5,7 @@ import BannerBackgroundImage from "./images/mesh-web.jpg";
 import { keen } from "style/theme";
 
 const HeaderWrapper = styled.div`
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   color: #fff;
   background-color: #000;
   background-image: linear-gradient(

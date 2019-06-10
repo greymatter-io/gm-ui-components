@@ -7,9 +7,9 @@ import { keen } from "style/theme";
 const backgroundColor = css`
   background-color: ${props =>
     mix(
-      props.theme.OPACITY_15,
-      props.theme.COLOR_BACKGROUND_B,
-      props.theme.COLOR_BACKGROUND_C
+      props.theme.OPACITY_LIGHTEST,
+      props.theme.COLOR_BACKGROUND_TWO,
+      props.theme.COLOR_BACKGROUND_THREE
     )};
 `;
 
@@ -18,9 +18,9 @@ const backgroundColorHover = css`
     darken(
       0.06,
       mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
+        props.theme.OPACITY_LIGHTEST,
+        props.theme.COLOR_BACKGROUND_TWO,
+        props.theme.COLOR_BACKGROUND_THREE
       )
     )};
 `;
@@ -32,9 +32,9 @@ const TAB_WIDTH_BASE = "1%";
 const NavCardWrapper = styled.div`
   ${backgroundColor};
   font-weight: ${props => props.theme.FONT_WEIGHT_REGULAR};
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   flex: 1 1 ${TAB_WIDTH_BASE};
-  border-radius: ${props => props.theme.RADIUS_05};
+  border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
   min-height: ${spacingScale(8)};
   position: relative;
   transition: all 0.15s ease;

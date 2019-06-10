@@ -6,19 +6,21 @@ import { keen } from "style/theme";
 const BORDER_WIDTH = 1;
 const CHEVRON_ICON_DEFAULT = props =>
   `"data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.155 12.784l2.47-2.47a.75.75 0 0 1 1.06 1.061l-3.53 3.53-3.53-3.53a.75.75 0 0 1 1.06-1.06l2.47 2.469z' fill='` +
-  props.theme.COLOR_CONTENT +
+  props.theme.COLOR_CONTENT_DEFAULT +
   `' fill-rule='nonzero'/%3E%3C/svg%3E"`;
 
 const SelectField = styled.select`
   ${formInteractionStyles};
   height: calc(${spacingScale(4)} - ${BORDER_WIDTH * 2}px);
-  border-radius: calc(${props => props.theme.RADIUS_05} + ${BORDER_WIDTH}px);
-  border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_KEYLINE};
+  border-radius: calc(
+    ${props => props.theme.CORNER_RADIUS_SHARP} + ${BORDER_WIDTH}px
+  );
+  border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
-  color: ${props => props.theme.COLOR_CONTENT};
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
-  background: ${props => props.theme.COLOR_BACKGROUND_B};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
+  background: ${props => props.theme.COLOR_BACKGROUND_TWO};
   position: relative;
   box-sizing: border-box;
   line-height: 1.5;
@@ -31,9 +33,9 @@ const SelectField = styled.select`
   background-repeat: no-repeat;
 
   &::placeholder {
-    color: ${props => props.theme.COLOR_CONTENT};
+    color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
     transition: inherit;
-    opacity: ${props => props.theme.OPACITY_50};
+    opacity: ${props => props.theme.OPACITY_LIGHTER};
   }
 
   &:after {
