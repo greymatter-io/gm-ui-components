@@ -6,16 +6,6 @@ import InputWrap from "../../components/InputWrap";
 import InputHint from "../../components/InputHint";
 import InputRangeControl from "./components/InputRangeControl.js";
 
-InputRange.propTypes = {
-  autoFocus: PropTypes.bool,
-  defaultValue: PropTypes.string,
-  hint: PropTypes.string,
-  label: PropTypes.string,
-  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
-  maxLength: PropTypes.number,
-  placeholder: PropTypes.string
-};
-
 export default function InputRange({
   autoFocus,
   defaultValue,
@@ -36,3 +26,23 @@ export default function InputRange({
     </InputWrap>
   );
 }
+
+InputRange.propTypes = {
+  autoFocus: PropTypes.bool,
+  defaultValue: PropTypes.string,
+  hint: PropTypes.string,
+  label: PropTypes.string,
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  maxLength: PropTypes.number,
+  placeholder: PropTypes.string
+};
+
+InputRange.defaultProps = {
+  autoFocus: false,
+  defaultValue: undefined,
+  hint: undefined,
+  label: undefined,
+  labelPosition: "right",
+  maxLength: undefined,
+  placeholder: undefined
+};

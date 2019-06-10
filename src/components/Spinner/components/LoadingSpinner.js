@@ -63,6 +63,7 @@ LoadingSpinner.propTypes = {
 };
 
 SpinnerSVG.defaultProps = {
+  orientation: "vertical",
   theme: keen
 };
 

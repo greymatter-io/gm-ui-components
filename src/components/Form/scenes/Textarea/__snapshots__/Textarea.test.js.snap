@@ -2,6 +2,7 @@
 
 exports[`Textarea matches snapshot 1`] = `
 <InputWrap
+  labelPosition="top"
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",

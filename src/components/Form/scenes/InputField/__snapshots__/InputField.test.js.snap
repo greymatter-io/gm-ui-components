@@ -2,6 +2,7 @@
 
 exports[`InputField matches snapshot 1`] = `
 <InputWrap
+  labelPosition="top"
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",
@@ -108,7 +109,9 @@ exports[`InputField matches snapshot 1`] = `
     Test
   </InputLabelText>
   <InputTextField
+    autoFocus={false}
     clickAction={[Function]}
+    disabled={false}
     readonly={true}
     theme={
       Object {

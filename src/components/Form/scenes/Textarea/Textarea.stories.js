@@ -11,12 +11,12 @@ stories.add(
   () => {
     return (
       <Textarea
-        autoFocus={boolean("autoFocus", false)}
-        hint={text("hint", "hint")}
-        label={text("label", "label")}
-        defaultValue={text("defaultValue", "defaultValue")}
-        placeholder={text("placeholder", "placeholder")}
-        maxLength={number("maxLength", 25)}
+        autoFocus={boolean("autoFocus")}
+        hint={text("hint")}
+        label={text("label")}
+        defaultValue={text("defaultValue")}
+        placeholder={text("placeholder")}
+        maxLength={number("maxLength")}
       />
     );
   },

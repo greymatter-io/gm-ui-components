@@ -79,7 +79,7 @@ exports[`Radio should render 1`] = `
     }
   }
   forwardedRef={null}
-  labelPosition="left"
+  labelPosition="right"
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",
@@ -186,6 +186,7 @@ exports[`Radio should render 1`] = `
     label
   </InputLabelText>
   <RadioBox
+    defaultChecked={false}
     theme={
       Object {
         "BORDER_RADIUS_BASE": "3px",

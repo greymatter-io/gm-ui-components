@@ -32,6 +32,8 @@ exports[`ReadoutDisplay matches snapshot when primary is false 1`] = `
         ],
       },
       "defaultProps": Object {
+        "color": undefined,
+        "primary": undefined,
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -182,6 +184,8 @@ exports[`ReadoutDisplay matches snapshot when primary is true 1`] = `
         ],
       },
       "defaultProps": Object {
+        "color": undefined,
+        "primary": undefined,
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",

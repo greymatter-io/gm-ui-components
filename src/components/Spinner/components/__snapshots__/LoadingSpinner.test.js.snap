@@ -3,6 +3,7 @@
 exports[`LoadingSpinner matches snapshot 1`] = `
 <SpinnerSVG
   height="100"
+  orientation="vertical"
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",

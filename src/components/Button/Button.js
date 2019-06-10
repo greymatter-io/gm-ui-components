@@ -75,12 +75,20 @@ Button.propTypes = {
 
 Button.defaultProps = {
   active: false,
+  children: undefined,
+  dangerouslySetColor: undefined,
   clickAction: () => {},
-  label: "",
   disabled: false,
+  label: undefined,
+  labelStyle: undefined,
+  orientation: "horizontal",
+  outline: false,
+  prefix: undefined,
   size: "normal",
-  type: "default",
-  orientation: "horizontal"
+  style: undefined,
+  suffix: undefined,
+  tabIndex: undefined,
+  type: "default"
 };
 
 Button.displayName = "Button";

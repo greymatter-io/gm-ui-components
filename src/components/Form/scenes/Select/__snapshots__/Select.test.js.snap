@@ -79,6 +79,7 @@ exports[`Select should render 1`] = `
     }
   }
   forwardedRef={null}
+  labelPosition="top"
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",

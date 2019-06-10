@@ -59,3 +59,15 @@ Table.propTypes = {
   selectedRows: PropTypes.arrayOf(PropTypes.number), // An array of indices of the currently selected rows
   sortDataIndex: PropTypes.string // The dataIndex of the column that is currently being sorted
 };
+
+Table.defaultProps = {
+  columns: undefined,
+  data: undefined,
+  onRowClick: undefined,
+  onSort: undefined,
+  selectedRowStyle: undefined,
+  selectedRows: undefined,
+  sortDataIndex: undefined
+};
+
+Table.displayName = "Table";

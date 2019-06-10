@@ -25,6 +25,9 @@ exports[`StyledSVG matches snapshot 1`] = `
           ";word-spacing:0;vertical-align:middle;&:not(:root){overflow:visible;}",
         ],
       },
+      "defaultProps": Object {
+        "size": "1.714em",
+      },
       "displayName": "StyledSVG",
       "foldedComponentIds": Array [],
       "propTypes": Object {
@@ -39,5 +42,6 @@ exports[`StyledSVG matches snapshot 1`] = `
     }
   }
   forwardedRef={null}
+  size="1.714em"
 />
 `;

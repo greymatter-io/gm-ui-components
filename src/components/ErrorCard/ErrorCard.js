@@ -39,6 +39,11 @@ ErrorCard.propTypes = {
   icon: PropTypes.func
 };
 
+ErrorCard.defaultProps = {
+  errorMsg: "Something went wrong.",
+  icon: undefined
+};
+
 ErrorCard.displayName = "ErrorCard";
 
 export default ErrorCard;

@@ -15,6 +15,9 @@ exports[`<TableColumn /> should match snapshot 1`] = `
           ";",
         ],
       },
+      "defaultProps": Object {
+        "colWidth": undefined,
+      },
       "displayName": "TableColumn",
       "foldedComponentIds": Array [],
       "propTypes": Object {

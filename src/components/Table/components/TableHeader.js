@@ -46,6 +46,9 @@ TableHeader.propTypes = {
 };
 
 TableHeaderCell.defaultProps = {
+  columns: undefined,
+  onSort: undefined,
+  sortDataIndex: undefined,
   theme: keen
 };
 

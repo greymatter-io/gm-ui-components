@@ -90,7 +90,7 @@ ButtonWrap.propTypes = {
 ButtonWrap.defaultProps = {
   theme: keen,
   active: false,
-  dangerouslySetColor: null,
+  dangerouslySetColor: undefined,
   orientation: "horizontal",
   outline: false,
   size: "normal",

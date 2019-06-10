@@ -22,7 +22,7 @@ stories
       <Button
         active={boolean("active", false)}
         label={text("label", "Hello World")}
-        dangerouslySetColor={color("dangerouslySetColor", "")}
+        dangerouslySetColor={color("dangerouslySetColor")}
         type={select("type", types, "default")}
         disabled={boolean("disabled", false)}
         clickAction={() => alert("clicked")}
@@ -31,7 +31,7 @@ stories
         prefix={text("prefix")}
         suffix={text("suffix")}
         size={select("size", sizes, "normal")}
-        tabIndex={number("tabIndex", 0)}
+        tabIndex={number("tabIndex")}
       />
     ),
     {

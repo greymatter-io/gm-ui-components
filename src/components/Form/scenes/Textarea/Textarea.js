@@ -6,18 +6,6 @@ import InputWrap from "../../components/InputWrap";
 import InputHint from "../../components/InputHint";
 import TextareaField from "../../components/TextareaField";
 
-Textarea.propTypes = {
-  autoFocus: PropTypes.bool,
-  defaultValue: PropTypes.string,
-  disabled: PropTypes.bool,
-  hint: PropTypes.string,
-  label: PropTypes.string,
-  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
-  maxLength: PropTypes.number,
-  placeholder: PropTypes.string,
-  readonly: PropTypes.bool
-};
-
 export default function Textarea({
   autoFocus,
   defaultValue,
@@ -46,3 +34,27 @@ export default function Textarea({
     </InputWrap>
   );
 }
+
+Textarea.propTypes = {
+  autoFocus: PropTypes.bool,
+  defaultValue: PropTypes.string,
+  disabled: PropTypes.bool,
+  hint: PropTypes.string,
+  label: PropTypes.string,
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  maxLength: PropTypes.number,
+  placeholder: PropTypes.string,
+  readonly: PropTypes.bool
+};
+
+Textarea.defaultProps = {
+  autoFocus: undefined,
+  defaultValue: undefined,
+  disabled: undefined,
+  hint: undefined,
+  label: undefined,
+  labelPosition: "top",
+  maxLength: undefined,
+  placeholder: undefined,
+  readonly: undefined
+};
