@@ -72,14 +72,14 @@ export const keenDark = {
   COLOR_BRAND_PRIMARY: "#0aab2a",
   COLOR_BRAND_SECONDARY: "#0aab2a",
 
+  COLOR_BACKGROUND_DEFAULT: "#000000",
+  COLOR_BACKGROUND_TWO: "#222222",
+  COLOR_BACKGROUND_THREE: "#FFFFFF",
+
   COLOR_CONTENT_DEFAULT: "rgba(255,255,255,0.85)",
   COLOR_CONTENT_CONTRAST: "rgba(255,255,255,1)",
   COLOR_CONTENT_MUTED: "rgba(255,255,255,0.6)",
   COLOR_CONTENT_NONESSENTIAL: "rgba(255,255,255,0.3)",
-
-  COLOR_BACKGROUND_DEFAULT: "#000000",
-  COLOR_BACKGROUND_TWO: "#222222",
-  COLOR_BACKGROUND_THREE: "#FFFFFF",
 
   COLOR_INTENT_HIGHLIGHT: "#0aab2a",
   COLOR_INTENT_SUCCESS: "#0aab2a",
@@ -88,7 +88,7 @@ export const keenDark = {
   COLOR_INTENT_INFO: "#1E6DF6", // WCAG AA+
 
   COLOR_KEYLINE_DEFAULT: "rgba(255,255,255,0.16)",
-  COLOR_KEYLINE_DEFAULT_SOLID: "#292929",
+  COLOR_KEYLINE_SOLID: "#292929",
 
   OPACITY_FULL: "1",
   OPACITY_LIGHT: "0.7",
@@ -100,18 +100,22 @@ export const keenDark = {
   SPACING_BASE: 8,
   ICON_VIEWBOX_SIZE: 24, // Move to Icons component?
 
+  ZINDEX_ABYSS: "-9999",
+  ZINDEX_FLOOR: "1",
+  ZINDEX_DROPDOWN: "1010",
+  ZINDEX_STICKY: "1020",
+  ZINDEX_FIXED: "1030",
+  ZINDEX_SCRIM: "1040",
+  ZINDEX_MODAL: "1050",
+  ZINDEX_POPOVER: "1060",
   ZINDEX_TOOLTIP: "1070",
-  ZINDEX_STICKY: "1010",
 
   CORNER_RADIUS_SHARP: "4px", // spacingScale(0.5)
   CORNER_RADIUS_INPUT: "8px", // spacingScale(1)
-  RADIUS_2: "16px", // spacingScale(2)
-  RADIUS_3: "24px", // spacingScale(3)
-  RADIUS_4: "32px", // spacingScale(4)
-  RADIUS_5: "40px", // spacingScale(5)
-  RADIUS_6: "48px", // spacingScale(6)
-  RADIUS_7: "56px", // spacingScale(7)
-  RADIUS_8: "64px", // spacingScale(8)
+  CORNER_RADIUS_CARD_LG: "16px",
+  CORNER_RADIUS_CARD_DEFAULT: "12px",
+  CORNER_RADIUS_CARD_SM: "8px",
+  CORNER_RADIUS_MAX: "90000px",
 
   // TYPOGRAPHY
   FONT_STACK_DEFAULT: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
@@ -119,15 +123,31 @@ export const keenDark = {
   FONT_STACK_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
   FONT_SIZE_PAGE_TITLE: "40px",
-  FONT_SIZE_HEADING_DEFAULT: "36px", // Will be changed to 32px
+
+  FONT_SIZE_HEADING_LG: "36px",
+  FONT_SIZE_HEADING_DEFAULT: "36px",
+  FONT_SIZE_HEADING_SM: "36px",
+
+  FONT_SIZE_SUBHEADING_LG: "10px",
+  FONT_SIZE_SUBHEADING_DEFAULT: "10px",
+  FONT_SIZE_SUBHEADING_SM: "10px",
+
+  FONT_SIZE_ITEM_TITLE_LG: "10px",
+  FONT_SIZE_ITEM_TITLE_DEFAULT: "10px",
+  FONT_SIZE_ITEM_TITLE_SM: "10px",
+
   FONT_SIZE_TEXT_XL: "18px", // Will be changed to 24px
   FONT_SIZE_TEXT_LG: "16px", // Will be changed to 18px
   FONT_SIZE_TEXT_DEFAULT: "14px",
   FONT_SIZE_TEXT_SM: "11px", // Will be changed to 12px
   FONT_SIZE_TEXT_XS: "9px", // Will be changed to 10px
 
+  LINE_HEIGHT_LOOSE: 1.6,
   LINE_HEIGHT_DEFAULT: 1.4,
+  LINE_HEIGHT_TIGHT: 1.2,
+
   FONT_WEIGHT_DEFAULT: 400,
+  FONT_WEIGHT_MEDIUM: 500,
   FONT_WEIGHT_SEMIBOLD: 600,
-  FONT_WEIGHT_BOLD: 800
+  FONT_WEIGHT_BOLD: 700
 };
