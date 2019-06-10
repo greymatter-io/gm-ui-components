@@ -5,20 +5,7 @@ exports[`ButtonLabelSuffix matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "ButtonLabelSuffix-antobj-0",
-        "isStatic": false,
-        "rules": Array [
-          "opacity:",
-          [Function],
-          ";margin-left:",
-          [Function],
-          "px",
-          ";",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -67,6 +54,19 @@ exports[`ButtonLabelSuffix matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ButtonLabelSuffix-antobj-0",
+        "isStatic": false,
+        "rules": Array [
+          "opacity:",
+          [Function],
+          ";margin-left:",
+          [Function],
+          "px",
+          ";",
+        ],
       },
       "displayName": "ButtonLabelSuffix",
       "foldedComponentIds": Array [],
