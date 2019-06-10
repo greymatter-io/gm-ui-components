@@ -5,7 +5,19 @@ exports[`LoadingMessage matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "LoadingMessage-q43pza-0",
+        "isStatic": false,
+        "rules": Array [
+          "opacity:",
+          [Function],
+          ";font-size:",
+          [Function],
+          ";max-width:50%;margin:0;",
+        ],
+      },
+      "defaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -54,18 +66,6 @@ exports[`LoadingMessage matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
-      },
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "LoadingMessage-q43pza-0",
-        "isStatic": false,
-        "rules": Array [
-          "opacity:",
-          [Function],
-          ";font-size:",
-          [Function],
-          ";max-width:50%;margin:0;",
-        ],
       },
       "displayName": "LoadingMessage",
       "foldedComponentIds": Array [],
