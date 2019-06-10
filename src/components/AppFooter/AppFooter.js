@@ -7,6 +7,7 @@ import Links from "./components/Links";
 import Link from "./components/Link";
 import { IconTwitter, IconGitHub, IconLinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
+import { keen } from "style/theme";
 
 import LongLogoImg from "./assets/decipher-logo-rgb-left.js";
 
@@ -104,5 +105,9 @@ export default function AppFooter({
 
   return <Footer {...props}>{footerContent}</Footer>;
 }
+
+AppFooter.defaultProps = {
+  theme: keen
+};
 
 AppFooter.displayName = "AppFooter";
