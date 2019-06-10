@@ -12,7 +12,6 @@ export { default as Tooltip } from "./Tooltip";
 export { default as Readout } from "./Readout";
 export { default as ReadoutGroup } from "./ReadoutGroup";
 export { default as LayoutSection } from "./LayoutSection";
-export { default as AppHeader } from "./AppHeader";
 export { default as ErrorCard } from "./ErrorCard";
 export { default as NavCard } from "./NavCard";
 export { default as NavCardGroup } from "./NavCardGroup";
