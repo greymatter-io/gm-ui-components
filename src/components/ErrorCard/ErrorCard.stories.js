@@ -8,10 +8,10 @@ import { IconNegation } from "../";
 const stories = storiesOf("Components|Error Card", module);
 
 stories.add(
-  "default",
+  "Default",
   () => (
     <ErrorCard
-      errorMsg={text("errorMsg", "Uh oh")}
+      errorMsg={text("errorMsg")}
       icon={() => (
         <IconNegation
           backgroundColor="#EFB53F"

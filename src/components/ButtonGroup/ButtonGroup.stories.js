@@ -7,7 +7,7 @@ import ButtonGroup from "./ButtonGroup";
 const stories = storiesOf("Components|Buttons", module);
 
 stories.add(
-  "Button Group",
+  "Default",
   () => {
     return (
       <ButtonGroup>

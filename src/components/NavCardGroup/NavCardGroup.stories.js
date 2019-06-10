@@ -40,7 +40,7 @@ const mockTabs = [
 ];
 
 stories.add(
-  "NavCardGroup",
+  "Default NavCardGroup",
   () => {
     return (
       <NavCardGroup>

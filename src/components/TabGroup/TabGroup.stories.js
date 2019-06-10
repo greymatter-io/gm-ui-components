@@ -8,10 +8,10 @@ import TabGroup from "./TabGroup";
 const stories = storiesOf("Components|Tabs", module);
 
 stories.add(
-  "TabGroup",
+  "Default",
   () => {
     return (
-      <TabGroup label={text("label", "Tab Group")}>
+      <TabGroup label={text("label")}>
         <Tab clickAction={() => {}} label="Active Tab" active />
         <Tab clickAction={() => {}} label="Label" />
         <Tab clickAction={() => {}} label="Disabled" disabled />
