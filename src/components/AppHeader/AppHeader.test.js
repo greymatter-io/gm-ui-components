@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { Button } from "../";
+import { Button } from "..";
 
 import AppHeader from "./AppHeader";
 

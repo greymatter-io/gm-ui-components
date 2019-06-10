@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { keen } from "style/theme";
+
 import Copyright from "./components/Copyright";
 import Footer from "./components/Footer";
 import Links from "./components/Links";
@@ -102,7 +104,8 @@ AppFooter.propTypes = {
 
 AppFooter.defaultProps = {
   copyrightText: "TM and \u00A9 2019 Decipher Technology Studios",
-  useExternalLinks: true
+  useExternalLinks: true,
+  theme: keen
 };
 
 AppFooter.displayName = "AppFooter";

@@ -6,6 +6,7 @@ import { transparentize } from "polished";
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
+import { keen } from "style/theme";
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
@@ -87,6 +88,7 @@ ButtonWrap.propTypes = {
 };
 
 ButtonWrap.defaultProps = {
+  theme: keen,
   active: false,
   dangerouslySetColor: null,
   orientation: "horizontal",

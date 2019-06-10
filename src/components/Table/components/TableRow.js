@@ -33,12 +33,6 @@ const TableRowElement = styled.tr.attrs({
     `};
 `;
 
-TableRowElement.defaultProps = {
-  theme: keen
-};
-
-TableRowElement.displayName = "TableRowElement";
-
 function TableRow({
   data,
   columns,
@@ -93,5 +87,11 @@ TableRow.propTypes = {
   rowIndex: PropTypes.number,
   selectedRowStyle: PropTypes.object
 };
+
+TableRowElement.defaultProps = {
+  theme: keen
+};
+
+TableRowElement.displayName = "TableRowElement";
 
 export default TableRow;

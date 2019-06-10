@@ -19,10 +19,6 @@ const TableHeaderCell = styled(TableCell.withComponent("th"))`
     `};
 `;
 
-TableHeaderCell.defaultProps = {
-  theme: keen
-};
-
 TableHeaderCell.displayName = "TableHeaderCell";
 
 function TableHeader({ columns, sortDataIndex, onSort }) {
@@ -47,6 +43,10 @@ TableHeader.propTypes = {
   columns: PropTypes.arrayOf(columnItemShape),
   onSort: PropTypes.func,
   sortDataIndex: PropTypes.string
+};
+
+TableHeaderCell.defaultProps = {
+  theme: keen
 };
 
 export default TableHeader;

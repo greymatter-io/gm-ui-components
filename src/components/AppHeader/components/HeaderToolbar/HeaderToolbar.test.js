@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { shallow } from "enzyme";
-import { Button, ButtonGroup } from "../../../";
+import { Button, ButtonGroup } from "../../..";
 
 import HeaderToolbar from "./HeaderToolbar";
 
