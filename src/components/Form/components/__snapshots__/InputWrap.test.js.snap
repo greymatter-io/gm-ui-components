@@ -5,7 +5,17 @@ exports[`InputHint matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "InputLabelText-j815aw-0",
+        "isStatic": false,
+        "rules": Array [
+          "margin:0;font-size:",
+          [Function],
+          ";",
+        ],
+      },
+      "defaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -54,16 +64,6 @@ exports[`InputHint matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
-      },
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "InputLabelText-j815aw-0",
-        "isStatic": false,
-        "rules": Array [
-          "margin:0;font-size:",
-          [Function],
-          ";",
-        ],
       },
       "displayName": "InputLabelText",
       "foldedComponentIds": Array [],
