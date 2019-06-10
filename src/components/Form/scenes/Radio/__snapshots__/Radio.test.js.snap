@@ -5,7 +5,20 @@ exports[`Radio should render 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "InputWrap-sc-1toqrjl-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";color:",
+          [Function],
+          ";font-family:",
+          [Function],
+          ";display:flex;position:relative;&:active{user-select:none;}",
+        ],
+      },
+      "defaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -54,19 +67,6 @@ exports[`Radio should render 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
-      },
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "InputWrap-sc-1toqrjl-0",
-        "isStatic": false,
-        "rules": Array [
-          [Function],
-          ";color:",
-          [Function],
-          ";font-family:",
-          [Function],
-          ";display:flex;position:relative;&:active{user-select:none;}",
-        ],
       },
       "displayName": "InputWrap",
       "foldedComponentIds": Array [],
