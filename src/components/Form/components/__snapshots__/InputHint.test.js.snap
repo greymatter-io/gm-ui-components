@@ -5,24 +5,7 @@ exports[`InputHint matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "InputHint-ikl568-0",
-        "isStatic": false,
-        "rules": Array [
-          "margin:",
-          [Function],
-          "px",
-          " 0;font-size:",
-          [Function],
-          ";color:",
-          [Function],
-          ";opacity:",
-          [Function],
-          ";display:block;",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -71,6 +54,23 @@ exports[`InputHint matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "InputHint-ikl568-0",
+        "isStatic": false,
+        "rules": Array [
+          "margin:",
+          [Function],
+          "px",
+          " 0;font-size:",
+          [Function],
+          ";color:",
+          [Function],
+          ";opacity:",
+          [Function],
+          ";display:block;",
+        ],
       },
       "displayName": "InputHint",
       "foldedComponentIds": Array [],
