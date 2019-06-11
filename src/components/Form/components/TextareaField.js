@@ -12,7 +12,7 @@ const TextareaField = styled.textarea`
   max-width: 100%;
   min-width: 8em;
   border-radius: calc(
-    ${props => props.theme.CORNER_RADIUS_SHARP} + ${BORDER_WIDTH}px
+    ${props => props.theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
   );
   border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};

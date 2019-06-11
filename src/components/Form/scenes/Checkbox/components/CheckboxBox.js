@@ -12,7 +12,7 @@ const CheckboxBox = styled(InputBox).attrs({
   type: "checkbox"
 })`
   border-radius: ${props =>
-    parseInt(props.theme.CORNER_RADIUS_SHARP, 10) / 2 + 1}px;
+    parseInt(props.theme.CORNER_RADIUS_INPUT, 10) / 2 + 1}px;
 
   &:after {
     width: 45%;

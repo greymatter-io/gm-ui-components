@@ -464,6 +464,11 @@ const GlobalStyles = createGlobalStyle`
   *:after {
     box-sizing: border-box;
   }
+
+  b,
+  strong {
+    font-weight: ${props => props.theme.FONT_WEIGHT_BOLD};
+  }
 `;
 
 GlobalStyles.defaultProps = {

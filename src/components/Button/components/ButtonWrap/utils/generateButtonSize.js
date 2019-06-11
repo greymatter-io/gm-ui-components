@@ -14,34 +14,34 @@ function generateButtonSize(size) {
       return css`
         font-size: ${props => props.theme.FONT_SIZE_TEXT_XS};
         padding: ${spacingScale(0.25)} ${spacingScale(1)};
-        border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+        border-radius: ${props => props.theme.CORNER_RADIUS_INPUT};
         text-transform: uppercase;
       `;
     case "sm":
       return css`
         font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
         padding: ${spacingScale(0.25)} ${spacingScale(1)};
-        border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+        border-radius: ${props => props.theme.CORNER_RADIUS_INPUT};
         text-transform: uppercase;
       `;
     case "lg":
       return css`
         font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
         padding: ${spacingScale(0.25)} ${spacingScale(1.25)};
-        border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+        border-radius: ${props => props.theme.CORNER_RADIUS_INPUT};
       `;
     case "xl":
       return css`
         font-size: ${props => props.theme.FONT_SIZE_TEXT_XL};
         padding: ${spacingScale(0.25)} ${spacingScale(1.25)};
-        border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+        border-radius: ${props => props.theme.CORNER_RADIUS_INPUT};
       `;
     default:
     case "normal":
       return css`
         font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
         padding: ${spacingScale(0.25)} ${spacingScale(1)};
-        border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+        border-radius: ${props => props.theme.CORNER_RADIUS_INPUT};
       `;
   }
 }

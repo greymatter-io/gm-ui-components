@@ -10,7 +10,7 @@ export const InputTextField = styled.input`
   ${formInteractionStyles};
   min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
   border-radius: calc(
-    ${props => props.theme.CORNER_RADIUS_SHARP} + ${BORDER_WIDTH}px
+    ${props => props.theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
   );
   border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
