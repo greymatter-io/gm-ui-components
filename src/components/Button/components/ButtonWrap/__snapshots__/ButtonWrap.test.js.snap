@@ -5,25 +5,7 @@ exports[`ButtonWrap should match snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "ButtonWrap-sc-6lqiqx-0",
-        "isStatic": false,
-        "rules": Array [
-          "align-items:center;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;display:flex;font-family:",
-          [Function],
-          ";font-weight:",
-          [Function],
-          ";justify-content:center;line-height:1.4;text-align:center;text-transform:none;transition:all 0.3s ease;user-select:none;",
-          [Function],
-          ";&:hover{transition:all 0.1s ease;}&:hover:focus,&:hover:active{transition:all 0 ease;}&:focus,&:focus:active{outline:none;border:1px solid ",
-          [Function],
-          ";z-index:10;position:relative;&::-moz-focus-inner{border:0;}}> *{flex:0 1 auto;}",
-          [Function],
-          ";",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "COLOR_BACKGROUND_DEFAULT": "#FFFFFF",
           "COLOR_BACKGROUND_THREE": "#EEEEEE",
@@ -89,6 +71,24 @@ exports[`ButtonWrap should match snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ButtonWrap-sc-6lqiqx-0",
+        "isStatic": false,
+        "rules": Array [
+          "align-items:center;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;display:flex;font-family:",
+          [Function],
+          ";font-weight:",
+          [Function],
+          ";justify-content:center;line-height:1.4;text-align:center;text-transform:none;transition:all 0.3s ease;user-select:none;",
+          [Function],
+          ";&:hover{transition:all 0.1s ease;}&:hover:focus,&:hover:active{transition:all 0 ease;}&:focus,&:focus:active{outline:none;border:1px solid ",
+          [Function],
+          ";z-index:10;position:relative;&::-moz-focus-inner{border:0;}}> *{flex:0 1 auto;}",
+          [Function],
+          ";",
+        ],
       },
       "displayName": "ButtonWrap",
       "foldedComponentIds": Array [],

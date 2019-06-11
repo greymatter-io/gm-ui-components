@@ -5,19 +5,7 @@ exports[`<TableWrapper /> should match snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "TableWrapper-sc-179xvow-0",
-        "isStatic": false,
-        "rules": Array [
-          "width:100%;height:100%;font-family:",
-          [Function],
-          ";font-size:",
-          [Function],
-          ";white-space:nowrap;table-layout:fixed;border-collapse:separate;border-spacing:0;",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "COLOR_BACKGROUND_DEFAULT": "#FFFFFF",
           "COLOR_BACKGROUND_THREE": "#EEEEEE",
@@ -83,6 +71,18 @@ exports[`<TableWrapper /> should match snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "TableWrapper-sc-179xvow-0",
+        "isStatic": false,
+        "rules": Array [
+          "width:100%;height:100%;font-family:",
+          [Function],
+          ";font-size:",
+          [Function],
+          ";white-space:nowrap;table-layout:fixed;border-collapse:separate;border-spacing:0;",
+        ],
       },
       "displayName": "TableWrapper",
       "foldedComponentIds": Array [],

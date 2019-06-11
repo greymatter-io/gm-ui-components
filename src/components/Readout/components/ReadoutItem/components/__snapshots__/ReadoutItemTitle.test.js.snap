@@ -5,19 +5,7 @@ exports[`ReadoutItemTitle matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "ReadoutItemTitle-sc-16f3byc-0",
-        "isStatic": false,
-        "rules": Array [
-          "font-size:",
-          [Function],
-          ";margin:0;padding:0;font-weight:",
-          [Function],
-          ";min-height:1em;display:inline-block;",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "COLOR_BACKGROUND_DEFAULT": "#FFFFFF",
           "COLOR_BACKGROUND_THREE": "#EEEEEE",
@@ -83,6 +71,18 @@ exports[`ReadoutItemTitle matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ReadoutItemTitle-sc-16f3byc-0",
+        "isStatic": false,
+        "rules": Array [
+          "font-size:",
+          [Function],
+          ";margin:0;padding:0;font-weight:",
+          [Function],
+          ";min-height:1em;display:inline-block;",
+        ],
       },
       "displayName": "ReadoutItemTitle",
       "foldedComponentIds": Array [],

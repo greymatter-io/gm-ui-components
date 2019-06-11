@@ -5,19 +5,7 @@ exports[`SectionTitle matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "SectionTitle-sc-1qi82n4-0",
-        "isStatic": false,
-        "rules": Array [
-          "color:inherit;font-size:",
-          [Function],
-          ";font-weight:",
-          [Function],
-          ";margin:0;",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "COLOR_BACKGROUND_DEFAULT": "#FFFFFF",
           "COLOR_BACKGROUND_THREE": "#EEEEEE",
@@ -83,6 +71,18 @@ exports[`SectionTitle matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "SectionTitle-sc-1qi82n4-0",
+        "isStatic": false,
+        "rules": Array [
+          "color:inherit;font-size:",
+          [Function],
+          ";font-weight:",
+          [Function],
+          ";margin:0;",
+        ],
       },
       "displayName": "SectionTitle",
       "foldedComponentIds": Array [],

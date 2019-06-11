@@ -5,21 +5,7 @@ exports[`Spinner matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "LoadingSpinnerWrap-sc-86ppgt-0",
-        "isStatic": false,
-        "rules": Array [
-          "display:flex;align-items:center;justify-content:center;font-family:",
-          [Function],
-          ";color:",
-          [Function],
-          ";margin:auto;flex:0 0 auto;",
-          [Function],
-          ";",
-        ],
-      },
-      "defaultProps": Object {
+      "_foldedDefaultProps": Object {
         "theme": Object {
           "COLOR_BACKGROUND_DEFAULT": "#FFFFFF",
           "COLOR_BACKGROUND_THREE": "#EEEEEE",
@@ -85,6 +71,20 @@ exports[`Spinner matches snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+      },
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "LoadingSpinnerWrap-sc-86ppgt-0",
+        "isStatic": false,
+        "rules": Array [
+          "display:flex;align-items:center;justify-content:center;font-family:",
+          [Function],
+          ";color:",
+          [Function],
+          ";margin:auto;flex:0 0 auto;",
+          [Function],
+          ";",
+        ],
       },
       "displayName": "LoadingSpinnerWrap",
       "foldedComponentIds": Array [],
