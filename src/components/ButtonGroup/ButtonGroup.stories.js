@@ -4,10 +4,10 @@ import { storiesOf } from "@storybook/react";
 import Button from "components/Button";
 import ButtonGroup from "./ButtonGroup";
 
-const stories = storiesOf("Components|Buttons", module);
+const stories = storiesOf("Components|ButtonGroup", module);
 
 stories.add(
-  "Button Group",
+  "Default",
   () => {
     return (
       <ButtonGroup>

@@ -6,7 +6,7 @@ import { IconSummary, IconFunctions, IconThreads, IconHTTP } from "components";
 import NavCard from "components/NavCard";
 import NavCardGroup from "components/NavCardGroup";
 
-const stories = storiesOf("Components|NavCard", module);
+const stories = storiesOf("Components|NavCardGroup", module);
 
 const mockTabs = [
   {
@@ -40,7 +40,7 @@ const mockTabs = [
 ];
 
 stories.add(
-  "NavCardGroup",
+  "Default",
   () => {
     return (
       <NavCardGroup>

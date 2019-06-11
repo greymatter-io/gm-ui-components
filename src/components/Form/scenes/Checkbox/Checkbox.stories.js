@@ -1,24 +1,26 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { text, select } from "@storybook/addon-knobs";
+import { text, select, boolean } from "@storybook/addon-knobs";
 
 import Checkbox from "./Checkbox";
 
 const stories = storiesOf("Components|Checkbox", module);
 
 stories.add(
-  "default",
+  "Default",
   () => {
     return (
       <Checkbox
-        labelPosition={select(
-          "labelPosition",
-          ["top", "bottom", "left", "right"],
+        defaultChecked={boolean("defaultChecked")}
+        disabled={boolean("disabled")}
+        label={text("label")}
+        labelPosition={select("labelPosition", [
+          "top",
+          "bottom",
+          "left",
           "right"
-        )}
-        label={text("label", "this is a checkbox")}
-        defaultChecked={true}
+        ])}
         onChange={e => {
           alert("checked: " + e.target.checked);
         }}

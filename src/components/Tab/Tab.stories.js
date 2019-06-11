@@ -6,22 +6,43 @@ import Tab from "./Tab";
 
 const stories = storiesOf("Components|Tabs", module);
 
-stories.add(
-  "default",
-  () => {
-    return (
-      <Tab
-        clickAction={() => alert("hello")}
-        label={text("label", "Active Tab")}
-        active={boolean("active", true)}
-        disabled={boolean("disabled", false)}
-      />
-    );
-  },
-  {
-    info: {
-      text:
-        "An individual Tab component that is meant to be used as a child of TabGroup."
+stories
+  .add(
+    "Default",
+    () => {
+      return (
+        <Tab
+          clickAction={() => alert("hello")}
+          label={text("label", "label")}
+          active={boolean("active", true)}
+          disabled={boolean("disabled")}
+          clickAction={() => alert("hello")}
+        />
+      );
+    },
+    {
+      info: {
+        text:
+          "An individual Tab component that is meant to be used as a child of TabGroup."
+      }
     }
-  }
-);
+  )
+  .add(
+    "Typical",
+    () => {
+      return (
+        <Tab
+          clickAction={() => alert("hello")}
+          label={text("label", "Filters")}
+          active={boolean("active", false)}
+          disabled={boolean("disabled", false)}
+        />
+      );
+    },
+    {
+      info: {
+        text:
+          "An individual Tab component that is meant to be used as a child of TabGroup."
+      }
+    }
+  );
