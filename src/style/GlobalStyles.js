@@ -451,6 +451,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${props => props.theme.FONT_STACK_DEFAULT};
     font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
     letter-spacing: ${props => props.theme.LETTER_SPACING_DEFAULT};
+    line-height: ${props => props.theme.LINE_HEIGHT_DEFAULT};
     font-weight: ${props => props.theme.FONT_WEIGHT_DEFAULT};
     color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
   }
