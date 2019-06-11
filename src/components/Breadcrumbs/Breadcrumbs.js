@@ -34,8 +34,7 @@ export const Breadcrumb = styled.li`
 
   &:before {
     display: inline-block;
-    opacity: ${props =>
-      props.hideDelimiter ? 0 : props.theme.OPACITY_LIGHTER};
+    color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
     transform: scaleX(0.5);

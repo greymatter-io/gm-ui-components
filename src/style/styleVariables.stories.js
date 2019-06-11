@@ -6,7 +6,7 @@ import { storiesOf } from "@storybook/react";
 
 import { spacingScale } from "./styleFunctions";
 
-const stories = storiesOf(" Overview|Styles", module);
+const stories = storiesOf(" Overview|Tokens", module);
 
 const DemoCanvas = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
@@ -464,32 +464,20 @@ stories.add("Styles", () => (
           demoVarName={"CORNER_RADIUS_INPUT"}
         />
         <RadiusDemo
-          demoVar={props => props.theme.RADIUS_2}
-          demoVarName={"RADIUS_2"}
+          demoVar={props => props.theme.CORNER_RADIUS_CARD_LG}
+          demoVarName={"CORNER_RADIUS_CARD_LG"}
         />
         <RadiusDemo
-          demoVar={props => props.theme.RADIUS_3}
-          demoVarName={"RADIUS_3"}
+          demoVar={props => props.theme.CORNER_RADIUS_CARD_DEFAULT}
+          demoVarName={"CORNER_RADIUS_CARD_DEFAULT"}
         />
         <RadiusDemo
-          demoVar={props => props.theme.RADIUS_4}
-          demoVarName={"RADIUS_4"}
+          demoVar={props => props.theme.CORNER_RADIUS_CARD_SM}
+          demoVarName={"CORNER_RADIUS_CARD_SM"}
         />
         <RadiusDemo
-          demoVar={props => props.theme.RADIUS_5}
-          demoVarName={"RADIUS_5"}
-        />
-        <RadiusDemo
-          demoVar={props => props.theme.RADIUS_6}
-          demoVarName={"RADIUS_6"}
-        />
-        <RadiusDemo
-          demoVar={props => props.theme.RADIUS_7}
-          demoVarName={"RADIUS_7"}
-        />
-        <RadiusDemo
-          demoVar={props => props.theme.RADIUS_8}
-          demoVarName={"RADIUS_8"}
+          demoVar={props => props.theme.CORNER_RADIUS_MAX}
+          demoVarName={"CORNER_RADIUS_MAX"}
         />
       </DemoSubSection>
     </DemoSection>
@@ -537,8 +525,8 @@ stories.add("Styles", () => (
           demoVarName={"COLOR_KEYLINE_DEFAULT"}
         />
         <ColorLineDemo
-          demoVar={props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID}
-          demoVarName={"COLOR_KEYLINE_DEFAULT_SOLID"}
+          demoVar={props => props.theme.COLOR_KEYLINE_SOLID}
+          demoVarName={"COLOR_KEYLINE_SOLID"}
         />
       </DemoSubSection>
 
@@ -631,7 +619,43 @@ stories.add("Styles", () => (
           demoVarName={"FONT_SIZE_TEXT_XL"}
         />
         <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_HEADING_SM}
+          demoVarName={"FONT_SIZE_HEADING_SM"}
+        />
+        <FontSizeDemo
           demoVar={props => props.theme.FONT_SIZE_HEADING_DEFAULT}
+          demoVarName={"FONT_SIZE_HEADING_DEFAULT"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_HEADING_LG}
+          demoVarName={"FONT_SIZE_HEADING_LG"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_SUBHEADING_SM}
+          demoVarName={"FONT_SIZE_HEADING_SM"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_SUBHEADING_DEFAULT}
+          demoVarName={"FONT_SIZE_HEADING_SM"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_SUBHEADING_LG}
+          demoVarName={"FONT_SIZE_HEADING_SM"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_HEADING_DEFAULT}
+          demoVarName={"FONT_SIZE_HEADING_DEFAULT"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_ITEM_TITLE_SM}
+          demoVarName={"FONT_SIZE_HEADING_DEFAULT"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_ITEM_TITLE_DEFAULT}
+          demoVarName={"FONT_SIZE_HEADING_DEFAULT"}
+        />
+        <FontSizeDemo
+          demoVar={props => props.theme.FONT_SIZE_ITEM_TITLE_LG}
           demoVarName={"FONT_SIZE_HEADING_DEFAULT"}
         />
         <FontSizeDemo
@@ -648,6 +672,10 @@ stories.add("Styles", () => (
         <FontWeightDemo
           demoVar={props => props.theme.FONT_WEIGHT_DEFAULT}
           demoVarName={"FONT_WEIGHT_DEFAULT"}
+        />
+        <FontWeightDemo
+          demoVar={props => props.theme.FONT_WEIGHT_MEDIUM}
+          demoVarName={"FONT_WEIGHT_MEDIUM"}
         />
         <FontWeightDemo
           demoVar={props => props.theme.FONT_WEIGHT_SEMIBOLD}
