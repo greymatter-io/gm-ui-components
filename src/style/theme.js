@@ -51,7 +51,7 @@ export const keen = {
 
   // TYPOGRAPHY
   FONT_STACK_DEFAULT: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
-  FONT_STACK_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
+  FONT_STACK_BRAND: `"Metropolis", "Helvetica Neue", Arial, sans-serif`,
   FONT_STACK_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
   FONT_SIZE_PAGE_TITLE: "40px",
