@@ -2,12 +2,12 @@
 
 exports[`Link should render 1`] = `
 .c0 {
-  color: rgba(255,255,255,0.6);
+  color: hsla(0,0%,0%,0.6);
   padding: 0 4px;
 }
 
 .c0:hover {
-  color: rgba(255,255,255,1);
+  color: hsla(0,0%,0%,1);
 }
 
 .c0 svg {
