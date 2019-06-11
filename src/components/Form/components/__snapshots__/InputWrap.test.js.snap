@@ -79,6 +79,8 @@ exports[`InputHint matches snapshot 1`] = `
         "rules": Array [
           "margin:0;font-size:",
           [Function],
+          ";line-height:",
+          [Function],
           ";",
         ],
       },
