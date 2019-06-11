@@ -110,13 +110,13 @@ exports[`InputBox should render 1`] = `
 }
 
 .c0:disabled {
-  border-color: #000000;
+  border-color: #EEEEEE;
   opacity: 0.5;
   box-shadow: none;
 }
 
 .c0:disabled:checked {
-  background-color: #000000;
+  background-color: #EEEEEE;
 }
 
 <input

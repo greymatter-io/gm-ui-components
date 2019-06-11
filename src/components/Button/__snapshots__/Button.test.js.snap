@@ -53,7 +53,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: transparent;
   color: #000;
   font-size: 14px;
@@ -160,7 +160,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: transparent;
   color: #000;
   font-size: 14px;
@@ -273,7 +273,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: #e6e6e6;
   color: #000;
   font-size: 14px;
@@ -400,7 +400,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: transparent;
   color: #000;
   font-size: 14px;
@@ -513,7 +513,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: transparent;
   color: #000;
   font-size: 9px;
@@ -627,7 +627,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: transparent;
   color: #000;
   font-size: 11px;
@@ -741,7 +741,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: transparent;
   color: #000;
   font-size: 14px;
@@ -854,7 +854,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-color: transparent;
   color: #000;
   font-size: 18px;
