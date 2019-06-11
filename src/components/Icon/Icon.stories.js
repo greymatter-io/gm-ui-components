@@ -205,14 +205,14 @@ const GalleryIconList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 0 1px 1px 0;
 `;
 
 const GalleryIconDemo = styled.li`
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
   background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
-  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
+  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 1px 0 0 1px;
   flex: 1 0 20%;
   display: flex;

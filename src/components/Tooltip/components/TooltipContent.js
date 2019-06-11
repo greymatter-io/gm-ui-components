@@ -4,8 +4,8 @@ import { keen } from "style/theme";
 
 const TooltipContent = styled.div`
   background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
-  border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
-  box-shadow: 0 0 0 1px ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
+  border-radius: ${props => props.theme.CORNER_RADIUS_CARD_SM};
+  box-shadow: 0 0 0 1px ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
   font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
   z-index: ${props => props.theme.ZINDEX_TOOLTIP};

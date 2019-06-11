@@ -34,7 +34,7 @@ const NavCardWrapper = styled.div`
   font-weight: ${props => props.theme.FONT_WEIGHT_REGULAR};
   font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   flex: 1 1 ${TAB_WIDTH_BASE};
-  border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+  border-radius: ${props => props.theme.CORNER_RADIUS_CARD_SM};
   min-height: ${spacingScale(8)};
   position: relative;
   transition: all 0.15s ease;

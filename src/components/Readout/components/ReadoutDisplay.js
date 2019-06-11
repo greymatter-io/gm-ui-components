@@ -11,7 +11,7 @@ const ReadoutDisplay = styled.div`
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  border-radius: ${props => props.theme.CORNER_RADIUS_SHARP};
+  border-radius: ${props => props.theme.CORNER_RADIUS_CARD_DEFAULT};
   margin: 0 ${spacingScale(1)} ${spacingScale(1)} 0;
   position: relative;
   overflow: hidden;
