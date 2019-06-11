@@ -131,9 +131,8 @@ const DemoSubSection = styled(DemoSection)`
 const ColorDemo = styled(DemoItem)`
   background-image: linear-gradient(
       to bottom,
-      ${props => transparentize(1, props.theme.COLOR_BACKGROUND_DEFAULT)}
-        ${spacingScale(7)},
-      ${props => props.theme.COLOR_BACKGROUND_DEFAULT} ${spacingScale(7)},
+      ${props => transparentize(1, props.theme.COLOR_BACKGROUND_DEFAULT)},
+      ${props => transparentize(1, props.theme.COLOR_BACKGROUND_DEFAULT)},
       ${props => props.theme.COLOR_BACKGROUND_DEFAULT}
     ),
     linear-gradient(
@@ -182,6 +181,18 @@ const ColorLineDemo = styled(ColorDemo)`
     background: transparent;
     height: 0;
     margin: ${spacingScale(3.5)} ${spacingScale(1.5)} 0;
+  }
+`;
+
+const ColorTextDemo = styled(DemoItem)`
+  align-items: stretch;
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+
+  &:before {
+    content: "Grey Matter";
+    font-size: ${props => props.theme.FONT_SIZE_TEXT_LG};
+    color: ${props => props.demoVar};
+    margin: ${spacingScale(2)};
   }
 `;
 
@@ -240,6 +251,16 @@ const FontWeightDemo = styled(FontDemo)`
   &:before {
     font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
     font-weight: ${props => props.demoVar};
+  }
+`;
+
+const LineHeightDemo = styled(FontDemo)`
+  &:before {
+    font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
+    line-height: ${props => props.demoVar};
+    max-width: 35ch;
+    content: "Introducing the world’s first hybrid cloud intelligent mesh
+Flexibly optimize your cloud, enhance customer digital experience, gain critical business intelligence, and cut ops costs with Grey Matter.";
   }
 `;
 
@@ -551,6 +572,28 @@ stories.add("Styles", () => (
         />
       </DemoSubSection>
 
+      <DemoSubSection name="Content Colors">
+        <DemoDescription>
+          Use content colors to express the importance of text.
+        </DemoDescription>
+        <ColorTextDemo
+          demoVar={props => props.theme.COLOR_CONTENT_DEFAULT}
+          demoVarName={"COLOR_CONTENT_DEFAULT"}
+        />
+        <ColorTextDemo
+          demoVar={props => props.theme.COLOR_CONTENT_CONTRAST}
+          demoVarName={"COLOR_CONTENT_CONTRAST"}
+        />
+        <ColorTextDemo
+          demoVar={props => props.theme.COLOR_CONTENT_MUTED}
+          demoVarName={"COLOR_CONTENT_MUTED"}
+        />
+        <ColorTextDemo
+          demoVar={props => props.theme.COLOR_CONTENT_NONESSENTIAL}
+          demoVarName={"COLOR_CONTENT_NONESSENTIAL"}
+        />
+      </DemoSubSection>
+
       <DemoSubSection name="Brand Colors">
         <DemoDescription>
           Use Brand colors where the company's visual style needs to be
@@ -705,6 +748,25 @@ stories.add("Styles", () => (
         <FontDemo
           demoVar={props => props.theme.FONT_STACK_CODE}
           demoVarName={"FONT_STACK_CODE"}
+        />
+      </DemoSubSection>
+
+      <DemoSubSection name="Line Heights">
+        <DemoDescription>
+          Running text should prefer a looser line-height. Item labels and most
+          UI text should stick to default and tight height.
+        </DemoDescription>
+        <LineHeightDemo
+          demoVar={props => props.theme.LINE_HEIGHT_LOOSE}
+          demoVarName={"LINE_HEIGHT_LOOSE"}
+        />
+        <LineHeightDemo
+          demoVar={props => props.theme.LINE_HEIGHT_DEFAULT}
+          demoVarName={"LINE_HEIGHT_DEFAULT"}
+        />
+        <LineHeightDemo
+          demoVar={props => props.theme.LINE_HEIGHT_TIGHT}
+          demoVarName={"LINE_HEIGHT_TIGHT"}
         />
       </DemoSubSection>
     </DemoSection>
