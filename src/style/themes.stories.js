@@ -36,6 +36,10 @@ const StyledFieldset = styled(Fieldset)`
   background-color: ${props => props.theme.COLOR_BACKGROUND_TWO};
 `;
 
+const StyledFieldset2 = styled(Fieldset)`
+  background-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
+`;
+
 const Space = styled.span`
   display: inline-block;
   height: ${spacingScale(1)};
@@ -103,25 +107,41 @@ function DemoContent({ themeName }) {
         </ButtonGroup>
       </StyledFieldset>
       <Space />
+      <StyledFieldset2>
+        <ButtonGroup>
+          <Button label={"Plain Button"} />
+          <Space />
+          <Button type={"primary"} label={"Primary Button"} />
+        </ButtonGroup>
+      </StyledFieldset2>
+      <Space />
     </DemoCanvas>
   );
 }
 
-stories.add("Themes", () => (
-  <>
-    <DocumentationLink>
-      <a href="https://github.com/DecipherNow/gm-ui-components#theming">
-        Theming the Component Library
-        <IconChevronRight />
-      </a>
-    </DocumentationLink>
-    <DemoCols>
-      <ThemeProvider theme={keen}>
-        <DemoContent themeName="keen" />
-      </ThemeProvider>
-      <ThemeProvider theme={keenDark}>
-        <DemoContent themeName="keenDark" />
-      </ThemeProvider>
-    </DemoCols>
-  </>
-));
+stories.add(
+  "Themes",
+  () => (
+    <>
+      <DocumentationLink>
+        <a href="https://github.com/DecipherNow/gm-ui-components#theming">
+          Theming the Component Library
+          <IconChevronRight />
+        </a>
+      </DocumentationLink>
+      <DemoCols>
+        <ThemeProvider theme={keen}>
+          <DemoContent themeName="keen" />
+        </ThemeProvider>
+        <ThemeProvider theme={keenDark}>
+          <DemoContent themeName="keenDark" />
+        </ThemeProvider>
+      </DemoCols>
+    </>
+  ),
+  {
+    info: {
+      source: false
+    }
+  }
+);
