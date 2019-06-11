@@ -224,7 +224,7 @@ const GalleryIconDemo = styled.li`
 const GalleryIconLabel = styled.p`
   margin: ${spacingScale(1)};
   font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
-  opacity: ${props => props.theme.OPACITY_LIGHT};
+  color: ${props => props.theme.COLOR_CONTENT_MUTED};
 `;
 
 const stories = storiesOf("Components|Icons", module);

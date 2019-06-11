@@ -77,7 +77,7 @@ exports[`ButtonLabelPrefix matches snapshot 1`] = `
         "componentId": "ButtonLabelPrefix-s9l491-0",
         "isStatic": false,
         "rules": Array [
-          "opacity:",
+          "color:",
           [Function],
           ";margin-right:",
           [Function],

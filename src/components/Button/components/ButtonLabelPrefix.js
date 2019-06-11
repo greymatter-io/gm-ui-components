@@ -3,7 +3,7 @@ import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const ButtonLabelPrefix = styled.span`
-  opacity: ${props => props.theme.OPACITY_LIGHTER};
+  color: ${props => props.theme.COLOR_CONTENT_MUTED};
   margin-right: ${spacingScale(1)};
 `;
 

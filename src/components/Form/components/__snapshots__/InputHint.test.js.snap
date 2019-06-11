@@ -84,8 +84,6 @@ exports[`InputHint matches snapshot 1`] = `
           [Function],
           ";color:",
           [Function],
-          ";opacity:",
-          [Function],
           ";display:block;",
         ],
       },

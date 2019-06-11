@@ -79,9 +79,6 @@ exports[`NavCardKey matches snapshot 1`] = `
         "rules": Array [
           "color:",
           [Function],
-          ";",
-          ";opacity:",
-          [Function],
           ";padding-right:",
           [Function],
           "px",

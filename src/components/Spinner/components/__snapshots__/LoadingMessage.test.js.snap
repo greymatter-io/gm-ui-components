@@ -77,7 +77,7 @@ exports[`LoadingMessage matches snapshot 1`] = `
         "componentId": "LoadingMessage-q43pza-0",
         "isStatic": false,
         "rules": Array [
-          "opacity:",
+          "color:",
           [Function],
           ";font-size:",
           [Function],

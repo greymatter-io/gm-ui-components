@@ -77,7 +77,7 @@ exports[`ButtonLabelSuffix matches snapshot 1`] = `
         "componentId": "ButtonLabelSuffix-antobj-0",
         "isStatic": false,
         "rules": Array [
-          "opacity:",
+          "color:",
           [Function],
           ";margin-left:",
           [Function],

@@ -55,7 +55,7 @@ const TabWrap = styled.a.attrs({
       &:hover,
       &:active {
         cursor: default;
-        opacity: ${props => props.theme.OPACITY_LIGHT};
+        color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
         box-shadow: none;
       }
     `};

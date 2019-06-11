@@ -34,9 +34,8 @@ export const InputTextField = styled.input`
   }
 
   &::placeholder {
-    color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+    color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
     transition: inherit;
-    opacity: ${props => props.theme.OPACITY_LIGHTER};
   }
 `;
 

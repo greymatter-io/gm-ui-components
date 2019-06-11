@@ -25,9 +25,8 @@ export const InputField = styled.input.attrs({
   flex: 1 1 auto;
 
   &::placeholder {
-    color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+    color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
     transition: inherit;
-    opacity: 0.5;
   }
 
   &:focus {
