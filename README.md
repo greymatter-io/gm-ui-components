@@ -97,22 +97,26 @@ To extend the theme, you must pass a theme object that follows our schema. Here 
 {
   name: "Keen",
 
-  COLOR_BRAND_PRIMARY: "#0aab2a",
-  COLOR_BRAND_SECONDARY: "#0aab2a",
-  COLOR_CONTENT_DEFAULT: "#000",
+  COLOR_BRAND_PRIMARY: "#00b42b",
+  COLOR_BRAND_SECONDARY: "#00b42b",
 
-  COLOR_BACKGROUND_DEFAULT: "#ffffff",
-  COLOR_BACKGROUND_TWO: "#F8F8F8",
-  COLOR_BACKGROUND_THREE: "#000000",
+  COLOR_BACKGROUND_DEFAULT: "hsl(0,0%,100%)",
+  COLOR_BACKGROUND_TWO: "hsl(0,0%,97%)",
+  COLOR_BACKGROUND_THREE: "hsl(0,0%,94%)",
 
-  COLOR_INTENT_HIGHLIGHT: COLOR_BRAND_PRIMARY,
-  COLOR_INTENT_SUCCESS: COLOR_BRAND_PRIMARY,
-  COLOR_INTENT_DANGER: "#D83D22",
-  COLOR_INTENT_WARNING: "#F7CD45",
-  COLOR_INTENT_INFO: "#1E6DF6",
+  COLOR_CONTENT_DEFAULT: "hsla(0,0%,0%,0.85)",
+  COLOR_CONTENT_CONTRAST: "hsla(0,0%,0%,1)",
+  COLOR_CONTENT_MUTED: "hsla(0,0%,0%,0.6)",
+  COLOR_CONTENT_NONESSENTIAL: "hsla(0,0%,0%,0.3)",
 
-  COLOR_KEYLINE_DEFAULT: "rgba(0,0,0,0.08)",
-  COLOR_KEYLINE_DEFAULT_SOLID: "#EBEBEB",
+  COLOR_INTENT_HIGHLIGHT: "#00b42b",
+  COLOR_INTENT_SUCCESS: "#00b42b",
+  COLOR_INTENT_DANGER: "#D83D22", // WCAG AA+
+  COLOR_INTENT_WARNING: "#F7CD45", // WCAG AA+
+  COLOR_INTENT_INFO: "#1E6DF6", // WCAG AA+
+
+  COLOR_KEYLINE_DEFAULT: "hsla(0,0%,0%,8%)",
+  COLOR_KEYLINE_SOLID: "hsl(0,0%,8%)",
 
   OPACITY_FULL: "1",
   OPACITY_LIGHT: "0.7",
@@ -120,44 +124,60 @@ To extend the theme, you must pass a theme object that follows our schema. Here 
   OPACITY_LIGHTEST: "0.15",
 
   // LAYOUT
-  BORDER_RADIUS_BASE: "3px",
   SPACING_BASE: 8,
-  ICON_VIEWBOX_SIZE: 24,
 
+  ZINDEX_ABYSS: "-9999",
+  ZINDEX_FLOOR: "1",
+  ZINDEX_DROPDOWN: "1010",
+  ZINDEX_STICKY: "1020",
+  ZINDEX_FIXED: "1030",
+  ZINDEX_SCRIM: "1040",
+  ZINDEX_MODAL: "1050",
+  ZINDEX_POPOVER: "1060",
   ZINDEX_TOOLTIP: "1070",
-  ZINDEX_STICKY: "1010",
 
-  CORNER_RADIUS_SHARP: "4px",
-  CORNER_RADIUS_INPUT: "8px",
-  RADIUS_2: "16px",
-  RADIUS_3: "24px",
-  RADIUS_4: "32px",
-  RADIUS_5: "40px",
-  RADIUS_6: "48px",
-  RADIUS_7: "56px",
-  RADIUS_8: "64px",
+  CORNER_RADIUS_SHARP: "2px", // spacingScale(0.5)
+  CORNER_RADIUS_INPUT: "4px", // spacingScale(1)
+  CORNER_RADIUS_CARD_SM: "4px",
+  CORNER_RADIUS_CARD_DEFAULT: "6px",
+  CORNER_RADIUS_CARD_LG: "8px",
+  CORNER_RADIUS_MAX: "90000px",
 
   // TYPOGRAPHY
-  FONTS_SYSTEM: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
-  FONTS_BRAND: `"Avenir Next", "Metropolis", "Helvetica Neue", Arial, sans-serif`,
-  FONTS_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
-
-  FONT_STACK_DEFAULT: FONTS_SYSTEM,
-  FONT_STACK_BRAND: FONTS_BRAND,
-  FONT_STACK_CODE: FONTS_CODE,
+  FONT_STACK_DEFAULT: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  FONT_STACK_BRAND: `"Metropolis", "Helvetica Neue", Arial, sans-serif`,
+  FONT_STACK_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
   FONT_SIZE_PAGE_TITLE: "40px",
+
+  FONT_SIZE_HEADING_LG: "38px",
   FONT_SIZE_HEADING_DEFAULT: "36px",
+  FONT_SIZE_HEADING_SM: "32px",
+
+  FONT_SIZE_SUBHEADING_LG: "18px",
+  FONT_SIZE_SUBHEADING_DEFAULT: "16px",
+  FONT_SIZE_SUBHEADING_SM: "14px",
+
+  FONT_SIZE_ITEM_TITLE_LG: "16px",
+  FONT_SIZE_ITEM_TITLE_DEFAULT: "14px",
+  FONT_SIZE_ITEM_TITLE_SM: "12px",
+
   FONT_SIZE_TEXT_XL: "18px",
   FONT_SIZE_TEXT_LG: "16px",
   FONT_SIZE_TEXT_DEFAULT: "14px",
-  FONT_SIZE_TEXT_SM: "11px",
-  FONT_SIZE_TEXT_XS: "9px",
+  FONT_SIZE_TEXT_SM: "12px",
+  FONT_SIZE_TEXT_XS: "10px",
 
+  LINE_HEIGHT_LOOSE: 1.6,
   LINE_HEIGHT_DEFAULT: 1.4,
+  LINE_HEIGHT_TIGHT: 1.2,
+
   FONT_WEIGHT_DEFAULT: 400,
+  FONT_WEIGHT_MEDIUM: 500,
   FONT_WEIGHT_SEMIBOLD: 600,
-  FONT_WEIGHT_BOLD: 800
+  FONT_WEIGHT_BOLD: 700,
+
+  LETTER_SPACING_DEFAULT: "normal"
 };
 ```
 
