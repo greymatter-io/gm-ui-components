@@ -516,7 +516,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
-  font-size: 9px;
+  font-size: 10px;
   padding: 2px 8px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -630,7 +630,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
-  font-size: 11px;
+  font-size: 12px;
   padding: 2px 8px;
   border-radius: 4px;
   text-transform: uppercase;

@@ -41,7 +41,7 @@ exports[`InputBox should render 1`] = `
 }
 
 .c0:disabled {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,97%);
 }
 
 .c0:valid:required {
@@ -110,13 +110,13 @@ exports[`InputBox should render 1`] = `
 }
 
 .c0:disabled {
-  border-color: hsl(0,0%,96%);
+  border-color: hsl(0,0%,94%);
   opacity: 0.5;
   box-shadow: none;
 }
 
 .c0:disabled:checked {
-  background-color: hsl(0,0%,96%);
+  background-color: hsl(0,0%,94%);
 }
 
 <input
