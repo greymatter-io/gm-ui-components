@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
-export const BreadcrumbsContainer = styled.ol`
+export const BreadcrumbsWrap = styled.ol`
   font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.theme.FONT_SIZE_SM};
   flex: 1 1 auto;
@@ -58,13 +58,13 @@ export const Breadcrumb = styled.li`
 
 function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   return (
-    <BreadcrumbsContainer {...props}>
+    <BreadcrumbsWrap {...props}>
       {crumbs.map((crumb, i) => (
         <Breadcrumb hideDelimiter={hideDelimiter} key={`${crumb}|${i}`}>
           {crumb}
         </Breadcrumb>
       ))}
-    </BreadcrumbsContainer>
+    </BreadcrumbsWrap>
   );
 }
 

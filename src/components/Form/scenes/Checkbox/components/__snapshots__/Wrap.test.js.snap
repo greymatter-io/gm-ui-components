@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Wrapper should render 1`] = `
+exports[`Wrap should render 1`] = `
 .c0 {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
