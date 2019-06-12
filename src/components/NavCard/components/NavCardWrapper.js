@@ -1,20 +1,7 @@
-import styled, { css } from "styled-components";
-import { mix, darken } from "polished";
+import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
-
-const backgroundColorHover = css`
-  background-color: ${props =>
-    darken(
-      0.06,
-      mix(
-        props.theme.OPACITY_LIGHTEST,
-        props.theme.COLOR_BACKGROUND_TWO,
-        props.theme.COLOR_BACKGROUND_THREE
-      )
-    )};
-`;
 
 const TAB_WIDTH_BASE = "1%";
 

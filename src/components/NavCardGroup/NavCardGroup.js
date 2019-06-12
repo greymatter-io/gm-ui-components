@@ -1,5 +1,4 @@
-import styled, { css } from "styled-components";
-import { mix, darken } from "polished";
+import styled from "styled-components";
 
 import { keenDark } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
