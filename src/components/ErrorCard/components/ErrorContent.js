@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keen } from "style/theme";
 
 import { spacingScale } from "style/styleFunctions";
 
@@ -15,5 +16,9 @@ const ErrorContent = styled.div`
   padding-top: ${spacingScale(8)};
   padding-bottom: ${spacingScale(8)};
 `;
+
+ErrorContent.defaultProps = {
+  theme: keen
+};
 
 export default ErrorContent;
