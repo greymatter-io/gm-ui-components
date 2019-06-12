@@ -1,20 +1,8 @@
 import styled, { css } from "styled-components";
 import { mix, darken } from "polished";
 
-import { keen } from "style/theme";
+import { keenDark } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
-
-const activeBackgroundColor = css`
-  background-color: ${props =>
-    darken(
-      0.1,
-      mix(
-        props.theme.OPACITY_LIGHTEST,
-        props.theme.COLOR_BACKGROUND_TWO,
-        props.theme.COLOR_BACKGROUND_THREE
-      )
-    )};
-`;
 
 const TAB_WIDTH_BASE = "1%";
 
@@ -23,7 +11,7 @@ const NavCardGroup = styled.nav`
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
   position: relative;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
+  background: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {
@@ -34,24 +22,20 @@ const NavCardGroup = styled.nav`
     min-height: ${spacingScale(8)};
     position: relative;
     text-decoration: none;
-    /* When the link element is active, make NavCard's green border pseudo-element
-       visible and style the NavCard background color. */
+
     &:active,
     &:active:hover,
     &.active,
     &.active:hover {
       div[class*="NavCardWrapper"] {
-        &:after {
-          opacity: 1;
-        }
-        ${activeBackgroundColor};
+        ${props => props.theme.COLOR_BACKGROUND_THREE};
       }
     }
   }
 `;
 
 NavCardGroup.defaultProps = {
-  theme: keen
+  theme: keenDark
 };
 
 export default NavCardGroup;

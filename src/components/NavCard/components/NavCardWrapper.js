@@ -4,15 +4,6 @@ import { mix, darken } from "polished";
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
-const backgroundColor = css`
-  background-color: ${props =>
-    mix(
-      props.theme.OPACITY_LIGHTEST,
-      props.theme.COLOR_BACKGROUND_TWO,
-      props.theme.COLOR_BACKGROUND_THREE
-    )};
-`;
-
 const backgroundColorHover = css`
   background-color: ${props =>
     darken(
@@ -30,7 +21,7 @@ const TAB_WIDTH_BASE = "1%";
 // Note: Edge requires the overflow: hidden property to maintian
 // equal sized cards. flex-basis is not sufficient!
 const NavCardWrapper = styled.div`
-  ${backgroundColor};
+  background: ${props => props.theme.COLOR_BACKGROUND_TWO};
   font-weight: ${props => props.theme.FONT_WEIGHT_REGULAR};
   font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   flex: 1 1 ${TAB_WIDTH_BASE};
@@ -57,7 +48,7 @@ const NavCardWrapper = styled.div`
   }
   &:focus,
   &:hover {
-    ${backgroundColorHover};
+    background: ${props => props.theme.COLOR_BACKGROUND_THREE};
   }
 `;
 
