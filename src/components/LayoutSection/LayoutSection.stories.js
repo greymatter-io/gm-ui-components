@@ -13,13 +13,13 @@ const ThemedBackground = styled.div`
 const stories = storiesOf("Components|Layout Section", module);
 
 stories.add(
-  "default",
+  "Typical",
   () => {
     return (
       <ThemedBackground>
         <LayoutSection
           title={text("title", "Test Layout")}
-          icon={() => <IconBell size={"24px"} />}
+          icon={() => <IconBell />}
         >
           <ReadoutGroup>
             <Readout
@@ -36,7 +36,7 @@ stories.add(
                 {
                   title: "Error Rate",
                   value: "0.000%",
-                  icon: () => <IconSummary size={"24px"} />
+                  icon: () => <IconSummary />
                 }
               ]}
             />

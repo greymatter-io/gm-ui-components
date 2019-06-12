@@ -17,21 +17,19 @@ const orientations = ["vertical", "horizontal"];
 
 stories
   .add(
-    "Button",
+    "Default",
     () => (
       <Button
-        active={boolean("active", false)}
+        active={boolean("active")}
         label={text("label", "Hello World")}
-        dangerouslySetColor={color("dangerouslySetColor", "")}
-        type={select("type", types, "default")}
-        disabled={boolean("disabled", false)}
+        dangerouslySetColor={color("dangerouslySetColor")}
+        type={select("type", types)}
+        disabled={boolean("disabled")}
         clickAction={() => alert("clicked")}
         orientation={select("orientation", orientations, "horizontal")}
-        outline={boolean("outline", false)}
-        prefix={text("prefix")}
-        suffix={text("suffix")}
-        size={select("size", sizes, "normal")}
-        tabIndex={number("tabIndex", 0)}
+        outline={boolean("outline")}
+        size={select("size", sizes, "default")}
+        tabIndex={number("tabIndex")}
       />
     ),
     {
@@ -84,7 +82,7 @@ stories
     }
   )
   .add(
-    "Button Types",
+    "Types",
     () => (
       <React.Fragment>
         {types.map(type => (
@@ -99,7 +97,7 @@ stories
     }
   )
   .add(
-    "Button Sizes",
+    "Sizes",
     () => (
       <React.Fragment>
         {sizes.map(size => (
@@ -114,7 +112,7 @@ stories
     }
   )
   .add(
-    "Button Orientations",
+    "Orientations",
     () => (
       <React.Fragment>
         {orientations.map(orientation => (
