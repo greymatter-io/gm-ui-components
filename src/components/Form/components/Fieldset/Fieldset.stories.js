@@ -6,7 +6,7 @@ import Fieldset from "./Fieldset";
 const stories = storiesOf("Components|Fieldset", module);
 
 stories.add(
-  "default",
+  "Default",
   () => {
     return <Fieldset name="Fieldest" />;
   },

@@ -12,7 +12,7 @@ const orientations = {
 };
 
 stories.add(
-  "default",
+  "Default",
   () => {
     return (
       <Spinner
