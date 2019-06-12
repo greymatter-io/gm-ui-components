@@ -28,8 +28,6 @@ stories
         clickAction={() => alert("clicked")}
         orientation={select("orientation", orientations, "horizontal")}
         outline={boolean("outline")}
-        prefix={text("prefix")}
-        suffix={text("suffix")}
         size={select("size", sizes, "default")}
         tabIndex={number("tabIndex")}
       />
