@@ -5,6 +5,9 @@ exports[`<TableColumn /> should match snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
+      "_foldedDefaultProps": Object {
+        "colWidth": undefined,
+      },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "TableColumn-sc-1p9mymk-0",
@@ -14,9 +17,6 @@ exports[`<TableColumn /> should match snapshot 1`] = `
           [Function],
           ";",
         ],
-      },
-      "defaultProps": Object {
-        "colWidth": undefined,
       },
       "displayName": "TableColumn",
       "foldedComponentIds": Array [],
