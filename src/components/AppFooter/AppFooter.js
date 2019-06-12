@@ -9,7 +9,6 @@ import Links from "./components/Links";
 import Link from "./components/Link";
 import { IconTwitter, IconGitHub, IconLinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
-import { keen } from "style/theme";
 
 import LongLogoImg from "./assets/decipher-logo-rgb-left.js";
 
