@@ -8,14 +8,14 @@ import { IconCog, IconChevronRight } from "components/Glyphs";
 import Breadcrumbs from "components/Breadcrumbs";
 import Button from "components/Button";
 import ButtonGroup from "components/ButtonGroup";
-import Checkbox from "components/Form/scenes/Checkbox";
-import Radio from "components/Form/scenes/Radio";
-import Textarea from "components/Form/scenes/Textarea";
-import Fieldset from "components/Form/components/Fieldset";
+import Checkbox from "components/Checkbox";
+import Radio from "components/Radio";
+import Textarea from "components/Textarea";
+import Fieldset from "components/Fieldset";
 import Spinner from "components/Spinner";
 import TabGroup from "components/TabGroup";
 import Tab from "components/Tab";
-import Select from "components/Form/scenes/Select";
+import Select from "components/Select";
 
 const stories = storiesOf(" Overview|Themes", module);
 
