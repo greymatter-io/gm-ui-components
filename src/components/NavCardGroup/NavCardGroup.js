@@ -1,11 +1,12 @@
-import styled from "styled-components";
+import React from "react";
+import styled, { ThemeProvider } from "styled-components";
 
 import { keenDark } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const TAB_WIDTH_BASE = "1%";
 
-const NavCardGroup = styled.nav`
+const NavCardGroupWrap = styled.nav`
   display: flex;
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
@@ -33,8 +34,12 @@ const NavCardGroup = styled.nav`
   }
 `;
 
-NavCardGroup.defaultProps = {
-  theme: keenDark
-};
+function NavCardGroup({ useContextTheme, children }) {
+  return (
+    <ThemeProvider theme={props => (useContextTheme ? props : keenDark)}>
+      <NavCardGroupWrap>{children}</NavCardGroupWrap>
+    </ThemeProvider>
+  );
+}
 
 export default NavCardGroup;
