@@ -6,7 +6,30 @@ exports[`ButtonWrap should match snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "ButtonWrap-sc-6lqiqx-0",
+        "isStatic": false,
+        "rules": Array [
+          "align-items:center;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;display:flex;font-family:",
+          [Function],
+          ";font-weight:",
+          [Function],
+          ";justify-content:center;line-height:1.4;text-align:center;text-transform:none;transition:all 0.3s ease;user-select:none;",
+          [Function],
+          ";&:hover{transition:all 0.1s ease;}&:hover:focus,&:hover:active{transition:all 0 ease;}&:focus,&:focus:active{outline:none;border:1px solid ",
+          [Function],
+          ";z-index:10;position:relative;&::-moz-focus-inner{border:0;}}> *{flex:0 1 auto;}",
+          [Function],
+          ";",
+        ],
+      },
+      "defaultProps": Object {
+        "active": false,
+        "dangerouslySetColor": undefined,
+        "orientation": "horizontal",
+        "outline": false,
+        "size": "normal",
         "theme": Object {
           "BORDER_RADIUS_BASE": "3px",
           "COLOR_BACKGROUND_A": "#ffffff",
@@ -56,24 +79,6 @@ exports[`ButtonWrap should match snapshot 1`] = `
           "name": "Keen",
         },
         "type": "default",
-      },
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "ButtonWrap-sc-6lqiqx-0",
-        "isStatic": false,
-        "rules": Array [
-          "align-items:center;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;display:flex;font-family:",
-          [Function],
-          ";font-weight:",
-          [Function],
-          ";justify-content:center;line-height:1.4;text-align:center;text-transform:none;transition:all 0.3s ease;user-select:none;",
-          [Function],
-          ";&:hover{transition:all 0.1s ease;}&:hover:focus,&:hover:active{transition:all 0 ease;}&:focus,&:focus:active{outline:none;border:1px solid ",
-          [Function],
-          ";z-index:10;position:relative;&::-moz-focus-inner{border:0;}}> *{flex:0 1 auto;}",
-          [Function],
-          ";",
-        ],
       },
       "displayName": "ButtonWrap",
       "foldedComponentIds": Array [],
