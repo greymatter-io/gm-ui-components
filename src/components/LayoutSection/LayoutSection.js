@@ -33,7 +33,7 @@ LayoutSection.propTypes = {
 };
 
 LayoutSection.defaultProps = {
-  children: null,
+  children: undefined,
   className: undefined,
   icon: undefined
 };

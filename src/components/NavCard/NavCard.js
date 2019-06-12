@@ -41,7 +41,7 @@ NavCard.propTypes = {
 };
 
 NavCard.defaultProps = {
-  children: null,
+  children: undefined,
   details: undefined,
   icon: undefined,
   title: undefined

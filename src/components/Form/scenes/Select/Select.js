@@ -46,7 +46,7 @@ Select.propTypes = {
 
 Select.defaultProps = {
   autoFocus: undefined,
-  children: null,
+  children: undefined,
   disabled: undefined,
   hint: undefined,
   labelPosition: "top",

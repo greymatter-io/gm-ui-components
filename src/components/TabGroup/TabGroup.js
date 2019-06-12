@@ -21,7 +21,7 @@ TabGroup.propTypes = {
 };
 
 TabGroup.defaultProps = {
-  children: null,
+  children: undefined,
   label: undefined
 };
 

@@ -35,7 +35,7 @@ Tab.propTypes = {
 
 Tab.defaultProps = {
   active: undefined,
-  children: null,
+  children: undefined,
   disabled: undefined
 };
 
