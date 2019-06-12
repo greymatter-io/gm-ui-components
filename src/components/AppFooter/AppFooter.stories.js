@@ -12,7 +12,7 @@ const FooterDemoArea = styled.div`
 
 stories
   .add(
-    "default",
+    "Default",
     () => (
       <FooterDemoArea>
         <AppFooter
@@ -28,7 +28,7 @@ stories
     }
   )
   .add(
-    "with custom children",
+    "With custom children",
     () => (
       <FooterDemoArea>
         <AppFooter>
@@ -45,7 +45,7 @@ stories
     }
   )
   .add(
-    "with footer section overrides",
+    "With footer section overrides",
     () => (
       <FooterDemoArea>
         <AppFooter

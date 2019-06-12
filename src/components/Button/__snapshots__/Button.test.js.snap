@@ -359,21 +359,6 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 </button>
 `;
 
-exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
-<Button
-  active={false}
-  clickAction={[Function]}
-  disabled={false}
-  label="Button"
-  orientation="horizontal"
-  outline={false}
-  prefix="Prefix"
-  size="normal"
-  suffix="Suffix"
-  type="default"
-/>
-`;
-
 exports[`Button Snapshots matches size snapshots 1`] = `
 .c0 {
   -webkit-align-items: center;

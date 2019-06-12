@@ -16,12 +16,12 @@ const breadCrumbsInfo =
 
 stories
   .add(
-    "default",
+    "Default",
     () => {
       return (
         <Breadcrumbs
           crumbs={array("crumbs", defaultCrumbs)}
-          hideDelimiter={boolean("hideDelimiter", false)}
+          hideDelimiter={boolean("hideDelimiter")}
         />
       );
     },
@@ -32,7 +32,7 @@ stories
     }
   )
   .add(
-    "with smaller container",
+    "With limited container size",
     () => {
       return (
         <div
@@ -45,7 +45,7 @@ stories
         >
           <Breadcrumbs
             crumbs={array("crumbs", defaultCrumbs)}
-            hideDelimiter={boolean("hideDelimiter", false)}
+            hideDelimiter={boolean("hideDelimiter")}
           />
         </div>
       );

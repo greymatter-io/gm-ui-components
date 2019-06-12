@@ -7,25 +7,29 @@ import InputField from "./InputField";
 const stories = storiesOf("Components|InputField", module);
 
 stories.add(
-  "default",
+  "Default",
   () => {
-    const FormFieldType = select(
-      "type",
-      ["text", "search", "number", "password", "email", "telephone", "url"],
-      "text"
-    );
+    const FormFieldType = select("type", [
+      "text",
+      "search",
+      "number",
+      "password",
+      "email",
+      "telephone",
+      "url"
+    ]);
 
     return (
       <InputField
-        autoFocus={boolean("autoFocus", false)}
-        required={boolean("required", false)}
-        readonly={boolean("readonly", false)}
-        hint={text("hint", "hint")}
+        autoFocus={boolean("autoFocus")}
+        required={boolean("required")}
+        readonly={boolean("readonly")}
+        hint={text("hint")}
         type={FormFieldType}
-        label={text("label", "label")}
-        defaultValue={text("defaultValue", "defaultValue")}
-        placeholder={text("placeholder", "placeholder")}
-        maxLength={number("maxLength", 25)}
+        label={text("label")}
+        defaultValue={text("defaultValue")}
+        placeholder={text("placeholder")}
+        maxLength={number("maxLength")}
       />
     );
   },

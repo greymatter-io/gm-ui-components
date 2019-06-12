@@ -2,8 +2,6 @@ import { PropTypes } from "prop-types";
 import React from "react";
 
 import ButtonWrap from "./components/ButtonWrap";
-import ButtonLabelPrefix from "./components/ButtonLabelPrefix";
-import ButtonLabelSuffix from "./components/ButtonLabelSuffix";
 
 /**
  * General purpose button
@@ -18,10 +16,8 @@ function Button({
   disabled,
   label,
   orientation,
-  prefix,
   size,
   style,
-  suffix,
   outline,
   tabIndex,
   type,
@@ -44,13 +40,7 @@ function Button({
       {...props}
     >
       {children}
-      {label.length > 0 && (
-        <span style={labelStyle}>
-          {prefix ? <ButtonLabelPrefix>{prefix}</ButtonLabelPrefix> : ""}
-          {label}
-          {suffix ? <ButtonLabelSuffix>{suffix}</ButtonLabelSuffix> : ""}
-        </span>
-      )}
+      {label.length > 0 && <span style={labelStyle}>{label}</span>}
     </ButtonWrap>
   );
 }
@@ -65,10 +55,8 @@ Button.propTypes = {
   labelStyle: PropTypes.object,
   orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
   outline: PropTypes.bool,
-  prefix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add prefix text to button label
   size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]), // Relative size of the button
   style: PropTypes.object, // style prop
-  suffix: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Add suffix text to button label
   tabIndex: PropTypes.number,
   type: PropTypes.oneOf(["default", "danger", "info", "primary", "warning"])
 };
