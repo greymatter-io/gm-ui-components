@@ -117,7 +117,7 @@ exports[`CheckboxBox should render 1`] = `
       },
       "displayName": "CheckboxBox",
       "foldedComponentIds": Array [
-        "InputBox-sc-1b21mwk-0",
+        "InputBox-ina997-0",
       ],
       "render": [Function],
       "styledComponentId": "CheckboxBox-a30yvp-0",

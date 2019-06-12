@@ -115,7 +115,7 @@ exports[`RadioBox should render 1`] = `
       },
       "displayName": "RadioBox",
       "foldedComponentIds": Array [
-        "InputBox-sc-1b21mwk-0",
+        "InputBox-ina997-0",
       ],
       "render": [Function],
       "styledComponentId": "RadioBox-zbiyvo-0",

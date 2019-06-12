@@ -3,7 +3,7 @@ import { transparentize, readableColor, darken } from "polished";
 
 import { keen } from "style/theme";
 
-import InputBox from "components/Form/components/InputBox";
+import InputBox from "components/util/InputBox";
 
 const CheckmarkColor = props =>
   readableColor(darken(0.1, props.theme.COLOR_INTENT_HIGHLIGHT));
