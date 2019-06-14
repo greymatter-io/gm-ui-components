@@ -35,6 +35,10 @@ export default function Icon({
       borderColor={borderColor}
       {...props}
     >
+      <g title={glyphName} className="glyph">
+        <title>{title ? title : glyphName}</title>
+        {children}
+      </g>
       {badge && (
         <circle
           cx={badgePosition.x}
@@ -43,10 +47,6 @@ export default function Icon({
           fill={badgeColor}
         />
       )}
-      <g title={glyphName} className="glyph">
-        <title>{title ? title : glyphName}</title>
-        {children}
-      </g>
     </StyledSVG>
   );
 }
