@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import StyledSVG from "./components/StyledSVG";
+import { keen } from "style/theme";
 
 /**
  * Renders an Icon wrapping a Glyph component with any additional styling props
@@ -66,16 +67,17 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
+  theme: keen,
   badge: false,
   badgePosition: {
     x: 46,
     y: 16
   },
-  badgeColor: props => props.theme.COLOR_INTENT_INFO,
+  badgeColor: "red",
   borderColor: "currentColor",
   borderWidth: "1px",
   fillColor: "currentColor",
-  fillOpacity: props => props.theme.OPACITY_15,
+  fillOpacity: 0.15,
   size: "1.714em"
 };
 
