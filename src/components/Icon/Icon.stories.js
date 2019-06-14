@@ -1,124 +1,124 @@
 import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
-import { number, color, text } from "@storybook/addon-knobs";
+import { number, color, text, boolean, object } from "@storybook/addon-knobs";
 
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
 import { spacingScale } from "style/styleFunctions";
 
 const glyphNames = [
-  "ArrowUpRight",
-  "ArrowUpLeft",
-  "ArrowUp",
-  "ArrowLeft",
-  "ArrowRight",
-  "ArrowDown",
-  "ArrowEndUp",
-  "ArrowEndLeft",
-  "ArrowEndRight",
-  "ArrowEndDown",
-  "ArrowStartUp",
-  "ArrowStartLeft",
-  "ArrowStartRight",
-  "ArrowStartDown",
-  "ArrowDownLeft",
-  "ArrowDownRight",
-  "Activity",
-  "AlertTriangle",
-  "Bookmark",
-  "Boolean",
-  "Calendar",
-  "CheckboxChecked",
-  "CheckboxIndeterminate",
-  "CheckboxNegative",
-  "CheckboxUnchecked",
-  "CheckcircleChecked",
-  "CheckcircleUnchecked",
-  "Checkmark",
-  "Checklist",
-  "ChevronDown",
-  "ChevronDownDouble",
-  "ChevronUp",
-  "ChevronUpDouble",
-  "ChevronLeft",
-  "ChevronLeftDouble",
-  "ChevronRight",
-  "ChevronRightDouble",
-  "Circle",
-  "Cloud",
-  "Cog",
-  "Comment",
-  "Configuration",
-  "CPU",
-  "Cycle",
-  "Dashboard",
-  "Download",
-  "Duplicate",
-  "Edit",
-  "Entity",
-  "Ekg",
-  "EkgNo",
-  "Expand",
-  "Eye",
-  "EyeNo",
-  "File",
-  "Filter",
-  "Folder",
-  "Group",
-  "Grid",
-  "Hellip",
-  "HTTP",
-  "Inbox",
-  "IngressEgress",
-  "Info",
-  "Json",
-  "Key",
-  "Latency",
-  "List",
-  "Lock",
-  "MagnifierPlus",
-  "Magnifier",
-  "Mail",
-  "Memory",
-  "Minus",
-  "Move",
-  "MoveWorkspace",
-  "NewFolder",
-  "NewOrganization",
-  "News",
-  "NewWindow",
-  "NewWorkspace",
-  "Organization",
-  "OnOff",
-  "Pause",
-  "Person",
-  "Pin",
-  "Play",
-  "Plus",
-  "Project",
-  "Rename",
-  "Reorder",
-  "SharedFolder",
-  "ShareToPeople",
-  "SortDescending",
-  "Square",
-  "Star",
-  "StatusChecked",
-  "StepForward",
-  "StepBackward",
-  "TextCursor",
-  "Trash",
-  "TrashX",
-  "TriangleDown",
-  "TriangleUp",
-  "TriangleLeft",
-  "TriangleRight",
-  "Unlock",
-  "Vellip",
-  "Versions",
-  "Workspace",
-  "X"
+  "IconArrowUpRight",
+  "IconArrowUpLeft",
+  "IconArrowUp",
+  "IconArrowLeft",
+  "IconArrowRight",
+  "IconArrowDown",
+  "IconArrowEndUp",
+  "IconArrowEndLeft",
+  "IconArrowEndRight",
+  "IconArrowEndDown",
+  "IconArrowStartUp",
+  "IconArrowStartLeft",
+  "IconArrowStartRight",
+  "IconArrowStartDown",
+  "IconArrowDownLeft",
+  "IconArrowDownRight",
+  "IconActivity",
+  "IconAlertTriangle",
+  "IconBookmark",
+  "IconBoolean",
+  "IconCalendar",
+  "IconCheckboxChecked",
+  "IconCheckboxIndeterminate",
+  "IconCheckboxNegative",
+  "IconCheckboxUnchecked",
+  "IconCheckcircleChecked",
+  "IconCheckcircleUnchecked",
+  "IconCheckmark",
+  "IconChecklist",
+  "IconChevronDown",
+  "IconChevronDownDouble",
+  "IconChevronUp",
+  "IconChevronUpDouble",
+  "IconChevronLeft",
+  "IconChevronLeftDouble",
+  "IconChevronRight",
+  "IconChevronRightDouble",
+  "IconCircle",
+  "IconCloud",
+  "IconCog",
+  "IconComment",
+  "IconConfiguration",
+  "IconCPU",
+  "IconCycle",
+  "IconDashboard",
+  "IconDownload",
+  "IconDuplicate",
+  "IconEdit",
+  "IconEntity",
+  "IconEkg",
+  "IconEkgNo",
+  "IconExpand",
+  "IconEye",
+  "IconEyeNo",
+  "IconFile",
+  "IconFilter",
+  "IconFolder",
+  "IconGroup",
+  "IconGrid",
+  "IconHellip",
+  "IconHTTP",
+  "IconInbox",
+  "IconIngressEgress",
+  "IconInfo",
+  "IconJson",
+  "IconKey",
+  "IconLatency",
+  "IconList",
+  "IconLock",
+  "IconMagnifierPlus",
+  "IconMagnifier",
+  "IconMail",
+  "IconMemory",
+  "IconMinus",
+  "IconMove",
+  "IconMoveWorkspace",
+  "IconNewFolder",
+  "IconNewOrganization",
+  "IconNews",
+  "IconNewWindow",
+  "IconNewWorkspace",
+  "IconOrganization",
+  "IconOnOff",
+  "IconPause",
+  "IconPerson",
+  "IconPin",
+  "IconPlay",
+  "IconPlus",
+  "IconProject",
+  "IconRename",
+  "IconReorder",
+  "IconSharedFolder",
+  "IconShareToPeople",
+  "IconSortDescending",
+  "IconSquare",
+  "IconStar",
+  "IconStatusChecked",
+  "IconStepForward",
+  "IconStepBackward",
+  "IconTextCursor",
+  "IconTrash",
+  "IconTrashX",
+  "IconTriangleDown",
+  "IconTriangleUp",
+  "IconTriangleLeft",
+  "IconTriangleRight",
+  "IconUnlock",
+  "IconVellip",
+  "IconVersions",
+  "IconWorkspace",
+  "IconX"
 ];
 
 const GalleryIconList = styled.ul`
@@ -156,15 +156,17 @@ stories
   .add(
     "Default",
     () => {
-      const Cog = Glyphs.Cog;
+      const IconCog = Glyphs.IconCog;
       return (
-        <Cog
+        <IconCog
           borderColor={color("borderColor")}
           borderWidth={number("borderWidth")}
           fillColor={color("fillColor")}
           fillOpacity={number("fillOpacity")}
           size={text("size")}
           title={text("title")}
+          badge={boolean("badge")}
+          badgePosition={object("badgePosition", undefined)}
         />
       );
     },
@@ -176,12 +178,21 @@ stories
     }
   )
   .add(
-    "Icon with Custom Glyph",
+    "Custom Glyphs",
     () => {
       return (
-        <Icon title="Custom Glyph">
+        <Icon
+          title={text("title")}
+          size={text("size")}
+          borderColor={color("borderColor")}
+          borderWidth={number("borderWidth")}
+          fillColor={color("fillColor")}
+          fillOpacity={number("fillOpacity", undefined)}
+          badge={boolean("badge", undefined)}
+          badgePosition={object("badgePosition", undefined)}
+        >
           <svg className="svg-icon" viewBox="0 0 24 24">
-            <path d="M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" />
+            <circle cx="12" cy="12" r="7.4" />
           </svg>
         </Icon>
       );
@@ -192,25 +203,28 @@ stories
           "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
       }
     }
-  );
-// .add("Glyph Gallery", () => {
-//   return (
-//     <GalleryIconList fontSize={text("Context font size", "inherit")}>
-//       {glyphNames.map(glyph => {
-//         let Glyph = Glyphs[glyph];
-//         return (
-//           <GalleryIconDemo key={glyph}>
-//             <Glyph
-//               size={text("size")}
-//               fillColor={color("fillColor")}
-//               fillOpacity={number("fillOpacity")}
-//               borderColor={color("borderColor")}
-//               borderWidth={text("borderWidth")}
-//             />
-//             <GalleryIconLabel>{glyph}</GalleryIconLabel>
-//           </GalleryIconDemo>
-//         );
-//       })}
-//     </GalleryIconList>
-//   );
-// })
+  )
+  .add("Glyph Gallery", () => {
+    return (
+      <GalleryIconList fontSize={text("Context font size", "inherit")}>
+        {glyphNames.map(glyph => {
+          let Glyph = Glyphs[glyph];
+          return (
+            <GalleryIconDemo key={glyph}>
+              <Glyph
+                title={glyph}
+                size={text("size", undefined)}
+                fillColor={color("fillColor", undefined)}
+                fillOpacity={number("fillOpacity", undefined)}
+                borderColor={color("borderColor", undefined)}
+                borderWidth={text("borderWidth", undefined)}
+                badge={boolean("badge", undefined)}
+                badgePosition={object("badgePosition", undefined)}
+              />
+              <GalleryIconLabel>{glyph}</GalleryIconLabel>
+            </GalleryIconDemo>
+          );
+        })}
+      </GalleryIconList>
+    );
+  });
