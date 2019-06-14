@@ -3,19 +3,6 @@ import PropTypes from "prop-types";
 
 import StyledSVG from "./components/StyledSVG";
 
-Icon.propTypes = {
-  ariaLabelledby: PropTypes.string,
-  borderColor: PropTypes.string,
-  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-    .isRequired,
-  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  fillColor: PropTypes.string,
-  fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  glyphName: PropTypes.string,
-  size: PropTypes.string,
-  title: PropTypes.string
-};
-
 /**
  * Renders an Icon wrapping a Glyph component with any additional styling props
  * @param {any} { optional styling props}
@@ -51,7 +38,17 @@ export default function Icon({
   );
 }
 
-Icon.displayName = "Icon";
+Icon.propTypes = {
+  ariaLabelledby: PropTypes.string,
+  borderColor: PropTypes.string,
+  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
+  fillColor: PropTypes.string,
+  fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  glyphName: PropTypes.string,
+  size: PropTypes.string,
+  title: PropTypes.string
+};
 
 Icon.defaultProps = {
   borderColor: "currentColor",
@@ -60,3 +57,5 @@ Icon.defaultProps = {
   fillOpacity: props => props.theme.OPACITY_15,
   size: "1.714em"
 };
+
+Icon.displayName = "Icon";
