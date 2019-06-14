@@ -15,24 +15,29 @@ const StyledSVG = styled.svg.attrs({
   word-spacing: 0;
   vertical-align: middle;
 
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+
   &:not(:root) {
     overflow: visible;
   }
 
   * {
-    fill: none;
-    stroke: 0;
     vector-effect: non-scaling-stroke;
   }
 
   *[class*="border"] {
     stroke-width: ${props => props.borderWidth};
     stroke: ${props => props.borderColor};
+    fill: none;
   }
 
   *[class*="fill"] {
     fill: ${props => props.fillColor};
     fill-opacity: ${props => props.fillOpacity};
+    stroke: none;
   }
 `;
 

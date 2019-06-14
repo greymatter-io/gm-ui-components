@@ -154,14 +154,17 @@ const stories = storiesOf("Components|Icons", module);
 
 stories
   .add(
-    "Icon",
+    "Default",
     () => {
-      const IconBell = Glyphs.IconBell;
+      const Cog = Glyphs.Cog;
       return (
-        <IconBell
-          borderColor={color("borderColor", "currentColor")}
-          borderWidth={number("borderWidth", 1)}
-          size={text("size", "100px")}
+        <Cog
+          borderColor={color("borderColor")}
+          borderWidth={number("borderWidth")}
+          fillColor={color("fillColor")}
+          fillOpacity={number("fillOpacity")}
+          size={text("size")}
+          title={text("title")}
         />
       );
     },
