@@ -17,6 +17,7 @@ export default function Icon({
   borderWidth,
   children,
   fillColor,
+  fillOpacity,
   glyphName,
   title,
   size,
