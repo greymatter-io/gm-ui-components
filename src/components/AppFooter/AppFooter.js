@@ -17,12 +17,6 @@ const nodePropType = PropTypes.oneOfType([
   PropTypes.string
 ]);
 
-const nodePropType = PropTypes.oneOfType([
-  PropTypes.element,
-  PropTypes.node,
-  PropTypes.string
-]);
-
 AppFooter.propTypes = {
   children: nodePropType,
   copyrightText: nodePropType,
