@@ -31,6 +31,7 @@ export default function Icon({
       size={size}
       id={glyphName}
       fillColor={fillColor}
+      fillOpacity={fillOpacity}
       borderWidth={borderWidth}
       borderColor={borderColor}
       {...props}
