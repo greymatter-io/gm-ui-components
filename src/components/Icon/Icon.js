@@ -57,6 +57,6 @@ Icon.defaultProps = {
   borderColor: "currentColor",
   borderWidth: "1px",
   fillColor: "currentColor",
-  fillOpacity: "currentColor",
+  fillOpacity: props => props.theme.OPACITY_15,
   size: "1.714em"
 };
