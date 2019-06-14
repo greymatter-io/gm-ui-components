@@ -1,19 +1,19 @@
 import styled, { css } from "styled-components";
 import { mix, darken } from "polished";
 
-import {
-  OPACITY_15,
-  COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C,
-  keen
-} from "style/styleVariables";
+import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const activeBackgroundColor = css`
-  background-color: ${darken(
-    0.1,
-    mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C)
-  )};
+  background-color: ${props =>
+    darken(
+      0.1,
+      mix(
+        props.theme.OPACITY_15,
+        props.theme.COLOR_BACKGROUND_B,
+        props.theme.COLOR_BACKGROUND_C
+      )
+    )};
 `;
 
 const TAB_WIDTH_BASE = "1%";

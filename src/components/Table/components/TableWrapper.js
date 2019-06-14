@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const TableWrapper = styled.table`
   width: 100%;

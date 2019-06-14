@@ -1,36 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioBox should render 1`] = `
-.c0 {
-  border-radius: 200px;
-}
-
-.c0:after {
-  width: 0;
-  height: 0;
-  border-radius: 200px;
-  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.1);
-  -ms-transform: translateX(-50%) translateY(-50%) scale(0.1);
-  transform: translateX(-50%) translateY(-50%) scale(0.1);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.c0:checked:enabled {
-  background: #0aab2a;
-}
-
-.c0:checked:after {
-  background-color: #fff;
-  width: 5px;
-  height: 5px;
-  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-  -ms-transform: translateX(-50%) translateY(-50%) scale(1);
-  transform: translateX(-50%) translateY(-50%) scale(1);
-}
-
-<InputBox
-  className="c0"
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "_foldedDefaultProps": Object {
+        "theme": Object {
+          "BORDER_RADIUS_BASE": "3px",
+          "COLOR_BACKGROUND_A": "#ffffff",
+          "COLOR_BACKGROUND_B": "#F8F8F8",
+          "COLOR_BACKGROUND_C": "#000000",
+          "COLOR_BRAND_A": "#0aab2a",
+          "COLOR_BRAND_B": "#0aab2a",
+          "COLOR_CONTENT": "#000",
+          "COLOR_INTENT_DANGER": "#D83D22",
+          "COLOR_INTENT_HIGHLIGHT": "#0aab2a",
+          "COLOR_INTENT_INFO": "#1E6DF6",
+          "COLOR_INTENT_SUCCESS": "#0aab2a",
+          "COLOR_INTENT_WARNING": "#F7CD45",
+          "COLOR_KEYLINE": "rgba(0,0,0,0.08)",
+          "COLOR_KEYLINE_SOLID": "#EBEBEB",
+          "FONT_SIZE_BASE": "14px",
+          "FONT_SIZE_HERO": "40px",
+          "FONT_SIZE_LG": "18px",
+          "FONT_SIZE_MD": "16px",
+          "FONT_SIZE_SM": "11px",
+          "FONT_SIZE_TITLE": "36px",
+          "FONT_SIZE_XS": "9px",
+          "FONT_STACK_BASE": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
+          "FONT_STACK_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
+          "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+          "FONT_WEIGHT_BASE": 400,
+          "FONT_WEIGHT_BOLD": 800,
+          "FONT_WEIGHT_SEMIBOLD": 600,
+          "ICON_VIEWBOX_SIZE": 24,
+          "LINE_HEIGHT_BASE": 1.4,
+          "OPACITY_100": "1",
+          "OPACITY_15": "0.15",
+          "OPACITY_50": "0.5",
+          "OPACITY_70": "0.7",
+          "RADIUS_05": "4px",
+          "RADIUS_1": "8px",
+          "RADIUS_2": "16px",
+          "RADIUS_3": "24px",
+          "RADIUS_4": "32px",
+          "RADIUS_5": "40px",
+          "RADIUS_6": "48px",
+          "RADIUS_7": "56px",
+          "RADIUS_8": "64px",
+          "SPACING_BASE": 8,
+          "ZINDEX_STICKY": "1010",
+          "ZINDEX_TOOLTIP": "1070",
+          "name": "Keen",
+        },
+      },
+      "attrs": Array [
+        Object {
+          "type": "radio",
+        },
+      ],
+      "componentStyle": ComponentStyle {
+        "componentId": "RadioBox-sc-59r0yz-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";border:",
+          [Function],
+          ";color:",
+          [Function],
+          ";font-size:",
+          [Function],
+          "px",
+          ";margin:",
+          [Function],
+          "px",
+          ";appearance:none;flex:0 0 calc(1em - ",
+          "2",
+          "px);height:calc(1em - ",
+          "2",
+          "px);width:calc(1em - ",
+          "2",
+          "px);position:relative;display:flex;align-items:center;justify-content:center;transition:all 0.15s ease;box-sizing:border-box;&:focus{box-shadow:",
+          [Function],
+          ",0;}&:active{box-shadow:",
+          [Function],
+          ",0;&:focus{box-shadow:",
+          [Function],
+          ",",
+          [Function],
+          ";}}&:after{content:\\"\\";box-sizing:border-box;opacity:0;position:absolute;top:50%;left:50%;}&:checked{background:",
+          [Function],
+          ";&:after{opacity:1;}}&:disabled{border-color:",
+          [Function],
+          ";opacity:",
+          [Function],
+          ";box-shadow:none;&:checked{background-color:",
+          [Function],
+          ";}}",
+          "border-radius:200px;&:after{position:static;width:0;height:0;border-radius:200px;box-sizing:border-box;transform:scale(0);transition:all 0.3s ease;}&:checked{&:enabled{background:",
+          [Function],
+          ";}&:after{background-color:",
+          [Function],
+          ";width:50%;height:50%;transform:scale(1);}}*:hover > &{background:",
+          [Function],
+          ";&:checked{background:",
+          [Function],
+          ";border-color:transparent;}*:active > &{background:",
+          [Function],
+          ";&:checked{background:",
+          [Function],
+          ";border-color:transparent;}}}",
+        ],
+      },
+      "displayName": "RadioBox",
+      "foldedComponentIds": Array [
+        "InputBox-sc-1b21mwk-0",
+      ],
+      "render": [Function],
+      "styledComponentId": "RadioBox-sc-59r0yz-0",
+      "target": "input",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",
@@ -47,9 +142,6 @@ exports[`RadioBox should render 1`] = `
       "COLOR_INTENT_WARNING": "#F7CD45",
       "COLOR_KEYLINE": "rgba(0,0,0,0.08)",
       "COLOR_KEYLINE_SOLID": "#EBEBEB",
-      "FONTS_BRAND": "\\"Avenir Next\\", \\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
-      "FONTS_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-      "FONTS_SYSTEM": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
       "FONT_SIZE_BASE": "14px",
       "FONT_SIZE_HERO": "40px",
       "FONT_SIZE_LG": "18px",
@@ -84,6 +176,5 @@ exports[`RadioBox should render 1`] = `
       "name": "Keen",
     }
   }
-  type="radio"
 />
 `;

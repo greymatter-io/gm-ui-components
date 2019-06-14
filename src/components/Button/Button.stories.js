@@ -2,33 +2,34 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { number, select, text, color, boolean } from "@storybook/addon-knobs";
+import withPropsCombinations from "react-storybook-addon-props-combinations";
 
 import { IconBell } from "components/Glyphs";
 import Button from "./Button";
+import copy from "copy-to-clipboard";
+import Tooltip from "components/Tooltip";
 
 const stories = storiesOf("Components|Buttons", module);
 
 const types = ["default", "danger", "info", "primary", "warning"];
-const sizes = ["normal", "xs", "sm", "lg", "xl"];
+const sizes = ["xs", "sm", "normal", "lg", "xl"];
 const orientations = ["vertical", "horizontal"];
 
 stories
   .add(
-    "Button",
+    "Default",
     () => (
       <Button
-        active={boolean("active", false)}
+        active={boolean("active")}
         label={text("label", "Hello World")}
-        dangerouslySetColor={color("dangerouslySetColor", "")}
-        type={select("type", types, "default")}
-        disabled={boolean("disabled", false)}
+        dangerouslySetColor={color("dangerouslySetColor")}
+        type={select("type", types)}
+        disabled={boolean("disabled")}
         clickAction={() => alert("clicked")}
         orientation={select("orientation", orientations, "horizontal")}
-        outline={boolean("outline", false)}
-        prefix={text("prefix")}
-        suffix={text("suffix")}
-        size={select("size", sizes, "normal")}
-        tabIndex={number("tabIndex", 0)}
+        outline={boolean("outline")}
+        size={select("size", sizes, "default")}
+        tabIndex={number("tabIndex")}
       />
     ),
     {
@@ -39,7 +40,49 @@ stories
     }
   )
   .add(
-    "Button Types",
+    "Props Gallery",
+    withPropsCombinations(
+      Button,
+      {
+        type: types,
+        active: [false, true],
+        outline: [false, true],
+        disabled: [false, true],
+        size: sizes,
+        label: ["Label"]
+      },
+      {
+        showSource: false,
+        style: {
+          float: "left",
+          margin: "0.25rem"
+        },
+        CombinationRenderer: ({ Component, props, options }) => {
+          const prettyJSON = JSON.stringify(props)
+            .split(",")
+            .join("\n");
+          return (
+            <Tooltip content={prettyJSON}>
+              <Component
+                {...props}
+                title="Click to copy props"
+                style={options.style}
+                onClick={() => copy(JSON.stringify(props))}
+              />
+            </Tooltip>
+          );
+        }
+      }
+    ),
+    {
+      info: {
+        text:
+          "All Button types, active states, disabled states, sizes, and outline states."
+      }
+    }
+  )
+  .add(
+    "Types",
     () => (
       <React.Fragment>
         {types.map(type => (
@@ -54,7 +97,7 @@ stories
     }
   )
   .add(
-    "Button Sizes",
+    "Sizes",
     () => (
       <React.Fragment>
         {sizes.map(size => (
@@ -69,7 +112,7 @@ stories
     }
   )
   .add(
-    "Button Orientations",
+    "Orientations",
     () => (
       <React.Fragment>
         {orientations.map(orientation => (

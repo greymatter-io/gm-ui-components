@@ -6,7 +6,7 @@ import { transparentize } from "polished";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const TableRowElement = styled.tr.attrs({
   tabIndex: 0
@@ -20,7 +20,10 @@ const TableRowElement = styled.tr.attrs({
     props.isSelected &&
     css`
       background-color: ${props =>
-        transparentize(0.85, props.theme.COLOR_BRAND_A)};
+        transparentize(
+          1 - props.theme.OPACITY_15,
+          props.theme.COLOR_INTENT_HIGHLIGHT
+        )};
       &,
       & + &,
       & + tr {

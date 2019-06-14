@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 export const BreadcrumbsContainer = styled.ol`

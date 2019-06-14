@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import { formInteractionStyles } from "../../../components/InputFieldInteractionStyles";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const BORDER_WIDTH = 1;
 const CHEVRON_ICON_DEFAULT = props =>

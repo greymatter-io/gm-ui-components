@@ -1,24 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StyledSVG matches snapshot 1`] = `
-.c0 {
-  z-index: 1;
-  width: 1.714em;
-  height: 1.714em;
-  word-spacing: 0;
-  vertical-align: middle;
-}
-
-.c0:not(:root) {
-  overflow: visible;
-}
-
-<svg
-  className="c0"
-  preserveAspectRatio="xMaxYMax meet"
-  version="1.1"
-  viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlnsXlink="http://www.w3.org/1999/xlink"
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [
+        Object {
+          "preserveAspectRatio": "xMaxYMax meet",
+          "version": "1.1",
+          "viewBox": "0 0 24 24",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlnsXlink": "http://www.w3.org/1999/xlink",
+        },
+      ],
+      "componentStyle": ComponentStyle {
+        "componentId": "StyledSVG-sc-1wqf7bc-0",
+        "isStatic": false,
+        "rules": Array [
+          "z-index:1;width:",
+          [Function],
+          ";height:",
+          [Function],
+          ";word-spacing:0;vertical-align:middle;&:not(:root){overflow:visible;}",
+        ],
+      },
+      "displayName": "StyledSVG",
+      "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "size": [Function],
+      },
+      "render": [Function],
+      "styledComponentId": "StyledSVG-sc-1wqf7bc-0",
+      "target": "svg",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
 />
 `;

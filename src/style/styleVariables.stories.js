@@ -383,8 +383,18 @@ stories.add("Styles", () => (
   <DemoCanvas>
     <DemoHeading>Style Variables</DemoHeading>
     <DemoDescription>
-      Use style variables instead of hardcoding pixel and color values. You can
-      import these variables like any other library component.
+      <p>
+        Use themed style variables instead of hardcoding pixel and color values.
+        You can import these variables like any other library component:
+        <code>
+          <pre>{"color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT}"}</pre>
+        </code>
+        Style variables are also exposed to the browser as CSS Custom
+        Properties:
+        <code>
+          <pre>{"opacity: var(--OPACITY_70)"}</pre>
+        </code>
+      </p>
     </DemoDescription>
 
     <DemoNavigation>

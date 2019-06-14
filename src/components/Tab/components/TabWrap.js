@@ -1,14 +1,14 @@
 import styled, { css } from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const activeStyles = css`
   box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
 `;
 
 const hoverStyles = css`
-  box-shadow: ${props => props.theme.COLOR_BRAND_A} 0px -1px inset;
+  box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -1px inset;
 `;
 
 const downStyles = css`

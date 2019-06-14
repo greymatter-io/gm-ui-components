@@ -6,31 +6,67 @@ import Tooltip from "./Tooltip";
 
 const stories = storiesOf("Components|Tooltip", module);
 
-stories.add(
-  "default",
-  () => {
-    let content = text("content", "This is a super cool tooltip!");
-    let position = select(
-      "position",
-      ["top", "right", "bottom", "left"],
-      "right"
-    );
-    return (
-      <div style={{ textAlign: "center" }}>
+stories
+  .add(
+    "Default",
+    () => {
+      return (
         <Tooltip
-          content={content}
-          position={position}
-          hideTooltip={boolean("hideTooltip", false)}
-          tooltipStyle={object("tooltipStyle", {})}
+          content={text("content", "Content")}
+          position={select("position", ["bottom", "right", "top", "left"])}
+          hideTooltip={boolean("hideTooltip")}
+          tooltipStyle={object("tooltipStyle")}
         >
           {text("children", "Hover over me")}
         </Tooltip>
-      </div>
-    );
-  },
-  {
-    info: {
-      text: "A tooltip form input with a label."
+      );
+    },
+    {
+      info: {
+        text: "A tooltip form input with a label."
+      }
     }
-  }
-);
+  )
+  .add(
+    "Typical",
+    () => {
+      return (
+        <Tooltip
+          content={text("content", "Lorem ipsum dolor sit amet")}
+          position={select("position", ["bottom", "right", "top", "left"])}
+          hideTooltip={boolean("hideTooltip")}
+          tooltipStyle={object("tooltipStyle")}
+        >
+          {text("children", "Hover over me")}
+        </Tooltip>
+      );
+    },
+    {
+      info: {
+        text: "A tooltip form input with a label."
+      }
+    }
+  )
+  .add(
+    "Longer content",
+    () => {
+      return (
+        <Tooltip
+          content={text(
+            "content",
+            "Lorem ipsum dolor sit amet donec consectatur adispacing"
+          )}
+          position={select("position", ["top", "right", "bottom", "left"])}
+          hideTooltip={boolean("hideTooltip")}
+          tooltipStyle={object("tooltipStyle")}
+        >
+          {text("children", "Hover over me")}
+        </Tooltip>
+      );
+    },
+    {
+      info: {
+        text: "A tooltip form input with a label."
+      }
+    }
+  );
