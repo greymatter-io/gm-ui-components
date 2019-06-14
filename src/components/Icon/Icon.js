@@ -10,6 +10,9 @@ import StyledSVG from "./components/StyledSVG";
  */
 export default function Icon({
   ariaLabelledby,
+  badge,
+  badgeColor,
+  badgePosition,
   borderColor,
   borderWidth,
   children,
@@ -30,7 +33,15 @@ export default function Icon({
       borderColor={borderColor}
       {...props}
     >
-      <g title={glyphName}>
+      {badge && (
+        <circle
+          cx={badgePosition.x}
+          cy={badgePosition.y}
+          r="10"
+          fill={badgeColor}
+        />
+      )}
+      <g title={glyphName} className="glyph">
         <title>{title ? title : glyphName}</title>
         {children}
       </g>
@@ -40,6 +51,9 @@ export default function Icon({
 
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
+  badge: PropTypes.bool,
+  badgeColor: PropTypes.string,
+  badgePosition: PropTypes.object,
   borderColor: PropTypes.string,
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
@@ -51,6 +65,12 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
+  badge: false,
+  badgePosition: {
+    x: 46,
+    y: 16
+  },
+  badgeColor: props => props.theme.COLOR_INTENT_INFO,
   borderColor: "currentColor",
   borderWidth: "1px",
   fillColor: "currentColor",

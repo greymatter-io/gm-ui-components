@@ -14,13 +14,15 @@ const StyledSVG = styled.svg.attrs({
   vertical-align: middle;
   overflow: visible;
 
-  & > g > svg {
+  .glyph > svg {
     width: 100%;
     height: 100%;
     overflow: visible;
+    fill: none;
+    border: none;
   }
 
-  * {
+  .glyph * {
     fill: ${props => props.fillColor};
     fill-opacity: ${props => props.fillOpacity};
     stroke-width: ${props => props.borderWidth};
@@ -29,11 +31,11 @@ const StyledSVG = styled.svg.attrs({
     vector-effect: non-scaling-stroke;
   }
 
-  *[class*="fill"]:not([class*="border"]) {
+  .glyph *[class*="fill"]:not([class*="border"]) {
     stroke: none;
   }
 
-  *[class*="border"]:not([class*="fill"]) {
+  .glyph *[class*="border"]:not([class*="fill"]) {
     fill: none;
   }
 `;
