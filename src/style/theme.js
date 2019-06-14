@@ -22,7 +22,7 @@ export const keen = {
   COLOR_INTENT_INFO: "#1E6DF6", // WCAG AA+
 
   COLOR_KEYLINE_DEFAULT: "hsla(0,0%,0%,8%)",
-  COLOR_KEYLINE_SOLID: "hsl(0,0%,8%)",
+  COLOR_KEYLINE_SOLID: "hsl(0,0%,92%)",
 
   OPACITY_FULL: "1",
   OPACITY_LIGHT: "0.7",
