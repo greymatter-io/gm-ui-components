@@ -16,6 +16,7 @@ import IconArrowDownLeft from "./arrow-down-left.svg";
 import IconArrowDownRight from "./arrow-down-right.svg";
 import IconActivity from "./activity.svg";
 import IconAlertTriangle from "./alert-triangle.svg";
+import IconBell from "./bell.svg";
 import IconBookmark from "./bookmark.svg";
 import IconBoolean from "./boolean.svg";
 import IconCalendar from "./calendar.svg";
@@ -129,6 +130,7 @@ export {
   IconArrowDownRight,
   IconActivity,
   IconAlertTriangle,
+  IconBell,
   IconBookmark,
   IconBoolean,
   IconCalendar,

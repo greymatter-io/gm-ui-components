@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import { IconExclamation } from "components";
+import { IconAlertTriangle } from "components";
 import NavCard from "./NavCard";
 
 const details = [{ name: "Uptime", value: "15 Days" }];
@@ -11,7 +11,7 @@ describe("Components|NavCard", () => {
   beforeEach(() => {
     aNavCard = shallow(
       <NavCard
-        icon={() => <IconExclamation />}
+        icon={() => <IconAlertTriangle />}
         title={"NavCard"}
         details={details}
         children={() => <span>Hello World!</span>}
@@ -22,7 +22,7 @@ describe("Components|NavCard", () => {
     expect(aNavCard).toMatchSnapshot();
   });
   it("renders an Icon", () => {
-    expect(aNavCard.find(IconExclamation)).toHaveLength(1);
+    expect(aNavCard.find(IconAlertTriangle)).toHaveLength(1);
     expect(aNavCard.find("NavCardIcon")).toHaveLength(1);
   });
   it("renders a title", () => {

@@ -26,6 +26,7 @@ const glyphNames = [
   "IconArrowDownRight",
   "IconActivity",
   "IconAlertTriangle",
+  "IconBell",
   "IconBookmark",
   "IconBoolean",
   "IconCalendar",
