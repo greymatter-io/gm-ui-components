@@ -21,28 +21,20 @@ const StyledSVG = styled.svg.attrs({
   }
 
   * {
+    fill: ${props => props.fillColor};
+    fill-opacity: ${props => props.fillOpacity};
+    stroke-width: ${props => props.borderWidth};
+    stroke-opacity: ${props => props.borderOpacity};
+    stroke: ${props => props.borderColor};
     vector-effect: non-scaling-stroke;
   }
 
-  *[class*="border"] {
-    stroke-width: ${props => props.borderWidth};
-    stroke-opacity: ${props => props.borderOpacity};
-    stroke: ${props => props.borderColor};
-    fill: none;
-  }
-
-  *[class*="fill"] {
-    fill: ${props => props.fillColor};
-    fill-opacity: ${props => props.fillOpacity};
+  *[class*="fill"]:not([class*="border"]) {
     stroke: none;
   }
 
-  *:not([class*="fill"]):not([class*="border"]) {
-    fill: ${props => props.fillColor};
-    fill-opacity: ${props => props.fillOpacity};
-    stroke-width: ${props => props.borderWidth};
-    stroke-opacity: ${props => props.borderOpacity};
-    stroke: ${props => props.borderColor};
+  *[class*="border"]:not([class*="fill"]) {
+    fill: none;
   }
 `;
 
