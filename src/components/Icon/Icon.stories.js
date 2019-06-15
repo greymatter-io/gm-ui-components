@@ -8,24 +8,24 @@ import * as Glyphs from "../Glyphs";
 import { spacingScale } from "style/styleFunctions";
 
 const glyphNames = [
-  "IconArrowUpRight",
-  "IconArrowUpLeft",
-  "IconArrowUp",
-  "IconArrowLeft",
-  "IconArrowRight",
-  "IconArrowDown",
-  "IconArrowEndUp",
-  "IconArrowEndLeft",
-  "IconArrowEndRight",
-  "IconArrowEndDown",
-  "IconArrowStartUp",
-  "IconArrowStartLeft",
-  "IconArrowStartRight",
-  "IconArrowStartDown",
-  "IconArrowDownLeft",
-  "IconArrowDownRight",
   "IconActivity",
   "IconAlertTriangle",
+  "IconArrowDown",
+  "IconArrowDownLeft",
+  "IconArrowDownRight",
+  "IconArrowEndDown",
+  "IconArrowEndLeft",
+  "IconArrowEndRight",
+  "IconArrowEndUp",
+  "IconArrowLeft",
+  "IconArrowRight",
+  "IconArrowStartDown",
+  "IconArrowStartLeft",
+  "IconArrowStartRight",
+  "IconArrowStartUp",
+  "IconArrowUp",
+  "IconArrowUpLeft",
+  "IconArrowUpRight",
   "IconBell",
   "IconBookmark",
   "IconBoolean",
@@ -36,50 +36,52 @@ const glyphNames = [
   "IconCheckboxUnchecked",
   "IconCheckcircleChecked",
   "IconCheckcircleUnchecked",
-  "IconCheckmark",
   "IconChecklist",
+  "IconCheckmark",
   "IconChevronDown",
   "IconChevronDownDouble",
-  "IconChevronUp",
-  "IconChevronUpDouble",
   "IconChevronLeft",
   "IconChevronLeftDouble",
   "IconChevronRight",
   "IconChevronRightDouble",
+  "IconChevronUp",
+  "IconChevronUpDouble",
   "IconCircle",
   "IconCloud",
   "IconCog",
   "IconComment",
   "IconConfiguration",
+  "IconCopyToWorkspace",
   "IconCPU",
   "IconCycle",
   "IconDashboard",
+  "IconDocument",
   "IconDownload",
   "IconDuplicate",
   "IconEdit",
-  "IconEntity",
   "IconEkg",
   "IconEkgNo",
+  "IconEntity",
   "IconExpand",
   "IconEye",
   "IconEyeNo",
   "IconFile",
   "IconFilter",
   "IconFolder",
-  "IconGroup",
   "IconGrid",
+  "IconGroup",
   "IconHellip",
   "IconHTTP",
   "IconInbox",
-  "IconIngressEgress",
   "IconInfo",
+  "IconIngressEgress",
   "IconJson",
   "IconKey",
   "IconLatency",
   "IconList",
   "IconLock",
-  "IconMagnifierPlus",
   "IconMagnifier",
+  "IconMagnifierPlus",
   "IconMail",
   "IconMemory",
   "IconMinus",
@@ -90,31 +92,35 @@ const glyphNames = [
   "IconNews",
   "IconNewWindow",
   "IconNewWorkspace",
-  "IconOrganization",
   "IconOnOff",
+  "IconOrganization",
   "IconPause",
   "IconPerson",
   "IconPin",
+  "IconPlaceholder",
   "IconPlay",
   "IconPlus",
   "IconProject",
+  "IconProjectB",
   "IconRename",
   "IconReorder",
   "IconSharedFolder",
   "IconShareToPeople",
+  "IconSlideshow",
   "IconSortDescending",
+  "IconSpreadsheet",
   "IconSquare",
   "IconStar",
   "IconStatusChecked",
-  "IconStepForward",
   "IconStepBackward",
+  "IconStepForward",
   "IconTextCursor",
   "IconTrash",
   "IconTrashX",
   "IconTriangleDown",
-  "IconTriangleUp",
   "IconTriangleLeft",
   "IconTriangleRight",
+  "IconTriangleUp",
   "IconUnlock",
   "IconVellip",
   "IconVersions",
@@ -123,25 +129,21 @@ const glyphNames = [
 ];
 
 const GalleryIconList = styled.ul`
+  box-sizing: border-box;
+  width: 90vw;
   margin: 0;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
-  border-width: 0 1px 1px 0;
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.fontSize};
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+  grid-gap: ${spacingScale(2)};
 `;
 
 const GalleryIconDemo = styled.li`
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_SOLID};
-  border-width: 1px 0 0 1px;
-  flex: 1 0 20%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: ${spacingScale(2)};
   flex-direction: row;
 `;
 
