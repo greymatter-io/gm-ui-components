@@ -141,13 +141,11 @@ const GalleryIconDemo = styled.li`
   flex: 1 0 20%;
   display: flex;
   align-items: center;
-  flex-direction: column;
   padding: ${spacingScale(2)};
+  flex-direction: row;
 `;
 
 const GalleryIconLabel = styled.p`
-  margin: ${spacingScale(1)};
-  font-size: ${props => props.theme.FONT_SIZE_SM};
   opacity: ${props => props.theme.OPACITY_70};
 `;
 
@@ -167,6 +165,7 @@ stories
           size={text("size")}
           title={text("title")}
           badge={boolean("badge")}
+          badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
         />
       );
@@ -183,13 +182,14 @@ stories
     () => {
       return (
         <Icon
-          title={text("title")}
-          size={text("size")}
-          borderColor={color("borderColor")}
-          borderWidth={number("borderWidth")}
-          fillColor={color("fillColor")}
+          title={text("title", undefined)}
+          size={text("size", undefined)}
+          borderColor={color("borderColor", undefined)}
+          borderWidth={number("borderWidth", undefined)}
+          fillColor={color("fillColor", undefined)}
           fillOpacity={number("fillOpacity", undefined)}
           badge={boolean("badge", undefined)}
+          badgeColor={color("badgeColor", undefined)}
           badgePosition={object("badgePosition", undefined)}
         >
           <svg className="svg-icon" viewBox="0 0 24 24">
@@ -220,7 +220,9 @@ stories
                 borderColor={color("borderColor", undefined)}
                 borderWidth={text("borderWidth", undefined)}
                 badge={boolean("badge", undefined)}
+                badgeColor={color("badgeColor")}
                 badgePosition={object("badgePosition", undefined)}
+                disablePixelCorrection={boolean("disablePixelCorrection")}
               />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>
