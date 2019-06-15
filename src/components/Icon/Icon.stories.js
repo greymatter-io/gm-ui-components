@@ -222,7 +222,6 @@ stories
                 badge={boolean("badge", undefined)}
                 badgeColor={color("badgeColor")}
                 badgePosition={object("badgePosition", undefined)}
-                disablePixelCorrection={boolean("disablePixelCorrection")}
               />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>
