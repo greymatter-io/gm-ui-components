@@ -7,6 +7,7 @@ exports[`Icon matches snapshot 1`] = `
   borderOpacity={1}
   borderWidth={1}
   fillColor="white"
+  fillOpacity={0.15}
   focusable="false"
   id="IconCog"
   size="24px"
