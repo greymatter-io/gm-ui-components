@@ -36,17 +36,44 @@ export default function Icon({
       borderColor={borderColor}
       {...props}
     >
-      <g title={glyphName} className="glyph">
+      {badge && (
+        <mask id="badgeMask" className="badgeMask">
+          <rect
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            fill="white"
+            fillOpacity="1"
+          />
+          <circle
+            cx={badgePosition.x}
+            cy={badgePosition.y}
+            r="15"
+            fill="black"
+            fillOpacity="1"
+          />
+        </mask>
+      )}
+      <g
+        title={glyphName}
+        className="glyph"
+        mask={badge ? "url(#badgeMask)" : undefined}
+      >
         <title>{title ? title : glyphName}</title>
         {children}
       </g>
       {badge && (
-        <circle
-          cx={badgePosition.x}
-          cy={badgePosition.y}
-          r="10"
-          fill={badgeColor}
-        />
+        <>
+          <circle
+            className="badge"
+            cx={badgePosition.x}
+            cy={badgePosition.y}
+            r="10"
+            fill-opacity="1"
+            fill={badgeColor}
+          />
+        </>
       )}
     </StyledSVG>
   );
@@ -79,7 +106,7 @@ Icon.defaultProps = {
   borderWidth: "1px",
   fillColor: "currentColor",
   fillOpacity: 0.15,
-  size: "1.714em"
+  size: "1.7145em"
 };
 
 Icon.displayName = "Icon";
