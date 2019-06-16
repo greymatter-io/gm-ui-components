@@ -114,6 +114,7 @@ const glyphNames = [
   "IconStatusChecked",
   "IconStepBackward",
   "IconStepForward",
+  "IconSummary",
   "IconTextCursor",
   "IconTrash",
   "IconTrashX",

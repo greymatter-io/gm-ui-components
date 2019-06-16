@@ -104,6 +104,7 @@ import IconStar from "./star.svg";
 import IconStatusChecked from "./status-checked.svg";
 import IconStepBackward from "./step-backward.svg";
 import IconStepForward from "./step-forward.svg";
+import IconSummary from "./summary.svg";
 import IconTextCursor from "./text-cursor.svg";
 import IconTrash from "./trash.svg";
 import IconTrashX from "./trash-x.svg";
@@ -224,6 +225,7 @@ export {
   IconStatusChecked,
   IconStepBackward,
   IconStepForward,
+  IconSummary,
   IconTextCursor,
   IconTrash,
   IconTrashX,
