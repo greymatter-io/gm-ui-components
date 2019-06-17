@@ -7,16 +7,21 @@ import IconArrowEndDown from "./arrow-end-down.svg";
 import IconArrowEndLeft from "./arrow-end-left.svg";
 import IconArrowEndRight from "./arrow-end-right.svg";
 import IconArrowEndUp from "./arrow-end-up.svg";
+import IconTwitter from "./twitter.svg";
+import IconLinkedIn from "./linkedin.svg";
 import IconArrowLeft from "./arrow-left.svg";
 import IconArrowRight from "./arrow-right.svg";
 import IconArrowStartDown from "./arrow-start-down.svg";
 import IconArrowStartLeft from "./arrow-start-left.svg";
 import IconArrowStartRight from "./arrow-start-right.svg";
 import IconArrowStartUp from "./arrow-start-up.svg";
+import IconThreads from "./threads.svg";
 import IconArrowUp from "./arrow-up.svg";
 import IconArrowUpLeft from "./arrow-up-left.svg";
 import IconArrowUpRight from "./arrow-up-right.svg";
 import IconBell from "./bell.svg";
+import IconNegation from "./negation.svg";
+import IconGitHub from "./github.svg";
 import IconBookmark from "./bookmark.svg";
 import IconBoolean from "./boolean.svg";
 import IconFunctions from "./functions.svg";
@@ -140,6 +145,10 @@ export {
   IconArrowUpRight,
   IconBell,
   IconBookmark,
+  IconLinkedIn,
+  IconNegation,
+  IconThreads,
+  IconTwitter,
   IconBoolean,
   IconCalendar,
   IconCheckboxChecked,
@@ -178,6 +187,7 @@ export {
   IconEye,
   IconEyeNo,
   IconFile,
+  IconGitHub,
   IconFilter,
   IconFolder,
   IconGrid,
