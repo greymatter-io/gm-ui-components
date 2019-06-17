@@ -19,6 +19,7 @@ import IconArrowUpRight from "./arrow-up-right.svg";
 import IconBell from "./bell.svg";
 import IconBookmark from "./bookmark.svg";
 import IconBoolean from "./boolean.svg";
+import IconFunctions from "./functions.svg";
 import IconCalendar from "./calendar.svg";
 import IconCheckboxChecked from "./checkbox-checked.svg";
 import IconCheckboxIndeterminate from "./checkbox-indeterminate.svg";
@@ -203,6 +204,7 @@ export {
   IconNews,
   IconNewWindow,
   IconNewWorkspace,
+  IconFunctions,
   IconOnOff,
   IconOrganization,
   IconPause,

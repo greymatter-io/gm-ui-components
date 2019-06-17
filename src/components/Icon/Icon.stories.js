@@ -58,6 +58,7 @@ const glyphNames = [
   "IconDocument",
   "IconDownload",
   "IconDuplicate",
+  "IconFunctions",
   "IconEdit",
   "IconEkg",
   "IconEkgNo",
