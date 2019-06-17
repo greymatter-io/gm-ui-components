@@ -40,7 +40,7 @@ const data = {
 };
 
 describe("TableRow", () => {
-  let TableRowWrapper;
+  let TableRowWrap;
   let mockEvent = {
     target: {
       value: "test",
@@ -59,7 +59,7 @@ describe("TableRow", () => {
   };
 
   beforeEach(() => {
-    TableRowWrapper = shallow(
+    TableRowWrap = shallow(
       <TableRow
         columns={columns}
         data={data}
@@ -70,19 +70,19 @@ describe("TableRow", () => {
   });
 
   test("matches snapshot", () => {
-    expect(TableRowWrapper).toMatchSnapshot();
+    expect(TableRowWrap).toMatchSnapshot();
   });
 
   test("renders a Table Row", () => {
-    expect(TableRowWrapper.find("TableRowElement")).toHaveLength(1);
+    expect(TableRowWrap.find("TableRowElement")).toHaveLength(1);
   });
 
   test("renders the correct amount of cells", () => {
-    expect(TableRowWrapper.find("TableCell")).toHaveLength(4);
+    expect(TableRowWrap.find("TableCell")).toHaveLength(4);
   });
 
   test("renders cells in the correct columns", () => {
-    TableRowWrapper.find("TableCell").forEach((cell, i) => {
+    TableRowWrap.find("TableCell").forEach((cell, i) => {
       expect(cell.props()["data-column"]).toBe(columns[i].dataIndex);
     });
   });
@@ -92,7 +92,7 @@ describe("TableRow", () => {
   });
 
   test("on click, should return correct row data", () => {
-    TableRowWrapper.simulate("click", mockEvent);
+    TableRowWrap.simulate("click", mockEvent);
 
     const lastCall = jestSpy.mock.calls.length - 1;
 
@@ -100,7 +100,7 @@ describe("TableRow", () => {
   });
 
   test("on contextMenu, should return correct row data", () => {
-    TableRowWrapper.simulate("contextmenu", mockEvent);
+    TableRowWrap.simulate("contextmenu", mockEvent);
 
     const lastCall = jestSpy.mock.calls.length - 1;
 
@@ -110,7 +110,7 @@ describe("TableRow", () => {
   test("on keydown enter, should return correct row data", () => {
     mockEvent.keyCode = 13;
 
-    TableRowWrapper.simulate("keyDown", mockEvent);
+    TableRowWrap.simulate("keyDown", mockEvent);
 
     const lastCall = jestSpy.mock.calls.length - 1;
 

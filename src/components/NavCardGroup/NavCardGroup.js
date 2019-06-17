@@ -40,7 +40,7 @@ const NavCardGroup = styled.nav`
     &:active:hover,
     &.active,
     &.active:hover {
-      div[class*="NavCardWrapper"] {
+      div[class*="NavCardWrap"] {
         &:after {
           opacity: 1;
         }
