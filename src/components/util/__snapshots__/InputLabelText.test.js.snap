@@ -62,7 +62,7 @@ exports[`InputLabel matches snapshot 1`] = `
         "rules": Array [
           "margin:0;font-size:",
           [Function],
-          ";",
+          ";flex-grow:1;",
         ],
       },
       "displayName": "InputLabelText",
