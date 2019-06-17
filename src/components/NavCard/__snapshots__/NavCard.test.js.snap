@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components|NavCard matches snapshot 1`] = `
-<NavCardWrapper
+<Wrap
   theme={
     Object {
       "BORDER_RADIUS_BASE": "3px",
@@ -226,5 +226,5 @@ exports[`Components|NavCard matches snapshot 1`] = `
   <span>
     Hello World!
   </span>
-</NavCardWrapper>
+</Wrap>
 `;

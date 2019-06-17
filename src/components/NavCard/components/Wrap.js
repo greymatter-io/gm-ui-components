@@ -29,7 +29,7 @@ const TAB_WIDTH_BASE = "1%";
 
 // Note: Edge requires the overflow: hidden property to maintian
 // equal sized cards. flex-basis is not sufficient!
-const NavCardWrapper = styled.div`
+const Wrap = styled.div`
   ${backgroundColor};
   font-weight: ${props => props.theme.FONT_WEIGHT_REGULAR};
   font-family: ${props => props.theme.FONT_STACK_BASE};
@@ -61,8 +61,8 @@ const NavCardWrapper = styled.div`
   }
 `;
 
-NavCardWrapper.defaultProps = {
+Wrap.defaultProps = {
   theme: keen
 };
 
-export default NavCardWrapper;
+export default Wrap;

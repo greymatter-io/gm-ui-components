@@ -70,7 +70,7 @@ exports[`NavCardGroup matches snapshot 1`] = `
           ";display:flex;position:relative;align-items:stretch;min-height:",
           [Function],
           "px",
-          ";position:relative;text-decoration:none;&:active,&:active:hover,&.active,&.active:hover{div[class*=\\"NavCardWrapper\\"]{&:after{opacity:1;}",
+          ";position:relative;text-decoration:none;&:active,&:active:hover,&.active,&.active:hover{div[class*=\\"NavCardWrap\\"]{&:after{opacity:1;}",
           "background-color:",
           [Function],
           ";",

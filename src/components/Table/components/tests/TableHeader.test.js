@@ -6,35 +6,35 @@ import TableHeader from "../TableHeader";
 let jestSpy = jest.fn();
 
 describe("TableHeader", () => {
-  let TableHeaderWrapper;
+  let TableHeaderWrap;
 
   beforeEach(() => {
-    TableHeaderWrapper = shallow(
+    TableHeaderWrap = shallow(
       <TableHeader columns={columns} onSort={jestSpy} />
     );
   });
 
   test("matches snapshot", () => {
-    expect(TableHeaderWrapper).toMatchSnapshot();
+    expect(TableHeaderWrap).toMatchSnapshot();
   });
 
   test("renders the correct Table elements", () => {
-    expect(TableHeaderWrapper.find("thead")).toHaveLength(1);
-    expect(TableHeaderWrapper.find("tr")).toHaveLength(1);
+    expect(TableHeaderWrap.find("thead")).toHaveLength(1);
+    expect(TableHeaderWrap.find("tr")).toHaveLength(1);
   });
 
   test("renders the correct number of header cells", () => {
-    expect(TableHeaderWrapper.find("TableHeaderCell")).toHaveLength(4);
+    expect(TableHeaderWrap.find("TableHeaderCell")).toHaveLength(4);
   });
 
   test("renders header cells in the correct order and with the correct text", () => {
-    TableHeaderWrapper.find("TableCell").forEach((cell, i) => {
+    TableHeaderWrap.find("TableCell").forEach((cell, i) => {
       expect(cell.text()).toBe(columns[i].title);
     });
   });
 
   test("invokes the onSort prop onClick", () => {
-    TableHeaderWrapper.find("TableHeaderCell")
+    TableHeaderWrap.find("TableHeaderCell")
       .at(0)
       .simulate("click");
     expect(jestSpy).toHaveBeenCalled();

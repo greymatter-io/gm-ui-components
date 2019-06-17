@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { keen } from "style/theme";
 
-const TableWrapper = styled.table`
+const Wrap = styled.table`
   width: 100%;
   height: 100%;
   font-family: ${props => props.theme.FONT_STACK_BASE};
@@ -12,10 +12,10 @@ const TableWrapper = styled.table`
   border-spacing: 0;
 `;
 
-TableWrapper.defaultProps = {
+Wrap.defaultProps = {
   theme: keen
 };
 
-TableWrapper.displayName = "TableWrapper";
+Wrap.displayName = "Wrap";
 
-export default TableWrapper;
+export default Wrap;
