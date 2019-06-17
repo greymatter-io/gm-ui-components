@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavCardWrapper matches snapshot 1`] = `
+exports[`Wrap matches snapshot 1`] = `
 <StyledComponent
   forwardedComponent={
     Object {
@@ -74,7 +74,7 @@ exports[`NavCardWrapper matches snapshot 1`] = `
       },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "NavCardWrapper-iyfc4g-0",
+        "componentId": "Wrap-sc-1cqdot2-0",
         "isStatic": false,
         "rules": Array [
           "background:",
@@ -103,10 +103,10 @@ exports[`NavCardWrapper matches snapshot 1`] = `
           ";}",
         ],
       },
-      "displayName": "NavCardWrapper",
+      "displayName": "Wrap",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "NavCardWrapper-iyfc4g-0",
+      "styledComponentId": "Wrap-sc-1cqdot2-0",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table matches snapshot 1`] = `
-<TableWrapper
+<Wrap
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
@@ -266,5 +266,5 @@ exports[`Table matches snapshot 1`] = `
       rowIndex={2}
     />
   </tbody>
-</TableWrapper>
+</Wrap>
 `;

@@ -27,7 +27,7 @@ const NavCardGroupWrap = styled.nav`
     &:active:hover,
     &.active,
     &.active:hover {
-      div[class*="NavCardWrapper"] {
+      div[class*="NavCardWrap"] {
         ${props => props.theme.COLOR_BACKGROUND_THREE};
       }
     }

@@ -1,15 +1,20 @@
 import styled from "styled-components";
-import { FONT_STACK_DEFAULT, FONT_SIZE_TEXT_DEFAULT } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/theme";
 
-const Wrapper = styled.label`
+const Wrap = styled.label`
   ${props => getPosition(props.labelPosition)};
-  font-family: ${FONT_STACK_DEFAULT};
-  font-size: ${FONT_SIZE_TEXT_DEFAULT};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
   display: flex;
   width: fit-content;
   align-items: center;
 `;
+
+Wrap.defaultProps = {
+  theme: keen
+};
 
 const CONTROL_SPACING = spacingScale(1);
 
@@ -58,4 +63,4 @@ function getPosition(position) {
   }
 }
 
-export default Wrapper;
+export default Wrap;

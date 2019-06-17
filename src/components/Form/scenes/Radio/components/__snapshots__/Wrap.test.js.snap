@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Wrapper should render 1`] = `
+exports[`Wrap should render 1`] = `
 <StyledComponent
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Wrapper-r7rrb4-0",
+        "componentId": "Wrap-n3v4au-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -16,10 +16,10 @@ exports[`Wrapper should render 1`] = `
           ";display:flex;width:fit-content;align-items:center;",
         ],
       },
-      "displayName": "Wrapper",
+      "displayName": "Wrap",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "Wrapper-r7rrb4-0",
+      "styledComponentId": "Wrap-n3v4au-0",
       "target": "label",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -30,14 +30,14 @@ exports[`Wrapper should render 1`] = `
 />
 `;
 
-exports[`Wrapper should render different label positions 1`] = `
+exports[`Wrap should render different label positions 1`] = `
 <StyledComponent
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Wrapper-r7rrb4-0",
+        "componentId": "Wrap-n3v4au-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -46,10 +46,10 @@ exports[`Wrapper should render different label positions 1`] = `
           ";display:flex;width:fit-content;align-items:center;",
         ],
       },
-      "displayName": "Wrapper",
+      "displayName": "Wrap",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "Wrapper-r7rrb4-0",
+      "styledComponentId": "Wrap-n3v4au-0",
       "target": "label",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -61,14 +61,14 @@ exports[`Wrapper should render different label positions 1`] = `
 />
 `;
 
-exports[`Wrapper should render different label positions 2`] = `
+exports[`Wrap should render different label positions 2`] = `
 <StyledComponent
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Wrapper-r7rrb4-0",
+        "componentId": "Wrap-n3v4au-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -77,10 +77,10 @@ exports[`Wrapper should render different label positions 2`] = `
           ";display:flex;width:fit-content;align-items:center;",
         ],
       },
-      "displayName": "Wrapper",
+      "displayName": "Wrap",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "Wrapper-r7rrb4-0",
+      "styledComponentId": "Wrap-n3v4au-0",
       "target": "label",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -92,14 +92,14 @@ exports[`Wrapper should render different label positions 2`] = `
 />
 `;
 
-exports[`Wrapper should render different label positions 3`] = `
+exports[`Wrap should render different label positions 3`] = `
 <StyledComponent
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Wrapper-r7rrb4-0",
+        "componentId": "Wrap-n3v4au-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -108,10 +108,10 @@ exports[`Wrapper should render different label positions 3`] = `
           ";display:flex;width:fit-content;align-items:center;",
         ],
       },
-      "displayName": "Wrapper",
+      "displayName": "Wrap",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "Wrapper-r7rrb4-0",
+      "styledComponentId": "Wrap-n3v4au-0",
       "target": "label",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -123,14 +123,14 @@ exports[`Wrapper should render different label positions 3`] = `
 />
 `;
 
-exports[`Wrapper should render different label positions 4`] = `
+exports[`Wrap should render different label positions 4`] = `
 <StyledComponent
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Wrapper-r7rrb4-0",
+        "componentId": "Wrap-n3v4au-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -139,10 +139,10 @@ exports[`Wrapper should render different label positions 4`] = `
           ";display:flex;width:fit-content;align-items:center;",
         ],
       },
-      "displayName": "Wrapper",
+      "displayName": "Wrap",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "Wrapper-r7rrb4-0",
+      "styledComponentId": "Wrap-n3v4au-0",
       "target": "label",
       "toString": [Function],
       "warnTooManyClasses": [Function],

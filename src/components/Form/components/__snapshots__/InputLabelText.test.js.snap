@@ -81,7 +81,7 @@ exports[`InputLabel matches snapshot 1`] = `
           [Function],
           ";line-height:",
           [Function],
-          ";",
+          ";flex-grow:1;",
         ],
       },
       "displayName": "InputLabelText",
