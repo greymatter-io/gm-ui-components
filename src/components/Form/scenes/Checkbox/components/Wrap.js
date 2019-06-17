@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
-const Wrapper = styled.label`
+const Wrap = styled.label`
   ${props => getPosition(props.labelPosition)};
   font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.theme.FONT_SIZE_BASE};
@@ -12,7 +12,7 @@ const Wrapper = styled.label`
   align-items: center;
 `;
 
-Wrapper.defaultProps = {
+Wrap.defaultProps = {
   theme: keen
 };
 
@@ -63,4 +63,4 @@ function getPosition(position) {
   }
 }
 
-export default Wrapper;
+export default Wrap;

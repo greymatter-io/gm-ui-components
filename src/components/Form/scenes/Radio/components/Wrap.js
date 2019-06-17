@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FONT_STACK_BASE, FONT_SIZE_BASE } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
-const Wrapper = styled.label`
+const Wrap = styled.label`
   ${props => getPosition(props.labelPosition)};
   font-family: ${FONT_STACK_BASE};
   font-size: ${FONT_SIZE_BASE};
@@ -58,4 +58,4 @@ function getPosition(position) {
   }
 }
 
-export default Wrapper;
+export default Wrap;

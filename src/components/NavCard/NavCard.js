@@ -6,7 +6,7 @@ import NavCardDetails from "./components/NavCardDetails";
 import NavCardKey from "./components/NavCardKey";
 import NavCardVal from "./components/NavCardVal";
 import NavCardIcon from "./components/NavCardIcon";
-import NavCardWrapper from "./components/NavCardWrapper";
+import Wrap from "./components/Wrap";
 
 NavCard.propTypes = {
   children: PropTypes.func,
@@ -22,7 +22,7 @@ NavCard.propTypes = {
  */
 function NavCard({ icon, details = [], title, children, ...props }) {
   return (
-    <NavCardWrapper {...props}>
+    <Wrap {...props}>
       <NavCardTitle>
         {typeof icon === "function" && <NavCardIcon>{icon()}</NavCardIcon>}
         <h1>{title}</h1>
@@ -36,7 +36,7 @@ function NavCard({ icon, details = [], title, children, ...props }) {
         );
       })}
       {typeof children === "function" && children()}
-    </NavCardWrapper>
+    </Wrap>
   );
 }
 

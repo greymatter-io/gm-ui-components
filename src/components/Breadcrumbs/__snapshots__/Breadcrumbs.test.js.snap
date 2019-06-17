@@ -39,7 +39,7 @@ exports[`Breadcrumbs matches snapshot 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "BreadcrumbsContainer-sc-1c5j828-0",
+        "componentId": "BreadcrumbsWrap-sc-1c5j828-0",
         "isStatic": false,
         "rules": Array [
           "font-family:",
@@ -49,10 +49,10 @@ exports[`Breadcrumbs matches snapshot 1`] = `
           ";flex:1 1 auto;display:flex;margin:0;padding:0;flex-direction:row;height:inherit;align-items:stretch;flex-wrap:nowrap;",
         ],
       },
-      "displayName": "BreadcrumbsContainer",
+      "displayName": "BreadcrumbsWrap",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "BreadcrumbsContainer-sc-1c5j828-0",
+      "styledComponentId": "BreadcrumbsWrap-sc-1c5j828-0",
       "target": "ol",
       "toString": [Function],
       "warnTooManyClasses": [Function],
