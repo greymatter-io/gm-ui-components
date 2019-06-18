@@ -11,7 +11,7 @@ import { keen } from "style/theme";
  */
 export default function Icon({
   ariaLabelledby,
-  badge,
+  hasBadge,
   badgeColor,
   badgePosition,
   borderColor,
@@ -36,7 +36,7 @@ export default function Icon({
       borderColor={borderColor}
       {...props}
     >
-      {badge && (
+      {hasBadge && (
         <mask id="badgeMask" className="badgeMask">
           <rect
             x="0"
@@ -58,12 +58,12 @@ export default function Icon({
       <g
         title={glyphName}
         className="glyph"
-        mask={badge ? "url(#badgeMask)" : undefined}
+        mask={hasBadge ? "url(#badgeMask)" : undefined}
       >
         <title>{title ? title : glyphName}</title>
         {children}
       </g>
-      {badge && (
+      {hasBadge && (
         <>
           <circle
             className="badge"
@@ -81,7 +81,7 @@ export default function Icon({
 
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
-  badge: PropTypes.bool,
+  hasBadge: PropTypes.bool,
   badgeColor: PropTypes.string,
   badgePosition: PropTypes.object,
   borderColor: PropTypes.string,
@@ -96,7 +96,7 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
   theme: keen,
-  badge: false,
+  hasBadge: false,
   badgePosition: {
     x: 46,
     y: 16

@@ -173,7 +173,7 @@ stories
           fillOpacity={number("fillOpacity")}
           size={text("size")}
           title={text("title")}
-          badge={boolean("badge")}
+          hasBadge={boolean("hasBadge")}
           badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
         />
@@ -197,7 +197,7 @@ stories
           borderWidth={number("borderWidth", undefined)}
           fillColor={color("fillColor", undefined)}
           fillOpacity={number("fillOpacity", undefined)}
-          badge={boolean("badge", undefined)}
+          hasBadge={boolean("hasBadge", undefined)}
           badgeColor={color("badgeColor", undefined)}
           badgePosition={object("badgePosition", undefined)}
         >
@@ -228,7 +228,7 @@ stories
                 fillOpacity={number("fillOpacity", undefined)}
                 borderColor={color("borderColor", undefined)}
                 borderWidth={text("borderWidth", undefined)}
-                badge={boolean("badge", undefined)}
+                hasBadge={boolean("hasBadge", undefined)}
                 badgeColor={color("badgeColor")}
                 badgePosition={object("badgePosition", undefined)}
               />
