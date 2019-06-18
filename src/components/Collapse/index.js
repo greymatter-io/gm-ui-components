@@ -1,2 +1,2 @@
-import Accordion from "./Collapse";
-export default Accordion;
+import Collapse from "./Collapse";
+export default Collapse;
