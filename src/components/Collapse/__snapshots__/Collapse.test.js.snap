@@ -78,7 +78,9 @@ exports[`Collapse matches snapshot 1`] = `
       }
     }
   >
-     Collapse children
+    <div>
+      Collapse children
+    </div>
   </Body>
 </Wrapper>
 `;

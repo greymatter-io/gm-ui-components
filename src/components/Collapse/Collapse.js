@@ -28,6 +28,7 @@ export default function Collapse({
   const contentRef = React.createRef();
 
   const onClick = () => {
+    console.log("onclick");
     let contentHeight = 0;
     if (collapsed) {
       let content = contentRef.current.children[0];
@@ -101,7 +102,7 @@ Collapse.defaultProps = {
 };
 
 Collapse.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.element]).isRequired,
+  children: PropTypes.element.isRequired,
   detail: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.element,

@@ -6,7 +6,9 @@ import Collapse from "./Collapse";
 describe("Collapse", () => {
   it("matches snapshot", () => {
     const aCollapse = shallow(
-      <Collapse title="Collapse title"> Collapse children</Collapse>
+      <Collapse title="Collapse title">
+        <div>Collapse children</div>
+      </Collapse>
     );
     expect(aCollapse).toMatchSnapshot();
   });
