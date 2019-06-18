@@ -102,18 +102,22 @@ Collapse.defaultProps = {
 
 Collapse.propTypes = {
   children: PropTypes.node,
-  detail: PropTypes.oneOf([
+  detail: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.element,
     PropTypes.string
   ]),
   initiallyCollapsed: PropTypes.bool,
-  opener: PropTypes.oneOf([
+  opener: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.element,
     PropTypes.string
   ]),
-  title: PropTypes.oneOf([PropTypes.node, PropTypes.element, PropTypes.string])
+  title: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.element,
+    PropTypes.string
+  ])
 };
 
 Collapse.displayName = "Collapse";

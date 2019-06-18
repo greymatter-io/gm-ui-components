@@ -1,11 +1,13 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Accordion from "./Collapse";
+import Collapse from "./Collapse";
 
-describe("Accordion", () => {
+describe("Collapse", () => {
   it("matches snapshot", () => {
-    const aAccordion = shallow(<Accordion />);
-    expect(aAccordion).toMatchSnapshot();
+    const aCollapse = shallow(
+      <Collapse title="Collapse title"> Collapse children</Collapse>
+    );
+    expect(aCollapse).toMatchSnapshot();
   });
 });
