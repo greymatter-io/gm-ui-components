@@ -101,7 +101,7 @@ Collapse.defaultProps = {
 };
 
 Collapse.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.element]).isRequired,
   detail: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.element,

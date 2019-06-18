@@ -19,11 +19,13 @@ stories.add(
       <>
         <Collapse title="Collapse Title" detail="Detail text">
           <div style={style}>Collapse content</div>
-        </Collapse>{" "}
+        </Collapse>
         <Collapse title="Collapse Title" detail="Detail text">
           <div style={style}>Collapse content</div>
-        </Collapse>{" "}
-        <Collapse title="Collapse Title" detail="Detail text" />
+        </Collapse>
+        <Collapse title="Collapse Title" detail="Detail text">
+          Collapse content
+        </Collapse>
       </>
     );
   },
