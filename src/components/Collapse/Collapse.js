@@ -36,7 +36,9 @@ export default function Collapse({
     <Wrapper {...props}>
       <Header
         onClick={toggleCollapse}
-        onKeyDown={e => e.keyCode === 13 && toggleCollapse()}
+        onKeyDown={e =>
+          (e.keyCode === 13 || e.keyCode === 32) && toggleCollapse()
+        }
       >
         <Opener tabIndex={0} collapsed={collapsed}>
           {OpenerComponent}
