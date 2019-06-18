@@ -12,10 +12,13 @@ exports[`Collapse matches snapshot 1`] = `
   className="c0"
 >
   <Header
+    collapsed={true}
     onClick={[Function]}
+    onKeyDown={[Function]}
   >
     <Opener
       collapsed={true}
+      tabIndex={0}
     >
       <IconMock />
     </Opener>

@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { PropTypes } from "prop-types";
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
+
 import { IconArrowRight } from "components/Glyphs";
 import {
   keen,
   FONT_STACK_BASE,
   COLOR_KEYLINE,
-  FONT_SIZE_XS
+  FONT_SIZE_XS,
+  BORDER_RADIUS_BASE
 } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
@@ -42,9 +44,11 @@ export default function Collapse({
       <Header
         onClick={toggleCollapse}
         onKeyDown={e => e.keyCode === 13 && toggleCollapse()}
-        tabIndex={0}
+        collapsed={collapsed}
       >
-        <Opener collapsed={collapsed}>{OpenerComponent}</Opener>
+        <Opener tabIndex={0} collapsed={collapsed}>
+          {OpenerComponent}
+        </Opener>
         <Title>{title}</Title>
         <Detail>{detail}</Detail>
       </Header>
@@ -73,7 +77,9 @@ const Header = styled.div`
 
 const Body = styled.div`
   overflow: hidden;
+  width: 100%;
   transition: all 0.5s ease;
+
   ${({ collapsed }) =>
     collapsed &&
     css`
@@ -83,6 +89,19 @@ const Body = styled.div`
 `;
 
 const Opener = styled.div`
+  margin-right: ${spacingScale(0.5)};
+  &:focus,
+  &:active,
+  &:focus:active {
+    outline: none;
+    border-radius: ${BORDER_RADIUS_BASE};
+    box-shadow: 0 0 0 2px
+      ${props =>
+        transparentize(
+          1 - props.theme.OPACITY_50,
+          props.theme.COLOR_INTENT_HIGHLIGHT
+        )};
+  }
   ${({ collapsed }) =>
     !collapsed &&
     css`
