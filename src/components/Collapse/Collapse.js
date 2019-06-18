@@ -28,7 +28,6 @@ export default function Collapse({
   const contentRef = React.createRef();
 
   const onClick = () => {
-    console.log("onclick");
     let contentHeight = 0;
     if (collapsed) {
       let content = contentRef.current.children[0];

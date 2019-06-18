@@ -12,26 +12,44 @@ const style = {
   backgroundColor: "lightgrey"
 };
 
-stories.add(
-  "default",
-  () => {
-    return (
-      <>
-        <Collapse title="Collapse Title" detail="Detail text">
-          <div style={style}>Collapse content</div>
-        </Collapse>
-        <Collapse title="Collapse Title" detail="Detail text">
-          <div style={style}>Collapse content</div>
-        </Collapse>
-        <Collapse title="Collapse Title" detail="Detail text">
-          Collapse content
-        </Collapse>
-      </>
-    );
-  },
-  {
-    info: {
-      text: "Add component description here. Accepts markdown."
+stories
+  .add(
+    "default",
+    () => {
+      return (
+        <>
+          <Collapse title="Collapse Title" detail="Detail text">
+            <div style={style}>Collapse content</div>
+          </Collapse>
+        </>
+      );
+    },
+    {
+      info: {
+        text: "Add component description here. Accepts markdown."
+      }
     }
-  }
-);
+  )
+  .add(
+    "multiple",
+    () => {
+      return (
+        <>
+          <Collapse title="Collapse Title" detail="Detail text">
+            <div style={style}>Collapse content</div>
+          </Collapse>
+          <Collapse title="Collapse Title" detail="Detail text">
+            <div style={style}>Collapse content</div>
+          </Collapse>
+          <Collapse title="Collapse Title" detail="Detail text">
+            <div style={style}>Collapse content</div>
+          </Collapse>
+        </>
+      );
+    },
+    {
+      info: {
+        text: "Add component description here. Accepts markdown."
+      }
+    }
+  );
