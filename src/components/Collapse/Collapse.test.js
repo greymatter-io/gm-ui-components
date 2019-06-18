@@ -9,7 +9,7 @@ describe("Collapse", () => {
       <Collapse title="Collapse title">
         <div>Collapse children</div>
       </Collapse>
-    );
+    ).dive();
     expect(aCollapse).toMatchSnapshot();
   });
 });
