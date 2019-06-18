@@ -30,8 +30,8 @@ export default function Collapse({
   const onClick = () => {
     let contentHeight = 0;
     if (collapsed) {
-      contentHeight = contentRef.current.children[0].getBoundingClientRect()
-        .height;
+      let content = contentRef.current.children[0];
+      contentHeight = content ? content.getBoundingClientRect().height : 0;
     }
     setBodyHeight(contentHeight);
     setCollapsed(!collapsed);
