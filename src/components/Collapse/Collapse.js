@@ -12,10 +12,9 @@ import {
 import { spacingScale } from "style/styleFunctions";
 
 /**
- * Description of your component
+ * A single Collapse item
  */
-
-export default function Accordion({
+export default function Collapse({
   opener,
   title,
   detail,
@@ -26,29 +25,26 @@ export default function Accordion({
   const [collapsed, setCollapsed] = useState(initiallyCollapsed);
   const [bodyHeight, setBodyHeight] = useState(0);
   const OpenerComponent = opener || <IconArrowRight />;
-  const bodyRef = React.createRef();
+  const contentRef = React.createRef();
+
+  const onClick = () => {
+    let contentHeight = 0;
+    if (collapsed) {
+      contentHeight = contentRef.current.children[0].getBoundingClientRect()
+        .height;
+    }
+    setBodyHeight(contentHeight);
+    setCollapsed(!collapsed);
+  };
 
   return (
     <Wrapper {...props}>
-      <Header>
-        <Opener
-          collapsed={collapsed}
-          onClick={() => {
-            let contentHeight = 0;
-            if (collapsed) {
-              contentHeight = bodyRef.current.children[0].getBoundingClientRect()
-                .height;
-            }
-            setBodyHeight(contentHeight);
-            setCollapsed(!collapsed);
-          }}
-        >
-          {OpenerComponent}
-        </Opener>
+      <Header onClick={onClick}>
+        <Opener collapsed={collapsed}>{OpenerComponent}</Opener>
         <Title>{title}</Title>
         <Detail>{detail}</Detail>
       </Header>
-      <Body collapsed={collapsed} innerRef={bodyRef} bodyHeight={bodyHeight}>
+      <Body collapsed={collapsed} innerRef={contentRef} bodyHeight={bodyHeight}>
         {children}
       </Body>
     </Wrapper>
@@ -59,16 +55,16 @@ const Wrapper = styled.section`
   width: 100%;
   font-family: ${FONT_STACK_BASE};
   border-top: 1px solid ${COLOR_KEYLINE};
-  padding: ${spacingScale(1)};
   height: 100%;
 `;
 
 const Header = styled.div`
+  cursor: pointer;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: ${spacingScale(1)};
+  padding: ${spacingScale(1)} 0;
 `;
 
 const Body = styled.div`
@@ -83,8 +79,6 @@ const Body = styled.div`
 `;
 
 const Opener = styled.div`
-  cursor: pointer;
-
   ${({ collapsed }) =>
     !collapsed &&
     css`
@@ -101,12 +95,12 @@ const Detail = styled.div`
   text-transform: uppercase;
 `;
 
-Accordion.defaultProps = {
+Collapse.defaultProps = {
   initiallyCollapsed: true,
   theme: keen
 };
 
-Accordion.propTypes = {
+Collapse.propTypes = {
   children: PropTypes.node,
   detail: PropTypes.oneOf([
     PropTypes.node,
@@ -122,4 +116,4 @@ Accordion.propTypes = {
   title: PropTypes.oneOf([PropTypes.node, PropTypes.element, PropTypes.string])
 };
 
-Accordion.displayName = "Accordion";
+Collapse.displayName = "Collapse";

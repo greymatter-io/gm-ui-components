@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Accordion from "./Accordion";
+import Accordion from "./Collapse";
 
 describe("Accordion", () => {
   it("matches snapshot", () => {
