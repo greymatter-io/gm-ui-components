@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PropTypes } from "prop-types";
 import styled, { css } from "styled-components";
-
+import { transparentize } from "polished";
 import { IconArrowRight } from "components/Glyphs";
 import {
   keen,
@@ -27,7 +27,7 @@ export default function Collapse({
   const OpenerComponent = opener || <IconArrowRight />;
   const contentRef = React.createRef();
 
-  const onClick = () => {
+  const toggleCollapse = () => {
     let contentHeight = 0;
     if (collapsed) {
       let content = contentRef.current.children[0];
@@ -39,7 +39,11 @@ export default function Collapse({
 
   return (
     <Wrapper {...props}>
-      <Header onClick={onClick}>
+      <Header
+        onClick={toggleCollapse}
+        onKeyDown={e => e.keyCode === 13 && toggleCollapse()}
+        tabIndex={0}
+      >
         <Opener collapsed={collapsed}>{OpenerComponent}</Opener>
         <Title>{title}</Title>
         <Detail>{detail}</Detail>
