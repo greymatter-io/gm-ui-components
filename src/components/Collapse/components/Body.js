@@ -9,6 +9,7 @@ export const Body = styled.div`
     collapsed &&
     css`
       height: 0px;
+      visibility: hidden;
     `};
   height: ${({ bodyHeight }) => bodyHeight}px;
 `;
