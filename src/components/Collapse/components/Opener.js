@@ -6,7 +6,7 @@ import { keen } from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
 export const Opener = styled.div`
-  margin-right: ${spacingScale(0.5)};
+  margin-right: ${spacingScale(0.75)};
   &:focus,
   &:active,
   &:focus:active {

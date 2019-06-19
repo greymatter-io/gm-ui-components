@@ -8,7 +8,6 @@ export const Title = styled.div`
 
 export const Detail = styled.div`
   font-size: ${({ theme }) => theme.FONT_SIZE_XS};
-  text-transform: uppercase;
 `;
 
 Detail.defaultProps = {

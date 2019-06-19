@@ -19,6 +19,7 @@ export default function Collapse({
 }) {
   const [collapsed, setCollapsed] = useState(initiallyCollapsed);
   const [bodyHeight, setBodyHeight] = useState(0);
+  
   const OpenerComponent = opener || <IconArrowRight />;
   const contentRef = React.createRef();
 

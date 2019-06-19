@@ -17,7 +17,6 @@ exports[`Collapse components Body should match snapshot 1`] = `
 exports[`Collapse components Detail should match snapshot 1`] = `
 .c0 {
   font-size: 9px;
-  text-transform: uppercase;
 }
 
 <div
@@ -51,7 +50,7 @@ exports[`Collapse components Header should match snapshot 1`] = `
 
 exports[`Collapse components Opener should match snapshot 1`] = `
 .c0 {
-  margin-right: 4px;
+  margin-right: 6px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
