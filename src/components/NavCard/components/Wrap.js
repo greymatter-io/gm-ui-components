@@ -1,40 +1,18 @@
-import styled, { css } from "styled-components";
-import { mix, darken } from "polished";
+import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
-
-const backgroundColor = css`
-  background-color: ${props =>
-    mix(
-      props.theme.OPACITY_15,
-      props.theme.COLOR_BACKGROUND_B,
-      props.theme.COLOR_BACKGROUND_C
-    )};
-`;
-
-const backgroundColorHover = css`
-  background-color: ${props =>
-    darken(
-      0.06,
-      mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
-      )
-    )};
-`;
 
 const TAB_WIDTH_BASE = "1%";
 
 // Note: Edge requires the overflow: hidden property to maintian
 // equal sized cards. flex-basis is not sufficient!
 const Wrap = styled.div`
-  ${backgroundColor};
+  background: ${props => props.theme.COLOR_BACKGROUND_TWO};
   font-weight: ${props => props.theme.FONT_WEIGHT_REGULAR};
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   flex: 1 1 ${TAB_WIDTH_BASE};
-  border-radius: ${props => props.theme.RADIUS_05};
+  border-radius: ${props => props.theme.CORNER_RADIUS_CARD_SM};
   min-height: ${spacingScale(8)};
   position: relative;
   transition: all 0.15s ease;
@@ -57,7 +35,7 @@ const Wrap = styled.div`
   }
   &:focus,
   &:hover {
-    ${backgroundColorHover};
+    background: ${props => props.theme.COLOR_BACKGROUND_THREE};
   }
 `;
 

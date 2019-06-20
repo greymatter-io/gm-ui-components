@@ -7,7 +7,7 @@ import LayoutSection from "./LayoutSection";
 import { Readout, ReadoutGroup, IconBell, IconSummary } from "../index.js";
 
 const ThemedBackground = styled.div`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
 `;
 
 const stories = storiesOf("Components|Layout Section", module);

@@ -17,7 +17,7 @@ const ACTIVE_SHADOW = ({ theme }) =>
 const FOCUS_SHADOW = ({ theme }) =>
   css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${props =>
     transparentize(
-      1 - props.theme.OPACITY_50,
+      1 - props.theme.OPACITY_LIGHTER,
       theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT
     )}`;
 
@@ -72,12 +72,12 @@ const InputBox = styled.input`
   }
 
   &:disabled {
-    border-color: ${props => props.theme.COLOR_BACKGROUND_C};
-    opacity: ${props => props.theme.OPACITY_50};
+    border-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
+    opacity: ${props => props.theme.OPACITY_LIGHTER};
     box-shadow: none;
 
     &:checked {
-      background-color: ${props => props.theme.COLOR_BACKGROUND_C};
+      background-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
     }
   }
 `;

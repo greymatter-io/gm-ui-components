@@ -13,7 +13,7 @@ const Introduction = styled.div`
   height: 100vh;
   margin: auto;
   max-width: 30em;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   line-height: 1.5;
 
   h1 {
@@ -29,7 +29,7 @@ const Introduction = styled.div`
 
   hr {
     margin: ${spacingScale(1)} 0;
-    box-shadow: 0 1px 0 0 ${props => props.theme.COLOR_KEYLINE};
+    box-shadow: 0 1px 0 0 ${props => props.theme.COLOR_KEYLINE_DEFAULT};
     height: 1px;
     border: 0;
   }

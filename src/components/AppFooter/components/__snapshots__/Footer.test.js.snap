@@ -16,8 +16,8 @@ exports[`Footer should render 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  color: #000;
-  background: #ffffff;
+  color: hsla(0,0%,0%,0.85);
+  background: hsl(0,0%,100%);
   font-size: 14px;
   height: auto;
   min-height: 32px;
