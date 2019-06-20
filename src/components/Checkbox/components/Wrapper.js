@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
@@ -21,7 +21,7 @@ const CONTROL_SPACING = spacingScale(1);
 function getPosition(position) {
   switch (position) {
     case "top":
-      return `
+      return css`
         flex-direction: column-reverse;
 
         > input {
@@ -29,7 +29,7 @@ function getPosition(position) {
         }
       `;
     case "bottom":
-      return `
+      return css`
         flex-direction: column;
 
         > input {
@@ -37,7 +37,7 @@ function getPosition(position) {
         }
       `;
     case "left":
-      return `
+      return css`
         flex-direction: row-reverse;
 
         > input {
@@ -45,7 +45,7 @@ function getPosition(position) {
         }
       `;
     case "right":
-      return `
+      return css`
         flex-direction: row;
 
         > input {
@@ -53,8 +53,8 @@ function getPosition(position) {
         }
       `;
     default:
-      return `
-       flex-direction: row-reverse;
+      return css`
+        flex-direction: row-reverse;
 
         > input {
           margin-left: ${CONTROL_SPACING};

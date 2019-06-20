@@ -22,7 +22,7 @@ exports[`Wrapper should render 1`] = `
 }
 
 .c0 > input {
-  margin-left: props => Math.round(parseInt(props.theme.SPACING_BASE,10) * factor),px;
+  margin-left: 8px;
 }
 
 <label
