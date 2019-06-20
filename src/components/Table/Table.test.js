@@ -4,41 +4,41 @@ import { shallow } from "enzyme";
 import Table from "./Table";
 
 describe("Table", () => {
-  let TableWrapper;
+  let TableWrap;
 
   beforeEach(() => {
-    TableWrapper = shallow(<Table columns={columns} data={data} />);
+    TableWrap = shallow(<Table columns={columns} data={data} />);
   });
 
   test("matches snapshot", () => {
-    expect(TableWrapper).toMatchSnapshot();
+    expect(TableWrap).toMatchSnapshot();
   });
 
   test("renders the correct amount of columns and rows", () => {
-    expect(TableWrapper.find("TableColumn")).toHaveLength(4);
-    expect(TableWrapper.find("TableRow")).toHaveLength(3);
+    expect(TableWrap.find("TableColumn")).toHaveLength(4);
+    expect(TableWrap.find("TableRow")).toHaveLength(3);
   });
 
   test("creates columns with the proper widths", () => {
-    TableWrapper.find("TableColumn").forEach((column, i) => {
+    TableWrap.find("TableColumn").forEach((column, i) => {
       expect(column.props().colWidth).toBe(columns[i].width);
     });
   });
 
   test("passes the correct props to children", () => {
     expect(
-      TableWrapper.find("TableColumn")
+      TableWrap.find("TableColumn")
         .at(0)
         .props()
     ).toHaveProperty("colWidth");
 
     expect(
-      TableWrapper.find("TableRow")
+      TableWrap.find("TableRow")
         .at(0)
         .props()
     ).toMatchObject({ columns, data: data[0] });
 
-    expect(TableWrapper.find("TableHeader").props()).toMatchObject({ columns });
+    expect(TableWrap.find("TableHeader").props()).toMatchObject({ columns });
   });
 });
 

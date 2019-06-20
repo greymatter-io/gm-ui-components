@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import TableWrapper from "./components/TableWrapper";
+import Wrap from "./components/Wrap";
 import TableHeader from "./components/TableHeader";
 import TableRow from "./components/TableRow";
 import TableColumn from "./components/TableColumn";
@@ -19,7 +19,7 @@ export default function Table({
   ...props
 }) {
   return (
-    <TableWrapper {...props}>
+    <Wrap {...props}>
       {/* colgroup is used to give columns the proper width */}
       <colgroup>
         {columns.map(({ width }, i) => (
@@ -46,7 +46,7 @@ export default function Table({
           />
         ))}
       </tbody>
-    </TableWrapper>
+    </Wrap>
   );
 }
 

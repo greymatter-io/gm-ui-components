@@ -4,7 +4,7 @@ import { keen } from "style/theme";
 const TooltipWrap = styled.div`
   display: inline-block;
   position: relative;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
 
   :hover > :last-child {
     ${props =>
