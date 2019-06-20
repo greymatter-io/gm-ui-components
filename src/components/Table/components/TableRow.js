@@ -13,7 +13,7 @@ const TableRowElement = styled.tr.attrs({
 })`
   cursor: pointer;
   position: relative;
-  box-shadow: 0 -1px 0 ${props => props.theme.COLOR_KEYLINE};
+  box-shadow: 0 -1px 0 ${props => props.theme.COLOR_KEYLINE_DEFAULT};
 
   /* Give the table row a border when selected */
   ${props =>
@@ -21,7 +21,7 @@ const TableRowElement = styled.tr.attrs({
     css`
       background-color: ${props =>
         transparentize(
-          1 - props.theme.OPACITY_15,
+          1 - props.theme.OPACITY_LIGHTEST,
           props.theme.COLOR_INTENT_HIGHLIGHT
         )};
       &,
@@ -32,12 +32,6 @@ const TableRowElement = styled.tr.attrs({
       ${props.selectedRowStyle};
     `};
 `;
-
-TableRowElement.defaultProps = {
-  theme: keen
-};
-
-TableRowElement.displayName = "TableRowElement";
 
 function TableRow({
   data,
@@ -93,5 +87,13 @@ TableRow.propTypes = {
   rowIndex: PropTypes.number,
   selectedRowStyle: PropTypes.object
 };
+
+TableRowElement.defaultProps = {
+  isRowSelected: false,
+  isSelected: false,
+  theme: keen
+};
+
+TableRowElement.displayName = "TableRowElement";
 
 export default TableRow;

@@ -1,15 +1,15 @@
 import styled from "styled-components";
+import { keen } from "style/theme";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/theme";
 
 const ErrorContent = styled.div`
   align-items: center;
-  color: ${props => props.theme.COLOR_CONTENT};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
   display: inline-flex;
   flex-basis: 600px;
   flex-flow: row nowrap;
-  font-size: ${props => props.theme.FONT_SIZE_HERO};
+  font-size: ${props => props.theme.FONT_SIZE_PAGE_TITLE};
   justify-content: center;
   margin: ${spacingScale(4)};
   padding: ${spacingScale(8)} ${spacingScale(4)};

@@ -1,5 +1,5 @@
 import React from "react";
-import { IconSummary } from "../";
+import { IconSummary } from "..";
 
 import { storiesOf } from "@storybook/react";
 import { boolean, object, color } from "@storybook/addon-knobs";

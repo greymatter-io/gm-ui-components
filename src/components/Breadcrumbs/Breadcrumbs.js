@@ -6,8 +6,8 @@ import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 export const BreadcrumbsWrap = styled.ol`
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  font-size: ${props => props.theme.FONT_SIZE_SM};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
   flex: 1 1 auto;
   display: flex;
   margin: 0;
@@ -34,7 +34,7 @@ export const Breadcrumb = styled.li`
 
   &:before {
     display: inline-block;
-    opacity: ${props => (props.hideDelimiter ? 0 : props.theme.OPACITY_50)};
+    color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
     transform: scaleX(0.5);
@@ -68,15 +68,15 @@ function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   );
 }
 
-export default Breadcrumbs;
-
-Breadcrumbs.defaultProps = {
-  crumbs: [],
-  theme: keen,
-  hideDelimiter: false
-};
-
 Breadcrumbs.propTypes = {
   crumbs: PropTypes.array,
   hideDelimiter: PropTypes.bool
 };
+
+Breadcrumbs.defaultProps = {
+  crumbs: [],
+  hideDelimiter: false,
+  theme: keen
+};
+
+export default Breadcrumbs;

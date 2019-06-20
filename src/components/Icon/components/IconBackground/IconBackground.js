@@ -22,24 +22,6 @@ const backgroundStyles = {
   BackgroundTriangle
 };
 
-IconBackground.propTypes = {
-  backgroundColor: PropTypes.string,
-  backgroundOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  borderColor: PropTypes.string,
-  borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  name: PropTypes.string
-};
-
-IconBackground.defaultProps = {
-  backgroundColor: "red",
-  backgroundOpacity: "1",
-  borderColor: "currentColor",
-  borderOpacity: "1",
-  borderWidth: "1",
-  name: "BackgroundSquare"
-};
-
 export default function IconBackground({
   backgroundColor,
   backgroundOpacity,
@@ -64,5 +46,23 @@ export default function IconBackground({
     </g>
   );
 }
+
+IconBackground.propTypes = {
+  backgroundColor: PropTypes.string,
+  backgroundOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  borderColor: PropTypes.string,
+  borderOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  name: PropTypes.string
+};
+
+IconBackground.defaultProps = {
+  backgroundColor: "red",
+  backgroundOpacity: "1",
+  borderColor: "currentColor",
+  borderOpacity: "1",
+  borderWidth: "1",
+  name: "BackgroundSquare"
+};
 
 IconBackground.displayName = "IconBackground";

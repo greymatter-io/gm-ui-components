@@ -16,10 +16,6 @@ export const SpinnerSVG = styled.svg`
     props.orientation === "vertical" ? verticalStyles : horizontalStyles};
 `;
 
-SpinnerSVG.defaultProps = {
-  theme: keen
-};
-
 SpinnerSVG.displayName = "SpinnerSVG";
 
 export const verticalStyles = css`
@@ -64,6 +60,11 @@ export function LoadingSpinner(props) {
 
 LoadingSpinner.propTypes = {
   orientation: PropTypes.oneOf(["vertical", "horizontal"])
+};
+
+SpinnerSVG.defaultProps = {
+  orientation: "vertical",
+  theme: keen
 };
 
 LoadingSpinner.displayName = "LoadingSpinner";

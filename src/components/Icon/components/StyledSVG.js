@@ -40,4 +40,8 @@ const StyledSVG = styled.svg.attrs({
   }
 `;
 
+StyledSVG.defaultProps = {
+  size: "1.714em"
+};
+
 export default StyledSVG;

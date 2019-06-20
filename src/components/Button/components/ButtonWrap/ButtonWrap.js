@@ -16,8 +16,8 @@ const ButtonWrap = styled.button`
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  font-weight: ${props => props.theme.FONT_WEIGHT_DEFAULT};
   justify-content: center;
   line-height: 1.4;
   text-align: center;
@@ -49,11 +49,14 @@ const ButtonWrap = styled.button`
     /* box-shadow: ${({ theme }) => css`0 0 0 ${theme.FORM_HIGHLIGHT_SIZE}px
         ${({ theme }) =>
           transparentize(
-            1 - theme.OPACITY_50,
+            1 - theme.OPACITY_LIGHTER,
             theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT
           )},
       inset 0 0 0 1px ${({ theme }) =>
-        transparentize(1 - theme.OPACITY_15, theme.COLOR_BACKGROUND_A)}`}}; */
+        transparentize(
+          1 - theme.OPACITY_LIGHTEST,
+          theme.COLOR_BACKGROUND_DEFAULT
+        )}`}}; */
     z-index: 10;
     position: relative;
 
@@ -88,7 +91,12 @@ ButtonWrap.propTypes = {
 };
 
 ButtonWrap.defaultProps = {
-  theme: keen
+  theme: keen,
+  active: false,
+  orientation: "horizontal",
+  outline: false,
+  size: "normal",
+  type: "default"
 };
 
 export default ButtonWrap;

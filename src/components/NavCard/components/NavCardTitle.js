@@ -8,9 +8,9 @@ const color = css`
   color: ${props =>
     readableColor(
       mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
+        props.theme.OPACITY_LIGHTEST,
+        props.theme.COLOR_BACKGROUND_TWO,
+        props.theme.COLOR_BACKGROUND_THREE
       )
     )};
 `;
@@ -28,7 +28,7 @@ const NavCardTitle = styled.div`
   justify-content: center;
 
   h1 {
-    font-size: ${props => props.theme.FONT_SIZE_BASE};
+    font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
     font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
     padding-left: ${spacingScale(0.5)};
     flex: 1 1 100%;

@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import { ErrorCard, IconBell } from "../";
+import { ErrorCard, IconBell } from "..";
 
 describe("ErrorCard", () => {
   it("matches snapshot", () => {

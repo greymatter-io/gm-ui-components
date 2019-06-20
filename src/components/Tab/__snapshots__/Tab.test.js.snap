@@ -4,7 +4,7 @@ exports[`Tab matches snapshot 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 14px;
-  color: #000;
+  color: hsla(0,0%,0%,0.85);
   padding-left: 16px;
   padding-right: 16px;
   -webkit-flex: 0 0 auto;
@@ -26,11 +26,11 @@ exports[`Tab matches snapshot 1`] = `
 }
 
 .c0:hover {
-  box-shadow: #0aab2a 0px -1px inset;
+  box-shadow: #00b42b 0px -1px inset;
 }
 
 .c0:active {
-  box-shadow: #0aab2a 0px -2px inset;
+  box-shadow: #00b42b 0px -2px inset;
 }
 
 .c1 {
