@@ -42,9 +42,7 @@ Checkbox.defaultProps = {
   defaultChecked: false,
   disabled: false,
   labelPosition: "right",
-  onChange: undefined,
-  readonly: false,
-  value: undefined
+  readonly: false
 };
 
 Checkbox.displayName = "Checkbox";

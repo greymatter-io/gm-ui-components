@@ -40,8 +40,7 @@ ErrorCard.propTypes = {
 };
 
 ErrorCard.defaultProps = {
-  errorMsg: "Something went wrong.",
-  icon: undefined
+  errorMsg: "Something went wrong."
 };
 
 ErrorCard.displayName = "ErrorCard";

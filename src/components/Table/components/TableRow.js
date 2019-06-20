@@ -89,13 +89,8 @@ TableRow.propTypes = {
 };
 
 TableRowElement.defaultProps = {
-  columns: undefined,
-  data: undefined,
   isRowSelected: false,
   isSelected: false,
-  onRowClick: undefined,
-  rowIndex: undefined,
-  selectedRowStyle: undefined,
   theme: keen
 };
 

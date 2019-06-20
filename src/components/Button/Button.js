@@ -64,19 +64,11 @@ Button.propTypes = {
 
 Button.defaultProps = {
   active: false,
-  children: undefined,
-  dangerouslySetColor: undefined,
   clickAction: () => {},
   disabled: false,
-  label: undefined,
-  labelStyle: undefined,
   orientation: "horizontal",
   outline: false,
-  prefix: undefined,
   size: "normal",
-  style: undefined,
-  suffix: undefined,
-  tabIndex: undefined,
   type: "default"
 };
 

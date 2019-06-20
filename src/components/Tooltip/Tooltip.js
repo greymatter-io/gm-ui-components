@@ -69,10 +69,7 @@ Tooltip.propTypes = {
 };
 
 Tooltip.defaultProps = {
-  content: undefined,
-  hideTooltip: undefined,
   position: "bottom",
-  tooltipStyle: undefined,
   theme: keen
 };
 

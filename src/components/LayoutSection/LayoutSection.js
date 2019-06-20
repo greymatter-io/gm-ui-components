@@ -32,12 +32,6 @@ LayoutSection.propTypes = {
   title: PropTypes.string.isRequired
 };
 
-LayoutSection.defaultProps = {
-  children: undefined,
-  className: undefined,
-  icon: undefined
-};
-
 LayoutSection.displayName = "LayoutSection";
 
 export default LayoutSection;

@@ -38,10 +38,7 @@ Radio.propTypes = {
 
 Radio.defaultProps = {
   defaultChecked: false,
-  disabled: undefined,
-  labelPosition: "right",
-  onChange: undefined,
-  value: undefined
+  labelPosition: "right"
 };
 
 Radio.displayName = "Radio";

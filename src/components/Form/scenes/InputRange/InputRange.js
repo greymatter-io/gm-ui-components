@@ -39,10 +39,5 @@ InputRange.propTypes = {
 
 InputRange.defaultProps = {
   autoFocus: false,
-  defaultValue: undefined,
-  hint: undefined,
-  label: undefined,
-  labelPosition: "right",
-  maxLength: undefined,
-  placeholder: undefined
+  labelPosition: "right"
 };

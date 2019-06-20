@@ -100,9 +100,6 @@ AppFooter.propTypes = {
 AppFooter.defaultProps = {
   copyrightText: "TM and \u00A9 2019 Decipher Technology Studios",
   useExternalLinks: true,
-  footerCenter: undefined,
-  footerLeft: undefined,
-  footerRight: undefined,
   theme: keen
 };
 

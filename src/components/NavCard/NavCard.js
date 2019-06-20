@@ -40,13 +40,6 @@ NavCard.propTypes = {
   title: PropTypes.string
 };
 
-NavCard.defaultProps = {
-  children: undefined,
-  details: undefined,
-  icon: undefined,
-  title: undefined
-};
-
 NavCard.displayName = "NavCard";
 
 export default NavCard;

@@ -11,8 +11,4 @@ TableColumn.propTypes = {
   colWidth: PropTypes.string
 };
 
-TableColumn.defaultProps = {
-  colWidth: undefined
-};
-
 export default TableColumn;

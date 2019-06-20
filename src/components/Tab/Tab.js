@@ -33,12 +33,6 @@ Tab.propTypes = {
   label: PropTypes.string.isRequired
 };
 
-Tab.defaultProps = {
-  active: undefined,
-  children: undefined,
-  disabled: undefined
-};
-
 Tab.displayName = "Tab";
 
 export default Tab;

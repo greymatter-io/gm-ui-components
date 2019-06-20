@@ -20,9 +20,4 @@ TabGroup.propTypes = {
   label: PropTypes.string
 };
 
-TabGroup.defaultProps = {
-  children: undefined,
-  label: undefined
-};
-
 export default TabGroup;

@@ -60,13 +60,8 @@ InputField.propTypes = {
 
 InputField.defaultProps = {
   autoFocus: false,
-  defaultValue: undefined,
   disabled: false,
-  hint: undefined,
-  label: undefined,
   labelPosition: "top",
-  maxLength: undefined,
-  placeholder: undefined,
   readonly: false,
   type: "text"
 };

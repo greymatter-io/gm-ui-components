@@ -45,13 +45,7 @@ Select.propTypes = {
 };
 
 Select.defaultProps = {
-  autoFocus: undefined,
-  children: undefined,
-  disabled: undefined,
-  hint: undefined,
-  labelPosition: "top",
-  onChange: undefined,
-  value: undefined
+  labelPosition: "top"
 };
 
 Select.displayName = "Select";

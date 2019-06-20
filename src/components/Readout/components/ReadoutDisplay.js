@@ -57,8 +57,6 @@ ReadoutDisplay.propTypes = {
 };
 
 ReadoutDisplay.defaultProps = {
-  color: undefined,
-  primary: undefined,
   theme: keen
 };
 

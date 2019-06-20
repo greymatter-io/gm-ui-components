@@ -48,13 +48,5 @@ Textarea.propTypes = {
 };
 
 Textarea.defaultProps = {
-  autoFocus: undefined,
-  defaultValue: undefined,
-  disabled: undefined,
-  hint: undefined,
-  label: undefined,
-  labelPosition: "top",
-  maxLength: undefined,
-  placeholder: undefined,
-  readonly: undefined
+  labelPosition: "top"
 };
