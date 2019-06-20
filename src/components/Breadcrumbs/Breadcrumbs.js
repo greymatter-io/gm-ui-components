@@ -6,8 +6,8 @@ import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 export const BreadcrumbsWrap = styled.ol`
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_SM};
   flex: 1 1 auto;
   display: flex;
   margin: 0;
@@ -34,7 +34,7 @@ export const Breadcrumb = styled.li`
 
   &:before {
     display: inline-block;
-    color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
+    color: ${({theme}) => theme.COLOR_CONTENT_NONESSENTIAL};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
     transform: scaleX(0.5);

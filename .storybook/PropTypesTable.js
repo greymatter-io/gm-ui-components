@@ -6,13 +6,13 @@ const Table = styled.table`
   td,
   th {
     text-align: left;
-    border: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT_SOLID};
+    border: 1px solid ${({theme}) => theme.COLOR_KEYLINE_DEFAULT_SOLID};
     padding: 4px;
   }
 `;
 
 const Required = styled.span`
-  color: ${props => props.theme.COLOR_INTENT_DANGER};
+  color: ${({theme}) => theme.COLOR_INTENT_DANGER};
 `;
 
 const PropTypesTable = ({ propDefinitions }) => {

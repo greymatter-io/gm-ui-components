@@ -13,16 +13,16 @@ const TableRowElement = styled.tr.attrs({
 })`
   cursor: pointer;
   position: relative;
-  box-shadow: 0 -1px 0 ${props => props.theme.COLOR_KEYLINE_DEFAULT};
+  box-shadow: 0 -1px 0 ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
 
   /* Give the table row a border when selected */
   ${props =>
     props.isSelected &&
     css`
-      background-color: ${props =>
+      background-color: ${({ theme }) =>
         transparentize(
-          1 - props.theme.OPACITY_LIGHTEST,
-          props.theme.COLOR_INTENT_HIGHLIGHT
+          1 - theme.OPACITY_LIGHTEST,
+          theme.COLOR_INTENT_HIGHLIGHT
         )};
       &,
       & + &,

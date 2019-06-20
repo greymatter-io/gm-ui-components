@@ -16,8 +16,8 @@ const ButtonWrap = styled.button`
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-  font-weight: ${props => props.theme.FONT_WEIGHT_DEFAULT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  font-weight: ${({theme}) => theme.FONT_WEIGHT_DEFAULT};
   justify-content: center;
   line-height: 1.4;
   text-align: center;

@@ -357,87 +357,87 @@ const NORMALIZE = css`
 
 const CSS_CUSTOM_PROPERTIES = css`
   :root {
-    --COLOR_BRAND_PRIMARY: ${props => props.theme.COLOR_BRAND_PRIMARY};
-    --COLOR_BRAND_SECONDARY: ${props => props.theme.COLOR_BRAND_SECONDARY};
+    --COLOR_BRAND_PRIMARY: ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
+    --COLOR_BRAND_SECONDARY: ${({ theme }) => theme.COLOR_BRAND_SECONDARY};
 
-    --COLOR_BACKGROUND_DEFAULT: ${props =>
-      props.theme.COLOR_BACKGROUND_DEFAULT};
-    --COLOR_BACKGROUND_TWO: ${props => props.theme.COLOR_BACKGROUND_TWO};
-    --COLOR_BACKGROUND_THREE: ${props => props.theme.COLOR_BACKGROUND_THREE};
+    --COLOR_BACKGROUND_DEFAULT: ${({ theme }) =>
+      theme.COLOR_BACKGROUND_DEFAULT};
+    --COLOR_BACKGROUND_TWO: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
+    --COLOR_BACKGROUND_THREE: ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
 
-    --COLOR_CONTENT_DEFAULT: ${props => props.theme.COLOR_CONTENT_DEFAULT};
-    --COLOR_CONTENT_CONTRAST: ${props => props.theme.COLOR_CONTENT_CONTRAST};
-    --COLOR_CONTENT_MUTED: ${props => props.theme.COLOR_CONTENT_MUTED};
-    --COLOR_CONTENT_NONESSENTIAL: ${props =>
-      props.theme.COLOR_CONTENT_NONESSENTIAL};
+    --COLOR_CONTENT_DEFAULT: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
+    --COLOR_CONTENT_CONTRAST: ${({ theme }) => theme.COLOR_CONTENT_CONTRAST};
+    --COLOR_CONTENT_MUTED: ${({ theme }) => theme.COLOR_CONTENT_MUTED};
+    --COLOR_CONTENT_NONESSENTIAL: ${({ theme }) =>
+      theme.COLOR_CONTENT_NONESSENTIAL};
 
-    --COLOR_INTENT_HIGHLIGHT: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
-    --COLOR_INTENT_SUCCESS: ${props => props.theme.COLOR_INTENT_SUCCESS};
-    --COLOR_INTENT_DANGER: ${props => props.theme.COLOR_INTENT_DANGER};
-    --COLOR_INTENT_WARNING: ${props => props.theme.COLOR_INTENT_WARNING};
-    --COLOR_INTENT_INFO: ${props => props.theme.COLOR_INTENT_INFO};
+    --COLOR_INTENT_HIGHLIGHT: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
+    --COLOR_INTENT_SUCCESS: ${({ theme }) => theme.COLOR_INTENT_SUCCESS};
+    --COLOR_INTENT_DANGER: ${({ theme }) => theme.COLOR_INTENT_DANGER};
+    --COLOR_INTENT_WARNING: ${({ theme }) => theme.COLOR_INTENT_WARNING};
+    --COLOR_INTENT_INFO: ${({ theme }) => theme.COLOR_INTENT_INFO};
 
-    --COLOR_KEYLINE_DEFAULT: ${props => props.theme.COLOR_KEYLINE_DEFAULT};
-    --COLOR_KEYLINE_SOLID: ${props => props.theme.COLOR_KEYLINE_SOLID};
+    --COLOR_KEYLINE_DEFAULT: ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
+    --COLOR_KEYLINE_SOLID: ${({ theme }) => theme.COLOR_KEYLINE_SOLID};
 
-    --OPACITY_FULL: ${props => props.theme.OPACITY_FULL};
-    --OPACITY_LIGHT: ${props => props.theme.OPACITY_LIGHT};
-    --OPACITY_LIGHTER: ${props => props.theme.OPACITY_LIGHTER};
-    --OPACITY_LIGHTEST: ${props => props.theme.OPACITY_LIGHTEST};
+    --OPACITY_FULL: ${({ theme }) => theme.OPACITY_FULL};
+    --OPACITY_LIGHT: ${({ theme }) => theme.OPACITY_LIGHT};
+    --OPACITY_LIGHTER: ${({ theme }) => theme.OPACITY_LIGHTER};
+    --OPACITY_LIGHTEST: ${({ theme }) => theme.OPACITY_LIGHTEST};
 
-    --SPACING_BASE: ${props => props.theme.SPACING_BASE};
+    --SPACING_BASE: ${({ theme }) => theme.SPACING_BASE};
 
-    --ZINDEX_ABYSS: ${props => props.theme.ZINDEX_ABYSS}
-    --ZINDEX_FLOOR: ${props => props.theme.ZINDEX_FLOOR}
-    --ZINDEX_DROPDOWN: ${props => props.theme.ZINDEX_DROPDWN};
-    --ZINDEX_STICKY: ${props => props.theme.ZINDEX_STICK};
-    --ZINDEX_FIXED: ${props => props.theme.ZINDEX_FIXED}
-    --ZINDEX_SCRIM: ${props => props.theme.ZINDEX_SCRIM}
-    --ZINDEX_MODAL: ${props => props.theme.ZINDEX_MODAL}
-    --ZINDEX_POPOVER: ${props => props.theme.ZINDEX_POPOVER}
-    --ZINDEX_TOOLTIP: ${props => props.theme.ZINDEX_TOOLTIP};
+    --ZINDEX_ABYSS: ${({ theme }) => theme.ZINDEX_ABYSS}
+    --ZINDEX_FLOOR: ${({ theme }) => theme.ZINDEX_FLOOR}
+    --ZINDEX_DROPDOWN: ${({ theme }) => theme.ZINDEX_DROPDWN};
+    --ZINDEX_STICKY: ${({ theme }) => theme.ZINDEX_STICK};
+    --ZINDEX_FIXED: ${({ theme }) => theme.ZINDEX_FIXED}
+    --ZINDEX_SCRIM: ${({ theme }) => theme.ZINDEX_SCRIM}
+    --ZINDEX_MODAL: ${({ theme }) => theme.ZINDEX_MODAL}
+    --ZINDEX_POPOVER: ${({ theme }) => theme.ZINDEX_POPOVER}
+    --ZINDEX_TOOLTIP: ${({ theme }) => theme.ZINDEX_TOOLTIP};
 
-    --CORNER_RADIUS_SHARP: ${props => props.theme.CORNER_RADIUS_SHARP};
-    --CORNER_RADIUS_INPUT: ${props => props.theme.CORNER_RADIUS_INPUT};
-    --CORNER_RADIUS_CARD_LG: ${props => props.theme.CORNER_RADIUS_CARD_LG};
-    --CORNER_RADIUS_CARD_DEFAULT: ${props =>
-      props.theme.CORNER_RADIUS_CARD_DEFAULT};
-    --CORNER_RADIUS_CARD_SM: ${props => props.theme.CORNER_RADIUS_CARD_SM};
-    --CORNER_RADIUS_MAX: ${props => props.theme.CORNER_RADIUS_MAX};
+    --CORNER_RADIUS_SHARP: ${({ theme }) => theme.CORNER_RADIUS_SHARP};
+    --CORNER_RADIUS_INPUT: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
+    --CORNER_RADIUS_CARD_LG: ${({ theme }) => theme.CORNER_RADIUS_CARD_LG};
+    --CORNER_RADIUS_CARD_DEFAULT: ${({ theme }) =>
+      theme.CORNER_RADIUS_CARD_DEFAULT};
+    --CORNER_RADIUS_CARD_SM: ${({ theme }) => theme.CORNER_RADIUS_CARD_SM};
+    --CORNER_RADIUS_MAX: ${({ theme }) => theme.CORNER_RADIUS_MAX};
 
-    --FONT_SIZE_PAGE_TITLE: ${props => props.theme.FONT_SIZE_PAGE_TITLE};
+    --FONT_SIZE_PAGE_TITLE: ${({ theme }) => theme.FONT_SIZE_PAGE_TITLE};
 
-    --FONT_SIZE_HEADING_LG: ${props => props.theme.FONT_SIZE_HEADING_LG};
-    --FONT_SIZE_HEADING_DEFAULT: ${props =>
-      props.theme.FONT_SIZE_HEADING_DEFAULT};
-    --FONT_SIZE_HEADING_SM: ${props => props.theme.FONT_SIZE_HEADING_SM};
+    --FONT_SIZE_HEADING_LG: ${({ theme }) => theme.FONT_SIZE_HEADING_LG};
+    --FONT_SIZE_HEADING_DEFAULT: ${({ theme }) =>
+      theme.FONT_SIZE_HEADING_DEFAULT};
+    --FONT_SIZE_HEADING_SM: ${({ theme }) => theme.FONT_SIZE_HEADING_SM};
 
-    --FONT_SIZE_SUBHEADING_LG: ${props => props.theme.FONT_SIZE_SUBHEADING_LG};
-    --FONT_SIZE_SUBHEADING_DEFAULT: ${props =>
-      props.theme.FONT_SIZE_SUBHEADING_DEFAULT};
-    --FONT_SIZE_SUBHEADING_SM: ${props => props.theme.FONT_SIZE_SUBHEADING_SM};
+    --FONT_SIZE_SUBHEADING_LG: ${({ theme }) => theme.FONT_SIZE_SUBHEADING_LG};
+    --FONT_SIZE_SUBHEADING_DEFAULT: ${({ theme }) =>
+      theme.FONT_SIZE_SUBHEADING_DEFAULT};
+    --FONT_SIZE_SUBHEADING_SM: ${({ theme }) => theme.FONT_SIZE_SUBHEADING_SM};
 
-    --FONT_SIZE_ITEM_TITLE_LG: ${props => props.theme.FONT_SIZE_ITEM_TITLE_LG};
-    --FONT_SIZE_ITEM_TITLE_DEFAULT: ${props =>
-      props.theme.FONT_SIZE_ITEM_TITLE_DEFAULT};
-    --FONT_SIZE_ITEM_TITLE_SM: ${props => props.theme.FONT_SIZE_ITEM_TITLE_SM};
+    --FONT_SIZE_ITEM_TITLE_LG: ${({ theme }) => theme.FONT_SIZE_ITEM_TITLE_LG};
+    --FONT_SIZE_ITEM_TITLE_DEFAULT: ${({ theme }) =>
+      theme.FONT_SIZE_ITEM_TITLE_DEFAULT};
+    --FONT_SIZE_ITEM_TITLE_SM: ${({ theme }) => theme.FONT_SIZE_ITEM_TITLE_SM};
 
-    --FONT_SIZE_TEXT_XL: ${props => props.theme.FONT_SIZE_TEXT_XL};
-    --FONT_SIZE_TEXT_LG: ${props => props.theme.FONT_SIZE_TEXT_LG};
-    --FONT_SIZE_TEXT_DEFAULT: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
-    --FONT_SIZE_TEXT_SM: ${props => props.theme.FONT_SIZE_TEXT_SM};
-    --FONT_SIZE_TEXT_XS: ${props => props.theme.FONT_SIZE_TEXT_XS};
+    --FONT_SIZE_TEXT_XL: ${({ theme }) => theme.FONT_SIZE_TEXT_XL};
+    --FONT_SIZE_TEXT_LG: ${({ theme }) => theme.FONT_SIZE_TEXT_LG};
+    --FONT_SIZE_TEXT_DEFAULT: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
+    --FONT_SIZE_TEXT_SM: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
+    --FONT_SIZE_TEXT_XS: ${({ theme }) => theme.FONT_SIZE_TEXT_XS};
 
-    --LINE_HEIGHT_LOOSE: ${props => props.theme.LINE_HEIGHT_LOOSE};
-    --LINE_HEIGHT_DEFAULT: ${props => props.theme.LINE_HEIGHT_DEFAULT};
-    --LINE_HEIGHT_TIGHT: ${props => props.theme.LINE_HEIGHT_TIGHT};
+    --LINE_HEIGHT_LOOSE: ${({ theme }) => theme.LINE_HEIGHT_LOOSE};
+    --LINE_HEIGHT_DEFAULT: ${({ theme }) => theme.LINE_HEIGHT_DEFAULT};
+    --LINE_HEIGHT_TIGHT: ${({ theme }) => theme.LINE_HEIGHT_TIGHT};
 
-    --FONT_WEIGHT_DEFAULT: ${props => props.theme.FONT_WEIGHT_DEFAULT};
-    --FONT_WEIGHT_MEDIUM: ${props => props.theme.FONT_WEIGHT_MEDIUM};
-    --FONT_WEIGHT_SEMIBOLD: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
-    --FONT_WEIGHT_BOLD: ${props => props.theme.FONT_WEIGHT_BOLD};
+    --FONT_WEIGHT_DEFAULT: ${({ theme }) => theme.FONT_WEIGHT_DEFAULT};
+    --FONT_WEIGHT_MEDIUM: ${({ theme }) => theme.FONT_WEIGHT_MEDIUM};
+    --FONT_WEIGHT_SEMIBOLD: ${({ theme }) => theme.FONT_WEIGHT_SEMIBOLD};
+    --FONT_WEIGHT_BOLD: ${({ theme }) => theme.FONT_WEIGHT_BOLD};
 
-    --LETTER_SPACING_DEFAULT: ${props => props.theme.LETTER_SPACING_DEFAULT};
+    --LETTER_SPACING_DEFAULT: ${({ theme }) => theme.LETTER_SPACING_DEFAULT};
   }
 `;
 
@@ -448,16 +448,16 @@ const GlobalStyles = createGlobalStyle`
   ${CSS_CUSTOM_PROPERTIES};
 
   html {
-    font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-    font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
-    letter-spacing: ${props => props.theme.LETTER_SPACING_DEFAULT};
-    line-height: ${props => props.theme.LINE_HEIGHT_DEFAULT};
-    font-weight: ${props => props.theme.FONT_WEIGHT_DEFAULT};
-    color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+    font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
+    font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
+    letter-spacing: ${({ theme }) => theme.LETTER_SPACING_DEFAULT};
+    line-height: ${({ theme }) => theme.LINE_HEIGHT_DEFAULT};
+    font-weight: ${({ theme }) => theme.FONT_WEIGHT_DEFAULT};
+    color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
   }
 
   a {
-    color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+    color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
   }
 
   *,
@@ -468,7 +468,7 @@ const GlobalStyles = createGlobalStyle`
 
   b,
   strong {
-    font-weight: ${props => props.theme.FONT_WEIGHT_BOLD};
+    font-weight: ${({ theme }) => theme.FONT_WEIGHT_BOLD};
   }
 `;
 

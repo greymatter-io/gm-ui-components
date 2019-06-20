@@ -10,16 +10,16 @@ export const InputTextField = styled.input`
   ${formInteractionStyles};
   min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
   border-radius: calc(
-    ${props => props.theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
+    ${({theme}) => theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
   );
-  border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
+  border: ${BORDER_WIDTH}px solid ${({theme}) => theme.COLOR_KEYLINE_DEFAULT};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
   appearance: none;
   margin: 0;
-  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
-  background: ${props => props.theme.COLOR_BACKGROUND_TWO};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_DEFAULT};
+  background: ${({theme}) => theme.COLOR_BACKGROUND_TWO};
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.15s ease;
@@ -34,7 +34,7 @@ export const InputTextField = styled.input`
   }
 
   &::placeholder {
-    color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
+    color: ${({theme}) => theme.COLOR_CONTENT_NONESSENTIAL};
     transition: inherit;
   }
 `;

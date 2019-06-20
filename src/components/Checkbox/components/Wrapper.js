@@ -4,9 +4,9 @@ import { keen } from "style/theme";
 
 const Wrapper = styled.label`
   ${props => getPosition(props.labelPosition)};
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
-  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
+  font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
+  color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
   display: flex;
   width: fit-content;
   align-items: center;

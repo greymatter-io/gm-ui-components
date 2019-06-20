@@ -12,14 +12,14 @@ const TextareaField = styled.textarea`
   max-width: 100%;
   min-width: 8em;
   border-radius: calc(
-    ${props => props.theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
+    ${({theme}) => theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
   );
-  border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
+  border: ${BORDER_WIDTH}px solid ${({theme}) => theme.COLOR_KEYLINE_DEFAULT};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
-  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
-  background: ${props => props.theme.COLOR_BACKGROUND_TWO};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_DEFAULT};
+  background: ${({theme}) => theme.COLOR_BACKGROUND_TWO};
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.15s ease;
@@ -27,7 +27,7 @@ const TextareaField = styled.textarea`
   flex: 1 1 auto;
 
   &::placeholder {
-    color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
+    color: ${({theme}) => theme.COLOR_CONTENT_NONESSENTIAL};
     transition: inherit;
   }
 `;

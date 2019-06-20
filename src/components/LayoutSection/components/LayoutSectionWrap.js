@@ -4,8 +4,8 @@ import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const LayoutSectionWrap = styled.section`
-  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
   align-items: stretch;
   display: flex;
   flex: 0 0 auto;
