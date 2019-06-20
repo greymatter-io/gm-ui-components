@@ -3,16 +3,13 @@ import { shallow } from "enzyme";
 import Icon from "./Icon";
 
 let iconProps = {
-  ariaLabelledby: "IconBell",
-  backgroundColor: "red",
-  backgroundOpacity: 1,
-  backgroundStyle: "BackgroundSquare",
+  ariaLabelledby: "IconCog",
   borderColor: "white",
   borderOpacity: 1,
   borderWidth: 1,
-  glyphColor: "white",
-  glyphName: "IconBell",
-  title: "IconBell",
+  fillColor: "white",
+  glyphName: "IconCog",
+  title: "IconCog",
   size: "24px"
 };
 describe("Icon", () => {
@@ -32,58 +29,29 @@ describe("Icon", () => {
 
   test("renders children", () => {
     expect(tree.find("StyledSVG")).toHaveLength(1);
-    expect(tree.find("IconBackground")).toHaveLength(1);
     expect(tree.find("g")).toHaveLength(1);
     expect(tree.find("title")).toHaveLength(1);
   });
 
   test("passes the correct props to StyledSVG", () => {
     expect(tree.find("StyledSVG").props()).toMatchObject({
-      glyphSizeRatio: 1,
-      id: "IconBell",
-      size: "24px"
-    });
-  });
-
-  test("passes the correct props to IconBackground", () => {
-    expect(tree.find("IconBackground").props()).toMatchObject({
-      name: "BackgroundSquare",
-      backgroundColor: "red",
-      backgroundOpacity: 1,
-      borderColor: "white",
-      borderOpacity: 1,
-      borderWidth: 1
+      id: "IconCog"
     });
   });
 
   test("renders a title element with the correct title", () => {
-    expect(tree.find("title").text()).toBe("IconBell");
+    expect(tree.find("title").text()).toBe("IconCog");
   });
 
-  test("renders a g element with the correct fill and title", () => {
+  test("renders a g element with the correct class and title", () => {
     expect(tree.find("g").props()).toMatchObject({
-      title: "IconBell",
-      fill: "white"
+      title: "IconCog",
+      className: "glyph"
     });
   });
 
   test("renders children", () => {
     expect(tree.find("path")).toBeTruthy();
-  });
-
-  test("throws an error if backgroundStyle is not recognized", () => {
-    const original = console.error;
-    console.error = jest.fn();
-    iconProps.backgroundStyle = "someRandomString";
-    tree = shallow(<Icon {...iconProps} />);
-    expect(console.error).toBeCalled();
-    console.error = original; // reset console.error for other test suites
-  });
-
-  test("does not render IconBackground if backgroundStyle is not provided", () => {
-    delete iconProps.backgroundStyle;
-    tree = shallow(<Icon {...iconProps} />);
-    expect(tree.find("IconBackground")).toHaveLength(0);
   });
 
   test("passes any additional props to StyledSVG", () => {

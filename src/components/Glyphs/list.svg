@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icons/list</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/list" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16,20.5 L48,20.5 L16,20.5 Z M16,32.5 L48,32.5 L16,32.5 Z M16,43.5 L48,43.5 L16,43.5 Z" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

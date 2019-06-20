@@ -1,253 +1,181 @@
 import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
-import { select, number, color, text } from "@storybook/addon-knobs";
+import { number, color, text, boolean, object } from "@storybook/addon-knobs";
 
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
 import { spacingScale } from "style/styleFunctions";
 
 const glyphNames = [
+  "IconActivity",
+  "IconAlertTriangle",
   "IconArrowDown",
-  "IconArrowDownSmall",
+  "IconArrowDownLeft",
+  "IconArrowDownRight",
+  "IconArrowEndDown",
+  "IconArrowEndLeft",
+  "IconArrowEndRight",
+  "IconArrowEndUp",
   "IconArrowLeft",
-  "IconArrowLeftSmall",
   "IconArrowRight",
-  "IconArrowRightSmall",
+  "IconArrowStartDown",
+  "IconArrowStartLeft",
+  "IconArrowStartRight",
+  "IconArrowStartUp",
   "IconArrowUp",
-  "IconArrowUpSmall",
-  "IconBars",
+  "IconArrowUpLeft",
+  "IconArrowUpRight",
   "IconBell",
-  "IconBullet",
+  "IconBookmark",
+  "IconBoolean",
   "IconCalendar",
-  "IconCard",
-  "IconCheck",
+  "IconCheckboxChecked",
+  "IconCheckboxIndeterminate",
+  "IconCheckboxNegative",
+  "IconCheckboxUnchecked",
+  "IconCheckcircleChecked",
+  "IconCheckcircleUnchecked",
   "IconChecklist",
+  "IconCheckmark",
   "IconChevronDown",
   "IconChevronDownDouble",
-  "IconChevronDownSmall",
   "IconChevronLeft",
   "IconChevronLeftDouble",
-  "IconChevronLeftSmall",
   "IconChevronRight",
   "IconChevronRightDouble",
-  "IconChevronRightSmall",
   "IconChevronUp",
   "IconChevronUpDouble",
-  "IconChevronUpSmall",
-  "IconChild",
-  "IconCircleThick",
-  "IconCircleThin",
-  "IconClassConfidential",
-  "IconClassSecret",
-  "IconClassTopSecret",
-  "IconClassUnclassified",
-  "IconClose",
+  "IconCircle",
+  "IconNegation",
+  "IconLinkedIn",
+  "IconTwitter",
   "IconCloud",
   "IconCog",
-  "IconCollapse",
-  "IconCommentAdd",
+  "IconComment",
   "IconConfiguration",
+  "IconCopyToWorkspace",
   "IconCPU",
   "IconCycle",
-  "IconDashboards",
-  "IconDrive",
-  "IconEditGraph",
-  "IconEKG",
-  "IconEKGMagnifier",
-  "IconEllipsisHorizontal",
-  "IconEllipsisVertical",
-  "IconEntity",
-  "IconErrorList",
-  "IconExclamation",
-  "IconExplorer",
-  "IconEye",
-  "IconFabric",
-  "IconFile",
-  "IconFileAudio",
-  "IconFileDocument",
-  "IconFileDocumentWhite",
-  "IconFileDownload",
-  "IconFileFind",
-  "IconFileGhost",
-  "IconFilePhoto",
-  "IconFilePresentation",
-  "IconFiles",
-  "IconFilesFind",
-  "IconFileSharedWithMe",
-  "IconFileSharedWithOthers",
-  "IconFileSpreadsheet",
-  "IconFilesSharedWithMe",
-  "IconFilesSharedWithOthers",
-  "IconFileStar",
-  "IconFileText",
-  "IconFileVideo",
-  "IconFinagle",
-  "IconFolder",
-  "IconFolderAdd",
-  "IconFolderGroup",
-  "IconFolderShared",
+  "IconDashboard",
+  "IconThreads",
+  "IconDocument",
+  "IconDownload",
+  "IconDuplicate",
   "IconFunctions",
+  "IconEdit",
+  "IconEkg",
   "IconGitHub",
-  "IconGlobe",
-  "IconGRPC",
+  "IconEkgNo",
+  "IconEntity",
+  "IconExpand",
+  "IconEye",
+  "IconEyeNo",
+  "IconFile",
+  "IconFilter",
+  "IconFolder",
+  "IconGrid",
+  "IconGroup",
+  "IconHellip",
   "IconHTTP",
-  "IconHTTP2",
-  "IconIdle",
+  "IconInbox",
   "IconInfo",
   "IconIngressEgress",
-  "IconInstances",
-  "IconItemsFilter",
-  "IconItemsGrid",
-  "IconItemsGroup",
-  "IconItemsRows",
-  "IconItemsSort",
+  "IconJson",
   "IconKey",
   "IconLatency",
-  "IconLinkedIn",
-  "IconLinkOut",
   "IconList",
   "IconLock",
   "IconMagnifier",
-  "IconMediaPause",
-  "IconMediaPlay",
-  "IconMediaStepBackward",
-  "IconMediaStepForward",
+  "IconMagnifierPlus",
+  "IconMail",
   "IconMemory",
   "IconMinus",
-  "IconMinusSmall",
-  "IconMinusXSmall",
-  "IconNegation",
-  "IconNLP",
-  "IconNoEye",
-  "IconNoKey",
-  "IconNoLock",
-  "IconNoMetrics",
-  "IconObjectAdd",
-  "IconObjectAudio",
-  "IconObjectBase",
-  "IconObjectDocument",
-  "IconObjectDownload",
-  "IconObjectDuplicate",
-  "IconObjectExpand",
-  "IconObjectGhost",
-  "IconObjectMail",
-  "IconObjectMove",
-  "IconObjectPhoto",
-  "IconObjectPlay",
-  "IconObjectPresentation",
-  "IconObjectSpreadsheet",
-  "IconObjectStar",
-  "IconObjectsUpload",
-  "IconObjectText",
-  "IconObjectUpload",
-  "IconObjectVideo",
-  "IconObservation",
+  "IconMove",
+  "IconMoveWorkspace",
+  "IconNewFolder",
+  "IconNewOrganization",
+  "IconNews",
+  "IconNewWindow",
+  "IconNewWorkspace",
   "IconOnOff",
-  "IconParent",
-  "IconPencil",
-  "IconPencilGraph",
-  "IconPencilParagraph",
+  "IconOrganization",
+  "IconPause",
   "IconPerson",
+  "IconPin",
+  "IconPlaceholder",
+  "IconPlay",
   "IconPlus",
-  "IconPlusSmall",
-  "IconPlusXSmall",
-  "IconPoll",
-  "IconPower",
-  "IconRows",
-  "IconScale",
-  "IconScatterplot",
-  "IconService",
-  "IconServiceInstance",
-  "IconServices",
-  "IconShapes",
-  "IconSquareThick",
-  "IconSquareThin",
-  "IconStack",
+  "IconProject",
+  "IconProjectB",
+  "IconRename",
+  "IconReorder",
+  "IconSharedFolder",
+  "IconShareToPeople",
+  "IconSlideshow",
+  "IconSortDescending",
+  "IconSpreadsheet",
+  "IconSquare",
   "IconStar",
-  "IconStatePaused",
-  "IconStateRunning",
-  "IconStateRunningSmall",
-  "IconStateStopped",
-  "IconStateWarning",
+  "IconStatusChecked",
+  "IconStepBackward",
+  "IconStepForward",
   "IconSummary",
-  "IconTape",
-  "IconThreads",
-  "IconTimer",
+  "IconTextCursor",
   "IconTrash",
-  "IconTriangleThick",
-  "IconTriangleThin",
-  "IconTwitter",
+  "IconTrashX",
+  "IconTriangleDown",
+  "IconTriangleLeft",
+  "IconTriangleRight",
+  "IconTriangleUp",
   "IconUnlock",
-  "IconUpload",
-  "IconUserGroup",
-  "IconUserRound",
-  "IconUserShare",
-  "IconViewCollapse",
-  "IconX",
-  "IconXSmall"
-];
-
-const iconBackgroundNames = [
-  "BackgroundCircleSmall",
-  "BackgroundSquare",
-  "BackgroundSquareBeveled",
-  "BackgroundSquareRounded",
-  "BackgroundSquareRoundedSmooth",
-  "BackgroundSquareSmall",
-  "BackgroundTriangle",
-  "BackgroundTriangleSmall"
+  "IconVellip",
+  "IconVersions",
+  "IconWorkspace",
+  "IconX"
 ];
 
 const GalleryIconList = styled.ul`
+  box-sizing: border-box;
+  width: 90vw;
   margin: 0;
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
-  border-width: 0 1px 1px 0;
+  font-family: ${({ theme }) => theme.FONT_STACK_BASE};
+  font-size: ${props => props.fontSize};
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+  grid-gap: ${spacingScale(2)};
 `;
 
 const GalleryIconDemo = styled.li`
-  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
-  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
-  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_SOLID};
-  border-width: 1px 0 0 1px;
-  flex: 1 0 20%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  padding: ${spacingScale(2)};
+  flex-direction: row;
 `;
 
 const GalleryIconLabel = styled.p`
-  margin: ${spacingScale(1)};
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
-  color: ${props => props.theme.COLOR_CONTENT_MUTED};
+  opacity: ${({ theme }) => theme.OPACITY_70};
 `;
 
 const stories = storiesOf("Components|Icons", module);
 
 stories
   .add(
-    "Icon",
+    "Default",
     () => {
-      const IconBell = Glyphs.IconBell;
+      const IconCog = Glyphs.IconCog;
       return (
-        <IconBell
-          backgroundStyle={select(
-            "backgroundStyle",
-            iconBackgroundNames,
-            "BackgroundSquareRounded"
-          )}
-          backgroundColor={color("backgroundColor", "#000")}
-          backgroundOpacity={number("backgroundOpacity", 1)}
-          borderColor={color("borderColor", "currentColor")}
-          borderOpacity={number("borderOpacity", 0.5)}
-          borderWidth={number("borderWidth", 1)}
-          glyphColor={color("glyphColor", "#fff")}
-          size={text("size", "100px")}
+        <IconCog
+          borderColor={color("borderColor")}
+          borderWidth={number("borderWidth")}
+          fillColor={color("fillColor")}
+          fillOpacity={number("fillOpacity")}
+          size={text("size")}
+          title={text("title")}
+          hasBadge={boolean("hasBadge")}
+          badgeColor={color("badgeColor")}
+          badgePosition={object("badgePosition", undefined)}
         />
       );
     },
@@ -259,23 +187,22 @@ stories
     }
   )
   .add(
-    "Icon with Custom Glyph",
+    "Custom Glyphs",
     () => {
       return (
         <Icon
-          backgroundStyle={select(
-            "backgroundStyle",
-            iconBackgroundNames,
-            "BackgroundSquareRounded"
-          )}
-          backgroundColor={color("backgroundColor", "#eee")}
-          glyphColor={color("glyphColor", "#444")}
-          backgroundOpacity={number("backgroundOpacity", 1)}
-          size={text("size", "100px")}
-          title="Custom Glyph"
+          title={text("title", undefined)}
+          size={text("size", undefined)}
+          borderColor={color("borderColor", undefined)}
+          borderWidth={number("borderWidth", undefined)}
+          fillColor={color("fillColor", undefined)}
+          fillOpacity={number("fillOpacity", undefined)}
+          hasBadge={boolean("hasBadge", undefined)}
+          badgeColor={color("badgeColor", undefined)}
+          badgePosition={object("badgePosition", undefined)}
         >
-          <svg className="svg-icon" viewBox="0 0 20 20">
-            <path d="M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z" />
+          <svg className="svg-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="7.4" />
           </svg>
         </Icon>
       );
@@ -289,12 +216,22 @@ stories
   )
   .add("Glyph Gallery", () => {
     return (
-      <GalleryIconList>
+      <GalleryIconList fontSize={text("Context font size", "inherit")}>
         {glyphNames.map(glyph => {
           let Glyph = Glyphs[glyph];
           return (
             <GalleryIconDemo key={glyph}>
-              <Glyph size="40px" />
+              <Glyph
+                title={glyph}
+                size={text("size", undefined)}
+                fillColor={color("fillColor", undefined)}
+                fillOpacity={number("fillOpacity", undefined)}
+                borderColor={color("borderColor", undefined)}
+                borderWidth={text("borderWidth", undefined)}
+                hasBadge={boolean("hasBadge", undefined)}
+                badgeColor={color("badgeColor")}
+                badgePosition={object("badgePosition", undefined)}
+              />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>
           );

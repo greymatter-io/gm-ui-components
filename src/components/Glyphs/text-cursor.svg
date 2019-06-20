@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/text-cursor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/text-cursor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32,18 L32,46 M24,16 L29.763932,16 C30.5214761,16 31.2140024,16.4280048 31.5527864,17.1055728 L32,18 L32.4472136,17.1055728 C32.7859976,16.4280048 33.4785239,16 34.236068,16 L40,16 M40,48 L34.236068,48 C33.4785239,48 32.7859976,47.5719952 32.4472136,46.8944272 L32,46 L31.5527864,46.8944272 C31.2140024,47.5719952 30.5214761,48 29.763932,48 L24,48" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

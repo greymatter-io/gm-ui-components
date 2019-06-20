@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/versions</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/versions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4" opacity="0.149972098" transform="translate(21.500000, 17.000000)" fill-rule="nonzero">
+            <path d="M2.5,0 L19.5,0 C20.6045695,-2.02906125e-16 21.5,0.8954305 21.5,2 L21.5,4 L0.5,4 L0.5,2 C0.5,0.8954305 1.3954305,2.02906125e-16 2.5,0 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF"></path>
+            <path d="M0.5,4 L0.5,2 C0.5,0.8954305 1.3954305,2.02906125e-16 2.5,0 L19.5,0 C20.6045695,-2.02906125e-16 21.5,0.8954305 21.5,2 L21.5,4" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+        <g id="3" opacity="0.495326451" transform="translate(19.666667, 21.000000)" fill-rule="nonzero">
+            <path d="M2.33333333,0 L23.3333333,0 C24.4379028,-2.02906125e-16 25.3333333,0.8954305 25.3333333,2 L25.3333333,4 L0.333333333,4 L0.333333333,2 C0.333333333,0.8954305 1.22876383,2.02906125e-16 2.33333333,0 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF"></path>
+            <path d="M0.333333333,4 L0.333333333,2 C0.333333333,0.8954305 1.22876383,2.02906125e-16 2.33333333,0 L23.3333333,0 C24.4379028,-2.02906125e-16 25.3333333,0.8954305 25.3333333,2 L25.3333333,4" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+        <g id="2" opacity="0.700706845" transform="translate(17.833333, 25.000000)" fill-rule="nonzero">
+            <path d="M2.16666667,0 L26.1666667,0 C27.2712362,-2.02906125e-16 28.1666667,0.8954305 28.1666667,2 L28.1666667,4 L0.166666667,4 L0.166666667,2 C0.166666667,0.8954305 1.06209717,2.02906125e-16 2.16666667,0 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF"></path>
+            <path d="M0.166666667,4 L0.166666667,2 C0.166666667,0.8954305 1.06209717,2.02906125e-16 2.16666667,0 L26.1666667,0 C27.2712362,-2.02906125e-16 28.1666667,0.8954305 28.1666667,2 L28.1666667,4" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+        <g id="1" transform="translate(16.000000, 29.000000)" fill-rule="nonzero">
+            <path d="M2,0 L30,0 C31.1045695,-2.02906125e-16 32,0.8954305 32,2 L32,17 C32,18.1045695 31.1045695,19 30,19 L2,19 C0.8954305,19 1.3527075e-16,18.1045695 0,17 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF"></path>
+            <path d="M2,0 L30,0 C31.1045695,-2.02906125e-16 32,0.8954305 32,2 L32,17 C32,18.1045695 31.1045695,19 30,19 L2,19 C0.8954305,19 1.3527075e-16,18.1045695 0,17 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

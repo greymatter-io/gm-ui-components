@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/project-b</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/project-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M46,52 L18,52 C16.8954305,52 16,51.1045695 16,50 L16,14 C16,12.8954305 16.8954305,12 18,12 L46,12 C47.1045695,12 48,12.8954305 48,14 L48,50 C48,51.1045695 47.1045695,52 46,52 Z M24,36 L24,45 L40,45 L40,36 L24,36 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M32,20 L42,20 L32,20 Z M32,28 L42,28 L32,28 Z M22,19.6 L24.25,22 L28,18 M22,27.6 L24.25,30 L28,26 M46,52 L18,52 C16.8954305,52 16,51.1045695 16,50 L16,14 C16,12.8954305 16.8954305,12 18,12 L46,12 C47.1045695,12 48,12.8954305 48,14 L48,50 C48,51.1045695 47.1045695,52 46,52 Z M24,36 L40,36 L40,44 L24,44 L24,36 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

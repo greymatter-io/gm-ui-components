@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/bookmark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/bookmark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M22,12 L42,12 C43.1045695,12 44,12.8954305 44,14 L44,38.763932 C44,39.5214761 43.5719952,40.2140024 42.8944272,40.5527864 L22.8944272,50.5527864 C21.9064702,51.0467649 20.7051241,50.6463162 20.2111456,49.6583592 C20.0722902,49.3806483 20,49.0744222 20,48.763932 L20,14 C20,12.8954305 20.8954305,12 22,12 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M22,12 L42,12 C43.1045695,12 44,12.8954305 44,14 L44,38.763932 C44,39.5214761 43.5719952,40.2140024 42.8944272,40.5527864 L22.8944272,50.5527864 C21.9064702,51.0467649 20.7051241,50.6463162 20.2111456,49.6583592 C20.0722902,49.3806483 20,49.0744222 20,48.763932 L20,14 C20,12.8954305 20.8954305,12 22,12 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>
