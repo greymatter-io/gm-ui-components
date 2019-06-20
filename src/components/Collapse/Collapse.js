@@ -47,7 +47,7 @@ export default function Collapse({
         <Title>{title}</Title>
         <Detail>{detail}</Detail>
       </Header>
-      <Body collapsed={collapsed} innerRef={contentRef} bodyHeight={bodyHeight}>
+      <Body collapsed={collapsed} ref={contentRef} bodyHeight={bodyHeight}>
         {children}
       </Body>
     </Wrapper>
