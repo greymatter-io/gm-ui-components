@@ -49,7 +49,7 @@ function Button({
 Button.propTypes = {
   active: PropTypes.bool, // If the button should be style as active or not
   children: PropTypes.node,
-  clickAction: PropTypes.function.isRequired, // click handler
+  clickAction: PropTypes.func.isRequired, // click handler
   dangerouslySetColor: PropTypes.string, // set baseColor irrespective of type-appropriate color
   disabled: PropTypes.bool, // disables the button
   label: PropTypes.string, // label for the button
