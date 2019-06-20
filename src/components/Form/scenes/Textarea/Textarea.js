@@ -50,3 +50,5 @@ Textarea.propTypes = {
 Textarea.defaultProps = {
   labelPosition: "top"
 };
+
+Textarea.displayName = "Textarea";

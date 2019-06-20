@@ -65,3 +65,5 @@ InputField.defaultProps = {
   readonly: false,
   type: "text"
 };
+
+InputField.displayName = "InputField";

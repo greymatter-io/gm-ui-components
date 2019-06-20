@@ -41,3 +41,5 @@ InputRange.defaultProps = {
   autoFocus: false,
   labelPosition: "right"
 };
+
+InputRange.displayName = "InputRange";
