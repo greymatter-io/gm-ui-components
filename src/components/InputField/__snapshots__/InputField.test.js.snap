@@ -2,6 +2,7 @@
 
 exports[`InputField matches snapshot 1`] = `
 <InputWrap
+  labelPosition="top"
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
@@ -142,7 +143,9 @@ exports[`InputField matches snapshot 1`] = `
     Test
   </InputLabelText>
   <InputTextField
+    autoFocus={false}
     clickAction={[Function]}
+    disabled={false}
     readonly={true}
     theme={
       Object {

@@ -96,7 +96,7 @@ exports[`Radio should render 1`] = `
     }
   }
   forwardedRef={null}
-  labelPosition="left"
+  labelPosition="right"
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
@@ -237,6 +237,7 @@ exports[`Radio should render 1`] = `
     label
   </InputLabelText>
   <RadioBox
+    defaultChecked={false}
     theme={
       Object {
         "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
