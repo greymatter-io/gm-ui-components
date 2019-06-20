@@ -1,3 +1,18 @@
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.8.1...v0.9.0) (2019-06-20)
+
+
+### Bug Fixes
+
+* update webpack svg loader ([#447](https://github.com/DecipherNow/gm-ui-components/issues/447)) ([c03ceb3](https://github.com/DecipherNow/gm-ui-components/commit/c03ceb3))
+
+
+### Features
+
+* collapse ([#498](https://github.com/DecipherNow/gm-ui-components/issues/498)) ([0327f6c](https://github.com/DecipherNow/gm-ui-components/commit/0327f6c))
+
+
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://github.com/DecipherNow/gm-ui-components/compare/v0.8.0...v0.8.1) (2019-05-10)
 
