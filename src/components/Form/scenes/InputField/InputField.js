@@ -47,7 +47,15 @@ InputField.propTypes = {
   maxLength: PropTypes.number,
   placeholder: PropTypes.string,
   readonly: PropTypes.bool,
-  type: PropTypes.string.isRequired
+  type: PropTypes.oneOf([
+    "email",
+    "password",
+    "search",
+    "tel",
+    "text",
+    "url",
+    "number"
+  ]).isRequired
 };
 
 InputField.defaultProps = {
@@ -59,5 +67,6 @@ InputField.defaultProps = {
   labelPosition: "top",
   maxLength: undefined,
   placeholder: undefined,
-  readonly: false
+  readonly: false,
+  type: "text"
 };
