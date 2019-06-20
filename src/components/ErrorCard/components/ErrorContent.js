@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { keen } from "style/theme";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/theme";
 
 const ErrorContent = styled.div`
   align-items: center;

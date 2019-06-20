@@ -2,6 +2,7 @@
 
 exports[`InputRange matches snapshot 1`] = `
 <InputWrap
+  labelPosition="right"
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
@@ -142,6 +143,7 @@ exports[`InputRange matches snapshot 1`] = `
     Test
   </InputLabelText>
   <InputRangeControl
+    autoFocus={false}
     clickAction={[Function]}
     theme={
       Object {

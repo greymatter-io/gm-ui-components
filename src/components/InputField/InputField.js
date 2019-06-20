@@ -6,19 +6,6 @@ import InputWrap from "components/util/InputWrap";
 import InputHint from "components/util/InputHint";
 import InputTextField from "components/util/InputTextField";
 
-InputField.propTypes = {
-  autoFocus: PropTypes.bool,
-  defaultValue: PropTypes.string,
-  disabled: PropTypes.bool,
-  hint: PropTypes.string,
-  label: PropTypes.string,
-  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
-  maxLength: PropTypes.number,
-  placeholder: PropTypes.string,
-  readonly: PropTypes.bool,
-  type: PropTypes.string.isRequired
-};
-
 export default function InputField({
   autoFocus,
   defaultValue,
@@ -49,3 +36,34 @@ export default function InputField({
     </InputWrap>
   );
 }
+
+InputField.propTypes = {
+  autoFocus: PropTypes.bool,
+  defaultValue: PropTypes.string,
+  disabled: PropTypes.bool,
+  hint: PropTypes.string,
+  label: PropTypes.string,
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  maxLength: PropTypes.number,
+  placeholder: PropTypes.string,
+  readonly: PropTypes.bool,
+  type: PropTypes.oneOf([
+    "email",
+    "password",
+    "search",
+    "tel",
+    "text",
+    "url",
+    "number"
+  ]).isRequired
+};
+
+InputField.defaultProps = {
+  autoFocus: false,
+  disabled: false,
+  labelPosition: "top",
+  readonly: false,
+  type: "text"
+};
+
+InputField.displayName = "InputField";

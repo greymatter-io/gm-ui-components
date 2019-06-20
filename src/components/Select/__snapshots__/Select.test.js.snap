@@ -96,6 +96,7 @@ exports[`Select should render 1`] = `
     }
   }
   forwardedRef={null}
+  labelPosition="top"
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",

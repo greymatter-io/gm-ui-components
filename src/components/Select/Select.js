@@ -44,6 +44,10 @@ Select.propTypes = {
   value: PropTypes.string
 };
 
+Select.defaultProps = {
+  labelPosition: "top"
+};
+
 Select.displayName = "Select";
 
 export default Select;

@@ -5,6 +5,9 @@ exports[`StyledSVG matches snapshot 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
+      "_foldedDefaultProps": Object {
+        "size": "1.714em",
+      },
       "attrs": Array [
         Object {
           "preserveAspectRatio": "xMaxYMax meet",
@@ -39,5 +42,6 @@ exports[`StyledSVG matches snapshot 1`] = `
     }
   }
   forwardedRef={null}
+  size="1.714em"
 />
 `;

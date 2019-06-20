@@ -68,15 +68,15 @@ function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   );
 }
 
-export default Breadcrumbs;
-
-Breadcrumbs.defaultProps = {
-  crumbs: [],
-  theme: keen,
-  hideDelimiter: false
-};
-
 Breadcrumbs.propTypes = {
   crumbs: PropTypes.array,
   hideDelimiter: PropTypes.bool
 };
+
+Breadcrumbs.defaultProps = {
+  crumbs: [],
+  hideDelimiter: false,
+  theme: keen
+};
+
+export default Breadcrumbs;

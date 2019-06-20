@@ -36,6 +36,11 @@ Radio.propTypes = {
   value: PropTypes.string
 };
 
+Radio.defaultProps = {
+  defaultChecked: false,
+  labelPosition: "right"
+};
+
 Radio.displayName = "Radio";
 
 export default Radio;

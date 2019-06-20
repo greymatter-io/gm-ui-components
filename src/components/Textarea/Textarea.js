@@ -6,18 +6,6 @@ import InputWrap from "components/util/InputWrap";
 import InputHint from "components/util/InputHint";
 import TextareaField from "components/util/TextareaField";
 
-Textarea.propTypes = {
-  autoFocus: PropTypes.bool,
-  defaultValue: PropTypes.string,
-  disabled: PropTypes.bool,
-  hint: PropTypes.string,
-  label: PropTypes.string,
-  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
-  maxLength: PropTypes.number,
-  placeholder: PropTypes.string,
-  readonly: PropTypes.bool
-};
-
 export default function Textarea({
   autoFocus,
   defaultValue,
@@ -46,3 +34,21 @@ export default function Textarea({
     </InputWrap>
   );
 }
+
+Textarea.propTypes = {
+  autoFocus: PropTypes.bool,
+  defaultValue: PropTypes.string,
+  disabled: PropTypes.bool,
+  hint: PropTypes.string,
+  label: PropTypes.string,
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  maxLength: PropTypes.number,
+  placeholder: PropTypes.string,
+  readonly: PropTypes.bool
+};
+
+Textarea.defaultProps = {
+  labelPosition: "top"
+};
+
+Textarea.displayName = "Textarea";

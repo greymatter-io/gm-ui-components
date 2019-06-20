@@ -38,6 +38,13 @@ Checkbox.propTypes = {
   value: PropTypes.string
 };
 
+Checkbox.defaultProps = {
+  defaultChecked: false,
+  disabled: false,
+  labelPosition: "right",
+  readonly: false
+};
+
 Checkbox.displayName = "Checkbox";
 
 export default Checkbox;

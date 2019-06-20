@@ -51,13 +51,13 @@ const ReadoutDisplay = styled.div`
   `};
 `;
 
-ReadoutDisplay.defaultProps = {
-  theme: keen
-};
-
 ReadoutDisplay.propTypes = {
   color: PropTypes.string,
   primary: PropTypes.bool
+};
+
+ReadoutDisplay.defaultProps = {
+  theme: keen
 };
 
 export default ReadoutDisplay;

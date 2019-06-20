@@ -148,7 +148,7 @@ exports[`ErrorCard matches snapshot 1`] = `
       />
     </Span>
     <Span>
-      Error
+      Something went wrong.
     </Span>
   </ErrorContent>
 </ErrorBox>

@@ -1,40 +1,15 @@
 import { PropTypes } from "prop-types";
+import { node } from "../util/PropTypes";
 import React from "react";
 
 import ButtonWrap from "./components/ButtonWrap";
-
-Button.propTypes = {
-  active: PropTypes.bool, // If the button should be style as active or not
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  clickAction: PropTypes.any.isRequired, // click handler
-  dangerouslySetColor: PropTypes.string, // set baseColor irrespective of type-appropriate color
-  disabled: PropTypes.bool, // disables the button
-  label: PropTypes.string, // label for the button
-  labelStyle: PropTypes.object,
-  orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
-  outline: PropTypes.bool,
-  size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]), // Relative size of the button
-  style: PropTypes.object, // style prop
-  tabIndex: PropTypes.number,
-  type: PropTypes.oneOf(["default", "danger", "info", "primary", "warning"])
-};
-
-Button.defaultProps = {
-  active: false,
-  clickAction: () => {},
-  label: "",
-  disabled: false,
-  size: "normal",
-  type: "default",
-  orientation: "horizontal"
-};
 
 /**
  * General purpose button
  * @param {Object} props - see propTypes
  * @returns JSX.Element
  */
-export default function Button({
+function Button({
   active,
   children,
   clickAction,
@@ -71,4 +46,32 @@ export default function Button({
   );
 }
 
+Button.propTypes = {
+  active: PropTypes.bool, // If the button should be style as active or not
+  children: PropTypes.node,
+  clickAction: PropTypes.func.isRequired, // click handler
+  dangerouslySetColor: PropTypes.string, // set baseColor irrespective of type-appropriate color
+  disabled: PropTypes.bool, // disables the button
+  label: PropTypes.string, // label for the button
+  labelStyle: PropTypes.object,
+  orientation: PropTypes.oneOf(["vertical", "horizontal"]), // Vertical: Icon top, label bottom; Horizontal: Icon left, label right;
+  outline: PropTypes.bool,
+  size: PropTypes.oneOf(["normal", "xs", "sm", "lg", "xl"]), // Relative size of the button
+  style: PropTypes.object, // style prop
+  tabIndex: PropTypes.number,
+  type: PropTypes.oneOf(["default", "danger", "info", "primary", "warning"])
+};
+
+Button.defaultProps = {
+  active: false,
+  clickAction: () => {},
+  disabled: false,
+  orientation: "horizontal",
+  outline: false,
+  size: "normal",
+  type: "default"
+};
+
 Button.displayName = "Button";
+
+export default Button;

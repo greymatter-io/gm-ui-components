@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 
 import ReadoutItem from "./ReadoutItem";
-import { IconSummary } from "../../../";
+import { IconSummary } from "../../..";
 
 describe("ReadoutItem", () => {
   it("matches snapshot", () => {

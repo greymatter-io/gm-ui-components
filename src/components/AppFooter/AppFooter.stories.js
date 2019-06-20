@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { boolean, text, object } from "@storybook/addon-knobs";
 import AppFooter from "./AppFooter";
-import { IconBell } from "../";
+import { IconBell } from "..";
 const stories = storiesOf("Components|App Footer", module);
 
 const FooterDemoArea = styled.div`

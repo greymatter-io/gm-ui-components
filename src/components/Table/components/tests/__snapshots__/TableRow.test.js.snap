@@ -2,6 +2,8 @@
 
 exports[`TableRow matches snapshot 1`] = `
 <TableRowElement
+  isRowSelected={false}
+  isSelected={false}
   onClick={[Function]}
   onContextMenu={[Function]}
   onKeyDown={[Function]}

@@ -7,6 +7,7 @@ exports[`Button Snapshots matches active snapshot 1`] = `
   disabled={false}
   label="Button"
   orientation="horizontal"
+  outline={false}
   size="normal"
   type="default"
 />
@@ -19,6 +20,7 @@ exports[`Button Snapshots matches disabled snapshot 1`] = `
   disabled={true}
   label="Button"
   orientation="horizontal"
+  outline={false}
   size="normal"
   type="default"
 />
