@@ -8,7 +8,6 @@ exports[`ButtonWrap should match snapshot 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "_foldedDefaultProps": Object {
         "active": false,
-        "dangerouslySetColor": undefined,
         "orientation": "horizontal",
         "outline": false,
         "size": "normal",
