@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/checklist</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/checklist" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24,20 L48,20 M24,32 L48,32 M24,44 L48,44 M16,34 C17.1045695,34 18,33.1045695 18,32 C18,30.8954305 17.1045695,30 16,30 C14.8954305,30 14,30.8954305 14,32 C14,33.1045695 14.8954305,34 16,34 Z M14,19.6 L16.25,22 L20,18 M14,43.6 L16.25,46 L20,42" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

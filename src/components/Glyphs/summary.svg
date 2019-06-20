@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icons/summary</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/summary" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32,13 L32,24 L32,13 Z M32,40.5 L32,51.5 L32,40.5 Z M48.8874954,22.75 L40,28 L48.8874954,22.75 Z M24,37.5 L15.5455173,42 L24,37.5 Z M48.8874954,42.25 L40,37.5 L48.8874954,42.25 Z M24,28 L15.5455173,23 L24,28 Z" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

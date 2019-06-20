@@ -2,6 +2,7 @@
 
 exports[`Textarea matches snapshot 1`] = `
 <InputWrap
+  labelPosition="top"
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",

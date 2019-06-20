@@ -3,6 +3,7 @@
 exports[`LoadingSpinner matches snapshot 1`] = `
 <SpinnerSVG
   height="100"
+  orientation="vertical"
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",

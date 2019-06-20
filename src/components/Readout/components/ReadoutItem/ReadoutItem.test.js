@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 
 import ReadoutItem from "./ReadoutItem";
-import { IconSummary } from "../../../";
+import { IconAlertTriangle } from "../../../";
 
 describe("ReadoutItem", () => {
   it("matches snapshot", () => {
@@ -17,12 +17,12 @@ describe("ReadoutItem", () => {
         title={"Readout"}
         value="100"
         detail="Readout Detail"
-        icon={() => <IconSummary size={"24px"} />}
+        icon={() => <IconAlertTriangle />}
       />
     );
-    expect(aReadoutItem.find(IconSummary)).toHaveLength(1);
+    expect(aReadoutItem.find(IconAlertTriangle)).toHaveLength(1);
     aReadoutItem = shallow(<ReadoutItem />);
-    expect(aReadoutItem.find(IconSummary)).toHaveLength(0);
+    expect(aReadoutItem.find(IconAlertTriangle)).toHaveLength(0);
     expect(aReadoutItem.html().includes("-")).toBe(true);
   });
   it("renders a title if provided, and a - if not", () => {

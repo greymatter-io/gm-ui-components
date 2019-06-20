@@ -59,3 +59,5 @@ Table.propTypes = {
   selectedRows: PropTypes.arrayOf(PropTypes.number), // An array of indices of the currently selected rows
   sortDataIndex: PropTypes.string // The dataIndex of the column that is currently being sorted
 };
+
+Table.displayName = "Table";

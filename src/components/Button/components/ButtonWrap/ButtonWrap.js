@@ -91,7 +91,12 @@ ButtonWrap.propTypes = {
 };
 
 ButtonWrap.defaultProps = {
-  theme: keen
+  theme: keen,
+  active: false,
+  orientation: "horizontal",
+  outline: false,
+  size: "normal",
+  type: "default"
 };
 
 export default ButtonWrap;

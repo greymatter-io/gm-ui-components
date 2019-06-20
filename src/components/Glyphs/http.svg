@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/http</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/http" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22,28 C20.8954305,28 20,27.1045695 20,26 C20,24.8954305 20.8954305,24 22,24 C23.1045695,24 24,24.8954305 24,26 C24,27.1045695 23.1045695,28 22,28 Z M22,40 C20.8954305,40 20,39.1045695 20,38 C20,36.8954305 20.8954305,36 22,36 C23.1045695,36 24,36.8954305 24,38 C24,39.1045695 23.1045695,40 22,40 Z M28,48 L36,16 L28,48 Z M36,48 L44,16 L36,48 Z" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

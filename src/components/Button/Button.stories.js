@@ -23,12 +23,12 @@ stories
         active={boolean("active")}
         label={text("label", "Hello World")}
         dangerouslySetColor={color("dangerouslySetColor")}
-        type={select("type", types)}
-        disabled={boolean("disabled")}
+        type={select("type", types, "default")}
+        disabled={boolean("disabled", false)}
         clickAction={() => alert("clicked")}
         orientation={select("orientation", orientations, "horizontal")}
-        outline={boolean("outline")}
-        size={select("size", sizes, "default")}
+        outline={boolean("outline", false)}
+        size={select("size", sizes, "normal")}
         tabIndex={number("tabIndex")}
       />
     ),

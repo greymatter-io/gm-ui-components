@@ -2,10 +2,15 @@
 
 exports[`ButtonWrap should match snapshot 1`] = `
 <StyledComponent
+  active={false}
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
       "_foldedDefaultProps": Object {
+        "active": false,
+        "orientation": "horizontal",
+        "outline": false,
+        "size": "normal",
         "theme": Object {
           "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
           "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
@@ -71,6 +76,7 @@ exports[`ButtonWrap should match snapshot 1`] = `
           "ZINDEX_TOOLTIP": "1070",
           "name": "Keen",
         },
+        "type": "default",
       },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
@@ -109,6 +115,9 @@ exports[`ButtonWrap should match snapshot 1`] = `
     }
   }
   forwardedRef={null}
+  orientation="horizontal"
+  outline={false}
+  size="normal"
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
@@ -176,5 +185,6 @@ exports[`ButtonWrap should match snapshot 1`] = `
       "name": "Keen",
     }
   }
+  type="default"
 />
 `;
