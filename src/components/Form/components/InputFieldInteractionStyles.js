@@ -12,9 +12,9 @@ export function formInteractionStyles() {
       &:required {
         background-color: ${props =>
           mix(
-            props.theme.OPACITY_15,
+            props.theme.OPACITY_LIGHTEST,
             props.theme.COLOR_INTENT_DANGER,
-            props.theme.COLOR_BACKGROUND_A
+            props.theme.COLOR_BACKGROUND_DEFAULT
           )};
       }
     }
@@ -23,16 +23,16 @@ export function formInteractionStyles() {
     }
 
     &:disabled {
-      background-color: ${props => props.theme.COLOR_BACKGROUND_B};
+      background-color: ${props => props.theme.COLOR_BACKGROUND_TWO};
     }
 
     &:valid {
       &:required {
         background-color: ${props =>
           mix(
-            props.theme.OPACITY_15,
+            props.theme.OPACITY_LIGHTEST,
             props.theme.COLOR_INTENT_SUCCESS,
-            props.theme.COLOR_BACKGROUND_A
+            props.theme.COLOR_BACKGROUND_DEFAULT
           )};
 
         &[type="checkbox"],
@@ -64,7 +64,7 @@ export function formInteractionStyles() {
       border: ${css`1px solid ${props => props.theme.COLOR_INTENT_HIGHLIGHT}`};
       box-shadow: ${css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${props =>
         transparentize(
-          1 - props.theme.OPACITY_50,
+          1 - props.theme.OPACITY_LIGHTER,
           props.theme.COLOR_INTENT_HIGHLIGHT
         )}`};
     }

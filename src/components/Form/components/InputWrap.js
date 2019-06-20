@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`
   ${props => getPosition(props.labelPosition)};
-  color: ${props => props.theme.COLOR_CONTENT};
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
   display: flex;
   position: relative;
 
@@ -23,7 +23,7 @@ InputWrap.defaultProps = {
 function getPosition(position) {
   switch (position) {
     case "left":
-      return `
+      return css`
         flex-direction: row;
         > input,
         > textarea,
@@ -32,7 +32,7 @@ function getPosition(position) {
         }
       `;
     case "right":
-      return `
+      return css`
         flex-direction: row-reverse;
         > input,
         > textarea,
@@ -41,7 +41,7 @@ function getPosition(position) {
         }
       `;
     case "bottom":
-      return `
+      return css`
         flex-direction: column-reverse;
         > input,
         > textarea,
@@ -51,7 +51,7 @@ function getPosition(position) {
       `;
     default:
     case "top":
-      return `
+      return css`
         flex-direction: column;
         > input,
         > textarea,

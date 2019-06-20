@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { FONT_STACK_BASE, FONT_SIZE_BASE } from "style/theme";
+import { FONT_STACK_DEFAULT, FONT_SIZE_TEXT_DEFAULT } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const Wrap = styled.label`
   ${props => getPosition(props.labelPosition)};
-  font-family: ${FONT_STACK_BASE};
-  font-size: ${FONT_SIZE_BASE};
+  font-family: ${FONT_STACK_DEFAULT};
+  font-size: ${FONT_SIZE_TEXT_DEFAULT};
   display: flex;
   width: fit-content;
   align-items: center;

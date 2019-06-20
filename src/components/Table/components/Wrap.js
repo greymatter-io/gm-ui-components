@@ -4,8 +4,8 @@ import { keen } from "style/theme";
 const Wrap = styled.table`
   width: 100%;
   height: 100%;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  font-size: ${props => props.theme.FONT_SIZE_SM};
+  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
   white-space: nowrap;
   table-layout: fixed;
   border-collapse: separate;

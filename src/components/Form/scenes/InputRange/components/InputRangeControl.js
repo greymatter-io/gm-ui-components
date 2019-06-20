@@ -19,7 +19,7 @@ const ACTIVE_SHADOW = ({ theme }) =>
 const FOCUS_SHADOW = ({ theme }) =>
   css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${props =>
     transparentize(
-      1 - props.theme.OPACITY_50,
+      1 - props.theme.OPACITY_LIGHTER,
       theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT
     )}`;
 const PLACEHOLDER_SHADOW = "0 0 0 transparent";
@@ -33,11 +33,12 @@ selectors later */
 const THUMB_STYLE = css`
   background-color: ${props =>
     mix(
-      props.theme.OPACITY_50,
-      props.theme.COLOR_BACKGROUND_A,
-      props.theme.COLOR_CONTENT
+      props.theme.OPACITY_LIGHTER,
+      props.theme.COLOR_BACKGROUND_DEFAULT,
+      props.theme.COLOR_CONTENT_DEFAULT
     )};
-  box-shadow: 0 0 0 ${BORDER_WIDTH}px ${props => props.theme.COLOR_BACKGROUND_A},
+  box-shadow: 0 0 0 ${BORDER_WIDTH}px
+      ${props => props.theme.COLOR_BACKGROUND_DEFAULT},
     ${PLACEHOLDER_SHADOW};
   flex: 0 0 ${THUMB_SIZE};
   width: ${THUMB_SIZE};
@@ -52,7 +53,7 @@ const THUMB_STYLE = css`
 /* Style the plain track */
 const TRACK_STYLE = css`
   height: ${TRACK_HEIGHT};
-  background-color: ${props => props.theme.COLOR_KEYLINE};
+  background-color: ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   border-radius: 100px;
   transition: all 0.15s ease;
   display: flex;
@@ -68,8 +69,8 @@ const FIELD_HOVERED_THUMB_STYLE = ({ theme }) => css`
     /* Style the thumb when the field is hovered and the thumb is hovered */
     background-color: ${props =>
       mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_A,
+        props.theme.OPACITY_LIGHTEST,
+        props.theme.COLOR_BACKGROUND_DEFAULT,
         theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT
       )};
   }
@@ -97,7 +98,7 @@ const InputRangeControl = styled.input.attrs({
 })`
   background: transparent;
   ${formInteractionStyles};
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
   padding: calc(${THUMB_SIZE} / 2) 0;
   user-select: auto;
   flex: 1 1 auto;

@@ -28,12 +28,16 @@ const DemoCols = styled.div`
 
 const DemoCanvas = styled.div`
   padding: 1rem;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  color: ${props => props.theme.COLOR_CONTENT};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
 `;
 
 const StyledFieldset = styled(Fieldset)`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_B};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_TWO};
+`;
+
+const StyledFieldset2 = styled(Fieldset)`
+  background-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
 `;
 
 const Space = styled.span`
@@ -44,7 +48,7 @@ const Space = styled.span`
 
 const DocumentationLink = styled.h2`
   text-align: center;
-  border-bottom: 1px solid ${props => props.theme.COLOR_KEYLINE};
+  border-bottom: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
   padding-bottom: ${spacingScale(2)};
   margin-bottom: ${spacingScale(2)};
 
@@ -103,25 +107,41 @@ function DemoContent({ themeName }) {
         </ButtonGroup>
       </StyledFieldset>
       <Space />
+      <StyledFieldset2>
+        <ButtonGroup>
+          <Button label={"Plain Button"} />
+          <Space />
+          <Button type={"primary"} label={"Primary Button"} />
+        </ButtonGroup>
+      </StyledFieldset2>
+      <Space />
     </DemoCanvas>
   );
 }
 
-stories.add("Themes", () => (
-  <>
-    <DocumentationLink>
-      <a href="https://github.com/DecipherNow/gm-ui-components#theming">
-        Theming the Component Library
-        <IconChevronRight />
-      </a>
-    </DocumentationLink>
-    <DemoCols>
-      <ThemeProvider theme={keen}>
-        <DemoContent themeName="keen" />
-      </ThemeProvider>
-      <ThemeProvider theme={keenDark}>
-        <DemoContent themeName="keenDark" />
-      </ThemeProvider>
-    </DemoCols>
-  </>
-));
+stories.add(
+  "Themes",
+  () => (
+    <>
+      <DocumentationLink>
+        <a href="https://github.com/DecipherNow/gm-ui-components#theming">
+          Theming the Component Library
+          <IconChevronRight />
+        </a>
+      </DocumentationLink>
+      <DemoCols>
+        <ThemeProvider theme={keen}>
+          <DemoContent themeName="keen" />
+        </ThemeProvider>
+        <ThemeProvider theme={keenDark}>
+          <DemoContent themeName="keenDark" />
+        </ThemeProvider>
+      </DemoCols>
+    </>
+  ),
+  {
+    info: {
+      source: false
+    }
+  }
+);
