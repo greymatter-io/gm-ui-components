@@ -28,16 +28,16 @@ const DemoCols = styled.div`
 
 const DemoCanvas = styled.div`
   padding: 1rem;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
-  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+  background-color: ${({theme}) => theme.COLOR_BACKGROUND_DEFAULT};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
 `;
 
 const StyledFieldset = styled(Fieldset)`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_TWO};
+  background-color: ${({theme}) => theme.COLOR_BACKGROUND_TWO};
 `;
 
 const StyledFieldset2 = styled(Fieldset)`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
+  background-color: ${({theme}) => theme.COLOR_BACKGROUND_THREE};
 `;
 
 const Space = styled.span`
@@ -48,7 +48,7 @@ const Space = styled.span`
 
 const DocumentationLink = styled.h2`
   text-align: center;
-  border-bottom: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
+  border-bottom: 1px solid ${({theme}) => theme.COLOR_KEYLINE_DEFAULT};
   padding-bottom: ${spacingScale(2)};
   margin-bottom: ${spacingScale(2)};
 

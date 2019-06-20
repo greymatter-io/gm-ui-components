@@ -10,11 +10,11 @@ export function formInteractionStyles() {
       box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
 
       &:required {
-        background-color: ${props =>
+        background-color: ${({ theme }) =>
           mix(
-            props.theme.OPACITY_LIGHTEST,
-            props.theme.COLOR_INTENT_DANGER,
-            props.theme.COLOR_BACKGROUND_DEFAULT
+            theme.OPACITY_LIGHTEST,
+            theme.COLOR_INTENT_DANGER,
+            theme.COLOR_BACKGROUND_DEFAULT
           )};
       }
     }
@@ -23,22 +23,22 @@ export function formInteractionStyles() {
     }
 
     &:disabled {
-      background-color: ${props => props.theme.COLOR_BACKGROUND_TWO};
+      background-color: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
     }
 
     &:valid {
       &:required {
-        background-color: ${props =>
+        background-color: ${({ theme }) =>
           mix(
-            props.theme.OPACITY_LIGHTEST,
-            props.theme.COLOR_INTENT_SUCCESS,
-            props.theme.COLOR_BACKGROUND_DEFAULT
+            theme.OPACITY_LIGHTEST,
+            theme.COLOR_INTENT_SUCCESS,
+            theme.COLOR_BACKGROUND_DEFAULT
           )};
 
         &[type="checkbox"],
         &[type="radio"] {
           &:after {
-            border-color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+            border-color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
           }
         }
       }
@@ -61,11 +61,11 @@ export function formInteractionStyles() {
     &:focus,
     &:focus:active {
       outline: none;
-      border: ${css`1px solid ${props => props.theme.COLOR_INTENT_HIGHLIGHT}`};
-      box-shadow: ${css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${props =>
+      border: ${css`1px solid ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT}`};
+      box-shadow: ${css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${({ theme }) =>
         transparentize(
-          1 - props.theme.OPACITY_LIGHTER,
-          props.theme.COLOR_INTENT_HIGHLIGHT
+          1 - theme.OPACITY_LIGHTER,
+          theme.COLOR_INTENT_HIGHLIGHT
         )}`};
     }
 

@@ -5,14 +5,14 @@ import { keen } from "style/theme";
 
 import InputBox from "components/util/InputBox";
 
-const CheckmarkColor = props =>
-  readableColor(darken(0.1, props.theme.COLOR_INTENT_HIGHLIGHT));
+const CheckmarkColor = ({ theme }) =>
+  readableColor(darken(0.1, theme.COLOR_INTENT_HIGHLIGHT));
 
 const CheckboxBox = styled(InputBox).attrs({
   type: "checkbox"
 })`
-  border-radius: ${props =>
-    parseInt(props.theme.CORNER_RADIUS_INPUT, 10) / 2 + 1}px;
+  border-radius: ${({ theme }) =>
+    parseInt(theme.CORNER_RADIUS_INPUT, 10) / 2 + 1}px;
 
   &:after {
     width: 45%;
@@ -32,7 +32,7 @@ const CheckboxBox = styled(InputBox).attrs({
 
   &:indeterminate {
     &:enabled {
-      background: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+      background: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
     }
 
     &:after {
@@ -45,34 +45,28 @@ const CheckboxBox = styled(InputBox).attrs({
   }
 
   *:hover > & {
-    background: ${props =>
-      transparentize(
-        1 - props.theme.OPACITY_LIGHTEST,
-        props.theme.COLOR_INTENT_HIGHLIGHT
-      )};
+    background: ${({ theme }) =>
+      transparentize(1 - theme.OPACITY_LIGHTEST, theme.COLOR_INTENT_HIGHLIGHT)};
 
     &:checked {
-      background: ${props =>
-        transparentize(
-          1 - props.theme.OPACITY_LIGHT,
-          props.theme.COLOR_INTENT_HIGHLIGHT
-        )};
+      background: ${({ theme }) =>
+        transparentize(1 - theme.OPACITY_LIGHT, theme.COLOR_INTENT_HIGHLIGHT)};
       border-color: transparent;
     }
 
     *:active > & {
-      background: ${props =>
+      background: ${({ theme }) =>
         transparentize(
-          1 - props.theme.OPACITY_LIGHTER,
-          props.theme.COLOR_INTENT_HIGHLIGHT
+          1 - theme.OPACITY_LIGHTER,
+          theme.COLOR_INTENT_HIGHLIGHT
         )};
 
       &:checked,
       &:indeterminate {
-        background: ${props =>
+        background: ${({ theme }) =>
           transparentize(
-            1 - props.theme.OPACITY_LIGHTER,
-            props.theme.COLOR_INTENT_HIGHLIGHT
+            1 - theme.OPACITY_LIGHTER,
+            theme.COLOR_INTENT_HIGHLIGHT
           )};
         border-color: transparent;
       }

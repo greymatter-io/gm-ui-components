@@ -5,8 +5,8 @@ import { keen } from "style/theme";
 
 import InputBox from "components/util/InputBox";
 
-const CheckmarkColor = props =>
-  readableColor(darken(0.1, props.theme.COLOR_INTENT_HIGHLIGHT));
+const CheckmarkColor = ({ theme }) =>
+  readableColor(darken(0.1, theme.COLOR_INTENT_HIGHLIGHT));
 
 const RadioBox = styled(InputBox).attrs({
   type: "radio"
@@ -25,7 +25,7 @@ const RadioBox = styled(InputBox).attrs({
 
   &:checked {
     &:enabled {
-      background: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+      background: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
     }
 
     &:after {
@@ -37,33 +37,27 @@ const RadioBox = styled(InputBox).attrs({
   }
 
   *:hover > & {
-    background: ${props =>
-      transparentize(
-        1 - props.theme.OPACITY_LIGHTEST,
-        props.theme.COLOR_INTENT_HIGHLIGHT
-      )};
+    background: ${({ theme }) =>
+      transparentize(1 - theme.OPACITY_LIGHTEST, theme.COLOR_INTENT_HIGHLIGHT)};
 
     &:checked {
-      background: ${props =>
-        transparentize(
-          1 - props.theme.OPACITY_LIGHT,
-          props.theme.COLOR_INTENT_HIGHLIGHT
-        )};
+      background: ${({ theme }) =>
+        transparentize(1 - theme.OPACITY_LIGHT, theme.COLOR_INTENT_HIGHLIGHT)};
       border-color: transparent;
     }
 
     *:active > & {
-      background: ${props =>
+      background: ${({ theme }) =>
         transparentize(
-          1 - props.theme.OPACITY_LIGHTER,
-          props.theme.COLOR_INTENT_HIGHLIGHT
+          1 - theme.OPACITY_LIGHTER,
+          theme.COLOR_INTENT_HIGHLIGHT
         )};
 
       &:checked {
-        background: ${props =>
+        background: ${({ theme }) =>
           transparentize(
-            1 - props.theme.OPACITY_LIGHTER,
-            props.theme.COLOR_INTENT_HIGHLIGHT
+            1 - theme.OPACITY_LIGHTER,
+            theme.COLOR_INTENT_HIGHLIGHT
           )};
         border-color: transparent;
       }

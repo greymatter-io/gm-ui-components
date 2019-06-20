@@ -11,23 +11,20 @@ import { keen } from "style/theme";
 const BORDER_WIDTH = 1;
 
 const ACTIVE_SHADOW = ({ theme }) =>
-  css`inset 0 0 0 1px ${props =>
-    theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT}`;
+  css`inset 0 0 0 1px ${theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT}`;
 
 const FOCUS_SHADOW = ({ theme }) =>
-  css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${props =>
-    transparentize(
-      1 - props.theme.OPACITY_LIGHTER,
-      theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT
-    )}`;
+  css`0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
+    1 - theme.OPACITY_LIGHTER,
+    theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT
+  )}`;
 
 const InputBox = styled.input`
   ${formInteractionStyles};
   border: ${({ theme }) =>
-    css`${BORDER_WIDTH}px solid ${props =>
-      theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT}`};
-  color: ${props => ({ theme }) =>
-    theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT};
+    css`${BORDER_WIDTH}px solid ${theme.brandColor ||
+      theme.COLOR_INTENT_HIGHLIGHT}`};
+  color: ${({ theme }) => theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT};
   font-size: ${spacingScale(2)};
   margin: ${spacingScale(0.25)};
   appearance: none;
@@ -63,8 +60,8 @@ const InputBox = styled.input`
   }
 
   &:checked {
-    background: ${props => ({ theme }) =>
-      theme.brandColor || props.theme.COLOR_INTENT_HIGHLIGHT};
+    background: ${({ theme }) =>
+      theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT};
 
     &:after {
       opacity: 1;
@@ -72,12 +69,12 @@ const InputBox = styled.input`
   }
 
   &:disabled {
-    border-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
-    opacity: ${props => props.theme.OPACITY_LIGHTER};
+    border-color: ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
+    opacity: ${({ theme }) => theme.OPACITY_LIGHTER};
     box-shadow: none;
 
     &:checked {
-      background-color: ${props => props.theme.COLOR_BACKGROUND_THREE};
+      background-color: ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
     }
   }
 `;

@@ -6,12 +6,12 @@ const Footer = styled.footer`
   user-select: none;
   overflow: hidden;
   padding: 0 ${spacingScale(0.5)};
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
   display: flex;
   flex-flow: row wrap;
-  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
-  background: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
+  background: ${({theme}) => theme.COLOR_BACKGROUND_DEFAULT};
+  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_DEFAULT};
   height: auto;
   min-height: ${spacingScale(4)};
   align-items: stretch;

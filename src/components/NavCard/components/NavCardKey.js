@@ -4,7 +4,7 @@ import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const NavCardKey = styled.dt`
-  color: ${props => props.theme.COLOR_CONTENT_MUTED};
+  color: ${({theme}) => theme.COLOR_CONTENT_MUTED};
   padding-right: ${spacingScale(1)};
   display: inline-block;
 `;

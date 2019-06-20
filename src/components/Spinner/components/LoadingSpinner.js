@@ -10,7 +10,7 @@ import { keen } from "style/theme";
 export const SpinnerSVG = styled.svg`
   animation: ${spinGradient} 16s ease infinite;
   margin: ${spacingScale(1)};
-  color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+  color: ${({theme}) => theme.COLOR_INTENT_HIGHLIGHT};
   overflow: visible;
   ${props =>
     props.orientation === "vertical" ? verticalStyles : horizontalStyles};

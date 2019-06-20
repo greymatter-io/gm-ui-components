@@ -5,12 +5,12 @@ import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const color = css`
-  color: ${props =>
+  color: ${({ theme }) =>
     readableColor(
       mix(
-        props.theme.OPACITY_LIGHTEST,
-        props.theme.COLOR_BACKGROUND_TWO,
-        props.theme.COLOR_BACKGROUND_THREE
+        theme.OPACITY_LIGHTEST,
+        theme.COLOR_BACKGROUND_TWO,
+        theme.COLOR_BACKGROUND_THREE
       )
     )};
 `;
@@ -18,7 +18,7 @@ const color = css`
 const NavCardDetails = styled.dl`
   ${color};
   margin: 0 ${spacingScale(0.5)} ${spacingScale(0.25)} ${spacingScale(4.5)}; /* Odd number required to align with title */
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_SM};
+  font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
   line-height: 1.2;
 
   &:last-child {

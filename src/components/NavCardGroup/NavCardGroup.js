@@ -11,7 +11,7 @@ const NavCardGroupWrap = styled.nav`
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
   position: relative;
-  background: ${props => props.theme.COLOR_BACKGROUND_DEFAULT};
+  background: ${({theme}) => theme.COLOR_BACKGROUND_DEFAULT};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {
@@ -28,7 +28,7 @@ const NavCardGroupWrap = styled.nav`
     &.active,
     &.active:hover {
       div[class*="NavCardWrap"] {
-        ${props => props.theme.COLOR_BACKGROUND_THREE};
+        ${({theme}) => theme.COLOR_BACKGROUND_THREE};
       }
     }
   }

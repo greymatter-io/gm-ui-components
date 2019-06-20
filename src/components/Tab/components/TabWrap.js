@@ -4,23 +4,23 @@ import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const activeStyles = css`
-  box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
+  box-shadow: ${({theme}) => theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
 `;
 
 const hoverStyles = css`
-  box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -1px inset;
+  box-shadow: ${({theme}) => theme.COLOR_INTENT_HIGHLIGHT} 0px -1px inset;
 `;
 
 const downStyles = css`
-  box-shadow: ${props => props.theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
+  box-shadow: ${({theme}) => theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
 `;
 
 const TabWrap = styled.a.attrs({
   disabled: props => props.disabled
 })`
-  font-family: ${props => props.theme.FONT_STACK_DEFAULT};
-  font-size: ${props => props.theme.FONT_SIZE_TEXT_DEFAULT};
-  color: ${props => props.theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_DEFAULT};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
   padding-left: ${spacingScale(2)};
   padding-right: ${spacingScale(2)};
   flex: 0 0 auto;
@@ -55,7 +55,7 @@ const TabWrap = styled.a.attrs({
       &:hover,
       &:active {
         cursor: default;
-        color: ${props => props.theme.COLOR_CONTENT_NONESSENTIAL};
+        color: ${({theme}) => theme.COLOR_CONTENT_NONESSENTIAL};
         box-shadow: none;
       }
     `};

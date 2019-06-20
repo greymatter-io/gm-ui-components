@@ -9,7 +9,7 @@ const Copyright = styled.p`
   text-align: ${props => (props.useExternalLinks ? "center" : "right")};
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid ${props => props.theme.COLOR_KEYLINE_DEFAULT};
+  border-top: 1px solid ${({theme}) => theme.COLOR_KEYLINE_DEFAULT};
   margin-top: ${spacingScale(1)};
   padding: ${spacingScale(1)};
   text-transform: uppercase;

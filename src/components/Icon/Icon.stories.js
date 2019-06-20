@@ -140,7 +140,7 @@ const GalleryIconList = styled.ul`
   width: 90vw;
   margin: 0;
   padding: 0;
-  font-family: ${({ theme }) => theme.FONT_STACK_BASE};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   font-size: ${props => props.fontSize};
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
@@ -155,7 +155,7 @@ const GalleryIconDemo = styled.li`
 `;
 
 const GalleryIconLabel = styled.p`
-  opacity: ${({ theme }) => theme.OPACITY_70};
+  color: ${({ theme }) => theme.COLOR_CONTENT_MUTED};
 `;
 
 const stories = storiesOf("Components|Icons", module);
