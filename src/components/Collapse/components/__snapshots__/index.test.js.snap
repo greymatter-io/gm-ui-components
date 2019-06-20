@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapse components Body should match snapshot 1`] = `
+.c0 {
+  overflow: hidden;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Collapse components Detail should match snapshot 1`] = `
+.c0 {
+  font-size: 9px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Collapse components Header should match snapshot 1`] = `
+.c0 {
+  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 0;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Collapse components Opener should match snapshot 1`] = `
+.c0 {
+  margin-right: 6px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c0:focus,
+.c0:active,
+.c0:focus:active {
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(10,171,42,0.5);
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Collapse components Title should match snapshot 1`] = `
+.c0 {
+  margin-right: auto;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Collapse components Wrapper should match snapshot 1`] = `
+.c0 {
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+<section
+  className="c0"
+/>
+`;
