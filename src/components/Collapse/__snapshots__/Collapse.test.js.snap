@@ -316,11 +316,6 @@ exports[`Collapse matches snapshot 1`] = `
   <Body
     bodyHeight={0}
     collapsed={true}
-    innerRef={
-      Object {
-        "current": null,
-      }
-    }
   >
     <div>
       Collapse children
