@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { keen } from "style/theme";
+import { nodePropType } from "../util/PropTypes";
 
 import Copyright from "./components/Copyright";
 import Footer from "./components/Footer";
@@ -86,12 +87,6 @@ function AppFooter({
 
   return <Footer {...props}>{footerContent}</Footer>;
 }
-
-const nodePropType = PropTypes.oneOfType([
-  PropTypes.element,
-  PropTypes.node,
-  PropTypes.string
-]);
 
 AppFooter.propTypes = {
   children: nodePropType,
