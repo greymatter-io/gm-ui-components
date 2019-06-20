@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { keen } from "style/theme";
-import { nodePropType } from "../util/PropTypes";
+import { node } from "../util/PropTypes";
 
 import Copyright from "./components/Copyright";
 import Footer from "./components/Footer";
@@ -89,11 +89,11 @@ function AppFooter({
 }
 
 AppFooter.propTypes = {
-  children: nodePropType,
-  copyrightText: nodePropType,
-  footerCenter: nodePropType,
-  footerLeft: nodePropType,
-  footerRight: nodePropType,
+  children: node,
+  copyrightText: node,
+  footerCenter: node,
+  footerLeft: node,
+  footerRight: node,
   useExternalLinks: PropTypes.bool
 };
 

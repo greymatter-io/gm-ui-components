@@ -1,6 +1,6 @@
 import { PropTypes } from "prop-types";
 
-export const nodePropType = PropTypes.oneOfType([
+export const node = PropTypes.oneOfType([
   PropTypes.element,
   PropTypes.node,
   PropTypes.string

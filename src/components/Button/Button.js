@@ -1,4 +1,5 @@
 import { PropTypes } from "prop-types";
+import { node } from "../util/PropTypes";
 import React from "react";
 
 import ButtonWrap from "./components/ButtonWrap";
@@ -47,7 +48,7 @@ function Button({
 
 Button.propTypes = {
   active: PropTypes.bool, // If the button should be style as active or not
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  children: PropTypes.node,
   clickAction: PropTypes.any.isRequired, // click handler
   dangerouslySetColor: PropTypes.string, // set baseColor irrespective of type-appropriate color
   disabled: PropTypes.bool, // disables the button
