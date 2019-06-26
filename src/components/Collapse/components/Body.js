@@ -5,8 +5,8 @@ export const Body = styled.div`
   width: 100%;
   transition: all 0.5s ease;
 
-  ${({ collapsed }) =>
-    collapsed &&
+  ${({ isOpen }) =>
+    !isOpen &&
     css`
       height: 0px;
       visibility: hidden;

@@ -19,8 +19,8 @@ export const Opener = styled.div`
       `};
   }
 
-  ${({ collapsed }) =>
-    !collapsed &&
+  ${({ isOpen }) =>
+    isOpen &&
     css`
       transform: rotate(90deg);
     `}

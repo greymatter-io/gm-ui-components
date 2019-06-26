@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PropTypes } from "prop-types";
 
 import { IconArrowRight } from "components/Glyphs";
@@ -14,23 +14,45 @@ export default function Collapse({
   title,
   detail,
   children,
-  initiallyCollapsed,
+  initiallyOpen,
+  isOpen,
+  onClick,
   ...props
 }) {
-  const [collapsed, setCollapsed] = useState(initiallyCollapsed);
-  const [bodyHeight, setBodyHeight] = useState(0);
-  
-  const OpenerComponent = opener || <IconArrowRight />;
   const contentRef = React.createRef();
 
-  const toggleCollapse = () => {
+  // If isOpen is undefined, we assume that the component is uncontrolled and initiate internal state variables
+  let setIsOpen;
+  if (isOpen === undefined) {
+    [isOpen, setIsOpen] = useState(initiallyOpen);
+  }
+
+  let initialBodyHeight = isOpen ? "100%" : 0;
+  const [bodyHeight, setBodyHeight] = useState(initialBodyHeight);
+
+  const OpenerComponent = opener || <IconArrowRight />;
+
+  const getHeight = () => {
+    let contentNode = contentRef.current.children[0];
+    let height = contentNode ? contentNode.getBoundingClientRect().height : 0;
+    return height;
+  };
+
+  // The following effect only runs once on intial render in order to set the body height.
+  // Otherwise our transition won't work in the case where isOpen=true on initial render.
+  useEffect(() => {
+    if (isOpen) {
+      setBodyHeight(getHeight());
+    }
+  }, []);
+
+  const toggleCollapse = e => {
     let contentHeight = 0;
-    if (collapsed) {
-      let content = contentRef.current.children[0];
-      contentHeight = content ? content.getBoundingClientRect().height : 0;
+    if (!isOpen) {
+      contentHeight = getHeight();
     }
     setBodyHeight(contentHeight);
-    setCollapsed(!collapsed);
+    typeof onClick === "function" ? onClick(e) : setIsOpen(!isOpen);
   };
 
   return (
@@ -38,16 +60,16 @@ export default function Collapse({
       <Header
         onClick={toggleCollapse}
         onKeyDown={e =>
-          (e.keyCode === 13 || e.keyCode === 32) && toggleCollapse()
+          (e.keyCode === 13 || e.keyCode === 32) && toggleCollapse(e)
         }
       >
-        <Opener tabIndex={0} collapsed={collapsed}>
+        <Opener tabIndex={0} isOpen={isOpen}>
           {OpenerComponent}
         </Opener>
         <Title>{title}</Title>
         <Detail>{detail}</Detail>
       </Header>
-      <Body collapsed={collapsed} innerRef={contentRef} bodyHeight={bodyHeight}>
+      <Body isOpen={isOpen} innerRef={contentRef} bodyHeight={bodyHeight}>
         {children}
       </Body>
     </Wrapper>
@@ -55,7 +77,7 @@ export default function Collapse({
 }
 
 Collapse.defaultProps = {
-  initiallyCollapsed: true,
+  initiallyOpen: false,
   theme: keen
 };
 
@@ -66,7 +88,9 @@ Collapse.propTypes = {
     PropTypes.element,
     PropTypes.string
   ]),
-  initiallyCollapsed: PropTypes.bool,
+  initiallyOpen: PropTypes.bool,
+  isOpen: PropTypes.bool,
+  onClick: PropTypes.func,
   opener: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.element,

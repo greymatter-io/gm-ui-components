@@ -12,17 +12,55 @@ const style = {
   backgroundColor: "lightgrey"
 };
 
+class Controller extends React.Component {
+  state = {
+    isOpen: true
+  };
+  render() {
+    return (
+      <>
+        <Collapse
+          title="Collapse Title"
+          detail="Detail text"
+          isOpen={this.state.isOpen}
+          onClick={() => {
+            console.log("opened!");
+            this.setState({ isOpen: !this.state.isOpen });
+          }}
+        >
+          <div style={style}>Collapse content</div>
+        </Collapse>
+      </>
+    );
+  }
+}
+
 stories
   .add(
     "default",
     () => {
       return (
         <>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            initiallyOpen={true}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
         </>
       );
+    },
+    {
+      info: {
+        text: "Add component description here. Accepts markdown."
+      }
+    }
+  )
+  .add(
+    "controlled",
+    () => {
+      return <Controller />;
     },
     {
       info: {
