@@ -49,7 +49,7 @@ stories
     },
     {
       info: {
-        text: "Add component description here. Accepts markdown."
+        text: "A single collapse section that is uncontrolled."
       }
     }
   )
@@ -60,7 +60,8 @@ stories
     },
     {
       info: {
-        text: "Add component description here. Accepts markdown."
+        text:
+          "A single collapse section controlled using the isOpen and onClick props."
       }
     }
   )
@@ -83,7 +84,7 @@ stories
     },
     {
       info: {
-        text: "Add component description here. Accepts markdown."
+        text: "A collection of collapse sections."
       }
     }
   );
