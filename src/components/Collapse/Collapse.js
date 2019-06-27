@@ -15,61 +15,60 @@ export default function Collapse({
   detail,
   children,
   initiallyOpen,
-  isOpen,
+  isOpen: controlledIsOpen,
   onClick,
   ...props
 }) {
   const contentRef = React.createRef();
 
-  // If isOpen is undefined, we assume that the component is uncontrolled and initiate internal state variables
-  let setIsOpen;
-  if (isOpen === undefined) {
-    [isOpen, setIsOpen] = useState(initiallyOpen);
-  }
+  let [isOpen, setIsOpen] = useState(initiallyOpen);
 
-  let initialBodyHeight = isOpen ? "100%" : 0;
+  // Use either the controlledIsOpen prop from the consumer if provided, or the internal isOpen state.
+  const isOpenController =
+    controlledIsOpen !== undefined ? controlledIsOpen : isOpen;
+
+  let initialBodyHeight = isOpenController ? "100%" : 0;
   const [bodyHeight, setBodyHeight] = useState(initialBodyHeight);
 
   const OpenerComponent = opener || <IconArrowRight />;
 
-  const getHeight = () => {
-    let contentNode = contentRef.current.children[0];
-    let height = contentNode ? contentNode.getBoundingClientRect().height : 0;
-    return height;
-  };
-
-  // The following effect only runs once on intial render in order to set the body height.
-  // Otherwise our transition won't work in the case where isOpen=true on initial render.
+  // The following effect runs when the isOpenController variable changes to set a height for the css transition
   useEffect(() => {
-    if (isOpen) {
-      setBodyHeight(getHeight());
+    let height = 0;
+    if (isOpenController) {
+      let contentNode = contentRef.current.children[0];
+      height = contentNode ? contentNode.getBoundingClientRect().height : 0;
     }
-  }, []);
+    setBodyHeight(height);
+  }, [isOpenController]);
 
-  const toggleCollapse = e => {
-    let contentHeight = 0;
-    if (!isOpen) {
-      contentHeight = getHeight();
-    }
-    setBodyHeight(contentHeight);
-    typeof onClick === "function" ? onClick(e) : setIsOpen(!isOpen);
+  const onChangeHandler = e => {
+    // If an onClick handler was provided, call it
+    if (typeof onClick === "function") onClick(e);
+    // If no controlled isOpen prop was passed in, we assume the component is controlled locally
+    // and call setIsOpen to toggle local state
+    if (controlledIsOpen === undefined) setIsOpen(!isOpenController);
   };
 
   return (
     <Wrapper {...props}>
       <Header
-        onClick={toggleCollapse}
+        onClick={onChangeHandler}
         onKeyDown={e =>
-          (e.keyCode === 13 || e.keyCode === 32) && toggleCollapse(e)
+          (e.keyCode === 13 || e.keyCode === 32) && onChangeHandler()
         }
       >
-        <Opener tabIndex={0} isOpen={isOpen}>
+        <Opener tabIndex={0} isOpen={isOpenController}>
           {OpenerComponent}
         </Opener>
         <Title>{title}</Title>
         <Detail>{detail}</Detail>
       </Header>
-      <Body isOpen={isOpen} innerRef={contentRef} bodyHeight={bodyHeight}>
+      <Body
+        isOpen={isOpenController}
+        innerRef={contentRef}
+        bodyHeight={bodyHeight}
+      >
         {children}
       </Body>
     </Wrapper>

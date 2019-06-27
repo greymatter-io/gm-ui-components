@@ -41,11 +41,7 @@ stories
     () => {
       return (
         <>
-          <Collapse
-            title="Collapse Title"
-            detail="Detail text"
-            initiallyOpen={true}
-          >
+          <Collapse title="Collapse Title" detail="Detail text">
             <div style={style}>Collapse content</div>
           </Collapse>
         </>

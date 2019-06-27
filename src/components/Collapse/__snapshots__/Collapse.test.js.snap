@@ -16,7 +16,7 @@ exports[`Collapse matches snapshot 1`] = `
     onKeyDown={[Function]}
   >
     <Opener
-      collapsed={true}
+      isOpen={false}
       tabIndex={0}
       theme={
         Object {
@@ -72,7 +72,7 @@ exports[`Collapse matches snapshot 1`] = `
         }
       }
     >
-      <IconMock />
+      <icon-mock />
     </Opener>
     <Title>
       Collapse title
@@ -135,12 +135,12 @@ exports[`Collapse matches snapshot 1`] = `
   </Header>
   <Body
     bodyHeight={0}
-    collapsed={true}
     innerRef={
       Object {
         "current": null,
       }
     }
+    isOpen={false}
   >
     <div>
       Collapse children
