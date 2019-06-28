@@ -58,7 +58,7 @@ exports[`LayoutSection matches snapshot 1`] = `
 >
   <Header>
     <SectionIcon>
-      <IconMock
+      <icon-mock
         size="24px"
       />
     </SectionIcon>
