@@ -40,9 +40,6 @@ stories
           title={text("title", "Collapse Title")}
           detail={text("detail", "Detail text")}
           isOpen={boolean("isOpen", true)}
-          onClick={() => {
-            this.setState({ isOpen: !this.state.isOpen });
-          }}
         >
           <div style={style}>Collapse content</div>
         </Collapse>

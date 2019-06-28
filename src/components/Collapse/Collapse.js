@@ -9,70 +9,88 @@ import { Title, Detail, Wrapper, Header, Opener, Body } from "./components";
 /**
  * A single Collapse item
  */
-export default function Collapse({
-  opener,
-  title,
-  detail,
-  children,
-  initiallyOpen,
-  isOpen: controlledIsOpen,
-  onClick,
-  ...props
-}) {
-  const contentRef = React.createRef();
-
-  let [isOpen, setIsOpen] = useState(initiallyOpen);
-
-  // Use either the controlledIsOpen prop from the consumer if provided, or the internal isOpen state.
-  const isOpenController =
-    controlledIsOpen !== undefined ? controlledIsOpen : isOpen;
-
-  let initialBodyHeight = isOpenController ? "100%" : 0;
-  const [bodyHeight, setBodyHeight] = useState(initialBodyHeight);
-
-  const OpenerComponent = opener || <IconArrowRight />;
-
-  // The following effect runs when the isOpenController variable changes to set a height for the css transition
-  useEffect(() => {
-    let height = 0;
-    if (isOpenController) {
-      let contentNode = contentRef.current.children[0];
-      height = contentNode ? contentNode.getBoundingClientRect().height : 0;
-    }
-    setBodyHeight(height);
-  }, [isOpenController]);
-
-  const onChangeHandler = e => {
-    // If an onClick handler was provided, call it
-    if (typeof onClick === "function") onClick(e);
-    // If no controlled isOpen prop was passed in, we assume the component is controlled locally
-    // and call setIsOpen to toggle local state
-    if (controlledIsOpen === undefined) setIsOpen(!isOpenController);
+class Collapse extends React.Component {
+  state = {
+    isOpen: false
   };
 
-  return (
-    <Wrapper {...props}>
-      <Header
-        onClick={onChangeHandler}
-        onKeyDown={e =>
-          (e.keyCode === 13 || e.keyCode === 32) && onChangeHandler(e)
-        }
-      >
-        <Opener tabIndex={0} isOpen={isOpenController}>
-          {OpenerComponent}
-        </Opener>
-        <Title>{title}</Title>
-        <Detail>{detail}</Detail>
-      </Header>
-      <Body
-        isOpen={isOpenController}
-        innerRef={contentRef}
-        bodyHeight={bodyHeight}
-      >
-        {children}
-      </Body>
-    </Wrapper>
-  );
+  static getDerivedStateFromProps({ isOpen }) {
+    if (isOpen !== undefined) {
+      return {
+        isOpen
+      };
+    } else {
+      return {};
+    }
+  }
+
+  componentDidMount() {
+    this.setBodyHeight();
+  }
+
+  componentDidUpdate() {
+    this.setBodyHeight();
+  }
+
+  setBodyHeight = () => {
+    let height = this.props.initiallyOpen ? "100%" : 0;
+    // If isOpen is true, find the height of the content and set the body component to a pixel value.
+    // This is necessary for our css transition.
+    if (this.state.isOpen) {
+      let contentNode =
+        this.contentRef.current && this.contentRef.current.children[0];
+      height = contentNode
+        ? contentNode.getBoundingClientRect().height
+        : height;
+    }
+    this.contentRef.current.style.height = `${height}px`;
+  };
+
+  onChangeHandler = e => {
+    // If an onClick handler was provided, call it
+    if (typeof onClick === "function") this.props.onClick(e);
+    // If this.props.isOpen is undefined, the component is uncontrolled and we should set local state.
+    if (this.props.isOpen === undefined)
+      this.setState({ isOpen: !this.state.isOpen });
+  };
+
+  contentRef = React.createRef();
+
+  render() {
+    let {
+      opener,
+      title,
+      detail,
+      children,
+      initiallyOpen,
+      onClick,
+      ...props
+    } = this.props;
+
+    let { isOpen } = this.state;
+
+    const OpenerComponent = opener || <IconArrowRight />;
+
+    return (
+      <Wrapper {...props}>
+        <Header
+          onClick={this.onChangeHandler}
+          onKeyDown={e =>
+            (e.keyCode === 13 || e.keyCode === 32) && this.onChangeHandler(e)
+          }
+        >
+          <Opener tabIndex={0} isOpen={isOpen}>
+            {OpenerComponent}
+          </Opener>
+          <Title>{title}</Title>
+          <Detail>{detail}</Detail>
+        </Header>
+        <Body isOpen={isOpen} innerRef={this.contentRef}>
+          {children}
+        </Body>
+      </Wrapper>
+    );
+  }
 }
 
 Collapse.defaultProps = {
@@ -103,3 +121,5 @@ Collapse.propTypes = {
 };
 
 Collapse.displayName = "Collapse";
+
+export default Collapse;
