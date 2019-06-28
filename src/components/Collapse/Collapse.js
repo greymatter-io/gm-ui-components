@@ -55,7 +55,7 @@ export default function Collapse({
       <Header
         onClick={onChangeHandler}
         onKeyDown={e =>
-          (e.keyCode === 13 || e.keyCode === 32) && onChangeHandler()
+          (e.keyCode === 13 || e.keyCode === 32) && onChangeHandler(e)
         }
       >
         <Opener tabIndex={0} isOpen={isOpenController}>

@@ -78,7 +78,7 @@ describe("Collapse", () => {
     expect(wrapper.find("Body")).toHaveStyleRule("height", "300px");
   });
 
-  it("calls the onClick function if provided", () => {
+  it("calls the onClick function with the click event if provided", () => {
     let onClickSpy = jest.fn();
     wrapper = mount(
       <Collapse title="Collapse title" isOpen={false} onClick={onClickSpy}>
@@ -87,5 +87,6 @@ describe("Collapse", () => {
     );
     wrapper.find("Header").simulate("click");
     expect(onClickSpy).toHaveBeenCalled();
+    expect(onClickSpy).toBeTruthy();
   });
 });
