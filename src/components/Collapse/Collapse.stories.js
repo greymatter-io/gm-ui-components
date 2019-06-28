@@ -1,6 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
+import { text, boolean } from "@storybook/addon-knobs";
+
 import Collapse from "./Collapse";
 
 const stories = storiesOf("Components|Collapse", module);
@@ -11,29 +13,6 @@ const style = {
   textAlign: "center",
   backgroundColor: "lightgrey"
 };
-
-class Controller extends React.Component {
-  state = {
-    isOpen: true
-  };
-  render() {
-    return (
-      <>
-        <Collapse
-          title="Collapse Title"
-          detail="Detail text"
-          isOpen={this.state.isOpen}
-          onClick={() => {
-            console.log("opened!");
-            this.setState({ isOpen: !this.state.isOpen });
-          }}
-        >
-          <div style={style}>Collapse content</div>
-        </Collapse>
-      </>
-    );
-  }
-}
 
 stories
   .add(
@@ -56,7 +35,18 @@ stories
   .add(
     "controlled",
     () => {
-      return <Controller />;
+      return (
+        <Collapse
+          title={text("title", "Collapse Title")}
+          detail={text("detail", "Detail text")}
+          isOpen={boolean("isOpen", true)}
+          onClick={() => {
+            this.setState({ isOpen: !this.state.isOpen });
+          }}
+        >
+          <div style={style}>Collapse content</div>
+        </Collapse>
+      );
     },
     {
       info: {
