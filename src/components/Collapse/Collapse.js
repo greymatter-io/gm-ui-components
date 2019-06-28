@@ -17,13 +17,7 @@ class Collapse extends React.Component {
   static getDerivedStateFromProps({ isOpen }) {
     // If this.props.isOpen is not undefined, that means the component is controlled and we should mirror props in local state.
     // This way we only have to keep track of one isOpen variable.
-    if (isOpen !== undefined) {
-      return {
-        isOpen
-      };
-    } else {
-      return {};
-    }
+    return isOpen === undefined ? {} : { isOpen };
   }
 
   componentDidMount() {
