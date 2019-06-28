@@ -48,7 +48,7 @@ stories
     {
       info: {
         text:
-          "A single collapse section controlled using the isOpen and onClick props."
+          "A single collapse section controlled using the isOpen and onClick props. Both isOpen and onClick are required when using Collapse as a controlled component."
       }
     }
   )
