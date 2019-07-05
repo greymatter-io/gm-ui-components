@@ -1,28 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavCardVal matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "NavCardVal-sc-15nk1cb-0",
-        "isStatic": true,
-        "rules": Array [
-          "margin:0;display:inline-block;",
-        ],
-      },
-      "displayName": "NavCardVal",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "NavCardVal-sc-15nk1cb-0",
-      "target": "dd",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  margin: 0;
+  display: inline-block;
+}
+
+<dd
+  className="c0"
 />
 `;

@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+
 import BackgroundTriangleSmall from "./BackgroundTriangleSmall";
 
 describe("BackgroundTriangleSmall", () => {

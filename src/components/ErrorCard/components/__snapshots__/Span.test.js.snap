@@ -1,31 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Span matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "Span-sc-1dy593y-0",
-        "isStatic": false,
-        "rules": Array [
-          "margin-left:",
-          [Function],
-          "px",
-          ";",
-        ],
-      },
-      "displayName": "Span",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "Span-sc-1dy593y-0",
-      "target": "span",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  margin-left: NaNpx;
+}
+
+<span
+  className="c0"
 />
 `;

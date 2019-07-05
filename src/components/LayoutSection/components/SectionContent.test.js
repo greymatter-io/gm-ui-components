@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+
 import SectionContent from "./SectionContent";
 
 describe("SectionContent", () => {

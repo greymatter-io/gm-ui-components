@@ -17,10 +17,11 @@ export default function InputField({
   maxLength,
   placeholder,
   type,
+  style,
   ...props
 }) {
   return (
-    <InputWrap labelPosition={labelPosition}>
+    <InputWrap labelPosition={labelPosition} style={style}>
       {label && <InputLabelText>{label}</InputLabelText>}
       <InputTextField
         type={type}

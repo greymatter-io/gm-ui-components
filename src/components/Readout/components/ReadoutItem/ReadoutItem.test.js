@@ -1,5 +1,4 @@
 import React from "react";
-import { shallow } from "enzyme";
 
 import ReadoutItem from "./ReadoutItem";
 import { IconAlertTriangle } from "../../../";

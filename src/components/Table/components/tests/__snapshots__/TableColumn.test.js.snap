@@ -1,33 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TableColumn /> should match snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "TableColumn-sc-1p9mymk-0",
-        "isStatic": false,
-        "rules": Array [
-          "width:",
-          [Function],
-          ";",
-        ],
-      },
-      "displayName": "TableColumn",
-      "foldedComponentIds": Array [],
-      "propTypes": Object {
-        "colWidth": [Function],
-      },
-      "render": [Function],
-      "styledComponentId": "TableColumn-sc-1p9mymk-0",
-      "target": "col",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<col
+  className=""
 />
 `;

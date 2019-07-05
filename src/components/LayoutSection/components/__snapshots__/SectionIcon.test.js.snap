@@ -1,31 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionIcon matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "SectionIcon-sc-1pml02w-0",
-        "isStatic": false,
-        "rules": Array [
-          "flex:0 0 auto;padding-right:",
-          [Function],
-          "px",
-          " !important;",
-        ],
-      },
-      "displayName": "SectionIcon",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "SectionIcon-sc-1pml02w-0",
-      "target": "span",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-right: NaNpx !important;
+}
+
+<span
+  className="c0"
 />
 `;

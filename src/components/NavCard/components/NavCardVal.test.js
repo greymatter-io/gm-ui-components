@@ -1,6 +1,7 @@
 import React from "react";
-import { shallow } from "enzyme";
+
 import NavCardVal from "./NavCardVal";
+import { keen } from "style/theme";
 
 describe("NavCardVal", () => {
   it("matches snapshot", () => {

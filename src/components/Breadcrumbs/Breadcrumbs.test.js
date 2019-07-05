@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+
 import Breadcrumbs, { Breadcrumb } from "./Breadcrumbs";
 
 const crumbs = [
@@ -12,7 +12,7 @@ const crumbs = [
 describe("Breadcrumbs", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Breadcrumbs crumbs={crumbs} />).dive();
+    wrapper = shallow(<Breadcrumbs crumbs={crumbs} />);
   });
   test("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();
@@ -21,9 +21,7 @@ describe("Breadcrumbs", () => {
     expect(wrapper.find("Breadcrumb")).toHaveLength(4);
   });
   test("passes hideDelimiter prop to Breadcrumb", () => {
-    wrapper = shallow(
-      <Breadcrumbs crumbs={crumbs} hideDelimiter={true} />
-    ).dive();
+    wrapper = shallow(<Breadcrumbs crumbs={crumbs} hideDelimiter={true} />);
     expect(
       wrapper
         .find("Breadcrumb")

@@ -1,7 +1,6 @@
 import React from "react";
-import { shallow } from "enzyme";
 
-import * as components from ".";
+import * as components from "./index.js";
 
 describe("Collapse components", () => {
   Object.keys(components).forEach(c => {

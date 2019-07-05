@@ -1,216 +1,181 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxBox should render 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
-        "theme": Object {
-          "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
-          "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
-          "COLOR_BACKGROUND_TWO": "hsl(0,0%,97%)",
-          "COLOR_BRAND_PRIMARY": "#00b42b",
-          "COLOR_BRAND_SECONDARY": "#00b42b",
-          "COLOR_CONTENT_CONTRAST": "hsla(0,0%,0%,1)",
-          "COLOR_CONTENT_DEFAULT": "hsla(0,0%,0%,0.85)",
-          "COLOR_CONTENT_MUTED": "hsla(0,0%,0%,0.6)",
-          "COLOR_CONTENT_NONESSENTIAL": "hsla(0,0%,0%,0.3)",
-          "COLOR_INTENT_DANGER": "#D83D22",
-          "COLOR_INTENT_HIGHLIGHT": "#00b42b",
-          "COLOR_INTENT_INFO": "#1E6DF6",
-          "COLOR_INTENT_SUCCESS": "#00b42b",
-          "COLOR_INTENT_WARNING": "#F7CD45",
-          "COLOR_KEYLINE_DEFAULT": "hsla(0,0%,0%,8%)",
-          "COLOR_KEYLINE_SOLID": "hsl(0,0%,92%)",
-          "CORNER_RADIUS_CARD_DEFAULT": "6px",
-          "CORNER_RADIUS_CARD_LG": "8px",
-          "CORNER_RADIUS_CARD_SM": "4px",
-          "CORNER_RADIUS_INPUT": "4px",
-          "CORNER_RADIUS_MAX": "90000px",
-          "CORNER_RADIUS_SHARP": "2px",
-          "FONT_SIZE_HEADING_DEFAULT": "36px",
-          "FONT_SIZE_HEADING_LG": "38px",
-          "FONT_SIZE_HEADING_SM": "32px",
-          "FONT_SIZE_ITEM_TITLE_DEFAULT": "14px",
-          "FONT_SIZE_ITEM_TITLE_LG": "16px",
-          "FONT_SIZE_ITEM_TITLE_SM": "12px",
-          "FONT_SIZE_PAGE_TITLE": "40px",
-          "FONT_SIZE_SUBHEADING_DEFAULT": "16px",
-          "FONT_SIZE_SUBHEADING_LG": "18px",
-          "FONT_SIZE_SUBHEADING_SM": "14px",
-          "FONT_SIZE_TEXT_DEFAULT": "14px",
-          "FONT_SIZE_TEXT_LG": "16px",
-          "FONT_SIZE_TEXT_SM": "12px",
-          "FONT_SIZE_TEXT_XL": "18px",
-          "FONT_SIZE_TEXT_XS": "10px",
-          "FONT_STACK_BRAND": "\\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
-          "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-          "FONT_STACK_DEFAULT": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
-          "FONT_WEIGHT_BOLD": 700,
-          "FONT_WEIGHT_DEFAULT": 400,
-          "FONT_WEIGHT_MEDIUM": 500,
-          "FONT_WEIGHT_SEMIBOLD": 600,
-          "LETTER_SPACING_DEFAULT": "normal",
-          "LINE_HEIGHT_DEFAULT": 1.4,
-          "LINE_HEIGHT_LOOSE": 1.6,
-          "LINE_HEIGHT_TIGHT": 1.2,
-          "OPACITY_FULL": "1",
-          "OPACITY_LIGHT": "0.7",
-          "OPACITY_LIGHTER": "0.5",
-          "OPACITY_LIGHTEST": "0.15",
-          "SPACING_BASE": 8,
-          "ZINDEX_ABYSS": "-9999",
-          "ZINDEX_DROPDOWN": "1010",
-          "ZINDEX_FIXED": "1030",
-          "ZINDEX_FLOOR": "1",
-          "ZINDEX_MODAL": "1050",
-          "ZINDEX_POPOVER": "1060",
-          "ZINDEX_SCRIM": "1040",
-          "ZINDEX_STICKY": "1020",
-          "ZINDEX_TOOLTIP": "1070",
-          "name": "Keen",
-        },
-      },
-      "attrs": Array [
-        Object {
-          "type": "checkbox",
-        },
-      ],
-      "componentStyle": ComponentStyle {
-        "componentId": "CheckboxBox-a30yvp-0",
-        "isStatic": false,
-        "rules": Array [
-          [Function],
-          ";border:",
-          [Function],
-          ";color:",
-          [Function],
-          ";font-size:",
-          [Function],
-          "px",
-          ";margin:",
-          [Function],
-          "px",
-          ";appearance:none;flex:0 0 calc(1em - ",
-          "2",
-          "px);height:calc(1em - ",
-          "2",
-          "px);width:calc(1em - ",
-          "2",
-          "px);position:relative;display:flex;align-items:center;justify-content:center;transition:all 0.15s ease;box-sizing:border-box;&:focus{box-shadow:",
-          [Function],
-          ",0;}&:active{box-shadow:",
-          [Function],
-          ",0;&:focus{box-shadow:",
-          [Function],
-          ",",
-          [Function],
-          ";}}&:after{content:\\"\\";box-sizing:border-box;opacity:0;position:absolute;top:50%;left:50%;}&:checked{background:",
-          [Function],
-          ";&:after{opacity:1;}}&:disabled{border-color:",
-          [Function],
-          ";opacity:",
-          [Function],
-          ";box-shadow:none;&:checked{background-color:",
-          [Function],
-          ";}}",
-          "border-radius:",
-          [Function],
-          "px;&:after{width:45%;height:80%;border-style:solid;border-width:0 2px 2px 0;border-color:",
-          [Function],
-          ";margin-top:-1px;transform:translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);background:none;transition:all 0.3s ease;}&:checked:after{transform:translateY(-50%) translateX(-50%) rotate(45deg) scale(1);}&:indeterminate{&:enabled{background:",
-          [Function],
-          ";}&:after{opacity:1;width:50%;height:0;border-width:0 0 2px;transform:translateY(-50%) translateX(-50%) rotate(0) scale(1);}}*:hover > &{background:",
-          [Function],
-          ";&:checked{background:",
-          [Function],
-          ";border-color:transparent;}*:active > &{background:",
-          [Function],
-          ";&:checked,&:indeterminate{background:",
-          [Function],
-          ";border-color:transparent;}}}",
-        ],
-      },
-      "displayName": "CheckboxBox",
-      "foldedComponentIds": Array [
-        "InputBox-ina997-0",
-      ],
-      "render": [Function],
-      "styledComponentId": "CheckboxBox-a30yvp-0",
-      "target": "input",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
-  theme={
-    Object {
-      "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
-      "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
-      "COLOR_BACKGROUND_TWO": "hsl(0,0%,97%)",
-      "COLOR_BRAND_PRIMARY": "#00b42b",
-      "COLOR_BRAND_SECONDARY": "#00b42b",
-      "COLOR_CONTENT_CONTRAST": "hsla(0,0%,0%,1)",
-      "COLOR_CONTENT_DEFAULT": "hsla(0,0%,0%,0.85)",
-      "COLOR_CONTENT_MUTED": "hsla(0,0%,0%,0.6)",
-      "COLOR_CONTENT_NONESSENTIAL": "hsla(0,0%,0%,0.3)",
-      "COLOR_INTENT_DANGER": "#D83D22",
-      "COLOR_INTENT_HIGHLIGHT": "#00b42b",
-      "COLOR_INTENT_INFO": "#1E6DF6",
-      "COLOR_INTENT_SUCCESS": "#00b42b",
-      "COLOR_INTENT_WARNING": "#F7CD45",
-      "COLOR_KEYLINE_DEFAULT": "hsla(0,0%,0%,8%)",
-      "COLOR_KEYLINE_SOLID": "hsl(0,0%,92%)",
-      "CORNER_RADIUS_CARD_DEFAULT": "6px",
-      "CORNER_RADIUS_CARD_LG": "8px",
-      "CORNER_RADIUS_CARD_SM": "4px",
-      "CORNER_RADIUS_INPUT": "4px",
-      "CORNER_RADIUS_MAX": "90000px",
-      "CORNER_RADIUS_SHARP": "2px",
-      "FONT_SIZE_HEADING_DEFAULT": "36px",
-      "FONT_SIZE_HEADING_LG": "38px",
-      "FONT_SIZE_HEADING_SM": "32px",
-      "FONT_SIZE_ITEM_TITLE_DEFAULT": "14px",
-      "FONT_SIZE_ITEM_TITLE_LG": "16px",
-      "FONT_SIZE_ITEM_TITLE_SM": "12px",
-      "FONT_SIZE_PAGE_TITLE": "40px",
-      "FONT_SIZE_SUBHEADING_DEFAULT": "16px",
-      "FONT_SIZE_SUBHEADING_LG": "18px",
-      "FONT_SIZE_SUBHEADING_SM": "14px",
-      "FONT_SIZE_TEXT_DEFAULT": "14px",
-      "FONT_SIZE_TEXT_LG": "16px",
-      "FONT_SIZE_TEXT_SM": "12px",
-      "FONT_SIZE_TEXT_XL": "18px",
-      "FONT_SIZE_TEXT_XS": "10px",
-      "FONT_STACK_BRAND": "\\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
-      "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-      "FONT_STACK_DEFAULT": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
-      "FONT_WEIGHT_BOLD": 700,
-      "FONT_WEIGHT_DEFAULT": 400,
-      "FONT_WEIGHT_MEDIUM": 500,
-      "FONT_WEIGHT_SEMIBOLD": 600,
-      "LETTER_SPACING_DEFAULT": "normal",
-      "LINE_HEIGHT_DEFAULT": 1.4,
-      "LINE_HEIGHT_LOOSE": 1.6,
-      "LINE_HEIGHT_TIGHT": 1.2,
-      "OPACITY_FULL": "1",
-      "OPACITY_LIGHT": "0.7",
-      "OPACITY_LIGHTER": "0.5",
-      "OPACITY_LIGHTEST": "0.15",
-      "SPACING_BASE": 8,
-      "ZINDEX_ABYSS": "-9999",
-      "ZINDEX_DROPDOWN": "1010",
-      "ZINDEX_FIXED": "1030",
-      "ZINDEX_FLOOR": "1",
-      "ZINDEX_MODAL": "1050",
-      "ZINDEX_POPOVER": "1060",
-      "ZINDEX_SCRIM": "1040",
-      "ZINDEX_STICKY": "1020",
-      "ZINDEX_TOOLTIP": "1070",
-      "name": "Keen",
-    }
-  }
+.c0 {
+  border: 1px solid #00b42b;
+  color: #00b42b;
+  font-size: 16px;
+  margin: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-flex: 0 0 calc(1em - 2px);
+  -ms-flex: 0 0 calc(1em - 2px);
+  flex: 0 0 calc(1em - 2px);
+  height: calc(1em - 2px);
+  width: calc(1em - 2px);
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.c0:invalid {
+  box-shadow: 0 0 0 0 transparent,0 0 0 0 transparent;
+}
+
+.c0:invalid:required {
+  background-color: #f9e1dd;
+}
+
+.c0:disabled {
+  background-color: hsl(0,0%,97%);
+}
+
+.c0:valid:required {
+  background-color: #d8f3df;
+}
+
+.c0:valid:required[type="checkbox"]:after,
+.c0:valid:required[type="radio"]:after {
+  border-color: #00b42b;
+}
+
+.c0:-moz-read-only[type="text"],
+.c0:-moz-read-only[type="password"],
+.c0:-moz-read-only[type="search"],
+.c0:-moz-read-only[type="url"],
+.c0:-moz-read-only[type="tel"],
+.c0:-moz-read-only[type="number"],
+.c0:-moz-read-only[type="email"] {
+  border-style: dashed !important;
+}
+
+.c0:read-only[type="text"],
+.c0:read-only[type="password"],
+.c0:read-only[type="search"],
+.c0:read-only[type="url"],
+.c0:read-only[type="tel"],
+.c0:read-only[type="number"],
+.c0:read-only[type="email"] {
+  border-style: dashed !important;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #00b42b;
+  box-shadow: 0 0 0 2.5px rgba(0,180,43,0.5);
+}
+
+.c0:focus {
+  box-shadow: 0 0 0 2.5px rgba(0,180,43,0.5),0;
+}
+
+.c0:active {
+  box-shadow: inset 0 0 0 1px #00b42b,0;
+}
+
+.c0:active:focus {
+  box-shadow: 0 0 0 2.5px rgba(0,180,43,0.5),inset 0 0 0 1px #00b42b;
+}
+
+.c0:after {
+  content: "";
+  box-sizing: border-box;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.c0:checked {
+  background: #00b42b;
+}
+
+.c0:checked:after {
+  opacity: 1;
+}
+
+.c0:disabled {
+  border-color: hsl(0,0%,94%);
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.c0:disabled:checked {
+  background-color: hsl(0,0%,94%);
+}
+
+.c0:after {
+  width: 45%;
+  height: 80%;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  border-color: #fff;
+  margin-top: -1px;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  background: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c0:checked:after {
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+}
+
+.c0:indeterminate:enabled {
+  background: #00b42b;
+}
+
+.c0:indeterminate:after {
+  opacity: 1;
+  width: 50%;
+  height: 0;
+  border-width: 0 0 2px;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+}
+
+*:hover > .c0 {
+  background: rgba(0,180,43,0.15);
+}
+
+*:hover > .c0:checked {
+  background: rgba(0,180,43,0.7);
+  border-color: transparent;
+}
+
+*:active > *:hover > .c0 {
+  background: rgba(0,180,43,0.5);
+}
+
+*:active > *:hover > .c0:checked,
+*:active > *:hover > .c0:indeterminate {
+  background: rgba(0,180,43,0.5);
+  border-color: transparent;
+}
+
+<input
+  className="c0"
+  type="checkbox"
 />
 `;

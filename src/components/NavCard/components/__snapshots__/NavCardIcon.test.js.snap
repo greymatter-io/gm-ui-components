@@ -1,28 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavCardIcon matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "NavCardIcon-vgwdqc-0",
-        "isStatic": true,
-        "rules": Array [
-          "display:flex;align-items:center;",
-        ],
-      },
-      "displayName": "NavCardIcon",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "NavCardIcon-vgwdqc-0",
-      "target": "span",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<span
+  className="c0"
 />
 `;

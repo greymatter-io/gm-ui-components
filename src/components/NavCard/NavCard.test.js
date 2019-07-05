@@ -1,5 +1,4 @@
 import React from "react";
-import { shallow } from "enzyme";
 
 import { IconAlertTriangle } from "components";
 import NavCard from "./NavCard";

@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+
 import BackgroundSquareRounded from "./BackgroundSquareRounded";
 
 describe("BackgroundSquareRounded", () => {

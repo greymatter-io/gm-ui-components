@@ -27,7 +27,7 @@ export default ${fileName};
 
 function testTemplate(fileName) {
   return `import React from "react";
-import { shallow } from "enzyme";
+
 
 import ${fileName} from "./${fileName}";
 
