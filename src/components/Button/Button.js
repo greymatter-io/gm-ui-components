@@ -65,6 +65,7 @@ Button.propTypes = {
 Button.defaultProps = {
   active: false,
   clickAction: () => {},
+  label: "",
   disabled: false,
   orientation: "horizontal",
   outline: false,
