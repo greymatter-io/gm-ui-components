@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { PropTypes } from "prop-types";
 
 import { IconArrowRight } from "components/Glyphs";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 import { Title, Detail, Wrapper, Header, Opener, Body } from "./components";
 
