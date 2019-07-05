@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/theme";
 
 const ReadoutGroup = styled.div`
   display: flex;
@@ -10,5 +11,9 @@ const ReadoutGroup = styled.div`
   margin-right: -${spacingScale(1)};
   flex: 1 1 100%;
 `;
+
+ReadoutGroup.defaultProps = {
+  theme: keen
+};
 
 export default ReadoutGroup;

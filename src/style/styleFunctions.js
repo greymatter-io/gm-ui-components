@@ -10,7 +10,10 @@ import { css } from "styled-components";
  */
 export function spacingScale(factor) {
   return css`
-    ${({ theme }) => Math.round(parseInt(theme.SPACING_BASE, 10) * factor)}px
+    ${({ theme }) => {
+      console.log("THEME", theme);
+      return `${Math.round(parseInt(theme.SPACING_BASE, 10) * factor)}px`;
+    }}
   `;
 }
 
