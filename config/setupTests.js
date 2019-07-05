@@ -1,4 +1,4 @@
-import Enzyme, { shallow, mount } from "enzyme";
+import Enzyme, { mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 import { shallowClone } from "testUtils";
