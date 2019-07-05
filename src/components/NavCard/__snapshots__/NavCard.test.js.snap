@@ -140,7 +140,7 @@ exports[`Components|NavCard matches snapshot 1`] = `
     }
   >
     <NavCardIcon>
-      <IconMock />
+      <icon-mock />
     </NavCardIcon>
     <h1>
       NavCard

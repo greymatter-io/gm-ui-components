@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
-import { keen } from "style/theme";
+import { keen } from "style/styleVariables";
 
 import { spacingScale } from "style/styleFunctions";
 
@@ -19,8 +19,8 @@ export const Opener = styled.div`
       `};
   }
 
-  ${({ collapsed }) =>
-    !collapsed &&
+  ${({ isOpen }) =>
+    isOpen &&
     css`
       transform: rotate(90deg);
     `}

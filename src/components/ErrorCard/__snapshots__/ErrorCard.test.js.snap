@@ -140,7 +140,10 @@ exports[`ErrorCard matches snapshot 1`] = `
     }
   >
     <Span>
-      <IconMock
+      <icon-mock
+        backgroundColor="transparent"
+        backgroundStyle="BackgroundTriangleSmall"
+        borderWidth="0.5"
         size="72px"
       />
     </Span>
@@ -291,7 +294,10 @@ exports[`ErrorCard renders an error message 1`] = `
     }
   >
     <Span>
-      <IconMock
+      <icon-mock
+        backgroundColor="transparent"
+        backgroundStyle="BackgroundTriangleSmall"
+        borderWidth="0.5"
         size="72px"
       />
     </Span>

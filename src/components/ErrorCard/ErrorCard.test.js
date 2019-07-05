@@ -14,10 +14,10 @@ describe("ErrorCard", () => {
   });
   it("renders a default Icon", () => {
     const aErrorCard = shallow(<ErrorCard />);
-    expect(aErrorCard.find("IconMock")).toHaveLength(1);
+    expect(aErrorCard.find("icon-mock")).toHaveLength(1);
   });
   it("renders a custom Icon", () => {
     const aErrorCard = shallow(<ErrorCard icon={() => <IconBell />} />);
-    expect(aErrorCard.find("IconMock")).toHaveLength(1);
+    expect(aErrorCard.find("icon-mock")).toHaveLength(1);
   });
 });
