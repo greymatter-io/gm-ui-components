@@ -9,9 +9,7 @@ import { css } from "styled-components";
  * @returns {string} A string in the format "10px"
  */
 export function spacingScale(factor) {
-  return css`
-    ${({ theme }) => Math.round(parseInt(theme.SPACING_BASE, 10) * factor)}px
-  `;
+  return `calc(var(--SPACING_BASE) * ${factor} * 1px)`;
 }
 
 // Darken the color, but add a touch of saturation for a more natural shadow look

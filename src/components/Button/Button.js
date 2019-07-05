@@ -41,7 +41,7 @@ function Button({
       {...props}
     >
       {children}
-      {label.length > 0 && <span style={labelStyle}>{label}</span>}
+      {label && label.length > 0 && <span style={labelStyle}>{label}</span>}
     </ButtonWrap>
   );
 }
@@ -65,7 +65,6 @@ Button.propTypes = {
 Button.defaultProps = {
   active: false,
   clickAction: () => {},
-  label: "",
   disabled: false,
   orientation: "horizontal",
   outline: false,
