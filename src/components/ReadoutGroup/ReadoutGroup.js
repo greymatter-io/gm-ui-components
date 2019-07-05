@@ -12,8 +12,4 @@ const ReadoutGroup = styled.div`
   flex: 1 1 100%;
 `;
 
-ReadoutGroup.defaultProps = {
-  theme: keen
-};
-
 export default ReadoutGroup;

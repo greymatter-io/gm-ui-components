@@ -8,8 +8,4 @@ const ItemDisplay = styled.div`
   padding: ${spacingScale(1.5)};
 `;
 
-ItemDisplay.defaultProps = {
-  theme: keen
-};
-
 export default ItemDisplay;
