@@ -81,7 +81,7 @@ class Collapse extends React.Component {
           <Title>{title}</Title>
           <Detail>{detail}</Detail>
         </Header>
-        <Body isOpen={isOpen} innerRef={this.contentRef}>
+        <Body isOpen={isOpen} ref={this.contentRef}>
           {children}
         </Body>
       </Wrapper>
