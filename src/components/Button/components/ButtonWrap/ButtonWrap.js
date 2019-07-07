@@ -16,8 +16,8 @@ const ButtonWrap = styled.button`
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
-  font-weight: ${({theme}) => theme.FONT_WEIGHT_DEFAULT};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT_DEFAULT};
   justify-content: center;
   line-height: 1.4;
   text-align: center;
@@ -46,17 +46,6 @@ const ButtonWrap = styled.button`
     outline: none;
     border: 1px solid
       ${({ theme }) => theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT};
-    /* box-shadow: ${({ theme }) => css`0 0 0 ${theme.FORM_HIGHLIGHT_SIZE}px
-        ${({ theme }) =>
-          transparentize(
-            1 - theme.OPACITY_LIGHTER,
-            theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT
-          )},
-      inset 0 0 0 1px ${({ theme }) =>
-        transparentize(
-          1 - theme.OPACITY_LIGHTEST,
-          theme.COLOR_BACKGROUND_DEFAULT
-        )}`}}; */
     z-index: 10;
     position: relative;
 
