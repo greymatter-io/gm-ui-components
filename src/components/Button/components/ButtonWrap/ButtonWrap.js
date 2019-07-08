@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
-import { transparentize } from "polished";
-
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";

@@ -2,7 +2,7 @@
 
 exports[`LongLogo should render 1`] = `
 .c0 {
-  padding: 0 calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: 0  calc(var(--SPACING_BASE) * 1 * 1px);
   color: hsla(0,0%,0%,0.6);
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;

@@ -40,7 +40,7 @@ exports[`TabGroup matches snapshot 1`] = `
 }
 
 .c1 {
-  padding: 0 calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: 0  calc(var(--SPACING_BASE) * 1 * 1px);
   font-size: 14px;
   height: 100%;
   margin: auto 0;

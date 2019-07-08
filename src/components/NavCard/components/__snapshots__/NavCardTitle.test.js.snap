@@ -3,7 +3,7 @@
 exports[`NavCardTitle matches snapshot 1`] = `
 .c0 {
   color: #000;
-  margin: calc(var(--SPACING_BASE) * 0.5 * 1px) calc(var(--SPACING_BASE) * 1 * 1px) calc(var(--SPACING_BASE) * 0 * 1px);
+  margin: calc(var(--SPACING_BASE) * 0.5 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px)  calc(var(--SPACING_BASE) * 0 * 1px);
   white-space: nowrap;
   max-width: 100%;
   overflow: hidden;

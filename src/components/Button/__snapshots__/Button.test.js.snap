@@ -59,7 +59,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -166,7 +166,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -279,7 +279,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   border-color: #e6e6e6;
   color: #000;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -392,7 +392,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -505,7 +505,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   border-color: transparent;
   color: #000;
   font-size: 10px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
@@ -619,7 +619,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   border-color: transparent;
   color: #000;
   font-size: 12px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
@@ -733,7 +733,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1.25 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1.25 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -846,7 +846,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   border-color: transparent;
   color: #000;
   font-size: 18px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1.25 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1.25 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -959,7 +959,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1072,7 +1072,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1185,7 +1185,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1298,7 +1298,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
-  padding: calc(var(--SPACING_BASE) * 0.25 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;

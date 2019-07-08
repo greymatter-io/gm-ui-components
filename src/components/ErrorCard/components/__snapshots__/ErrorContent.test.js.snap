@@ -23,7 +23,7 @@ exports[`ErrorContent matches snapshot 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   margin: calc(var(--SPACING_BASE) * 4 * 1px);
-  padding: calc(var(--SPACING_BASE) * 8 * 1px) calc(var(--SPACING_BASE) * 4 * 1px);
+  padding: calc(var(--SPACING_BASE) * 8 * 1px)  calc(var(--SPACING_BASE) * 4 * 1px);
   padding-top: calc(var(--SPACING_BASE) * 8 * 1px);
   padding-bottom: calc(var(--SPACING_BASE) * 8 * 1px);
 }

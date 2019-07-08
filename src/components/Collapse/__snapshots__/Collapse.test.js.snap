@@ -376,7 +376,8 @@ exports[`Collapse matches snapshot 1`] = `
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;width:100%;display:flex;justify-content:space-between;align-items:center;padding:",
-                    "calc(var(--SPACING_BASE) * 1 * 1px)",
+                    "
+    calc(var(--SPACING_BASE) * 1 * 1px)",
                     " 0;",
                   ],
                 },
@@ -548,7 +549,8 @@ exports[`Collapse matches snapshot 1`] = `
                         "lastClassName": "c2",
                         "rules": Array [
                           "margin-right:",
-                          "calc(var(--SPACING_BASE) * 0.75 * 1px)",
+                          "
+    calc(var(--SPACING_BASE) * 0.75 * 1px)",
                           ";&:focus,&:active,&:focus:active{outline:none;",
                           [Function],
                           ";}",
