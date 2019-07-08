@@ -16,13 +16,12 @@ const Checkbox = ({
   ...props
 }) => {
   return (
-    <InputWrap labelPosition={labelPosition}>
+    <InputWrap labelPosition={labelPosition} {...props}>
       {label && <InputLabelText>{label}</InputLabelText>}
       <CheckboxBox
         defaultChecked={defaultChecked}
         value={value}
         disabled={disabled}
-        {...props}
       />
     </InputWrap>
   );

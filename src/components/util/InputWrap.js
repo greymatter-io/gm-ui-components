@@ -4,8 +4,8 @@ import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`
   ${props => getPosition(props.labelPosition)};
-  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
-  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   display: flex;
   position: relative;
 
@@ -25,6 +25,7 @@ function getPosition(position) {
     case "left":
       return css`
         flex-direction: row;
+        align-items: center;
         > input,
         > textarea,
         > select {
@@ -34,6 +35,7 @@ function getPosition(position) {
     case "right":
       return css`
         flex-direction: row-reverse;
+        align-items: center;
         > input,
         > textarea,
         > select {
