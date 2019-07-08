@@ -3,7 +3,7 @@
 exports[`Fieldset matches snapshot 1`] = `
 .c0 {
   border: 1px solid hsla(0,0%,0%,8%);
-  padding: 16px;
+  padding: calc(var(--SPACING_BASE) * 2 * 1px);
   border-radius: 4px;
 }
 

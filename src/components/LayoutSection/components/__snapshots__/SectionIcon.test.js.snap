@@ -5,7 +5,7 @@ exports[`SectionIcon matches snapshot 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: NaNpx !important;
+  padding-right: calc(var(--SPACING_BASE) * 0.5 * 1px) !important;
 }
 
 <span

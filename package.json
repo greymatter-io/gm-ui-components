@@ -37,7 +37,8 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9009",
     "test": "node scripts/test.js --env=jsdom",
-    "update-deps": "npm-check . --skip-unused -u"
+    "update-deps": "npm-check . --skip-unused -u",
+    "update:snapshots": "npm run test -- --updateSnapshot"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",

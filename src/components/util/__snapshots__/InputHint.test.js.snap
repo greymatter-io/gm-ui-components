@@ -2,7 +2,7 @@
 
 exports[`InputHint matches snapshot 1`] = `
 .c0 {
-  margin: 4px 0;
+  margin: calc(var(--SPACING_BASE) * 0.5 * 1px) 0;
   font-size: 10px;
   color: hsla(0,0%,0%,0.6);
   display: block;

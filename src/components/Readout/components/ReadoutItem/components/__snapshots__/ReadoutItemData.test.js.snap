@@ -16,11 +16,11 @@ exports[`ReadoutItemData matches snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: NaNpx 0;
+  padding: calc(var(--SPACING_BASE) * 1 * 1px) 0;
 }
 
 .c0:first-child {
-  padding-left: NaNpx;
+  padding-left: calc(var(--SPACING_BASE) * 2 * 1px);
 }
 
 <div

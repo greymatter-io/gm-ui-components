@@ -3,7 +3,7 @@
 exports[`NavCardTitle matches snapshot 1`] = `
 .c0 {
   color: #000;
-  margin: 4px 8px 0px;
+  margin: calc(var(--SPACING_BASE) * 0.5 * 1px) calc(var(--SPACING_BASE) * 1 * 1px) calc(var(--SPACING_BASE) * 0 * 1px);
   white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
@@ -28,7 +28,7 @@ exports[`NavCardTitle matches snapshot 1`] = `
 .c0 h1 {
   font-size: 14px;
   font-weight: 600;
-  padding-left: 4px;
+  padding-left: calc(var(--SPACING_BASE) * 0.5 * 1px);
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;

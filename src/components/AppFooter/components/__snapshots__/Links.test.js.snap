@@ -6,7 +6,7 @@ exports[`Link should match snapshot 1`] = `
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: right;
-  padding: 0 0 NaNpx NaNpx;
+  padding: 0 0 calc(var(--SPACING_BASE) * 0.5 * 1px) calc(var(--SPACING_BASE) * 1 * 1px);
 }
 
 @media all and (min-width:800px) {

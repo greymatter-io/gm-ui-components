@@ -31,11 +31,11 @@ exports[`Collapse matches snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: NaNpx 0;
+  padding: calc(var(--SPACING_BASE) * 1 * 1px) 0;
 }
 
 .c2 {
-  margin-right: 6px;
+  margin-right: calc(var(--SPACING_BASE) * 0.75 * 1px);
 }
 
 .c2:focus,
@@ -372,12 +372,11 @@ exports[`Collapse matches snapshot 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "Header-sc-1rlwrhx-0",
-                  "isStatic": false,
+                  "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
                     "cursor:pointer;width:100%;display:flex;justify-content:space-between;align-items:center;padding:",
-                    [Function],
-                    "px",
+                    "calc(var(--SPACING_BASE) * 1 * 1px)",
                     " 0;",
                   ],
                 },
@@ -549,8 +548,7 @@ exports[`Collapse matches snapshot 1`] = `
                         "lastClassName": "c2",
                         "rules": Array [
                           "margin-right:",
-                          [Function],
-                          "px",
+                          "calc(var(--SPACING_BASE) * 0.75 * 1px)",
                           ";&:focus,&:active,&:focus:active{outline:none;",
                           [Function],
                           ";}",
