@@ -56,7 +56,7 @@ function AppFooter({
           target="_blank"
           title="Decipher Technology Studios Github"
         >
-          <IconGitHub size="20px" />
+          <IconGitHub fillOpacity="1" borderWidth="0" />
         </Link>
         <Link
           href="http://twitter.com/deciphernow"
@@ -64,7 +64,7 @@ function AppFooter({
           target="_blank"
           title="Decipher Technology Studios Twitter"
         >
-          <IconTwitter size="20px" />
+          <IconTwitter fillOpacity="1" borderWidth="0" />
         </Link>
         <Link
           href="http://www.linkedin.com/company/decipher-technology-studios"
@@ -72,7 +72,7 @@ function AppFooter({
           target="_blank"
           title="Decipher Technology Studios LinkedIn"
         >
-          <IconLinkedIn size="20px" />
+          <IconLinkedIn fillOpacity="1" borderWidth="0" />
         </Link>
       </Links>
     ));

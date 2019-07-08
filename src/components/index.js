@@ -24,3 +24,4 @@ export { default as Textarea } from "./Textarea";
 export { default as Tooltip } from "./Tooltip";
 export * from "../style/theme";
 export * from "../style/styleFunctions";
+export { default as GlobalStyles } from "../style/GlobalStyles";

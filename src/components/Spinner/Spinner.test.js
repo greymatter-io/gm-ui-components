@@ -1,7 +1,6 @@
 import React from "react";
 
 import Spinner from "./Spinner";
-import { mount } from "enzyme";
 
 describe("Spinner", () => {
   it("matches snapshot", () => {

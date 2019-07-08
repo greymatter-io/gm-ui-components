@@ -11,10 +11,12 @@ import IconTwitter from "./twitter.svg";
 import IconLinkedIn from "./linkedin.svg";
 import IconArrowLeft from "./arrow-left.svg";
 import IconArrowRight from "./arrow-right.svg";
+import IconStatusBroken from "./status-broken.svg";
 import IconArrowStartDown from "./arrow-start-down.svg";
 import IconArrowStartLeft from "./arrow-start-left.svg";
 import IconArrowStartRight from "./arrow-start-right.svg";
 import IconArrowStartUp from "./arrow-start-up.svg";
+import IconCard from "./card.svg";
 import IconThreads from "./threads.svg";
 import IconArrowUp from "./arrow-up.svg";
 import IconArrowUpLeft from "./arrow-up-left.svg";
@@ -169,9 +171,11 @@ export {
   IconChevronUpDouble,
   IconCircle,
   IconCloud,
+  IconStatusBroken,
   IconCog,
   IconComment,
   IconConfiguration,
+  IconCard,
   IconCopyToWorkspace,
   IconCPU,
   IconCycle,
