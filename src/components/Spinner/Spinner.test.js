@@ -1,6 +1,7 @@
 import React from "react";
 
 import Spinner from "./Spinner";
+import { mount } from "enzyme";
 
 describe("Spinner", () => {
   it("matches snapshot", () => {
@@ -9,22 +10,28 @@ describe("Spinner", () => {
   });
 
   it("renders the correct styles when passed a vertical prop", () => {
-    // const aSpinner = shallow(<Spinner orientation="vertical" />);
-    // const SpinnerSVG = aSpinner
-    //   .find("LoadingSpinner")
-    //   .dive()
-    //   .find("SpinnerSVG");
-    // expect(SpinnerSVG).toHaveStyleRule("width", "48px");
-    // expect(SpinnerSVG).toHaveStyleRule("height", "48px");
+    const aSpinner = mount(<Spinner orientation="vertical" />);
+    const SpinnerSVG = aSpinner.find("LoadingSpinner").find("SpinnerSVG");
+    expect(SpinnerSVG).toHaveStyleRule(
+      "width",
+      "calc(var(--SPACING_BASE) * 6 * 1px)"
+    );
+    expect(SpinnerSVG).toHaveStyleRule(
+      "height",
+      "calc(var(--SPACING_BASE) * 6 * 1px)"
+    );
   });
 
   it("renders the correct styles when passed a horizontal prop", () => {
-    // const aSpinner = shallow(<Spinner orientation="horizontal" />);
-    // const SpinnerSVG = aSpinner
-    //   .find("LoadingSpinner")
-    //   .dive()
-    //   .find("SpinnerSVG");
-    // expect(SpinnerSVG).toHaveStyleRule("width", "16px");
-    // expect(SpinnerSVG).toHaveStyleRule("height", "16px");
+    const aSpinner = mount(<Spinner orientation="horizontal" />);
+    const SpinnerSVG = aSpinner.find("LoadingSpinner").find("SpinnerSVG");
+    expect(SpinnerSVG).toHaveStyleRule(
+      "width",
+      "calc(var(--SPACING_BASE) * 2 * 1px)"
+    );
+    expect(SpinnerSVG).toHaveStyleRule(
+      "height",
+      "calc(var(--SPACING_BASE) * 2 * 1px)"
+    );
   });
 });
