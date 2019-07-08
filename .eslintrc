@@ -69,5 +69,9 @@
         "no-unused-expressions": "off"
       }
     }
-  ]
+  ],
+  "globals": {
+    "shallow": true,
+    "mount": true
+  }
 }

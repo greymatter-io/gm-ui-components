@@ -3,7 +3,7 @@
 exports[`Link should render 1`] = `
 .c0 {
   color: hsla(0,0%,0%,0.6);
-  padding: 0 4px;
+  padding: 0  calc(var(--SPACING_BASE) * 0.5 * 1px);
 }
 
 .c0:hover {
@@ -11,7 +11,7 @@ exports[`Link should render 1`] = `
 }
 
 .c0 svg {
-  height: 18px;
+  height: calc(var(--SPACING_BASE) * 2.25 * 1px);
 }
 
 <a

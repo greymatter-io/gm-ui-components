@@ -1,192 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputTextField matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
-        "theme": Object {
-          "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
-          "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
-          "COLOR_BACKGROUND_TWO": "hsl(0,0%,97%)",
-          "COLOR_BRAND_PRIMARY": "#00b42b",
-          "COLOR_BRAND_SECONDARY": "#00b42b",
-          "COLOR_CONTENT_CONTRAST": "hsla(0,0%,0%,1)",
-          "COLOR_CONTENT_DEFAULT": "hsla(0,0%,0%,0.85)",
-          "COLOR_CONTENT_MUTED": "hsla(0,0%,0%,0.6)",
-          "COLOR_CONTENT_NONESSENTIAL": "hsla(0,0%,0%,0.3)",
-          "COLOR_INTENT_DANGER": "#D83D22",
-          "COLOR_INTENT_HIGHLIGHT": "#00b42b",
-          "COLOR_INTENT_INFO": "#1E6DF6",
-          "COLOR_INTENT_SUCCESS": "#00b42b",
-          "COLOR_INTENT_WARNING": "#F7CD45",
-          "COLOR_KEYLINE_DEFAULT": "hsla(0,0%,0%,8%)",
-          "COLOR_KEYLINE_SOLID": "hsl(0,0%,92%)",
-          "CORNER_RADIUS_CARD_DEFAULT": "6px",
-          "CORNER_RADIUS_CARD_LG": "8px",
-          "CORNER_RADIUS_CARD_SM": "4px",
-          "CORNER_RADIUS_INPUT": "4px",
-          "CORNER_RADIUS_MAX": "90000px",
-          "CORNER_RADIUS_SHARP": "2px",
-          "FONT_SIZE_HEADING_DEFAULT": "36px",
-          "FONT_SIZE_HEADING_LG": "38px",
-          "FONT_SIZE_HEADING_SM": "32px",
-          "FONT_SIZE_ITEM_TITLE_DEFAULT": "14px",
-          "FONT_SIZE_ITEM_TITLE_LG": "16px",
-          "FONT_SIZE_ITEM_TITLE_SM": "12px",
-          "FONT_SIZE_PAGE_TITLE": "40px",
-          "FONT_SIZE_SUBHEADING_DEFAULT": "16px",
-          "FONT_SIZE_SUBHEADING_LG": "18px",
-          "FONT_SIZE_SUBHEADING_SM": "14px",
-          "FONT_SIZE_TEXT_DEFAULT": "14px",
-          "FONT_SIZE_TEXT_LG": "16px",
-          "FONT_SIZE_TEXT_SM": "12px",
-          "FONT_SIZE_TEXT_XL": "18px",
-          "FONT_SIZE_TEXT_XS": "10px",
-          "FONT_STACK_BRAND": "\\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
-          "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-          "FONT_STACK_DEFAULT": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
-          "FONT_WEIGHT_BOLD": 700,
-          "FONT_WEIGHT_DEFAULT": 400,
-          "FONT_WEIGHT_MEDIUM": 500,
-          "FONT_WEIGHT_SEMIBOLD": 600,
-          "LETTER_SPACING_DEFAULT": "normal",
-          "LINE_HEIGHT_DEFAULT": 1.4,
-          "LINE_HEIGHT_LOOSE": 1.6,
-          "LINE_HEIGHT_TIGHT": 1.2,
-          "OPACITY_FULL": "1",
-          "OPACITY_LIGHT": "0.7",
-          "OPACITY_LIGHTER": "0.5",
-          "OPACITY_LIGHTEST": "0.15",
-          "SPACING_BASE": 8,
-          "ZINDEX_ABYSS": "-9999",
-          "ZINDEX_DROPDOWN": "1010",
-          "ZINDEX_FIXED": "1030",
-          "ZINDEX_FLOOR": "1",
-          "ZINDEX_MODAL": "1050",
-          "ZINDEX_POPOVER": "1060",
-          "ZINDEX_SCRIM": "1040",
-          "ZINDEX_STICKY": "1020",
-          "ZINDEX_TOOLTIP": "1070",
-          "name": "Keen",
-        },
-      },
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "InputTextField-fgzvl1-0",
-        "isStatic": false,
-        "rules": Array [
-          [Function],
-          ";min-height:calc(",
-          [Function],
-          "px",
-          " - ",
-          "2",
-          "px);border-radius:calc( ",
-          [Function],
-          " + ",
-          "1",
-          "px );border:",
-          "1",
-          "px solid ",
-          [Function],
-          ";padding:",
-          [Function],
-          "px",
-          " ",
-          [Function],
-          "px",
-          ";appearance:none;margin:0;color:",
-          [Function],
-          ";font-family:",
-          [Function],
-          ";font-size:",
-          [Function],
-          ";background:",
-          [Function],
-          ";box-sizing:border-box;line-height:1.5;transition:all 0.15s ease;user-select:auto;flex:1 1 auto;&::-webkit-search-decoration{-webkit-appearance:none;}&:hover{}&::placeholder{color:",
-          [Function],
-          ";transition:inherit;}",
-        ],
-      },
-      "displayName": "InputTextField",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "InputTextField-fgzvl1-0",
-      "target": "input",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
-  theme={
-    Object {
-      "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
-      "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
-      "COLOR_BACKGROUND_TWO": "hsl(0,0%,97%)",
-      "COLOR_BRAND_PRIMARY": "#00b42b",
-      "COLOR_BRAND_SECONDARY": "#00b42b",
-      "COLOR_CONTENT_CONTRAST": "hsla(0,0%,0%,1)",
-      "COLOR_CONTENT_DEFAULT": "hsla(0,0%,0%,0.85)",
-      "COLOR_CONTENT_MUTED": "hsla(0,0%,0%,0.6)",
-      "COLOR_CONTENT_NONESSENTIAL": "hsla(0,0%,0%,0.3)",
-      "COLOR_INTENT_DANGER": "#D83D22",
-      "COLOR_INTENT_HIGHLIGHT": "#00b42b",
-      "COLOR_INTENT_INFO": "#1E6DF6",
-      "COLOR_INTENT_SUCCESS": "#00b42b",
-      "COLOR_INTENT_WARNING": "#F7CD45",
-      "COLOR_KEYLINE_DEFAULT": "hsla(0,0%,0%,8%)",
-      "COLOR_KEYLINE_SOLID": "hsl(0,0%,92%)",
-      "CORNER_RADIUS_CARD_DEFAULT": "6px",
-      "CORNER_RADIUS_CARD_LG": "8px",
-      "CORNER_RADIUS_CARD_SM": "4px",
-      "CORNER_RADIUS_INPUT": "4px",
-      "CORNER_RADIUS_MAX": "90000px",
-      "CORNER_RADIUS_SHARP": "2px",
-      "FONT_SIZE_HEADING_DEFAULT": "36px",
-      "FONT_SIZE_HEADING_LG": "38px",
-      "FONT_SIZE_HEADING_SM": "32px",
-      "FONT_SIZE_ITEM_TITLE_DEFAULT": "14px",
-      "FONT_SIZE_ITEM_TITLE_LG": "16px",
-      "FONT_SIZE_ITEM_TITLE_SM": "12px",
-      "FONT_SIZE_PAGE_TITLE": "40px",
-      "FONT_SIZE_SUBHEADING_DEFAULT": "16px",
-      "FONT_SIZE_SUBHEADING_LG": "18px",
-      "FONT_SIZE_SUBHEADING_SM": "14px",
-      "FONT_SIZE_TEXT_DEFAULT": "14px",
-      "FONT_SIZE_TEXT_LG": "16px",
-      "FONT_SIZE_TEXT_SM": "12px",
-      "FONT_SIZE_TEXT_XL": "18px",
-      "FONT_SIZE_TEXT_XS": "10px",
-      "FONT_STACK_BRAND": "\\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
-      "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-      "FONT_STACK_DEFAULT": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
-      "FONT_WEIGHT_BOLD": 700,
-      "FONT_WEIGHT_DEFAULT": 400,
-      "FONT_WEIGHT_MEDIUM": 500,
-      "FONT_WEIGHT_SEMIBOLD": 600,
-      "LETTER_SPACING_DEFAULT": "normal",
-      "LINE_HEIGHT_DEFAULT": 1.4,
-      "LINE_HEIGHT_LOOSE": 1.6,
-      "LINE_HEIGHT_TIGHT": 1.2,
-      "OPACITY_FULL": "1",
-      "OPACITY_LIGHT": "0.7",
-      "OPACITY_LIGHTER": "0.5",
-      "OPACITY_LIGHTEST": "0.15",
-      "SPACING_BASE": 8,
-      "ZINDEX_ABYSS": "-9999",
-      "ZINDEX_DROPDOWN": "1010",
-      "ZINDEX_FIXED": "1030",
-      "ZINDEX_FLOOR": "1",
-      "ZINDEX_MODAL": "1050",
-      "ZINDEX_POPOVER": "1060",
-      "ZINDEX_SCRIM": "1040",
-      "ZINDEX_STICKY": "1020",
-      "ZINDEX_TOOLTIP": "1070",
-      "name": "Keen",
-    }
-  }
+.c0 {
+  min-height: calc( calc(var(--SPACING_BASE) * 3 * 1px) - 2px);
+  border-radius: calc( 4px + 1px );
+  border: 1px solid hsla(0,0%,0%,8%);
+  padding: calc(var(--SPACING_BASE) * 0.5 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  color: hsla(0,0%,0%,0.85);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  background: hsl(0,0%,97%);
+  box-sizing: border-box;
+  line-height: 1.5;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c0:invalid {
+  box-shadow: 0 0 0 0 transparent,0 0 0 0 transparent;
+}
+
+.c0:invalid:required {
+  background-color: #f9e1dd;
+}
+
+.c0:disabled {
+  background-color: hsl(0,0%,97%);
+}
+
+.c0:valid:required {
+  background-color: #d8f3df;
+}
+
+.c0:valid:required[type="checkbox"]:after,
+.c0:valid:required[type="radio"]:after {
+  border-color: #00b42b;
+}
+
+.c0:-moz-read-only[type="text"],
+.c0:-moz-read-only[type="password"],
+.c0:-moz-read-only[type="search"],
+.c0:-moz-read-only[type="url"],
+.c0:-moz-read-only[type="tel"],
+.c0:-moz-read-only[type="number"],
+.c0:-moz-read-only[type="email"] {
+  border-style: dashed !important;
+}
+
+.c0:read-only[type="text"],
+.c0:read-only[type="password"],
+.c0:read-only[type="search"],
+.c0:read-only[type="url"],
+.c0:read-only[type="tel"],
+.c0:read-only[type="number"],
+.c0:read-only[type="email"] {
+  border-style: dashed !important;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #00b42b;
+  box-shadow: 0 0 0 2.5px rgba(0,180,43,0.5);
+}
+
+.c0::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsla(0,0%,0%,0.3);
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.c0::-moz-placeholder {
+  color: hsla(0,0%,0%,0.3);
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.c0:-ms-input-placeholder {
+  color: hsla(0,0%,0%,0.3);
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.c0::placeholder {
+  color: hsla(0,0%,0%,0.3);
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+<input
+  className="c0"
 />
 `;

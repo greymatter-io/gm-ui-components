@@ -1,185 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Wrap matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
-        "theme": Object {
-          "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
-          "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
-          "COLOR_BACKGROUND_TWO": "hsl(0,0%,97%)",
-          "COLOR_BRAND_PRIMARY": "#00b42b",
-          "COLOR_BRAND_SECONDARY": "#00b42b",
-          "COLOR_CONTENT_CONTRAST": "hsla(0,0%,0%,1)",
-          "COLOR_CONTENT_DEFAULT": "hsla(0,0%,0%,0.85)",
-          "COLOR_CONTENT_MUTED": "hsla(0,0%,0%,0.6)",
-          "COLOR_CONTENT_NONESSENTIAL": "hsla(0,0%,0%,0.3)",
-          "COLOR_INTENT_DANGER": "#D83D22",
-          "COLOR_INTENT_HIGHLIGHT": "#00b42b",
-          "COLOR_INTENT_INFO": "#1E6DF6",
-          "COLOR_INTENT_SUCCESS": "#00b42b",
-          "COLOR_INTENT_WARNING": "#F7CD45",
-          "COLOR_KEYLINE_DEFAULT": "hsla(0,0%,0%,8%)",
-          "COLOR_KEYLINE_SOLID": "hsl(0,0%,92%)",
-          "CORNER_RADIUS_CARD_DEFAULT": "6px",
-          "CORNER_RADIUS_CARD_LG": "8px",
-          "CORNER_RADIUS_CARD_SM": "4px",
-          "CORNER_RADIUS_INPUT": "4px",
-          "CORNER_RADIUS_MAX": "90000px",
-          "CORNER_RADIUS_SHARP": "2px",
-          "FONT_SIZE_HEADING_DEFAULT": "36px",
-          "FONT_SIZE_HEADING_LG": "38px",
-          "FONT_SIZE_HEADING_SM": "32px",
-          "FONT_SIZE_ITEM_TITLE_DEFAULT": "14px",
-          "FONT_SIZE_ITEM_TITLE_LG": "16px",
-          "FONT_SIZE_ITEM_TITLE_SM": "12px",
-          "FONT_SIZE_PAGE_TITLE": "40px",
-          "FONT_SIZE_SUBHEADING_DEFAULT": "16px",
-          "FONT_SIZE_SUBHEADING_LG": "18px",
-          "FONT_SIZE_SUBHEADING_SM": "14px",
-          "FONT_SIZE_TEXT_DEFAULT": "14px",
-          "FONT_SIZE_TEXT_LG": "16px",
-          "FONT_SIZE_TEXT_SM": "12px",
-          "FONT_SIZE_TEXT_XL": "18px",
-          "FONT_SIZE_TEXT_XS": "10px",
-          "FONT_STACK_BRAND": "\\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
-          "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-          "FONT_STACK_DEFAULT": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
-          "FONT_WEIGHT_BOLD": 700,
-          "FONT_WEIGHT_DEFAULT": 400,
-          "FONT_WEIGHT_MEDIUM": 500,
-          "FONT_WEIGHT_SEMIBOLD": 600,
-          "LETTER_SPACING_DEFAULT": "normal",
-          "LINE_HEIGHT_DEFAULT": 1.4,
-          "LINE_HEIGHT_LOOSE": 1.6,
-          "LINE_HEIGHT_TIGHT": 1.2,
-          "OPACITY_FULL": "1",
-          "OPACITY_LIGHT": "0.7",
-          "OPACITY_LIGHTER": "0.5",
-          "OPACITY_LIGHTEST": "0.15",
-          "SPACING_BASE": 8,
-          "ZINDEX_ABYSS": "-9999",
-          "ZINDEX_DROPDOWN": "1010",
-          "ZINDEX_FIXED": "1030",
-          "ZINDEX_FLOOR": "1",
-          "ZINDEX_MODAL": "1050",
-          "ZINDEX_POPOVER": "1060",
-          "ZINDEX_SCRIM": "1040",
-          "ZINDEX_STICKY": "1020",
-          "ZINDEX_TOOLTIP": "1070",
-          "name": "Keen",
-        },
-      },
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "Wrap-sc-1cqdot2-0",
-        "isStatic": false,
-        "rules": Array [
-          "background:",
-          [Function],
-          ";font-weight:",
-          [Function],
-          ";font-family:",
-          [Function],
-          ";flex:1 1 ",
-          "1%",
-          ";border-radius:",
-          [Function],
-          ";min-height:",
-          [Function],
-          "px",
-          ";position:relative;transition:all 0.15s ease;display:flex;flex-direction:column;align-items:stretch;min-height:",
-          [Function],
-          "px",
-          ";margin:",
-          [Function],
-          "px",
-          ";&:after{content:\\"\\";position:absolute;top:0;right:0;bottom:0;left:0;border-radius:4px;border:2px solid ",
-          [Function],
-          ";opacity:0;}&:focus,&:hover{background:",
-          [Function],
-          ";}",
-        ],
-      },
-      "displayName": "Wrap",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "Wrap-sc-1cqdot2-0",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
-  theme={
-    Object {
-      "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
-      "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
-      "COLOR_BACKGROUND_TWO": "hsl(0,0%,97%)",
-      "COLOR_BRAND_PRIMARY": "#00b42b",
-      "COLOR_BRAND_SECONDARY": "#00b42b",
-      "COLOR_CONTENT_CONTRAST": "hsla(0,0%,0%,1)",
-      "COLOR_CONTENT_DEFAULT": "hsla(0,0%,0%,0.85)",
-      "COLOR_CONTENT_MUTED": "hsla(0,0%,0%,0.6)",
-      "COLOR_CONTENT_NONESSENTIAL": "hsla(0,0%,0%,0.3)",
-      "COLOR_INTENT_DANGER": "#D83D22",
-      "COLOR_INTENT_HIGHLIGHT": "#00b42b",
-      "COLOR_INTENT_INFO": "#1E6DF6",
-      "COLOR_INTENT_SUCCESS": "#00b42b",
-      "COLOR_INTENT_WARNING": "#F7CD45",
-      "COLOR_KEYLINE_DEFAULT": "hsla(0,0%,0%,8%)",
-      "COLOR_KEYLINE_SOLID": "hsl(0,0%,92%)",
-      "CORNER_RADIUS_CARD_DEFAULT": "6px",
-      "CORNER_RADIUS_CARD_LG": "8px",
-      "CORNER_RADIUS_CARD_SM": "4px",
-      "CORNER_RADIUS_INPUT": "4px",
-      "CORNER_RADIUS_MAX": "90000px",
-      "CORNER_RADIUS_SHARP": "2px",
-      "FONT_SIZE_HEADING_DEFAULT": "36px",
-      "FONT_SIZE_HEADING_LG": "38px",
-      "FONT_SIZE_HEADING_SM": "32px",
-      "FONT_SIZE_ITEM_TITLE_DEFAULT": "14px",
-      "FONT_SIZE_ITEM_TITLE_LG": "16px",
-      "FONT_SIZE_ITEM_TITLE_SM": "12px",
-      "FONT_SIZE_PAGE_TITLE": "40px",
-      "FONT_SIZE_SUBHEADING_DEFAULT": "16px",
-      "FONT_SIZE_SUBHEADING_LG": "18px",
-      "FONT_SIZE_SUBHEADING_SM": "14px",
-      "FONT_SIZE_TEXT_DEFAULT": "14px",
-      "FONT_SIZE_TEXT_LG": "16px",
-      "FONT_SIZE_TEXT_SM": "12px",
-      "FONT_SIZE_TEXT_XL": "18px",
-      "FONT_SIZE_TEXT_XS": "10px",
-      "FONT_STACK_BRAND": "\\"Metropolis\\", \\"Helvetica Neue\\", Arial, sans-serif",
-      "FONT_STACK_CODE": "\\"SFMono-Regular\\", Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-      "FONT_STACK_DEFAULT": "-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif",
-      "FONT_WEIGHT_BOLD": 700,
-      "FONT_WEIGHT_DEFAULT": 400,
-      "FONT_WEIGHT_MEDIUM": 500,
-      "FONT_WEIGHT_SEMIBOLD": 600,
-      "LETTER_SPACING_DEFAULT": "normal",
-      "LINE_HEIGHT_DEFAULT": 1.4,
-      "LINE_HEIGHT_LOOSE": 1.6,
-      "LINE_HEIGHT_TIGHT": 1.2,
-      "OPACITY_FULL": "1",
-      "OPACITY_LIGHT": "0.7",
-      "OPACITY_LIGHTER": "0.5",
-      "OPACITY_LIGHTEST": "0.15",
-      "SPACING_BASE": 8,
-      "ZINDEX_ABYSS": "-9999",
-      "ZINDEX_DROPDOWN": "1010",
-      "ZINDEX_FIXED": "1030",
-      "ZINDEX_FLOOR": "1",
-      "ZINDEX_MODAL": "1050",
-      "ZINDEX_POPOVER": "1060",
-      "ZINDEX_SCRIM": "1040",
-      "ZINDEX_STICKY": "1020",
-      "ZINDEX_TOOLTIP": "1070",
-      "name": "Keen",
-    }
-  }
+.c0 {
+  background: hsl(0,0%,97%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  -webkit-flex: 1 1 1%;
+  -ms-flex: 1 1 1%;
+  flex: 1 1 1%;
+  border-radius: 4px;
+  min-height: calc(var(--SPACING_BASE) * 8 * 1px);
+  position: relative;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: calc(var(--SPACING_BASE) * 10 * 1px);
+  margin: calc(var(--SPACING_BASE) * 0.25 * 1px);
+}
+
+.c0:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  border: 2px solid #00b42b;
+  opacity: 0;
+}
+
+.c0:focus,
+.c0:hover {
+  background: hsl(0,0%,94%);
+}
+
+<div
+  className="c0"
 />
 `;

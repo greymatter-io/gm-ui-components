@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
+import { keen } from "style/theme";
 
 const Copyright = styled.p`
   font-size: 60%; /* Unique instance of font size. Do not associate with theme variable. */
@@ -9,7 +10,7 @@ const Copyright = styled.p`
   text-align: ${props => (props.useExternalLinks ? "center" : "right")};
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid ${({theme}) => theme.COLOR_KEYLINE_DEFAULT};
+  border-top: 1px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
   margin-top: ${spacingScale(1)};
   padding: ${spacingScale(1)};
   text-transform: uppercase;
@@ -24,5 +25,9 @@ const Copyright = styled.p`
     border: none;
   }
 `;
+
+Copyright.defaultProps = {
+  theme: keen
+};
 
 export default Copyright;

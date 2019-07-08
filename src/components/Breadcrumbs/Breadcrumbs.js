@@ -6,8 +6,8 @@ import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 export const BreadcrumbsWrap = styled.ol`
-  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
-  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_SM};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
+  font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
   flex: 1 1 auto;
   display: flex;
   margin: 0;
@@ -17,6 +17,10 @@ export const BreadcrumbsWrap = styled.ol`
   align-items: stretch;
   flex-wrap: nowrap;
 `;
+
+BreadcrumbsWrap.defaultProps = {
+  theme: keen
+};
 
 export const Breadcrumb = styled.li`
   flex: 0 1 auto;
@@ -34,7 +38,7 @@ export const Breadcrumb = styled.li`
 
   &:before {
     display: inline-block;
-    color: ${({theme}) => theme.COLOR_CONTENT_NONESSENTIAL};
+    color: ${({ theme }) => theme.COLOR_CONTENT_NONESSENTIAL};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
     transform: scaleX(0.5);
@@ -55,6 +59,10 @@ export const Breadcrumb = styled.li`
     }
   }
 `;
+
+Breadcrumb.defaultProps = {
+  theme: keen
+};
 
 function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   return (

@@ -16,7 +16,6 @@ stories
           label={text("label", "label")}
           active={boolean("active", true)}
           disabled={boolean("disabled")}
-          clickAction={() => alert("hello")}
         />
       );
     },

@@ -4,8 +4,8 @@ exports[`InputBox should render 1`] = `
 .c0 {
   border: 1px solid #00b42b;
   color: #00b42b;
-  font-size: 16px;
-  margin: 2px;
+  font-size: calc(var(--SPACING_BASE) * 2 * 1px);
+  margin: calc(var(--SPACING_BASE) * 0.25 * 1px);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

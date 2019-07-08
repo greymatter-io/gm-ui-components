@@ -1,31 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ItemDisplay matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "ItemDisplay-limczf-0",
-        "isStatic": false,
-        "rules": Array [
-          "position:relative;padding:",
-          [Function],
-          "px",
-          ";",
-        ],
-      },
-      "displayName": "ItemDisplay",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "ItemDisplay-limczf-0",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  position: relative;
+  padding: calc(var(--SPACING_BASE) * 1.5 * 1px);
+}
+
+<div
+  className="c0"
 />
 `;

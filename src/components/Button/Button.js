@@ -1,5 +1,4 @@
 import { PropTypes } from "prop-types";
-import { node } from "../util/PropTypes";
 import React from "react";
 
 import ButtonWrap from "./components/ButtonWrap";

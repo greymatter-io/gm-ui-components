@@ -1,36 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ReadoutItemData matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "ReadoutItemData-sc-8swpcn-0",
-        "isStatic": false,
-        "rules": Array [
-          "align-items:stretch;display:flex;flex:1 1 100%;flex-direction:column;padding:",
-          [Function],
-          "px",
-          " 0;&:first-child{padding-left:",
-          [Function],
-          ";}",
-        ],
-      },
-      "displayName": "ReadoutItemData",
-      "foldedComponentIds": Array [],
-      "propTypes": Object {
-        "paddingLeft": [Function],
-      },
-      "render": [Function],
-      "styledComponentId": "ReadoutItemData-sc-8swpcn-0",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: calc(var(--SPACING_BASE) * 1 * 1px) 0;
+}
+
+.c0:first-child {
+  padding-left: calc(var(--SPACING_BASE) * 2 * 1px);
+}
+
+<div
+  className="c0"
 />
 `;

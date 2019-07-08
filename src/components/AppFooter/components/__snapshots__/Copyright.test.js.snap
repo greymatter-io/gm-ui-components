@@ -1,38 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Copyright should match snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "Copyright-sc-12wu9cy-0",
-        "isStatic": false,
-        "rules": Array [
-          "font-size:60%;margin:0;flex:0 0 100%;text-align:",
-          [Function],
-          ";transition:opacity 0.2s ease;cursor:default;border-top:1px solid ",
-          [Function],
-          ";margin-top:",
-          [Function],
-          "px",
-          ";padding:",
-          [Function],
-          "px",
-          ";text-transform:uppercase;order:3;white-space:pre-wrap;@media all and (min-width:800px){order:initial;flex:1 1 auto;padding:0;margin:0;border:none;}",
-        ],
-      },
-      "displayName": "Copyright",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "Copyright-sc-12wu9cy-0",
-      "target": "p",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
+.c0 {
+  font-size: 60%;
+  margin: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  text-align: right;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  cursor: default;
+  border-top: 1px solid hsla(0,0%,0%,8%);
+  margin-top: calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 1 * 1px);
+  text-transform: uppercase;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  white-space: pre-wrap;
+}
+
+@media all and (min-width:800px) {
+  .c0 {
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0;
+    border: none;
   }
-  forwardedRef={null}
+}
+
+<p
+  className="c0"
 />
 `;

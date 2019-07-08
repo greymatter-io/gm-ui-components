@@ -1,34 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "Header-u1waum-0",
-        "isStatic": false,
-        "rules": Array [
-          "align-items:center;display:flex;flex-direction:row;padding:0 ",
-          [Function],
-          "px",
-          " 0;width:100%;flex:0 0 ",
-          [Function],
-          "px",
-          ";",
-        ],
-      },
-      "displayName": "Header",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "Header-u1waum-0",
-      "target": "header",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0  calc(var(--SPACING_BASE) * 1 * 1px) 0;
+  width: 100%;
+  -webkit-flex: 0 0  calc(var(--SPACING_BASE) * 3 * 1px);
+  -ms-flex: 0 0  calc(var(--SPACING_BASE) * 3 * 1px);
+  flex: 0 0  calc(var(--SPACING_BASE) * 3 * 1px);
+}
+
+<header
+  className="c0"
 />
 `;

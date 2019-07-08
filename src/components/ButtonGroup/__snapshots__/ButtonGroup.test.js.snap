@@ -1,31 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ButtonGroup should match snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "ButtonGroup-sc-1jcyll7-0",
-        "isStatic": false,
-        "rules": Array [
-          "display:flex;flex-direction:row;* + *{margin-left:",
-          [Function],
-          "px",
-          ";}",
-        ],
-      },
-      "displayName": "ButtonGroup",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "ButtonGroup-sc-1jcyll7-0",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 * + * {
+  margin-left: calc(var(--SPACING_BASE) * 0.5 * 1px);
+}
+
+<div
+  className="c0"
 />
 `;

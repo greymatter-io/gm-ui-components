@@ -1,5 +1,4 @@
 import { darken, saturate, desaturate, parseToHsl, lighten } from "polished";
-import { css } from "styled-components";
 
 /**
  * Scales a string of a certain number of pixels according to a given factor

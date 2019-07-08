@@ -1,54 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StyledSVG matches snapshot 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "_foldedDefaultProps": Object {
-        "size": "1.714em",
-      },
-      "attrs": Array [
-        Object {
-          "preserveAspectRatio": "xMaxYMax meet",
-          "version": "1.1",
-          "viewBox": "0 0 64 64",
-          "xmlns": "http://www.w3.org/2000/svg",
-          "xmlnsXlink": "http://www.w3.org/1999/xlink",
-        },
-      ],
-      "componentStyle": ComponentStyle {
-        "componentId": "StyledSVG-sc-1wqf7bc-0",
-        "isStatic": false,
-        "rules": Array [
-          "z-index:1;width:",
-          [Function],
-          ";height:",
-          [Function],
-          ";word-spacing:0;vertical-align:middle;overflow:visible;.glyph > svg{width:100%;height:100%;overflow:visible;fill:none;border:none;}.glyph *{fill:",
-          [Function],
-          ";fill-opacity:",
-          [Function],
-          ";stroke-width:",
-          [Function],
-          ";stroke-opacity:",
-          [Function],
-          ";stroke:",
-          [Function],
-          ";vector-effect:non-scaling-stroke;}.glyph *[class*=\\"fill\\"]:not([class*=\\"border\\"]){stroke:none;}.glyph *[class*=\\"border\\"]:not([class*=\\"fill\\"]){fill:none;}",
-        ],
-      },
-      "displayName": "StyledSVG",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "StyledSVG-sc-1wqf7bc-0",
-      "target": "svg",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+.c0 {
+  z-index: 1;
+  width: 1.714em;
+  height: 1.714em;
+  word-spacing: 0;
+  vertical-align: middle;
+  overflow: visible;
+}
+
+.c0 .glyph > svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  border: none;
+}
+
+.c0 .glyph * {
+  vector-effect: non-scaling-stroke;
+}
+
+.c0 .glyph *[class*="fill"]:not([class*="border"]) {
+  stroke: none;
+}
+
+.c0 .glyph *[class*="border"]:not([class*="fill"]) {
+  fill: none;
+}
+
+<svg
+  className="c0"
+  preserveAspectRatio="xMaxYMax meet"
   size="1.714em"
+  version="1.1"
+  viewBox="0 0 64 64"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
 />
 `;
