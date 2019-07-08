@@ -27,8 +27,16 @@ module.exports = (code, config, state) => {
 /* svgr always wraps the glyph in an svg, but we want to 
    use our own custom Icon component as the svg element. */
 function stripSVG(code) {
-  return code
-    .slice(code.indexOf(">"), code.indexOf("</svg>"))
-    .replace(/id=/g, "className=") // Replace ids with classes
-    .replace(/fill="([^"]*)"/g, ""); // Strip out any hard coded fills https://regexr.com/41skv
+  return (
+    code
+      .slice(code.indexOf(">"), code.indexOf("</svg>"))
+      /**
+       * Pardon this estoric string replacement. Sketch creates SVGs but the only way it allows adding
+       * a name to the elements in the SVG is by applying an id. The ids aren’t always unique, which doesn't
+       * conform to the HTML spec, so this replacement converts those ids to classes. We also use the classes
+       * for styling.
+       */
+      .replace(/id=/g, "className=")
+      .replace(/fill="([^"]*)"/g, "")
+  ); // Strip out any hard coded fills https://regexr.com/41skv
 }
