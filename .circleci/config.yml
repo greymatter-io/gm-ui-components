@@ -148,5 +148,5 @@ workflows:
             - setup
       - coverage:
           requires:
-            - test
+            - test:unit
             - build
