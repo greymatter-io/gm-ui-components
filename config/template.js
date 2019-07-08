@@ -29,6 +29,6 @@ module.exports = (code, config, state) => {
 function stripSVG(code) {
   return code
     .slice(code.indexOf(">"), code.indexOf("</svg>"))
-    .replace(/id=/g, "class=") // Replace ids with classes
+    .replace(/id=/g, "className=") // Replace ids with classes
     .replace(/fill="([^"]*)"/g, ""); // Strip out any hard coded fills https://regexr.com/41skv
 }
