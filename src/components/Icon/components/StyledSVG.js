@@ -14,6 +14,12 @@ const StyledSVG = styled.svg.attrs({
   vertical-align: middle;
   overflow: visible;
 
+  @media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 190dpi) {
+    .glyph {
+      transform: translateX(0.5px) translateY(0.5px);
+    }
+  }
+
   .glyph > svg {
     width: 100%;
     height: 100%;
