@@ -103,7 +103,7 @@ Icon.defaultProps = {
   },
   badgeColor: "red",
   borderColor: "currentColor",
-  borderWidth: "1px",
+  borderWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
   fillColor: "currentColor",
   fillOpacity: 0.15,
   size: "1.7145em"
