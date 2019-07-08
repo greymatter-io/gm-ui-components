@@ -17,6 +17,7 @@ const DemoCanvas = styled.div`
 const DemoItem = styled.button.attrs({
   title: props => props.demoVarName,
   onClick: props => () => {
+    // eslint-disable-next-line no-template-curly-in-string
     copy("${({theme}) => theme." + props.demoVarName + "}");
   }
 })`
@@ -417,6 +418,7 @@ stories.add(
           Use themed style tokens instead of hardcoding pixel and color values.
           You can import these variables like any other library component:
           <code>
+            {/* eslint-disable-next-line no-template-curly-in-string */}
             <pre>{"color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT}"}</pre>
           </code>
           Style variables are also exposed to the browser as CSS Custom

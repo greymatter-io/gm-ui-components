@@ -70,7 +70,7 @@ export default function Icon({
             cx={badgePosition.x}
             cy={badgePosition.y}
             r="10"
-            fill-opacity="1"
+            fillOpacity="1"
             fill={badgeColor}
           />
         </>
@@ -81,7 +81,6 @@ export default function Icon({
 
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
-  hasBadge: PropTypes.bool,
   badgeColor: PropTypes.string,
   badgePosition: PropTypes.object,
   borderColor: PropTypes.string,
@@ -90,6 +89,7 @@ Icon.propTypes = {
   fillColor: PropTypes.string,
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
+  hasBadge: PropTypes.bool,
   size: PropTypes.string,
   title: PropTypes.string
 };

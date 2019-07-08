@@ -9,7 +9,7 @@ const DemoCanvas = styled.div``;
 stories.add("Global Styles", () => (
   <>
     <DemoCanvas>
-      <div id="top" class="page" role="document">
+      <div id="top" className="page" role="document">
         <header role="banner">
           <h1>HTML Elements</h1>
           <p>
@@ -379,7 +379,7 @@ stories.add("Global Styles", () => (
                 </p>
                 <p>
                   The time element:{" "}
-                  <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+                  <time dateTime="2013-04-06T12:32+00:00">2 weeks ago</time>
                 </p>
               </div>
               <footer>
@@ -421,7 +421,7 @@ stories.add("Global Styles", () => (
                 <p>
                   <img
                     src="http://placekitten.com/480/480"
-                    alt="Image alt text"
+                    alt="A kitten looking at the camera"
                   />
                 </p>
                 <h3>
@@ -431,7 +431,7 @@ stories.add("Global Styles", () => (
                 <figure>
                   <img
                     src="http://placekitten.com/420/420"
-                    alt="Image alt text"
+                    alt="A kitten laying down"
                   />
                 </figure>
                 <h3>
@@ -441,7 +441,7 @@ stories.add("Global Styles", () => (
                 <figure>
                   <img
                     src="http://placekitten.com/420/420"
-                    alt="Image alt text"
+                    alt="A cat laying down"
                   />
                   <figcaption>Here is a caption for this image.</figcaption>
                 </figure>
@@ -539,7 +539,7 @@ stories.add("Global Styles", () => (
                 <h2>IFrame</h2>
               </header>
               <div>
-                <iframe src="index.html" height="300" />
+                <iframe src="index.html" height="300" title="anIframe" />
               </div>
               <footer>
                 <p>
@@ -556,7 +556,7 @@ stories.add("Global Styles", () => (
               <fieldset id="forms__input">
                 <legend>Input fields</legend>
                 <p>
-                  <label for="input__text">Text Input</label>
+                  <label htmlFor="input__text">Text Input</label>
                   <input
                     id="input__text"
                     type="text"
@@ -564,7 +564,7 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="input__password">Password</label>
+                  <label htmlFor="input__password">Password</label>
                   <input
                     id="input__password"
                     type="password"
@@ -572,7 +572,7 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="input__webaddress">Web Address</label>
+                  <label htmlFor="input__webaddress">Web Address</label>
                   <input
                     id="input__webaddress"
                     type="url"
@@ -580,7 +580,7 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="input__emailaddress">Email Address</label>
+                  <label htmlFor="input__emailaddress">Email Address</label>
                   <input
                     id="input__emailaddress"
                     type="email"
@@ -588,7 +588,7 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="input__phone">Phone Number</label>
+                  <label htmlFor="input__phone">Phone Number</label>
                   <input
                     id="input__phone"
                     type="tel"
@@ -596,7 +596,7 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="input__search">Search</label>
+                  <label htmlFor="input__search">Search</label>
                   <input
                     id="input__search"
                     type="search"
@@ -604,7 +604,7 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="input__text2">Number Input</label>
+                  <label htmlFor="input__text2">Number Input</label>
                   <input
                     id="input__text2"
                     type="number"
@@ -612,23 +612,23 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="input__text3" class="error">
+                  <label htmlFor="input__text3" className="error">
                     Error
                   </label>
                   <input
                     id="input__text3"
-                    class="is-error"
+                    className="is-error"
                     type="text"
                     placeholder="Text Input"
                   />
                 </p>
                 <p>
-                  <label for="input__text4" class="valid">
+                  <label htmlFor="input__text4" className="valid">
                     Valid
                   </label>
                   <input
                     id="input__text4"
-                    class="is-valid"
+                    className="is-valid"
                     type="text"
                     placeholder="Text Input"
                   />
@@ -640,7 +640,7 @@ stories.add("Global Styles", () => (
               <fieldset id="forms__select">
                 <legend>Select menus</legend>
                 <p>
-                  <label for="select">Select</label>
+                  <label htmlFor="select">Select</label>
                   <select id="select">
                     <optgroup label="Option Group">
                       <option>Option One</option>
@@ -655,9 +655,9 @@ stories.add("Global Styles", () => (
               </p>
               <fieldset id="forms__checkbox">
                 <legend>Checkboxes</legend>
-                <ul class="list list--bare">
+                <ul className="list list--bare">
                   <li>
-                    <label for="checkbox1">
+                    <label htmlFor="checkbox1">
                       <input
                         id="checkbox1"
                         name="checkbox"
@@ -668,13 +668,13 @@ stories.add("Global Styles", () => (
                     </label>
                   </li>
                   <li>
-                    <label for="checkbox2">
+                    <label htmlFor="checkbox2">
                       <input id="checkbox2" name="checkbox" type="checkbox" />{" "}
                       Choice B
                     </label>
                   </li>
                   <li>
-                    <label for="checkbox3">
+                    <label htmlFor="checkbox3">
                       <input id="checkbox3" name="checkbox" type="checkbox" />{" "}
                       Choice C
                     </label>
@@ -686,37 +686,37 @@ stories.add("Global Styles", () => (
               </p>
               <fieldset id="forms__radio">
                 <legend>Radio buttons</legend>
-                <ul class="list list--bare">
+                <ul className="list list--bare">
                   <li>
-                    <label for="radio1">
+                    <label htmlFor="radio1">
                       <input
                         id="radio1"
                         name="radio"
                         type="radio"
-                        class="radio"
+                        className="radio"
                         checked="checked"
                       />{" "}
                       Option 1
                     </label>
                   </li>
                   <li>
-                    <label for="radio2">
+                    <label htmlFor="radio2">
                       <input
                         id="radio2"
                         name="radio"
                         type="radio"
-                        class="radio"
+                        className="radio"
                       />{" "}
                       Option 2
                     </label>
                   </li>
                   <li>
-                    <label for="radio3">
+                    <label htmlFor="radio3">
                       <input
                         id="radio3"
                         name="radio"
                         type="radio"
-                        class="radio"
+                        className="radio"
                       />{" "}
                       Option 3
                     </label>
@@ -729,7 +729,7 @@ stories.add("Global Styles", () => (
               <fieldset id="forms__textareas">
                 <legend>Textareas</legend>
                 <p>
-                  <label for="textarea">Textarea</label>
+                  <label htmlFor="textarea">Textarea</label>
                   <textarea
                     id="textarea"
                     rows="8"
@@ -744,31 +744,31 @@ stories.add("Global Styles", () => (
               <fieldset id="forms__html5">
                 <legend>HTML5 inputs</legend>
                 <p>
-                  <label for="ic">Color input</label>
+                  <label htmlFor="ic">Color input</label>
                   <input type="color" id="ic" value="#000000" />
                 </p>
                 <p>
-                  <label for="in">Number input</label>
+                  <label htmlFor="in">Number input</label>
                   <input type="number" id="in" min="0" max="10" value="5" />
                 </p>
                 <p>
-                  <label for="ir">Range input</label>
+                  <label htmlFor="ir">Range input</label>
                   <input type="range" id="ir" value="10" />
                 </p>
                 <p>
-                  <label for="idd">Date input</label>
+                  <label htmlFor="idd">Date input</label>
                   <input type="date" id="idd" value="1970-01-01" />
                 </p>
                 <p>
-                  <label for="idm">Month input</label>
+                  <label htmlFor="idm">Month input</label>
                   <input type="month" id="idm" value="1970-01" />
                 </p>
                 <p>
-                  <label for="idw">Week input</label>
+                  <label htmlFor="idw">Week input</label>
                   <input type="week" id="idw" value="1970-W01" />
                 </p>
                 <p>
-                  <label for="idt">Datetime input</label>
+                  <label htmlFor="idt">Datetime input</label>
                   <input
                     type="datetime"
                     id="idt"
@@ -776,7 +776,7 @@ stories.add("Global Styles", () => (
                   />
                 </p>
                 <p>
-                  <label for="idtl">Datetime-local input</label>
+                  <label htmlFor="idtl">Datetime-local input</label>
                   <input
                     type="datetime-local"
                     id="idtl"

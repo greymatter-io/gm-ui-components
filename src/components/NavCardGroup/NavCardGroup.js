@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled, { ThemeProvider } from "styled-components";
 
 import { keenDark } from "style/theme";
@@ -11,7 +12,7 @@ const NavCardGroupWrap = styled.nav`
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
   position: relative;
-  background: ${({theme}) => theme.COLOR_BACKGROUND_DEFAULT};
+  background: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {
@@ -28,7 +29,7 @@ const NavCardGroupWrap = styled.nav`
     &.active,
     &.active:hover {
       div[class*="NavCardWrap"] {
-        ${({theme}) => theme.COLOR_BACKGROUND_THREE};
+        ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
       }
     }
   }
@@ -41,5 +42,13 @@ function NavCardGroup({ useContextTheme, children }) {
     </ThemeProvider>
   );
 }
+
+NavCardGroup.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
+  useContextTheme: PropTypes.bool
+};
 
 export default NavCardGroup;

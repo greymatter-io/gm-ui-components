@@ -48,6 +48,7 @@ InputField.propTypes = {
   maxLength: PropTypes.number,
   placeholder: PropTypes.string,
   readonly: PropTypes.bool,
+  style: PropTypes.object,
   type: PropTypes.oneOf([
     "email",
     "password",
