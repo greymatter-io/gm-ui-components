@@ -8,9 +8,9 @@ import InputBox from "components/util/InputBox";
 const CheckmarkColor = ({ theme }) =>
   readableColor(darken(0.1, theme.COLOR_INTENT_HIGHLIGHT));
 
-const CheckboxBox = styled(InputBox).attrs({
+const CheckboxBox = styled(InputBox).attrs(() => ({
   type: "checkbox"
-})`
+}))`
   border-radius: ${({ theme }) =>
     parseInt(theme.CORNER_RADIUS_INPUT, 10) / 2 + 1}px;
 

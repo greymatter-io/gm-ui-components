@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const StyledSVG = styled.svg.attrs({
+const StyledSVG = styled.svg.attrs(() => ({
   version: "1.1",
   xmlns: "http://www.w3.org/2000/svg",
   xmlnsXlink: "http://www.w3.org/1999/xlink",
   viewBox: `0 0 64 64`,
   preserveAspectRatio: "xMaxYMax meet"
-})`
+}))`
   z-index: 1;
   width: ${props => props.size};
   height: ${props => props.size};

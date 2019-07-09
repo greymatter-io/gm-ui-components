@@ -8,9 +8,9 @@ import { columnItemShape, dataItemShape } from "../types";
 import TableCell from "./TableCell";
 import { keen } from "style/theme";
 
-const TableRowElement = styled.tr.attrs({
+const TableRowElement = styled.tr.attrs(() => ({
   tabIndex: 0
-})`
+}))`
   cursor: pointer;
   position: relative;
   box-shadow: 0 -1px 0 ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};

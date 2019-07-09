@@ -8,9 +8,9 @@ import InputBox from "components/util/InputBox";
 const CheckmarkColor = ({ theme }) =>
   readableColor(darken(0.1, theme.COLOR_INTENT_HIGHLIGHT));
 
-const RadioBox = styled(InputBox).attrs({
+const RadioBox = styled(InputBox).attrs(() => ({
   type: "radio"
-})`
+}))`
   border-radius: 200px;
 
   &:after {

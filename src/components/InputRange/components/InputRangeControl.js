@@ -87,10 +87,10 @@ const FIELD_ACTIVE_AND_FOCUSED_THUMB_STYLE = css`
   box-shadow: ${FOCUS_SHADOW}, ${ACTIVE_SHADOW};
 `;
 
-const InputRangeControl = styled.input.attrs({
+const InputRangeControl = styled.input.attrs(props => ({
   type: "range",
-  defaultValue: props => props.defaultValue
-})`
+  defaultValue: props.defaultValue
+}))`
   background: transparent;
   ${formInteractionStyles};
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};

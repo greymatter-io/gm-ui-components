@@ -14,13 +14,13 @@ const DemoCanvas = styled.div`
   padding: ${spacingScale(2)};
 `;
 
-const DemoItem = styled.button.attrs({
-  title: props => props.demoVarName,
-  onClick: props => () => {
+const DemoItem = styled.button.attrs(props => ({
+  title: props.demoVarName,
+  onClick: () => {
     // eslint-disable-next-line no-template-curly-in-string
     copy("${({theme}) => theme." + props.demoVarName + "}");
   }
-})`
+}))`
   box-sizing: border-box;
   background: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_SM};
@@ -86,9 +86,9 @@ const DemoItem = styled.button.attrs({
   }
 `;
 
-const DemoSection = styled.div.attrs({
-  id: props => props.name
-})`
+const DemoSection = styled.div.attrs(props => ({
+  id: props.name
+}))`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -349,7 +349,7 @@ const DemoNavigation = styled.nav`
   top: 0;
 `;
 
-const DemoNavigationItem = styled.a.attrs({ target: "_self" })`
+const DemoNavigationItem = styled.a.attrs(() => ({ target: "_self" }))`
   display: flex;
   align-items: center;
   justify-content: center;
