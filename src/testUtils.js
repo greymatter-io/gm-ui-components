@@ -8,7 +8,7 @@ import { shallow } from "enzyme";
 // consistent experience when testing so the developer doesn't have to worry about how many times to .dive().
 export const shallowClone = (tree, context) => {
   // If the component is a styled-component
-  if (tree.type.styledComponentId !== undefined)) {
+  if (tree.type.styledComponentId !== undefined) {
     // and if the sc does not have any interpolations, only dive twice
     if (tree.type.componentStyle.isStatic) {
       return shallow(tree, context)
