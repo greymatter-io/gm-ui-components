@@ -74,4 +74,24 @@ stories
         text: "A collection of collapse sections."
       }
     }
+  )
+  .add(
+    "nested",
+    () => {
+      return (
+        <>
+          <Collapse bodyProps={{style : {"overflow" : "unset"}}} title="Collapse Title" detail="Detail text">
+            <div>Collapse content</div>
+            <Collapse title="Collapse Title" detail="Detail text">
+              <div>Collapse content</div>
+            </Collapse>
+          </Collapse>
+        </>
+      );
+    },
+    {
+      info: {
+        text: "A collection of collapse sections."
+      }
+    }
   );

@@ -60,6 +60,7 @@ class Collapse extends React.Component {
       children,
       initiallyOpen,
       onClick,
+      bodyProps,
       ...props
     } = this.props;
 
@@ -81,7 +82,7 @@ class Collapse extends React.Component {
           <Title>{title}</Title>
           <Detail>{detail}</Detail>
         </Header>
-        <Body isOpen={isOpen} innerRef={this.contentRef}>
+        <Body {...bodyProps} isOpen={isOpen} innerRef={this.contentRef}>
           {children}
         </Body>
       </Wrapper>
@@ -90,11 +91,13 @@ class Collapse extends React.Component {
 }
 
 Collapse.defaultProps = {
+  bodyProps : {},
   initiallyOpen: false,
   theme: keen
 };
 
 Collapse.propTypes = {
+  bodyProps : PropTypes.object,
   children: PropTypes.element.isRequired,
   detail: PropTypes.oneOfType([
     PropTypes.node,
