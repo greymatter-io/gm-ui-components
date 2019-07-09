@@ -35,6 +35,7 @@ function getPosition(position) {
     case "right":
       return css`
         flex-direction: row-reverse;
+        justify-content: flex-end;
         align-items: center;
         > input,
         > textarea,
