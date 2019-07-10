@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Copyright should render when screen is 800px or higher 1`] = `
+exports[`Copyright should match snapshot 1`] = `
 .c0 {
   font-size: 60%;
   margin: 0;
@@ -11,9 +11,9 @@ exports[`Copyright should render when screen is 800px or higher 1`] = `
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
   cursor: default;
-  border-top: 1px solid;
-  margin-top: 8px;
-  padding: 8px;
+  border-top: 1px solid hsla(0,0%,0%,8%);
+  margin-top: calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 1 * 1px);
   text-transform: uppercase;
   -webkit-order: 3;
   -ms-flex-order: 3;

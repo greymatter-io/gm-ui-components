@@ -1,6 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
+import { text, boolean } from "@storybook/addon-knobs";
+
 import Collapse from "./Collapse";
 
 const stories = storiesOf("Components|Collapse", module);
@@ -26,7 +28,27 @@ stories
     },
     {
       info: {
-        text: "Add component description here. Accepts markdown."
+        text: "A single collapse section that is uncontrolled."
+      }
+    }
+  )
+  .add(
+    "controlled",
+    () => {
+      return (
+        <Collapse
+          title={text("title", "Collapse Title")}
+          detail={text("detail", "Detail text")}
+          isOpen={boolean("isOpen", true)}
+        >
+          <div style={style}>Collapse content</div>
+        </Collapse>
+      );
+    },
+    {
+      info: {
+        text:
+          "A single collapse section controlled using the isOpen and onClick props. Both isOpen and onClick are required when using Collapse as a controlled component."
       }
     }
   )
@@ -49,7 +71,7 @@ stories
     },
     {
       info: {
-        text: "Add component description here. Accepts markdown."
+        text: "A collection of collapse sections."
       }
     }
   );

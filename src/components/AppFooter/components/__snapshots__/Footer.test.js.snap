@@ -7,7 +7,7 @@ exports[`Footer should render 1`] = `
   -ms-user-select: none;
   user-select: none;
   overflow: hidden;
-  padding: 0 4px;
+  padding: 0  calc(var(--SPACING_BASE) * 0.5 * 1px);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,11 +16,11 @@ exports[`Footer should render 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  color: #000;
-  background: #ffffff;
+  color: hsla(0,0%,0%,0.85);
+  background: hsl(0,0%,100%);
   font-size: 14px;
   height: auto;
-  min-height: 32px;
+  min-height: calc(var(--SPACING_BASE) * 4 * 1px);
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -33,7 +33,7 @@ exports[`Footer should render 1`] = `
 
 @media all and (min-width:800px) {
   .c0 {
-    height: 40px;
+    height: calc(var(--SPACING_BASE) * 5 * 1px);
     -webkit-flex-wrap: no-wrap;
     -ms-flex-wrap: no-wrap;
     flex-wrap: no-wrap;
@@ -41,15 +41,11 @@ exports[`Footer should render 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1010;
+    justify-self: stretch;
   }
 
   .c0 + * {
-    padding-bottom: 32px;
+    padding-bottom: calc(var(--SPACING_BASE) * 4 * 1px);
   }
 }
 

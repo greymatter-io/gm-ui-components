@@ -7,6 +7,7 @@ exports[`Button Snapshots matches active snapshot 1`] = `
   disabled={false}
   label="Button"
   orientation="horizontal"
+  outline={false}
   size="normal"
   type="default"
 />
@@ -19,6 +20,7 @@ exports[`Button Snapshots matches disabled snapshot 1`] = `
   disabled={true}
   label="Button"
   orientation="horizontal"
+  outline={false}
   size="normal"
   type="default"
 />
@@ -53,16 +55,15 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 4px;
 }
 
 .c0:hover {
@@ -79,7 +80,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -118,10 +119,6 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   cursor: not-allowed;
   -webkit-filter: saturate(0) opacity(70%);
   filter: saturate(0) opacity(70%);
-}
-
-.c0 > :not(:first-child) {
-  margin-top: 0.25px;
 }
 
 <button
@@ -165,12 +162,12 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -190,7 +187,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -232,7 +229,6 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -279,12 +275,12 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: #e6e6e6;
   color: #000;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -304,7 +300,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -346,7 +342,6 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -362,20 +357,6 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
     outline
   </span>
 </button>
-`;
-
-exports[`Button Snapshots matches prefix/suffix snapshot 1`] = `
-<Button
-  active={false}
-  clickAction={[Function]}
-  disabled={false}
-  label="Button"
-  orientation="horizontal"
-  prefix="Prefix"
-  size="normal"
-  suffix="Suffix"
-  type="default"
-/>
 `;
 
 exports[`Button Snapshots matches size snapshots 1`] = `
@@ -407,12 +388,12 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -432,7 +413,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -474,7 +455,6 @@ exports[`Button Snapshots matches size snapshots 1`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -521,12 +501,12 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
-  font-size: 9px;
+  font-size: 10px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -547,7 +527,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -589,7 +569,6 @@ exports[`Button Snapshots matches size snapshots 2`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -636,12 +615,12 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
-  font-size: 11px;
+  font-size: 12px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   text-transform: uppercase;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -662,7 +641,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -704,7 +683,6 @@ exports[`Button Snapshots matches size snapshots 3`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -751,12 +729,12 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1.25 * 1px);
   border-radius: 4px;
-  padding: 2px 10px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -776,7 +754,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -818,7 +796,6 @@ exports[`Button Snapshots matches size snapshots 4`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -865,12 +842,12 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
   font-size: 18px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1.25 * 1px);
   border-radius: 4px;
-  padding: 2px 10px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -890,7 +867,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -932,7 +909,6 @@ exports[`Button Snapshots matches size snapshots 5`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -983,8 +959,8 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1004,7 +980,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -1046,7 +1022,6 @@ exports[`Button Snapshots matches type snapshots 1`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1097,8 +1072,8 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   border-color: transparent;
   color: #fff;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1118,7 +1093,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -1160,7 +1135,6 @@ exports[`Button Snapshots matches type snapshots 2`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1207,12 +1181,12 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #0aab2a;
+  background-color: #00b42b;
   border-color: transparent;
   color: #fff;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1232,7 +1206,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -1274,7 +1248,6 @@ exports[`Button Snapshots matches type snapshots 3`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -1325,8 +1298,8 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   border-color: transparent;
   color: #000;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1346,7 +1319,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -1388,7 +1361,6 @@ exports[`Button Snapshots matches type snapshots 4`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonGroup matches snapshot 1`] = `
+exports[`ButtonGroup should match snapshot 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12,7 +12,7 @@ exports[`ButtonGroup matches snapshot 1`] = `
 }
 
 .c0 * + * {
-  margin-left: 4px;
+  margin-left: calc(var(--SPACING_BASE) * 0.5 * 1px);
 }
 
 <div

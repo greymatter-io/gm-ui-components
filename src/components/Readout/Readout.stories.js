@@ -1,5 +1,5 @@
 import React from "react";
-import { IconSummary } from "../";
+import { IconSummary } from "..";
 
 import { storiesOf } from "@storybook/react";
 import { boolean, object, color } from "@storybook/addon-knobs";
@@ -46,7 +46,7 @@ const mockReadoutManyItems = [
 
 stories
   .add(
-    "Readout",
+    "Typical",
     () => {
       return (
         <Readout
@@ -63,7 +63,7 @@ stories
     }
   )
   .add(
-    "A Readout with Many Items ",
+    "With Many Items ",
     () => {
       return (
         <Readout
@@ -80,7 +80,7 @@ stories
     }
   )
   .add(
-    "A Readout Group",
+    "Readout Group",
     () => {
       return (
         <ReadoutGroup>

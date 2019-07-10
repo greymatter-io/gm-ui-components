@@ -5,20 +5,16 @@ import styled, { css } from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 
 import spinGradient from "./spinGradient";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 export const SpinnerSVG = styled.svg`
   animation: ${spinGradient} 16s ease infinite;
   margin: ${spacingScale(1)};
-  color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+  color: ${({theme}) => theme.COLOR_INTENT_HIGHLIGHT};
   overflow: visible;
   ${props =>
     props.orientation === "vertical" ? verticalStyles : horizontalStyles};
 `;
-
-SpinnerSVG.defaultProps = {
-  theme: keen
-};
 
 SpinnerSVG.displayName = "SpinnerSVG";
 
@@ -64,6 +60,11 @@ export function LoadingSpinner(props) {
 
 LoadingSpinner.propTypes = {
   orientation: PropTypes.oneOf(["vertical", "horizontal"])
+};
+
+SpinnerSVG.defaultProps = {
+  orientation: "vertical",
+  theme: keen
 };
 
 LoadingSpinner.displayName = "LoadingSpinner";

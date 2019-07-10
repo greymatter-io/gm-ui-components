@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, object } from "@storybook/addon-knobs";
+import { select, object, array } from "@storybook/addon-knobs";
 
 import Table from "./Table";
 
@@ -66,7 +66,7 @@ const data = [
 ];
 
 stories.add(
-  "default",
+  "Typical",
   () => {
     return (
       <Table
@@ -77,7 +77,7 @@ stories.add(
           ["name", "address", "favfood", "age"],
           "name"
         )}
-        selectedRows={[0]}
+        selectedRows={array("selectedRows", [0])}
         onSort={sortIndex => alert(JSON.stringify(sortIndex))}
         onRowClick={rowData => console.log(rowData)}
       />

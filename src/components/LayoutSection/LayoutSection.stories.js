@@ -7,19 +7,19 @@ import LayoutSection from "./LayoutSection";
 import { Readout, ReadoutGroup, IconBell, IconSummary } from "../index.js";
 
 const ThemedBackground = styled.div`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  background-color: ${({theme}) => theme.COLOR_BACKGROUND_DEFAULT};
 `;
 
 const stories = storiesOf("Components|Layout Section", module);
 
 stories.add(
-  "default",
+  "Typical",
   () => {
     return (
       <ThemedBackground>
         <LayoutSection
           title={text("title", "Test Layout")}
-          icon={() => <IconBell size={"24px"} />}
+          icon={() => <IconBell />}
         >
           <ReadoutGroup>
             <Readout
@@ -36,7 +36,7 @@ stories.add(
                 {
                   title: "Error Rate",
                   value: "0.000%",
-                  icon: () => <IconSummary size={"24px"} />
+                  icon: () => <IconSummary />
                 }
               ]}
             />

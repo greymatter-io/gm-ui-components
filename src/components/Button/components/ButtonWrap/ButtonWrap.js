@@ -1,12 +1,10 @@
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
-import { transparentize } from "polished";
-
 import generateButtonOrientation from "./utils/generateButtonOrientation";
 import generateButtonSize from "./utils/generateButtonSize";
 import generateButtonStyle from "./utils/generateButtonStyle";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 // The start of the CSS style output
 const ButtonWrap = styled.button`
@@ -16,8 +14,8 @@ const ButtonWrap = styled.button`
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT_DEFAULT};
   justify-content: center;
   line-height: 1.4;
   text-align: center;
@@ -46,14 +44,6 @@ const ButtonWrap = styled.button`
     outline: none;
     border: 1px solid
       ${({ theme }) => theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT};
-    /* box-shadow: ${({ theme }) => css`0 0 0 ${theme.FORM_HIGHLIGHT_SIZE}px
-        ${({ theme }) =>
-          transparentize(
-            1 - theme.OPACITY_50,
-            theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT
-          )},
-      inset 0 0 0 1px ${({ theme }) =>
-        transparentize(1 - theme.OPACITY_15, theme.COLOR_BACKGROUND_A)}`}}; */
     z-index: 10;
     position: relative;
 
@@ -88,7 +78,12 @@ ButtonWrap.propTypes = {
 };
 
 ButtonWrap.defaultProps = {
-  theme: keen
+  theme: keen,
+  active: false,
+  orientation: "horizontal",
+  outline: false,
+  size: "normal",
+  type: "default"
 };
 
 export default ButtonWrap;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icons/functions</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/functions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18,44 L22,22.5 L23,20.5 L24.5,19.5 L25.5,19.5 M24,29 L18,29 M33,25 L32.057983,26.0990198 C30.6989091,27.684606 29.6603912,29.5188264 29,31.5 L28.6373774,32.5878677 C28.2134956,33.8595131 27.9162601,35.169919 27.75,36.5 C27.5843011,37.8255916 27.6215807,39.1686939 27.8605551,40.4830532 L28.1775097,42.2263033 C28.3902492,43.3963705 28.8403229,44.5104843 29.5,45.5 L29.5,45.5 M48,25 L48.3182421,25.7425649 C49.097953,27.5618903 49.5,29.520633 49.5,31.5 L49.5,32.4384472 C49.5,33.8076477 49.3320799,35.1716804 49,36.5 C48.6668912,37.8324352 48.2648432,39.1466813 47.7954786,40.4374338 L47.1160861,42.3057633 C46.7068347,43.4312046 46.1642763,44.5035855 45.5,45.5 L45.5,45.5 M36,29 L42,44 M44,29 L34,44" id="Combined-Shape" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

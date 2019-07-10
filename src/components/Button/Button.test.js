@@ -16,10 +16,8 @@ const props = {
   labelStyle: {},
   orientation: "horizontal",
   outline: false,
-  prefix: "pre",
   size: "normal",
   style: {},
-  suffix: "suff",
   tabIndex: 0,
   type: "primary"
 };
@@ -66,18 +64,6 @@ describe("Button", () => {
         );
         expect(tree).toMatchSnapshot();
       });
-    });
-
-    test("matches prefix/suffix snapshot", () => {
-      let tree = (
-        <Button
-          prefix="Prefix"
-          suffix="Suffix"
-          label="Button"
-          clickAction={() => {}}
-        />
-      );
-      expect(tree).toMatchSnapshot();
     });
 
     test("matches active snapshot", () => {

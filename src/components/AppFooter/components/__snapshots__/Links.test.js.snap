@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link should render 1`] = `
+exports[`Link should match snapshot 1`] = `
 .c0 {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: right;
-  padding: 0 0 4px 8px;
+  padding: 0 0  calc(var(--SPACING_BASE) * 0.5 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
 }
 
 @media all and (min-width:800px) {

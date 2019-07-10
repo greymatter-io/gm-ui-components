@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 import { spacingScale } from "style/styleFunctions";
 
@@ -13,14 +13,17 @@ export const Opener = styled.div`
     outline: none;
     ${({ theme }) =>
       css`
-        border-radius: ${theme.BORDER_RADIUS_BASE};
+        border-radius: ${theme.CORNER_RADIUS_MAX};
         box-shadow: 0 0 0 2px
-          ${transparentize(1 - theme.OPACITY_50, theme.COLOR_INTENT_HIGHLIGHT)};
+          ${transparentize(
+            1 - theme.OPACITY_LIGHTER,
+            theme.COLOR_INTENT_HIGHLIGHT
+          )};
       `};
   }
 
-  ${({ collapsed }) =>
-    !collapsed &&
+  ${({ isOpen }) =>
+    isOpen &&
     css`
       transform: rotate(90deg);
     `}

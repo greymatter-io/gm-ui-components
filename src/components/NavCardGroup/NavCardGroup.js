@@ -1,29 +1,18 @@
-import styled, { css } from "styled-components";
-import { mix, darken } from "polished";
+import React from "react";
+import PropTypes from "prop-types";
+import styled, { ThemeProvider } from "styled-components";
 
-import {
-  OPACITY_15,
-  COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C,
-  keen
-} from "style/styleVariables";
+import { keenDark } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
-
-const activeBackgroundColor = css`
-  background-color: ${darken(
-    0.1,
-    mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C)
-  )};
-`;
 
 const TAB_WIDTH_BASE = "1%";
 
-const NavCardGroup = styled.nav`
+const NavCardGroupWrap = styled.nav`
   display: flex;
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
   position: relative;
-  background-color: ${props => props.theme.COLOR_BACKGROUND_C};
+  background: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {
@@ -34,24 +23,32 @@ const NavCardGroup = styled.nav`
     min-height: ${spacingScale(8)};
     position: relative;
     text-decoration: none;
-    /* When the link element is active, make NavCard's green border pseudo-element
-       visible and style the NavCard background color. */
+
     &:active,
     &:active:hover,
     &.active,
     &.active:hover {
-      div[class*="NavCardWrapper"] {
-        &:after {
-          opacity: 1;
-        }
-        ${activeBackgroundColor};
+      div[class*="NavCardWrap"] {
+        ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
       }
     }
   }
 `;
 
-NavCardGroup.defaultProps = {
-  theme: keen
+function NavCardGroup({ useContextTheme, children }) {
+  return (
+    <ThemeProvider theme={props => (useContextTheme ? props : keenDark)}>
+      <NavCardGroupWrap>{children}</NavCardGroupWrap>
+    </ThemeProvider>
+  );
+}
+
+NavCardGroup.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
+  useContextTheme: PropTypes.bool
 };
 
 export default NavCardGroup;

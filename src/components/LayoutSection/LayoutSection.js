@@ -7,13 +7,6 @@ import SectionContent from "./components/SectionContent";
 import SectionIcon from "./components/SectionIcon";
 import SectionTitle from "./components/SectionTitle";
 
-LayoutSection.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  className: PropTypes.string,
-  icon: PropTypes.func,
-  title: PropTypes.string.isRequired
-};
-
 /**
  * A Layout component that renders an html section with a header
  * @param {Object} props - refer to propTypes
@@ -31,6 +24,13 @@ function LayoutSection({ children, title, icon, ...props }) {
     </LayoutSectionWrap>
   );
 }
+
+LayoutSection.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  className: PropTypes.string,
+  icon: PropTypes.func,
+  title: PropTypes.string.isRequired
+};
 
 LayoutSection.displayName = "LayoutSection";
 

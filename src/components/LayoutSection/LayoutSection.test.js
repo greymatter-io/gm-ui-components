@@ -1,6 +1,6 @@
 import React from "react";
-import { shallow } from "enzyme";
-import { LayoutSection, IconBell, Readout, ReadoutGroup } from "../";
+
+import { LayoutSection, IconBell, Readout, ReadoutGroup } from "..";
 
 const LayoutSectionWithReadouts = (
   <LayoutSection title={"Test Layout"} icon={() => <IconBell size={"24px"} />}>
@@ -41,6 +41,7 @@ describe("LayoutSection", () => {
     tree = shallow(LayoutSectionWithReadouts);
   });
   test("matches snapshot", () => {
+    tree = shallow(LayoutSectionWithReadouts);
     expect(tree).toMatchSnapshot();
   });
   test("renders children", () => {
