@@ -14,7 +14,7 @@ function generateButtonTypeColors(theme, type) {
       return theme.COLOR_INTENT_HIGHLIGHT;
     default:
     case "default":
-      return theme.COLOR_BACKGROUND_A;
+      return theme.COLOR_BACKGROUND_DEFAULT;
   }
 }
 
@@ -23,9 +23,9 @@ function generateButtonTypeColors(theme, type) {
  * into a block of CSS attributes dealing with button styles
  *
  * @param {any} {
- *   buttonBackgroundColorBase = COLOR_BACKGROUND_A,
- *   buttonBorderColorBase = COLOR_BACKGROUND_A,
- *   buttonLabelColorBase = contrastColor(COLOR_BACKGROUND_A, 100),
+ *   buttonBackgroundColorBase = COLOR_BACKGROUND_DEFAULT,
+ *   buttonBorderColorBase = COLOR_BACKGROUND_DEFAULT,
+ *   buttonLabelColorBase = contrastColor(COLOR_BACKGROUND_DEFAULT, 100),
  * }
  * @returns string
  */

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/new-organization</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/new-organization" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M32,52 L32,52 C20.954305,52 12,43.045695 12,32 L12,32 C12,20.954305 20.954305,12 32,12 L32,12 C43.045695,12 52,20.954305 52,32 L52,32 C52,43.045695 43.045695,52 32,52 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M32,52 L32,52 C20.954305,52 12,43.045695 12,32 L12,32 C12,20.954305 20.954305,12 32,12 L32,12 C43.045695,12 52,20.954305 52,32 L52,32 C52,43.045695 43.045695,52 32,52 Z M32,19.5 L32,44.5 M44,32 L20,32" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

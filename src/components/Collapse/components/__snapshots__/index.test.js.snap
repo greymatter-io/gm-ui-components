@@ -17,7 +17,7 @@ exports[`Collapse components Body should match snapshot 1`] = `
 
 exports[`Collapse components Detail should match snapshot 1`] = `
 .c0 {
-  font-size: 9px;
+  font-size: 10px;
 }
 
 <div
@@ -41,7 +41,7 @@ exports[`Collapse components Header should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 0;
+  padding: calc(var(--SPACING_BASE) * 1 * 1px) 0;
 }
 
 <div
@@ -51,15 +51,15 @@ exports[`Collapse components Header should match snapshot 1`] = `
 
 exports[`Collapse components Opener should match snapshot 1`] = `
 .c0 {
-  margin-right: 6px;
+  margin-right: calc(var(--SPACING_BASE) * 0.75 * 1px);
 }
 
 .c0:focus,
 .c0:active,
 .c0:focus:active {
   outline: none;
-  border-radius: 3px;
-  box-shadow: 0 0 0 2px rgba(10,171,42,0.5);
+  border-radius: 90000px;
+  box-shadow: 0 0 0 2px rgba(0,180,43,0.5);
 }
 
 <div
@@ -81,7 +81,7 @@ exports[`Collapse components Wrapper should match snapshot 1`] = `
 .c0 {
   width: 100%;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid hsla(0,0%,0%,8%);
   height: 100%;
 }
 

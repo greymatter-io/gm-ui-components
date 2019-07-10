@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Manager, Reference, Popper } from "react-popper";
 import TooltipContent from "./components/TooltipContent";
 import TooltipWrap from "./components/TooltipWrap";
+import { keen } from "style/theme";
 
 export default class Tooltip extends React.Component {
   state = {
@@ -27,7 +28,7 @@ export default class Tooltip extends React.Component {
         <Reference>
           {({ ref }) => (
             <TooltipWrap
-              innerRef={ref}
+              ref={ref}
               onMouseEnter={this.toggleVisibility}
               onMouseLeave={this.toggleVisibility}
               {...props}
@@ -40,7 +41,7 @@ export default class Tooltip extends React.Component {
           {({ ref, style, placement }) => {
             return (
               <TooltipContent
-                innerRef={ref}
+                ref={ref}
                 style={{ ...style, ...tooltipStyle }}
                 visible={!hideTooltip && this.state.visible}
               >
@@ -68,7 +69,8 @@ Tooltip.propTypes = {
 };
 
 Tooltip.defaultProps = {
-  position: "bottom"
+  position: "bottom",
+  theme: keen
 };
 
 Tooltip.displayName = "Tooltip";

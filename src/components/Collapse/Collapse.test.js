@@ -1,5 +1,4 @@
 import React from "react";
-import { mount } from "enzyme";
 import Collapse from "./Collapse";
 
 describe("Collapse", () => {
@@ -62,7 +61,7 @@ describe("Collapse", () => {
     expect(onClickSpy).toBeTruthy();
   });
 
-  it.only("calls the onClick function with the keydown event if provided", () => {
+  it("calls the onClick function with the keydown event if provided", () => {
     let onClickSpy = jest.fn();
     wrapper = mount(
       <Collapse title="Collapse title" isOpen={false} onClick={onClickSpy}>

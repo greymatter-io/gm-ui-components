@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxBox should render 1`] = `
+.c0 {
+  border: 1px solid #00b42b;
+  color: #00b42b;
+  font-size: calc(var(--SPACING_BASE) * 2 * 1px);
+  margin: calc(var(--SPACING_BASE) * 0.25 * 1px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-flex: 0 0 calc(1em - 2px);
+  -ms-flex: 0 0 calc(1em - 2px);
+  flex: 0 0 calc(1em - 2px);
+  height: calc(1em - 2px);
+  width: calc(1em - 2px);
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.c0:invalid {
+  box-shadow: 0 0 0 0 transparent,0 0 0 0 transparent;
+}
+
+.c0:invalid:required {
+  background-color: #f9e1dd;
+}
+
+.c0:disabled {
+  background-color: hsl(0,0%,97%);
+}
+
+.c0:valid:required {
+  background-color: #d8f3df;
+}
+
+.c0:valid:required[type="checkbox"]:after,
+.c0:valid:required[type="radio"]:after {
+  border-color: #00b42b;
+}
+
+.c0:-moz-read-only[type="text"],
+.c0:-moz-read-only[type="password"],
+.c0:-moz-read-only[type="search"],
+.c0:-moz-read-only[type="url"],
+.c0:-moz-read-only[type="tel"],
+.c0:-moz-read-only[type="number"],
+.c0:-moz-read-only[type="email"] {
+  border-style: dashed !important;
+}
+
+.c0:read-only[type="text"],
+.c0:read-only[type="password"],
+.c0:read-only[type="search"],
+.c0:read-only[type="url"],
+.c0:read-only[type="tel"],
+.c0:read-only[type="number"],
+.c0:read-only[type="email"] {
+  border-style: dashed !important;
+}
+
+.c0:focus,
+.c0:focus:active {
+  outline: none;
+  border: 1px solid #00b42b;
+  box-shadow: 0 0 0 2.5px rgba(0,180,43,0.5);
+}
+
+.c0:focus {
+  box-shadow: 0 0 0 2.5px rgba(0,180,43,0.5),0;
+}
+
+.c0:active {
+  box-shadow: inset 0 0 0 1px #00b42b,0;
+}
+
+.c0:active:focus {
+  box-shadow: 0 0 0 2.5px rgba(0,180,43,0.5),inset 0 0 0 1px #00b42b;
+}
+
+.c0:after {
+  content: "";
+  box-sizing: border-box;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.c0:checked {
+  background: #00b42b;
+}
+
+.c0:checked:after {
+  opacity: 1;
+}
+
+.c0:disabled {
+  border-color: hsl(0,0%,94%);
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.c0:disabled:checked {
+  background-color: hsl(0,0%,94%);
+}
+
+.c0:after {
+  width: 45%;
+  height: 80%;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  border-color: #fff;
+  margin-top: -1px;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(0.1);
+  background: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c0:checked:after {
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg) scale(1);
+}
+
+.c0:indeterminate:enabled {
+  background: #00b42b;
+}
+
+.c0:indeterminate:after {
+  opacity: 1;
+  width: 50%;
+  height: 0;
+  border-width: 0 0 2px;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+  transform: translateY(-50%) translateX(-50%) rotate(0) scale(1);
+}
+
+*:hover > .c0 {
+  background: rgba(0,180,43,0.15);
+}
+
+*:hover > .c0:checked {
+  background: rgba(0,180,43,0.7);
+  border-color: transparent;
+}
+
+*:active > *:hover > .c0 {
+  background: rgba(0,180,43,0.5);
+}
+
+*:active > *:hover > .c0:checked,
+*:active > *:hover > .c0:indeterminate {
+  background: rgba(0,180,43,0.5);
+  border-color: transparent;
+}
+
+<input
+  className="c0"
+  type="checkbox"
+/>
+`;

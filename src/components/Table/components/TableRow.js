@@ -6,21 +6,24 @@ import { transparentize } from "polished";
 import { columnItemShape, dataItemShape } from "../types";
 
 import TableCell from "./TableCell";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
-const TableRowElement = styled.tr.attrs({
+const TableRowElement = styled.tr.attrs(() => ({
   tabIndex: 0
-})`
+}))`
   cursor: pointer;
   position: relative;
-  box-shadow: 0 -1px 0 ${props => props.theme.COLOR_KEYLINE};
+  box-shadow: 0 -1px 0 ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
 
   /* Give the table row a border when selected */
   ${props =>
     props.isSelected &&
     css`
-      background-color: ${props =>
-        transparentize(0.85, props.theme.COLOR_BRAND_A)};
+      background-color: ${({ theme }) =>
+        transparentize(
+          1 - theme.OPACITY_LIGHTEST,
+          theme.COLOR_INTENT_HIGHLIGHT
+        )};
       &,
       & + &,
       & + tr {
@@ -29,12 +32,6 @@ const TableRowElement = styled.tr.attrs({
       ${props.selectedRowStyle};
     `};
 `;
-
-TableRowElement.defaultProps = {
-  theme: keen
-};
-
-TableRowElement.displayName = "TableRowElement";
 
 function TableRow({
   data,
@@ -90,5 +87,13 @@ TableRow.propTypes = {
   rowIndex: PropTypes.number,
   selectedRowStyle: PropTypes.object
 };
+
+TableRowElement.defaultProps = {
+  isRowSelected: false,
+  isSelected: false,
+  theme: keen
+};
+
+TableRowElement.displayName = "TableRowElement";
 
 export default TableRow;

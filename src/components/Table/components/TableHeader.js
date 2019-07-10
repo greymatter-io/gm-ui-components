@@ -4,24 +4,20 @@ import styled, { css } from "styled-components";
 
 import { columnItemShape } from "../types";
 import TableCell from "./TableCell";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 // Use all of TableCell's styles, but with a <th> element instead of <td>
 const TableHeaderCell = styled(TableCell.withComponent("th"))`
-  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
+  font-weight: ${({theme}) => theme.FONT_WEIGHT_DEFAULT};
   text-align: left;
   cursor: pointer;
   border-top: none;
   ${props =>
     props.isSorting &&
     css`
-      font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
+      font-weight: ${({theme}) => theme.FONT_WEIGHT_SEMIBOLD};
     `};
 `;
-
-TableHeaderCell.defaultProps = {
-  theme: keen
-};
 
 TableHeaderCell.displayName = "TableHeaderCell";
 
@@ -47,6 +43,10 @@ TableHeader.propTypes = {
   columns: PropTypes.arrayOf(columnItemShape),
   onSort: PropTypes.func,
   sortDataIndex: PropTypes.string
+};
+
+TableHeaderCell.defaultProps = {
+  theme: keen
 };
 
 export default TableHeader;

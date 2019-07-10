@@ -2,15 +2,15 @@ import styled, { css } from "styled-components";
 import { mix, readableColor } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const color = css`
-  color: ${props =>
+  color: ${({ theme }) =>
     readableColor(
       mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
+        theme.OPACITY_LIGHTEST,
+        theme.COLOR_BACKGROUND_TWO,
+        theme.COLOR_BACKGROUND_THREE
       )
     )};
 `;
@@ -28,8 +28,8 @@ const NavCardTitle = styled.div`
   justify-content: center;
 
   h1 {
-    font-size: ${props => props.theme.FONT_SIZE_BASE};
-    font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
+    font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
+    font-weight: ${({ theme }) => theme.FONT_WEIGHT_SEMIBOLD};
     padding-left: ${spacingScale(0.5)};
     flex: 1 1 100%;
     line-height: 1;

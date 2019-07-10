@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/arrow-start-right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/arrow-start-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16,32 L40,32 L16,32 Z M28,44 L16,32 L28,20 M48,16 L48,48 L48,16 Z" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero" transform="translate(32.000000, 32.000000) scale(-1, 1) translate(-32.000000, -32.000000) "></path>
+    </g>
+</svg>

@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+
 import NavCardVal from "./NavCardVal";
 
 describe("NavCardVal", () => {

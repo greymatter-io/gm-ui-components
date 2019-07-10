@@ -1,23 +1,10 @@
-import styled, { css } from "styled-components";
-import { readableColor, mix } from "polished";
+import styled from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
-
-const color = css`
-  color: ${props =>
-    readableColor(
-      mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
-      )
-    )};
-`;
+import { keen } from "style/theme";
 
 const NavCardKey = styled.dt`
-  ${color};
-  opacity: ${props => props.theme.OPACITY_70};
+  color: ${({theme}) => theme.COLOR_CONTENT_MUTED};
   padding-right: ${spacingScale(1)};
   display: inline-block;
 `;

@@ -6,14 +6,7 @@ import NavCardDetails from "./components/NavCardDetails";
 import NavCardKey from "./components/NavCardKey";
 import NavCardVal from "./components/NavCardVal";
 import NavCardIcon from "./components/NavCardIcon";
-import NavCardWrapper from "./components/NavCardWrapper";
-
-NavCard.propTypes = {
-  children: PropTypes.func,
-  details: PropTypes.array,
-  icon: PropTypes.func,
-  title: PropTypes.string
-};
+import Wrap from "./components/Wrap";
 
 /**
  * Stateless functional React component that renders the navigation tabs in Header
@@ -22,7 +15,7 @@ NavCard.propTypes = {
  */
 function NavCard({ icon, details = [], title, children, ...props }) {
   return (
-    <NavCardWrapper {...props}>
+    <Wrap {...props}>
       <NavCardTitle>
         {typeof icon === "function" && <NavCardIcon>{icon()}</NavCardIcon>}
         <h1>{title}</h1>
@@ -36,9 +29,16 @@ function NavCard({ icon, details = [], title, children, ...props }) {
         );
       })}
       {typeof children === "function" && children()}
-    </NavCardWrapper>
+    </Wrap>
   );
 }
+
+NavCard.propTypes = {
+  children: PropTypes.func,
+  details: PropTypes.array,
+  icon: PropTypes.func,
+  title: PropTypes.string
+};
 
 NavCard.displayName = "NavCard";
 

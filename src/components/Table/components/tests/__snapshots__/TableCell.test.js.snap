@@ -2,14 +2,14 @@
 
 exports[`<TableCell /> should match snapshot 1`] = `
 .c0 {
-  padding: 16px 16px 16px 0;
+  padding: calc(var(--SPACING_BASE) * 2 * 1px)  calc(var(--SPACING_BASE) * 2 * 1px)  calc(var(--SPACING_BASE) * 2 * 1px) 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .c0:first-of-type {
-  padding-left: 12px;
+  padding-left: calc(var(--SPACING_BASE) * 1.5 * 1px);
 }
 
 .c0:not(:first-child) {

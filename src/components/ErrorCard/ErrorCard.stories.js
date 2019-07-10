@@ -3,15 +3,15 @@ import { storiesOf } from "@storybook/react";
 import { text } from "@storybook/addon-knobs";
 
 import ErrorCard from "./ErrorCard";
-import { IconNegation } from "../";
+import { IconNegation } from "..";
 
 const stories = storiesOf("Components|Error Card", module);
 
 stories.add(
-  "default",
+  "Default",
   () => (
     <ErrorCard
-      errorMsg={text("errorMsg", "Uh oh")}
+      errorMsg={text("errorMsg")}
       icon={() => (
         <IconNegation
           backgroundColor="#EFB53F"

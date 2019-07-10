@@ -2,7 +2,7 @@
 
 exports[`LayoutSectionWrap matches snapshot 1`] = `
 .c0 {
-  color: #000;
+  color: hsla(0,0%,0%,0.85);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -18,11 +18,11 @@ exports[`LayoutSectionWrap matches snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 8px;
+  padding: calc(var(--SPACING_BASE) * 1 * 1px);
 }
 
 .c0:not(:first-of-type) {
-  margin-top: 32px;
+  margin-top: calc(var(--SPACING_BASE) * 4 * 1px);
 }
 
 <section

@@ -1,12 +1,14 @@
 import React from "react";
 
+import { boolean } from "@storybook/addon-knobs";
+
 import { storiesOf } from "@storybook/react";
 import { IconSummary, IconFunctions, IconThreads, IconHTTP } from "components";
 
 import NavCard from "components/NavCard";
 import NavCardGroup from "components/NavCardGroup";
 
-const stories = storiesOf("Components|NavCard", module);
+const stories = storiesOf("Components|NavCardGroup", module);
 
 const mockTabs = [
   {
@@ -40,10 +42,10 @@ const mockTabs = [
 ];
 
 stories.add(
-  "NavCardGroup",
+  "Default",
   () => {
     return (
-      <NavCardGroup>
+      <NavCardGroup useContextTheme={boolean("useContextTheme")}>
         {mockTabs.map(item => {
           return (
             <NavCard
@@ -59,7 +61,8 @@ stories.add(
   },
   {
     info: {
-      text: "Groups of related NavCards should be displayed in a NavCardGroup."
+      text:
+        "Groups of related NavCards should be displayed in a NavCardGroup. NavCardGroup prefers to use keenDark as its theme, but this can be overridden with `useContextTheme`."
     }
   }
 );

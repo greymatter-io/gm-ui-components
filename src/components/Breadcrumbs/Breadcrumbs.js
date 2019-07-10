@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
-export const BreadcrumbsContainer = styled.ol`
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  font-size: ${props => props.theme.FONT_SIZE_SM};
+export const BreadcrumbsWrap = styled.ol`
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
+  font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
   flex: 1 1 auto;
   display: flex;
   margin: 0;
@@ -17,6 +17,10 @@ export const BreadcrumbsContainer = styled.ol`
   align-items: stretch;
   flex-wrap: nowrap;
 `;
+
+BreadcrumbsWrap.defaultProps = {
+  theme: keen
+};
 
 export const Breadcrumb = styled.li`
   flex: 0 1 auto;
@@ -34,7 +38,7 @@ export const Breadcrumb = styled.li`
 
   &:before {
     display: inline-block;
-    opacity: ${props => (props.hideDelimiter ? 0 : props.theme.OPACITY_50)};
+    color: ${({ theme }) => theme.COLOR_CONTENT_NONESSENTIAL};
     padding: 0 ${spacingScale(0.5)};
     content: ">";
     transform: scaleX(0.5);
@@ -56,27 +60,31 @@ export const Breadcrumb = styled.li`
   }
 `;
 
+Breadcrumb.defaultProps = {
+  theme: keen
+};
+
 function Breadcrumbs({ crumbs, hideDelimiter, ...props }) {
   return (
-    <BreadcrumbsContainer {...props}>
+    <BreadcrumbsWrap {...props}>
       {crumbs.map((crumb, i) => (
         <Breadcrumb hideDelimiter={hideDelimiter} key={`${crumb}|${i}`}>
           {crumb}
         </Breadcrumb>
       ))}
-    </BreadcrumbsContainer>
+    </BreadcrumbsWrap>
   );
 }
-
-export default Breadcrumbs;
-
-Breadcrumbs.defaultProps = {
-  crumbs: [],
-  theme: keen,
-  hideDelimiter: false
-};
 
 Breadcrumbs.propTypes = {
   crumbs: PropTypes.array,
   hideDelimiter: PropTypes.bool
 };
+
+Breadcrumbs.defaultProps = {
+  crumbs: [],
+  hideDelimiter: false,
+  theme: keen
+};
+
+export default Breadcrumbs;

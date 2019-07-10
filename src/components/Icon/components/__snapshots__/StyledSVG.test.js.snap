@@ -7,17 +7,43 @@ exports[`StyledSVG matches snapshot 1`] = `
   height: 1.714em;
   word-spacing: 0;
   vertical-align: middle;
+  overflow: visible;
 }
 
-.c0:not(:root) {
+.c0 .glyph > svg {
+  width: 100%;
+  height: 100%;
   overflow: visible;
+  fill: none;
+  border: none;
+}
+
+.c0 .glyph * {
+  vector-effect: non-scaling-stroke;
+}
+
+.c0 .glyph *[class*="fill"]:not([class*="border"]) {
+  stroke: none;
+}
+
+.c0 .glyph *[class*="border"]:not([class*="fill"]) {
+  fill: none;
+}
+
+@media (-webkit-max-device-pixel-ratio:1.5),(max-resolution:190dpi) {
+  .c0 .glyph {
+    -webkit-transform: translateX(0.5px) translateY(0.5px);
+    -ms-transform: translateX(0.5px) translateY(0.5px);
+    transform: translateX(0.5px) translateY(0.5px);
+  }
 }
 
 <svg
   className="c0"
   preserveAspectRatio="xMaxYMax meet"
+  size="1.714em"
   version="1.1"
-  viewBox="0 0 24 24"
+  viewBox="0 0 64 64"
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
 />

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const TabGroupWrap = styled.nav`
   width: 100%;
@@ -8,8 +8,8 @@ const TabGroupWrap = styled.nav`
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  color: ${props => props.theme.COLOR_CONTENT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
   min-height: ${spacingScale(4)};
 `;
 

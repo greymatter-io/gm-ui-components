@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { PropTypes } from "prop-types";
 
-import { IconArrowRight } from "components/Glyphs";
-import { keen } from "style/styleVariables";
+import { IconChevronRight } from "components/Glyphs";
+import { keen } from "style/theme";
 
 import { Title, Detail, Wrapper, Header, Opener, Body } from "./components";
 
@@ -65,7 +65,7 @@ class Collapse extends React.Component {
 
     let { isOpen } = this.state;
 
-    const OpenerComponent = opener || <IconArrowRight />;
+    const OpenerComponent = opener || <IconChevronRight />;
 
     return (
       <Wrapper {...props}>
@@ -81,7 +81,7 @@ class Collapse extends React.Component {
           <Title>{title}</Title>
           <Detail>{detail}</Detail>
         </Header>
-        <Body isOpen={isOpen} innerRef={this.contentRef}>
+        <Body isOpen={isOpen} ref={this.contentRef}>
           {children}
         </Body>
       </Wrapper>

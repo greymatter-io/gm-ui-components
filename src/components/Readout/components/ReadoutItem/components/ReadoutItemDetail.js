@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const ReadoutItemDetail = styled.p`
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_DEFAULT};
   margin: 0;
-  font-weight: ${props => props.theme.FONT_WEIGHT_SEMIBOLD};
+  font-weight: ${({theme}) => theme.FONT_WEIGHT_SEMIBOLD};
   min-height: 1em;
 `;
 

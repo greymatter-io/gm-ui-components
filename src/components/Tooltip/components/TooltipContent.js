@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 const TooltipContent = styled.div`
-  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
-  border-radius: ${props => props.theme.RADIUS_05};
-  box-shadow: 0 0 0 1px ${props => props.theme.COLOR_KEYLINE_SOLID};
-  color: ${props => props.theme.COLOR_CONTENT};
-  font-size: ${props => props.theme.FONT_SIZE_BASE};
-  z-index: ${props => props.theme.ZINDEX_TOOLTIP};
+  background-color: ${({theme}) => theme.COLOR_BACKGROUND_DEFAULT};
+  border-radius: ${({theme}) => theme.CORNER_RADIUS_CARD_SM};
+  box-shadow: 0 0 0 1px ${({theme}) => theme.COLOR_KEYLINE_DEFAULT};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
+  font-size: ${({theme}) => theme.FONT_SIZE_TEXT_DEFAULT};
+  z-index: ${({theme}) => theme.ZINDEX_TOOLTIP};
   padding: ${spacingScale(1)};
   width: ${spacingScale(20)};
   opacity: 0;
@@ -16,8 +16,9 @@ const TooltipContent = styled.div`
   text-align: left;
   transition: opacity 0.5s, visibility 0.5s;
   white-space: normal;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
   margin: ${spacingScale(1)};
+  word-wrap: break-word;
 
   ${props =>
     props.visible

@@ -6,9 +6,7 @@ exports[`ErrorContent matches snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #F7CD45;
-  border-radius: NaNpx;
-  color: #000;
+  color: hsla(0,0%,0%,0.85);
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -24,10 +22,10 @@ exports[`ErrorContent matches snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 32px;
-  padding: 64px 32px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  margin: calc(var(--SPACING_BASE) * 4 * 1px);
+  padding: calc(var(--SPACING_BASE) * 8 * 1px)  calc(var(--SPACING_BASE) * 4 * 1px);
+  padding-top: calc(var(--SPACING_BASE) * 8 * 1px);
+  padding-bottom: calc(var(--SPACING_BASE) * 8 * 1px);
 }
 
 <div

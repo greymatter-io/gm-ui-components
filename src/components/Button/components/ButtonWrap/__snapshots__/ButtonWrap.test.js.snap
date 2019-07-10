@@ -29,12 +29,12 @@ exports[`ButtonWrap should match snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
+  background-color: hsl(0,0%,100%);
   border-color: transparent;
   color: #000;
   font-size: 14px;
+  padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
-  padding: 2px 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -54,7 +54,7 @@ exports[`ButtonWrap should match snapshot 1`] = `
 .c0:focus,
 .c0:focus:active {
   outline: none;
-  border: 1px solid #0aab2a;
+  border: 1px solid #00b42b;
   z-index: 10;
   position: relative;
 }
@@ -96,7 +96,6 @@ exports[`ButtonWrap should match snapshot 1`] = `
 }
 
 .c0 > :not(:first-child) {
-  margin-left: 4px;
   -webkit-flex-basis: auto;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
@@ -104,5 +103,8 @@ exports[`ButtonWrap should match snapshot 1`] = `
 
 <button
   className="c0"
+  orientation="horizontal"
+  size="normal"
+  type="default"
 />
 `;

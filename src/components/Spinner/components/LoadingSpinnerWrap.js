@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { keen } from "style/styleVariables";
+import { keen } from "style/theme";
 
 export const LoadingSpinnerWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: ${props => props.theme.FONT_STACK_BASE};
-  color: ${props => props.theme.COLOR_CONTENT};
+  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
   margin: auto;
   flex: 0 0 auto;
 

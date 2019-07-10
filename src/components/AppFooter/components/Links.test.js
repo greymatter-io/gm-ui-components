@@ -1,11 +1,10 @@
 import React from "react";
-import renderer from "react-test-renderer";
 
 import Links from "./Links";
 
 describe("Link", () => {
-  it("should render", () => {
-    const aLinks = renderer.create(<Links />).toJSON();
+  it("should match snapshot", () => {
+    const aLinks = shallow(<Links />);
     expect(aLinks).toMatchSnapshot();
   });
 });

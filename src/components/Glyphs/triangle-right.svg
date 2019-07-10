@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/triangle-right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/triangle-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" points="22 16 46 32 22 48"></polygon>
+        <polygon id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" points="22 16 46 32 22 48"></polygon>
+    </g>
+</svg>

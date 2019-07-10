@@ -3,7 +3,7 @@
 exports[`ItemDisplay matches snapshot 1`] = `
 .c0 {
   position: relative;
-  padding: 12px;
+  padding: calc(var(--SPACING_BASE) * 1.5 * 1px);
 }
 
 <div

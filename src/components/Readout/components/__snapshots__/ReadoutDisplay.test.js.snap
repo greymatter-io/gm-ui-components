@@ -2,7 +2,7 @@
 
 exports[`ReadoutDisplay matches snapshot when primary is false 1`] = `
 .c0 {
-  color: #000;
+  color: hsla(0,0%,0%,0.85);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,31 +21,25 @@ exports[`ReadoutDisplay matches snapshot when primary is false 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 4px;
-  margin: 0 8px 8px 0;
+  border-radius: 6px;
+  margin: 0  calc(var(--SPACING_BASE) * 1 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px) 0;
   position: relative;
   overflow: hidden;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,8%),inset 0 -43px 0 -40px transparent;
+  z-index: 1;
 }
 
 .c0:before {
   content: "";
   opacity: 0.2;
+  background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 0;
-}
-
-.c0:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 3px solid;
 }
 
 .c0:first-child:last-child {
@@ -57,12 +51,13 @@ exports[`ReadoutDisplay matches snapshot when primary is false 1`] = `
 
 <div
   className="c0"
+  color="transparent"
 />
 `;
 
 exports[`ReadoutDisplay matches snapshot when primary is true 1`] = `
 .c0 {
-  color: #000;
+  color: hsla(0,0%,0%,0.85);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,31 +76,25 @@ exports[`ReadoutDisplay matches snapshot when primary is true 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 4px;
-  margin: 0 8px 8px 0;
+  border-radius: 6px;
+  margin: 0  calc(var(--SPACING_BASE) * 1 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px) 0;
   position: relative;
   overflow: hidden;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,8%),inset 0 -43px 0 -40px transparent;
+  z-index: 1;
 }
 
 .c0:before {
   content: "";
   opacity: 0.2;
+  background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 0;
-}
-
-.c0:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 3px solid;
 }
 
 .c0:first-child:last-child {
@@ -121,5 +110,6 @@ exports[`ReadoutDisplay matches snapshot when primary is true 1`] = `
 
 <div
   className="c0"
+  color="transparent"
 />
 `;

@@ -1,8 +1,8 @@
 import React from "react";
-import { shallow } from "enzyme";
+//
 
 import Readout from "./Readout";
-import { Summary } from "../";
+import { Summary } from "..";
 
 const readoutItems = [
   {
