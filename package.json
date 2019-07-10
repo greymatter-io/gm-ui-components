@@ -1,6 +1,6 @@
 {
   "name": "gm-ui-components",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "A library of reusable UI components for the Grey Matter product suite.",
   "main": "lib/build.js",
   "author": "Decipher Technology Studios",
