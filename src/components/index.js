@@ -1,4 +1,5 @@
 export * from "./Glyphs";
+export { default as Collapse } from "./Collapse";
 export { default as AppFooter } from "./AppFooter";
 export { default as Breadcrumbs } from "./Breadcrumbs";
 export { default as Button } from "./Button";
