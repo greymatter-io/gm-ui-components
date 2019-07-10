@@ -1,3 +1,25 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.8.1...v1.0.0) (2019-07-10)
+
+### Breaking Changes
+
+* Updated to styled-components v4
+* Renamed glyphs and revamped Icon props
+* Stopped exporting theme variables in favor of the `theme` object. See the changelog here: https://gist.github.com/shanberg/29a62d39d4c08a42dbcfcec7de91be27
+
+
+### Bug Fixes
+
+* checkbox layout issue ([#457](https://github.com/DecipherNow/gm-ui-components/issues/457)) ([c03ceb3](https://github.com/DecipherNow/gm-ui-components/commit/c03ceb3))
+
+
+### Features
+
+* add global styles ([b48e1bf](https://github.com/DecipherNow/gm-ui-components/commit/b48e1bf))
+* controllable collapse component ([#505](https://github.com/DecipherNow/gm-ui-components/issues/505)) ([b95cf70](https://github.com/DecipherNow/gm-ui-components/commit/b95cf70))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.8.1...v0.9.0) (2019-06-20)
 
