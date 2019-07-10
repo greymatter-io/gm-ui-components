@@ -1,5 +1,5 @@
 <a name="1.0.0"></a>
-# [1.0.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.8.1...v1.0.0) (2019-07-10)
+# [1.0.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.9.0...v1.0.0) (2019-07-10)
 
 ### Breaking Changes
 
