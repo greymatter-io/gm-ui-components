@@ -30,6 +30,14 @@ exports[`StyledSVG matches snapshot 1`] = `
   fill: none;
 }
 
+@media (-webkit-max-device-pixel-ratio:1.5),(max-resolution:190dpi) {
+  .c0 .glyph {
+    -webkit-transform: translateX(0.5px) translateY(0.5px);
+    -ms-transform: translateX(0.5px) translateY(0.5px);
+    transform: translateX(0.5px) translateY(0.5px);
+  }
+}
+
 <svg
   className="c0"
   preserveAspectRatio="xMaxYMax meet"

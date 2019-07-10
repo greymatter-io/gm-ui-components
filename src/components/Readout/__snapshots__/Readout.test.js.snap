@@ -2,6 +2,7 @@
 
 exports[`Readout matches snapshot when primary is true or false 1`] = `
 <ReadoutDisplay
+  color="transparent"
   primary={true}
   theme={
     Object {
@@ -75,6 +76,7 @@ exports[`Readout matches snapshot when primary is true or false 1`] = `
 
 exports[`Readout matches snapshot when primary is true or false 2`] = `
 <ReadoutDisplay
+  color="transparent"
   primary={false}
   theme={
     Object {

@@ -21,6 +21,6 @@ export const shallowClone = (tree, context) => {
         .dive();
     }
   }
-  // otherwise just return the
+  // otherwise just return the shallow function
   return shallow(tree, context);
 };
