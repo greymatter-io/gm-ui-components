@@ -37,6 +37,7 @@ Checkbox.propTypes = {
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   onChange: PropTypes.func,
   readonly: PropTypes.bool,
+  style: PropTypes.object,
   value: PropTypes.string
 };
 
