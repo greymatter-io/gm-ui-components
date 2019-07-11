@@ -60,4 +60,23 @@ stories
         text: "A checkbox form input with a label."
       }
     }
+  )
+  .add(
+    "Controlled",
+    () => {
+      return (
+          <Checkbox
+            label="Controlled checkbox"
+            checked={boolean("checked")}
+            onChange={e => {
+              alert("checked: " + e.target.checked);
+            }}
+          />
+      );
+    },
+    {
+      info: {
+        text: "A checkbox form input with a label."
+      }
+    }
   );
