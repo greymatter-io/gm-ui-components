@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import InputLabelText from "components/util/InputLabelText";
 import InputWrap from "components/util/InputWrap";
+import InputLabelText from "components/util/InputLabelText";
+import InputLabelValue from "components/util/InputLabelValue";
 import InputHint from "components/util/InputHint";
 import InputTextField from "components/util/InputTextField";
 
@@ -11,6 +12,7 @@ export default function InputField({
   defaultValue,
   readonly,
   disabled,
+  displayAsText,
   hint,
   label,
   labelPosition,
@@ -23,17 +25,21 @@ export default function InputField({
   return (
     <InputWrap labelPosition={labelPosition} style={style}>
       {label && <InputLabelText>{label}</InputLabelText>}
-      <InputTextField
-        type={type}
-        autoFocus={autoFocus}
-        defaultValue={defaultValue}
-        disabled={disabled}
-        readonly
-        maxLength={maxLength}
-        placeholder={placeholder}
-        {...props}
-      />
-      {hint && <InputHint>{hint}</InputHint>}
+      {displayAsText && <InputLabelValue>{props.value}</InputLabelValue>}
+      {!displayAsText && (
+        <>
+          <InputTextField
+            type={type}
+            autoFocus={autoFocus}
+            defaultValue={defaultValue}
+            disabled={disabled}
+            maxLength={maxLength}
+            placeholder={placeholder}
+            {...props}
+          />
+          {hint && <InputHint>{hint}</InputHint>}
+        </>
+      )}
     </InputWrap>
   );
 }
@@ -42,6 +48,7 @@ InputField.propTypes = {
   autoFocus: PropTypes.bool,
   defaultValue: PropTypes.string,
   disabled: PropTypes.bool,
+  displayAsText: PropTypes.bool,
   hint: PropTypes.string,
   label: PropTypes.string,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
@@ -63,6 +70,7 @@ InputField.propTypes = {
 InputField.defaultProps = {
   autoFocus: false,
   disabled: false,
+  displayAsText: false,
   labelPosition: "top",
   readonly: false,
   type: "text"
