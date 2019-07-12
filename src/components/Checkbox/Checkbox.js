@@ -13,27 +13,31 @@ const Checkbox = ({
   defaultChecked,
   readonly,
   disabled,
+  style,
   ...props
 }) => {
   return (
-    <InputWrap labelPosition={labelPosition} {...props}>
+    <InputWrap labelPosition={labelPosition} style={style}>
       {label && <InputLabelText>{label}</InputLabelText>}
       <CheckboxBox
         defaultChecked={defaultChecked}
         value={value}
         disabled={disabled}
+        {...props}
       />
     </InputWrap>
   );
 };
 
 Checkbox.propTypes = {
+  checked : PropTypes.bool,
   defaultChecked: PropTypes.bool,
   disabled: PropTypes.bool,
   label: PropTypes.string.isRequired,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   onChange: PropTypes.func,
   readonly: PropTypes.bool,
+  style: PropTypes.object,
   value: PropTypes.string
 };
 
