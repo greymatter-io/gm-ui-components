@@ -41,6 +41,7 @@ export default function InputField({
 
 InputField.propTypes = {
   autoFocus: PropTypes.bool,
+  className : PropTypes.string,
   defaultValue: PropTypes.string,
   disabled: PropTypes.bool,
   hint: PropTypes.string,
