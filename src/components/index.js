@@ -25,3 +25,10 @@ export { default as Tooltip } from "./Tooltip";
 export * from "../style/theme";
 export * from "../style/styleFunctions";
 export { default as GlobalStyles } from "../style/GlobalStyles";
+
+// utility components
+export { default as InputBox } from "./util/InputBox";
+export { default as InputHint } from "./util/InputHint";
+export { default as InputLabelText } from "./util/InputLabelText";
+export { default as InputTextField } from "./util/InputTextField";
+export { default as InputWrap } from "./util/InputWrap";
