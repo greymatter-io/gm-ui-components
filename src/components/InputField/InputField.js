@@ -20,12 +20,13 @@ export default function InputField({
   placeholder,
   type,
   style,
+  value,
   ...props
 }) {
   return (
     <InputWrap labelPosition={labelPosition} style={style}>
       {label && <InputLabelText>{label}</InputLabelText>}
-      {displayAsText && <InputLabelValue>{props.value}</InputLabelValue>}
+      {displayAsText && <InputLabelValue>{value}</InputLabelValue>}
       {!displayAsText && (
         <>
           <InputTextField
@@ -64,7 +65,8 @@ InputField.propTypes = {
     "text",
     "url",
     "number"
-  ]).isRequired
+  ]).isRequired,
+  value: PropTypes.oneOf(["string", "number"])
 };
 
 InputField.defaultProps = {

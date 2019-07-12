@@ -18,12 +18,13 @@ export default function Textarea({
   labelPosition,
   maxLength,
   placeholder,
+  value,
   ...props
 }) {
   return (
     <InputWrap labelPosition={labelPosition}>
       {label && <InputLabelText>{label}</InputLabelText>}
-      {displayAsText && <InputLabelValue>{props.value}</InputLabelValue>}
+      {displayAsText && <InputLabelValue>{value}</InputLabelValue>}
       {!displayAsText && (
         <>
           <TextareaField
@@ -52,7 +53,8 @@ Textarea.propTypes = {
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   maxLength: PropTypes.number,
   placeholder: PropTypes.string,
-  readonly: PropTypes.bool
+  readonly: PropTypes.bool,
+  value: PropTypes.oneOf(["string", "number"])
 };
 
 Textarea.defaultProps = {
