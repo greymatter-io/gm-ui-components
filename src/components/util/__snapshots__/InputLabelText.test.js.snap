@@ -3,7 +3,7 @@
 exports[`InputLabel matches snapshot 1`] = `
 .c0 {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2;
 }
 
