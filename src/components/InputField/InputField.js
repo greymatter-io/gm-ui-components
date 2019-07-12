@@ -22,7 +22,11 @@ export default function InputField({
   ...props
 }) {
   return (
-    <InputWrap labelPosition={labelPosition} style={style} className={className}>
+    <InputWrap
+      labelPosition={labelPosition}
+      style={style}
+      className={className}
+    >
       {label && <InputLabelText>{label}</InputLabelText>}
       <InputTextField
         type={type}
@@ -41,7 +45,7 @@ export default function InputField({
 
 InputField.propTypes = {
   autoFocus: PropTypes.bool,
-  className : PropTypes.string,
+  className: PropTypes.string,
   defaultValue: PropTypes.string,
   disabled: PropTypes.bool,
   hint: PropTypes.string,
