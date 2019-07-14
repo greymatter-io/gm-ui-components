@@ -1,3 +1,15 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.8.1...v1.1.0) (2019-07-14)
+
+
+### Features
+
+* export input util components ([f5823fc](https://github.com/DecipherNow/gm-ui-components/commit/f5823fc))
+* add classname prop to input field ([3aa3d3d](https://github.com/DecipherNow/gm-ui-components/commit/3aa3d3d))
+* added additional prop checked to checkbox ([#511](https://github.com/DecipherNow/gm-ui-components/issues/511)) ([e18b625](https://github.com/DecipherNow/gm-ui-components/commit/e18b625))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/DecipherNow/gm-ui-components/compare/v0.9.0...v1.0.0) (2019-07-10)
 
