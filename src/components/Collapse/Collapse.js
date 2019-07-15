@@ -1,6 +1,6 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-
+import _ from "lodash";
 import { IconChevronRight } from "components/Glyphs";
 import { keen } from "style/theme";
 
@@ -28,6 +28,24 @@ class Collapse extends React.Component {
     this.setBodyHeight();
   }
 
+  componentWillUnmount() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+
+  observer = null;
+
+  onChildResize = mut => {
+    if (this.state.isOpen) {
+      this.contentRef.current.style.height = `100%`;
+
+      setTimeout(e => {
+        this.setBodyHeight();
+      }, 500);
+    }
+  };
+
   setBodyHeight = () => {
     let height = this.props.initiallyOpen ? "100%" : 0;
     // If isOpen is true, find the height of the content and set the body component to a pixel value.
@@ -38,14 +56,23 @@ class Collapse extends React.Component {
           [].slice.call(this.contentRef.current.children)) ||
         [];
 
-      height =
-        contentNodes.length > 0
-          ? contentNodes.reduce(
-              (acc, node) => node.getBoundingClientRect().height + acc,
-              0
-            )
-          : height;
-      console.log("height", height, "contentNodes", contentNodes);
+      if (contentNodes.length > 0) {
+        height = contentNodes.reduce(
+          (acc, node) => node.getBoundingClientRect().height + acc,
+          0
+        );
+
+        if (!this.observer) {
+          this.observer = new MutationObserver(this.onChildResize);
+          contentNodes.forEach(n => {
+            this.observer.observe(n, {
+              attributes: true,
+              characterData: true,
+              childList: true
+            });
+          });
+        }
+      }
     }
     this.contentRef.current.style.height = `${height}px`;
   };
@@ -59,6 +86,8 @@ class Collapse extends React.Component {
   };
 
   contentRef = React.createRef();
+
+  wrapperRef = React.createRef();
 
   render() {
     let {
@@ -76,7 +105,7 @@ class Collapse extends React.Component {
     const OpenerComponent = opener || <IconChevronRight />;
 
     return (
-      <Wrapper {...props}>
+      <Wrapper {...props} ref={this.wrapperRef} isOpen={isOpen}>
         <Header
           onClick={this.onChangeHandler}
           onKeyDown={e =>
