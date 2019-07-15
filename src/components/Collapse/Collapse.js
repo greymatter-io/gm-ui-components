@@ -50,6 +50,7 @@ class Collapse extends React.Component {
     // If isOpen is true, find the height of the content and set the body component to a pixel value.
     // This is necessary for our css transition.
     if (this.state.isOpen) {
+      // cast child nodes to an array
       let contentNodes =
         (this.contentRef.current &&
           [].slice.call(this.contentRef.current.children)) ||
@@ -60,7 +61,7 @@ class Collapse extends React.Component {
           (acc, node) => node.getBoundingClientRect().height + acc,
           0
         );
-
+        // Set an observer to listen for changes to the child node height
         if (!this.observer) {
           this.observer = new MutationObserver(this.onChildResize);
           contentNodes.forEach(n => {
