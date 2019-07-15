@@ -11,14 +11,17 @@ exports[`Collapse matches snapshot 1`] = `
 
 .c0 {
   width: 100%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  min-height: 48px;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   border-top: 1px solid hsla(0,0%,0%,8%);
-  height: 100%;
 }
 
 .c1 {
   cursor: pointer;
   width: 100%;
+  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -47,12 +50,10 @@ exports[`Collapse matches snapshot 1`] = `
 }
 
 .c5 {
-  overflow: hidden;
   width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  height: 0px;
-  visibility: hidden;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  overflow: hidden;
 }
 
 <Collapse
@@ -127,6 +128,7 @@ exports[`Collapse matches snapshot 1`] = `
   title="Collapse title"
 >
   <Wrapper
+    isOpen={false}
     theme={
       Object {
         "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
@@ -272,11 +274,13 @@ exports[`Collapse matches snapshot 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "width:100%;font-family:",
+              "width:100%;transition:all 0.25s ease;min-height:48px;font-family:",
               [Function],
               ";border-top:1px solid ",
               [Function],
-              ";height:100%;",
+              ";",
+              [Function],
+              ";",
             ],
           },
           "displayName": "Wrapper",
@@ -290,6 +294,7 @@ exports[`Collapse matches snapshot 1`] = `
         }
       }
       forwardedRef={null}
+      isOpen={false}
       theme={
         Object {
           "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
@@ -375,7 +380,7 @@ exports[`Collapse matches snapshot 1`] = `
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "cursor:pointer;width:100%;display:flex;justify-content:space-between;align-items:center;padding:",
+                    "cursor:pointer;width:100%;min-height:48px;display:flex;justify-content:space-between;align-items:center;padding:",
                     "
     calc(var(--SPACING_BASE) * 1 * 1px)",
                     " 0;",
@@ -917,9 +922,7 @@ exports[`Collapse matches snapshot 1`] = `
             </div>
           </StyledComponent>
         </Header>
-        <Body
-          isOpen={false}
-        >
+        <Body>
           <StyledComponent
             forwardedComponent={
               Object {
@@ -927,12 +930,10 @@ exports[`Collapse matches snapshot 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "Body-sc-8bwebj-0",
-                  "isStatic": false,
+                  "isStatic": true,
                   "lastClassName": "c5",
                   "rules": Array [
-                    "overflow:hidden;width:100%;transition:all 0.5s ease;",
-                    [Function],
-                    ";",
+                    "width:100%;transition:all 0.25s ease;overflow:hidden;",
                   ],
                 },
                 "displayName": "Body",
@@ -948,12 +949,10 @@ exports[`Collapse matches snapshot 1`] = `
             forwardedRef={
               Object {
                 "current": .c0 {
-  overflow: hidden;
   width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  height: 0px;
-  visibility: hidden;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  overflow: hidden;
 }
 
 <div
@@ -968,7 +967,6 @@ exports[`Collapse matches snapshot 1`] = `
                 </div>,
               }
             }
-            isOpen={false}
           >
             <div
               className="c5"

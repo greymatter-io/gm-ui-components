@@ -39,10 +39,9 @@ class Collapse extends React.Component {
   onChildResize = mut => {
     if (this.state.isOpen) {
       this.contentRef.current.style.height = `100%`;
-
       setTimeout(e => {
         this.setBodyHeight();
-      }, 500);
+      }, 250);
     }
   };
 
@@ -87,8 +86,6 @@ class Collapse extends React.Component {
 
   contentRef = React.createRef();
 
-  wrapperRef = React.createRef();
-
   render() {
     let {
       opener,
@@ -105,7 +102,7 @@ class Collapse extends React.Component {
     const OpenerComponent = opener || <IconChevronRight />;
 
     return (
-      <Wrapper {...props} ref={this.wrapperRef} isOpen={isOpen}>
+      <Wrapper {...props} isOpen={isOpen}>
         <Header
           onClick={this.onChangeHandler}
           onKeyDown={e =>
@@ -118,9 +115,7 @@ class Collapse extends React.Component {
           <Title>{title}</Title>
           <Detail>{detail}</Detail>
         </Header>
-        <Body isOpen={isOpen} ref={this.contentRef}>
-          {children}
-        </Body>
+        <Body ref={this.contentRef}>{children}</Body>
       </Wrapper>
     );
   }
