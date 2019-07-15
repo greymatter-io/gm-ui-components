@@ -20,7 +20,11 @@ stories
     () => {
       return (
         <>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={{ minWidth: "500px" }}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
         </>
@@ -40,6 +44,7 @@ stories
           title={text("title", "Collapse Title")}
           detail={text("detail", "Detail text")}
           isOpen={boolean("isOpen", true)}
+          style={{ minWidth: "500px" }}
         >
           <div style={style}>Collapse content</div>
         </Collapse>
@@ -57,13 +62,25 @@ stories
     () => {
       return (
         <>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={{ minWidth: "500px" }}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={{ minWidth: "500px" }}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={{ minWidth: "500px" }}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
         </>
@@ -72,6 +89,34 @@ stories
     {
       info: {
         text: "A collection of collapse sections."
+      }
+    }
+  )
+  .add(
+    "nested",
+    () => {
+      return (
+        <Collapse
+          title={"Nested Collapse"}
+          detail={"Detail text"}
+          style={{ minWidth: "500px" }}
+        >
+          <Collapse title={"Child Collapse"} detail={"Detail text"}>
+            <div style={style}>Collapse content</div>
+          </Collapse>
+          <Collapse title={"Child Collapse"} detail={"Detail text"}>
+            <div style={style}>Collapse content</div>
+          </Collapse>
+          <Collapse title={"Child Collapse"} detail={"Detail text"}>
+            <div style={style}>Collapse content</div>
+          </Collapse>
+        </Collapse>
+      );
+    },
+    {
+      info: {
+        text:
+          "A single collapse section controlled using the isOpen and onClick props. Both isOpen and onClick are required when using Collapse as a controlled component."
       }
     }
   );

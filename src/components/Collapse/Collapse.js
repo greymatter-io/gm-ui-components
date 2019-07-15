@@ -33,11 +33,19 @@ class Collapse extends React.Component {
     // If isOpen is true, find the height of the content and set the body component to a pixel value.
     // This is necessary for our css transition.
     if (this.state.isOpen) {
-      let contentNode =
-        this.contentRef.current && this.contentRef.current.children[0];
-      height = contentNode
-        ? contentNode.getBoundingClientRect().height
-        : height;
+      let contentNodes =
+        (this.contentRef.current &&
+          [].slice.call(this.contentRef.current.children)) ||
+        [];
+
+      height =
+        contentNodes.length > 0
+          ? contentNodes.reduce(
+              (acc, node) => node.getBoundingClientRect().height + acc,
+              0
+            )
+          : height;
+      console.log("height", height, "contentNodes", contentNodes);
     }
     this.contentRef.current.style.height = `${height}px`;
   };
