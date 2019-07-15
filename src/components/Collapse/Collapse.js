@@ -5,6 +5,7 @@ import { keen } from "style/theme";
 
 import { Title, Detail, Wrapper, Header, Opener, Body } from "./components";
 
+export const TRANSITION_MS = 250;
 /**
  * A single Collapse item
  */
@@ -40,7 +41,7 @@ class Collapse extends React.Component {
       this.contentRef.current.style.height = `100%`;
       setTimeout(e => {
         this.setBodyHeight();
-      }, 250);
+      }, TRANSITION_MS);
     }
   };
 
@@ -64,9 +65,7 @@ class Collapse extends React.Component {
           this.observer = new MutationObserver(this.onChildResize);
           contentNodes.forEach(n => {
             this.observer.observe(n, {
-              attributes: true,
-              characterData: true,
-              childList: true
+              attributes: true
             });
           });
         }
