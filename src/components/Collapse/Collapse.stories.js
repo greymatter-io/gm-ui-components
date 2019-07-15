@@ -13,7 +13,7 @@ const style = {
   textAlign: "center",
   backgroundColor: "lightgrey"
 };
-
+const wrapperStyle = { minWidth: "500px" };
 stories
   .add(
     "default",
@@ -23,7 +23,7 @@ stories
           <Collapse
             title="Collapse Title"
             detail="Detail text"
-            style={{ minWidth: "500px" }}
+            style={wrapperStyle}
           >
             <div style={style}>Collapse content</div>
           </Collapse>
@@ -44,7 +44,7 @@ stories
           title={text("title", "Collapse Title")}
           detail={text("detail", "Detail text")}
           isOpen={boolean("isOpen", true)}
-          style={{ minWidth: "500px" }}
+          style={wrapperStyle}
         >
           <div style={style}>Collapse content</div>
         </Collapse>
@@ -65,21 +65,21 @@ stories
           <Collapse
             title="Collapse Title"
             detail="Detail text"
-            style={{ minWidth: "500px" }}
+            style={wrapperStyle}
           >
             <div style={style}>Collapse content</div>
           </Collapse>
           <Collapse
             title="Collapse Title"
             detail="Detail text"
-            style={{ minWidth: "500px" }}
+            style={wrapperStyle}
           >
             <div style={style}>Collapse content</div>
           </Collapse>
           <Collapse
             title="Collapse Title"
             detail="Detail text"
-            style={{ minWidth: "500px" }}
+            style={wrapperStyle}
           >
             <div style={style}>Collapse content</div>
           </Collapse>
@@ -99,7 +99,7 @@ stories
         <Collapse
           title={"Nested Collapse"}
           detail={"Detail text"}
-          style={{ minWidth: "500px" }}
+          style={wrapperStyle}
         >
           <Collapse title={"Child Collapse"} detail={"Detail text"}>
             <div style={style}>Collapse content</div>
@@ -115,8 +115,7 @@ stories
     },
     {
       info: {
-        text:
-          "A single collapse section controlled using the isOpen and onClick props. Both isOpen and onClick are required when using Collapse as a controlled component."
+        text: "A collapse section with nested collapse sections inside."
       }
     }
   );
