@@ -18,7 +18,6 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "lodash": "^4.17.14",
     "polished": "^3.4.1"
   },
   "scripts": {
