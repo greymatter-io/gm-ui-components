@@ -2,12 +2,10 @@
 
 exports[`Collapse components Body should match snapshot 1`] = `
 .c0 {
-  overflow: hidden;
   width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  height: 0px;
-  visibility: hidden;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  overflow: hidden;
 }
 
 <div
@@ -80,9 +78,11 @@ exports[`Collapse components Title should match snapshot 1`] = `
 exports[`Collapse components Wrapper should match snapshot 1`] = `
 .c0 {
   width: 100%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  min-height: 3.4rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   border-top: 1px solid hsla(0,0%,0%,8%);
-  height: 100%;
 }
 
 <section

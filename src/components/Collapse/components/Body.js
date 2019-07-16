@@ -1,14 +1,7 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Body = styled.div`
-  overflow: hidden;
   width: 100%;
-  transition: all 0.5s ease;
-
-  ${({ isOpen }) =>
-    !isOpen &&
-    css`
-      height: 0px;
-      visibility: hidden;
-    `};
+  transition: all 0.25s ease;
+  overflow: hidden;
 `;

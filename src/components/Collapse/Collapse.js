@@ -1,11 +1,11 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-
 import { IconChevronRight } from "components/Glyphs";
 import { keen } from "style/theme";
 
 import { Title, Detail, Wrapper, Header, Opener, Body } from "./components";
 
+export const TRANSITION_MS = 250;
 /**
  * A single Collapse item
  */
@@ -28,16 +28,49 @@ class Collapse extends React.Component {
     this.setBodyHeight();
   }
 
+  componentWillUnmount() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+
+  observer = null;
+
+  onChildResize = mut => {
+    if (this.state.isOpen) {
+      this.contentRef.current.style.height = "100%";
+      setTimeout(e => {
+        this.setBodyHeight();
+      }, TRANSITION_MS);
+    }
+  };
+
   setBodyHeight = () => {
     let height = this.props.initiallyOpen ? "100%" : 0;
     // If isOpen is true, find the height of the content and set the body component to a pixel value.
     // This is necessary for our css transition.
     if (this.state.isOpen) {
-      let contentNode =
-        this.contentRef.current && this.contentRef.current.children[0];
-      height = contentNode
-        ? contentNode.getBoundingClientRect().height
-        : height;
+      // cast child nodes to an array
+      let contentNodes =
+        (this.contentRef.current &&
+          [].slice.call(this.contentRef.current.children)) ||
+        [];
+
+      if (contentNodes.length > 0) {
+        height = contentNodes.reduce(
+          (acc, node) => node.getBoundingClientRect().height + acc,
+          0
+        );
+        // Set an observer to listen for changes to the child node height
+        if (!this.observer) {
+          this.observer = new MutationObserver(this.onChildResize);
+          contentNodes.forEach(n => {
+            this.observer.observe(n, {
+              attributes: true
+            });
+          });
+        }
+      }
     }
     this.contentRef.current.style.height = `${height}px`;
   };
@@ -68,7 +101,7 @@ class Collapse extends React.Component {
     const OpenerComponent = opener || <IconChevronRight />;
 
     return (
-      <Wrapper {...props}>
+      <Wrapper {...props} isOpen={isOpen}>
         <Header
           onClick={this.onChangeHandler}
           onKeyDown={e =>
@@ -81,9 +114,7 @@ class Collapse extends React.Component {
           <Title>{title}</Title>
           <Detail>{detail}</Detail>
         </Header>
-        <Body isOpen={isOpen} ref={this.contentRef}>
-          {children}
-        </Body>
+        <Body ref={this.contentRef}>{children}</Body>
       </Wrapper>
     );
   }

@@ -13,14 +13,18 @@ const style = {
   textAlign: "center",
   backgroundColor: "lightgrey"
 };
-
+const wrapperStyle = { minWidth: "500px" };
 stories
   .add(
     "default",
     () => {
       return (
         <>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={wrapperStyle}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
         </>
@@ -40,6 +44,7 @@ stories
           title={text("title", "Collapse Title")}
           detail={text("detail", "Detail text")}
           isOpen={boolean("isOpen", true)}
+          style={wrapperStyle}
         >
           <div style={style}>Collapse content</div>
         </Collapse>
@@ -57,13 +62,25 @@ stories
     () => {
       return (
         <>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={wrapperStyle}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={wrapperStyle}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
-          <Collapse title="Collapse Title" detail="Detail text">
+          <Collapse
+            title="Collapse Title"
+            detail="Detail text"
+            style={wrapperStyle}
+          >
             <div style={style}>Collapse content</div>
           </Collapse>
         </>
@@ -72,6 +89,33 @@ stories
     {
       info: {
         text: "A collection of collapse sections."
+      }
+    }
+  )
+  .add(
+    "nested",
+    () => {
+      return (
+        <Collapse
+          title={"Nested Collapse"}
+          detail={"Detail text"}
+          style={wrapperStyle}
+        >
+          <Collapse title={"Child Collapse"} detail={"Detail text"}>
+            <div style={style}>Collapse content</div>
+          </Collapse>
+          <Collapse title={"Child Collapse"} detail={"Detail text"}>
+            <div style={style}>Collapse content</div>
+          </Collapse>
+          <Collapse title={"Child Collapse"} detail={"Detail text"}>
+            <div style={style}>Collapse content</div>
+          </Collapse>
+        </Collapse>
+      );
+    },
+    {
+      info: {
+        text: "A collapse section with nested collapse sections inside."
       }
     }
   );

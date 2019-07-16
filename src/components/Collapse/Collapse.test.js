@@ -4,12 +4,9 @@ import Collapse from "./Collapse";
 describe("Collapse", () => {
   let wrapper;
   beforeEach(() => {
-    // mock out dom method
-    Element.prototype.getBoundingClientRect = jest.fn(() => {
-      return {
-        height: 300
-      };
-    });
+    global.MutationObserver = jest.fn(() => ({
+      observe: jest.fn()
+    }));
 
     wrapper = mount(
       <Collapse title="Collapse title">
