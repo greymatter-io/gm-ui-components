@@ -38,7 +38,7 @@ class Collapse extends React.Component {
 
   onChildResize = mut => {
     if (this.state.isOpen) {
-      this.contentRef.current.style.height = `100%`;
+      this.contentRef.current.style.height = "100%";
       setTimeout(e => {
         this.setBodyHeight();
       }, TRANSITION_MS);

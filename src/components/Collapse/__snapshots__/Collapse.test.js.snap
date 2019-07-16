@@ -13,7 +13,7 @@ exports[`Collapse matches snapshot 1`] = `
   width: 100%;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  min-height: 48px;
+  min-height: 3.4rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   border-top: 1px solid hsla(0,0%,0%,8%);
 }
@@ -21,7 +21,6 @@ exports[`Collapse matches snapshot 1`] = `
 .c1 {
   cursor: pointer;
   width: 100%;
-  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -274,7 +273,7 @@ exports[`Collapse matches snapshot 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "width:100%;transition:all 0.25s ease;min-height:48px;font-family:",
+              "width:100%;transition:all 0.25s ease;min-height:3.4rem;font-family:",
               [Function],
               ";border-top:1px solid ",
               [Function],
@@ -380,7 +379,7 @@ exports[`Collapse matches snapshot 1`] = `
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "cursor:pointer;width:100%;min-height:48px;display:flex;justify-content:space-between;align-items:center;padding:",
+                    "cursor:pointer;width:100%;display:flex;justify-content:space-between;align-items:center;padding:",
                     "
     calc(var(--SPACING_BASE) * 1 * 1px)",
                     " 0;",

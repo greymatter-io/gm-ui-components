@@ -5,7 +5,7 @@ import { keen } from "style/theme";
 export const Wrapper = styled.section`
   width: 100%;
   transition: all 0.25s ease;
-  min-height: 48px;
+  min-height: 3.4rem;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   border-top: 1px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
 

@@ -27,7 +27,6 @@ exports[`Collapse components Header should match snapshot 1`] = `
 .c0 {
   cursor: pointer;
   width: 100%;
-  min-height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,7 +80,7 @@ exports[`Collapse components Wrapper should match snapshot 1`] = `
   width: 100%;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  min-height: 48px;
+  min-height: 3.4rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   border-top: 1px solid hsla(0,0%,0%,8%);
 }
