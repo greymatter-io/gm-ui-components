@@ -1,3 +1,12 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/DecipherNow/gm-ui-components/compare/v1.1.0...v1.1.1) (2019-07-19)
+
+### Features
+
+* nested collapse ([#519](https://github.com/DecipherNow/gm-ui-components/issues/519)) ([b210283](https://github.com/DecipherNow/gm-ui-components/commit/b210283))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.0.0...v1.1.0) (2019-07-14)
 
