@@ -66,6 +66,7 @@ class Collapse extends React.Component {
           this.observer = new MutationObserver(this.onChildResize);
           contentNodes.forEach(n => {
             this.observer.observe(n, {
+              // observe changes to child elements
               attributes: true,
               subtree: true,
               childList: true
