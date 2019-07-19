@@ -1,3 +1,18 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.1.0...v1.2.0) (2019-07-19)
+
+
+### Bug Fixes
+
+* add options back to observer ([#522](https://github.com/DecipherNow/gm-ui-components/issues/522)) ([557f358](https://github.com/DecipherNow/gm-ui-components/commit/557f358))
+
+
+### Features
+
+* nested collapse ([#519](https://github.com/DecipherNow/gm-ui-components/issues/519)) ([b210283](https://github.com/DecipherNow/gm-ui-components/commit/b210283))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.0.0...v1.1.0) (2019-07-14)
 
