@@ -38,6 +38,7 @@ export const Breadcrumb = styled.li`
 
   &:before {
     display: inline-block;
+    visibility: ${({ hideDelimiter }) => (hideDelimiter ? "hidden" : "auto")};
     color: ${({ theme }) => theme.COLOR_CONTENT_NONESSENTIAL};
     padding: 0 ${spacingScale(0.5)};
     content: ">";

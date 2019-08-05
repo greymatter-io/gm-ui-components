@@ -39,4 +39,14 @@ describe("Breadcrumb", () => {
   test("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  test("hides delimiter when hideDelimiter prop is passed", () => {
+    let options = {
+      modifier: ":before"
+    };
+    wrapper = mount(<Breadcrumb />); // mount in order to use toHaveStyleRule
+    expect(wrapper).toHaveStyleRule("visibility", "auto", options);
+    wrapper = mount(<Breadcrumb hideDelimiter={true} />);
+    expect(wrapper).toHaveStyleRule("visibility", "hidden", options);
+  });
 });
