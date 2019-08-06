@@ -24,6 +24,8 @@ stories
         <InputField
           autoFocus={boolean("autoFocus")}
           required={boolean("required")}
+          valid={boolean("valid")}
+          invalid={boolean("invalid")}
           readonly={boolean("readonly")}
           hint={text("hint")}
           type={FormFieldType}

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import { formInteractionStyles } from "./InputFieldInteractionStyles";
 import { keen } from "style/theme";
+import { mix} from "polished"
 
 const BORDER_WIDTH = 1;
 
@@ -20,6 +21,15 @@ export const InputTextField = styled.input`
   font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
   font-size: ${({theme}) => theme.FONT_SIZE_TEXT_DEFAULT};
   background: ${({theme}) => theme.COLOR_BACKGROUND_TWO};
+  background-color: ${({ valid, invalid, theme }) => {
+    if (invalid || valid)
+      return mix(
+        theme.OPACITY_LIGHTEST,
+        invalid ? theme.COLOR_INTENT_DANGER : theme.COLOR_INTENT_SUCCESS,
+        theme.COLOR_BACKGROUND_DEFAULT
+      )
+    }
+  };
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.15s ease;
