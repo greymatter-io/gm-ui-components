@@ -23,6 +23,7 @@ exports[`Breadcrumb matches snapshot 1`] = `
 
 .c0:before {
   display: inline-block;
+  visibility: auto;
   color: hsla(0,0%,0%,0.3);
   padding: 0  calc(var(--SPACING_BASE) * 0.5 * 1px);
   content: ">";
