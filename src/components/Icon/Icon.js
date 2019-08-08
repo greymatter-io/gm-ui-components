@@ -62,7 +62,15 @@ export default function Icon({
               stroke="black"
               vectorEffect="non-scaling-stroke"
               strokeWidth={"calc(" + borderWidth + " * 3)"}
-              transform={negationIsReversed ? "rotate(90 " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+              transform={
+                negationIsReversed
+                  ? "rotate(90 " +
+                    IconGridSize / 2 +
+                    " " +
+                    IconGridSize / 2 +
+                    ")"
+                  : undefined
+              }
             />
           )}
           {hasBadge && (
@@ -79,7 +87,7 @@ export default function Icon({
       <g
         title={glyphName}
         className="glyph"
-        mask={(isNegated || hasBadge) ? "url(#iconMask)" : undefined }
+        mask={isNegated || hasBadge ? "url(#iconMask)" : undefined}
       >
         <title>{title ? title : glyphName}</title>
         {children}
@@ -95,7 +103,11 @@ export default function Icon({
             stroke="currentColor"
             vectorEffect="non-scaling-stroke"
             strokeWidth={borderWidth}
-            transform={negationIsReversed ? "rotate(90 " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+            transform={
+              negationIsReversed
+                ? "rotate(90 " + IconGridSize / 2 + " " + IconGridSize / 2 + ")"
+                : undefined
+            }
           />
         </>
       )}
@@ -127,9 +139,9 @@ Icon.propTypes = {
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
   isNegated: PropTypes.bool,
-  negationLineTrim: PropTypes.number,
   negationIsReversed: PropTypes.bool,
   negationLine: PropTypes.object,
+  negationLineTrim: PropTypes.number,
   size: PropTypes.string,
   title: PropTypes.string
 };
