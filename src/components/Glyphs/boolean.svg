@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/boolean</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/boolean" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M40,24.1417777 L40,40 L24.1417777,40 C24.0483439,39.346794 24,38.6790427 24,38 C24,30.2680135 30.2680135,24 38,24 C38.6790427,24 39.346794,24.0483439 40,24.1417777 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>boolean</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="boolean" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M38,24 C38.6793345,24 39.347368,24.0483855 40.0008423,24.1418982 L40,40 L24.1418982,40.0008423 C24.0483855,39.347368 24,38.6793345 24,38 C24,30.2680135 30.2680135,24 38,24 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M16,16 L40,16 L40,40 L16,40 L16,16 Z M38,52 C45.7319865,52 52,45.7319865 52,38 C52,30.2680135 45.7319865,24 38,24 C30.2680135,24 24,30.2680135 24,38 C24,45.7319865 30.2680135,52 38,52 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>
 </svg>

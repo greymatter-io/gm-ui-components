@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/edit</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>edit</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <polygon id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" points="32 22 38 28 22 44 16 44 16 38"></polygon>
-        <path d="M37.4142136,19.4142136 L40.5857864,22.5857864 C41.366835,23.366835 41.366835,24.633165 40.5857864,25.4142136 L22.5857864,43.4142136 C22.2107137,43.7892863 21.7020059,44 21.1715729,44 L16,44 L16,38.8284271 C16,38.2979941 16.2107137,37.7892863 16.5857864,37.4142136 L34.5857864,19.4142136 C35.366835,18.633165 36.633165,18.633165 37.4142136,19.4142136 Z M32,40 L48,40 L32,40 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+        <path d="M37.4142136,19.4142136 L40.5857864,22.5857864 C41.366835,23.366835 41.366835,24.633165 40.5857864,25.4142136 L22.5857864,43.4142136 C22.2107137,43.7892863 21.7020059,44 21.1715729,44 L16,44 L16,38.8284271 C16,38.2979941 16.2107137,37.7892863 16.5857864,37.4142136 L34.5857864,19.4142136 C35.366835,18.633165 36.633165,18.633165 37.4142136,19.4142136 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>
 </svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>toggle-navigation</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="toggle-navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17.5,16 L46.5,16 C47.3284271,16 48,16.6715729 48,17.5 L48,46.5 C48,47.3284271 47.3284271,48 46.5,48 L17.5,48 C16.6715729,48 16,47.3284271 16,46.5 L16,17.5 C16,16.6715729 16.6715729,16 17.5,16 Z M21,23 L27,23 L21,23 Z M21,29 L27,29 L21,29 Z M21,35 L27,35 L21,35 Z M21,41 L27,41 L21,41 Z M32,48 L32,16 L32,48 Z" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

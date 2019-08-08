@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>icons/calendar</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>calendar</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M17,17 L47,17 C48.1045695,17 49,17.8954305 49,19 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,19 C15,17.8954305 15.8954305,17 17,17 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M17,17 L47,17 C48.1045695,17 49,17.8954305 49,19 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,19 C15,17.8954305 15.8954305,17 17,17 Z M24,30.5 L26,28 L26,38 M33,28 L40,28 L35.3333333,38 M40,15 L40,19 M24,15 L24,19" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>

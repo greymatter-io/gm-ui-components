@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/triangle-left</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/triangle-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>triangle-left</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="triangle-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <polygon id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" transform="translate(30.000000, 32.000000) rotate(90.000000) translate(-30.000000, -32.000000) " points="14 20 30 44 46 20"></polygon>
         <polygon id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" transform="translate(30.000000, 32.000000) rotate(90.000000) translate(-30.000000, -32.000000) " points="14 20 30 44 46 20"></polygon>
     </g>

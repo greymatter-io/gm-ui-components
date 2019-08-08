@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/person</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/person" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>person</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="person" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M32,50 C23.2536498,50 14,47.6654135 14,46.1428571 C14,38.5300752 26.8571429,36.093985 26.8571429,34.5714286 C26.8571429,31.5263158 23,29.4285714 23,21.7142857 C23,16.5714286 25.9973629,14 31.9920887,14 C37.9973629,14 41,16.5714286 41,21.7142857 C41,29.4285714 37.1428571,31.5263158 37.1428571,34.5714286 C37.1428571,36.093985 50,38.5300752 50,46.1428571 C50,47.6654135 40.7463502,50 32,50 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M32,50 C23.2536498,50 14,47.6654135 14,46.1428571 C14,38.5300752 26.8571429,36.093985 26.8571429,34.5714286 C26.8571429,31.5263158 23,29.4285714 23,21.7142857 C23,16.5714286 25.9973629,14 31.9920887,14 C37.9973629,14 41,16.5714286 41,21.7142857 C41,29.4285714 37.1428571,31.5263158 37.1428571,34.5714286 C37.1428571,36.093985 50,38.5300752 50,46.1428571 C50,47.6654135 40.7463502,50 32,50 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>

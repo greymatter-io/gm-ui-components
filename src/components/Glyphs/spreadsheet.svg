@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>icons/spreadsheet</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/spreadsheet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>spreadsheet</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="spreadsheet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M17,15 L47,15 C48.1045695,15 49,15.8954305 49,17 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,17 C15,15.8954305 15.8954305,15 17,15 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M17,15 L47,15 C48.1045695,15 49,15.8954305 49,17 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,17 C15,15.8954305 15.8954305,15 17,15 Z M26.5,32 L49,32 M26.5,40 L49,40 M26.5,25 L26.5,49 M38.5,25 L38.5,49 M15,25 L49,25" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>

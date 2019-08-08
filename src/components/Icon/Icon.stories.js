@@ -30,6 +30,7 @@ const glyphNames = [
   "IconBookmark",
   "IconBoolean",
   "IconCalendar",
+  "IconCard",
   "IconCheckboxChecked",
   "IconCheckboxIndeterminate",
   "IconCheckboxNegative",
@@ -47,33 +48,37 @@ const glyphNames = [
   "IconChevronUp",
   "IconChevronUpDouble",
   "IconCircle",
-  "IconNegation",
-  "IconLinkedIn",
-  "IconTwitter",
   "IconCloud",
+  "IconCloudUp",
   "IconCog",
+  "IconColumnToggle",
   "IconComment",
   "IconConfiguration",
-  "IconCopyToWorkspace",
   "IconCPU",
   "IconCycle",
+  "IconDash",
   "IconDashboard",
-  "IconThreads",
   "IconDocument",
   "IconDownload",
   "IconDuplicate",
-  "IconFunctions",
+  "IconEar",
   "IconEdit",
+  "IconEditLines",
   "IconEkg",
-  "IconGitHub",
   "IconEkgNo",
   "IconEntity",
   "IconExpand",
   "IconEye",
   "IconEyeNo",
   "IconFile",
+  "IconFileTypeAudio",
+  "IconFileTypeImage",
+  "IconFileTypeVideo",
   "IconFilter",
   "IconFolder",
+  "IconFolderOpen",
+  "IconFunctions",
+  "IconGitHub",
   "IconGrid",
   "IconGroup",
   "IconHellip",
@@ -84,6 +89,7 @@ const glyphNames = [
   "IconJson",
   "IconKey",
   "IconLatency",
+  "IconLinkedIn",
   "IconList",
   "IconLock",
   "IconMagnifier",
@@ -93,6 +99,7 @@ const glyphNames = [
   "IconMinus",
   "IconMove",
   "IconMoveWorkspace",
+  "IconNegation",
   "IconNewFolder",
   "IconNewOrganization",
   "IconNews",
@@ -110,24 +117,35 @@ const glyphNames = [
   "IconProjectB",
   "IconRename",
   "IconReorder",
+  "IconSelection",
   "IconSharedFolder",
   "IconShareToPeople",
   "IconSlideshow",
+  "IconSort09",
+  "IconSort90",
+  "IconSortAscending",
+  "IconSortAZ",
   "IconSortDescending",
+  "IconSortZA",
   "IconSpreadsheet",
   "IconSquare",
   "IconStar",
+  "IconStatusBroken",
   "IconStatusChecked",
   "IconStepBackward",
   "IconStepForward",
   "IconSummary",
   "IconTextCursor",
+  "IconThreads",
+  "IconToggleInspector",
+  "IconToggleNavigation",
   "IconTrash",
   "IconTrashX",
   "IconTriangleDown",
   "IconTriangleLeft",
   "IconTriangleRight",
   "IconTriangleUp",
+  "IconTwitter",
   "IconUnlock",
   "IconVellip",
   "IconVersions",
@@ -158,6 +176,13 @@ const GalleryIconLabel = styled.p`
   color: ${({ theme }) => theme.COLOR_CONTENT_MUTED};
 `;
 
+const defaultNegationLine = {
+  trim: 6,
+  width: "inherit",
+  maskSize: 4,
+  isReversed: true
+};
+
 const stories = storiesOf("Components|Icons", module);
 
 stories
@@ -174,6 +199,8 @@ stories
           size={text("size")}
           title={text("title")}
           hasBadge={boolean("hasBadge")}
+          isNegated={boolean("isNegated", true)}
+          negationLine={object("negationLine", defaultNegationLine)}
           badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
         />

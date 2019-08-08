@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/json</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/json" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M17,22 L47,22 C47.5522847,22 48,22.4477153 48,23 L48,29 L51,32 L48,35 L48,41 C48,41.5522847 47.5522847,42 47,42 L17,42 C16.4477153,42 16,41.5522847 16,41 L16,35 L13,32 L16,29 L16,23 C16,22.4477153 16.4477153,22 17,22 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M20,22 L18,22 C16.8954305,22 16,22.8954305 16,24 L16,29 L13,32 L16,35 L16,40 C16,41.1045695 16.8954305,42 18,42 L20,42 M44,42 L46,42 C47.1045695,42 48,41.1045695 48,40 L48,35 L51,32 L48,29 L48,24 C48,22.8954305 47.1045695,22 46,22 L44,22" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>json</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="json" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M17,22 L47,22 C47.5522847,22 48,22.4477153 48,23 L48,29 L48,29 L51,32 L48,35 L48,41 C48,41.5522847 47.5522847,42 47,42 L17,42 C16.4477153,42 16,41.5522847 16,41 L16,35 L16,35 L13,32 L16,29 L16,23 C16,22.4477153 16.4477153,22 17,22 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M20,22 L18,22 C16.8954305,22 16,22.8954305 16,24 L16,29 L16,29 L13,32 L16,35 L16,40 C16,41.1045695 16.8954305,42 18,42 L20,42 L20,42 M44,42 L46,42 C47.1045695,42 48,41.1045695 48,40 L48,35 L48,35 L51,32 L48,29 L48,24 C48,22.8954305 47.1045695,22 46,22 L44,22 L44,22" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>
 </svg>
