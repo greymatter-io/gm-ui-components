@@ -9,6 +9,9 @@ import { keen } from "style/theme";
  * @param {any} { optional styling props}
  * @returns JSX elements
  */
+
+const IconGridSize = 64;
+
 export default function Icon({
   ariaLabelledby,
   hasBadge,
@@ -16,6 +19,9 @@ export default function Icon({
   badgePosition,
   borderColor,
   borderWidth,
+  isNegated,
+  negationLineTrim,
+  negationIsReversed,
   children,
   fillColor,
   fillOpacity,
@@ -36,8 +42,8 @@ export default function Icon({
       borderColor={borderColor}
       {...props}
     >
-      {hasBadge && (
-        <mask id="badgeMask" className="badgeMask">
+      {(isNegated || hasBadge) && (
+        <mask id="iconMask">
           <rect
             x="0"
             y="0"
@@ -46,30 +52,60 @@ export default function Icon({
             fill="white"
             fillOpacity="1"
           />
-          <circle
-            cx={badgePosition.x}
-            cy={badgePosition.y}
-            r="15"
-            fill="black"
-            fillOpacity="1"
-          />
+          {isNegated && (
+            <line
+              className="negationLine"
+              x1={IconGridSize - negationLineTrim}
+              y1={IconGridSize - negationLineTrim}
+              x2={negationLineTrim}
+              y2={negationLineTrim}
+              stroke="black"
+              vectorEffect="non-scaling-stroke"
+              strokeWidth={"calc(" + borderWidth + " * 3)"}
+              transform={negationIsReversed ? "rotate(90 " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+            />
+          )}
+          {hasBadge && (
+            <circle
+              cx={badgePosition.x}
+              cy={badgePosition.y}
+              r="8"
+              fill="black"
+              fillOpacity="1"
+            />
+          )}
         </mask>
       )}
       <g
         title={glyphName}
         className="glyph"
-        mask={hasBadge ? "url(#badgeMask)" : undefined}
+        mask={(isNegated || hasBadge) ? "url(#iconMask)" : undefined }
       >
         <title>{title ? title : glyphName}</title>
         {children}
       </g>
+      {isNegated && (
+        <>
+          <line
+            className="negationLine"
+            x1={IconGridSize - negationLineTrim}
+            y1={IconGridSize - negationLineTrim}
+            x2={negationLineTrim}
+            y2={negationLineTrim}
+            stroke="currentColor"
+            vectorEffect="non-scaling-stroke"
+            strokeWidth={borderWidth}
+            transform={negationIsReversed ? "rotate(90 " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+          />
+        </>
+      )}
       {hasBadge && (
         <>
           <circle
             className="badge"
             cx={badgePosition.x}
             cy={badgePosition.y}
-            r="10"
+            r="5"
             fillOpacity="1"
             fill={badgeColor}
           />
@@ -90,6 +126,10 @@ Icon.propTypes = {
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
+  isNegated: PropTypes.bool,
+  negationLineTrim: PropTypes.number,
+  negationIsReversed: PropTypes.bool,
+  negationLine: PropTypes.object,
   size: PropTypes.string,
   title: PropTypes.string
 };
@@ -97,6 +137,9 @@ Icon.propTypes = {
 Icon.defaultProps = {
   theme: keen,
   hasBadge: false,
+  isNegated: false,
+  negationLineTrim: 12,
+  negationIsReversed: false,
   badgePosition: {
     x: 46,
     y: 16
