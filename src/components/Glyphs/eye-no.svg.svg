@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>eye-no</title>
+    <title>eye-no.svg</title>
     <desc>Created with Sketch Beta.</desc>
-    <g id="eye-no" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="eye-no.svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M12,32 C14.3241791,25.0810465 22.8399059,20 32,20 C41.1600939,20 49.6758208,25.0810465 52,32 C49.6758208,38.9189535 41.1600939,44 32,44 C22.8399059,44 14.3241791,38.9189535 12,32 Z M32,38 C35.3137084,38 38,35.3137084 38,32 C38,28.6862916 35.3137084,26 32,26 C28.6862916,26 26,28.6862916 26,32 C26,35.3137084 28.6862916,38 32,38 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M12,32 C14.3241791,25.0810465 22.8399059,20 32,20 C41.1600939,20 49.6758208,25.0810465 52,32 C49.6758208,38.9189535 41.1600939,44 32,44 C22.8399059,44 14.3241791,38.9189535 12,32 Z M32,38 C35.3137084,38 38,35.3137084 38,32 C38,28.6862916 35.3137084,26 32,26 C28.6862916,26 26,28.6862916 26,32 C26,35.3137084 28.6862916,38 32,38 Z M48,16 L16,48" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>

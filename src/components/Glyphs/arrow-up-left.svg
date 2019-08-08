@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
     <title>arrow-up-left</title>
     <desc>Created with Sketch Beta.</desc>
     <g id="arrow-up-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M22,22 L10,10 L22,22 Z M10,20 L10,10 L20,10" id="border" stroke="#007AFF" fill-rule="nonzero"></path>
+        <path d="M44,44 L20,20 L44,44 Z M20,40 L20,20 L40,20" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
     </g>
 </svg>
