@@ -35,7 +35,7 @@
     "prepublishOnly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "npm run storybook",
-    "storybook": "start-storybook -p 9009",
+    "storybook": "start-storybook -p 9009 -s public",
     "test": "node scripts/test.js --env=jsdom",
     "update-deps": "npm-check . --skip-unused -u",
     "update:snapshots": "npm run test -- --updateSnapshot"
