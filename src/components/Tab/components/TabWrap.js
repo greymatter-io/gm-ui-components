@@ -15,9 +15,7 @@ const downStyles = css`
   box-shadow: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
 `;
 
-const TabWrap = styled.a.attrs(props => ({
-  disabled: props.disabled
-}))`
+const TabWrap = styled.a`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};

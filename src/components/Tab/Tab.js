@@ -7,18 +7,12 @@ import TabLabel from "./components/TabLabel";
 const Tab = ({
   label = "",
   active = false,
-  disabled = false,
   children,
   clickAction,
   ...props
 }) => {
   return (
-    <TabWrap
-      active={active}
-      disabled={disabled}
-      onClick={clickAction}
-      {...props}
-    >
+    <TabWrap active={active} onClick={clickAction} {...props}>
       {children}
       <TabLabel>{label}</TabLabel>
     </TabWrap>
@@ -29,7 +23,6 @@ Tab.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.any,
   clickAction: PropTypes.func.isRequired,
-  disabled: PropTypes.bool,
   label: PropTypes.string.isRequired
 };
 
