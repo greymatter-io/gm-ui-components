@@ -26,13 +26,12 @@ export default function Icon({
   fillColor,
   fillOpacity,
   glyphName,
-  title,
   size,
   ...props
 }) {
   return (
     <StyledSVG
-      aria-labelledby={ariaLabelledby || title}
+      aria-labelledby={ariaLabelledby}
       focusable="false"
       size={size}
       id={glyphName}
@@ -84,12 +83,7 @@ export default function Icon({
           )}
         </mask>
       )}
-      <g
-        title={glyphName}
-        className="glyph"
-        mask={isNegated || hasBadge ? "url(#iconMask)" : undefined}
-      >
-        <title>{title ? title : glyphName}</title>
+      <g className="glyph"  mask={isNegated || hasBadge ? "url(#iconMask)" : undefined}>
         {children}
       </g>
       {isNegated && (
@@ -143,7 +137,6 @@ Icon.propTypes = {
   negationLine: PropTypes.object,
   negationLineTrim: PropTypes.number,
   size: PropTypes.string,
-  title: PropTypes.string
 };
 
 Icon.defaultProps = {
