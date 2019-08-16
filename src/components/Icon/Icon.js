@@ -55,12 +55,7 @@ export default function Icon({
           />
         </mask>
       )}
-      <g
-        title={glyphName}
-        className="glyph"
-        mask={hasBadge ? "url(#badgeMask)" : undefined}
-      >
-        <title>{title ? title : glyphName}</title>
+      <g className="glyph" mask={hasBadge ? "url(#badgeMask)" : undefined}>
         {children}
       </g>
       {hasBadge && (
