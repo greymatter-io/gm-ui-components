@@ -20,13 +20,12 @@ export default function Icon({
   fillColor,
   fillOpacity,
   glyphName,
-  title,
   size,
   ...props
 }) {
   return (
     <StyledSVG
-      aria-labelledby={ariaLabelledby || title}
+      aria-labelledby={ariaLabelledby}
       focusable="false"
       size={size}
       id={glyphName}
@@ -85,8 +84,7 @@ Icon.propTypes = {
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
-  size: PropTypes.string,
-  title: PropTypes.string
+  size: PropTypes.string
 };
 
 Icon.defaultProps = {
