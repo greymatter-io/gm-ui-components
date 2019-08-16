@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "webpack -p",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s public",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "deploy-storybook": "storybook-to-ghpages",
