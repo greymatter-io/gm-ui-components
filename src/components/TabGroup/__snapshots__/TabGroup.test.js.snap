@@ -81,7 +81,6 @@ exports[`TabGroup matches snapshot 1`] = `
   </p>
   <a
     className="c2"
-    disabled={false}
     onClick={[Function]}
   >
     <span
