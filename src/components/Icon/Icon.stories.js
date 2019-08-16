@@ -62,6 +62,8 @@ const glyphNames = [
   "IconDownload",
   "IconDuplicate",
   "IconEar",
+  "IconGlobe",
+  "IconFunctions",
   "IconEdit",
   "IconEditLines",
   "IconEkg",

@@ -69,6 +69,7 @@ import IconFolder from "./folder.svg";
 import IconFolderOpen from "./folder-open.svg";
 import IconFunctions from "./functions.svg";
 import IconGitHub from "./github.svg";
+import IconGlobe from "./globe.svg";
 import IconGrid from "./grid.svg";
 import IconGroup from "./group.svg";
 import IconHellip from "./hellip.svg";
@@ -214,6 +215,10 @@ export {
   IconFolderOpen,
   IconFunctions,
   IconGitHub,
+  IconFilter,
+  IconFolder,
+  IconGitHub,
+  IconGlobe,
   IconGrid,
   IconGroup,
   IconHellip,

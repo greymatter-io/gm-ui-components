@@ -13,22 +13,22 @@ exports[`Icon matches snapshot 1`] = `
   size="24px"
   theme={
     Object {
-      "COLOR_BACKGROUND_DEFAULT": "hsl(0,0%,100%)",
-      "COLOR_BACKGROUND_THREE": "hsl(0,0%,94%)",
-      "COLOR_BACKGROUND_TWO": "hsl(0,0%,97%)",
+      "COLOR_BACKGROUND_DEFAULT": "hsl(0, 0%, 100%)",
+      "COLOR_BACKGROUND_THREE": "hsl(0, 0%, 94%)",
+      "COLOR_BACKGROUND_TWO": "hsl(0, 0%, 97%)",
       "COLOR_BRAND_PRIMARY": "#00b42b",
       "COLOR_BRAND_SECONDARY": "#00b42b",
-      "COLOR_CONTENT_CONTRAST": "hsla(0,0%,0%,1)",
-      "COLOR_CONTENT_DEFAULT": "hsla(0,0%,0%,0.85)",
-      "COLOR_CONTENT_MUTED": "hsla(0,0%,0%,0.6)",
-      "COLOR_CONTENT_NONESSENTIAL": "hsla(0,0%,0%,0.3)",
+      "COLOR_CONTENT_CONTRAST": "hsl(0, 0%, 0%)",
+      "COLOR_CONTENT_DEFAULT": "hsla(0, 0%, 0%, 0.85)",
+      "COLOR_CONTENT_MUTED": "hsla(0, 0%, 0%, 0.6)",
+      "COLOR_CONTENT_NONESSENTIAL": "hsla(0, 0%, 0%, 0.3)",
       "COLOR_INTENT_DANGER": "#D83D22",
       "COLOR_INTENT_HIGHLIGHT": "#00b42b",
       "COLOR_INTENT_INFO": "#1E6DF6",
       "COLOR_INTENT_SUCCESS": "#00b42b",
       "COLOR_INTENT_WARNING": "#F7CD45",
-      "COLOR_KEYLINE_DEFAULT": "hsla(0,0%,0%,8%)",
-      "COLOR_KEYLINE_SOLID": "hsl(0,0%,92%)",
+      "COLOR_KEYLINE_DEFAULT": "hsla(0, 0%, 0%, 0.08)",
+      "COLOR_KEYLINE_SOLID": "hsl(0, 0%, 92%)",
       "CORNER_RADIUS_CARD_DEFAULT": "6px",
       "CORNER_RADIUS_CARD_LG": "8px",
       "CORNER_RADIUS_CARD_SM": "4px",
@@ -81,11 +81,7 @@ exports[`Icon matches snapshot 1`] = `
 >
   <g
     className="glyph"
-    title="IconCog"
   >
-    <title>
-      IconCog
-    </title>
     <path
       d="M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z"
     />

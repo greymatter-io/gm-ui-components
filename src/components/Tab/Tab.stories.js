@@ -34,7 +34,7 @@ stories
           clickAction={() => alert("hello")}
           label={text("label", "Filters")}
           active={boolean("active", false)}
-          disabled={boolean("disabled", false)}
+          disabled={boolean("disabled")}
         />
       );
     },
