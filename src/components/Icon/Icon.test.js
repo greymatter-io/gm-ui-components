@@ -9,7 +9,6 @@ let iconProps = {
   borderWidth: 1,
   fillColor: "white",
   glyphName: "IconCog",
-  title: "IconCog",
   size: "24px"
 };
 describe("Icon", () => {
@@ -30,7 +29,6 @@ describe("Icon", () => {
   test("renders children", () => {
     expect(tree.find("StyledSVG")).toHaveLength(1);
     expect(tree.find("g")).toHaveLength(1);
-    expect(tree.find("title")).toHaveLength(1);
   });
 
   test("passes the correct props to StyledSVG", () => {
@@ -39,13 +37,8 @@ describe("Icon", () => {
     });
   });
 
-  test("renders a title element with the correct title", () => {
-    expect(tree.find("title").text()).toBe("IconCog");
-  });
-
-  test("renders a g element with the correct class and title", () => {
+  test("renders a g element with the correct class", () => {
     expect(tree.find("g").props()).toMatchObject({
-      title: "IconCog",
       className: "glyph"
     });
   });
