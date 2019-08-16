@@ -66,6 +66,7 @@ import IconEyeNo from "./eye-no.svg";
 import IconFile from "./file.svg";
 import IconFilter from "./filter.svg";
 import IconFolder from "./folder.svg";
+import IconGlobe from "./globe.svg";
 import IconGrid from "./grid.svg";
 import IconGroup from "./group.svg";
 import IconHellip from "./hellip.svg";
@@ -191,9 +192,10 @@ export {
   IconEye,
   IconEyeNo,
   IconFile,
-  IconGitHub,
   IconFilter,
   IconFolder,
+  IconGitHub,
+  IconGlobe,
   IconGrid,
   IconGroup,
   IconHellip,
