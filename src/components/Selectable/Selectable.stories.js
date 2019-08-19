@@ -2,70 +2,60 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { boolean } from "@storybook/addon-knobs";
 import styled from "styled-components";
-import withPropsCombinations from "react-storybook-addon-props-combinations";
 
-import { Selectable as DefaultSelectable } from "./Selectable";
+import selectable from "./Selectable";
 
 const stories = storiesOf("Components|Selectable", module);
 
-const SelectableContent = styled.div`
+const Component = styled.div`
+  ${selectable}
+
   padding: 1rem;
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-areas: "thumbnail title" "thumbnail description";
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_DEFAULT};
 
   img {
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_SM};
     margin-inline-end: 1em;
+    grid-area: thumbnail;
   }
 `;
 
-function Selectable({ ...props }) {
-  return (
-    <DefaultSelectable {...props}>
-      <SelectableElement>
-        <img src="https://source.unsplash.com/random/100x100" />
-        Content{" "}
-      </SelectableElement>
-    </DefaultSelectable>
-  );
-}
+const Title = styled.h1`
+  font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_LG};
+  margin: auto 0 0;
+  grid-area: title;
+`;
 
-stories
-  .add(
-    "Gallery",
-    withPropsCombinations(Selectable, {
-      isHovered: [false, true],
-      isActive: [false, true],
-      isFocused: [false, true],
-      isSelected: [false, true],
-      isDisabled: [false, true]
-    }),
-    {
-      info: {
-        text: "Add component description here. Accepts markdown."
-      }
+const Description = styled.p`
+  margin: 0 0 auto;
+  grid-area: description;
+`;
+
+stories.add(
+  "Default",
+  () => (
+    <Component
+      isHovered={boolean("isHovered", false)}
+      isActive={boolean("isActive", false)}
+      isFocused={boolean("isFocused", false)}
+      isSelected={boolean("isSelected", false)}
+      isDisabled={boolean("isDisabled", false)}
+    >
+      <img src="https://source.unsplash.com/random/100x100" alt="test" />
+      <Title>Content</Title>
+      <Description>Description</Description>
+    </Component>
+  ),
+  {
+    info: {
+      text: ""
     }
-  )
-  .add(
-    "Default",
-    () => (
-      <DefaultSelectable
-        isHovered={boolean("isHovered", false)}
-        isActive={boolean("isActive", false)}
-        isFocused={boolean("isFocused", false)}
-        isSelected={boolean("isSelected", false)}
-        isDisabled={boolean("isDisabled", false)}
-      >
-        <SelectableContent>
-          <img src="https://source.unsplash.com/random/100x100" />
-          Content{" "}
-        </SelectableContent>
-      </DefaultSelectable>
-    ),
-    {
-      info: {
-        text: ""
-      }
-    }
-  );
+  }
+);
