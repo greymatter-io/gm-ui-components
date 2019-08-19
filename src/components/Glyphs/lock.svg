@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/lock</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/lock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M20,22 L44,22 C45.1045695,22 46,22.8954305 46,24 L46,44 C46,45.1045695 45.1045695,46 44,46 L20,46 C18.8954305,46 18,45.1045695 18,44 L18,24 C18,22.8954305 18.8954305,22 20,22 Z M32,35.5 C33.6568542,35.5 35,34.1568542 35,32.5 C35,30.8431457 33.6568542,29.5 32,29.5 C30.3431458,29.5 29,30.8431457 29,32.5 C29,34.1568542 30.3431458,35.5 32,35.5 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>lock</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="lock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M44,22 C45.1045695,22 46,22.8954305 46,24 L46,44 C46,45.1045695 45.1045695,46 44,46 L20,46 C18.8954305,46 18,45.1045695 18,44 L18,24 C18,22.8954305 18.8954305,22 20,22 L44,22 Z M32,29.5 C30.3431458,29.5 29,30.8431457 29,32.5 C29,34.1568542 30.3431458,35.5 32,35.5 C33.6568542,35.5 35,34.1568542 35,32.5 C35,30.8431457 33.6568542,29.5 32,29.5 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M20,22 L44,22 C45.1045695,22 46,22.8954305 46,24 L46,44 C46,45.1045695 45.1045695,46 44,46 L20,46 C18.8954305,46 18,45.1045695 18,44 L18,24 C18,22.8954305 18.8954305,22 20,22 Z M32,35.5 C33.6568542,35.5 35,34.1568542 35,32.5 C35,30.8431457 33.6568542,29.5 32,29.5 C30.3431458,29.5 29,30.8431457 29,32.5 C29,34.1568542 30.3431458,35.5 32,35.5 Z M32,39 L32,36 M23.7419355,22 L23.7419355,19.1818182 C23.7419355,14.6631248 27.4391969,11 32,11 C36.5608031,11 40.2580645,14.6631248 40.2580645,19.1818182 L40.2580645,22" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>
 </svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>toggle-navigation</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="toggle-navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,15 L31.5,15 C32.3284271,15 33,15.6715729 33,16.5 L33,47.5 C33,48.3284271 32.3284271,49 31.5,49 L15,49 L15,15 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" transform="translate(24.000000, 32.000000) scale(-1, 1) translate(-24.000000, -32.000000) "></path>
+        <path d="M47.5,15 C48.3284271,15 49,15.6715729 49,16.5 L49,47.5 C49,48.3284271 48.3284271,49 47.5,49 L16.5,49 C15.6715729,49 15,48.3284271 15,47.5 L15,16.5 C15,15.6715729 15.6715729,15 16.5,15 L47.5,15 Z M43,25 L36,25 L43,25 Z M43,33 L36,33 L43,33 Z M43,41 L36,41 L43,41 Z M31,49 L31,15 L31,49 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" transform="translate(32.000000, 32.000000) scale(-1, 1) translate(-32.000000, -32.000000) "></path>
+    </g>
+</svg>

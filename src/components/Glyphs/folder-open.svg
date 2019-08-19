@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>folder-open</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="folder-open" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,48 C14.8954305,48 14,47.1045695 14,46 L14,26 C14,24.8954305 14.8954305,24 16,24 L26,24 L29,27 L45,27 C46.1045695,27 47,27.8954305 47,29 L47,33 L53,33 L47,45.857 L47,48 L46,48 L16,48 Z" id="fill-2" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M46,48 L16,48 C14.8954305,48 14,47.1045695 14,46 L14,26 C14,24.8954305 14.8954305,24 16,24 L26,24 L29,27 L45,27 C46.1045695,27 47,27.8954305 47,29 C47,30.7777778 47,31.1111111 47,32 M15,47 L20.5,33 L53,33 L46,48 M42,19 L47,13 M21,19 L17,13 M32,12 L32,18 L32,12 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

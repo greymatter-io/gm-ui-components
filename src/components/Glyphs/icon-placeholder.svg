@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/icon-placeholder</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/icon-placeholder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>icon-placeholder</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="icon-placeholder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M32,48 C40.836556,48 48,40.836556 48,32 C48,23.163444 40.836556,16 32,16 C23.163444,16 16,23.163444 16,32 C16,40.836556 23.163444,48 32,48 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M32,48 C40.836556,48 48,40.836556 48,32 C48,23.163444 40.836556,16 32,16 C23.163444,16 16,23.163444 16,32 C16,40.836556 23.163444,48 32,48 Z M32,42 L32,40 M32,37 C32,37 32,36.6666667 32,36 C32,35 32,34 34,33 C36,32 38,31 38,28 C38,25 36,22 32,22 C28,22 26,25 26,28" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>

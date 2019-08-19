@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>icons/expand</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/expand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>expand</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="expand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" x="12" y="20" width="40" height="24" rx="2"></rect>
         <path d="M14,20 L50,20 C51.1045695,20 52,20.8954305 52,22 L52,42 C52,43.1045695 51.1045695,44 50,44 L14,44 C12.8954305,44 12,43.1045695 12,42 L12,22 C12,20.8954305 12.8954305,20 14,20 Z M25,39 L17,39 L17,31 M39,25 L47,25 L47,33" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>
