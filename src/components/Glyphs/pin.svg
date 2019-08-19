@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/pin</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/pin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>pin</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="pin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <circle id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" cx="32" cy="28" r="12"></circle>
         <path d="M32,40 C38.627417,40 44,34.627417 44,28 C44,21.372583 38.627417,16 32,16 C25.372583,16 20,21.372583 20,28 C20,34.627417 25.372583,40 32,40 Z M38.9361099,24.0110277 C38.2302925,22.7863818 37.2094627,21.7662129 35.9842965,21.0611974 M32,40 L32,52" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>

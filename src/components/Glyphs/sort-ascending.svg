@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>sort-ascending</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="sort-ascending" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40,16 L40,48 L40,16 Z M32,24 L40,16 L48,24 M22,34 C23.1045695,34 24,33.1045695 24,32 C24,30.8954305 23.1045695,30 22,30 C20.8954305,30 20,30.8954305 20,32 C20,33.1045695 20.8954305,34 22,34 Z M22,24 C23.1045695,24 24,23.1045695 24,22 C24,20.8954305 23.1045695,20 22,20 C20.8954305,20 20,20.8954305 20,22 C20,23.1045695 20.8954305,24 22,24 Z M22,44 C23.1045695,44 24,43.1045695 24,42 C24,40.8954305 23.1045695,40 22,40 C20.8954305,40 20,40.8954305 20,42 C20,43.1045695 20.8954305,44 22,44 Z" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+    </g>
+</svg>

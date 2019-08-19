@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>icons/new-window</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/new-window" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M22,20 L46,20 C47.1045695,20 48,20.8954305 48,22 L48,37 C48,38.1045695 47.1045695,39 46,39 L22,39 C20.8954305,39 20,38.1045695 20,37 L20,22 C20,20.8954305 20.8954305,20 22,20 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M20,24.1666667 L20,37 C20,38.1045695 20.8954305,39 22,39 L44.2631579,39 L44.0997306,42.1051177 C44.0438228,43.1673671 43.1662146,44 42.102495,44 L17,44 C15.8954305,44 15,43.1045695 15,42 L15,26.0677775 C15,24.963208 15.8954305,24.0677775 17,24.0677775 C17.0222145,24.0677775 17.0444275,24.0681476 17.0666297,24.0688877 L20,24.1666667 Z M22,20 L46,20 C47.1045695,20 48,20.8954305 48,22 L48,37 C48,38.1045695 47.1045695,39 46,39 L22,39 C20.8954305,39 20,38.1045695 20,37 L20,22 C20,20.8954305 20.8954305,20 22,20 Z M43,15 L54,15 L54,26 M44,26 L54,15" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>new-window</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="new-window" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M21,19 L46,19 C47.1045695,19 48,19.8954305 48,21 L48,39 C48,40.1045695 47.1045695,41 46,41 L21,41 C19.8954305,41 19,40.1045695 19,39 L19,21 C19,19.8954305 19.8954305,19 21,19 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M19,23.9993896 L19,39 C19,40.1045695 19.8954305,41 21,41 L21,41 L44,40.9993896 L44,44 C44,45.1045695 43.1045695,46 42,46 L16,46 C14.8954305,46 14,45.1045695 14,44 L14,26 C14,24.8954305 14.8954305,24 16,24 L19,23.9993896 Z M21,19 L46,19 C47.1045695,19 48,19.8954305 48,21 L48,39 C48,40.1045695 47.1045695,41 46,41 L21,41 C19.8954305,41 19,40.1045695 19,39 L19,21 C19,19.8954305 19.8954305,19 21,19 Z M43,12 L54,12 L54,23 M44,23 L54,12" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>
 </svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>organization-b</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="organization-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M21,16 L39.1764706,16 C39.7287553,16 40.1764706,16.4477153 40.1764706,17 L40.1764706,19.9473684 L40.1764706,19.9473684 L48,19.9473684 L48,48 L20,48 L20,17 C20,16.4477153 20.4477153,16 21,16 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
+        <path d="M21,16 L39,16 C39.5522847,16 40,16.4477153 40,17 L40,48 L40,48 L20,48 L20,17 C20,16.4477153 20.4477153,16 21,16 Z M44,20 L46.2857143,20 C47.2324881,20 48,20.8058875 48,21.8 L48,48 L44,48" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+    </g>
+</svg>

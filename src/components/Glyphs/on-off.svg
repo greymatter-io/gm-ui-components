@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/on-off</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/on-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>on-off</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="on-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
         <path d="M24.0695456,18.1005178 C19.2488085,20.8569586 16,26.0490794 16,32 C16,40.836556 23.163444,48 32,48 C40.836556,48 48,40.836556 48,32 C48,26.0860242 44.7914051,20.9214558 40.0200572,18.152137 M32,12 L32,28" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
     </g>
 </svg>

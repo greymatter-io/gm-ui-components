@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/activity</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/activity" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <title>activity</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="activity" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M24,16 L40,16 C44.418278,16 48,19.581722 48,24 L48,40 C48,44.418278 44.418278,48 40,48 L24,48 C19.581722,48 16,44.418278 16,40 L16,24 C16,19.581722 19.581722,16 24,16 Z M37,33 C40.3137085,33 43,30.3137085 43,27 C43,23.6862915 40.3137085,21 37,21 C33.6862915,21 31,23.6862915 31,27 C31,30.3137085 33.6862915,33 37,33 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
         <path d="M24,16 L40,16 C44.418278,16 48,19.581722 48,24 L48,40 C48,44.418278 44.418278,48 40,48 L24,48 C19.581722,48 16,44.418278 16,40 L16,24 C16,19.581722 19.581722,16 24,16 Z M37,33 C40.3137085,33 43,30.3137085 43,27 C43,23.6862915 40.3137085,21 37,21 C33.6862915,21 31,23.6862915 31,27 C31,30.3137085 33.6862915,33 37,33 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
     </g>
