@@ -1,44 +1,40 @@
 import { css } from "styled-components";
 
-const DisabledStyle = css`
+const DefaultDisabledStyle = css`
   opacity: ${({ theme }) => theme.OPACITY_LIGHTER};
-
-  ${props => props.DisabledStyle && props.DisabledStyle}
 `;
 
-const SelectableStyle = css`
+const DefaultSelectableStyle = css`
   cursor: pointer;
-
-  ${props => props.SelectableStyle && props.SelectableStyle}
+  ${props => props.SelectableStyle}
 `;
 
-const HoverStyle = css`
-  ${props => props.HoverStyle && props.HoverStyle}
+const DefaultHoverStyle = css`
+  ${props => props.HoverStyle}
 `;
 
-const FocusStyle = css`
+const DefaultFocusStyle = css`
   outline: none;
 
   &:after {
     opacity: ${({ theme }) => theme.OPACITY_LIGHTER};
   }
 
-  ${props => props.FocusStyle && props.FocusStyle}
+  ${props => props.FocusStyle}
 `;
 
-const ActiveStyle = css`
+const DefaultActiveStyle = css`
   &:after {
     transition-duration: 0;
     opacity: ${({ theme }) => theme.OPACITY_LIGHT};
   }
 
-  ${props => props.ActiveStyle && props.ActiveStyle}
+  ${props => props.ActiveStyle}
 `;
 
-const SelectedStyle = css`
+const DefaultSelectedStyle = css`
   box-shadow: inset 0 0 0 2px ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
-
-  ${props => props.SelectedStyle && props.SelectedStyle}
+  ${props => props.SelectedStyle}
 `;
 
 export function selectableStyles({ ...props }) {
@@ -73,44 +69,53 @@ export function selectableStyles({ ...props }) {
     ${props =>
       props.isDisabled
         ? css`
-            ${DisabledStyle}
+            ${DefaultDisabledStyle}
+            ${props.DisabledStyle}
           `
         : css`
-            ${SelectableStyle}
+            ${DefaultSelectableStyle}
+            ${props.SelectableStyle}
 
             &:hover {
-              ${HoverStyle}
+              ${DefaultHoverStyle}
+              ${props.HoverStyle}
             }
             :focus {
-              ${FocusStyle}
+              ${DefaultFocusStyle}
+              ${props.FocusStyle}
             }
             :active {
-              ${ActiveStyle}
+              ${DefaultActiveStyle}
+              ${props.ActiveStyle}
             }
           `}
 
     ${props =>
       props.isHovered &&
       css`
-        ${HoverStyle}
+        ${DefaultHoverStyle}
+        ${props.HoverStyle}
       `}
 
     ${props =>
       props.isFocused &&
       css`
-        ${FocusStyle}
+        ${DefaultFocusStyle}
+        ${props.FocusStyle}
       `}
 
     ${props =>
       props.isActive &&
       css`
-        ${ActiveStyle}
+        ${DefaultActiveStyle}
+        ${props.ActiveStyle}
       `}
 
     ${props =>
       props.isSelected &&
       css`
-        ${SelectedStyle}
+        ${DefaultSelectedStyle}
+        ${props.SelectedStyle}
       `}
   `;
 }

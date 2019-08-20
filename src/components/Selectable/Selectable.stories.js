@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { boolean } from "@storybook/addon-knobs";
 import styled from "styled-components";
-// import { spacingScale } from "style/styleFunctions"
 
 import { selectableStyles } from "./Selectable";
 
