@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status matches snapshot 1`] = `
+<Wrap
+  isBlock={false}
+>
+  <Graphic>
+    <GraphicStatusIndeterminate
+      isBlock={false}
+    />
+  </Graphic>
+  <Body
+    isBlock={false}
+  />
+</Wrap>
+`;

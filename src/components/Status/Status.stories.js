@@ -1,22 +1,14 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { text, boolean, select, number } from "@storybook/addon-knobs";
+import { text, boolean, select } from "@storybook/addon-knobs";
 import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
-import { keen } from "style/theme";
 
 import Status from "./Status";
 
 const stories = storiesOf("Components|Status", module);
 
-const statusOptions = ["indeterminate", "error", "info", "warning", "progress"];
-
-const progressSliderOptions = {
-  range: true,
-  min: 0,
-  max: 1,
-  step: 0.01
-};
+const statusOptions = ["indeterminate", "error", "info", "warning"];
 
 const Grid = styled.div`
   display: grid;
@@ -32,124 +24,122 @@ const Grid = styled.div`
   }
 `;
 
-stories.add(
-  "Default",
-  () => {
-    return (
-      <Status
-        isBlock={boolean("isBlock")}
-        statusType={select("statusType", statusOptions)}
-        message={text("message", "Initiating Self-Destruct")}
-        detail={text("detail", "")}
-      />
-    );
-  },
-  {
-    info: {
-      text: "Add component description here. Accepts markdown."
+stories
+  .add(
+    "Default",
+    () => {
+      return (
+        <Status
+          isBlock={boolean("isBlock")}
+          statusType={select("statusType", statusOptions)}
+          message={text("message")}
+          detail={text("detail")}
+        />
+      );
+    },
+    {
+      info: {
+        text: "Add component description here. Accepts markdown."
+      }
     }
-  }
-).add(
-  "Examples",
-  () => {
-    return (
-      <Grid>
-        <Status
-          isBlock={false}
-          statusType="indeterminate"
-          message="Initiating Self-Destruct..."
-        />
-        <Status
-          isBlock={false}
-          statusType="error"
-          message="Emergency Destruction System"
-        />
-        <Status
-          isBlock={false}
-          statusType="warning"
-          message="Failsafe Warning"
-        />
-        <Status
-          isBlock={false}
-          statusType="info"
-          message="Scuttle Procedure"
-        />
+  )
+  .add(
+    "Typical",
+    () => {
+      return (
+        <Grid>
+          <Status
+            isBlock={false}
+            statusType="indeterminate"
+            message="Initiating Self-Destruct..."
+          />
+          <Status
+            isBlock={false}
+            statusType="error"
+            message="Emergency Destruction System"
+          />
+          <Status
+            isBlock={false}
+            statusType="warning"
+            message="Failsafe Warning"
+          />
+          <Status
+            isBlock={false}
+            statusType="info"
+            message="Scuttle Procedure"
+          />
 
-
-        <Status
-          isBlock={false}
-          statusType="indeterminate"
-          message="Initiating Self-Destruct..."
-          detail="Failsafe system will not engage if safety interlocks are disengaged."
-        />
-        <Status
-          isBlock={false}
-          statusType="error"
-          message="Emergency Destruction System"
-          detail="On activation ship will detonate in t-minus 10 minutes."
-        />
-        <Status
-          isBlock={false}
-          statusType="warning"
-          message="Failsafe Warning"
-          detail="Cut-off system will not operate after T minus 5 minutes."
-        />
-        <Status
-          isBlock={false}
-          statusType="info"
-          message="Scuttle Procedure"
-          detail="Input NUCLEAR BOLD CODE no. 1.
+          <Status
+            isBlock={false}
+            statusType="indeterminate"
+            message="Initiating Self-Destruct..."
+            detail="Failsafe system will not engage if safety interlocks are disengaged."
+          />
+          <Status
+            isBlock={false}
+            statusType="error"
+            message="Emergency Destruction System"
+            detail="On activation ship will detonate in t-minus 10 minutes."
+          />
+          <Status
+            isBlock={false}
+            statusType="warning"
+            message="Failsafe Warning"
+            detail="Cut-off system will not operate after T minus 5 minutes."
+          />
+          <Status
+            isBlock={false}
+            statusType="info"
+            message="Scuttle Procedure"
+            detail="Input NUCLEAR BOLD CODE no. 1.
           Verify BOLD CLAMP release."
-        />
+          />
 
+          <Status
+            isBlock={true}
+            statusType="indeterminate"
+            message="Initiating Self-Destruct..."
+          />
+          <Status
+            isBlock={true}
+            statusType="error"
+            message="Emergency Destruction System"
+          />
+          <Status
+            isBlock={true}
+            statusType="warning"
+            message="Failsafe Warning"
+          />
+          <Status
+            isBlock={true}
+            statusType="info"
+            message="Scuttle Procedure"
+          />
 
-        <Status
-          isBlock={true}
-          statusType="indeterminate"
-          message="Initiating Self-Destruct..."
-        />
-        <Status
-          isBlock={true}
-          statusType="error"
-          message="Emergency Destruction System"
-        />
-        <Status
-          isBlock={true}
-          statusType="warning"
-          message="Failsafe Warning"
-        />
-        <Status
-          isBlock={true}
-          statusType="info"
-          message="Scuttle Procedure"
-        />
+          <Status
+            isBlock={true}
+            statusType="indeterminate"
+            message="Initiating Self-Destruct..."
+            detail="Failsafe system will not engage if safety interlocks are disengaged."
+          />
+          <Status
+            isBlock={true}
+            statusType="error"
+            message="Emergency Destruction System"
+            detail="On activation ship will detonate in t-minus 10 minutes."
+          />
+          <Status
+            isBlock={true}
+            statusType="warning"
+            message="Failsafe Warning"
+            detail="Cut-off system will not operate after T minus 5 minutes."
+          />
 
-
-        <Status
-          isBlock={true}
-          statusType="indeterminate"
-          message="Initiating Self-Destruct..."
-          detail="Failsafe system will not engage if safety interlocks are disengaged."
-        />
-        <Status
-          isBlock={true}
-          statusType="error"
-          message="Emergency Destruction System"
-          detail="On activation ship will detonate in t-minus 10 minutes."
-        />
-        <Status
-          isBlock={true}
-          statusType="warning"
-          message="Failsafe Warning"
-          detail="Cut-off system will not operate after T minus 5 minutes."
-        />
-
-        <Status
-          isBlock={true}
-          statusType="info"
-          message="Scuttle Procedure"
-          // detail="Input NUCLEAR BOLD CODE no. 1. Verify BOLD CLAMP release. Perform INSERTION of BOLD no. 1 in HOLD no. 1"
-          detail="Input NUCLEAR BOLD CODE no. 1.
+          <Status
+            isBlock={true}
+            statusType="info"
+            message="Scuttle Procedure"
+            detail="Input NUCLEAR BOLD CODE no. 1.
             Verify BOLD CLAMP release.
             Perform INSERTION of BOLD no. 1 in HOLD no. 1.
             Remove NUCLEAR HEAD.
@@ -157,13 +147,13 @@ stories.add(
             Replace NUCLEAR HEAD, verify SECURED.
             Verify DETONATION CODE ACTIVATED.
             Repeat for HOLDS 2, 3, & 4."
-        />
-      </Grid>
-    );
-  },
-  {
-    info: {
-      text: "Add component description here. Accepts markdown."
+          />
+        </Grid>
+      );
+    },
+    {
+      info: {
+        text: "Add component description here. Accepts markdown."
+      }
     }
-  }
-);
+  );
