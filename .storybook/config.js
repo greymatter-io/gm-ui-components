@@ -1,5 +1,6 @@
 import React from "react";
 import { configure, addDecorator, addParameters } from "@storybook/react";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
 import { withKnobs } from "@storybook/addon-knobs";
@@ -65,6 +66,8 @@ addDecorator(
 );
 // add withKnobs globally so we don't need to import it into individual stories
 addDecorator(withKnobs);
+
+addDecorator(withA11y);
 
 addDecorator(story => <StoryContainer>{story()}</StoryContainer>);
 
