@@ -77,6 +77,10 @@ export default function Status({ statusType, isBlock, detail, message }) {
   );
 }
 
+GraphicStatusIndeterminate.propTypes = {
+  isBlock: PropTypes.bool
+};
+
 Status.defaultProps = {
   statusType: "indeterminate",
   isBlock: false
