@@ -6,22 +6,9 @@ import { IconAlertTriangle, IconInfo } from "components/Glyphs";
 import { spacingScale } from "style/styleFunctions";
 
 
-function GraphicStatusIndeterminate({...props}) {
-  
-  const blockStyle = {
-    border: "10px solid blue"
-  }
-  
-  const size = props.isBlock == true ? spacingScale(6) : spacingScale(2);
-  const IndeterminateSpinner = styled(LoadingSpinner)`
-    ${props => props.isBlock && css`
-      border: 1px solid blue;
-      opacity: 0.5;
-    `}
-  `
-
+function GraphicStatusIndeterminate({isBlock}) {
   return (
-    <IndeterminateSpinner />
+    <LoadingSpinner size={isBlock ? spacingScale(5) : spacingScale(2)} />
   );
 }
 
@@ -83,6 +70,8 @@ const Detail = styled.span`
 const Wrap = styled.div`
   display: grid;
   grid-template-areas: "graphic body";
+  align-items: center;
+  justify-content: center;
   padding: ${spacingScale(2)};
 
   ${props =>
@@ -96,7 +85,8 @@ const Wrap = styled.div`
       ${Graphic} {
         grid-area: graphic;
         font-size: ${spacingScale(5)};
-        margin: ${spacingScale(-2)};
+        height: ${spacingScale(6)};
+        width: ${spacingScale(6)};
       }
   `}
 
@@ -105,6 +95,7 @@ const Wrap = styled.div`
     css`
       ${Graphic} {
         font-size: ${spacingScale(2.5)};
+        margin: ${spacingScale(0.25)};
       }
   `}
 `;
@@ -124,8 +115,6 @@ const Body = styled.div`
   `}
 `;
 
-let statusVisual = <LoadingSpinner />;
-
 /**
  * Description of your component
  */
@@ -136,6 +125,8 @@ export default function Status({
   detail,
   message
 }) {
+  let statusVisual = "";
+
   switch (statusType) {
     case "info":
       statusVisual = <GraphicStatusInfo />;
@@ -153,17 +144,15 @@ export default function Status({
       statusVisual = <GraphicStatusIndeterminate isBlock={isBlock} />;
   }
 
-  if (progress === true) {
-    statusVisual = <LoadingSpinner progress={progress} />;
-  }
-
   return (
     <Wrap isBlock={isBlock}>
-      <Graphic isBlock={isBlock}>{statusVisual}</Graphic>
+      <Graphic>{statusVisual}</Graphic>
+
       <Body isBlock={isBlock}>
         {message && <Message>{message}</Message>}
         {detail && <Detail>{detail}</Detail>}
       </Body>
+
     </Wrap>
   );
 }
@@ -173,5 +162,12 @@ Status.defaultProps = {
   isBlock: false,
   progress: false
 };
+
+Status.propTypes = {
+  isBlock: PropTypes.bool,
+  statusType: PropTypes.oneOf(["info, indeterminate, warning, danger"]),
+  message: PropTypes.string,
+  detail: PropTypes.string,
+}
 
 Status.displayName = "Status";

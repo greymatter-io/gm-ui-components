@@ -18,7 +18,10 @@ export const keen = {
   COLOR_INTENT_HIGHLIGHT: "#00b42b",
   COLOR_INTENT_SUCCESS: "#00b42b",
   COLOR_INTENT_DANGER: "#D83D22", // WCAG AA+
+  // COLOR_INTENT_DANGER: "rgb(213, 24, 33)", // WCAG AA+
+  // COLOR_INTENT_DANGER: "#FF3B30", // WCAG AA+
   COLOR_INTENT_WARNING: "#F7CD45", // WCAG AA+
+  // COLOR_INTENT_WARNING: "#FFCC00", // WCAG AA+
   COLOR_INTENT_INFO: "#1E6DF6", // WCAG AA+
 
   COLOR_KEYLINE_DEFAULT: "hsla(0, 0%, 0%, 0.08)",
@@ -86,7 +89,7 @@ export const keen = {
   LETTER_SPACING_DEFAULT: "normal"
 };
 
-const LIGHTENING_FACTOR = 0.05;
+const LIGHTENING_FACTOR = 1;
 
 export const keenDark = {
   ...keen,

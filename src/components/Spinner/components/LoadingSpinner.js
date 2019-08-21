@@ -14,6 +14,10 @@ export const SpinnerSVG = styled.svg`
   overflow: visible;
   ${props =>
     props.orientation === "vertical" ? verticalStyles : horizontalStyles};
+  ${props => props.size && css`
+    height: ${props.size};
+    width: ${props.size};
+  `}
 `;
 
 SpinnerSVG.displayName = "SpinnerSVG";
@@ -59,7 +63,8 @@ export function LoadingSpinner(props) {
 }
 
 LoadingSpinner.propTypes = {
-  orientation: PropTypes.oneOf(["vertical", "horizontal"])
+  orientation: PropTypes.oneOf(["vertical", "horizontal"]),
+  size: PropTypes.string
 };
 
 SpinnerSVG.defaultProps = {

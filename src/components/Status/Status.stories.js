@@ -26,10 +26,9 @@ const Grid = styled.div`
 
   > * {
     margin: 0.5rem;
-    background: #fff;
-    color: ${keen.COLOR_CONTENT_DEFAULT};
+    background: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
+    color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_DEFAULT};
-    box-shadow: 0 1px 6px -4px;
   }
 `;
 
@@ -40,9 +39,8 @@ stories.add(
       <Status
         isBlock={boolean("isBlock")}
         statusType={select("statusType", statusOptions)}
-        progress={number("progress", false, progressSliderOptions)}
-        message={text("message", "Hey dude")}
-        detail={text("detail", "Chill out")}
+        message={text("message", "Initiating Self-Destruct")}
+        detail={text("detail", "")}
       />
     );
   },
@@ -59,90 +57,106 @@ stories.add(
         <Status
           isBlock={false}
           statusType="indeterminate"
-          message={text("message", "Hey dude")}
+          message="Initiating Self-Destruct..."
         />
         <Status
           isBlock={false}
           statusType="error"
-          message={text("message", "Hey dude")}
+          message="Emergency Destruction System"
         />
         <Status
           isBlock={false}
           statusType="warning"
-          message={text("message", "Hey dude")}
+          message="Failsafe Warning"
         />
         <Status
           isBlock={false}
           statusType="info"
-          message={text("message", "Hey dude")}
+          message="Scuttle Procedure"
         />
+
+
         <Status
           isBlock={false}
           statusType="indeterminate"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Initiating Self-Destruct..."
+          detail="Failsafe system will not engage if safety interlocks are disengaged."
         />
         <Status
           isBlock={false}
           statusType="error"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Emergency Destruction System"
+          detail="On activation ship will detonate in t-minus 10 minutes."
         />
         <Status
           isBlock={false}
           statusType="warning"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Failsafe Warning"
+          detail="Cut-off system will not operate after T minus 5 minutes."
         />
         <Status
           isBlock={false}
           statusType="info"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Scuttle Procedure"
+          detail="Input NUCLEAR BOLD CODE no. 1.
+          Verify BOLD CLAMP release."
         />
+
+
         <Status
           isBlock={true}
           statusType="indeterminate"
-          message={text("message", "Hey dude")}
+          message="Initiating Self-Destruct..."
         />
         <Status
           isBlock={true}
           statusType="error"
-          message={text("message", "Hey dude")}
+          message="Emergency Destruction System"
         />
         <Status
           isBlock={true}
           statusType="warning"
-          message={text("message", "Hey dude")}
+          message="Failsafe Warning"
         />
         <Status
           isBlock={true}
           statusType="info"
-          message={text("message", "Hey dude")}
+          message="Scuttle Procedure"
         />
+
+
         <Status
           isBlock={true}
           statusType="indeterminate"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Initiating Self-Destruct..."
+          detail="Failsafe system will not engage if safety interlocks are disengaged."
         />
         <Status
           isBlock={true}
           statusType="error"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Emergency Destruction System"
+          detail="On activation ship will detonate in t-minus 10 minutes."
         />
         <Status
           isBlock={true}
           statusType="warning"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Failsafe Warning"
+          detail="Cut-off system will not operate after T minus 5 minutes."
         />
+
         <Status
           isBlock={true}
           statusType="info"
-          message={text("message", "Hey dude")}
-          detail={text("detail", "Chill out")}
+          message="Scuttle Procedure"
+          // detail="Input NUCLEAR BOLD CODE no. 1. Verify BOLD CLAMP release. Perform INSERTION of BOLD no. 1 in HOLD no. 1"
+          detail="Input NUCLEAR BOLD CODE no. 1.
+            Verify BOLD CLAMP release.
+            Perform INSERTION of BOLD no. 1 in HOLD no. 1.
+            Remove NUCLEAR HEAD.
+            Activate PUSH BUTTON INSERTION.
+            Replace NUCLEAR HEAD, verify SECURED.
+            Verify DETONATION CODE ACTIVATED.
+            Repeat for HOLDS 2, 3, & 4."
         />
       </Grid>
     );
