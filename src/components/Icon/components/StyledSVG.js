@@ -44,6 +44,16 @@ const StyledSVG = styled.svg.attrs(() => ({
   .glyph *[class*="border"]:not([class*="fill"]) {
     fill: none;
   }
+
+  /* Fix Chrome rendering of horizontal SVG lines */
+  .glyph > * {
+  }
+
+  .glyph > .minus,
+  .glyph > .dash {
+    .border {
+    }
+  }
 `;
 
 StyledSVG.defaultProps = {
