@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
+    <!-- Generator: Sketch Beta 57 (83077) - https://sketch.com -->
     <title>key</title>
     <desc>Created with Sketch Beta.</desc>
     <g id="key" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M26,16 C20.4771525,16 16,20.4771525 16,26 C16,31.5228475 20.4771525,36 26,36 C31.5228475,36 36,31.5228475 36,26 C36,20.4771525 31.5228475,16 26,16 Z M33,33 L48,48 M42,50 L36,44" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
+        <path d="M26,16 C20.4771525,16 16,20.4771525 16,26 C16,31.5228475 20.4771525,36 26,36 C31.5228475,36 36,31.5228475 36,26 C36,20.4771525 31.5228475,16 26,16 Z M33,33 L48,48 M42,50 L36,44" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero" transform="translate(32.176777, 33.176777) scale(-1, 1) translate(-32.176777, -33.176777) "></path>
     </g>
 </svg>
