@@ -155,6 +155,8 @@ const glyphNames = [
   "IconX"
 ];
 
+const glyphNames2 = ["IconDash", "IconMinus", "IconComment"];
+
 const GalleryIconList = styled.ul`
   box-sizing: border-box;
   width: 90vw;
@@ -238,6 +240,42 @@ stories
       }
     }
   )
+  .add(
+    "Glyph Testing Gallery",
+    () => {
+      return (
+        <GalleryIconList fontSize={text("Context font size", "inherit")}>
+          {glyphNames2.map(glyph => {
+            let Glyph = Glyphs[glyph];
+            return (
+              <GalleryIconDemo key={glyph}>
+                <Glyph
+                  title={glyph}
+                  size={text("size", undefined)}
+                  fillColor={color("fillColor", undefined)}
+                  fillOpacity={number("fillOpacity", undefined)}
+                  borderColor={color("borderColor", undefined)}
+                  borderWidth={text("borderWidth", undefined)}
+                  isNegated={boolean("isNegated", true)}
+                  negationIsReversed={boolean("negationIsReversed", undefined)}
+                  hasBadge={boolean("hasBadge", undefined)}
+                  badgeColor={color("badgeColor")}
+                  badgePosition={object("badgePosition", undefined)}
+                />
+                <GalleryIconLabel>{glyph}</GalleryIconLabel>
+              </GalleryIconDemo>
+            );
+          })}
+        </GalleryIconList>
+      );
+    },
+    {
+      info: {
+        text:
+          "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
+      }
+    }
+  )
   .add("Glyph Gallery", () => {
     return (
       <GalleryIconList fontSize={text("Context font size", "inherit")}>
@@ -251,8 +289,8 @@ stories
                 fillColor={color("fillColor", undefined)}
                 fillOpacity={number("fillOpacity", undefined)}
                 borderColor={color("borderColor", undefined)}
-                borderWidth={text("borderWidth", undefined)}
-                isNegated={boolean("isNegated", undefined)}
+                borderWidth={text("borderWidth")}
+                isNegated={boolean("isNegated", true)}
                 negationIsReversed={boolean("negationIsReversed", undefined)}
                 hasBadge={boolean("hasBadge", undefined)}
                 badgeColor={color("badgeColor")}
