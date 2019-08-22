@@ -59,6 +59,7 @@ export default function Icon({
               x2={negationLineTrim}
               y2={negationLineTrim}
               stroke="black"
+              strokeLinecap="round"
               vectorEffect="non-scaling-stroke"
               strokeWidth={"calc(" + borderWidth + " * 3)"}
               transform={
@@ -83,7 +84,10 @@ export default function Icon({
           )}
         </mask>
       )}
-      <g className="glyph"  mask={isNegated || hasBadge ? "url(#iconMask)" : undefined}>
+      <g
+        className="glyph"
+        mask={isNegated || hasBadge ? "url(#iconMask)" : undefined}
+      >
         {children}
       </g>
       {isNegated && (
@@ -96,6 +100,7 @@ export default function Icon({
             y2={negationLineTrim}
             stroke="currentColor"
             vectorEffect="non-scaling-stroke"
+            strokeLinecap="round"
             strokeWidth={borderWidth}
             transform={
               negationIsReversed
@@ -136,7 +141,7 @@ Icon.propTypes = {
   negationIsReversed: PropTypes.bool,
   negationLine: PropTypes.object,
   negationLineTrim: PropTypes.number,
-  size: PropTypes.string,
+  size: PropTypes.string
 };
 
 Icon.defaultProps = {
