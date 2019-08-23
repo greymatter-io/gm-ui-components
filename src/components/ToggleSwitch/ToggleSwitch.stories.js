@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { color, text, boolean, select } from "@storybook/addon-knobs";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 import ToggleSwitch from "./ToggleSwitch";
