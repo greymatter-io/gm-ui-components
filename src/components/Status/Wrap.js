@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 import { Graphic } from "./components/Graphic";
+
 export const Wrap = styled.div`
   display: grid;
   grid-template-areas: "graphic body";
