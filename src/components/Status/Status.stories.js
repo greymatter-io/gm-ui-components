@@ -39,7 +39,8 @@ stories
     },
     {
       info: {
-        text: "Add component description here. Accepts markdown."
+        text:
+          "Indicates the status of a content area. Provides text style and graphics for 'Indeterimate', 'Error', 'Warning', and 'Info' states. Message and detail are optional, but recommended to inform the user."
       }
     }
   )
@@ -153,7 +154,8 @@ stories
     },
     {
       info: {
-        text: "Add component description here. Accepts markdown."
+        text:
+          "Indicates the status of a content area. Provides text style and graphics for 'Indeterimate', 'Error', 'Warning', and 'Info' states. Message and detail are optional, but recommended to inform the user."
       }
     }
   );
