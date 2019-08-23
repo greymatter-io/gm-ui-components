@@ -21,6 +21,7 @@ export { default as Tab } from "./Tab";
 export { default as TabGroup } from "./TabGroup";
 export { default as Table } from "./Table";
 export { default as Textarea } from "./Textarea";
+export { default as ToggleSwitch } from "./ToggleSwitch";
 export { default as Tooltip } from "./Tooltip";
 export * from "../style/theme";
 export * from "../style/styleFunctions";
