@@ -12,5 +12,7 @@ export const Body = styled.div`
     css`
       align-items: center;
       text-align: center;
+
+      /* border: 1px solid red; */
     `}
 `;

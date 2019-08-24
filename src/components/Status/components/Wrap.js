@@ -20,8 +20,7 @@ export const Wrap = styled.div`
       ${Graphic} {
         grid-area: graphic;
         font-size: ${spacingScale(5)};
-        height: ${spacingScale(6)};
-        width: ${spacingScale(6)};
+        margin: ${spacingScale(-0.5)};
       }
     `}
 

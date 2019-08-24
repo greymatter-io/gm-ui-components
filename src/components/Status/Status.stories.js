@@ -5,14 +5,30 @@ import styled from "styled-components";
 import { spacingScale } from "style/styleFunctions";
 
 import Status from "./Status";
+import { IconLock } from "components/Glyphs";
 
 const stories = storiesOf("Components|Status", module);
 
-const statusOptions = ["indeterminate", "error", "info", "warning"];
+const statusOptions = ["indeterminate", "error", "info", "warning", "success"];
+
+const CustomGraphic = styled.div`
+  border-radius: 10000px;
+  background-color: currentColor;
+  box-shadow: inset 0 2px 12px -4px rgba(255, 255, 255, 0.75),
+    0 8px 12px -8px currentColor;
+  padding: ${spacingScale(0.5)};
+  margin: ${spacingScale(1)};
+`;
+
+const CustomGraphicElement = (
+  <CustomGraphic>
+    <IconLock borderColor="#fff" borderWidth="1.5px" />
+  </CustomGraphic>
+);
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   background: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
   padding: ${spacingScale(4)};
 
@@ -40,7 +56,7 @@ stories
     {
       info: {
         text:
-          "Indicates the status of a content area. Provides text style and graphics for 'Indeterimate', 'Error', 'Warning', and 'Info' states. Message and detail are optional, but recommended to inform the user."
+          "Indicates the status of a content area. Provides text style and graphics for 'Indeterimate', 'Error', 'Warning', 'Success, and 'Info' states. Message and detail are optional, but recommended to inform the user."
       }
     }
   )
@@ -69,6 +85,11 @@ stories
             statusType="info"
             message="Scuttle Procedure"
           />
+          <Status
+            isBlock={false}
+            statusType="success"
+            message="Self-Destruct Canceled!"
+          />
 
           <Status
             isBlock={false}
@@ -95,6 +116,12 @@ stories
             detail="Input NUCLEAR BOLD CODE no. 1.
           Verify BOLD CLAMP release."
           />
+          <Status
+            isBlock={false}
+            statusType="success"
+            message="Self-Destruct Canceled!"
+            detail="Cut-off system successfully engaged."
+          />
 
           <Status
             isBlock={true}
@@ -115,6 +142,11 @@ stories
             isBlock={true}
             statusType="info"
             message="Scuttle Procedure"
+          />
+          <Status
+            isBlock={true}
+            statusType="success"
+            message="Self-Destruct Canceled!"
           />
 
           <Status
@@ -135,7 +167,6 @@ stories
             message="Failsafe Warning"
             detail="Cut-off system will not operate after T minus 5 minutes."
           />
-
           <Status
             isBlock={true}
             statusType="info"
@@ -149,7 +180,33 @@ stories
             Verify DETONATION CODE ACTIVATED.
             Repeat for HOLDS 2, 3, & 4."
           />
+          <Status
+            isBlock={true}
+            statusType="success"
+            message="Self-Destruct Canceled!"
+            detail="Cut-off system successfully engaged."
+          />
         </Grid>
+      );
+    },
+    {
+      info: {
+        text:
+          "Indicates the status of a content area. Provides text style and graphics for 'Indeterimate', 'Error', 'Warning', and 'Info' states. Message and detail are optional, but recommended to inform the user."
+      }
+    }
+  )
+  .add(
+    "Custom Graphics",
+    () => {
+      return (
+        <Status
+          isBlock={boolean("isBlock", false)}
+          statusType={select("statusType", statusOptions, "success")}
+          graphic={CustomGraphicElement}
+          message={text("message", "System Locked")}
+          detail={text("detail", "Log out successful.")}
+        />
       );
     },
     {
