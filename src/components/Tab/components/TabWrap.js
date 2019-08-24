@@ -42,6 +42,28 @@ const TabWrap = styled.a`
     user-select: none;
   }
 
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:hover):focus {
+    outline: 2px solid
+      ${({ theme }) =>
+        transparentize(
+          1 - theme.OPACITY_LIGHTER,
+          theme.COLOR_INTENT_HIGHLIGHT
+        )};
+
+    &:active {
+      outline: 2px solid
+        ${({ theme }) =>
+          transparentize(
+            1 - theme.OPACITY_LIGHT,
+            theme.COLOR_INTENT_HIGHLIGHT
+          )};
+    }
+  }
+
   /* if active... */
   ${props =>
     props.active &&

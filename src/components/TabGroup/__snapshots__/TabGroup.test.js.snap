@@ -5,8 +5,7 @@ exports[`TabGroup matches snapshot 1`] = `
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 14px;
   color: hsla(0,0%,0%,0.85);
-  padding-left: calc(var(--SPACING_BASE) * 2 * 1px);
-  padding-right: calc(var(--SPACING_BASE) * 2 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.5 * 1px)  calc(var(--SPACING_BASE) * 2 * 1px);
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -39,6 +38,18 @@ exports[`TabGroup matches snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2:not(:hover):focus {
+  outline: 2px solid rgba(0,180,43,0.5);
+}
+
+.c2:not(:hover):focus:active {
+  outline: 2px solid rgba(0,180,43,0.7);
 }
 
 .c3 {
