@@ -4,7 +4,9 @@ exports[`Status matches snapshot 1`] = `
 <Wrap
   isBlock={false}
 >
-  <Graphic>
+  <Graphic
+    color={[Function]}
+  >
     <GraphicStatusIndeterminate
       isBlock={false}
     />
