@@ -197,7 +197,7 @@ stories
     }
   )
   .add(
-    "Custom Graphics",
+    "Custom Graphic",
     () => {
       return (
         <Status
@@ -212,7 +212,7 @@ stories
     {
       info: {
         text:
-          "Indicates the status of a content area. Provides text style and graphics for 'Indeterimate', 'Error', 'Warning', and 'Info' states. Message and detail are optional, but recommended to inform the user."
+          "Use the `graphic` prop to provide custom graphic content to the component. Make sure to still select an appropriate `statusType`."
       }
     }
   );
