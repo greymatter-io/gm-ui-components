@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { transparentize } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
@@ -8,24 +9,28 @@ const activeStyles = css`
 `;
 
 const hoverStyles = css`
-  box-shadow: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT} 0px -1px inset;
+  box-shadow: ${({ theme }) =>
+      transparentize(1 - theme.OPACITY_LIGHTER, theme.COLOR_INTENT_HIGHLIGHT)}
+    0px -2px inset;
 `;
 
 const downStyles = css`
-  box-shadow: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT} 0px -2px inset;
+  box-shadow: ${({ theme }) =>
+      transparentize(1 - theme.OPACITY_LIGHT, theme.COLOR_INTENT_HIGHLIGHT)}
+    0px -2px inset;
 `;
 
 const TabWrap = styled.a`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
-  padding-left: ${spacingScale(2)};
-  padding-right: ${spacingScale(2)};
+  padding: ${spacingScale(0.5)} ${spacingScale(2)};
   flex: 0 0 auto;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 0.15s ease;
 
   &:hover {
     ${hoverStyles};
@@ -33,6 +38,8 @@ const TabWrap = styled.a`
 
   &:active {
     ${downStyles};
+    transition-duration: 0;
+    user-select: none;
   }
 
   /* if active... */

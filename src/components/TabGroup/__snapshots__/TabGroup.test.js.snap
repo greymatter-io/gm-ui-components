@@ -23,14 +23,22 @@ exports[`TabGroup matches snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: box-shadow 0.15s ease;
+  transition: box-shadow 0.15s ease;
 }
 
 .c2:hover {
-  box-shadow: #00b42b 0px -1px inset;
+  box-shadow: rgba(0,180,43,0.5) 0px -2px inset;
 }
 
 .c2:active {
-  box-shadow: #00b42b 0px -2px inset;
+  box-shadow: rgba(0,180,43,0.7) 0px -2px inset;
+  -webkit-transition-duration: 0;
+  transition-duration: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3 {
