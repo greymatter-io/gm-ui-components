@@ -34,7 +34,12 @@ function GraphicStatusWarning() {
 }
 
 /**
- * Description of your component
+ * Indicates the status of a content area. Provides text styles
+ * and graphics for 'Indeterimate', 'Error', 'Warning', 'Success,
+ * and 'Info' states.
+ *
+ * Message and detail are optional, but recommended to inform the
+ * user."
  */
 export default function Status({
   statusType,
