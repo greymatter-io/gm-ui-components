@@ -29,15 +29,30 @@ stories
   .add(
     "Default",
     () => {
+      const groupIdContainer = "Story";
+      const groupIdComponent = "ToggleSwitch";
       return (
-        <div style={{ fontSize: text("Context Font Size", "") }}>
+        <div
+          style={{
+            fontSize: text(
+              "Font size of surrounding area",
+              "",
+              groupIdContainer
+            )
+          }}
+        >
           <ToggleSwitch
-            color={color("color")}
-            offInnerLabel={text("offInnerLabel")}
-            onInnerLabel={text("onInnerLabel")}
-            disabled={boolean("disabled")}
-            label={text("label", "Toggle Switch Label")}
-            labelPosition={select("labelPosition", labelPositionOptions)}
+            color={color("color", "", groupIdComponent)}
+            offInnerLabel={text("offInnerLabel", "", groupIdComponent)}
+            onInnerLabel={text("onInnerLabel", "", groupIdComponent)}
+            disabled={boolean("disabled", "", groupIdComponent)}
+            label={text("label", "Toggle Switch Label", groupIdComponent)}
+            labelPosition={select(
+              "labelPosition",
+              labelPositionOptions,
+              "right",
+              groupIdComponent
+            )}
           />
         </div>
       );
