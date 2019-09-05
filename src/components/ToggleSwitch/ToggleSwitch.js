@@ -1,6 +1,6 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { readableColor } from "polished";
 import { formInteractionStyles } from "components/util/InputFieldInteractionStyles";
 import InputWrap from "components/util/InputWrap";
@@ -32,14 +32,7 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
   &,
   &:focus,
   &:focus:active {
-  ${props =>
-    props.color
-      ? css`
-          border-color: ${props => props.color};
-        `
-      : css`
-          border-color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
-        `}
+    border-color: ${( { color, theme }) => color ? color : theme.COLOR_INTENT_HIGHLIGHT}; 
   }
 
 
@@ -74,15 +67,7 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
   }
 
   &:checked {
-    ${props =>
-      props.color
-        ? css`
-            background: ${props => props.color};
-          `
-        : css`
-            background: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
-          `}
-
+    background: ${({ color, theme }) => color ? color : theme.COLOR_INTENT_HIGHLIGHT};
     &:before {
       left: 37%;
       right: 0;
@@ -93,19 +78,10 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
     }
 
     &:after {
-      content: "${props => props.onInnerLabel}";
+      content: "${props => props.innerLabelOn}";
       left: 0;
       right: auto;
-
-      ${props =>
-        props.color
-          ? css`
-              color: ${props => readableColor(props.color)};
-            `
-          : css`
-              color: ${({ theme }) =>
-                readableColor(theme.COLOR_INTENT_HIGHLIGHT)};
-            `}
+      color: ${({ color, theme }) => color ? readableColor(color) : readableColor(theme.COLOR_INTENT_HIGHLIGHT)};
     }
   }
 
@@ -122,7 +98,7 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
     }
 
     &:after {
-      content: "${props => props.offInnerLabel}";
+      content: "${props => props.innerLabelOff}";
       left: auto;
       right: 0;
     }
@@ -134,8 +110,8 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
  */
 export default function ToggleSwitch({
   color,
-  onInnerLabel,
-  offInnerLabel,
+  innerLabelOn,
+  innerLabelOff,
   labelPosition,
   label,
   ...props
@@ -145,8 +121,8 @@ export default function ToggleSwitch({
       {label && <InputLabelText>{label}</InputLabelText>}
       <ToggleSwitchElement
         color={color}
-        onInnerLabel={onInnerLabel}
-        offInnerLabel={offInnerLabel}
+        innerLabelOn={innerLabelOn}
+        innerLabelOff={innerLabelOff}
         {...props}
       />
     </InputWrap>
@@ -155,10 +131,10 @@ export default function ToggleSwitch({
 
 ToggleSwitch.propTypes = {
   color: PropTypes.string,
+  innerLabelOff: PropTypes.string,
+  innerLabelOn: PropTypes.string,
   label: PropTypes.string,
-  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
-  offInnerLabel: PropTypes.string,
-  onInnerLabel: PropTypes.string
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"])
 };
 
 ToggleSwitch.defaultProps = {

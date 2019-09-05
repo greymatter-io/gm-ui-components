@@ -43,8 +43,8 @@ stories
         >
           <ToggleSwitch
             color={color("color", "", groupIdComponent)}
-            offInnerLabel={text("offInnerLabel", "", groupIdComponent)}
-            onInnerLabel={text("onInnerLabel", "", groupIdComponent)}
+            innerLabelOff={text("innerLabelOff", "", groupIdComponent)}
+            innerLabelOn={text("innerLabelOn", "", groupIdComponent)}
             disabled={boolean("disabled", "", groupIdComponent)}
             label={text("label", "Toggle Switch Label", groupIdComponent)}
             labelPosition={select(
@@ -72,8 +72,8 @@ stories
           <Wrap style={{ fontSize: "0.5em" }}>
             <ToggleSwitch
               color={color("color")}
-              offInnerLabel={text("offInnerLabel", "off")}
-              onInnerLabel={text("onInnerLabel", "on")}
+              innerLabelOff={text("innerLabelOff", "off")}
+              innerLabelOn={text("innerLabelOn", "on")}
               disabled={boolean("disabled")}
               label="With 0.5em wrapper"
               labelPosition={select(
@@ -86,8 +86,8 @@ stories
           <Wrap>
             <ToggleSwitch
               color={color("color")}
-              offInnerLabel={text("offInnerLabel", "off")}
-              onInnerLabel={text("onInnerLabel", "on")}
+              innerLabelOff={text("innerLabelOff", "off")}
+              innerLabelOn={text("innerLabelOn", "on")}
               disabled={boolean("disabled")}
               label="Default size"
               labelPosition={select(
@@ -100,8 +100,8 @@ stories
           <Wrap style={{ fontSize: "2em" }}>
             <ToggleSwitch
               color={color("color")}
-              offInnerLabel={text("offInnerLabel", "off")}
-              onInnerLabel={text("onInnerLabel", "on")}
+              innerLabelOff={text("innerLabelOff", "off")}
+              innerLabelOn={text("innerLabelOn", "on")}
               disabled={boolean("disabled")}
               label="With 2em wrapper"
               labelPosition={select(
@@ -132,8 +132,8 @@ stories
           />
           <ToggleSwitch
             color={color("color")}
-            offInnerLabel={text("offInnerLabel", "")}
-            onInnerLabel={text("onInnerLabel", "")}
+            innerLabelOff={text("innerLabelOff", "")}
+            innerLabelOn={text("innerLabelOn", "")}
             disabled={boolean("disabled")}
             label={text("label", "Toggle Switch Label")}
             labelPosition={select(
@@ -144,8 +144,8 @@ stories
           />
           <ToggleSwitch
             color={color("color")}
-            offInnerLabel={text("offInnerLabel", "")}
-            onInnerLabel={text("onInnerLabel", "")}
+            innerLabelOff={text("innerLabelOff", "")}
+            innerLabelOn={text("innerLabelOn", "")}
             disabled={boolean("disabled")}
             label={text("label", "Toggle Switch Label")}
             labelPosition={select(
