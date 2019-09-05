@@ -13,26 +13,6 @@ import { Detail } from "./components/Detail";
 import { Message } from "./components/Message";
 import { Graphic } from "./components/Graphic";
 
-function GraphicStatusIndeterminate({ isBlock }) {
-  return <LoadingSpinner size={isBlock ? spacingScale(5) : spacingScale(2)} />;
-}
-
-function GraphicStatusSuccess() {
-  return <IconCheckcircleChecked fillOpacity="0" borderWidth="2px" />;
-}
-
-function GraphicStatusInfo() {
-  return <IconInfo fillOpacity="0" borderWidth="2px" />;
-}
-
-function GraphicStatusError() {
-  return <IconAlertTriangle fillOpacity="1" borderWidth="0" />;
-}
-
-function GraphicStatusWarning() {
-  return <IconAlertTriangle fillOpacity="0" borderWidth="2px" />;
-}
-
 /**
  * Indicates the status of a content area. Provides text styles
  * and graphics for 'Indeterimate', 'Error', 'Warning', 'Success,
@@ -79,7 +59,7 @@ export default function Status({
 
   return (
     <Wrap isBlock={isBlock}>
-      <Graphic color={statusVisualColor}>
+      <Graphic graphicColor={statusVisualColor}>
         {graphic ? graphic : statusVisual}
       </Graphic>
       <Body isBlock={isBlock}>
@@ -90,10 +70,6 @@ export default function Status({
   );
 }
 
-GraphicStatusIndeterminate.propTypes = {
-  isBlock: PropTypes.bool
-};
-
 Status.defaultProps = {
   statusType: "indeterminate",
   isBlock: false
@@ -101,16 +77,44 @@ Status.defaultProps = {
 
 Status.propTypes = {
   detail: PropTypes.string,
-  graphic: PropTypes.oneOf([PropTypes.node, PropTypes.func]),
+  graphic: PropTypes.oneOfType([PropTypes.node, PropTypes.func, PropTypes.element]),
   isBlock: PropTypes.bool,
   message: PropTypes.string,
   statusType: PropTypes.oneOf([
     "info",
     "indeterminate",
     "warning",
-    "danger",
-    "success"
+    "progress",
+    "success",
+    "error"
   ])
 };
 
 Status.displayName = "Status";
+
+
+function GraphicStatusIndeterminate({ isBlock }) {
+  return <LoadingSpinner size={isBlock ? spacingScale(5) : spacingScale(2)} />;
+}
+
+GraphicStatusIndeterminate.propTypes = {
+  isBlock: PropTypes.bool
+};
+
+
+function GraphicStatusSuccess() {
+  return <IconCheckcircleChecked fillOpacity="0" borderWidth="2px" />;
+}
+
+function GraphicStatusInfo() {
+  return <IconInfo fillOpacity="0" borderWidth="2px" />;
+}
+
+function GraphicStatusError() {
+  return <IconAlertTriangle fillOpacity="1" borderWidth="0" />;
+}
+
+function GraphicStatusWarning() {
+  return <IconAlertTriangle fillOpacity="0" borderWidth="2px" />;
+}
+

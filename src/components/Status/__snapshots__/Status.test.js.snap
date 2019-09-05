@@ -5,7 +5,7 @@ exports[`Status matches snapshot 1`] = `
   isBlock={false}
 >
   <Graphic
-    color={[Function]}
+    graphicColor={[Function]}
   >
     <GraphicStatusIndeterminate
       isBlock={false}
