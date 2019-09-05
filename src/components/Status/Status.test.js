@@ -4,6 +4,8 @@ import { keen } from "style/theme";
 
 import Status from "./Status";
 
+import * as components from "./components";
+
 describe("Status", () => {
   let aStatus;
 
@@ -70,4 +72,11 @@ describe("Status", () => {
       })
     });
   })
+
+  describe('components', () => {
+    Object.keys(components).forEach(c => {
+      const C = components[c]
+      expect(C).toMatchSnapshot()
+    })
+  });
 });
