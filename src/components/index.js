@@ -17,6 +17,7 @@ export { default as Readout } from "./Readout";
 export { default as ReadoutGroup } from "./ReadoutGroup";
 export { default as Select } from "./Select";
 export { default as Spinner } from "./Spinner";
+export { default as Status } from "./Status";
 export { default as Tab } from "./Tab";
 export { default as TabGroup } from "./TabGroup";
 export { default as Table } from "./Table";
