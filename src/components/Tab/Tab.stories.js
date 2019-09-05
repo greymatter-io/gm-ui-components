@@ -16,6 +16,7 @@ stories
           label={text("label", "label")}
           active={boolean("active", true)}
           disabled={boolean("disabled")}
+          tabIndex="0"
         />
       );
     },
@@ -35,6 +36,7 @@ stories
           label={text("label", "Filters")}
           active={boolean("active", false)}
           disabled={boolean("disabled")}
+          tabIndex="0"
         />
       );
     },

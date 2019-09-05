@@ -12,9 +12,9 @@ stories.add(
   () => {
     return (
       <TabGroup label={text("label")}>
-        <Tab clickAction={() => {}} label="Active Tab" active />
-        <Tab clickAction={() => {}} label="Label" />
-        <Tab clickAction={() => {}} label="Disabled" disabled />
+        <Tab clickAction={() => {}} label="Active Tab" tabIndex="0" active />
+        <Tab clickAction={() => {}} label="Label" tabIndex="0" />
+        <Tab clickAction={() => {}} label="Disabled" tabIndex="0" disabled />
       </TabGroup>
     );
   },
