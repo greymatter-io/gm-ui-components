@@ -8,9 +8,8 @@ const Introduction = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
   margin: auto;
-  max-width: 30em;
+  max-width: 35em;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   line-height: 1.5;
 
