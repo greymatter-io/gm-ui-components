@@ -3,7 +3,7 @@ import { text, number, select, boolean } from "@storybook/addon-knobs";
 
 import InputField from "./InputField";
 
-export default { title: "InputField", component: InputField };
+export default { title: "Components|InputField", component: InputField };
 
 export const defaultStory = () => {
   const FormFieldType = select("type", [

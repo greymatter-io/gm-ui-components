@@ -3,7 +3,7 @@ import { text, number, boolean } from "@storybook/addon-knobs";
 
 import Textarea from "./Textarea";
 
-export default { title: "Textarea", component: Textarea };
+export default { title: "Components|Textarea", component: Textarea };
 
 export const defaultStory = () => {
   return (

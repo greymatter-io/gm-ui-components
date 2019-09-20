@@ -184,7 +184,7 @@ const defaultNegationLine = {
   isReversed: true
 };
 
-export default { title: "Icon", component: Icon };
+export default { title: "Components|Icon", component: Icon };
 
 export const defaultStory = () => {
   const IconCog = Glyphs.IconCog;

@@ -2,7 +2,7 @@ import React from "react";
 
 import Fieldset from "./Fieldset";
 
-export default { title: "Fieldset", component: Fieldset };
+export default { title: "Components|Fieldset", component: Fieldset };
 
 export const defaultStory = () => {
   return <Fieldset name="Fieldest" />;

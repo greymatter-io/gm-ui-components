@@ -3,7 +3,7 @@ import { select, text } from "@storybook/addon-knobs";
 
 import Spinner from "./Spinner";
 
-export default { title: "Spinner", component: Spinner };
+export default { title: "Components|Spinner", component: Spinner };
 
 const orientations = {
   vertical: "vertical",

@@ -3,7 +3,7 @@ import React from "react";
 import Button from "components/Button";
 import ButtonGroup from "./ButtonGroup";
 
-export default { title: "ButtonGroup", component: ButtonGroup };
+export default { title: "Components|ButtonGroup", component: ButtonGroup };
 
 export const defaultStory = () => {
   return (

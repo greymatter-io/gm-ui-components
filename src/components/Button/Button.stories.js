@@ -15,7 +15,7 @@ const ButtonPropsTypes = ["default", "danger", "info", "primary", "warning"];
 const ButtonPropsSizes = ["xs", "sm", "normal", "lg", "xl"];
 const ButtonPropsOrientations = ["vertical", "horizontal"];
 
-export default { title: "Button", component: Button };
+export default { title: "Components|Button", component: Button };
 
 export const defaultStory = () => {
   return (

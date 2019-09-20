@@ -4,7 +4,7 @@ import { boolean, text } from "@storybook/addon-knobs";
 import AppFooter from "./AppFooter";
 import { IconBell } from "..";
 
-export default { title: "AppFooter", component: AppFooter };
+export default { title: "Components|AppFooter", component: AppFooter };
 
 export const defaultStory = () => (
   <AppFooter

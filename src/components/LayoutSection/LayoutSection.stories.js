@@ -9,7 +9,7 @@ const ThemedBackground = styled.div`
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
 `;
 
-export default { title: "LayoutSection", component: LayoutSection };
+export default { title: "Components|LayoutSection", component: LayoutSection };
 
 export const typical = () => {
   return (

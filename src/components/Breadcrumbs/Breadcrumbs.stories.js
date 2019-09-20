@@ -2,7 +2,7 @@ import React from "react";
 import { array, boolean } from "@storybook/addon-knobs";
 import { Breadcrumbs } from "..";
 
-export default { title: "Breadcrumbs", component: Breadcrumbs };
+export default { title: "Components|Breadcrumbs", component: Breadcrumbs };
 
 const defaultCrumbs = [
   "Home",

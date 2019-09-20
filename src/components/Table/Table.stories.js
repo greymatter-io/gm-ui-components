@@ -3,7 +3,7 @@ import { select, object, array } from "@storybook/addon-knobs";
 
 import Table from "./Table";
 
-export default { title: "Table", component: Table };
+export default { title: "Components|Table", component: Table };
 
 const columns = [
   {

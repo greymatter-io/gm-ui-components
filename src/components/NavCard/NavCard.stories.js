@@ -6,7 +6,7 @@ import NavCard from "components/NavCard";
 
 import { IconSummary } from "components";
 
-export default { title: "NavCard", component: NavCard };
+export default { title: "Components|NavCard", component: NavCard };
 
 export const defaultStory = () => {
   return <NavCard details={object("details")} title={text("title")} />;

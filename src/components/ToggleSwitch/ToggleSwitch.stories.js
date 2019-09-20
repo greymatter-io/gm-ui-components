@@ -9,7 +9,7 @@ const Wrap = styled.div`
   margin-bottom: 10px;
 `;
 
-export default { title: "ToggleSwitch", component: ToggleSwitch };
+export default { title: "Components|ToggleSwitch", component: ToggleSwitch };
 
 const labelPositionOptions = ["top", "left", "right", "bottom"];
 

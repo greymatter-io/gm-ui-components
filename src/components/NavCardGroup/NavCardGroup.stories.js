@@ -7,7 +7,7 @@ import { IconSummary, IconFunctions, IconThreads, IconHTTP } from "components";
 import NavCard from "components/NavCard";
 import NavCardGroup from "components/NavCardGroup";
 
-export default { title: "NavCardGroup", component: NavCardGroup };
+export default { title: "Components|NavCardGroup", component: NavCardGroup };
 
 const mockTabs = [
   {

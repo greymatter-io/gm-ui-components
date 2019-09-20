@@ -6,7 +6,7 @@ import { text, select, boolean } from "@storybook/addon-knobs";
 import Checkbox from "./Checkbox";
 import { spacingScale } from "style/styleFunctions";
 
-export default { title: "Checkbox", component: Checkbox };
+export default { title: "Components|Checkbox", component: Checkbox };
 
 const CheckboxGrid = styled.div`
   display: grid;

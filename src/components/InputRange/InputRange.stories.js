@@ -3,7 +3,7 @@ import { text, boolean, select } from "@storybook/addon-knobs";
 
 import InputRange from "./InputRange";
 
-export default { title: "InputRange", component: InputRange };
+export default { title: "Components|InputRange", component: InputRange };
 
 export const defaultStory = () => {
   return (

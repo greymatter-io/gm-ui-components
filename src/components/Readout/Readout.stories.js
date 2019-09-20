@@ -6,7 +6,7 @@ import { boolean, object, color } from "@storybook/addon-knobs";
 import ReadoutGroup from "../ReadoutGroup/ReadoutGroup";
 import Readout from "./Readout";
 
-export default { title: "Readout", component: Readout };
+export default { title: "Components|Readout", component: Readout };
 
 const mockReadoutItem = [
   {

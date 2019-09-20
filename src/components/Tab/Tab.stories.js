@@ -3,7 +3,7 @@ import { text, boolean } from "@storybook/addon-knobs";
 
 import Tab from "./Tab";
 
-export default { title: "Tab", component: Tab };
+export default { title: "Components|Tab", component: Tab };
 
 export const defaultStory = () => (
   <Tab
