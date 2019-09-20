@@ -45,50 +45,50 @@ defaultStory.story = {
   }
 };
 
-// export const propsGallery = withPropsCombinations(
-//   Button,
-//   {
-//     type: ButtonPropsTypes,
-//     active: [false, true],
-//     outline: [false, true],
-//     disabled: [false, true],
-//     size: ButtonPropsSizes,
-//     label: ["Label"]
-//   },
-//   {
-//     showSource: false,
-//     style: {
-//       float: "left",
-//       margin: "0.25rem"
-//     },
-//     CombinationRenderer: ({ Component, props, options }) => {
-//       const prettyJSON = JSON.stringify(props)
-//         .split(",")
-//         .join("\n");
-//       return (
-//         <Tooltip content={prettyJSON}>
-//           <Component
-//             {...props}
-//             title="Click to copy props"
-//             style={options.style}
-//             onClick={() => copy(JSON.stringify(props))}
-//           />
-//         </Tooltip>
-//       );
-//     }
-//   }
-// );
+export const propsGallery = withPropsCombinations(
+  Button,
+  {
+    type: ButtonPropsTypes,
+    active: [false, true],
+    outline: [false, true],
+    disabled: [false, true],
+    size: ButtonPropsSizes,
+    label: ["Label"]
+  },
+  {
+    showSource: false,
+    style: {
+      float: "left",
+      margin: "0.25rem"
+    },
+    CombinationRenderer: ({ Component, props, options }) => {
+      const prettyJSON = JSON.stringify(props)
+        .split(",")
+        .join("\n");
+      return (
+        <Tooltip content={prettyJSON}>
+          <Component
+            {...props}
+            title="Click to copy props"
+            style={options.style}
+            onClick={() => copy(JSON.stringify(props))}
+          />
+        </Tooltip>
+      );
+    }
+  }
+);
 
-// propsGallery.story = {
-//   name: "Props Gallery",
+propsGallery.story = {
+  name: "Props Gallery",
 
-//   parameters: {
-//     info: {
-//       text:
-//         "All Button types, active states, disabled states, sizes, and outline states."
-//     }
-//   }
-// };
+  parameters: {
+    info: {
+      text:
+        "All Button types, active states, disabled states, sizes, and outline states."
+    }
+  }
+};
 
 export const types = () => (
   <React.Fragment>

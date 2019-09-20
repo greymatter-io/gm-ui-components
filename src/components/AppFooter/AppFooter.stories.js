@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { boolean, text } from "@storybook/addon-knobs";
 import AppFooter from "./AppFooter";
 import { IconBell } from "..";
