@@ -6,17 +6,11 @@ import { IconBell } from "..";
 
 export default { title: "AppFooter" };
 
-const FooterDemoArea = styled.div`
-  width: 85vw;
-`;
-
 export const defaultStory = () => (
-  <FooterDemoArea>
-    <AppFooter
-      copyrightText={text("copyrightText")}
-      useExternalLinks={boolean("useExternalLinks", true)}
-    />
-  </FooterDemoArea>
+  <AppFooter
+    copyrightText={text("copyrightText")}
+    useExternalLinks={boolean("useExternalLinks", true)}
+  />
 );
 
 defaultStory.story = {
@@ -30,13 +24,11 @@ defaultStory.story = {
 };
 
 export const withCustomChildren = () => (
-  <FooterDemoArea>
-    <AppFooter>
-      <span>Custom Content</span>
-      <span>Custom Content</span>
-      <span>Custom Content</span>
-    </AppFooter>
-  </FooterDemoArea>
+  <AppFooter>
+    <span>Custom Content</span>
+    <span>Custom Content</span>
+    <span>Custom Content</span>
+  </AppFooter>
 );
 
 withCustomChildren.story = {
@@ -50,12 +42,10 @@ withCustomChildren.story = {
 };
 
 export const withFooterSectionOverrides = () => (
-  <FooterDemoArea>
-    <AppFooter
-      footerLeft={<IconBell />}
-      footerCenter={<span>My custom footer center!</span>}
-    />
-  </FooterDemoArea>
+  <AppFooter
+    footerLeft={<IconBell />}
+    footerCenter={<span>My custom footer center!</span>}
+  />
 );
 
 withFooterSectionOverrides.story = {
