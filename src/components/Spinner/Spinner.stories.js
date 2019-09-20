@@ -1,30 +1,31 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { select, text } from "@storybook/addon-knobs";
 
 import Spinner from "./Spinner";
 
-const stories = storiesOf("Components|Spinner", module);
+export default { title: "Spinner" };
 
 const orientations = {
   vertical: "vertical",
   horizontal: "horizontal"
 };
 
-stories.add(
-  "Default",
-  () => {
-    return (
-      <Spinner
-        orientation={select("orientation", orientations)}
-        message={text("message")}
-      />
-    );
-  },
-  {
+export const defaultStory = () => {
+  return (
+    <Spinner
+      orientation={select("orientation", orientations)}
+      message={text("message")}
+    />
+  );
+};
+
+defaultStory.story = {
+  name: "Default",
+
+  parameters: {
     info: {
       text:
         "Spinner to indicate the loading state of an interface element or background process."
     }
   }
-);
+};

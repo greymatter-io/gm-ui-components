@@ -1,10 +1,9 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { select, object, array } from "@storybook/addon-knobs";
 
 import Table from "./Table";
 
-const stories = storiesOf("Components|Table", module);
+export default { title: "Table" };
 
 const columns = [
   {
@@ -65,27 +64,29 @@ const data = [
   }
 ];
 
-stories.add(
-  "Typical",
-  () => {
-    return (
-      <Table
-        columns={object("columns", columns)}
-        data={object("data", data)}
-        sortDataIndex={select(
-          "sortDataIndex",
-          ["name", "address", "favfood", "age"],
-          "name"
-        )}
-        selectedRows={array("selectedRows", [0])}
-        onSort={sortIndex => alert(JSON.stringify(sortIndex))}
-        onRowClick={rowData => console.log(rowData)}
-      />
-    );
-  },
-  {
+export const typical = () => {
+  return (
+    <Table
+      columns={object("columns", columns)}
+      data={object("data", data)}
+      sortDataIndex={select(
+        "sortDataIndex",
+        ["name", "address", "favfood", "age"],
+        "name"
+      )}
+      selectedRows={array("selectedRows", [0])}
+      onSort={sortIndex => alert(JSON.stringify(sortIndex))}
+      onRowClick={rowData => console.log(rowData)}
+    />
+  );
+};
+
+typical.story = {
+  name: "Typical",
+
+  parameters: {
     info: {
       text: "A table component."
     }
   }
-);
+};

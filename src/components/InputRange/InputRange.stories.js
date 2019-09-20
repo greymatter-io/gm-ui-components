@@ -1,50 +1,53 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { text, boolean, select } from "@storybook/addon-knobs";
 
 import InputRange from "./InputRange";
 
-const stories = storiesOf("Components|InputRange", module);
+export default { title: "InputRange" };
 
-stories
-  .add(
-    "Default",
-    () => {
-      return (
-        <InputRange
-          autoFocus={boolean("autoFocus")}
-          hint={text("hint")}
-          label={text("label")}
-          labelPosition={select("labelPosition", [
-            "top",
-            "right",
-            "bottom",
-            "left"
-          ])}
-          defaultValue={text("defaultValue")}
-        />
-      );
-    },
-    {
-      info: {
-        text: "A range input component with label and optional hint."
-      }
-    }
-  )
-  .add(
-    "Typical",
-    () => {
-      return (
-        <InputRange
-          label="Coolness"
-          labelPosition="top"
-          hint="Higher values mean more coolness"
-        />
-      );
-    },
-    {
-      info: {
-        text: "A range input component with label and optional hint."
-      }
-    }
+export const defaultStory = () => {
+  return (
+    <InputRange
+      autoFocus={boolean("autoFocus")}
+      hint={text("hint")}
+      label={text("label")}
+      labelPosition={select("labelPosition", [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ])}
+      defaultValue={text("defaultValue")}
+    />
   );
+};
+
+defaultStory.story = {
+  name: "Default",
+
+  parameters: {
+    info: {
+      text: "A range input component with label and optional hint."
+    }
+  }
+};
+
+export const typical = () => {
+  return (
+    <InputRange
+      label="Coolness"
+      labelPosition="top"
+      hint="Higher values mean more coolness"
+    />
+  );
+};
+
+typical.story = {
+  name: "Typical",
+
+  parameters: {
+    info: {
+      text: "A range input component with label and optional hint."
+    }
+  }
+};

@@ -1,13 +1,12 @@
 import React from "react";
 import { IconSummary } from "..";
 
-import { storiesOf } from "@storybook/react";
 import { boolean, object, color } from "@storybook/addon-knobs";
 
 import ReadoutGroup from "../ReadoutGroup/ReadoutGroup";
 import Readout from "./Readout";
 
-const stories = storiesOf("Components|Readout", module);
+export default { title: "Readout" };
 
 const mockReadoutItem = [
   {
@@ -44,55 +43,62 @@ const mockReadoutManyItems = [
   }
 ];
 
-stories
-  .add(
-    "Typical",
-    () => {
-      return (
-        <Readout
-          color={color("color", "#eee")}
-          primary={boolean("primary", false)}
-          readoutItems={object("readoutItems", mockReadoutItem)}
-        />
-      );
-    },
-    {
-      info: {
-        text: "A generalized display component for key performance indicators."
-      }
-    }
-  )
-  .add(
-    "With Many Items ",
-    () => {
-      return (
-        <Readout
-          color={color("color", "#eee")}
-          primary={boolean("primary", false)}
-          readoutItems={object("readoutItems", mockReadoutManyItems)}
-        />
-      );
-    },
-    {
-      info: {
-        text: "Readouts may display many related values."
-      }
-    }
-  )
-  .add(
-    "Readout Group",
-    () => {
-      return (
-        <ReadoutGroup>
-          <Readout readoutItems={mockReadoutItem} />
-          <Readout primary={true} readoutItems={mockReadoutItem} />
-          <Readout readoutItems={mockReadoutItem} />
-        </ReadoutGroup>
-      );
-    },
-    {
-      info: {
-        text: "Readouts may be grouped into a dashboard-like Readout Group."
-      }
-    }
+export const typical = () => {
+  return (
+    <Readout
+      color={color("color", "#eee")}
+      primary={boolean("primary", false)}
+      readoutItems={object("readoutItems", mockReadoutItem)}
+    />
   );
+};
+
+typical.story = {
+  name: "Typical",
+
+  parameters: {
+    info: {
+      text: "A generalized display component for key performance indicators."
+    }
+  }
+};
+
+export const withManyItems = () => {
+  return (
+    <Readout
+      color={color("color", "#eee")}
+      primary={boolean("primary", false)}
+      readoutItems={object("readoutItems", mockReadoutManyItems)}
+    />
+  );
+};
+
+withManyItems.story = {
+  name: "With Many Items ",
+
+  parameters: {
+    info: {
+      text: "Readouts may display many related values."
+    }
+  }
+};
+
+export const readoutGroup = () => {
+  return (
+    <ReadoutGroup>
+      <Readout readoutItems={mockReadoutItem} />
+      <Readout primary={true} readoutItems={mockReadoutItem} />
+      <Readout readoutItems={mockReadoutItem} />
+    </ReadoutGroup>
+  );
+};
+
+readoutGroup.story = {
+  name: "Readout Group",
+
+  parameters: {
+    info: {
+      text: "Readouts may be grouped into a dashboard-like Readout Group."
+    }
+  }
+};

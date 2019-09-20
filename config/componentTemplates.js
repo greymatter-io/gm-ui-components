@@ -46,7 +46,7 @@ import { text, boolean } from "@storybook/addon-knobs";
 
 import ${fileName} from "./${fileName}";
 
-const stories = storiesOf("Components|${fileName}", module);
+// const stories = storiesOf("Components|${fileName}", module);
 
 stories.add(
   "default",

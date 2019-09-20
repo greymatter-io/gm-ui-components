@@ -1,72 +1,78 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { text, select, boolean, object } from "@storybook/addon-knobs";
 
 import Tooltip from "./Tooltip";
 
-const stories = storiesOf("Components|Tooltip", module);
+export default { title: "Tooltip" };
 
-stories
-  .add(
-    "Default",
-    () => {
-      return (
-        <Tooltip
-          content={text("content", "Content")}
-          position={select("position", ["bottom", "right", "top", "left"])}
-          hideTooltip={boolean("hideTooltip")}
-          tooltipStyle={object("tooltipStyle")}
-        >
-          {text("children", "Hover over me")}
-        </Tooltip>
-      );
-    },
-    {
-      info: {
-        text: "A tooltip form input with a label."
-      }
-    }
-  )
-  .add(
-    "Typical",
-    () => {
-      return (
-        <Tooltip
-          content={text("content", "Lorem ipsum dolor sit amet")}
-          position={select("position", ["bottom", "right", "top", "left"])}
-          hideTooltip={boolean("hideTooltip")}
-          tooltipStyle={object("tooltipStyle")}
-        >
-          {text("children", "Hover over me")}
-        </Tooltip>
-      );
-    },
-    {
-      info: {
-        text: "A tooltip form input with a label."
-      }
-    }
-  )
-  .add(
-    "Longer content",
-    () => {
-      return (
-        <Tooltip
-          content={text(
-            "content",
-            "Lorem ipsum dolor sit amet donec consectatur adispacing"
-          )}
-          position={select("position", ["top", "right", "bottom", "left"])}
-          hideTooltip={boolean("hideTooltip")}
-          tooltipStyle={object("tooltipStyle")}
-        >
-          {text("children", "Hover over me")}
-        </Tooltip>
-      );
-    },
-    {
-      info: {
-        text: "A tooltip form input with a label."
-      }
-    }
+export const defaultStory = () => {
+  return (
+    <Tooltip
+      content={text("content", "Content")}
+      position={select("position", ["bottom", "right", "top", "left"])}
+      hideTooltip={boolean("hideTooltip")}
+      tooltipStyle={object("tooltipStyle")}
+    >
+      {text("children", "Hover over me")}
+    </Tooltip>
   );
+};
+
+defaultStory.story = {
+  name: "Default",
+
+  parameters: {
+    info: {
+      text: "A tooltip form input with a label."
+    }
+  }
+};
+
+export const typical = () => {
+  return (
+    <Tooltip
+      content={text("content", "Lorem ipsum dolor sit amet")}
+      position={select("position", ["bottom", "right", "top", "left"])}
+      hideTooltip={boolean("hideTooltip")}
+      tooltipStyle={object("tooltipStyle")}
+    >
+      {text("children", "Hover over me")}
+    </Tooltip>
+  );
+};
+
+typical.story = {
+  name: "Typical",
+
+  parameters: {
+    info: {
+      text: "A tooltip form input with a label."
+    }
+  }
+};
+
+export const longerContent = () => {
+  return (
+    <Tooltip
+      content={text(
+        "content",
+        "Lorem ipsum dolor sit amet donec consectatur adispacing"
+      )}
+      position={select("position", ["top", "right", "bottom", "left"])}
+      hideTooltip={boolean("hideTooltip")}
+      tooltipStyle={object("tooltipStyle")}
+    >
+      {text("children", "Hover over me")}
+    </Tooltip>
+  );
+};
+
+longerContent.story = {
+  name: "Longer content",
+
+  parameters: {
+    info: {
+      text: "A tooltip form input with a label."
+    }
+  }
+};

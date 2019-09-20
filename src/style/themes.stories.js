@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { ThemeProvider } from "styled-components";
-import { storiesOf } from "@storybook/react";
 import { keen, keenDark } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
@@ -18,7 +17,7 @@ import TabGroup from "components/TabGroup";
 import Tab from "components/Tab";
 import Select from "components/Select";
 
-const stories = storiesOf(" Overview|Themes", module);
+export default { title: "Overview|Themes" };
 
 const DemoCols = styled.div`
   display: grid;
@@ -124,29 +123,31 @@ DemoContent.propTypes = {
   themeName: PropTypes.string
 };
 
-stories.add(
-  "Themes",
-  () => (
-    <>
-      <DocumentationLink>
-        <a href="https://github.com/DecipherNow/gm-ui-components#theming">
-          Theming the Component Library
-          <IconChevronRight />
-        </a>
-      </DocumentationLink>
-      <DemoCols>
-        <ThemeProvider theme={keen}>
-          <DemoContent themeName="keen" />
-        </ThemeProvider>
-        <ThemeProvider theme={keenDark}>
-          <DemoContent themeName="keenDark" />
-        </ThemeProvider>
-      </DemoCols>
-    </>
-  ),
-  {
+export const themes = () => (
+  <>
+    <DocumentationLink>
+      <a href="https://github.com/DecipherNow/gm-ui-components#theming">
+        Theming the Component Library
+        <IconChevronRight />
+      </a>
+    </DocumentationLink>
+    <DemoCols>
+      <ThemeProvider theme={keen}>
+        <DemoContent themeName="keen" />
+      </ThemeProvider>
+      <ThemeProvider theme={keenDark}>
+        <DemoContent themeName="keenDark" />
+      </ThemeProvider>
+    </DemoCols>
+  </>
+);
+
+themes.story = {
+  name: "Themes",
+
+  parameters: {
     info: {
       source: false
     }
   }
-);
+};

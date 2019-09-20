@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { storiesOf } from "@storybook/react";
 
-const stories = storiesOf(" Overview|Global Styles", module);
+export default { title: "Overview|Global Styles" };
 
 const DemoCanvas = styled.div``;
 
-stories.add("Global Styles", () => (
+export const globalStyles = () => (
   <>
     <DemoCanvas>
       <div id="top" className="page" role="document">
@@ -819,4 +818,8 @@ stories.add("Global Styles", () => (
       </div>
     </DemoCanvas>
   </>
-));
+);
+
+globalStyles.story = {
+  name: "Global Styles"
+};

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { storiesOf } from "@storybook/react";
 import { number, color, text, boolean, object } from "@storybook/addon-knobs";
 
 import Icon from ".";
@@ -185,86 +184,95 @@ const defaultNegationLine = {
   isReversed: true
 };
 
-const stories = storiesOf("Components|Icons", module);
+export default { title: "Icon" };
 
-stories
-  .add(
-    "Default",
-    () => {
-      const IconCog = Glyphs.IconCog;
-      return (
-        <IconCog
-          borderColor={color("borderColor")}
-          borderWidth={number("borderWidth")}
-          fillColor={color("fillColor")}
-          fillOpacity={number("fillOpacity")}
-          size={text("size")}
-          title={text("title")}
-          hasBadge={boolean("hasBadge")}
-          isNegated={boolean("isNegated", true)}
-          negationLine={object("negationLine", defaultNegationLine)}
-          badgeColor={color("badgeColor")}
-          badgePosition={object("badgePosition", undefined)}
-        />
-      );
-    },
-    {
-      info: {
-        text:
-          "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
-      }
+export const defaultStory = () => {
+  const IconCog = Glyphs.IconCog;
+  return (
+    <IconCog
+      borderColor={color("borderColor")}
+      borderWidth={number("borderWidth")}
+      fillColor={color("fillColor")}
+      fillOpacity={number("fillOpacity")}
+      size={text("size")}
+      title={text("title")}
+      hasBadge={boolean("hasBadge")}
+      isNegated={boolean("isNegated", true)}
+      negationLine={object("negationLine", defaultNegationLine)}
+      badgeColor={color("badgeColor")}
+      badgePosition={object("badgePosition", undefined)}
+    />
+  );
+};
+
+defaultStory.story = {
+  name: "Default",
+
+  parameters: {
+    info: {
+      text:
+        "An Icon component that renders a variety of glyphs (see the gallery for all glyph options)."
     }
-  )
-  .add(
-    "Custom Glyphs",
-    () => {
-      return (
-        <Icon
-          title={text("title", undefined)}
-          size={text("size", undefined)}
-          borderColor={color("borderColor", undefined)}
-          borderWidth={number("borderWidth", undefined)}
-          fillColor={color("fillColor", undefined)}
-          fillOpacity={number("fillOpacity", undefined)}
-          hasBadge={boolean("hasBadge", undefined)}
-          badgeColor={color("badgeColor", undefined)}
-          badgePosition={object("badgePosition", undefined)}
-        >
-          <svg className="svg-icon" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="7.4" />
-          </svg>
-        </Icon>
-      );
-    },
-    {
-      info: {
-        text:
-          "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
-      }
+  }
+};
+
+export const customGlyphs = () => {
+  return (
+    <Icon
+      title={text("title", undefined)}
+      size={text("size", undefined)}
+      borderColor={color("borderColor", undefined)}
+      borderWidth={number("borderWidth", undefined)}
+      fillColor={color("fillColor", undefined)}
+      fillOpacity={number("fillOpacity", undefined)}
+      hasBadge={boolean("hasBadge", undefined)}
+      badgeColor={color("badgeColor", undefined)}
+      badgePosition={object("badgePosition", undefined)}
+    >
+      <svg className="svg-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="7.4" />
+      </svg>
+    </Icon>
+  );
+};
+
+customGlyphs.story = {
+  name: "Custom Glyphs",
+
+  parameters: {
+    info: {
+      text:
+        "An Icon component that renders a custom glyph. Simply import { Icon } and wrap your custom svg."
     }
-  )
-  .add("Glyph Gallery", () => {
-    return (
-      <GalleryIconList fontSize={text("Context font size", "inherit")}>
-        {glyphNames.map(glyph => {
-          let Glyph = Glyphs[glyph];
-          return (
-            <GalleryIconDemo key={glyph}>
-              <Glyph
-                title={glyph}
-                size={text("size", undefined)}
-                fillColor={color("fillColor", undefined)}
-                fillOpacity={number("fillOpacity", undefined)}
-                borderColor={color("borderColor", undefined)}
-                borderWidth={text("borderWidth", undefined)}
-                hasBadge={boolean("hasBadge", undefined)}
-                badgeColor={color("badgeColor")}
-                badgePosition={object("badgePosition", undefined)}
-              />
-              <GalleryIconLabel>{glyph}</GalleryIconLabel>
-            </GalleryIconDemo>
-          );
-        })}
-      </GalleryIconList>
-    );
-  });
+  }
+};
+
+export const glyphGallery = () => {
+  return (
+    <GalleryIconList fontSize={text("Context font size", "inherit")}>
+      {glyphNames.map(glyph => {
+        let Glyph = Glyphs[glyph];
+        return (
+          <GalleryIconDemo key={glyph}>
+            <Glyph
+              title={glyph}
+              size={text("size", undefined)}
+              fillColor={color("fillColor", undefined)}
+              fillOpacity={number("fillOpacity", undefined)}
+              borderColor={color("borderColor", undefined)}
+              borderWidth={text("borderWidth", undefined)}
+              hasBadge={boolean("hasBadge", undefined)}
+              badgeColor={color("badgeColor")}
+              badgePosition={object("badgePosition", undefined)}
+            />
+            <GalleryIconLabel>{glyph}</GalleryIconLabel>
+          </GalleryIconDemo>
+        );
+      })}
+    </GalleryIconList>
+  );
+};
+
+glyphGallery.story = {
+  name: "Glyph Gallery"
+};

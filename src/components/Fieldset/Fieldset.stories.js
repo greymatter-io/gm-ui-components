@@ -1,18 +1,19 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
 import Fieldset from "./Fieldset";
 
-const stories = storiesOf("Components|Fieldset", module);
+export default { title: "Fieldset" };
 
-stories.add(
-  "Default",
-  () => {
-    return <Fieldset name="Fieldest" />;
-  },
-  {
+export const defaultStory = () => {
+  return <Fieldset name="Fieldest" />;
+};
+
+defaultStory.story = {
+  name: "Default",
+
+  parameters: {
     info: {
       text: "A fieldest for groups of form elements."
     }
   }
-);
+};
