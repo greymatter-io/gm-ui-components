@@ -16,7 +16,7 @@ const Wrap = styled.div`
   }
 
   /* Target only the canvas tab in Storybook */
-  html > body > #root > &:first-child:last-child {
+  #root > &:first-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,10 +36,12 @@ const Wrap = styled.div`
 
 function StoryContainer({ children }) {
   return (
-    <Wrap>
+    <>
       <GlobalStyles />
-      <ComponentArea>{children}</ComponentArea>
-    </Wrap>
+      <Wrap>
+        <ComponentArea>{children}</ComponentArea>
+      </Wrap>
+    </>
   );
 }
 
