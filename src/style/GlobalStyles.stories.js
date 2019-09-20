@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-export default { title: "Overview|Global Styles" };
+export default {
+  title: "Overview|Global Styles",
+  parameters: { docs: { page: null } }
+};
 
 const DemoCanvas = styled.div``;
 

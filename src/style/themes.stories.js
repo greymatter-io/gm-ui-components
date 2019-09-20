@@ -17,7 +17,10 @@ import TabGroup from "components/TabGroup";
 import Tab from "components/Tab";
 import Select from "components/Select";
 
-export default { title: "Overview|Themes" };
+export default {
+  title: "Overview|Themes",
+  parameters: { docs: { page: null } }
+};
 
 const DemoCols = styled.div`
   display: grid;

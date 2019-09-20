@@ -44,7 +44,8 @@ const Introduction = styled.div`
 `;
 
 export default {
-  title: " Overview|Introduction"
+  title: " Overview|Introduction",
+  parameters: { docs: { page: null } }
 };
 
 export const introduction = () => {

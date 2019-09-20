@@ -5,7 +5,10 @@ import copy from "copy-to-clipboard";
 
 import { spacingScale } from "./styleFunctions";
 
-export default { title: "Overview|Design Tokens" };
+export default {
+  title: "Overview|Design Tokens",
+  parameters: { docs: { page: null } }
+};
 
 const DemoCanvas = styled.div`
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
