@@ -3,19 +3,17 @@ import { text, boolean } from "@storybook/addon-knobs";
 
 import Tab from "./Tab";
 
-export default { title: "Tab" };
+export default { title: "Tab", component: Tab };
 
-export const defaultStory = () => {
-  return (
-    <Tab
-      clickAction={() => alert("hello")}
-      label={text("label", "label")}
-      active={boolean("active", true)}
-      disabled={boolean("disabled")}
-      tabIndex="0"
-    />
-  );
-};
+export const defaultStory = () => (
+  <Tab
+    clickAction={() => alert("hello")}
+    label={text("label", "label")}
+    active={boolean("active", true)}
+    disabled={boolean("disabled")}
+    tabIndex="0"
+  />
+);
 
 defaultStory.story = {
   name: "Default",

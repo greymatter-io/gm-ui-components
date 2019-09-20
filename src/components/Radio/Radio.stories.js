@@ -4,7 +4,7 @@ import { text, select, boolean } from "@storybook/addon-knobs";
 
 import { Radio } from "components";
 
-export default { title: "Radio" };
+export default { title: "Radio", component: Radio };
 
 export const defaultStory = () => {
   return (

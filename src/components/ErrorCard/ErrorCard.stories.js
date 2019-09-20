@@ -4,7 +4,7 @@ import { text } from "@storybook/addon-knobs";
 import ErrorCard from "./ErrorCard";
 import { IconNegation } from "..";
 
-export default { title: "ErrorCard" };
+export default { title: "ErrorCard", component: ErrorCard };
 
 export const defaultStory = () => (
   <ErrorCard

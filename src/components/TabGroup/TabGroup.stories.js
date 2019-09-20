@@ -4,7 +4,7 @@ import { text } from "@storybook/addon-knobs";
 import Tab from "components/Tab";
 import TabGroup from "./TabGroup";
 
-export default { title: "TabGroup" };
+export default { title: "TabGroup", component: TabGroup };
 
 export const defaultStory = () => {
   return (

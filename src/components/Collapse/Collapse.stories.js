@@ -4,7 +4,7 @@ import { text, boolean } from "@storybook/addon-knobs";
 
 import Collapse from "./Collapse";
 
-export default { title: "Collapse" };
+export default { title: "Collapse", component: Collapse };
 
 const style = {
   height: "300px",

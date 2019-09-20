@@ -6,7 +6,7 @@ import { spacingScale } from "style/styleFunctions";
 import Status from "./Status";
 import { IconLock } from "components/Glyphs";
 
-export default { title: "Status" };
+export default { title: "Status", component: Status };
 
 const statusOptions = ["indeterminate", "error", "info", "warning", "success"];
 

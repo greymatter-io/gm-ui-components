@@ -3,7 +3,7 @@ import { text, select, boolean, object } from "@storybook/addon-knobs";
 
 import Tooltip from "./Tooltip";
 
-export default { title: "Tooltip" };
+export default { title: "Tooltip", component: Tooltip };
 
 export const defaultStory = () => {
   return (

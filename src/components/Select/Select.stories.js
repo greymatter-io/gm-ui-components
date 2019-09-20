@@ -3,7 +3,7 @@ import React from "react";
 import { text, select, boolean } from "@storybook/addon-knobs";
 import { Select } from "components";
 
-export default { title: "Select" };
+export default { title: "Select", component: Select };
 
 export const defaultStory = () => {
   return (
