@@ -20,6 +20,9 @@ const StyledSVG = styled.svg.attrs(() => ({
     }
   }
 
+  #iconMask .maskShowArea {
+  }
+
   .glyph > svg {
     width: 100%;
     height: 100%;
@@ -47,6 +50,7 @@ const StyledSVG = styled.svg.attrs(() => ({
 
   /* Fix Chrome rendering of horizontal SVG lines */
   .glyph > * {
+    /* transform: rotateZ(1deg); */
   }
 
   .glyph > .minus,

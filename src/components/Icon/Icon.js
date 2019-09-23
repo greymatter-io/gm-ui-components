@@ -41,48 +41,52 @@ export default function Icon({
       borderColor={borderColor}
       {...props}
     >
+
+// Clip-group fails because it's too difficult to create the 
+
       {(isNegated || hasBadge) && (
-        <mask id="iconMask">
-          <rect
-            x="0"
-            y="0"
-            width="100%"
-            height="100%"
-            fill="white"
-            fillOpacity="1"
-          />
-          {isNegated && (
-            <line
-              className="negationLine"
-              x1={IconGridSize - negationLineTrim}
-              y1={IconGridSize - negationLineTrim}
-              x2={negationLineTrim}
-              y2={negationLineTrim}
-              stroke="black"
-              strokeLinecap="round"
-              vectorEffect="non-scaling-stroke"
-              strokeWidth={"calc(" + borderWidth + " * 3)"}
-              transform={
-                negationIsReversed
-                  ? "rotate(90 " +
-                    IconGridSize / 2 +
-                    " " +
-                    IconGridSize / 2 +
-                    ")"
-                  : undefined
-              }
-            />
-          )}
-          {hasBadge && (
-            <circle
-              cx={badgePosition.x}
-              cy={badgePosition.y}
-              r="8"
-              fill="black"
+          <mask id="iconMask">
+            <rect
+              x="0"
+              y="0"
+              width={IconGridSize}
+              height={IconGridSize}
+              fill="white"
               fillOpacity="1"
             />
-          )}
-        </mask>
+            {isNegated && (
+              <line
+                className="negationLine maskHideArea"
+                x1={IconGridSize - negationLineTrim}
+                y1={IconGridSize - negationLineTrim}
+                x2={negationLineTrim}
+                y2={negationLineTrim}
+                stroke="black"
+                strokeLinecap="round"
+                vectorEffect="non-scaling-stroke"
+                strokeWidth={"calc(" + borderWidth + " * 3)"}
+                transform={
+                  negationIsReversed
+                    ? "rotate(90 " +
+                      IconGridSize / 2 +
+                      " " +
+                      IconGridSize / 2 +
+                      ")"
+                    : undefined
+                }
+              />
+            )}
+            {hasBadge && (
+              <circle
+                className="maskHideArea"
+                cx={badgePosition.x}
+                cy={badgePosition.y}
+                r="8"
+                fill="black"
+                fillOpacity="1"
+              />
+            )}
+          </mask>
       )}
       <g
         className="glyph"
@@ -91,7 +95,6 @@ export default function Icon({
         {children}
       </g>
       {isNegated && (
-        <>
           <line
             className="negationLine"
             x1={IconGridSize - negationLineTrim}
@@ -108,7 +111,6 @@ export default function Icon({
                 : undefined
             }
           />
-        </>
       )}
       {hasBadge && (
         <>
