@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>file-type-image</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="file-type-image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M17,15 L47,15 C48.1045695,15 49,15.8954305 49,17 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,17 C15,15.8954305 15.8954305,15 17,15 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M17,15 L47,15 C48.1045695,15 49,15.8954305 49,17 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,17 C15,15.8954305 15.8954305,15 17,15 Z M27,32 C29.7614237,32 32,29.7614237 32,27 C32,24.2385763 29.7614237,22 27,22 C24.2385763,22 22,24.2385763 22,27 C22,29.7614237 24.2385763,32 27,32 Z M17,49 L37,37 L42.5,41 L49,37" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="file-type-image" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M15,13 L49,13 C50.1045695,13 51,13.8954305 51,15 L51,49 C51,50.1045695 50.1045695,51 49,51 L15,51 C13.8954305,51 13,50.1045695 13,49 L13,15 C13,13.8954305 13.8954305,13 15,13 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15,13 L49,13 C50.1045695,13 51,13.8954305 51,15 L51,49 C51,50.1045695 50.1045695,51 49,51 L15,51 C13.8954305,51 13,50.1045695 13,49 L13,15 C13,13.8954305 13.8954305,13 15,13 Z M27,32 C29.7614237,32 32,29.7614237 32,27 C32,24.2385763 29.7614237,22 27,22 C24.2385763,22 22,24.2385763 22,27 C22,29.7614237 24.2385763,32 27,32 Z M15,51 L37,37 L42.5,41 L51,37"/>
+  </g>
 </svg>

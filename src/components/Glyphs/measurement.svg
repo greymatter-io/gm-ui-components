@@ -1,0 +1,6 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="measurement" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M10,25 L53,25 C53.5522847,25 54,25.4477153 54,26 L54,39 L54,39 L9,39 L9,26 C9,25.4477153 9.44771525,25 10,25 Z" transform="rotate(45 31.5 32)"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10,25 L53,25 C53.5522847,25 54,25.4477153 54,26 L54,39 L54,39 L9,39 L9,26 C9,25.4477153 9.44771525,25 10,25 Z M24,33 L24,38.5 M39,33 L39,38.5 M16,35 L16,38.5 M32,35 L32,38.5 M47,35 L47,38.5" transform="rotate(45 31.5 32)"/>
+  </g>
+</svg>

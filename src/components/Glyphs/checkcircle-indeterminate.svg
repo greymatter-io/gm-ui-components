@@ -1,0 +1,6 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="checkcircle-indeterminate" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M32,14 C41.9411255,14 50,22.0588745 50,32 C50,41.9411255 41.9411255,50 32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32,14 C41.9411255,14 50,22.0588745 50,32 C50,41.9411255 41.9411255,50 32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 Z M23,32 L41,32"/>
+  </g>
+</svg>

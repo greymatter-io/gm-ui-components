@@ -1,0 +1,5 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="ordinal" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15,44 L30.5,21 L15,44 Z M30.5,44 L15,21 L30.5,44 Z M48,35 L37.5,35 L48,35 Z M42.5,30 C45.5375661,30 48,27.5375661 48,24.5 C48,21.4624339 45.5375661,19 42.5,19 C39.4624339,19 37,21.4624339 37,24.5 C37,27.5375661 39.4624339,30 42.5,30 Z"/>
+  </g>
+</svg>

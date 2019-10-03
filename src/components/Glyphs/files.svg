@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>files</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="files" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M33.8,19 L34,19.21 L34,27 C34,28.0543618 34.8158778,28.9181651 35.8507377,28.9945143 L36,29 L43,29 L43,48 C43,49.6568542 41.6568542,51 40,51 L23,51 C21.3431458,51 20,49.6568542 20,48 L20,22 C20,20.3431458 21.3431458,19 23,19 L33.8,19 Z M42.585,28.166 L34.75,28.1666667 L34.75,19.992 L42.585,28.166 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M43,28 L43,49 C43,50.1045695 42.1045695,51 41,51 L22,51 C20.8954305,51 20,50.1045695 20,49 L20,21 C20,19.8954305 20.8954305,19 22,19 L34,19 L34,19 L34,26 C34,27.1045695 34.8954305,28 36,28 L43,28 L43,28 L34,19 M25,14 L36,14 L48,26 L48,44" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="files" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M34,19 L43,28 L43,49 C43,50.1045695 42.1045695,51 41,51 L22,51 C20.8954305,51 20,50.1045695 20,49 L20,22 C20,20.3431458 21.3431458,19 23,19 L34,19 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M43,28 L43,49 C43,50.1045695 42.1045695,51 41,51 L22,51 C20.8954305,51 20,50.1045695 20,49 L20,21 C20,19.8954305 20.8954305,19 22,19 L34,19 L34,19 L34,26 C34,27.1045695 34.8954305,28 36,28 L43,28 L43,28 L34,19 M25,13 L36.1715729,13 C36.7020059,13 37.2107137,13.2107137 37.5857864,13.5857864 L47.4142136,23.4142136 C47.7892863,23.7892863 48,24.2979941 48,24.8284271 L48,44 L48,44"/>
+  </g>
 </svg>

@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>triangle-up</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="triangle-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" points="16 42 32 18 48 42"></polygon>
-        <polygon id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" points="16 42 32 18 48 42"></polygon>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="triangle-up" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <polygon id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" points="16 42 32 18 48 42"/>
+    <polygon id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="16 42 32 18 48 42"/>
+  </g>
 </svg>

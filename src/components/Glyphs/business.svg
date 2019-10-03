@@ -1,0 +1,6 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="business" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M50,19 L53,28 L50,28 L50,45 L29,45 L29,33 L21,33 L21,45 L16,45 L16,28 L13,28 L16,19 L50,19 Z M45,33 L34,33 L34,39 L45,39 L45,33 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M50,19 L53,28 L50,28 L50,45 L29,45 L29,33 L21,33 L21,45 L16,45 L16,28 L13,28 L16,19 L50,19 Z M45,33 L34,33 L34,39 L45,39 L45,33 Z M16,28 L50,28"/>
+  </g>
+</svg>

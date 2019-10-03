@@ -1,0 +1,9 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="calendar-plus" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16,32.5 C16,29.0555556 16,24.8888889 16,18 C16,16.8954305 16.8954305,16 18,16 L46,16 C47.1045695,16 48,16.8954305 48,18 L48,46 C48,47.1045695 47.1045695,48 46,48 C39.5555556,48 35.7222222,48 32.5,48 M24,29.5 L26,27 L26,33 M33,27 L40,27 L35.3333333,37 M40,14 L40,18 M24,14 L24,18"/>
+    <g id="badge-plus" fill-rule="nonzero">
+      <circle id="fill" cx="22" cy="43" r="11" fill="#007AFF" fill-opacity="0.184058129"/>
+      <path id="border" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22,36 L22,50 M29,43 L15,43"/>
+    </g>
+  </g>
+</svg>

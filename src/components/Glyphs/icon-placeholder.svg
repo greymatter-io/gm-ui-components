@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>icon-placeholder</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="icon-placeholder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M32,48 C40.836556,48 48,40.836556 48,32 C48,23.163444 40.836556,16 32,16 C23.163444,16 16,23.163444 16,32 C16,40.836556 23.163444,48 32,48 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M32,48 C40.836556,48 48,40.836556 48,32 C48,23.163444 40.836556,16 32,16 C23.163444,16 16,23.163444 16,32 C16,40.836556 23.163444,48 32,48 Z M32,42 L32,40 M32,37 C32,37 32,36.6666667 32,36 C32,35 32,34 34,33 C36,32 38,31 38,28 C38,25 36,22 32,22 C28,22 26,25 26,28" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="icon-placeholder" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M32,50 C41.9411255,50 50,41.9411255 50,32 C50,22.0588745 41.9411255,14 32,14 C22.0588745,14 14,22.0588745 14,32 C14,41.9411255 22.0588745,50 32,50 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32,50 C41.9411255,50 50,41.9411255 50,32 C50,22.0588745 41.9411255,14 32,14 C22.0588745,14 14,22.0588745 14,32 C14,41.9411255 22.0588745,50 32,50 Z M32,44 L32,41.7 M32,38.25 C32,38.25 32,37.8666667 32,37.1 C32,35.95 32,34.8 34.3333333,33.65 C36.6666667,32.5 39,31.35 39,27.9 C39,24.45 36.6666667,21 32,21 C27.3333333,21 25,24.45 25,27.9"/>
+  </g>
 </svg>

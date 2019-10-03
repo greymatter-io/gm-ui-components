@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>cycle</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="cycle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M48,32 C48,40.836556 40.836556,48 32,48 C23.163444,48 16,40.836556 16,32 C16,23.163444 23.163444,16 32,16 L36,16 M31,10 L37,16 L31,22" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="cycle" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M50,32 C50,41.9411255 41.9411255,50 32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 L33.5,14 M28,8 L34,14 L28,20"/>
+  </g>
 </svg>
