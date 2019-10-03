@@ -5,7 +5,6 @@ export { default as Button } from "./Button";
 export { default as ButtonGroup } from "./ButtonGroup";
 export { default as Checkbox } from "./Checkbox";
 export { default as Collapse } from "./Collapse";
-export { default as Entity } from "./Entity";
 export { default as ErrorCard } from "./ErrorCard";
 export { default as Icon } from "./Icon";
 export { default as InputField } from "./InputField";
