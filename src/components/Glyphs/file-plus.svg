@@ -1,9 +1,9 @@
 <svg width="64px" height="64px" viewBox="0 0 64 64">
   <g id="file-plus" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
     <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16,34 C16,29.3333333 16,22.3333333 16,13 C16,11.8954305 16.8954305,11 18,11 L36,11 L36,21 C36,22.1045695 36.8954305,23 38,23 L48,23 L48,51 C48,52.1045695 47.1045695,53 46,53 C37.5555556,53 31.2222222,53 27,53 M36,11 L48,23"/>
-    <g id="badge-x" fill-rule="nonzero">
+    <g id="badge-plus" fill-rule="nonzero">
       <circle id="fill" cx="22" cy="43" r="11" fill="#007AFF" fill-opacity="0.184058129"/>
-      <path id="border" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M27,48 L17,38 M27,38 L17,48"/>
+      <path id="border" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22,36 L22,50 M29,43 L15,43"/>
     </g>
   </g>
 </svg>
