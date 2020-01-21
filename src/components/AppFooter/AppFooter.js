@@ -11,8 +11,7 @@ import Link from "./components/Link";
 import { IconTwitter, IconGitHub, IconLinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
 
-import LongLogoImg from "./assets/decipher-logo-rgb-left.js";
-
+import LongLogoImg from "./assets/greymatter-logo.js";
 /**
  * Stateless functional React component that renders company branding and social media footer content
  * @returns JSX.Element
