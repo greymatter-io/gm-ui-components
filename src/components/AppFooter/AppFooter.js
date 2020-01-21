@@ -97,8 +97,10 @@ AppFooter.propTypes = {
   useExternalLinks: PropTypes.bool
 };
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 AppFooter.defaultProps = {
-  copyrightText: "TM and \u00A9 2019 Decipher Technology Studios",
+  copyrightText: `TM and \u00A9 ${CURRENT_YEAR} Decipher Technology Studios`,
   useExternalLinks: true,
   theme: keen
 };
