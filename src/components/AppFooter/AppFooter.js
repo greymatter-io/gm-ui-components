@@ -27,7 +27,7 @@ function AppFooter({
 }) {
   const logoProps = useExternalLinks
     ? {
-        href: "http://deciphernow.com",
+        href: "http://greymatter.io",
         rel: "noopener noreferrer",
         target: "_blank"
       }
