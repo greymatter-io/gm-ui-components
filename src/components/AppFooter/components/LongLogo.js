@@ -3,19 +3,26 @@ import { spacingScale } from "../../../style/styleFunctions";
 import { keen } from "style/theme";
 
 const LongLogo = styled.a`
-  padding: 0 ${spacingScale(1)};
-  color: ${({theme}) => theme.COLOR_CONTENT_MUTED};
+  padding: ${spacingScale(0.75)} ${spacingScale(1)};
+  color: ${({ theme }) => theme.COLOR_CONTENT_MUTED};
   flex: 0 1 auto;
   transition: all 0.2s ease;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 
   &:hover {
-    color: ${({theme}) => theme.COLOR_CONTENT_CONTRAST};
+    color: ${({ theme }) => theme.COLOR_CONTENT_CONTRAST};
   }
 
   svg {
-    max-width: 142px; /* Magic number that optimizes for preferable antialiasing */
+    max-width: 7em;
     height: auto;
     width: 100%;
+  }
+
+  @media all and (min-width: 800px) {
+    flex-direction: row;
   }
 `;
 

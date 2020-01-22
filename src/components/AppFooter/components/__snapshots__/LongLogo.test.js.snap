@@ -2,13 +2,24 @@
 
 exports[`LongLogo should render 1`] = `
 .c0 {
-  padding: 0  calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: calc(var(--SPACING_BASE) * 0.75 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   color: hsla(0,0%,0%,0.6);
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c0:hover {
@@ -16,9 +27,17 @@ exports[`LongLogo should render 1`] = `
 }
 
 .c0 svg {
-  max-width: 142px;
+  max-width: 7em;
   height: auto;
   width: 100%;
+}
+
+@media all and (min-width:800px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 <a
