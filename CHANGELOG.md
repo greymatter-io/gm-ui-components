@@ -1,3 +1,53 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.2.0...v1.3.0) (2020-01-22)
+
+### Removed components
+
+- IconCopyToWorkspace
+
+### Added components
+
+- Status
+- ToggleSwitch
+- IconGlobe
+- IconCloudUp
+- IconColumnToggle
+- IconEditLines
+- IconDash
+- IconEar
+- IconFileTypeAudio
+- IconFileTypeImage
+- IconFileTypeVideo
+- IconFolderOpen
+- IconSelection
+- IconSort09
+- IconSort90
+- IconSortAZ
+- IconSortZA
+- IconSortAscending
+- IconToggleInspector
+- IconToggleNavigation
+
+### Bug Fixes
+
+* hide delimiter prop ([#530](https://github.com/DecipherNow/gm-ui-components/issues/530)) ([b902d41](https://github.com/DecipherNow/gm-ui-components/commit/b902d41))
+* remove explicit disabled prop from tabwrap ([#537](https://github.com/DecipherNow/gm-ui-components/issues/537)) ([4d8453d](https://github.com/DecipherNow/gm-ui-components/commit/4d8453dc56ba8e9200bb8b191aec129c61d6f77b))
+* remove title prop and title element from icons ([#525](https://github.com/DecipherNow/gm-ui-components/issues/525)) ([a63a72c](https://github.com/DecipherNow/gm-ui-components/commit/a63a72cf81e464fa8529dd70ee8a2bf9dcd49fd6))
+* remove defaultChecked prop from Checkbox component ([#520](https://github.com/DecipherNow/gm-ui-components/issues/520)) ([e9eb338](https://github.com/DecipherNow/gm-ui-components/commit/e9eb33870d49459e95d617f4f93b14f3b5f70093))
+* fix all instances of improperly-written HSLA color values in theme.js ([#521](https://github.com/DecipherNow/gm-ui-components/issues/521)) ([6b1da7e](https://github.com/DecipherNow/gm-ui-components/commit/6b1da7e5b3abf94cfe5284ec17306d0c699188da))
+* replace footer logo with Grey Matter logo ([#556](https://github.com/DecipherNow/gm-ui-components/issues/556)) ([ba906bb](https://github.com/DecipherNow/gm-ui-components/commit/ba906bb4c3c8e1214957dfd58480ceb5dcd4f3ac))
+* dynamically generate copyright year in AppFooter ([#557](https://github.com/DecipherNow/gm-ui-components/issues/557)) ([ba906bb](https://github.com/DecipherNow/gm-ui-components/commit/bec8c5e60d0919612627a07bc85eae8bfb9dbdfc))
+* update footer website url ([#557](https://github.com/DecipherNow/gm-ui-components/issues/557)) ([ab26c94](https://github.com/DecipherNow/gm-ui-components/commit/ab26c94404f0a0a73203a1ea6411e1cfa6d35845))
+
+### Features
+
+* add and update icons ([857fe0b](https://github.com/DecipherNow/gm-ui-components/commit/857fe0be3153171921ad852172f99722d3bd23b7))
+* add globe icon ([#526](https://github.com/DecipherNow/gm-ui-components/issues/526)) ([7c7e694](https://github.com/DecipherNow/gm-ui-components/commit/7c7e6949a4696535dd1b9506ec3f7bab389d02af))
+* add new `<Status />` component ([cae759f](https://github.com/DecipherNow/gm-ui-components/commit/cae759f3f8e58f59cb45bad35bd714191a73fa70))
+* add new `<ToggleSwitch />` component ([307b6a6](https://github.com/DecipherNow/gm-ui-components/commit/307b6a678b576ec5542fb3451f85ca2f9d296333))
+* add tab focus styles and polish ([c6aeb31](https://github.com/DecipherNow/gm-ui-components/commit/c6aeb318d105e74918991761db48bb8a35714867))
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.1.0...v1.2.0) (2019-07-19)
 
