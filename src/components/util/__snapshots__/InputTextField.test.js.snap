@@ -13,7 +13,7 @@ exports[`InputTextField matches snapshot 1`] = `
   color: hsla(0,0%,0%,0.85);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 14px;
-  background: #FDFDFE;
+  background: hsl(0,0%,97%);
   box-sizing: border-box;
   line-height: 1.5;
   -webkit-transition: all 0.15s ease;
@@ -36,7 +36,7 @@ exports[`InputTextField matches snapshot 1`] = `
 }
 
 .c0:disabled {
-  background-color: #FDFDFE;
+  background-color: hsl(0,0%,97%);
 }
 
 .c0:valid:required {
