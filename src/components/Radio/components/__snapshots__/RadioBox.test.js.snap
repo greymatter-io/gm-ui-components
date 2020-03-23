@@ -42,7 +42,7 @@ exports[`RadioBox should render 1`] = `
 }
 
 .c0:disabled {
-  background-color: hsl(0,0%,97%);
+  background-color: #FDFDFE;
 }
 
 .c0:valid:required {
@@ -111,13 +111,13 @@ exports[`RadioBox should render 1`] = `
 }
 
 .c0:disabled {
-  border-color: hsl(0,0%,94%);
+  border-color: #FBFBFC;
   opacity: 0.5;
   box-shadow: none;
 }
 
 .c0:disabled:checked {
-  background-color: hsl(0,0%,94%);
+  background-color: #FBFBFC;
 }
 
 .c0:after {
