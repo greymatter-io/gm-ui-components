@@ -64,6 +64,7 @@ const glyphNames = [
   "IconColumnToggle",
   "IconCommentBubble",
   "IconConfiguration",
+  "IconContrast",
   "IconCPU",
   "IconCurrencyDollar",
   "IconCycle",

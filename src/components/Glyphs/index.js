@@ -54,6 +54,7 @@ import IconCog from "./cog.svg";
 import IconColumnToggle from "./toggle-column-right.svg";
 import IconCommentBubble from "./comment-2.svg";
 import IconConfiguration from "./configuration.svg";
+import IconContrast from "./contrast.svg";
 import IconCPU from "./cpu.svg";
 import IconCurrencyDollar from "./currency-dollar.svg";
 import IconCycle from "./cycle.svg";
@@ -243,6 +244,7 @@ export {
   IconColumnToggle,
   IconCommentBubble,
   IconConfiguration,
+  IconContrast,
   IconCPU,
   IconCurrencyDollar,
   IconCycle,
