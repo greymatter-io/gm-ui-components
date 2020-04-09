@@ -1,3 +1,65 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.3.0...v1.4.0) (2020-04-09)
+
+### Added components
+
+- IconArt
+- IconAt
+- IconBuilding
+- IconBusiness
+- IconCalendarEvent
+- IconCalendarEventPin
+- IconCalendarPlus
+- IconCheckcircleIndeterminate
+- IconCity
+- IconCitySkyline
+- IconColumnToggle
+- IconCommentBubble
+- IconContrast
+- IconCurrencyDollar
+- IconEquipment
+- IconFilePlus
+- IconFlag
+- IconFolderOpen
+- IconGroupCircle
+- IconHashtag
+- IconHoliday
+- IconHome
+- IconLanguage
+- IconLink
+- IconMagnifierCheck
+- IconMagnifierX
+- IconMailbox
+- IconMaterial
+- IconMeasurement
+- IconNumber
+- IconOrdinal
+- IconPathwayProcess
+- IconPercent
+- IconPhone
+- IconPlace
+- IconScroll
+- IconSocialMention
+- IconStop
+- IconStreetAddress
+- IconTag
+- IconTimeDigital
+- IconTimeHourglass
+- IconToggleColumnLeft
+- IconToggleColumnRight
+- IconToggleInspector
+- IconToggleNavigation
+- IconTranslation
+- IconWeapons
+- IconWww
+
+### Features
+
+* add more icons ([#555](https://github.com/DecipherNow/gm-ui-components/issues/555)) ([8d4f1e0](https://github.com/DecipherNow/gm-ui-components/commit/8d4f1e0))
+* improve theme background colors ([#565](https://github.com/DecipherNow/gm-ui-components/issues/565)) ([311537d](https://github.com/DecipherNow/gm-ui-components/commit/311537d))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.2.0...v1.3.0) (2020-01-22)
 
