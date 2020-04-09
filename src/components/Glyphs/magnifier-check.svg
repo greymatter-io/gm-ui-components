@@ -1,0 +1,9 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="magnifier-check" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <g id="badge-check" fill-rule="nonzero">
+      <circle id="fill" cx="22" cy="43" r="11" fill="#007AFF" fill-opacity="0.184058129"/>
+      <polyline id="border" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="28 38 20 48 16 44"/>
+    </g>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M39.6060238,39.6060238 L50,50 M33.7326574,43.2381177 C39.6978458,41.2563137 44,35.6305678 44,29 C44,20.7157288 37.2842712,14 29,14 C20.7157288,14 14,20.7157288 14,29 C14,30.6258715 14.2586765,32.1913259 14.7371191,33.6574528"/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="percent" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19,48 L44,16 L19,48 Z M24.5,28 C27.5375661,28 30,25.0898509 30,21.5 C30,17.9101491 27.5375661,15 24.5,15 C21.4624339,15 19,17.9101491 19,21.5 C19,25.0898509 21.4624339,28 24.5,28 Z M38.5,49 C41.5375661,49 44,46.0898509 44,42.5 C44,38.9101491 41.5375661,36 38.5,36 C35.4624339,36 33,38.9101491 33,42.5 C33,46.0898509 35.4624339,49 38.5,49 Z"/>
+  </g>
+</svg>

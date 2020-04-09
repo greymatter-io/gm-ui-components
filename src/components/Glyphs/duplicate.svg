@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>duplicate</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="duplicate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M46,16 L24,16 C22.8954305,16 22,16.8954305 22,18 L22,40 C22,41.1045695 22.8954305,42 24,42 L46,42 C47.1045695,42 48,41.1045695 48,40 L48,18 C48,16.8954305 47.1045695,16 46,16 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M42,42.4285714 L42,46 C42,47.1045695 41.1045695,48 40,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,24 C16,22.8954305 16.8954305,22 18,22 L21.5714286,22 L21.5714286,22 M24,16 L46,16 C47.1045695,16 48,16.8954305 48,18 L48,40 C48,41.1045695 47.1045695,42 46,42 L24,42 C22.8954305,42 22,41.1045695 22,40 L22,18 C22,16.8954305 22.8954305,16 24,16 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="duplicate" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M46,16 L24,16 C22.8954305,16 22,16.8954305 22,18 L22,40 C22,41.1045695 22.8954305,42 24,42 L46,42 C47.1045695,42 48,41.1045695 48,40 L48,18 C48,16.8954305 47.1045695,16 46,16 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M42,42.4285714 L42,46 C42,47.1045695 41.1045695,48 40,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,24 C16,22.8954305 16.8954305,22 18,22 L21.5714286,22 L21.5714286,22 M24,16 L46,16 C47.1045695,16 48,16.8954305 48,18 L48,40 C48,41.1045695 47.1045695,42 46,42 L24,42 C22.8954305,42 22,41.1045695 22,40 L22,18 C22,16.8954305 22.8954305,16 24,16 Z"/>
+  </g>
 </svg>

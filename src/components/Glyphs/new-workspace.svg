@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>new-workspace</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="new-workspace" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M44,52 L20,52 C15.581722,52 12,48.418278 12,44 L12,20 C12,15.581722 15.581722,12 20,12 L44,12 C48.418278,12 52,15.581722 52,20 L52,44 C52,48.418278 48.418278,52 44,52 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M44,52 L20,52 C15.581722,52 12,48.418278 12,44 L12,20 C12,15.581722 15.581722,12 20,12 L44,12 C48.418278,12 52,15.581722 52,20 L52,44 C52,48.418278 48.418278,52 44,52 Z M32,19.5 L32,44.5 M44,32 L20,32" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="new-workspace" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M44,52 L20,52 C15.581722,52 12,48.418278 12,44 L12,20 C12,15.581722 15.581722,12 20,12 L44,12 C48.418278,12 52,15.581722 52,20 L52,44 C52,48.418278 48.418278,52 44,52 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M44,52 L20,52 C15.581722,52 12,48.418278 12,44 L12,20 C12,15.581722 15.581722,12 20,12 L44,12 C48.418278,12 52,15.581722 52,20 L52,44 C52,48.418278 48.418278,52 44,52 Z M32,19.5 L32,44.5 M44,32 L20,32"/>
+  </g>
 </svg>

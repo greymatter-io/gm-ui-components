@@ -1,0 +1,6 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="comment-bubble" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M40,16 C46.627417,16 52,21.372583 52,28 C52,34.627417 46.627417,40 40,40 L31.429,40 L20,48 L20.0000801,39.3172055 C15.3392688,37.6698824 12,33.2249052 12,28 C12,21.372583 17.372583,16 24,16 L40,16 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M40,16 C46.627417,16 52,21.372583 52,28 C52,34.627417 46.627417,40 40,40 L31.429,40 L20,48 L20.0000801,39.3172055 C15.3392688,37.6698824 12,33.2249052 12,28 C12,21.372583 17.372583,16 24,16 C32,16 32,16 40,16 Z"/>
+  </g>
+</svg>

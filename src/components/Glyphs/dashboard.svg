@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>dashboard</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M17,15 L47,15 C48.1045695,15 49,15.8954305 49,17 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,17 C15,15.8954305 15.8954305,15 17,15 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M17,15 L47,15 C48.1045695,15 49,15.8954305 49,17 L49,47 C49,48.1045695 48.1045695,49 47,49 L17,49 C15.8954305,49 15,48.1045695 15,47 L15,17 C15,15.8954305 15.8954305,15 17,15 Z M15,39 L23.5,43 L32,36 L40.5,40 L49,24 M23,22.5 L34,22.5 M23,27.5 L30,27.5" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="dashboard" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M18,16 L46,16 C47.1045695,16 48,16.8954305 48,18 L48,46 C48,47.1045695 47.1045695,48 46,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,18 C16,16.8954305 16.8954305,16 18,16 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18,16 L46,16 C47.1045695,16 48,16.8954305 48,18 L48,46 C48,47.1045695 47.1045695,48 46,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,18 C16,16.8954305 16.8954305,16 18,16 Z M16,39 L22.7990503,42.3995251 C23.5254276,42.7627138 24.3993082,42.6506053 25.0104867,42.1158241 L30.9895133,36.8841759 C31.6006918,36.3493947 32.4745724,36.2372862 33.2009497,36.6004749 L38.2111456,39.1055728 C39.1991026,39.5995513 40.4004487,39.1991026 40.8944272,38.2111456 L48,24 L48,24 M23,22.5 L34,22.5 M23,27.5 L30,27.5"/>
+  </g>
 </svg>

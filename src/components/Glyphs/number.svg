@@ -1,0 +1,5 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="number" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23,41 L41,23 L23,41 Z M41,41 L23,23 L41,41 Z M44,48 L20,48 L44,48 Z"/>
+  </g>
+</svg>

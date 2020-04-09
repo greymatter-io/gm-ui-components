@@ -1,0 +1,6 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="folder-open-2" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M13,18 C13,16.8954305 13.8954305,16 15,16 L29,16 L32,19 L49,19 C50.1045695,19 51,19.8954305 51,21 L51,28 L54,28 L51,44 L13,44 L10,28 L13,28 L13,18 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.8470541,43.1842885 L10,28 L10,28 L54,28 L51.1529459,43.1842885 C51.0642635,43.6572614 50.6512888,44 50.1700737,44 L13.8299263,44 C13.3487112,44 12.9357365,43.6572614 12.8470541,43.1842885 Z M13,28 L13,18 C13,16.8954305 13.8954305,16 15,16 L29,16 L32,19 L49,19 C50.1045695,19 51,19.8954305 51,21 L51,28"/>
+  </g>
+</svg>

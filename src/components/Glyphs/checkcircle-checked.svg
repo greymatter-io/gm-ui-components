@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>checkcircle-checked</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="checkcircle-checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M32,14 C41.9411255,14 50,22.0588745 50,32 C50,41.9411255 41.9411255,50 32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M32,14 C41.9411255,14 50,22.0588745 50,32 C50,41.9411255 41.9411255,50 32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-        <polyline id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" points="23 33.3333333 28.5 39 42 25"></polyline>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="checkcircle-checked" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M32,14 C41.9411255,14 50,22.0588745 50,32 C50,41.9411255 41.9411255,50 32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32,14 C41.9411255,14 50,22.0588745 50,32 C50,41.9411255 41.9411255,50 32,50 C22.0588745,50 14,41.9411255 14,32 C14,22.0588745 22.0588745,14 32,14 Z M23,33.3333333 L28.5,39 L42,25"/>
+  </g>
 </svg>

@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>sort-az</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="sort-az" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M20,28 L24,19 L28,28 M26,25 L22,25 M20,36 L28,36 L20,45 L28,45 M40,18 L40,46 L40,18 Z M34,40 L40,46 L46,40" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="sort-az" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20,28 L24,19 L28,28 M26,25 L22,25 M20,36 L28,36 L20,45 L28,45 M40,18 L40,46 L40,18 Z M34,40 L40,46 L46,40"/>
+  </g>
 </svg>

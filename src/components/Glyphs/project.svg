@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>project</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M37,38 L37,46 C37,47.1045695 36.1045695,48 35,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,22 C16,20.8954305 16.8954305,20 18,20 L26,20 L26,20 M45,20.4 L45,38 C45,39.1045695 44.1045695,40 43,40 L26,40 C24.8954305,40 24,39.1045695 24,38 L24,14 C24,12.8954305 24.8954305,12 26,12 L36.6,12 L36.6,12 L45,20.4 L36.6,12" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M37,40 L37,46 C37,47.1045695 36.1045695,48 35,48 L18,48 C16.8954305,48 16,47.1045695 16,46 L16,22 C16,20.8954305 16.8954305,20 18,20 L24,20 L24,20 M45,20.4 L45,38 C45,39.1045695 44.1045695,40 43,40 L26,40 C24.8954305,40 24,39.1045695 24,38 L24,14 C24,12.8954305 24.8954305,12 26,12 L36.6,12 L36.6,12 L36.6,18.4 C36.6,19.5045695 37.4954305,20.4 38.6,20.4 L45,20.4 L45,20.4 L36.6,12" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="project" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M37,41 L37,49 C37,50.1045695 36.1045695,51 35,51 L18,51 C16.8954305,51 16,50.1045695 16,49 L16,26 C16,24.8954305 16.8954305,24 18,24 L24,24 L24,24 M45,21.4 L45,39 C45,40.1045695 44.1045695,41 43,41 L26,41 C24.8954305,41 24,40.1045695 24,39 L24,15 C24,13.8954305 24.8954305,13 26,13 L36.6,13 L36.6,13 L45,21.4 L36.6,13"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M37,41 L37,49 C37,50.1045695 36.1045695,51 35,51 L18,51 C16.8954305,51 16,50.1045695 16,49 L16,26 C16,24.8954305 16.8954305,24 18,24 L24,24 L24,24 M45,21.4 L45,39 C45,40.1045695 44.1045695,41 43,41 L26,41 C24.8954305,41 24,40.1045695 24,39 L24,15 C24,13.8954305 24.8954305,13 26,13 L36.6,13 L36.6,13 L36.6,19.4 C36.6,20.5045695 37.4954305,21.4 38.6,21.4 L45,21.4 L45,21.4 L36.6,13"/>
+  </g>
 </svg>

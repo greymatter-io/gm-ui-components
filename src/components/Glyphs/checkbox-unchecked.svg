@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>checkbox-unchecked</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="checkbox-unchecked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M19,15 L45,15 C47.209139,15 49,16.790861 49,19 L49,45 C49,47.209139 47.209139,49 45,49 L19,49 C16.790861,49 15,47.209139 15,45 L15,19 C15,16.790861 16.790861,15 19,15 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M19,15 L45,15 C47.209139,15 49,16.790861 49,19 L49,45 C49,47.209139 47.209139,49 45,49 L19,49 C16.790861,49 15,47.209139 15,45 L15,19 C15,16.790861 16.790861,15 19,15 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="checkbox-unchecked" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M16,12 L48,12 C50.209139,12 52,13.790861 52,16 L52,48 C52,50.209139 50.209139,52 48,52 L16,52 C13.790861,52 12,50.209139 12,48 L12,16 C12,13.790861 13.790861,12 16,12 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16,12 L48,12 C50.209139,12 52,13.790861 52,16 L52,48 C52,50.209139 50.209139,52 48,52 L16,52 C13.790861,52 12,50.209139 12,48 L12,16 C12,13.790861 13.790861,12 16,12 Z"/>
+  </g>
 </svg>
