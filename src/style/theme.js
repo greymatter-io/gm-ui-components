@@ -8,7 +8,7 @@ export const keen = {
 
   COLOR_BACKGROUND_DEFAULT: "hsl(0, 0%, 100%)",
   COLOR_BACKGROUND_TWO: "#FDFDFE",
-  COLOR_BACKGROUND_THREE: "#FBFBFC",
+  COLOR_BACKGROUND_THREE: "hsl(0, 0%, 94%)",
 
   COLOR_CONTENT_DEFAULT: "hsla(0, 0%, 0%, 0.85)",
   COLOR_CONTENT_CONTRAST: "hsl(0, 0%, 0%)",

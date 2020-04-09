@@ -111,13 +111,13 @@ exports[`CheckboxBox should render 1`] = `
 }
 
 .c0:disabled {
-  border-color: #FBFBFC;
+  border-color: hsl(0,0%,94%);
   opacity: 0.5;
   box-shadow: none;
 }
 
 .c0:disabled:checked {
-  background-color: #FBFBFC;
+  background-color: hsl(0,0%,94%);
 }
 
 .c0:after {

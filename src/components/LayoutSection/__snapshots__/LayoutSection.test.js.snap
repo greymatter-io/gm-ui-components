@@ -5,7 +5,7 @@ exports[`LayoutSection matches snapshot 1`] = `
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0, 0%, 100%)",
-      "COLOR_BACKGROUND_THREE": "#FBFBFC",
+      "COLOR_BACKGROUND_THREE": "hsl(0, 0%, 94%)",
       "COLOR_BACKGROUND_TWO": "#FDFDFE",
       "COLOR_BRAND_PRIMARY": "#00b42b",
       "COLOR_BRAND_SECONDARY": "#00b42b",
@@ -80,7 +80,7 @@ exports[`LayoutSection matches snapshot 1`] = `
       theme={
         Object {
           "COLOR_BACKGROUND_DEFAULT": "hsl(0, 0%, 100%)",
-          "COLOR_BACKGROUND_THREE": "#FBFBFC",
+          "COLOR_BACKGROUND_THREE": "hsl(0, 0%, 94%)",
           "COLOR_BACKGROUND_TWO": "#FDFDFE",
           "COLOR_BRAND_PRIMARY": "#00b42b",
           "COLOR_BRAND_SECONDARY": "#00b42b",

@@ -41,7 +41,7 @@ exports[`Wrap matches snapshot 1`] = `
 
 .c0:focus,
 .c0:hover {
-  background: #FBFBFC;
+  background: hsl(0,0%,94%);
 }
 
 <div
