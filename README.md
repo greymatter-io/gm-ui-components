@@ -26,7 +26,6 @@
   <a href="#usage">Usage</a> •
   <a href="#documentation">Documentation</a> •
   <a href="#compatability">Compatability</a> •
-  <a href="#related-projects">Related Projects</a> •
   <a href="#license">License</a>
 </p>
 
@@ -62,6 +61,7 @@ render(<App />, document.querySelector('#app'));
 ```
 
 ## Theming
+
 The component library provides 2 themes out of the box - `keen` and `keenDark`. All components use the `keen` theme by default. 
 
 To use `keenDark` or a custom theme, wrap your app in a `ThemeProvider` and pass the theme object:
@@ -200,7 +200,6 @@ render(
 
 You can find more information on style variables [here](https://deciphernow.github.io/gm-ui-components/?selectedKind=%20Overview%7CStyles&selectedStory=Styles&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Fthemes%2Fpanel).
 
-
 # Documentation
 
 See the [Grey Matter UI Components storybook](https://deciphernow.github.io/gm-ui-components) for more usage examples and documentation.
@@ -208,12 +207,6 @@ See the [Grey Matter UI Components storybook](https://deciphernow.github.io/gm-u
 # Compatability
 
 * [Full list of browser support matrix](http://browserl.ist/?q=last+2+Chrome+versions%2C+last+2+ChromeAndroid+versions%2C+last+2+Safari+versions%2C+last+2+iOS+versions%2C+last+2+Firefox+versions%2C+last+2+Edge+versions)
-
-# Related Projects
-
-* [Grey Matter Fabric JVM SDK](https://github.com/DecipherNow/gm-fabric-jvm)
-* [Grey Matter Fabric Go SDK](https://github.com/DecipherNow/gm-fabric-go)
-* [Grey Matter Fabric Passthrough Agent](https://github.com/DecipherNow/gm-fabric-jvmagent)
 
 # License
 

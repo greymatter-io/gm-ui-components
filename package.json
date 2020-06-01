@@ -12,6 +12,11 @@
   "files": [
     "lib"
   ],
+  "keywords": [
+    "react",
+    "gm-ui-components",
+    "Grey Matter"
+  ],
   "peerDependencies": {
     "react": "^16.8",
     "react-dom": "^16.8",
