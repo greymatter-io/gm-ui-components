@@ -77,7 +77,11 @@ Status.defaultProps = {
 
 Status.propTypes = {
   detail: PropTypes.string,
-  graphic: PropTypes.oneOfType([PropTypes.node, PropTypes.func, PropTypes.element]),
+  graphic: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.func,
+    PropTypes.element
+  ]),
   isBlock: PropTypes.bool,
   message: PropTypes.string,
   statusType: PropTypes.oneOf([
@@ -92,7 +96,6 @@ Status.propTypes = {
 
 Status.displayName = "Status";
 
-
 function GraphicStatusIndeterminate({ isBlock }) {
   return <LoadingSpinner size={isBlock ? spacingScale(5) : spacingScale(2)} />;
 }
@@ -100,7 +103,6 @@ function GraphicStatusIndeterminate({ isBlock }) {
 GraphicStatusIndeterminate.propTypes = {
   isBlock: PropTypes.bool
 };
-
 
 function GraphicStatusSuccess() {
   return <IconCheckcircleChecked fillOpacity="0" borderWidth="2px" />;
@@ -117,4 +119,3 @@ function GraphicStatusError() {
 function GraphicStatusWarning() {
   return <IconAlertTriangle fillOpacity="0" borderWidth="2px" />;
 }
-

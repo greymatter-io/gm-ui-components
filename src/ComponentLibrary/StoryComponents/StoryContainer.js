@@ -28,7 +28,7 @@ const Wrap = styled.div`
         z-index: 10;
         position: relative;
         padding: 2rem;
-        background-color: ${({theme}) => theme.COLOR_BACKGROUND_DEFAULT};
+        background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
         margin-left: auto;
         margin-right: auto;

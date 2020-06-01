@@ -31,6 +31,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "deploy-storybook": "storybook-to-ghpages",
+    "format": "prettier --write 'src/**/*.{js,jsx}'",
     "generate-component": "node scripts/generateComponent",
     "junit-merge": "junit-merge",
     "lint-js": "node ./node_modules/eslint/bin/eslint 'src'",
@@ -95,6 +96,7 @@
     "jest-junit": "^6.3.0",
     "jest-styled-components": "^7.0.0-2",
     "junit-merge": "^2.0.0",
+    "lint-staged": "^8.1.5",
     "npm-check": "^5.9.0",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
@@ -204,5 +206,17 @@
     "last 2 iOS versions",
     "last 2 Firefox versions",
     "last 2 Edge versions"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.(js|json)": [
+      "npm run format --",
+      "git add"
+    ]
+  }
 }

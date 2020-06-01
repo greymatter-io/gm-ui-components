@@ -8,14 +8,14 @@ import { keen } from "style/theme";
 
 // Use all of TableCell's styles, but with a <th> element instead of <td>
 const TableHeaderCell = styled(TableCell.withComponent("th"))`
-  font-weight: ${({theme}) => theme.FONT_WEIGHT_DEFAULT};
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT_DEFAULT};
   text-align: left;
   cursor: pointer;
   border-top: none;
   ${props =>
     props.isSorting &&
     css`
-      font-weight: ${({theme}) => theme.FONT_WEIGHT_SEMIBOLD};
+      font-weight: ${({ theme }) => theme.FONT_WEIGHT_SEMIBOLD};
     `};
 `;
 
