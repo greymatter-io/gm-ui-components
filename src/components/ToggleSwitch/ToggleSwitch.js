@@ -32,7 +32,8 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
   &,
   &:focus,
   &:focus:active {
-    border-color: ${( { color, theme }) => color ? color : theme.COLOR_INTENT_HIGHLIGHT}; 
+    border-color: ${({ color, theme }) =>
+      color ? color : theme.COLOR_INTENT_HIGHLIGHT}; 
   }
 
 
@@ -67,7 +68,8 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
   }
 
   &:checked {
-    background: ${({ color, theme }) => color ? color : theme.COLOR_INTENT_HIGHLIGHT};
+    background: ${({ color, theme }) =>
+      color ? color : theme.COLOR_INTENT_HIGHLIGHT};
     &:before {
       left: 37%;
       right: 0;
@@ -81,7 +83,10 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
       content: "${props => props.innerLabelOn}";
       left: 0;
       right: auto;
-      color: ${({ color, theme }) => color ? readableColor(color) : readableColor(theme.COLOR_INTENT_HIGHLIGHT)};
+      color: ${({ color, theme }) =>
+        color
+          ? readableColor(color)
+          : readableColor(theme.COLOR_INTENT_HIGHLIGHT)};
     }
   }
 

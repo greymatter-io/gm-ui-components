@@ -65,13 +65,13 @@ stories
     "Controlled",
     () => {
       return (
-          <Checkbox
-            label="Controlled checkbox"
-            checked={boolean("checked")}
-            onChange={e => {
-              alert("checked: " + e.target.checked);
-            }}
-          />
+        <Checkbox
+          label="Controlled checkbox"
+          checked={boolean("checked")}
+          onChange={e => {
+            alert("checked: " + e.target.checked);
+          }}
+        />
       );
     },
     {

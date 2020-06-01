@@ -13,12 +13,12 @@ const Introduction = styled.div`
   height: 100vh;
   margin: auto;
   max-width: 30em;
-  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   line-height: 1.5;
 
   h1 {
-    font-family: ${({theme}) => theme.FONT_STACK_BRAND};
-    color: ${({theme}) => theme.COLOR_INTENT_HIGHLIGHT};
+    font-family: ${({ theme }) => theme.FONT_STACK_BRAND};
+    color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
     font-weight: 400;
     margin: 0;
   }
@@ -29,13 +29,13 @@ const Introduction = styled.div`
 
   hr {
     margin: ${spacingScale(1)} 0;
-    box-shadow: 0 1px 0 0 ${({theme}) => theme.COLOR_KEYLINE_DEFAULT};
+    box-shadow: 0 1px 0 0 ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
     height: 1px;
     border: 0;
   }
 
   a {
-    color: ${({theme}) => theme.COLOR_INTENT_HIGHLIGHT};
+    color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
     text-decoration: underline;
     padding: 0 0.25em;
 
