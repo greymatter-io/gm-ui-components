@@ -1,3 +1,9 @@
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/DecipherNow/gm-ui-components/compare/v1.4.0...v1.4.1) (2020-06-01)
+
+* Added automatic formatting of JS files on git commit
+* Removed outdated related projects from README
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/DecipherNow/gm-ui-components/compare/v1.3.0...v1.4.0) (2020-04-09)
 
