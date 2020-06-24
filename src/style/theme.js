@@ -50,7 +50,7 @@ export const keen = {
   CORNER_RADIUS_MAX: "90000px",
 
   // TYPOGRAPHY
-  FONT_STACK_DEFAULT: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  FONT_STACK_DEFAULT: `Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
   FONT_STACK_BRAND: `"Metropolis", "Helvetica Neue", Arial, sans-serif`,
   FONT_STACK_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
