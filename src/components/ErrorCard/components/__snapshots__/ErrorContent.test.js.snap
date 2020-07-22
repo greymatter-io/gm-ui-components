@@ -22,10 +22,10 @@ exports[`ErrorContent matches snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: calc(var(--SPACING_BASE) * 4 * 1px);
-  padding: calc(var(--SPACING_BASE) * 8 * 1px)  calc(var(--SPACING_BASE) * 4 * 1px);
-  padding-top: calc(var(--SPACING_BASE) * 8 * 1px);
-  padding-bottom: calc(var(--SPACING_BASE) * 8 * 1px);
+  margin: 4rem;
+  padding: 8rem 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 <div

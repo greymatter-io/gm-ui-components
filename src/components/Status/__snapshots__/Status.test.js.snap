@@ -106,12 +106,9 @@ Object {
   "componentStyle": ComponentStyle {
     "componentId": "Wrap-vog3nk-0",
     "isStatic": false,
-    "lastClassName": "drLxix",
+    "lastClassName": "jeiufT",
     "rules": Array [
-      "display:grid;grid-template-areas:\\"graphic body\\";align-items:center;justify-content:center;padding:",
-      "
-    calc(var(--SPACING_BASE) * 2 * 1px)",
-      ";",
+      "display:grid;grid-template-areas:\\"graphic body\\";align-items:center;justify-content:center;padding:2rem;",
       [Function],
       " ",
       [Function],

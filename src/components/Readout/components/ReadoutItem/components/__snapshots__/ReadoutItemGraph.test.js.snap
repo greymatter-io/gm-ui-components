@@ -10,8 +10,8 @@ exports[`ReadoutItemGraph matches snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: calc(var(--SPACING_BASE) * 4 * 1px);
-  max-width: calc(var(--SPACING_BASE) * 50 * 1px);
+  height: 4rem;
+  max-width: 50rem;
   width: 100%;
 }
 

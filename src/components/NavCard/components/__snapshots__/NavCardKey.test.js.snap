@@ -3,7 +3,7 @@
 exports[`NavCardKey matches snapshot 1`] = `
 .c0 {
   color: hsla(0,0%,0%,0.6);
-  padding-right: calc(var(--SPACING_BASE) * 1 * 1px);
+  padding-right: 1rem;
   display: inline-block;
 }
 

@@ -12,8 +12,8 @@ exports[`Copyright should match snapshot 1`] = `
   transition: opacity 0.2s ease;
   cursor: default;
   border-top: 1px solid hsla(0,0%,0%,0.08);
-  margin-top: calc(var(--SPACING_BASE) * 1 * 1px);
-  padding: calc(var(--SPACING_BASE) * 1 * 1px);
+  margin-top: 1rem;
+  padding: 1rem;
   text-transform: uppercase;
   -webkit-order: 3;
   -ms-flex-order: 3;

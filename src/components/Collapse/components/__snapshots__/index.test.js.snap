@@ -39,7 +39,7 @@ exports[`Collapse components Header should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: calc(var(--SPACING_BASE) * 1 * 1px) 0;
+  padding: 1rem 0;
 }
 
 <div
@@ -49,7 +49,7 @@ exports[`Collapse components Header should match snapshot 1`] = `
 
 exports[`Collapse components Opener should match snapshot 1`] = `
 .c0 {
-  margin-right: calc(var(--SPACING_BASE) * 0.75 * 1px);
+  margin-right: 0.75rem;
 }
 
 .c0:focus,

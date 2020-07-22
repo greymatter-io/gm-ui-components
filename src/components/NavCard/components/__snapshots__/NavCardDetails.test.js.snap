@@ -3,13 +3,13 @@
 exports[`NavCardDetails matches snapshot 1`] = `
 .c0 {
   color: #000;
-  margin: 0  calc(var(--SPACING_BASE) * 0.5 * 1px)  calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 4.5 * 1px);
+  margin: 0 0.5rem 0.25rem 4.5rem;
   font-size: 12px;
   line-height: 1.2;
 }
 
 .c0:last-child {
-  margin-bottom: calc(var(--SPACING_BASE) * 1 * 1px);
+  margin-bottom: 1rem;
 }
 
 <dl

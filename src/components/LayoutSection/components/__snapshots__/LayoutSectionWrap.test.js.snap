@@ -18,11 +18,11 @@ exports[`LayoutSectionWrap matches snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: calc(var(--SPACING_BASE) * 1 * 1px);
+  padding: 1rem;
 }
 
 .c0:not(:first-of-type) {
-  margin-top: calc(var(--SPACING_BASE) * 4 * 1px);
+  margin-top: 4rem;
 }
 
 <section

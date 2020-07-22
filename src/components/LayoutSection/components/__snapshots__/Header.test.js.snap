@@ -13,11 +13,11 @@ exports[`Header matches snapshot 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 0  calc(var(--SPACING_BASE) * 1 * 1px) 0;
+  padding: 0 1rem 0;
   width: 100%;
-  -webkit-flex: 0 0  calc(var(--SPACING_BASE) * 3 * 1px);
-  -ms-flex: 0 0  calc(var(--SPACING_BASE) * 3 * 1px);
-  flex: 0 0  calc(var(--SPACING_BASE) * 3 * 1px);
+  -webkit-flex: 0 0 3rem;
+  -ms-flex: 0 0 3rem;
+  flex: 0 0 3rem;
 }
 
 <header

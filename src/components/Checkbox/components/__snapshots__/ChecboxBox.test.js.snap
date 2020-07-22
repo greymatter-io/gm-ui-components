@@ -4,8 +4,8 @@ exports[`CheckboxBox should render 1`] = `
 .c0 {
   border: 1px solid #00b42b;
   color: #00b42b;
-  font-size: calc(var(--SPACING_BASE) * 2 * 1px);
-  margin: calc(var(--SPACING_BASE) * 0.25 * 1px);
+  font-size: 2rem;
+  margin: 0.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -30,7 +30,7 @@ exports[`CheckboxBox should render 1`] = `
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 1.5px;
 }
 
 .c0:invalid {
