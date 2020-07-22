@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import { keen } from "style/theme";
-import { spacingScale } from "style/styleFunctions";
 
 export const BreadcrumbsWrap = styled.ol`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
@@ -40,7 +39,7 @@ export const Breadcrumb = styled.li`
     display: inline-block;
     visibility: ${({ hideDelimiter }) => (hideDelimiter ? "hidden" : "auto")};
     color: ${({ theme }) => theme.COLOR_CONTENT_NONESSENTIAL};
-    padding: 0 ${spacingScale(0.5)};
+    padding: 0 0.5rem;
     content: ">";
     transform: scaleX(0.5);
   }

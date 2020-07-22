@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { keen } from "style/theme";
-import { spacingScale } from "style/styleFunctions";
 
 const Link = styled.a`
   color: ${({ theme }) => theme.COLOR_CONTENT_MUTED};
-  padding: 0 ${spacingScale(0.5)};
+  padding: 0 0.5rem;
 
   &:hover {
     color: ${({ theme }) => theme.COLOR_CONTENT_CONTRAST};

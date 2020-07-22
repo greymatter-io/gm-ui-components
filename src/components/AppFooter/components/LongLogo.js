@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { spacingScale } from "../../../style/styleFunctions";
 import { keen } from "style/theme";
 
 const LongLogo = styled.a`
-  padding: ${spacingScale(0.75)} ${spacingScale(1)};
+  padding: 0.75rem 1rem;
   color: ${({ theme }) => theme.COLOR_CONTENT_MUTED};
   flex: 0 1 auto;
   transition: all 0.2s ease;

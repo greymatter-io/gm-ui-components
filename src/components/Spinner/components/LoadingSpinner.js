@@ -2,14 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
 
 import spinGradient from "./spinGradient";
 import { keen } from "style/theme";
 
 export const SpinnerSVG = styled.svg`
   animation: ${spinGradient} 16s ease infinite;
-  margin: ${spacingScale(1)};
+  margin: 1rem;
   color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
   overflow: visible;
   ${props =>
@@ -25,13 +24,13 @@ export const SpinnerSVG = styled.svg`
 SpinnerSVG.displayName = "SpinnerSVG";
 
 export const verticalStyles = css`
-  height: ${spacingScale(6)};
-  width: ${spacingScale(6)};
+  height: 6rem;
+  width: 6rem;
 `;
 
 export const horizontalStyles = css`
-  height: ${spacingScale(2)};
-  width: ${spacingScale(2)};
+  height: 2rem;
+  width: 2rem;
 `;
 
 export function LoadingSpinner(props) {

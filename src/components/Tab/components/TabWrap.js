@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const activeStyles = css`
@@ -24,7 +23,7 @@ const TabWrap = styled.a`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
-  padding: ${spacingScale(0.5)} ${spacingScale(2)};
+  padding: 0.5rem 2rem;
   flex: 0 0 auto;
   cursor: pointer;
   display: flex;

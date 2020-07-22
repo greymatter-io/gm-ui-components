@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import { storiesOf } from "@storybook/react";
 
-import { spacingScale } from "style/styleFunctions";
 
 const Introduction = styled.div`
   padding: 4vh 4vw;
@@ -28,7 +27,7 @@ const Introduction = styled.div`
   }
 
   hr {
-    margin: ${spacingScale(1)} 0;
+    margin: 1rem 0;
     box-shadow: 0 1px 0 0 ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
     height: 1px;
     border: 0;

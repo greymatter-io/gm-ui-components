@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 import { keen } from "style/theme";
-import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`
   ${props => getPosition(props.labelPosition)};
@@ -29,7 +28,7 @@ function getPosition(position) {
         > input,
         > textarea,
         > select {
-          margin-left: ${spacingScale(0.5)};
+          margin-left: 0.5rem;
         }
       `;
     case "right":
@@ -40,7 +39,7 @@ function getPosition(position) {
         > input,
         > textarea,
         > select {
-          margin-right: ${spacingScale(0.5)};
+          margin-right: 0.5rem;
         }
       `;
     case "bottom":
@@ -49,7 +48,7 @@ function getPosition(position) {
         > input,
         > textarea,
         > select {
-          margin-bottom: ${spacingScale(0.5)};
+          margin-bottom: 0.5rem;
         }
       `;
     default:
@@ -59,7 +58,7 @@ function getPosition(position) {
         > input,
         > textarea,
         > select {
-          margin-top: ${spacingScale(0.5)};
+          margin-top: 0.5rem;
         }
       `;
   }

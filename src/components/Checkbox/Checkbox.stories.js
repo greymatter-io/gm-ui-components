@@ -5,7 +5,6 @@ import { storiesOf } from "@storybook/react";
 import { text, select, boolean } from "@storybook/addon-knobs";
 
 import Checkbox from "./Checkbox";
-import { spacingScale } from "style/styleFunctions";
 
 const stories = storiesOf("Components|Checkbox", module);
 
@@ -13,7 +12,7 @@ const CheckboxGrid = styled.div`
   display: grid;
   grid-auto-flow: columns;
   justify-content: stretch;
-  grid-gap: ${spacingScale(1)};
+  grid-gap: 1rem;
 `;
 
 stories

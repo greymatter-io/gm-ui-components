@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { text, boolean, select } from "@storybook/addon-knobs";
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 
 import Status from "./Status";
 import { IconLock } from "components/Glyphs";
@@ -16,8 +15,8 @@ const CustomGraphic = styled.div`
   background-color: currentColor;
   box-shadow: inset 0 2px 12px -4px rgba(255, 255, 255, 0.75),
     0 8px 12px -8px currentColor;
-  padding: ${spacingScale(0.5)};
-  margin: ${spacingScale(1)};
+  padding: 0.5rem;
+  margin: 1rem;
 `;
 
 const CustomGraphicElement = (
@@ -30,7 +29,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   background: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
-  padding: ${spacingScale(4)};
+  padding: 4rem;
 
   > * {
     margin: 0.5rem;

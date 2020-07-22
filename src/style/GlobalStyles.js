@@ -449,11 +449,18 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
-    font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
+    /* Set the html font size to the spacing base so we can use Rem units for spacing. */
+    font-size ${({ theme }) => theme.SPACING_BASE + "px"};
     letter-spacing: ${({ theme }) => theme.LETTER_SPACING_DEFAULT};
+    line-height: ${({ theme }) => theme.LINE_HEIGHT_DEFAULT};
     line-height: ${({ theme }) => theme.LINE_HEIGHT_DEFAULT};
     font-weight: ${({ theme }) => theme.FONT_WEIGHT_DEFAULT};
     color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
+  }
+
+  body {
+    /* Define the actual base font size, so text is the right size. */
+    font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   }
 
   a {

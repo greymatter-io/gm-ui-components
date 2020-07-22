@@ -8,6 +8,7 @@ import { darken, saturate, desaturate, parseToHsl, lighten } from "polished";
  * @returns {string} A string in the format "10px"
  */
 export function spacingScale(factor) {
+  console.warn("spacingScale will be decprecated in a future version of gm-ui-components. Use Rem CSS units instead.")
   return `
     calc(var(--SPACING_BASE) * ${factor} * 1px)`;
 }

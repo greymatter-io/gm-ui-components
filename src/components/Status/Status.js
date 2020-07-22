@@ -6,7 +6,6 @@ import {
   IconInfo,
   IconCheckcircleChecked
 } from "components/Glyphs";
-import { spacingScale } from "style/styleFunctions";
 import { Body } from "./components/Body";
 import { Wrap } from "./components/Wrap";
 import { Detail } from "./components/Detail";
@@ -97,7 +96,7 @@ Status.propTypes = {
 Status.displayName = "Status";
 
 function GraphicStatusIndeterminate({ isBlock }) {
-  return <LoadingSpinner size={isBlock ? spacingScale(5) : spacingScale(2)} />;
+  return <LoadingSpinner size={isBlock ? '5rem' : '2rem'} />;
 }
 
 GraphicStatusIndeterminate.propTypes = {

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const LayoutSectionWrap = styled.section`
@@ -10,10 +9,10 @@ const LayoutSectionWrap = styled.section`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  padding: ${spacingScale(1)};
+  padding: 1rem;
 
   &:not(:first-of-type) {
-    margin-top: ${spacingScale(4)};
+    margin-top: 4rem;
   }
 `;
 

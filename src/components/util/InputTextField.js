@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
 import { formInteractionStyles } from "./InputFieldInteractionStyles";
 import { keen } from "style/theme";
 
@@ -8,12 +7,12 @@ const BORDER_WIDTH = 1;
 
 export const InputTextField = styled.input`
   ${formInteractionStyles};
-  min-height: calc(${spacingScale(3)} - ${BORDER_WIDTH * 2}px);
+  min-height: calc(3rem - ${BORDER_WIDTH * 2}px);
   border-radius: calc(
     ${({ theme }) => theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
   );
   border: ${BORDER_WIDTH}px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
-  padding: ${spacingScale(0.5)} ${spacingScale(1)};
+  padding: 0.5rem 1rem;
   appearance: none;
   margin: 0;
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};

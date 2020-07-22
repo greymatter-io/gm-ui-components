@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { mix, readableColor } from "polished";
 
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const color = css`
@@ -17,7 +16,7 @@ const color = css`
 
 const NavCardTitle = styled.div`
   ${color};
-  margin: ${spacingScale(0.5)} ${spacingScale(1)} ${spacingScale(0)};
+  margin: 0.5rem 1rem 0;
   white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
@@ -30,7 +29,7 @@ const NavCardTitle = styled.div`
   h1 {
     font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
     font-weight: ${({ theme }) => theme.FONT_WEIGHT_SEMIBOLD};
-    padding-left: ${spacingScale(0.5)};
+    padding-left: 0.5rem;
     flex: 1 1 100%;
     line-height: 1;
     margin: 0;

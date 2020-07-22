@@ -3,14 +3,13 @@ import PropTypes from "prop-types";
 import styled, { ThemeProvider } from "styled-components";
 
 import { keenDark } from "style/theme";
-import { spacingScale } from "style/styleFunctions";
 
 const TAB_WIDTH_BASE = "1%";
 
 const NavCardGroupWrap = styled.nav`
   display: flex;
   flex-flow: row wrap;
-  padding: ${spacingScale(0.25)};
+  padding: 0.25rem;
   position: relative;
   background: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   /* Since the end-user will wrap NavCard with a link element,
@@ -20,7 +19,7 @@ const NavCardGroupWrap = styled.nav`
     display: flex;
     position: relative;
     align-items: stretch;
-    min-height: ${spacingScale(8)};
+    min-height: 8rem;
     position: relative;
     text-decoration: none;
 

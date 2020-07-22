@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import styled, { ThemeProvider } from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { keen, keenDark } from "style/theme";
-import { spacingScale } from "style/styleFunctions";
 
 import { IconCog, IconChevronRight } from "components/Glyphs";
 import Breadcrumbs from "components/Breadcrumbs";
@@ -43,15 +42,15 @@ const StyledFieldset2 = styled(Fieldset)`
 
 const Space = styled.span`
   display: inline-block;
-  height: ${spacingScale(1)};
-  width: ${spacingScale(1)};
+  height: 1rem;
+  width: 1rem;
 `;
 
 const DocumentationLink = styled.h2`
   text-align: center;
   border-bottom: 1px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
-  padding-bottom: ${spacingScale(2)};
-  margin-bottom: ${spacingScale(2)};
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 
   a {
     text-decoration: none;

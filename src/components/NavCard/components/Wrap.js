@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const TAB_WIDTH_BASE = "1%";
@@ -13,14 +12,14 @@ const Wrap = styled.div`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   flex: 1 1 ${TAB_WIDTH_BASE};
   border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_SM};
-  min-height: ${spacingScale(8)};
+  min-height: 8rem;
   position: relative;
   transition: all 0.15s ease;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-height: ${spacingScale(10)};
-  margin: ${spacingScale(0.25)};
+  min-height: 10rem;
+  margin: 0.25rem;
 
   &:after {
     content: "";

@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 
 const Span = styled.span`
-  margin-left: ${spacingScale(2)};
+  margin-left: 2rem;
 `;
 
 export default Span;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const ReadoutDisplay = styled.div`
@@ -12,7 +11,7 @@ const ReadoutDisplay = styled.div`
   align-items: stretch;
   justify-content: center;
   border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_DEFAULT};
-  margin: 0 ${spacingScale(1)} ${spacingScale(1)} 0;
+  margin: 0 1rem 1rem 0;
   position: relative;
   overflow: hidden;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};

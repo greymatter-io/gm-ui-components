@@ -3,10 +3,9 @@ import { transparentize } from "polished";
 
 import { keen } from "style/theme";
 
-import { spacingScale } from "style/styleFunctions";
 
 export const Opener = styled.div`
-  margin-right: ${spacingScale(0.75)};
+  margin-right: 0.75rem;
   &:focus,
   &:active,
   &:focus:active {

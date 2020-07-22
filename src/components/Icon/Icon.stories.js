@@ -5,7 +5,6 @@ import { number, color, text, boolean, object } from "@storybook/addon-knobs";
 
 import Icon from ".";
 import * as Glyphs from "../Glyphs";
-import { spacingScale } from "style/styleFunctions";
 
 const glyphNames = [
   "IconActivity",
@@ -207,7 +206,7 @@ const GalleryIconList = styled.ul`
   font-size: ${props => props.fontSize};
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
-  grid-gap: ${spacingScale(2)};
+  grid-gap: 2rem;
 `;
 
 const GalleryIconDemo = styled.li`

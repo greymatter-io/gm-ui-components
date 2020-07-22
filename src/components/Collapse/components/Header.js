@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
 
 export const Header = styled.div`
   cursor: pointer;
@@ -8,5 +7,5 @@ export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: ${spacingScale(1)} 0;
+  padding: 1rem 0;
 `;

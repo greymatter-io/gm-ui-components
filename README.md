@@ -136,11 +136,11 @@ To extend the theme, you must pass a theme object that follows our schema. Here 
   ZINDEX_POPOVER: "1060",
   ZINDEX_TOOLTIP: "1070",
 
-  CORNER_RADIUS_SHARP: "2px", // spacingScale(0.5)
-  CORNER_RADIUS_INPUT: "4px", // spacingScale(1)
-  CORNER_RADIUS_CARD_SM: "4px",
-  CORNER_RADIUS_CARD_DEFAULT: "6px",
-  CORNER_RADIUS_CARD_LG: "8px",
+  CORNER_RADIUS_SHARP: "0.25rem",
+  CORNER_RADIUS_INPUT: "0.5rem",
+  CORNER_RADIUS_CARD_SM: "0.5rem",
+  CORNER_RADIUS_CARD_DEFAULT: "0.75rem",
+  CORNER_RADIUS_CARD_LG: "1rem",
   CORNER_RADIUS_MAX: "90000px",
 
   // TYPOGRAPHY

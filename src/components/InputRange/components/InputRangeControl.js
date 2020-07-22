@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
 import { mix, transparentize } from "polished";
 import {
   formInteractionStyles,
@@ -10,7 +9,7 @@ import { keen } from "style/theme";
 
 const BORDER_WIDTH = 2;
 const THUMB_SIZE = "1em";
-const TRACK_HEIGHT = spacingScale(0.25);
+const TRACK_HEIGHT = '0.25rem';
 
 const ACTIVE_SHADOW = ({ theme }) =>
   css`inset 0 0 0 1px ${theme.brandColor || theme.COLOR_INTENT_HIGHLIGHT}`;

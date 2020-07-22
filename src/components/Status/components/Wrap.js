@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 import { Graphic } from "./Graphic";
 
 export const Wrap = styled.div`
@@ -7,7 +6,7 @@ export const Wrap = styled.div`
   grid-template-areas: "graphic body";
   align-items: center;
   justify-content: center;
-  padding: ${spacingScale(2)};
+  padding: 2rem;
 
   ${props =>
     props.isBlock &&
@@ -19,8 +18,8 @@ export const Wrap = styled.div`
 
       ${Graphic} {
         grid-area: graphic;
-        font-size: ${spacingScale(5)};
-        margin: ${spacingScale(-0.5)};
+        font-size: 5rem;
+        margin: -0.5rem;
       }
     `}
 
@@ -28,8 +27,8 @@ export const Wrap = styled.div`
     !props.isBlock &&
     css`
       ${Graphic} {
-        font-size: ${spacingScale(2.5)};
-        margin: ${spacingScale(0.25)};
+        font-size: 2.5rem;
+        margin: 0.25rem;
       }
     `}
 `;

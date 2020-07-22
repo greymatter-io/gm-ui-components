@@ -1,4 +1,3 @@
-import { spacingScale } from "style/styleFunctions";
 import { css } from "styled-components";
 
 /**
@@ -13,34 +12,34 @@ function generateButtonSize(size) {
     case "xs":
       return css`
         font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_XS};
-        padding: ${spacingScale(0.25)} ${spacingScale(1)};
+        padding: 0.25rem 1rem;
         border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
         text-transform: uppercase;
       `;
     case "sm":
       return css`
         font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
-        padding: ${spacingScale(0.25)} ${spacingScale(1)};
+        padding: 0.25rem 1rem;
         border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
         text-transform: uppercase;
       `;
     case "lg":
       return css`
         font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
-        padding: ${spacingScale(0.25)} ${spacingScale(1.25)};
+        padding: 0.25rem 1.25rem;
         border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
       `;
     case "xl":
       return css`
         font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_XL};
-        padding: ${spacingScale(0.25)} ${spacingScale(1.25)};
+        padding: 0.25rem 1.25rem;
         border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
       `;
     default:
     case "normal":
       return css`
         font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
-        padding: ${spacingScale(0.25)} ${spacingScale(1)};
+        padding: 0.25rem 1rem;
         border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
       `;
   }

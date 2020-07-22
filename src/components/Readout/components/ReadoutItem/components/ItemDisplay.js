@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
-
 const ItemDisplay = styled.div`
   position: relative;
-  padding: ${spacingScale(1.5)};
+  padding: 1.5rem;
 `;
 
 export default ItemDisplay;

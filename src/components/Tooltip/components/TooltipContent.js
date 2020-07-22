@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const TooltipContent = styled.div`
@@ -9,15 +8,15 @@ const TooltipContent = styled.div`
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   z-index: ${({ theme }) => theme.ZINDEX_TOOLTIP};
-  padding: ${spacingScale(1)};
-  width: ${spacingScale(20)};
+  padding: 1rem;
+  width: 20rem;
   opacity: 0;
   position: absolute;
   text-align: left;
   transition: opacity 0.5s, visibility 0.5s;
   white-space: normal;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
-  margin: ${spacingScale(1)};
+  margin: 1rem;
   word-wrap: break-word;
 
   ${props =>

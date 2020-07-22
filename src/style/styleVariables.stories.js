@@ -4,14 +4,12 @@ import styled, { css } from "styled-components";
 import copy from "copy-to-clipboard";
 import { storiesOf } from "@storybook/react";
 
-import { spacingScale } from "./styleFunctions";
-
 const stories = storiesOf("Overview|Design Tokens", module);
 
 const DemoCanvas = styled.div`
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
-  padding: ${spacingScale(2)};
+  padding: 2rem;
 `;
 
 const DemoItem = styled.button.attrs(props => ({
@@ -24,8 +22,8 @@ const DemoItem = styled.button.attrs(props => ({
   box-sizing: border-box;
   background: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_SM};
-  margin: ${spacingScale(1)};
-  width: ${spacingScale(16)};
+  margin: 1rem;
+  width: 16rem;
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
   border: 1px solid ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
@@ -49,8 +47,8 @@ const DemoItem = styled.button.attrs(props => ({
 
   &:after {
     content: '${props => props.demoVarName}';
-    margin-top: ${spacingScale(1)};
-    margin-bottom: ${spacingScale(1)};
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     transition: all .5s ease;
     font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
     font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
@@ -95,8 +93,8 @@ const DemoSection = styled.div.attrs(props => ({
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   flex: 0 0 100%;
   line-height: 1.5;
-  margin-top: calc(${spacingScale(2)});
-  padding-top: ${spacingScale(4)};
+  margin-top: calc(2rem);
+  padding-top: 4rem;
   box-sizing: border-box;
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
@@ -105,21 +103,21 @@ const DemoSection = styled.div.attrs(props => ({
     content: '${props => props.name}';
     display: block;
     flex: 0 0 100%;
-    margin: ${spacingScale(1)};
+    margin: 1rem;
     user-select: text;
     font-size: ${({ theme }) => theme.FONT_SIZE_PAGE_TITLE};
     font-weight: ${({ theme }) => theme.FONT_WEIGHT_SEMIBOLD};
   }
 
   &:not(:first-of-type) {
-    margin-top: calc(${spacingScale(8)});
-    padding-top: ${spacingScale(4)};
+    margin-top: calc(8rem);
+    padding-top: 4rem;
   }
 `;
 
 const DemoSubSection = styled(DemoSection)`
   margin: 0;
-  margin-top: ${spacingScale(4)};
+  margin-top: 4rem;
   padding-top: 0;
   flex: 0 0 100%;
 
@@ -131,7 +129,7 @@ const DemoSubSection = styled(DemoSection)`
   }
 
   &:not(:first-of-type) {
-    margin-top: ${spacingScale(4)};
+    margin-top: 4rem;
     padding-top: 0;
     border: 0;
   }
@@ -153,30 +151,30 @@ const ColorDemo = styled(DemoItem)`
       ${({ theme }) => theme.COLOR_BACKGROUND_THREE} 66%,
       ${({ theme }) => theme.COLOR_BACKGROUND_THREE} 100%
     );
-  height: ${spacingScale(11)};
-  width: ${spacingScale(26)};
+  height: 11rem;
+  width: 26rem;
   justify-content: space-between;
   align-items: stretch;
 
   &:before {
     content: "";
-    height: ${spacingScale(4)};
-    margin: ${spacingScale(1.5)} 0 0;
+    height: 4rem;
+    margin: 1.5rem 0 0;
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_SHARP};
     background-color: ${props => props.demoVar};
     position: absolute;
     top: 0;
-    left: ${spacingScale(1.5)};
-    right: ${spacingScale(1.5)};
+    left: 1.5rem;
+    right: 1.5rem;
   }
 
   &:after {
     opacity: ${({ theme }) => theme.OPACITY_LIGHT};
-    margin: auto ${spacingScale(0.25)} ${spacingScale(1)};
+    margin: auto 0.25rem 1rem;
     position: absolute;
     bottom: 0;
-    left: ${spacingScale(0.25)};
-    right: ${spacingScale(0.25)};
+    left: 0.25rem;
+    right: 0.25rem;
   }
 `;
 
@@ -189,20 +187,20 @@ const ColorLineDemo = styled(ColorDemo)`
     border-top: 1px solid ${props => props.demoVar};
     background: transparent;
     height: 0;
-    margin: ${spacingScale(3.5)} ${spacingScale(1.5)} 0;
+    margin: 3.5rem 1.5rem 0;
   }
 `;
 
 const ColorTextDemo = styled(DemoItem)`
   align-items: stretch;
-  width: ${spacingScale(26)};
+  width: 26rem;
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
 
   &:before {
     content: "Grey Matter";
     font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_LG};
     color: ${props => props.demoVar};
-    margin: ${spacingScale(2)};
+    margin: 2rem;
   }
 `;
 
@@ -233,7 +231,7 @@ const ColorBackgroundDemoC = styled(ColorDemo)`
 
 const FontDemo = styled(DemoItem)`
   font-family: ${props => props.demoVar};
-  padding: ${spacingScale(1)} ${spacingScale(1)} 0;
+  padding: 1rem 1rem 0;
   flex: 1 1 100%;
   align-items: stretch;
   justify-content: flex-start;
@@ -245,7 +243,7 @@ const FontDemo = styled(DemoItem)`
   }
 
   &:after {
-    margin-bottom: ${spacingScale(1)};
+    margin-bottom: 1rem;
   }
 `;
 
@@ -275,29 +273,29 @@ Flexibly optimize your cloud, enhance customer digital experience, gain critical
 `;
 
 const RadiusDemo = styled(DemoItem)`
-  height: ${spacingScale(14)};
-  width: ${spacingScale(26)};
+  height: 14rem;
+  width: 26rem;
 
   &:before {
     content: "";
     border: 1px solid ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
     margin: auto auto 0;
     border-width: 1px 1px 0 0;
-    height: ${spacingScale(8)};
-    width: ${spacingScale(8)};
+    height: 8rem;
+    width: 8rem;
     border-top-right-radius: ${props => props.demoVar};
   }
 `;
 
 const OpacityDemo = styled(DemoItem)`
-  height: ${spacingScale(12)};
+  height: 12rem;
   align-items: stretch;
 
   &:before {
     content: "";
-    flex: 1 1 ${spacingScale(7)};
-    height: ${spacingScale(7)};
-    margin: ${spacingScale(1)} ${spacingScale(1)} 0;
+    flex: 1 1 7rem;
+    height: 7rem;
+    margin: 1rem 1rem 0;
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_SHARP};
     background: ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
     opacity: ${props => props.demoVar};
@@ -305,12 +303,12 @@ const OpacityDemo = styled(DemoItem)`
 `;
 
 const SpacingDemo = styled(DemoItem)`
-  height: ${spacingScale(7)};
+  height: 7rem;
 
   &:before {
     content: "";
-    height: ${spacingScale(0.5)};
-    margin: ${spacingScale(2)} auto ${spacingScale(0)};
+    height: 0.5rem;
+    margin: 2rem auto 0;
     border: 1px solid ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
     border-radius: 0 0 1.5px 1.5px;
     border-top: 0;
@@ -319,7 +317,7 @@ const SpacingDemo = styled(DemoItem)`
 `;
 
 const DemoDescription = styled.p`
-  margin: ${spacingScale(-0.5)} ${spacingScale(1)} ${spacingScale(1.5)};
+  margin: -0.5rem 1rem 1.5rem;
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   display: flex;
@@ -333,15 +331,15 @@ const DemoDescription = styled.p`
 
 const DemoHeading = styled.h1`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
-  margin: ${spacingScale(4)} ${spacingScale(1)} ${spacingScale(1)};
+  margin: 4rem 1rem 1rem;
 `;
 
 const DemoNavigation = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: stretch;
-  margin: ${spacingScale(5)} 0 ${spacingScale(2)};
-  height: ${spacingScale(5)};
+  margin: 5rem 0 2rem;
+  height: 5rem;
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   box-shadow: 0 1px 0 0 ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
   z-index: ${({ theme }) => theme.ZINDEX_STICKY};
@@ -362,14 +360,14 @@ const DemoNavigationItem = styled.a.attrs(() => ({ target: "_self" }))`
 
   &:before {
     content: "";
-    margin-right: ${spacingScale(1)};
+    margin-right: 1rem;
     color: ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
   }
 
   &[href="#Layout"] {
     &:before {
-      width: ${spacingScale(2)};
-      height: ${spacingScale(2)};
+      width: 2rem;
+      height: 2rem;
       border-radius: 1.5px;
       border: 1px solid ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
       box-shadow: 0 0 0 2px, inset 0 0 0 1px;
@@ -380,16 +378,16 @@ const DemoNavigationItem = styled.a.attrs(() => ({ target: "_self" }))`
     &:before {
       content: "";
       border-radius: ${({ theme }) => theme.CORNER_RADIUS_SHARP};
-      height: ${spacingScale(2)};
-      width: ${spacingScale(2)};
+      height: 2rem;
+      width: 2rem;
       position: relative;
-      right: ${spacingScale(0.5)};
-      bottom: ${spacingScale(0.5)};
+      right: 0.5rem;
+      bottom: 0.5rem;
       background-color: ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
-      box-shadow: ${spacingScale(0.5)} ${spacingScale(0.5)} 0
+      box-shadow: 0.5rem 0.5rem 0
           ${({ theme }) =>
             transparentize(1 - theme.OPACITY_LIGHT, theme.COLOR_BRAND_PRIMARY)},
-        ${spacingScale(1)} ${spacingScale(1)} 0
+        1rem 1rem 0
           ${({ theme }) =>
             transparentize(
               1 - theme.OPACITY_LIGHTER,
@@ -438,45 +436,45 @@ stories.add(
       <DemoSection name="Layout">
         <DemoSubSection name="Spacing">
           <DemoDescription>
-            Instead of using pixel values for object sizing attributes, use a
-            multiple of the theme's spacing size. This will help to maintain
-            overall consistency in layout and component sizing.
+            Use CSS Rem units to take advantage of the theme's spacing scale.
+            Prefer using Rem units in all cases, except "the minimum space above zero" (1px),
+            and space which is dependent on font sizing (use Em units).
           </DemoDescription>
           <SpacingDemo
-            demoVar={spacingScale(0.25)}
-            demoVarName={"spacingScale(0.25)"}
+            demoVar={'0.25rem'}
+            demoVarName={'0.25rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(0.5)}
-            demoVarName={"spacingScale(0.5)"}
+            demoVar={'0.5rem'}
+            demoVarName={'0.5rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(1)}
-            demoVarName={"spacingScale(1)"}
+            demoVar={'1rem'}
+            demoVarName={'1rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(1.5)}
-            demoVarName={"spacingScale(1.5)"}
+            demoVar={'1.5rem'}
+            demoVarName={'1.5rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(2)}
-            demoVarName={"spacingScale(2)"}
+            demoVar={'2rem'}
+            demoVarName={'2rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(3)}
-            demoVarName={"spacingScale(3)"}
+            demoVar={'3rem'}
+            demoVarName={'3rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(4)}
-            demoVarName={"spacingScale(4)"}
+            demoVar={'4rem'}
+            demoVarName={'4rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(5)}
-            demoVarName={"spacingScale(5)"}
+            demoVar={'5rem'}
+            demoVarName={'5rem'}
           />
           <SpacingDemo
-            demoVar={spacingScale(6)}
-            demoVarName={"spacingScale(6)"}
+            demoVar={'6rem'}
+            demoVarName={'6rem'}
           />
         </DemoSubSection>
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const TabGroupWrap = styled.nav`
@@ -10,7 +9,7 @@ const TabGroupWrap = styled.nav`
   justify-content: center;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
-  min-height: ${spacingScale(4)};
+  min-height: 4rem;
 `;
 
 TabGroupWrap.defaultProps = {

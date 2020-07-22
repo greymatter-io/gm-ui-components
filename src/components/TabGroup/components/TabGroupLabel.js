@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const TabGroupLabel = styled.p`
-  padding: 0 ${spacingScale(1)};
+  padding: 0 1rem;
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   height: 100%;
   margin: auto 0;

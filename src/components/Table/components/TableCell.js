@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 
 const TableCell = styled.td`
-  padding: ${spacingScale(2)} ${spacingScale(2)} ${spacingScale(2)} 0;
+  padding: 2rem 2rem 2rem 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   :first-of-type {
-    padding-left: ${spacingScale(1.5)};
+    padding-left: 1.5rem;
   }
   &:not(:first-child) {
     text-align: right;

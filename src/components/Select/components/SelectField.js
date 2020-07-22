@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 import { formInteractionStyles } from "components/util/InputFieldInteractionStyles";
 import { keen } from "style/theme";
 
@@ -11,12 +10,12 @@ const CHEVRON_ICON_DEFAULT = ({ theme }) =>
 
 const SelectField = styled.select`
   ${formInteractionStyles};
-  height: calc(${spacingScale(4)} - ${BORDER_WIDTH * 2}px);
+  height: calc(4rem - ${BORDER_WIDTH * 2}px);
   border-radius: calc(
     ${({ theme }) => theme.CORNER_RADIUS_INPUT} + ${BORDER_WIDTH}px
   );
   border: ${BORDER_WIDTH}px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
-  padding: ${spacingScale(0.5)} ${spacingScale(1)};
+  padding: 0.5rem 1rem;
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};

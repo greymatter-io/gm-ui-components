@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 
 const Copyright = styled.p`
@@ -11,8 +10,8 @@ const Copyright = styled.p`
   transition: opacity 0.2s ease;
   cursor: default;
   border-top: 1px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
-  margin-top: ${spacingScale(1)};
-  padding: ${spacingScale(1)};
+  margin-top: 1rem;
+  padding: 1rem;
   text-transform: uppercase;
   order: 3;
   white-space: pre-wrap;

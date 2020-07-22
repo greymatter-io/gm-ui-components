@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { color, text, boolean, select } from "@storybook/addon-knobs";
 import styled from "styled-components";
-import { spacingScale } from "style/styleFunctions";
 import { keen } from "style/theme";
 import ToggleSwitch from "./ToggleSwitch";
 
@@ -19,8 +18,8 @@ const TypicalWrapper = styled.div`
   flex-direction: column;
 
   > * {
-    padding-top: ${spacingScale(1)};
-    padding-bottom: ${spacingScale(1)};
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-top: 1px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
   }
 `;
