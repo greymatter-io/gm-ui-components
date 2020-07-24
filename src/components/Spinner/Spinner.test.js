@@ -13,11 +13,11 @@ describe("Spinner", () => {
     const SpinnerSVG = aSpinner.find("LoadingSpinner").find("SpinnerSVG");
     expect(SpinnerSVG).toHaveStyleRule(
       "width",
-      "calc(var(--SPACING_BASE) * 6 * 1px)"
+      "6rem"
     );
     expect(SpinnerSVG).toHaveStyleRule(
       "height",
-      "calc(var(--SPACING_BASE) * 6 * 1px)"
+      "6rem"
     );
   });
 
@@ -26,11 +26,11 @@ describe("Spinner", () => {
     const SpinnerSVG = aSpinner.find("LoadingSpinner").find("SpinnerSVG");
     expect(SpinnerSVG).toHaveStyleRule(
       "width",
-      "calc(var(--SPACING_BASE) * 2 * 1px)"
+      "2rem"
     );
     expect(SpinnerSVG).toHaveStyleRule(
       "height",
-      "calc(var(--SPACING_BASE) * 2 * 1px)"
+      "2rem"
     );
   });
 });
