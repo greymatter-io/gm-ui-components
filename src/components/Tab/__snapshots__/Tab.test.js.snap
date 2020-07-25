@@ -2,7 +2,7 @@
 
 exports[`Tab matches snapshot 1`] = `
 .c0 {
-  font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 14px;
   color: hsla(0,0%,0%,0.85);
   padding: calc(var(--SPACING_BASE) * 0.5 * 1px)  calc(var(--SPACING_BASE) * 2 * 1px);

@@ -13,6 +13,8 @@ import StoryContainer from "ComponentLibrary/StoryComponents/StoryContainer";
 import { keen, keenDark } from "style/theme";
 import { transparentize } from "polished";
 
+require("typeface-inter");
+
 const req = require.context("../src/", true, /\.stories\.js$/);
 
 function loadStories() {
