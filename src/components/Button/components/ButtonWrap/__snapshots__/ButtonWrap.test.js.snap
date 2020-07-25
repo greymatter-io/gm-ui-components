@@ -34,7 +34,7 @@ exports[`ButtonWrap should match snapshot 1`] = `
   color: #000;
   font-size: 14px;
   padding: 0.25rem 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;

@@ -3,7 +3,7 @@
 exports[`InputTextField matches snapshot 1`] = `
 .c0 {
   min-height: calc(3rem - 2px);
-  border-radius: calc( 1rem + 1px );
+  border-radius: calc( 0.5rem + 1px );
   border: 1px solid hsla(0,0%,0%,0.08);
   padding: 0.5rem 1rem;
   -webkit-appearance: none;

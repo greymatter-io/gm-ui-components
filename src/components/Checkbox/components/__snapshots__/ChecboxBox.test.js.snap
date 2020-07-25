@@ -30,7 +30,7 @@ exports[`CheckboxBox should render 1`] = `
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
   box-sizing: border-box;
-  border-radius: 1.5px;
+  border-radius: 1px;
 }
 
 .c0:invalid {
