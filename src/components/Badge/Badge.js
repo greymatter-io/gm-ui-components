@@ -1,26 +1,25 @@
 import styled from "styled-components";
-import { readableColor } from "polished";
+import { readableColor, darken } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
 import { keen, keenDark } from "style/theme";
 
 const Badge = styled.span`
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
-  font-weight: 500;
+  font-weight: ${({ theme }) => theme.FONT_WEIGHT_SEMIBOLD};
   text-align: center;
   display: flex;
   align-items: center;
   line-height: 0.9;
   height: fit-content;
-  padding: ${spacingScale(0.15)} ${spacingScale(1)} ${spacingScale(0.15)}
-    ${spacingScale(0.5)};
+  padding: ${spacingScale(0.5)};
   background-color: ${props => props.color || props.theme.COLOR_BRAND_PRIMARY};
-  border-radius: ${({ theme }) => parseInt(theme.CORNER_RADIUS_CARD_SM, 10)}px;
+  border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_SM};
   color: ${props =>
     readableColor(
-      props.color || props.theme.COLOR_BACKGROUND_DEFAULT,
-      keen.COLOR_CONTENT_DEFAULT,
-      keenDark.COLOR_CONTENT_DEFAULT
+      darken(0.12, props.color || props.theme.COLOR_BACKGROUND_DEFAULT),
+      keen.COLOR_CONTENT_CONTRAST,
+      keenDark.COLOR_CONTENT_CONTRAST
     )};
   margin-right: ${spacingScale(0.5)};
   white-space: nowrap;
