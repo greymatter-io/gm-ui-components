@@ -1,3 +1,13 @@
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/DecipherNow/gm-ui-components/compare/v1.4.1...v1.4.2) (2020-08-31)
+
+
+### Features
+
+* added badge component ([#581](https://github.com/DecipherNow/gm-ui-components/issues/581)) ([498ae48](https://github.com/DecipherNow/gm-ui-components/commit/498ae48))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/DecipherNow/gm-ui-components/compare/v1.4.0...v1.4.1) (2020-06-01)
 
