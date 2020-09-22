@@ -18,6 +18,8 @@ Spinner.defaultProps = {
   theme: keen
 };
 
+Spinner.displayName = "Spinner";
+
 export default function Spinner({ message, orientation, ...props }) {
   return (
     <LoadingSpinnerWrap orientation={orientation}>

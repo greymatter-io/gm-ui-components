@@ -5,7 +5,7 @@ import TooltipContent from "./components/TooltipContent";
 import TooltipWrap from "./components/TooltipWrap";
 import { keen } from "style/theme";
 
-export default class Tooltip extends React.Component {
+class Tooltip extends React.Component {
   state = {
     visible: false
   };
@@ -74,3 +74,5 @@ Tooltip.defaultProps = {
 };
 
 Tooltip.displayName = "Tooltip";
+
+export default React.memo(Tooltip);
