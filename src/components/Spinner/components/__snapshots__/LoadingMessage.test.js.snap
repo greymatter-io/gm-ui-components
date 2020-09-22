@@ -4,7 +4,10 @@ exports[`LoadingMessage matches snapshot 1`] = `
 .c0 {
   color: hsla(0,0%,0%,0.6);
   font-size: 10px;
-  max-width: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 20em;
   margin: 0;
 }
 
