@@ -20,10 +20,10 @@
   "peerDependencies": {
     "react": "^16.8",
     "react-dom": "^16.8",
-    "styled-components": "^4"
+    "styled-components": "^4",
+    "inter-ui": "^3.15.0"
   },
   "dependencies": {
-    "inter-ui": "^3.15.0",
     "polished": "^3.4.2"
   },
   "scripts": {
