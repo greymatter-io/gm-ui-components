@@ -10,8 +10,6 @@ import PropTypesTable from "./PropTypesTable";
 import StoryContainer from "ComponentLibrary/StoryComponents/StoryContainer";
 import { keen, keenDark } from "style/theme";
 
-import "inter-ui/inter.css";
-
 const req = require.context("../src/", true, /\.stories\.js$/);
 
 function loadStories() {
