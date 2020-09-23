@@ -1,3 +1,19 @@
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/DecipherNow/gm-ui-components/compare/v1.4.2...v1.4.3) (2020-09-23)
+
+
+### Bug Fixes
+
+* center spinner loading message ([#577](https://github.com/DecipherNow/gm-ui-components/issues/577)) ([67ddd0d](https://github.com/DecipherNow/gm-ui-components/commit/67ddd0d))
+
+
+### Features
+
+* performance enhancements ([#585](https://github.com/DecipherNow/gm-ui-components/issues/585)) ([150a9f4](https://github.com/DecipherNow/gm-ui-components/commit/150a9f4))
+* use Inter for base type ([#574](https://github.com/DecipherNow/gm-ui-components/issues/574)) ([a4eed1a](https://github.com/DecipherNow/gm-ui-components/commit/a4eed1a))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/DecipherNow/gm-ui-components/compare/v1.4.1...v1.4.2) (2020-08-31)
 
