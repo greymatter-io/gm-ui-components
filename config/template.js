@@ -19,9 +19,11 @@ module.exports = (code, config, state) => {
       </Icon>);
   }
   
-  ${componentName}.displayName = "Icon${componentName}";
-  
-  export default React.memo(${componentName});
+  const memoizedIcon = React.memo(${componentName});
+
+  memoizedIcon.displayName = "Icon${componentName}";
+
+  export default memoizedIcon;
   `;
 
   return result;
