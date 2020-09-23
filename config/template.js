@@ -13,13 +13,16 @@ module.exports = (code, config, state) => {
   import React from 'react';
   import Icon from "components/Icon";
   
-  export default function ${componentName} (${props}) {
+ function ${componentName} (${props}) {
     return (<Icon {...${props}} glyphName="${componentName}">
       ${stripSVG(code)}
       </Icon>);
   }
-
-  ${componentName}.displayName = "Icon${componentName}";`;
+  
+  ${componentName}.displayName = "Icon${componentName}";
+  
+  export default React.memo(${componentName});
+  `;
 
   return result;
 };
