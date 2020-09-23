@@ -1,6 +1,18 @@
+<a name="1.4.4"></a>
+## [1.4.4](https://github.com/DecipherNow/gm-ui-components/compare/v1.4.3...v1.4.4) (2020-09-23)
+
+
+### Bug Fixes
+
+* icon displayName ([#590](https://github.com/DecipherNow/gm-ui-components/issues/590)) ([5c9ef2d](https://github.com/DecipherNow/gm-ui-components/commit/5c9ef2d))
+* use different inter package ([#589](https://github.com/DecipherNow/gm-ui-components/issues/589)) ([3fcc21d](https://github.com/DecipherNow/gm-ui-components/commit/3fcc21d))
+
+
+
 <a name="1.4.3"></a>
 ## [1.4.3](https://github.com/DecipherNow/gm-ui-components/compare/v1.4.2...v1.4.3) (2020-09-23)
 
+NOTE: this release uses the wrong package for inter fonts, please upgrade to 1.4.4 to take advantage of the new font-family.
 
 ### Bug Fixes
 
