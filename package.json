@@ -177,10 +177,12 @@
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
     ],
+    "modulePathIgnorePatterns": [
+      "inter-ui/inter.css"
+    ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "\\.svg": "<rootDir>/config/svgMock.js",
-      "inter-ui/inter.css": "<rootDir>/config/emptyModule.js"
+      "\\.svg": "<rootDir>/config/svgMock.js"
     },
     "moduleDirectories": [
       "node_modules",
