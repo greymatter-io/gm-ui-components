@@ -22,7 +22,7 @@ module.exports = {
     react: "react",
     "react-dom": "react-dom",
     "styled-components": "styled-components",
-    "inter-ui": "inter-ui"
+    "inter-ui/inter.css": "inter-ui/inter.css"
   },
   module: {
     rules: [

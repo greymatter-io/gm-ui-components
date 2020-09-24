@@ -1,8 +1,6 @@
 import { css, createGlobalStyle } from "styled-components";
 import { keen } from "style/theme";
 
-import "inter-ui/inter.css";
-
 const NORMALIZE = css`
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
