@@ -178,7 +178,7 @@
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
     ],
     "modulePathIgnorePatterns": [
-      "inter-ui/inter.css"
+      "[/\\\\]inter-ui[/\\\\].+\\.(js|jsx)$"
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
