@@ -31,10 +31,10 @@
 
 # Installation
 
-gm-ui-components is available as an npm package:
+gm-ui-components is available as an npm package. It has 4 peer dependencies:
 
 ```sh
-npm install --save gm-ui-components
+npm install --save gm-ui-components react react-dom styled-components inter-ui
 ```
 
 # Usage
