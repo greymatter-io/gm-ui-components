@@ -180,7 +180,7 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
       "\\.svg": "<rootDir>/config/svgMock.js",
-      "inter-ui/inter.css": "<rootDir>/config/mock.css"
+      "inter-ui/inter.css": "<rootDir>/config/emptyModule.js"
     },
     "moduleDirectories": [
       "node_modules",
