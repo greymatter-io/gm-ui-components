@@ -1,4 +1,3 @@
-import "inter-ui/inter.css";
 export * from "./Glyphs";
 export { default as AppFooter } from "./AppFooter";
 export { default as Breadcrumbs } from "./Breadcrumbs";
