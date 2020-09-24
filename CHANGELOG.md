@@ -6,6 +6,7 @@
 
 * icon displayName ([#590](https://github.com/DecipherNow/gm-ui-components/issues/590)) ([5c9ef2d](https://github.com/DecipherNow/gm-ui-components/commit/5c9ef2d))
 * use different inter package ([#589](https://github.com/DecipherNow/gm-ui-components/issues/589)) ([3fcc21d](https://github.com/DecipherNow/gm-ui-components/commit/3fcc21d))
+* move inter to peerDependencies ([159ff70](https://github.com/DecipherNow/gm-ui-components/commit/159ff70))
 
 
 
