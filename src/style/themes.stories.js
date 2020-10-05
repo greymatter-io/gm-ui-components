@@ -129,7 +129,7 @@ stories.add(
   () => (
     <>
       <DocumentationLink>
-        <a href="https://github.com/DecipherNow/gm-ui-components#theming">
+        <a href="https://github.com/greymatter-io/gm-ui-components#theming">
           Theming the Component Library
           <IconChevronRight />
         </a>

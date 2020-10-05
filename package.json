@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:DecipherNow/gm-ui-components.git"
+    "url": "git@github.com:greymatter-io/gm-ui-components.git"
   },
   "files": [
     "lib"
