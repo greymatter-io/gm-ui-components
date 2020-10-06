@@ -34,6 +34,6 @@ export default create({
   inputBorderRadius: 4,
 
   brandTitle: "Grey Matter UI Components",
-  brandUrl: "https://github.com/DecipherNow/gm-ui-components",
+  brandUrl: "https://github.com/greymatter-io/gm-ui-components",
   brandImage: null
 });

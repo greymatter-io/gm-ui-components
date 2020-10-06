@@ -50,7 +50,7 @@ function AppFooter({
     (useExternalLinks && (
       <Links>
         <Link
-          href="http://github.com/DecipherNow"
+          href="http://github.com/greymatter-io"
           rel="noopener noreferrer"
           target="_blank"
           title="Decipher Technology Studios Github"
@@ -58,7 +58,7 @@ function AppFooter({
           <IconGitHub fillOpacity="1" borderWidth="0" />
         </Link>
         <Link
-          href="http://twitter.com/deciphernow"
+          href="http://twitter.com/greymatter-io"
           rel="noopener noreferrer"
           target="_blank"
           title="Decipher Technology Studios Twitter"
