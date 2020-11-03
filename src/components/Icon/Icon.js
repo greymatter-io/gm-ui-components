@@ -11,7 +11,6 @@ import { keen } from "style/theme";
  */
 export default function Icon({
   ariaLabelledby,
-  hasBadge,
   badgeColor,
   badgePosition,
   borderColor, // Deprecate
@@ -21,10 +20,11 @@ export default function Icon({
   fillColor, // Deprecate
   fillOpacity,
   glyphName,
+  hasBadge,
   size,
   stroke,
-  strokeWidth,
   strokeOpacity,
+  strokeWidth,
   ...props
 }) {
 
@@ -41,17 +41,17 @@ export default function Icon({
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      focusable="false"
-      size={size}
-      id={glyphName}
-      fill={fill}
-      fillOpacity={fillOpacity}
-      fillColor={fillColor} // Deprecate
-      borderWidth={borderWidth} // Deprecate
       borderColor={borderColor} // Deprecate
+      borderWidth={borderWidth} // Deprecate
+      fill={fill}
+      fillColor={fillColor} // Deprecate
+      fillOpacity={fillOpacity}
+      focusable="false"
+      id={glyphName}
+      size={size}
       stroke={stroke}
-      strokeWidth={strokeWidth}
       strokeOpacity={strokeOpacity}
+      strokeWidth={strokeWidth}
       {...props}
     >
       {hasBadge && (
@@ -94,37 +94,33 @@ Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   badgeColor: PropTypes.string,
   badgePosition: PropTypes.object,
-  stroke: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  strokeOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  borderColor: PropTypes.string,
+  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   fill: PropTypes.string,
+  fillColor: PropTypes.string,
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
   size: PropTypes.string,
-  // Deprecated
-  borderColor: PropTypes.string,
-  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  fillColor: PropTypes.string,
+  stroke: PropTypes.string,
+  strokeOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Icon.defaultProps = {
-  theme: keen,
-  hasBadge: false,
-  badgePosition: {
-    x: 46,
-    y: 16
-  },
   badgeColor: "red",
+  badgePosition: { x: 46, y: 16},
   borderColor: "currentColor",
   borderWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
+  fill: "currentColor",
+  fillColor: "currentColor",
+  fillOpacity: 0.15,
+  hasBadge: false,
+  size: "1.7145em",
   stroke: "currentColor",
   strokeWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
-  fillColor: "currentColor",
-  fill: "currentColor",
-  fillOpacity: 0.15,
-  size: "1.7145em"
+  theme: keen,
 };
 
 Icon.displayName = "Icon";

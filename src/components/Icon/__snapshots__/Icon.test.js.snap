@@ -3,14 +3,17 @@
 exports[`Icon matches snapshot 1`] = `
 <StyledSVG
   aria-labelledby="IconCog"
-  borderColor="white"
+  borderColor="currentColor"
   borderOpacity={1}
-  borderWidth={1}
-  fillColor="white"
+  borderWidth="1.00001px"
+  fill="white"
+  fillColor="currentColor"
   fillOpacity={0.15}
   focusable="false"
   id="IconCog"
   size="24px"
+  stroke="white"
+  strokeWidth={1}
   theme={
     Object {
       "COLOR_BACKGROUND_DEFAULT": "hsl(0, 0%, 100%)",
