@@ -237,15 +237,14 @@ stories
       const IconCog = Glyphs.IconCog;
       return (
         <IconCog
-          borderColor={color("borderColor")}
-          borderWidth={number("borderWidth")}
-          fillColor={color("fillColor")}
+          stroke={color("stroke", undefined)}
+          strokeWidth={number("strokeWidth", undefined)}
+          strokeOpacity={number("strokeOpacity", undefined)}
+          fill={color("fill")}
           fillOpacity={number("fillOpacity")}
           size={text("size")}
           title={text("title")}
           hasBadge={boolean("hasBadge")}
-          isNegated={boolean("isNegated", true)}
-          negationLine={object("negationLine", defaultNegationLine)}
           badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
         />
@@ -265,9 +264,10 @@ stories
         <Icon
           title={text("title", undefined)}
           size={text("size", undefined)}
-          borderColor={color("borderColor", undefined)}
-          borderWidth={number("borderWidth", undefined)}
-          fillColor={color("fillColor", undefined)}
+          stroke={color("stroke", undefined)}
+          strokeWidth={number("strokeWidth", undefined)}
+          strokeOpacity={number("strokeOpacity", undefined)}
+          fill={color("fill", undefined)}
           fillOpacity={number("fillOpacity", undefined)}
           hasBadge={boolean("hasBadge", undefined)}
           badgeColor={color("badgeColor", undefined)}
@@ -296,12 +296,13 @@ stories
               <Glyph
                 title={glyph}
                 size={text("size", undefined)}
-                fillColor={color("fillColor", undefined)}
+                stroke={color("stroke", undefined)}
+                strokeWidth={number("strokeWidth", undefined)}
+                strokeOpacity={number("strokeOpacity", undefined)}
+                fill={color("fill", undefined)}
                 fillOpacity={number("fillOpacity", undefined)}
-                borderColor={color("borderColor", undefined)}
-                borderWidth={text("borderWidth", undefined)}
                 hasBadge={boolean("hasBadge", undefined)}
-                badgeColor={color("badgeColor")}
+                badgeColor={color("badgeColor", undefined)}
                 badgePosition={object("badgePosition", undefined)}
               />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
