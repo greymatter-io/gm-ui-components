@@ -197,7 +197,7 @@ stories
           title={text("title")}
           hasBadge={boolean("hasBadge")}
           isNegated={boolean("isNegated")}
-          negationIsReversed={boolean("negationIsReversed", undefined)}
+          negationLineAngle={number("negationLineAngle", undefined)}
           badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
         />
@@ -223,7 +223,7 @@ stories
           fillOpacity={number("fillOpacity", undefined)}
           hasBadge={boolean("hasBadge", undefined)}
           isNegated={boolean("isNegated", undefined)}
-          negationIsReversed={boolean("negationIsReversed", undefined)}
+          negationLineAngle={number("negationLineAngle", undefined)}
           badgeColor={color("badgeColor", undefined)}
           badgePosition={object("badgePosition", undefined)}
         >
@@ -257,7 +257,7 @@ stories
                   borderColor={color("borderColor", undefined)}
                   borderWidth={text("borderWidth", undefined)}
                   isNegated={boolean("isNegated", true)}
-                  negationIsReversed={boolean("negationIsReversed", undefined)}
+                  negationLineAngle={number("negationLineAngle", undefined)}
                   hasBadge={boolean("hasBadge", undefined)}
                   badgeColor={color("badgeColor")}
                   badgePosition={object("badgePosition", undefined)}
@@ -291,7 +291,7 @@ stories
                 borderColor={color("borderColor", undefined)}
                 borderWidth={text("borderWidth")}
                 isNegated={boolean("isNegated", true)}
-                negationIsReversed={boolean("negationIsReversed", undefined)}
+                negationLineAngle={boolean("negationLineAngle", undefined)}
                 hasBadge={boolean("hasBadge", undefined)}
                 badgeColor={color("badgeColor")}
                 badgePosition={object("badgePosition", undefined)}

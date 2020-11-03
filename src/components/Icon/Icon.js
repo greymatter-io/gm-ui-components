@@ -21,7 +21,7 @@ export default function Icon({
   borderWidth,
   isNegated,
   negationLineTrim,
-  negationIsReversed,
+  negationLineAngle,
   children,
   fillColor,
   fillOpacity,
@@ -29,6 +29,9 @@ export default function Icon({
   size,
   ...props
 }) {
+
+  const iconMaskId = glyphName + size + "iconMask";
+
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
@@ -41,11 +44,8 @@ export default function Icon({
       borderColor={borderColor}
       {...props}
     >
-
-// Clip-group fails because it's too difficult to create the 
-
       {(isNegated || hasBadge) && (
-          <mask id="iconMask">
+        <mask id={iconMaskId}>
             <rect
               x="0"
               y="0"
@@ -65,15 +65,7 @@ export default function Icon({
                 strokeLinecap="round"
                 vectorEffect="non-scaling-stroke"
                 strokeWidth={"calc(" + borderWidth + " * 3)"}
-                transform={
-                  negationIsReversed
-                    ? "rotate(90 " +
-                      IconGridSize / 2 +
-                      " " +
-                      IconGridSize / 2 +
-                      ")"
-                    : undefined
-                }
+                transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
               />
             )}
             {hasBadge && (
@@ -90,8 +82,8 @@ export default function Icon({
       )}
       <g
         className="glyph"
-        mask={isNegated || hasBadge ? "url(#iconMask)" : undefined}
-      >
+        transform="rotate(0.0001"
+        mask={(isNegated || hasBadge) ? "url(#" + iconMaskId + ")" : undefined}>
         {children}
       </g>
       {isNegated && (
@@ -105,11 +97,7 @@ export default function Icon({
             vectorEffect="non-scaling-stroke"
             strokeLinecap="round"
             strokeWidth={borderWidth}
-            transform={
-              negationIsReversed
-                ? "rotate(90 " + IconGridSize / 2 + " " + IconGridSize / 2 + ")"
-                : undefined
-            }
+            transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
           />
       )}
       {hasBadge && (
@@ -140,7 +128,7 @@ Icon.propTypes = {
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
   isNegated: PropTypes.bool,
-  negationIsReversed: PropTypes.bool,
+  negationLineAngle: PropTypes.number,
   negationLine: PropTypes.object,
   negationLineTrim: PropTypes.number,
   size: PropTypes.string
@@ -151,7 +139,6 @@ Icon.defaultProps = {
   hasBadge: false,
   isNegated: false,
   negationLineTrim: 12,
-  negationIsReversed: false,
   badgePosition: {
     x: 46,
     y: 16
