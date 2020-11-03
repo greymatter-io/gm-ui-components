@@ -28,16 +28,9 @@ export default function Icon({
   ...props
 }) {
 
-  if (borderWidth !== undefined) {
-    console.warn("Use `strokeWidth` rather than `borderWidth`. `borderWidth` will be deprecated in the next major version.");
-  }
-  if (borderColor !== undefined) {
-    console.warn("Use `stroke` rather than `borderColor`. `borderColor` will be deprecated in the next major version.");
-  }
-  if (fillColor !== undefined) {
-    console.warn("Use `fill` rather than `fillColor`. `fillColor` will be deprecated in the next major version.");
-  }
+const deprecatedFields = {borderWidth: "strokeWidth", borderColor: "stroke", fillColor: "fill"}
 
+Object.keys(deprecatedFields).forEach(df => props[df] !== undefined && console.warn(`Use ${deprecatedFields[df]} rather than ${df}. ${df} will be deprecated in the next major version.`))
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
