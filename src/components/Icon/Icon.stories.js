@@ -198,8 +198,6 @@ const glyphNames = [
   "IconX"
 ];
 
-const glyphNames2 = ["IconDash", "IconMinus", "IconComment"];
-
 const GalleryIconList = styled.ul`
   box-sizing: border-box;
   width: 90vw;

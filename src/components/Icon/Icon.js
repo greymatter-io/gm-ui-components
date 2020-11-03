@@ -141,24 +141,21 @@ Icon.propTypes = {
   negationLineAngle: PropTypes.number,
   negationLineTrim: PropTypes.number,
   negationLineWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.string
+  size: PropTypes.string,
 };
 
 Icon.defaultProps = {
-  theme: keen,
-  hasBadge: false,
-  isNegated: false,
-  negationLineTrim: 12,
-  badgePosition: {
-    x: 46,
-    y: 16
-  },
   badgeColor: "red",
+  badgePosition: {x: 46, y: 16},
   borderColor: "currentColor",
   borderWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
   fillColor: "currentColor",
   fillOpacity: 0.15,
-  size: "1.7145em"
+  hasBadge: false,
+  isNegated: false,
+  negationLineTrim: 12,
+  size: "1.7145em",
+  theme: keen,
 };
 
 Icon.displayName = "Icon";
