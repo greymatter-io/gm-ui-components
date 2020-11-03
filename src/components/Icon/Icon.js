@@ -22,6 +22,7 @@ export default function Icon({
   isNegated,
   negationLineTrim,
   negationLineAngle,
+  negationLineWidth,
   children,
   fillColor,
   fillOpacity,
@@ -31,6 +32,14 @@ export default function Icon({
 }) {
 
   const iconMaskId = glyphName + size + "iconMask";
+  
+  if (negationLineWidth === undefined) {
+    if (borderWidth !== 0) {
+      negationLineWidth = borderWidth
+    } else {
+      negationLineWidth = '1.0001px'
+    }
+  }
 
   return (
     <StyledSVG
@@ -64,7 +73,7 @@ export default function Icon({
                 stroke="black"
                 strokeLinecap="round"
                 vectorEffect="non-scaling-stroke"
-                strokeWidth={"calc(" + borderWidth + " * 3)"}
+                strokeWidth={"calc(" + negationLineWidth + " * 3)"}
                 transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
               />
             )}
@@ -96,7 +105,7 @@ export default function Icon({
             stroke="currentColor"
             vectorEffect="non-scaling-stroke"
             strokeLinecap="round"
-            strokeWidth={borderWidth}
+            strokeWidth={negationLineWidth}
             transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
           />
       )}
@@ -131,6 +140,7 @@ Icon.propTypes = {
   negationLineAngle: PropTypes.number,
   negationLine: PropTypes.object,
   negationLineTrim: PropTypes.number,
+  negationLineWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.string
 };
 

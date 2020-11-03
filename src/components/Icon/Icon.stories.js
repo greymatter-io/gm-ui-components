@@ -255,7 +255,9 @@ stories
                 borderColor={color("borderColor", undefined)}
                 borderWidth={text("borderWidth")}
                 isNegated={boolean("isNegated", false)}
-                negationLineAngle={boolean("negationLineAngle", undefined)}
+                negationLineAngle={number("negationLineAngle", undefined)}
+                negationLineTrim={number("negationLineTrim", undefined)}
+                negationLineWidth={number("negationLineWidth", undefined)}
                 hasBadge={boolean("hasBadge", undefined)}
                 badgeColor={color("badgeColor")}
                 badgePosition={object("badgePosition", undefined)}
