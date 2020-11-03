@@ -297,7 +297,7 @@ stories
                 fillOpacity={number("fillOpacity", undefined)}
                 borderColor={color("borderColor", undefined)}
                 borderWidth={text("borderWidth")}
-                isNegated={boolean("isNegated", false)}
+                isNegated={boolean("isNegated", true)}
                 negationLineAngle={number("negationLineAngle", undefined)}
                 negationLineTrim={number("negationLineTrim", undefined)}
                 negationLineWidth={number("negationLineWidth", undefined)}
