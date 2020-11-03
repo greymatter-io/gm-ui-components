@@ -36,10 +36,7 @@ export default function Icon({
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      borderColor={borderColor} // Deprecate
-      borderWidth={borderWidth} // Deprecate
       fill={fill}
-      fillColor={fillColor} // Deprecate
       fillOpacity={fillOpacity}
       focusable="false"
       id={glyphName}

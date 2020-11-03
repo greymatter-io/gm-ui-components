@@ -5,7 +5,7 @@ import Icon from "./Icon";
 let iconProps = {
   ariaLabelledby: "IconCog",
   stroke: "white",
-  borderOpacity: 1,
+  strokeOpacity: 1,
   strokeWidth: 1,
   fill: "white",
   glyphName: "IconCog",
