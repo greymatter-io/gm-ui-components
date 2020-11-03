@@ -42,7 +42,7 @@ exports[`CheckboxBox should render 1`] = `
 }
 
 .c0:disabled {
-  background-color: hsl(0,0%,97%);
+  background-color: #FDFDFE;
 }
 
 .c0:valid:required {

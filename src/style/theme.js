@@ -7,7 +7,7 @@ export const keen = {
   COLOR_BRAND_SECONDARY: "#00b42b",
 
   COLOR_BACKGROUND_DEFAULT: "hsl(0, 0%, 100%)",
-  COLOR_BACKGROUND_TWO: "hsl(0, 0%, 97%)",
+  COLOR_BACKGROUND_TWO: "#FDFDFE",
   COLOR_BACKGROUND_THREE: "hsl(0, 0%, 94%)",
 
   COLOR_CONTENT_DEFAULT: "hsla(0, 0%, 0%, 0.85)",
@@ -50,7 +50,7 @@ export const keen = {
   CORNER_RADIUS_MAX: "90000px",
 
   // TYPOGRAPHY
-  FONT_STACK_DEFAULT: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
+  FONT_STACK_DEFAULT: `Inter var, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
   FONT_STACK_BRAND: `"Metropolis", "Helvetica Neue", Arial, sans-serif`,
   FONT_STACK_CODE: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
 
@@ -93,9 +93,9 @@ export const keenDark = {
 
   name: "KeenDark",
 
-  COLOR_BACKGROUND_DEFAULT: "hsl(0, 0%, 1%)",
-  COLOR_BACKGROUND_TWO: "hsl(0, 0%, 8%)",
-  COLOR_BACKGROUND_THREE: "hsl(0, 0%, 16%)",
+  COLOR_BACKGROUND_DEFAULT: "#111",
+  COLOR_BACKGROUND_TWO: "#181818",
+  COLOR_BACKGROUND_THREE: "#242424",
 
   COLOR_CONTENT_DEFAULT: "hsla(0, 0%, 100%, 0.8)",
   COLOR_CONTENT_CONTRAST: "hsl(0, 0%, 100%)",
@@ -106,8 +106,8 @@ export const keenDark = {
   COLOR_INTENT_WARNING: lighten(LIGHTENING_FACTOR, keen.COLOR_INTENT_WARNING), // WCAG AA+
   COLOR_INTENT_INFO: lighten(LIGHTENING_FACTOR, keen.COLOR_INTENT_INFO), // WCAG AA+
 
-  COLOR_KEYLINE_DEFAULT: "hsla(0, 0%, 100%, 0.16)",
-  COLOR_KEYLINE_SOLID: "hsl(0, 0%, 16%)",
+  COLOR_KEYLINE_DEFAULT: "hsla(0, 0%, 100%, 0.1)",
+  COLOR_KEYLINE_SOLID: "hsla(0, 0%, 14%, 1)",
 
   LINE_HEIGHT_LOOSE: 1.7,
   LINE_HEIGHT_DEFAULT: 1.5,

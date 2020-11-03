@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>new-folder</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="new-folder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M12,18 C12,16.8954305 12.8954305,16 14,16 L26,16 L30,20 L50,20 C51.1045695,20 52,20.8954305 52,22 L52,42 C52,43.1045695 51.1045695,44 50,44 L14,44 C12.8954305,44 12,43.1045695 12,42 L12,18 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M12,18 C12,16.8954305 12.8954305,16 14,16 L26,16 L30,20 L50,20 C51.1045695,20 52,20.8954305 52,22 L52,42 C52,43.1045695 51.1045695,44 50,44 L14,44 C12.8954305,44 12,43.1045695 12,42 L12,18 Z M32,26 L32,38 M26,32 L38,32" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="new-folder" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13,36.5 C13,32.3888889 13,26.2222222 13,18 C13,16.8954305 13.8954305,16 15,16 L28,16 L32,20 L49,20 C50.1045695,20 51,20.8954305 51,22 L51,42 C51,43.1045695 50.1045695,44 49,44 C41.8888889,44 36.5555556,44 33,44"/>
+    <g id="badge-plus" fill-rule="nonzero">
+      <circle id="fill" cx="22" cy="43" r="11" fill="#007AFF" fill-opacity="0.184058129"/>
+      <path id="border" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22,36 L22,50 M29,43 L15,43"/>
     </g>
+  </g>
 </svg>

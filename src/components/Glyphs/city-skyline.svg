@@ -1,0 +1,6 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="city-skyline" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M8,39 L15,39 L15,29 L22,29 L22,36 L24,36 L27,18 L31,36 L33,36 L33,24 L41,24 L41,34 L49,34 L49,39 L56,39 L56,40.5 C56,41.6045695 55.1045695,42.5 54,42.5 L10,42.5 C8.8954305,42.5 8,41.6045695 8,40.5 L8,39 L8,39 Z"/>
+    <polyline id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="8 39 15 39 15 29 22 29 22 36 24 36 27 18 31 36 33 36 33 24 41 24 41 34 49 34 49 39 56 39"/>
+  </g>
+</svg>

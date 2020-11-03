@@ -1,0 +1,5 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="currency-dollar" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M42,24 C42,19.581722 37.5228475,16 32,16 C26.4771525,16 23,19.581722 23,24 C23,28.418278 26.4771525,32 32,32 M32,48 C37.5228475,48 42,44.418278 42,40 C42,35.581722 37.5228475,32 32,32 M22,40 C22,44.418278 26.4771525,48 32,48 M32,12.8 L32,52"/>
+  </g>
+</svg>

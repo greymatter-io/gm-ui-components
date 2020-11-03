@@ -11,9 +11,9 @@ exports[`InputTextField matches snapshot 1`] = `
   appearance: none;
   margin: 0;
   color: hsla(0,0%,0%,0.85);
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-size: 14px;
-  background: hsl(0,0%,97%);
+  background: #FDFDFE;
   box-sizing: border-box;
   line-height: 1.5;
   -webkit-transition: all 0.15s ease;
@@ -36,7 +36,7 @@ exports[`InputTextField matches snapshot 1`] = `
 }
 
 .c0:disabled {
-  background-color: hsl(0,0%,97%);
+  background-color: #FDFDFE;
 }
 
 .c0:valid:required {

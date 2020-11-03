@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>on-off</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="on-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M24.0695456,18.1005178 C19.2488085,20.8569586 16,26.0490794 16,32 C16,40.836556 23.163444,48 32,48 C40.836556,48 48,40.836556 48,32 C48,26.0860242 44.7914051,20.9214558 40.0200572,18.152137 M32,12 L32,28" id="border" stroke="#007AFF" stroke-width="2" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="on-off" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23.0782388,16.0502589 C17.6549096,19.0925373 14,24.8230708 14,31.3910902 C14,41.1439798 22.0588745,49.0502589 32,49.0502589 C41.9411255,49.0502589 50,41.1439798 50,31.3910902 C50,24.8638467 46.3903307,19.1637227 41.0225644,16.1072309 M32,12 L32,28"/>
+  </g>
 </svg>

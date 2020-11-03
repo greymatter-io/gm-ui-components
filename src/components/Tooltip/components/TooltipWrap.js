@@ -4,7 +4,7 @@ import { keen } from "style/theme";
 const TooltipWrap = styled.div`
   display: inline-block;
   position: relative;
-  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
 
   :hover > :last-child {
     ${props =>
@@ -12,7 +12,7 @@ const TooltipWrap = styled.div`
       css`
         opacity: 1;
         visibility: visible;
-        z-index: ${({theme}) => theme.ZINDEX_TOOLTIP};
+        z-index: ${({ theme }) => theme.ZINDEX_TOOLTIP};
       `};
   }
 `;

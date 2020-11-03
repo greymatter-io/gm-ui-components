@@ -14,11 +14,11 @@
          alt="styled with prettier">
   </a>
   <a href="https://www.styled-components.com/" target="_blank"><img src="https://img.shields.io/badge/styled_with-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357" alt="styled with styled-components"></a>
-  <a href="https://circleci.com/gh/DecipherNow/gm-ui-components/tree/master" target="_blank"><img src="https://circleci.com/gh/DecipherNow/gm-ui-components/tree/master.svg?style=shield" alt="tested on CircleCI"></a>
-  <a href="https://codeclimate.com/github/DecipherNow/gm-ui-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/878bee2571c9dca75eef/maintainability" /></a>
-  <a href="https://codeclimate.com/github/DecipherNow/gm-ui-components/test_coverage"><img src="https://api.codeclimate.com/v1/badges/878bee2571c9dca75eef/test_coverage" /></a>
+  <a href="https://circleci.com/gh/greymatter-io/gm-ui-components/tree/master" target="_blank"><img src="https://circleci.com/gh/greymatter-io/gm-ui-components/tree/master.svg?style=shield" alt="tested on CircleCI"></a>
+  <a href="https://codeclimate.com/github/greymatter-io/gm-ui-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/e4f79b8a8ac6216ae81c/maintainability" /></a>
+  <a href="https://codeclimate.com/github/greymatter-io/gm-ui-components/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e4f79b8a8ac6216ae81c/test_coverage" /></a>
   <a href="https://opensource.org/licenses/mit-license.php" target="_blank"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" alt="licensed under MIT"></a>
-  <a href="https://david-dm.org/deciphernow/gm-ui-components" target="_blank"><img src="https://david-dm.org/deciphernow/gm-ui-components.svg" alt="dependency vulnerabilities tracked by DavidDM"></a>
+  <a href="https://david-dm.org/greymatter-io/gm-ui-components" target="_blank"><img src="https://david-dm.org/greymatter-io/gm-ui-components.svg" alt="dependency vulnerabilities tracked by DavidDM"></a>
 </p>
 
 <p align="center">
@@ -26,16 +26,15 @@
   <a href="#usage">Usage</a> •
   <a href="#documentation">Documentation</a> •
   <a href="#compatability">Compatability</a> •
-  <a href="#related-projects">Related Projects</a> •
   <a href="#license">License</a>
 </p>
 
 # Installation
 
-gm-ui-components is available as an npm package:
+gm-ui-components is available as an npm package. It has 4 peer dependencies:
 
 ```sh
-npm install --save gm-ui-components
+npm install --save gm-ui-components react react-dom styled-components inter-ui
 ```
 
 # Usage
@@ -62,6 +61,7 @@ render(<App />, document.querySelector('#app'));
 ```
 
 ## Theming
+
 The component library provides 2 themes out of the box - `keen` and `keenDark`. All components use the `keen` theme by default. 
 
 To use `keenDark` or a custom theme, wrap your app in a `ThemeProvider` and pass the theme object:
@@ -198,22 +198,15 @@ render(
   document.querySelector('#app'));
 ```
 
-You can find more information on style variables [here](https://deciphernow.github.io/gm-ui-components/?selectedKind=%20Overview%7CStyles&selectedStory=Styles&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Fthemes%2Fpanel).
-
+You can find more information on style variables [here](https://greymatter-io.github.io/gm-ui-components/?selectedKind=%20Overview%7CStyles&selectedStory=Styles&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Fthemes%2Fpanel).
 
 # Documentation
 
-See the [Grey Matter UI Components storybook](https://deciphernow.github.io/gm-ui-components) for more usage examples and documentation.
+See the [Grey Matter UI Components storybook](https://greymatter-io.github.io/gm-ui-components) for more usage examples and documentation.
 
 # Compatability
 
 * [Full list of browser support matrix](http://browserl.ist/?q=last+2+Chrome+versions%2C+last+2+ChromeAndroid+versions%2C+last+2+Safari+versions%2C+last+2+iOS+versions%2C+last+2+Firefox+versions%2C+last+2+Edge+versions)
-
-# Related Projects
-
-* [Grey Matter Fabric JVM SDK](https://github.com/DecipherNow/gm-fabric-jvm)
-* [Grey Matter Fabric Go SDK](https://github.com/DecipherNow/gm-fabric-go)
-* [Grey Matter Fabric Passthrough Agent](https://github.com/DecipherNow/gm-fabric-jvmagent)
 
 # License
 

@@ -8,8 +8,8 @@ const TabGroupWrap = styled.nav`
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  font-family: ${({theme}) => theme.FONT_STACK_DEFAULT};
-  color: ${({theme}) => theme.COLOR_CONTENT_DEFAULT};
+  font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
+  color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
   min-height: ${spacingScale(4)};
 `;
 

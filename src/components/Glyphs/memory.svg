@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>memory</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="memory" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M46,40 C46.5522847,40 47,40.4477153 47,41 C47,41.5522847 46.5522847,42 46,42 L46,42 L18,42 C17.4477153,42 17,41.5522847 17,41 C17,40.4477153 17.4477153,40 18,40 L18,40 Z M46.5,23 C47.3284271,23 48,23.6715729 48,24.5 L48,34.5 C48,35.3284271 47.3284271,36 46.5,36 L17.5,36 C16.6715729,36 16,35.3284271 16,34.5 L16,24.5 C16,23.6715729 16.6715729,23 17.5,23 L46.5,23 Z" id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero"></path>
-        <path d="M46,41 L18,41 M17.5,23 L46.5,23 C47.3284271,23 48,23.6715729 48,24.5 L48,34.5 C48,35.3284271 47.3284271,36 46.5,36 L17.5,36 C16.6715729,36 16,35.3284271 16,34.5 L16,24.5 C16,23.6715729 16.6715729,23 17.5,23 Z" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
-    </g>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="memory" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <path id="fill" fill="#007AFF" fill-opacity="0.184058129" fill-rule="nonzero" d="M49,40 C49.5522847,40 50,40.4477153 50,41 C50,41.5522847 49.5522847,42 49,42 L49,42 L15,42 C14.4477153,42 14,41.5522847 14,41 C14,40.4477153 14.4477153,40 15,40 L15,40 Z M49.5,23 C50.3284271,23 51,23.6715729 51,24.5 L51,34.5 C51,35.3284271 50.3284271,36 49.5,36 L14.5,36 C13.6715729,36 13,35.3284271 13,34.5 L13,24.5 C13,23.6715729 13.6715729,23 14.5,23 L49.5,23 Z"/>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M49,41 L15,41 M14.5,23 L49.5,23 C50.3284271,23 51,23.6715729 51,24.5 L51,34.5 C51,35.3284271 50.3284271,36 49.5,36 L14.5,36 C13.6715729,36 13,35.3284271 13,34.5 L13,24.5 C13,23.6715729 13.6715729,23 14.5,23 Z"/>
+  </g>
 </svg>

@@ -11,8 +11,7 @@ import Link from "./components/Link";
 import { IconTwitter, IconGitHub, IconLinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
 
-import LongLogoImg from "./assets/decipher-logo-rgb-left.js";
-
+import LongLogoImg from "./assets/greymatter-logo.js";
 /**
  * Stateless functional React component that renders company branding and social media footer content
  * @returns JSX.Element
@@ -28,7 +27,7 @@ function AppFooter({
 }) {
   const logoProps = useExternalLinks
     ? {
-        href: "http://deciphernow.com",
+        href: "http://greymatter.io",
         rel: "noopener noreferrer",
         target: "_blank"
       }
@@ -51,7 +50,7 @@ function AppFooter({
     (useExternalLinks && (
       <Links>
         <Link
-          href="http://github.com/DecipherNow"
+          href="http://github.com/greymatter-io"
           rel="noopener noreferrer"
           target="_blank"
           title="Decipher Technology Studios Github"
@@ -59,7 +58,7 @@ function AppFooter({
           <IconGitHub fillOpacity="1" borderWidth="0" />
         </Link>
         <Link
-          href="http://twitter.com/deciphernow"
+          href="http://twitter.com/greymatter-io"
           rel="noopener noreferrer"
           target="_blank"
           title="Decipher Technology Studios Twitter"
@@ -97,8 +96,10 @@ AppFooter.propTypes = {
   useExternalLinks: PropTypes.bool
 };
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 AppFooter.defaultProps = {
-  copyrightText: "TM and \u00A9 2019 Decipher Technology Studios",
+  copyrightText: `TM and \u00A9 ${CURRENT_YEAR} Decipher Technology Studios`,
   useExternalLinks: true,
   theme: keen
 };

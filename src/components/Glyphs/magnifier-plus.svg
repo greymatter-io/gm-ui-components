@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch Beta 57 (82921) - https://sketch.com -->
-    <title>magnifier-plus</title>
-    <desc>Created with Sketch Beta.</desc>
-    <g id="magnifier-plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="fill" fill-opacity="0.184058129" fill="#007AFF" fill-rule="nonzero" cx="29" cy="29" r="15"></circle>
-        <path d="M29,44 C37.2842712,44 44,37.2842712 44,29 C44,20.7157288 37.2842712,14 29,14 C20.7157288,14 14,20.7157288 14,29 C14,37.2842712 20.7157288,44 29,44 Z M39,39 L50,50 M29,20 L29,37 M37,29 L20,29" id="border" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+<svg width="64px" height="64px" viewBox="0 0 64 64">
+  <g id="magnifier-plus" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <g id="badge-plus" fill-rule="nonzero">
+      <circle id="fill" cx="22" cy="43" r="11" fill="#007AFF" fill-opacity="0.184058129"/>
+      <path id="border" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22,36 L22,50 M29,43 L15,43"/>
     </g>
+    <path id="border" fill-rule="nonzero" stroke="#007AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M39.6060238,39.6060238 L50,50 M33.7389378,43.2360297 C39.7008653,41.2523645 44,35.6282406 44,29 C44,20.7157288 37.2842712,14 29,14 C20.7157288,14 14,20.7157288 14,29 C14,30.6704541 14.2730572,32.2771324 14.7769718,33.7778348"/>
+  </g>
 </svg>
