@@ -55,7 +55,7 @@ function AppFooter({
           target="_blank"
           title="Decipher Technology Studios Github"
         >
-          <IconGitHub fillOpacity="1" borderWidth="0" />
+          <IconGitHub fillOpacity="1" strokeWidth="0" />
         </Link>
         <Link
           href="http://twitter.com/greymatter-io"
@@ -63,7 +63,7 @@ function AppFooter({
           target="_blank"
           title="Decipher Technology Studios Twitter"
         >
-          <IconTwitter fillOpacity="1" borderWidth="0" />
+          <IconTwitter fillOpacity="1" strokeWidth="0" />
         </Link>
         <Link
           href="http://www.linkedin.com/company/decipher-technology-studios"
@@ -71,7 +71,7 @@ function AppFooter({
           target="_blank"
           title="Decipher Technology Studios LinkedIn"
         >
-          <IconLinkedIn fillOpacity="1" borderWidth="0" />
+          <IconLinkedIn fillOpacity="1" strokeWidth="0" />
         </Link>
       </Links>
     ));
