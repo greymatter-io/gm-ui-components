@@ -221,13 +221,6 @@ const GalleryIconLabel = styled.p`
   color: ${({ theme }) => theme.COLOR_CONTENT_MUTED};
 `;
 
-const defaultNegationLine = {
-  trim: 6,
-  width: "inherit",
-  maskSize: 4,
-  isReversed: true
-};
-
 const stories = storiesOf("Components|Icons", module);
 
 stories
