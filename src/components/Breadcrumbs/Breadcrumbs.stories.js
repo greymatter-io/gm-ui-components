@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { array, boolean } from "@storybook/addon-knobs";
+import { IconPlus } from "components/Glyphs";
 import { Breadcrumbs } from "..";
 
 const stories = storiesOf("Components|Breadcrumbs", module);
@@ -21,7 +22,6 @@ stories
       return (
         <Breadcrumbs
           crumbs={array("crumbs", defaultCrumbs)}
-          hideDelimiter={boolean("hideDelimiter")}
         />
       );
     },
@@ -45,7 +45,56 @@ stories
         >
           <Breadcrumbs
             crumbs={array("crumbs", defaultCrumbs)}
-            hideDelimiter={boolean("hideDelimiter")}
+          />
+        </div>
+      );
+    },
+    {
+      info: {
+        text: breadCrumbsInfo
+      }
+    }
+  )
+  .add(
+    "With custom delimiter",
+    () => {
+      return (
+        <div
+          style={{
+            width: "350px",
+            border: "1px solid #ddd",
+            padding: "4px",
+            borderRadius: "2px"
+          }}
+        >
+          <Breadcrumbs
+            crumbs={array("crumbs", defaultCrumbs)}
+            delimiter={<IconPlus size="1em" borderWidth={1.5} style={{ margin: 'auto', color: 'blue'}} />}
+          />
+        </div>
+      );
+    },
+    {
+      info: {
+        text: breadCrumbsInfo
+      }
+    }
+  )
+  .add(
+    "With no delimiter",
+    () => {
+      return (
+        <div
+          style={{
+            width: "350px",
+            border: "1px solid #ddd",
+            padding: "4px",
+            borderRadius: "2px"
+          }}
+        >
+          <Breadcrumbs
+            crumbs={array("crumbs", defaultCrumbs)}
+            delimiter={false}
           />
         </div>
       );
