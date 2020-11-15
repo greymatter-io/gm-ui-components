@@ -79,6 +79,7 @@ function Breadcrumbs({ crumbs, delimiter, ...props }) {
 
 Breadcrumbs.propTypes = {
   crumbs: PropTypes.array,
+  delimiter: PropTypes.oneOf([PropTypes.element, false])
 };
 
 Breadcrumbs.defaultProps = {
