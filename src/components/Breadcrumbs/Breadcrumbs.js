@@ -60,14 +60,27 @@ const DefaultDelimiter = styled(IconChevronRight).attrs({
   margin: auto 0.25em;
 `;
 
+const EmptyDelimiter = styled.span`
+  flex: 0 0 0.5em;
+`
+
+function makeDelimiter(delimiter, i) {
+  switch (delimiter) {
+    case false:
+      return <EmptyDelimiter key={"delimiter" + i} />;
+    case undefined:
+      return <DefaultDelimiter key={"delimiter" + i} />;
+    default:
+      return cloneElement(delimiter, { key: "delimiter" + i });
+  }
+}
+
 function Breadcrumbs({ crumbs, delimiter, ...props }) {
   return (
     <BreadcrumbsWrap {...props}>
       {crumbs.map((crumb, i) => (
         <React.Fragment key={i}>
-          {delimiter !== false && 
-            i > 0 && ((delimiter !== undefined) ? cloneElement(delimiter, {key: "delimiter" + i}) : <DefaultDelimiter key={"delimiter" + i} />)
-          }
+          {i > 0 && (makeDelimiter(delimiter, i))}
           <Breadcrumb key={`${crumb}|${i}`}>
             {crumb}
           </Breadcrumb>
