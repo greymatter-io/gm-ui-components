@@ -18,7 +18,6 @@
   <a href="https://codeclimate.com/github/greymatter-io/gm-ui-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/e4f79b8a8ac6216ae81c/maintainability" /></a>
   <a href="https://codeclimate.com/github/greymatter-io/gm-ui-components/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e4f79b8a8ac6216ae81c/test_coverage" /></a>
   <a href="https://opensource.org/licenses/mit-license.php" target="_blank"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" alt="licensed under MIT"></a>
-  <a href="https://david-dm.org/greymatter-io/gm-ui-components" target="_blank"><img src="https://david-dm.org/greymatter-io/gm-ui-components.svg" alt="dependency vulnerabilities tracked by DavidDM"></a>
 </p>
 
 <p align="center">
