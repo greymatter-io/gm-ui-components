@@ -55,7 +55,7 @@ function AppFooter({
           target="_blank"
           title="Grey Matter Github"
         >
-          <IconGitHub fillOpacity="1" borderWidth="0" />
+          <IconGitHub fillOpacity="1" strokeWidth="0" />
         </Link>
         <Link
           href="http://twitter.com/greymatterio"
@@ -63,7 +63,7 @@ function AppFooter({
           target="_blank"
           title="Grey Matter Twitter"
         >
-          <IconTwitter fillOpacity="1" borderWidth="0" />
+          <IconTwitter fillOpacity="1" strokeWidth="0" />
         </Link>
         <Link
           href="https://www.linkedin.com/company/greymatterio"
@@ -71,7 +71,7 @@ function AppFooter({
           target="_blank"
           title="Grey Matter LinkedIn"
         >
-          <IconLinkedIn fillOpacity="1" borderWidth="0" />
+          <IconLinkedIn fillOpacity="1" strokeWidth="0" />
         </Link>
       </Links>
     ));
