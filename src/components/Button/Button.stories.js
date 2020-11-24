@@ -59,9 +59,7 @@ stories
           margin: "0.25rem"
         },
         CombinationRenderer: ({ Component, props, options }) => {
-          const prettyJSON = JSON.stringify(props)
-            .split(",")
-            .join("\n");
+          const prettyJSON = JSON.stringify(props).split(",").join("\n");
           return (
             <Tooltip content={prettyJSON}>
               <Component
@@ -86,7 +84,7 @@ stories
     "Types",
     () => (
       <React.Fragment>
-        {types.map(type => (
+        {types.map((type) => (
           <Button type={type} label={type} key={type} clickAction={() => {}} />
         ))}
       </React.Fragment>
@@ -101,7 +99,7 @@ stories
     "Sizes",
     () => (
       <React.Fragment>
-        {sizes.map(size => (
+        {sizes.map((size) => (
           <Button size={size} label={size} key={size} clickAction={() => {}} />
         ))}
       </React.Fragment>
@@ -116,7 +114,7 @@ stories
     "Orientations",
     () => (
       <React.Fragment>
-        {orientations.map(orientation => (
+        {orientations.map((orientation) => (
           <Button
             orientation={orientation}
             label={orientation}

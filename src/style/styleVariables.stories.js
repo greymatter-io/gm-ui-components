@@ -14,7 +14,7 @@ const DemoCanvas = styled.div`
   padding: ${spacingScale(2)};
 `;
 
-const DemoItem = styled.button.attrs(props => ({
+const DemoItem = styled.button.attrs((props) => ({
   title: props.demoVarName,
   onClick: () => {
     // eslint-disable-next-line no-template-curly-in-string
@@ -39,7 +39,7 @@ const DemoItem = styled.button.attrs(props => ({
   cursor: pointer;
   position: relative;
 
-  ${props =>
+  ${(props) =>
     props.isDefault &&
     css`
       &:after {
@@ -48,7 +48,7 @@ const DemoItem = styled.button.attrs(props => ({
     `}
 
   &:after {
-    content: '${props => props.demoVarName}';
+    content: '${(props) => props.demoVarName}';
     margin-top: ${spacingScale(1)};
     margin-bottom: ${spacingScale(1)};
     transition: all .5s ease;
@@ -86,7 +86,7 @@ const DemoItem = styled.button.attrs(props => ({
   }
 `;
 
-const DemoSection = styled.div.attrs(props => ({
+const DemoSection = styled.div.attrs((props) => ({
   id: props.name
 }))`
   display: flex;
@@ -102,7 +102,7 @@ const DemoSection = styled.div.attrs(props => ({
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
 
   &:before { 
-    content: '${props => props.name}';
+    content: '${(props) => props.name}';
     display: block;
     flex: 0 0 100%;
     margin: ${spacingScale(1)};
@@ -163,7 +163,7 @@ const ColorDemo = styled(DemoItem)`
     height: ${spacingScale(4)};
     margin: ${spacingScale(1.5)} 0 0;
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_SHARP};
-    background-color: ${props => props.demoVar};
+    background-color: ${(props) => props.demoVar};
     position: absolute;
     top: 0;
     left: ${spacingScale(1.5)};
@@ -186,7 +186,7 @@ const ColorLineDemo = styled(ColorDemo)`
 
   &:before {
     content: "";
-    border-top: 1px solid ${props => props.demoVar};
+    border-top: 1px solid ${(props) => props.demoVar};
     background: transparent;
     height: 0;
     margin: ${spacingScale(3.5)} ${spacingScale(1.5)} 0;
@@ -201,7 +201,7 @@ const ColorTextDemo = styled(DemoItem)`
   &:before {
     content: "Grey Matter";
     font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_LG};
-    color: ${props => props.demoVar};
+    color: ${(props) => props.demoVar};
     margin: ${spacingScale(2)};
   }
 `;
@@ -232,7 +232,7 @@ const ColorBackgroundDemoC = styled(ColorDemo)`
 `;
 
 const FontDemo = styled(DemoItem)`
-  font-family: ${props => props.demoVar};
+  font-family: ${(props) => props.demoVar};
   padding: ${spacingScale(1)} ${spacingScale(1)} 0;
   flex: 1 1 100%;
   align-items: stretch;
@@ -253,21 +253,21 @@ const FontSizeDemo = styled(FontDemo)`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
 
   &:before {
-    font-size: ${props => props.demoVar};
+    font-size: ${(props) => props.demoVar};
   }
 `;
 
 const FontWeightDemo = styled(FontDemo)`
   &:before {
     font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
-    font-weight: ${props => props.demoVar};
+    font-weight: ${(props) => props.demoVar};
   }
 `;
 
 const LineHeightDemo = styled(FontDemo)`
   &:before {
     font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
-    line-height: ${props => props.demoVar};
+    line-height: ${(props) => props.demoVar};
     max-width: 35ch;
     content: "Introducing the world’s first hybrid cloud intelligent mesh
 Flexibly optimize your cloud, enhance customer digital experience, gain critical business intelligence, and cut ops costs with Grey Matter.";
@@ -285,7 +285,7 @@ const RadiusDemo = styled(DemoItem)`
     border-width: 1px 1px 0 0;
     height: ${spacingScale(8)};
     width: ${spacingScale(8)};
-    border-top-right-radius: ${props => props.demoVar};
+    border-top-right-radius: ${(props) => props.demoVar};
   }
 `;
 
@@ -300,7 +300,7 @@ const OpacityDemo = styled(DemoItem)`
     margin: ${spacingScale(1)} ${spacingScale(1)} 0;
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_SHARP};
     background: ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
-    opacity: ${props => props.demoVar};
+    opacity: ${(props) => props.demoVar};
   }
 `;
 
@@ -314,7 +314,7 @@ const SpacingDemo = styled(DemoItem)`
     border: 1px solid ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
     border-radius: 0 0 1.5px 1.5px;
     border-top: 0;
-    width: ${props => props.demoVar};
+    width: ${(props) => props.demoVar};
   }
 `;
 

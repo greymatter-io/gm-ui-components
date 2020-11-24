@@ -7,7 +7,7 @@ export const Body = styled.div`
   align-items: flex-start;
   justify-content: center;
 
-  ${props =>
+  ${(props) =>
     props.isBlock &&
     css`
       align-items: center;

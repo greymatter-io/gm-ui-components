@@ -87,7 +87,7 @@ const FIELD_ACTIVE_AND_FOCUSED_THUMB_STYLE = css`
   box-shadow: ${FOCUS_SHADOW}, ${ACTIVE_SHADOW};
 `;
 
-const InputRangeControl = styled.input.attrs(props => ({
+const InputRangeControl = styled.input.attrs((props) => ({
   type: "range",
   defaultValue: props.defaultValue
 }))`

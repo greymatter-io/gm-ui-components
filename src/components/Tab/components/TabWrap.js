@@ -65,7 +65,7 @@ const TabWrap = styled.a`
   }
 
   /* if active... */
-  ${props =>
+  ${(props) =>
     props.active &&
     css`
       &,
@@ -75,7 +75,7 @@ const TabWrap = styled.a`
       }
     `};
 
-  ${props =>
+  ${(props) =>
     props.disabled &&
     css`
       &,

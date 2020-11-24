@@ -16,7 +16,7 @@ const TableRowElement = styled.tr.attrs(() => ({
   box-shadow: 0 -1px 0 ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
 
   /* Give the table row a border when selected */
-  ${props =>
+  ${(props) =>
     props.isSelected &&
     css`
       background-color: ${({ theme }) =>
@@ -45,17 +45,17 @@ function TableRow({
     <TableRowElement
       isSelected={isSelected}
       selectedRowStyle={selectedRowStyle}
-      onKeyDown={event => {
+      onKeyDown={(event) => {
         if (event.keyCode === 13) {
           const targetCell = event.target.getAttribute("data-column");
           onRowClick({ clicked: data, rowIndex, event, targetCell });
         }
       }}
-      onContextMenu={event => {
+      onContextMenu={(event) => {
         const targetCell = event.target.getAttribute("data-column");
         onRowClick({ clicked: data, rowIndex, event, targetCell });
       }}
-      onClick={event => {
+      onClick={(event) => {
         const targetCell = event.target.getAttribute("data-column");
         onRowClick({ clicked: data, rowIndex, event, targetCell });
       }}

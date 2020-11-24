@@ -10,9 +10,9 @@ export const SpinnerSVG = styled.svg`
   margin: 1rem;
   color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
   overflow: visible;
-  ${props =>
+  ${(props) =>
     props.orientation === "vertical" ? verticalStyles : horizontalStyles};
-  ${props =>
+  ${(props) =>
     props.size &&
     css`
       height: ${props.size};

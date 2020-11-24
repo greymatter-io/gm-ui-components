@@ -86,21 +86,18 @@ describe("Status", () => {
           visual: "GraphicStatusIndeterminate"
         }
       ];
-      testTable.forEach(t => {
+      testTable.forEach((t) => {
         aStatus = mount(<Status statusType={t.statusType} />);
         expect(aStatus.find(t.visual)).toHaveLength(1);
         expect(
-          aStatus
-            .find("Graphic")
-            .props()
-            .graphicColor({ theme: keen })
+          aStatus.find("Graphic").props().graphicColor({ theme: keen })
         ).toBe(t.color);
       });
     });
   });
 
   describe("components", () => {
-    Object.keys(components).forEach(c => {
+    Object.keys(components).forEach((c) => {
       const C = components[c];
       expect(C).toMatchSnapshot();
     });

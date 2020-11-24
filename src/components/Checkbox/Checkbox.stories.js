@@ -31,7 +31,7 @@ stories
             "left",
             "right"
           ])}
-          onChange={e => {
+          onChange={(e) => {
             alert("checked: " + e.target.checked);
           }}
         />
@@ -68,7 +68,7 @@ stories
         <Checkbox
           label="Controlled checkbox"
           checked={boolean("checked")}
-          onChange={e => {
+          onChange={(e) => {
             alert("checked: " + e.target.checked);
           }}
         />

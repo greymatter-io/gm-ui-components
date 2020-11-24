@@ -37,7 +37,7 @@ const NavCardGroupWrap = styled.nav`
 
 function NavCardGroup({ useContextTheme, children }) {
   return (
-    <ThemeProvider theme={props => (useContextTheme ? props : keenDark)}>
+    <ThemeProvider theme={(props) => (useContextTheme ? props : keenDark)}>
       <NavCardGroupWrap>{children}</NavCardGroupWrap>
     </ThemeProvider>
   );

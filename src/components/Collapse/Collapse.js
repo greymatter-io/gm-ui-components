@@ -36,10 +36,10 @@ class Collapse extends React.Component {
 
   observer = null;
 
-  onChildResize = mut => {
+  onChildResize = (mut) => {
     if (this.state.isOpen) {
       this.contentRef.current.style.height = "100%";
-      setTimeout(e => {
+      setTimeout((e) => {
         this.setBodyHeight();
       }, TRANSITION_MS);
     }
@@ -64,7 +64,7 @@ class Collapse extends React.Component {
         // Set an observer to listen for changes to the child node height
         if (!this.observer) {
           this.observer = new MutationObserver(this.onChildResize);
-          contentNodes.forEach(n => {
+          contentNodes.forEach((n) => {
             this.observer.observe(n, {
               // observe changes to child elements
               attributes: true,
@@ -78,7 +78,7 @@ class Collapse extends React.Component {
     this.contentRef.current.style.height = `${height}px`;
   };
 
-  onChangeHandler = e => {
+  onChangeHandler = (e) => {
     // If an onClick handler was provided, call it
     if (typeof this.props.onClick === "function") this.props.onClick(e);
     // If this.props.isOpen is undefined, the component is uncontrolled and we should set local state.
@@ -107,7 +107,7 @@ class Collapse extends React.Component {
       <Wrapper {...props} isOpen={isOpen}>
         <Header
           onClick={this.onChangeHandler}
-          onKeyDown={e =>
+          onKeyDown={(e) =>
             (e.keyCode === 13 || e.keyCode === 32) && this.onChangeHandler(e)
           }
         >

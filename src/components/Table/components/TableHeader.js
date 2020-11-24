@@ -12,7 +12,7 @@ const TableHeaderCell = styled(TableCell.withComponent("th"))`
   text-align: left;
   cursor: pointer;
   border-top: none;
-  ${props =>
+  ${(props) =>
     props.isSorting &&
     css`
       font-weight: ${({ theme }) => theme.FONT_WEIGHT_SEMIBOLD};

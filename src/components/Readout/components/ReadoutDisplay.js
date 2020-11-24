@@ -17,13 +17,13 @@ const ReadoutDisplay = styled.div`
   overflow: hidden;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   box-shadow: inset 0 0 0 1px ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT},
-    ${props => props.color && "inset 0 -43px 0 -40px " + props.color};
+    ${(props) => props.color && "inset 0 -43px 0 -40px " + props.color};
   z-index: 1;
 
   &:before {
     content: "";
     opacity: 0.2;
-    background-color: ${props => props.color};
+    background-color: ${(props) => props.color};
     position: absolute;
     top: 0;
     right: 0;
@@ -36,7 +36,7 @@ const ReadoutDisplay = styled.div`
     flex-grow: 0;
   }
 
-  ${props =>
+  ${(props) =>
     props.primary &&
     `
     &:before {

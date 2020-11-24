@@ -9,7 +9,7 @@ export const Wrap = styled.div`
   justify-content: center;
   padding: ${spacingScale(2)};
 
-  ${props =>
+  ${(props) =>
     props.isBlock &&
     css`
       display: flex;
@@ -24,7 +24,7 @@ export const Wrap = styled.div`
       }
     `}
 
-  ${props =>
+  ${(props) =>
     !props.isBlock &&
     css`
       ${Graphic} {

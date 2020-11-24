@@ -11,7 +11,7 @@ const ReadoutItemData = styled.div`
   padding: ${spacingScale(1)} 0;
 
   &:first-child {
-    padding-left: ${props =>
+    padding-left: ${(props) =>
       props.paddingLeft ? props.paddingLeft : spacingScale(2)};
   }
 `;

@@ -20,7 +20,7 @@ const TooltipContent = styled.div`
   margin: ${spacingScale(1)};
   word-wrap: break-word;
 
-  ${props =>
+  ${(props) =>
     props.visible
       ? `
           opacity: 1;

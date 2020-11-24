@@ -46,7 +46,7 @@ stories.add(
   () => {
     return (
       <NavCardGroup useContextTheme={boolean("useContextTheme")}>
-        {mockTabs.map(item => {
+        {mockTabs.map((item) => {
           return (
             <NavCard
               key={item.title}

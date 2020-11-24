@@ -23,7 +23,7 @@ const ButtonWrap = styled.button`
   transition: all 0.3s ease;
   user-select: none;
 
-  ${props =>
+  ${(props) =>
     props.active &&
     css`
       transition-duration: 0s;
@@ -56,7 +56,7 @@ const ButtonWrap = styled.button`
     flex: 0 1 auto;
   }
 
-  ${props => css`
+  ${(props) => css`
     ${generateButtonStyle(
       props.theme,
       props.type,

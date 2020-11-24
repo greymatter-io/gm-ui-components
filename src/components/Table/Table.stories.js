@@ -78,8 +78,8 @@ stories.add(
           "name"
         )}
         selectedRows={array("selectedRows", [0])}
-        onSort={sortIndex => alert(JSON.stringify(sortIndex))}
-        onRowClick={rowData => console.log(rowData)}
+        onSort={(sortIndex) => alert(JSON.stringify(sortIndex))}
+        onRowClick={(rowData) => console.log(rowData)}
       />
     );
   },

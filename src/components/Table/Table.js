@@ -41,7 +41,7 @@ export default function Table({
             rowIndex={rowIndex}
             selectedRowStyle={selectedRowStyle}
             isSelected={selectedRows.some(
-              selectedRow => selectedRow === rowIndex
+              (selectedRow) => selectedRow === rowIndex
             )}
           />
         ))}

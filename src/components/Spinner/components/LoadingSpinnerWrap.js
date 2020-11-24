@@ -10,7 +10,7 @@ export const LoadingSpinnerWrap = styled.div`
   margin: auto;
   flex: 0 0 auto;
 
-  ${props =>
+  ${(props) =>
     props.orientation === "vertical"
       ? `
     text-align: center;

@@ -20,7 +20,7 @@ function NavCard({ icon, details = [], title, children, ...props }) {
         {typeof icon === "function" && <NavCardIcon>{icon()}</NavCardIcon>}
         <h1>{title}</h1>
       </NavCardTitle>
-      {details.map(item => {
+      {details.map((item) => {
         return (
           <NavCardDetails key={item.name}>
             <NavCardKey>{item.name}</NavCardKey>

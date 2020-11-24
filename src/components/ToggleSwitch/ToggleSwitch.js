@@ -6,7 +6,7 @@ import { formInteractionStyles } from "components/util/InputFieldInteractionStyl
 import InputWrap from "components/util/InputWrap";
 import InputLabelText from "components/util/InputLabelText";
 
-const ToggleSwitchElement = styled.input.attrs(props => ({
+const ToggleSwitchElement = styled.input.attrs((props) => ({
   type: "checkbox"
 }))`
   ${formInteractionStyles()};
@@ -80,7 +80,7 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
     }
 
     &:after {
-      content: "${props => props.innerLabelOn}";
+      content: "${(props) => props.innerLabelOn}";
       left: 0;
       right: auto;
       color: ${({ color, theme }) =>
@@ -103,7 +103,7 @@ const ToggleSwitchElement = styled.input.attrs(props => ({
     }
 
     &:after {
-      content: "${props => props.innerLabelOff}";
+      content: "${(props) => props.innerLabelOff}";
       left: auto;
       right: 0;
     }

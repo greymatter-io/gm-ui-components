@@ -3,7 +3,7 @@ import { keen } from "style/theme";
 import { spacingScale } from "style/styleFunctions";
 
 const InputWrap = styled.label`
-  ${props => getPosition(props.labelPosition)};
+  ${(props) => getPosition(props.labelPosition)};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   display: flex;

@@ -26,7 +26,7 @@ describe("Button", () => {
   describe("Snapshots", () => {
     test("matches type snapshots", () => {
       let tree;
-      types.forEach(type => {
+      types.forEach((type) => {
         tree = render(
           <Button type={type} label={type} key={type} clickAction={() => {}} />
         );
@@ -43,7 +43,7 @@ describe("Button", () => {
 
     test("matches size snapshots", () => {
       let tree;
-      sizes.forEach(size => {
+      sizes.forEach((size) => {
         tree = render(
           <Button size={size} label={size} key={size} clickAction={() => {}} />
         );
@@ -53,7 +53,7 @@ describe("Button", () => {
 
     test("matches orientation snapshots", () => {
       let tree;
-      orientations.forEach(orientation => {
+      orientations.forEach((orientation) => {
         tree = render(
           <Button
             orientation={orientation}
