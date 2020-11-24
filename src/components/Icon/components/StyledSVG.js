@@ -8,8 +8,8 @@ const StyledSVG = styled.svg.attrs(() => ({
   preserveAspectRatio: "xMaxYMax meet"
 }))`
   z-index: 1;
-  width: ${props => props.size};
-  height: ${props => props.size};
+  width: ${(props) => props.size};
+  height: ${(props) => props.size};
   word-spacing: 0;
   vertical-align: middle;
   overflow: visible;
@@ -29,11 +29,11 @@ const StyledSVG = styled.svg.attrs(() => ({
   }
 
   .glyph * {
-    fill: ${props => props.fillColor};
-    fill-opacity: ${props => props.fillOpacity};
-    stroke-width: ${props => props.borderWidth};
-    stroke-opacity: ${props => props.borderOpacity};
-    stroke: ${props => props.borderColor};
+    fill: ${(props) => props.fill};
+    fill-opacity: ${(props) => props.fillOpacity};
+    stroke-width: ${(props) => props.strokeWidth};
+    stroke-opacity: ${(props) => props.strokeOpacity};
+    stroke: ${(props) => props.stroke};
     vector-effect: non-scaling-stroke;
   }
 

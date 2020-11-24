@@ -40,7 +40,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -57,7 +57,7 @@ exports[`Button Snapshots matches orientation snapshots 1`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -147,7 +147,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -164,7 +164,7 @@ exports[`Button Snapshots matches orientation snapshots 2`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -260,7 +260,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -277,7 +277,7 @@ exports[`Button Snapshots matches outline snapshots 1`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: #e6e6e6;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -373,7 +373,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -390,7 +390,7 @@ exports[`Button Snapshots matches size snapshots 1`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -486,7 +486,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -503,7 +503,7 @@ exports[`Button Snapshots matches size snapshots 2`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 10px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -600,7 +600,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -617,7 +617,7 @@ exports[`Button Snapshots matches size snapshots 3`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 12px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -714,7 +714,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -731,7 +731,7 @@ exports[`Button Snapshots matches size snapshots 4`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1.25 * 1px);
   border-radius: 4px;
@@ -827,7 +827,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -844,7 +844,7 @@ exports[`Button Snapshots matches size snapshots 5`] = `
   user-select: none;
   background-color: hsl(0,0%,100%);
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 18px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1.25 * 1px);
   border-radius: 4px;
@@ -940,7 +940,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -957,7 +957,7 @@ exports[`Button Snapshots matches type snapshots 1`] = `
   user-select: none;
   background-color: #D83D22;
   border-color: transparent;
-  color: #fff;
+  color: rgba(255,255,255,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -1053,7 +1053,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1070,7 +1070,7 @@ exports[`Button Snapshots matches type snapshots 2`] = `
   user-select: none;
   background-color: #1E6DF6;
   border-color: transparent;
-  color: #fff;
+  color: rgba(255,255,255,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -1166,7 +1166,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1183,7 +1183,7 @@ exports[`Button Snapshots matches type snapshots 3`] = `
   user-select: none;
   background-color: #00b42b;
   border-color: transparent;
-  color: #fff;
+  color: rgba(255,255,255,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;
@@ -1279,7 +1279,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: Inter var,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   font-weight: 400;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1296,7 +1296,7 @@ exports[`Button Snapshots matches type snapshots 4`] = `
   user-select: none;
   background-color: #F7CD45;
   border-color: transparent;
-  color: #000;
+  color: rgba(0,0,0,0.85);
   font-size: 14px;
   padding: calc(var(--SPACING_BASE) * 0.25 * 1px)  calc(var(--SPACING_BASE) * 1 * 1px);
   border-radius: 4px;

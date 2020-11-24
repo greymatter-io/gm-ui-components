@@ -7,6 +7,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 1`] 
   </Reference>
   <Popper
     placement="top"
+    usePortal={false}
   >
     <Component />
   </Popper>
@@ -20,6 +21,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 2`] 
   </Reference>
   <Popper
     placement="bottom"
+    usePortal={false}
   >
     <Component />
   </Popper>
@@ -33,6 +35,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 3`] 
   </Reference>
   <Popper
     placement="left"
+    usePortal={false}
   >
     <Component />
   </Popper>
@@ -46,6 +49,7 @@ exports[`Tooltip correctly positions tooltip content based on position prop 4`] 
   </Reference>
   <Popper
     placement="right"
+    usePortal={false}
   >
     <Component />
   </Popper>

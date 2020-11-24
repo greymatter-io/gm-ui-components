@@ -11,28 +11,44 @@ import { keen } from "style/theme";
  */
 export default function Icon({
   ariaLabelledby,
-  hasBadge,
   badgeColor,
   badgePosition,
-  borderColor,
-  borderWidth,
   children,
-  fillColor,
+  fill,
   fillOpacity,
   glyphName,
+  hasBadge,
   size,
+  stroke,
+  strokeOpacity,
+  strokeWidth,
   ...props
 }) {
+  const deprecatedFields = {
+    borderWidth: "strokeWidth",
+    borderColor: "stroke",
+    fillColor: "fill"
+  };
+
+  Object.keys(deprecatedFields).forEach(
+    (df) =>
+      props[df] !== undefined &&
+      console.warn(
+        `Use ${deprecatedFields[df]} rather than ${df}. ${df} will be deprecated in the next major version.`
+      )
+  );
+
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      focusable="false"
-      size={size}
-      id={glyphName}
-      fillColor={fillColor}
+      fill={fill}
       fillOpacity={fillOpacity}
-      borderWidth={borderWidth}
-      borderColor={borderColor}
+      focusable="false"
+      id={glyphName}
+      size={size}
+      stroke={stroke}
+      strokeOpacity={strokeOpacity}
+      strokeWidth={strokeWidth}
       {...props}
     >
       {hasBadge && (
@@ -58,16 +74,14 @@ export default function Icon({
         {children}
       </g>
       {hasBadge && (
-        <>
-          <circle
-            className="badge"
-            cx={badgePosition.x}
-            cy={badgePosition.y}
-            r="10"
-            fillOpacity="1"
-            fill={badgeColor}
-          />
-        </>
+        <circle
+          className="badge"
+          cx={badgePosition.x}
+          cy={badgePosition.y}
+          r="10"
+          fillOpacity="1"
+          fill={badgeColor}
+        />
       )}
     </StyledSVG>
   );
@@ -77,29 +91,27 @@ Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   badgeColor: PropTypes.string,
   badgePosition: PropTypes.object,
-  borderColor: PropTypes.string,
-  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  fillColor: PropTypes.string,
+  fill: PropTypes.string,
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
-  size: PropTypes.string
+  size: PropTypes.string,
+  stroke: PropTypes.string,
+  strokeOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
 Icon.defaultProps = {
-  theme: keen,
-  hasBadge: false,
-  badgePosition: {
-    x: 46,
-    y: 16
-  },
   badgeColor: "red",
-  borderColor: "currentColor",
-  borderWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
-  fillColor: "currentColor",
+  badgePosition: { x: 46, y: 16 },
+  fill: "currentColor",
   fillOpacity: 0.15,
-  size: "1.7145em"
+  hasBadge: false,
+  size: "1.7145em",
+  stroke: "currentColor",
+  strokeWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
+  theme: keen
 };
 
 Icon.displayName = "Icon";

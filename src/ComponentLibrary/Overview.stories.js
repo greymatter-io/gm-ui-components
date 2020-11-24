@@ -54,7 +54,7 @@ storiesOf(" Overview|Introduction", module).add(
         <p>
           For detailed readme, issues, suggestions, and related projects, view
           the
-          <a href="https://github.com/DecipherNow/gm-ui-components">
+          <a href="https://github.com/greymatter-io/gm-ui-components">
             Project Source
           </a>
           on GitHub.
