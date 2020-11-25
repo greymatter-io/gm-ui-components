@@ -19,7 +19,7 @@ const TooltipContent = styled.div`
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
   word-wrap: break-word;
 
-  ${props =>
+  ${(props) =>
     props.visible
       ? `
           opacity: 1;

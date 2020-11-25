@@ -5,9 +5,8 @@ const TooltipWrap = styled.div`
   display: inline-block;
   position: relative;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
-
   :hover > :last-child {
-    ${props =>
+    ${(props) =>
       !props.hideTooltip &&
       css`
         opacity: 1;
