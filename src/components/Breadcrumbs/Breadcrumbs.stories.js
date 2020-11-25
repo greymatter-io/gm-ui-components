@@ -19,11 +19,7 @@ stories
   .add(
     "Default",
     () => {
-      return (
-        <Breadcrumbs
-          crumbs={array("crumbs", defaultCrumbs)}
-        />
-      );
+      return <Breadcrumbs crumbs={array("crumbs", defaultCrumbs)} />;
     },
     {
       info: {
@@ -43,9 +39,7 @@ stories
             borderRadius: "2px"
           }}
         >
-          <Breadcrumbs
-            crumbs={array("crumbs", defaultCrumbs)}
-          />
+          <Breadcrumbs crumbs={array("crumbs", defaultCrumbs)} />
         </div>
       );
     },
@@ -69,7 +63,13 @@ stories
         >
           <Breadcrumbs
             crumbs={array("crumbs", defaultCrumbs)}
-            delimiter={<IconPlus size="1em" borderWidth={1.5} style={{ margin: 'auto', color: 'blue'}} />}
+            delimiter={
+              <IconPlus
+                size="1em"
+                borderWidth={1.5}
+                style={{ margin: "auto", color: "blue" }}
+              />
+            }
           />
         </div>
       );

@@ -51,7 +51,7 @@ Breadcrumb.defaultProps = {
 };
 
 const DefaultDelimiter = styled(IconChevronRight).attrs({
-  preserveAspectRatio: 'none'
+  preserveAspectRatio: "none"
 })`
   pointer-events: none;
   color: ${({ theme }) => theme.COLOR_CONTENT_NONESSENTIAL};
@@ -62,7 +62,7 @@ const DefaultDelimiter = styled(IconChevronRight).attrs({
 
 const EmptyDelimiter = styled.span`
   flex: 0 0 0.5em;
-`
+`;
 
 function makeDelimiter(delimiter, i) {
   switch (delimiter) {
@@ -80,11 +80,9 @@ function Breadcrumbs({ crumbs, delimiter, ...props }) {
     <BreadcrumbsWrap {...props}>
       {crumbs.map((crumb, i) => (
         <React.Fragment key={i}>
-          {i > 0 && (makeDelimiter(delimiter, i))}
-          <Breadcrumb key={`${crumb}|${i}`}>
-            {crumb}
-          </Breadcrumb>
-        </React.Fragment >
+          {i > 0 && makeDelimiter(delimiter, i)}
+          <Breadcrumb key={`${crumb}|${i}`}>{crumb}</Breadcrumb>
+        </React.Fragment>
       ))}
     </BreadcrumbsWrap>
   );
