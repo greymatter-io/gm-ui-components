@@ -15,7 +15,9 @@ export default function Tooltip({
 }) {
   const [referenceElement, setReferenceElement] = useState(null);
   const [popperElement, setPopperElement] = useState(null);
-  const { styles, attributes } = usePopper(referenceElement, popperElement);
+  const { styles, attributes } = usePopper(referenceElement, popperElement, {
+    placement: position
+  });
   const [isVisible, setVisibility] = useState(false);
 
   // Always hide the tooltip if the content is empty
@@ -24,24 +26,28 @@ export default function Tooltip({
     <>
       <TooltipWrap
         ref={isVisible ? setReferenceElement : null}
-        onMouseEnter={() => setVisibility(true)}
+        onMouseEnter={() => {
+          console.log("set visibility");
+          setVisibility(true);
+        }}
         onMouseLeave={() => setVisibility(false)}
         {...props}
       >
         {children}
       </TooltipWrap>
-      <div
+
+      <TooltipContent
         ref={isVisible ? setPopperElement : null}
-        style={{ zIndex: theme.ZINDEX_TOOLTIP, ...styles.popper }}
+        style={{
+          zIndex: theme.ZINDEX_TOOLTIP,
+          ...styles.popper,
+          ...tooltipStyle
+        }}
+        visible={!hideTooltip && isVisible}
         {...attributes.popper}
       >
-        <TooltipContent
-          style={{ ...tooltipStyle }}
-          visible={!hideTooltip && isVisible}
-        >
-          {content}
-        </TooltipContent>
-      </div>
+        {content}
+      </TooltipContent>
     </>
   );
 }
