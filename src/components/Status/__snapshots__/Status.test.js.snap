@@ -4,18 +4,21 @@ exports[` 1`] = `
 Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
-  "componentStyle": ComponentStyle {
+  "componentStyle": e {
+    "baseHash": -896292855,
+    "baseStyle": undefined,
     "componentId": "Body-e0mu8o-0",
     "isStatic": false,
-    "lastClassName": "jgwquo",
     "rules": Array [
       "grid-area:body;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;",
       [Function],
     ],
+    "staticRulesId": "",
   },
   "displayName": "Body",
   "foldedComponentIds": Array [],
   "render": [Function],
+  "shouldForwardProp": undefined,
   "styledComponentId": "Body-e0mu8o-0",
   "target": "div",
   "toString": [Function],
@@ -28,7 +31,9 @@ exports[` 2`] = `
 Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
-  "componentStyle": ComponentStyle {
+  "componentStyle": e {
+    "baseHash": 904149841,
+    "baseStyle": undefined,
     "componentId": "Detail-sc-1h8mdse-0",
     "isStatic": false,
     "rules": Array [
@@ -38,10 +43,12 @@ Object {
       [Function],
       ";margin:0 0 auto;",
     ],
+    "staticRulesId": "",
   },
   "displayName": "Detail",
   "foldedComponentIds": Array [],
   "render": [Function],
+  "shouldForwardProp": undefined,
   "styledComponentId": "Detail-sc-1h8mdse-0",
   "target": "span",
   "toString": [Function],
@@ -54,19 +61,22 @@ exports[` 3`] = `
 Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
-  "componentStyle": ComponentStyle {
+  "componentStyle": e {
+    "baseHash": -1056806401,
+    "baseStyle": undefined,
     "componentId": "Graphic-sc-1emua2x-0",
     "isStatic": false,
-    "lastClassName": "dyiQiQ",
     "rules": Array [
       "display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:",
       [Function],
       ";letter-spacing:unset;svg{letter-spacing:normal;}",
     ],
+    "staticRulesId": "",
   },
   "displayName": "Graphic",
   "foldedComponentIds": Array [],
   "render": [Function],
+  "shouldForwardProp": undefined,
   "styledComponentId": "Graphic-sc-1emua2x-0",
   "target": "div",
   "toString": [Function],
@@ -79,7 +89,9 @@ exports[` 4`] = `
 Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
-  "componentStyle": ComponentStyle {
+  "componentStyle": e {
+    "baseHash": -1664101611,
+    "baseStyle": undefined,
     "componentId": "Message-sc-6slmuq-0",
     "isStatic": false,
     "rules": Array [
@@ -87,10 +99,12 @@ Object {
       [Function],
       ";margin:auto 0 0;display:block;&:last-of-type{margin:auto 0;}",
     ],
+    "staticRulesId": "",
   },
   "displayName": "Message",
   "foldedComponentIds": Array [],
   "render": [Function],
+  "shouldForwardProp": undefined,
   "styledComponentId": "Message-sc-6slmuq-0",
   "target": "span",
   "toString": [Function],
@@ -103,10 +117,11 @@ exports[` 5`] = `
 Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
-  "componentStyle": ComponentStyle {
+  "componentStyle": e {
+    "baseHash": 1003129407,
+    "baseStyle": undefined,
     "componentId": "Wrap-vog3nk-0",
     "isStatic": false,
-    "lastClassName": "drLxix",
     "rules": Array [
       "display:grid;grid-template-areas:\\"graphic body\\";align-items:center;justify-content:center;padding:",
       "
@@ -116,10 +131,12 @@ Object {
       " ",
       [Function],
     ],
+    "staticRulesId": "",
   },
   "displayName": "Wrap",
   "foldedComponentIds": Array [],
   "render": [Function],
+  "shouldForwardProp": undefined,
   "styledComponentId": "Wrap-vog3nk-0",
   "target": "div",
   "toString": [Function],

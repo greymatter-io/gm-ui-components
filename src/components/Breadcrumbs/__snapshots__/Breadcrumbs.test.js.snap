@@ -1,41 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Breadcrumb matches snapshot 1`] = `
-.c0 {
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  overflow: hidden;
-  min-width: 2.5em;
-  max-width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.c0:hover,
-.c0:focus {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c0 > * {
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0 > *:link:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<li
-  className="c0"
-/>
-`;
+exports[`Breadcrumb matches snapshot 1`] = `undefined`;
 
 exports[`Breadcrumbs matches snapshot 1`] = `
 <BreadcrumbsWrap
