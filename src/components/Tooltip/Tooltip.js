@@ -1,58 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Manager, Reference, Popper } from "react-popper";
 import TooltipContent from "./components/TooltipContent";
 import TooltipWrap from "./components/TooltipWrap";
 import { keen } from "style/theme";
+import { usePopper } from "react-popper";
+export default function Tooltip({
+  children,
+  content,
+  position,
+  hideTooltip,
+  tooltipStyle,
+  theme,
+  ...props
+}) {
+  const [referenceElement, setReferenceElement] = useState(null);
+  const [popperElement, setPopperElement] = useState(null);
+  const { styles, attributes } = usePopper(referenceElement, popperElement);
+  const [isVisible, setVisibility] = useState(false);
 
-export default class Tooltip extends React.Component {
-  state = {
-    visible: false
-  };
-
-  toggleVisibility = () => this.setState({ visible: !this.state.visible });
-
-  render() {
-    let {
-      children,
-      content,
-      position,
-      hideTooltip,
-      tooltipStyle = {},
-      ...props
-    } = this.props;
-    // Always hide the tooltip if the content is empty
-    if (!content) hideTooltip = true;
-    return (
-      <Manager>
-        <Reference>
-          {({ ref }) => (
-            <TooltipWrap
-              ref={this.state.visible && ref}
-              onMouseEnter={this.toggleVisibility}
-              onMouseLeave={this.toggleVisibility}
-              {...props}
-            >
-              {children}
-            </TooltipWrap>
-          )}
-        </Reference>
-        <Popper placement={position} usePortal={false}>
-          {({ ref, style, placement }) => {
-            return (
-              <TooltipContent
-                ref={this.state.visible && ref}
-                style={{ ...style, ...tooltipStyle }}
-                visible={!hideTooltip && this.state.visible}
-              >
-                {content}
-              </TooltipContent>
-            );
-          }}
-        </Popper>
-      </Manager>
-    );
-  }
+  // Always hide the tooltip if the content is empty
+  if (!content) hideTooltip = true;
+  return (
+    <>
+      <TooltipWrap
+        ref={isVisible ? setReferenceElement : null}
+        onMouseEnter={() => setVisibility(true)}
+        onMouseLeave={() => setVisibility(false)}
+        {...props}
+      >
+        {children}
+      </TooltipWrap>
+      <div
+        ref={isVisible ? setPopperElement : null}
+        style={{ zIndex: theme.ZINDEX_TOOLTIP, ...styles.popper }}
+        {...attributes.popper}
+      >
+        <TooltipContent
+          style={{ ...tooltipStyle }}
+          visible={!hideTooltip && isVisible}
+        >
+          {content}
+        </TooltipContent>
+      </div>
+    </>
+  );
 }
 
 Tooltip.propTypes = {
