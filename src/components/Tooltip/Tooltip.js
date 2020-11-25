@@ -61,6 +61,7 @@ Tooltip.propTypes = {
   ]).isRequired,
   content: PropTypes.string,
   hideTooltip: PropTypes.bool,
+  popperOptions: PropTypes.object, // https://popper.js.org/docs/v2/constructors/#options
   position: PropTypes.oneOf([
     "auto",
     "auto-start",
@@ -78,8 +79,8 @@ Tooltip.propTypes = {
     "left-start",
     "left-end"
   ]), // https://popper.js.org/docs/v2/constructors/#placement
-  tooltipStyle: PropTypes.object,
-  popperOptions: PropTypes.object // https://popper.js.org/docs/v2/constructors/#options
+  theme: PropTypes.object,
+  tooltipStyle: PropTypes.object
 };
 
 Tooltip.defaultProps = {
