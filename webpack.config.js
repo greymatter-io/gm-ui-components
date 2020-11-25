@@ -23,7 +23,8 @@ module.exports = {
     "react-dom": "react-dom",
     "styled-components": "styled-components",
     "inter-ui/inter.css": "inter-ui/inter.css",
-    "@popperjs/core": "@popperjs/core"
+    "@popperjs/core": "@popperjs/core",
+    "react-popper": "react-popper"
   },
   module: {
     rules: [
