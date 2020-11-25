@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { usePopper } from "react-popper";
+
 import TooltipContent from "./components/TooltipContent";
 import TooltipWrap from "./components/TooltipWrap";
 import { keen } from "style/theme";
-import { usePopper } from "react-popper";
 export default function Tooltip({
   children,
   content,
@@ -11,12 +12,14 @@ export default function Tooltip({
   hideTooltip,
   tooltipStyle,
   theme,
+  popperOptions,
   ...props
 }) {
   const [referenceElement, setReferenceElement] = useState(null);
   const [popperElement, setPopperElement] = useState(null);
   const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    placement: position
+    placement: position,
+    ...popperOptions
   });
   const [isVisible, setVisibility] = useState(false);
 
@@ -26,10 +29,7 @@ export default function Tooltip({
     <>
       <TooltipWrap
         ref={isVisible ? setReferenceElement : null}
-        onMouseEnter={() => {
-          console.log("set visibility");
-          setVisibility(true);
-        }}
+        onMouseEnter={() => setVisibility(true)}
         onMouseLeave={() => setVisibility(false)}
         {...props}
       >
@@ -61,8 +61,25 @@ Tooltip.propTypes = {
   ]).isRequired,
   content: PropTypes.string,
   hideTooltip: PropTypes.bool,
-  position: PropTypes.oneOf(["top", "bottom", "left", "right"]),
-  tooltipStyle: PropTypes.object
+  position: PropTypes.oneOf([
+    "auto",
+    "auto-start",
+    "auto-end",
+    "top",
+    "top-start",
+    "top-end",
+    "bottom",
+    "bottom-start",
+    "bottom-end",
+    "right",
+    "right-start",
+    "right-end",
+    "left",
+    "left-start",
+    "left-end"
+  ]), // https://popper.js.org/docs/v2/constructors/#placement
+  tooltipStyle: PropTypes.object,
+  popperOptions: PropTypes.object // https://popper.js.org/docs/v2/constructors/#options
 };
 
 Tooltip.defaultProps = {
