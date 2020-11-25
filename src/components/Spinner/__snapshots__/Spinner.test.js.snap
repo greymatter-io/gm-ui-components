@@ -214,3 +214,7 @@ exports[`Spinner matches snapshot 1`] = `
   </LoadingMessage>
 </LoadingSpinnerWrap>
 `;
+
+exports[`Spinner renders the correct styles when passed a horizontal prop 1`] = `null`;
+
+exports[`Spinner renders the correct styles when passed a vertical prop 1`] = `null`;
