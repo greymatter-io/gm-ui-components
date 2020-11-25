@@ -10,6 +10,7 @@ const TooltipContent = styled.div`
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_DEFAULT};
   z-index: ${({ theme }) => theme.ZINDEX_TOOLTIP};
   padding: ${spacingScale(1)};
+  width: ${spacingScale(20)};
   opacity: 0;
   text-align: left;
   position: absolute;
