@@ -12,8 +12,8 @@ const TooltipContent = styled.div`
   padding: ${spacingScale(1)};
   width: ${spacingScale(20)};
   opacity: 0;
-  text-align: left;
   position: absolute;
+  text-align: left;
   transition: opacity 0.5s, visibility 0.5s;
   white-space: normal;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
