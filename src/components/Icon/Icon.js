@@ -24,15 +24,20 @@ export default function Icon({
   strokeWidth,
   ...props
 }) {
-
   const deprecatedFields = {
     borderWidth: "strokeWidth",
     borderColor: "stroke",
     fillColor: "fill"
-  }
+  };
 
-  Object.keys(deprecatedFields).forEach(df => props[df] !== undefined && console.warn(`Use ${deprecatedFields[df]} rather than ${df}. ${df} will be deprecated in the next major version.`));
-  
+  Object.keys(deprecatedFields).forEach(
+    df =>
+      props[df] !== undefined &&
+      console.warn(
+        `Use ${deprecatedFields[df]} rather than ${df}. ${df} will be deprecated in the next major version.`
+      )
+  );
+
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
@@ -94,19 +99,19 @@ Icon.propTypes = {
   size: PropTypes.string,
   stroke: PropTypes.string,
   strokeOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
 Icon.defaultProps = {
   badgeColor: "red",
-  badgePosition: { x: 46, y: 16},
+  badgePosition: { x: 46, y: 16 },
   fill: "currentColor",
   fillOpacity: 0.15,
   hasBadge: false,
   size: "1.7145em",
   stroke: "currentColor",
   strokeWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
-  theme: keen,
+  theme: keen
 };
 
 Icon.displayName = "Icon";

@@ -12,12 +12,11 @@ const TooltipContent = styled.div`
   padding: ${spacingScale(1)};
   width: ${spacingScale(20)};
   opacity: 0;
-  position: absolute;
   text-align: left;
+  position: absolute;
   transition: opacity 0.5s, visibility 0.5s;
   white-space: normal;
   font-family: ${({ theme }) => theme.FONT_STACK_DEFAULT};
-  margin: ${spacingScale(1)};
   word-wrap: break-word;
 
   ${props =>
