@@ -21,7 +21,9 @@
     "react": "^16",
     "react-dom": "^16",
     "styled-components": "^4",
-    "inter-ui": "^3"
+    "inter-ui": "^3",
+    "react-popper": "^2",
+    "@popperjs/core": "^2"
   },
   "dependencies": {
     "polished": "^3.4.2"
