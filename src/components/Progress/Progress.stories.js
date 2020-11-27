@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { number, select, text } from "@storybook/addon-knobs";
+import { number, select, boolean, text } from "@storybook/addon-knobs";
 
 import Progress from "./Progress";
 
@@ -11,8 +11,10 @@ stories.add(
   () => {
     return (
       <Progress
-        kind={select('kind', ['bar', 'pie'], 'pie')}
-        percent={number("percent", 0.5, { step: 0.01, range: true, min: 0, max: 1 })}
+        value={text("value", 0.5)}
+        max={number("max", 1)}
+        shape={select('shape', ['bar', 'pie'], 'bar')}
+        reverse={boolean('reverse', false)}
       />
     );
   },
