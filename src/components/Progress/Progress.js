@@ -7,10 +7,8 @@ const CONIC_SUPPORT_REQUIREMENTS = 'conic-gradient(var(--fill-color, currentColo
 const indeterminateBar = keyframes`
   from {
     transform: scaleX(1.5) translateX(-100%);
-    /* background-position-x: -100%; */
   } to {
     transform: scaleX(1.5) translateX(100%);
-    /* background-position-x: 100%; */
   }
 `;
 
@@ -23,7 +21,15 @@ const indeterminatePie = keyframes`
 `;
 
 // Progress Component
-const Progress = styled.progress.attrs(props => ({
+const Progress = styled.div.attrs(props => ({
+  // If we want control over the fill element,
+  // we can't use the real Progress element,
+  // because Safari and Firefox don't allow
+  // enough styling on either the fill itself
+  // or pseudo-elements. This also saves about
+  // 50 lines of fixes acounting for browser
+  // differences.
+  ariaRole: "progressbar",
   value: (props.value)
     ? Math.min(props.reverse
       ? (props.max - props.value / props.max)
@@ -57,18 +63,6 @@ const Progress = styled.progress.attrs(props => ({
   --indeterminate-bar-animation-timing-function: linear;
   --indeterminate-pie-circle-animation-duration: 0.9s;
   --indeterminate-pie-circle-animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67); // Default follows Microsoft's FluentUI style: https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner
-  
-  
-  /* Brower-specific selectors have to be separated, because
-  some browsers will ignore a selector that includes another
-  browser's styles */
-  &::-webkit-progress-bar {
-    background: transparent;
-  } &::-moz-progress-bar {
-    background: transparent;
-  } &::-ms-fill {
-    background: transparent;
-  }
 
   /* Reverse inverts the value recieved to the element,
   and also flips the progress bar on the y axis. */
@@ -84,13 +78,20 @@ const Progress = styled.progress.attrs(props => ({
     overflow: hidden;
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
 
-    &::-webkit-progress-value {
-      background: var(--fill-color, currentColor);
-      transition: width var(--change-smoothing-duration) var(--change-smoothing-timing-function);
-    } &::-moz-progress-bar {
-      background: var(--fill-color, currentColor);
-      transition: width var(--change-smoothing-duration) var(--change-smoothing-timing-function);
-    } &::-ms-fill {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: center center;
+    }
+
+    &:after {
+      right: auto;
+      width: calc(var(--percent) * 100%);
       background: var(--fill-color, currentColor);
       transition: width var(--change-smoothing-duration) var(--change-smoothing-timing-function);
     }
@@ -101,21 +102,10 @@ const Progress = styled.progress.attrs(props => ({
     // but this also captures the case where the value
     // prop itself exists but the value is undefined.
     ${props => !props.value && css`
-
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        transform-origin: center center;
-      }
-
       /* Scrolling gradient */
       &:after{
+        right: 0;
+        background-color: transparent;
         background-position: center;
         background-image: linear-gradient(to right, transparent 0%, var(--fill-color, currentColor) 45%, var(--fill-color, currentColor) 55%, transparent 100%);
         animation: ${indeterminateBar} var(--indeterminate-bar-animation-duration) var(--indeterminate-bar-animation-timing-function) infinite;
@@ -162,16 +152,6 @@ const Progress = styled.progress.attrs(props => ({
         );
         mask-image: var(--mask);
     `}
-
-    /* The browser's fill doesn't quite work
-    here so we turn off the default progress fills... */
-    &::-webkit-progress-value {
-      display: none;
-    } &::-moz-progress-bar {
-      display: none
-    } &::-ms-fill {
-      display: none
-    }
 
     /* ...And create a new fill with either a simple
     conic gradient... */
@@ -248,7 +228,7 @@ Progress.defaultProps = {
   // 'max' on a progress element defaults to 1 anyway,
   // but setting it here ensures it's available for
   // important calcuations inside the component.
-  max: 1,
+  max: 1
 }
 
 Progress.propTypes = {
