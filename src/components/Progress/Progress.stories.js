@@ -28,7 +28,7 @@ stories.add(
   () => {
     return (
       <Progress
-        value={text("value", undefined)}
+        value={number("value", 0.5)}
         max={number("max", 1)}
         shape={select('shape', ['bar', 'pie', 'circle'], 'bar')}
         reverse={boolean('reverse', false)}
@@ -67,6 +67,9 @@ stories.add(
     return (
       <Grid>
         <Progress value={0.3} />
+        <Progress value={0.3} style={{ border: 0, color: "#00b42b", width: '10em', height: '0.5em' }} />
+        <Progress />
+        <Progress style={{ border: 0, color: "#00b42b", width: '10em', height: '0.5em' }} />
         <Progress value={0.39} shape='pie' style={{ fontSize: '10em' }} />
         <Progress shape='circle' style={{
           fontSize: '10em',

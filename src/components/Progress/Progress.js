@@ -1,13 +1,30 @@
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 
-const CHANGE_SMOOTHING_DURATION = '0.1s';
-const CHANGE_SMOOTHING_TIMING_FUNCTION = 'ease';
-const INDETERMINATE_BAR_ANIMATION_DURATION = '1.1s';
-const INDETERMINATE_PIE_CIRCLE_ANIMATION_DURATION = '.9s';
-// Defaults to Microsoft's FluentUI style
-const INDETERMINATE_PIE_CIRCLE_ANIMATION_TIMING_FUNCTION = 'cubic-bezier(0.53, 0.21, 0.29, 0.67)';
 const CONIC_SUPPORT_REQUIREMENTS = 'conic-gradient(var(--fill-color, currentColor) calc(3.6deg * var(--percent, 100)))';
+
+/* Brower-specific selectors have to be separated, because
+some browsers will ignore a selector that includes another
+browser's styles */
+const progressBarStyles = (styles) => css`
+  // firefox
+  ${styles}
+
+  &::-webkit-progress-bar {
+    ${styles}
+  }
+`;
+const progressFillStyles = (styles) => css`
+  &::-webkit-progress-value {
+    ${styles}
+  } &::-moz-progress-bar {
+    ${styles}
+  } &::-ms-fill {
+    ${styles}
+  }
+`;
+
+
 
 // Animations
 const indeterminateBar = keyframes`
@@ -28,7 +45,11 @@ const indeterminatePie = keyframes`
 
 // Progress Component
 const Progress = styled.progress.attrs(props => ({
-  value: props.value ? Math.min(props.reverse ? (props.max - props.value / props.max) : (props.value / props.max), props.max) : undefined,
+  value: (props.value)
+    ? Math.min(props.reverse
+      ? (props.max - props.value / props.max)
+      : props.value, props.max)
+    : undefined,
   style: {
     ...props.style,
     "--percent": Math.min((props.reverse ? (props.max - props.value / props.max) : props.value / props.max), props.max) || undefined,
@@ -45,19 +66,19 @@ const Progress = styled.progress.attrs(props => ({
   /* Reset element style */
   appearance: none;
   position: relative;
-  /* Brower-specific selectors have to be separated, because
-  some browsers will ignore a selector that includes another
-  browser's styles */
-  &::-webkit-progress-bar {
-    background: transparent;
-  } &::-moz-progress-bar {
-    background: transparent;
-  } &::-ms-fill {
-    background: transparent;
-  }
 
   /* Very basic default styling */
   border: 1px solid;
+
+  /* Set some default values */
+  --change-smoothing-duration: 0.1s;
+  --change-smoothing-timing-function: ease;
+  --indeterminate-bar-animation-duration: 1.1s;
+  --indeterminate-bar-animation-timing-function: linear;
+  --indeterminate-pie-circle-animation-duration: 0.9s;
+  --indeterminate-pie-circle-animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67); // Default follows Microsoft's FluentUI style: https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner
+
+  ${progressBarStyles("background: transparent;")}
 
   /* Reverse inverts the value recieved to the element,
   and also flips the progress bar on the y axis. */
@@ -73,16 +94,10 @@ const Progress = styled.progress.attrs(props => ({
     overflow: hidden;
     border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
 
-    &::-webkit-progress-value {
+    ${progressFillStyles`
       background: var(--fill-color, currentColor);
-      transition: width ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
-    } &::-moz-progress-bar {
-      background: var(--fill-color, currentColor);
-      transition: width ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
-    } &::-ms-fill {
-      background: var(--fill-color, currentColor);
-      transition: width ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
-    }
+      transition: width var(--change-smoothing-duration) var(--change-smoothing-timing-function);
+    `}
 
     // Indeterminate style for when value is undefined
     //
@@ -90,8 +105,6 @@ const Progress = styled.progress.attrs(props => ({
     // but this also captures the case where the value
     // prop itself exists but the value is undefined.
     ${props => !props.value && css`
-      position: relative;
-
       &:before,
       &:after {
         content: '';
@@ -108,7 +121,7 @@ const Progress = styled.progress.attrs(props => ({
       &:after{
         background-position: center;
         background-image: linear-gradient(to right, transparent 0%, var(--fill-color, currentColor) 45%, var(--fill-color, currentColor) 55%, transparent 100%);
-        animation: ${indeterminateBar} ${INDETERMINATE_BAR_ANIMATION_DURATION} linear infinite};
+        animation: ${indeterminateBar} var(--indeterminate-bar-animation-duration) var(--indeterminate-bar-animation-timing-function) infinite;
         opacity: ${({ theme }) => theme.OPACITY_LIGHT};
       }
 
@@ -123,8 +136,8 @@ const Progress = styled.progress.attrs(props => ({
   /* Pie & circle styles
   Circle is the same as pie, except that it sets a value
   to --mask-image, to cut out the center of the pie. */
-  ${props => (props.shape === 'pie' || props.shape === 'circle') && css`
-    position: relative;
+${
+  props => (props.shape === 'pie' || props.shape === 'circle') && css`
     width: 1em;
     height: 1em;
     border-radius: 1000em;
@@ -135,7 +148,7 @@ const Progress = styled.progress.attrs(props => ({
       /* Set the size to 1/6 */
       --percent: 0.125 !important;
       /* And make it spin */
-      animation: ${indeterminatePie} ${INDETERMINATE_PIE_CIRCLE_ANIMATION_DURATION} ${INDETERMINATE_PIE_CIRCLE_ANIMATION_TIMING_FUNCTION} infinite ${props => props.reverse ? 'reverse' : ''};
+      animation: ${indeterminatePie} var(--indeterminate-pie-circle-animation-duration) var(--indeterminate-pie-circle-animation-timing-function) infinite ${props => props.reverse ? 'reverse' : ''};
     `}
 
     ${props.shape === 'circle' && css`
@@ -164,15 +177,15 @@ const Progress = styled.progress.attrs(props => ({
 
     /* ...And create a new fill with either a simple
     conic gradient... */
-    @supports (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
-      transition: background-image ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
+    /* @supports (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
+      transition: background-image var(--change-smoothing-duration) var(--change-smoothing-timing-function);
       background-image:
         conic-gradient(
           var(--fill-color, currentColor) calc(3.6deg * (var(--percent) * 100)),
           transparent calc(3.6deg * (var(--percent) * 100))
         );
       mask-image: var(--mask);
-    }
+    } */
 
     /* ...Or a giant, math-heavy approximation of one...
 
@@ -187,7 +200,7 @@ const Progress = styled.progress.attrs(props => ({
         top: 50%;
         transform-origin: center center;
         background: var(--fill-color, currentColor);
-        transition: clip-path ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
+        transition: clip-path var(--change-smoothing-duration) var(--change-smoothing-timing-function);
 
         --value: calc(var(--percent) * 100);
         --radius: 1em;
@@ -235,11 +248,14 @@ const Progress = styled.progress.attrs(props => ({
 
 Progress.defaultProps = {
   shape: 'bar',
+  max: 1, // 'max' on a progress element defaults to 1 anyway,
+          // but setting it here ensures it's available for
+          // important calcuations inside the component.
 }
 
 Progress.propTypes = {
   value: PropTypes.number,
-  max: PropTypes.number,
+  max: PropTypes.number.isRequired,
   shape: PropTypes.oneOf(['pie', 'bar', 'circle']),
   reverse: PropTypes.bool,
 };
