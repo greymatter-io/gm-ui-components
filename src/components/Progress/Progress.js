@@ -4,9 +4,12 @@ import styled, { css, keyframes } from "styled-components";
 const CHANGE_SMOOTHING_DURATION = '0.1s';
 const CHANGE_SMOOTHING_TIMING_FUNCTION = 'ease';
 const INDETERMINATE_BAR_ANIMATION_DURATION = '1.1s';
-
+const INDETERMINATE_PIE_CIRCLE_ANIMATION_DURATION = '.9s';
+// Defaults to Microsoft's FluentUI style
+const INDETERMINATE_PIE_CIRCLE_ANIMATION_TIMING_FUNCTION = 'cubic-bezier(0.53, 0.21, 0.29, 0.67)';
 const CONIC_SUPPORT_REQUIREMENTS = 'conic-gradient(var(--fill-color, currentColor) calc(3.6deg * var(--percent, 100)))';
 
+// Animations
 const indeterminateBar = keyframes`
   from {
     transform: scaleX(1.5) translateX(-100%);
@@ -15,11 +18,20 @@ const indeterminateBar = keyframes`
   }
 `;
 
+const indeterminatePie = keyframes`
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+`;
+
+// Progress Component
 const Progress = styled.progress.attrs(props => ({
   value: props.value ? Math.min(props.reverse ? (props.max - props.value / props.max) : (props.value / props.max), props.max) : undefined,
   style: {
     ...props.style,
-    "--percent": Math.min((props.reverse ? (props.max - props.value / props.max) : props.value / props.max), props.max),
+    "--percent": Math.min((props.reverse ? (props.max - props.value / props.max) : props.value / props.max), props.max) || undefined,
 
     // CSS Variables for the fallback Pie style
     "--lt-25": (props.value / props.max * 100) <= 25 ? 1 : 0,
@@ -72,12 +84,12 @@ const Progress = styled.progress.attrs(props => ({
       transition: width ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
     }
 
-    // Indeterminate style for when value is not present
+    // Indeterminate style for when value is undefined
     //
     // Normally we'd use the :indeterminate pseudo-class,
-    // but using !props.value also captures the case where
-    // the value prop exists but is empty.
-    ${props => (props.value === undefined) && css`
+    // but this also captures the case where the value
+    // prop itself exists but the value is undefined.
+    ${props => !props.value && css`
       position: relative;
 
       &:before,
@@ -108,13 +120,37 @@ const Progress = styled.progress.attrs(props => ({
     `}
   `}
 
-  ${props => props.shape === 'pie' && css`
+  /* Pie & circle styles
+  Circle is the same as pie, except that it sets a value
+  to --mask-image, to cut out the center of the pie. */
+  ${props => (props.shape === 'pie' || props.shape === 'circle') && css`
     position: relative;
     width: 1em;
     height: 1em;
     border-radius: 1000em;
     clip-path: circle(50% at 50% 50%);
-    border: 1px solid;
+
+    /* Indeterminate style for pies and circles */
+    ${props => !props.value && css`
+      /* Set the size to 1/6 */
+      --percent: 0.125 !important;
+      /* And make it spin */
+      animation: ${indeterminatePie} ${INDETERMINATE_PIE_CIRCLE_ANIMATION_DURATION} ${INDETERMINATE_PIE_CIRCLE_ANIMATION_TIMING_FUNCTION} infinite ${props => props.reverse ? 'reverse' : ''};
+    `}
+
+    ${props.shape === 'circle' && css`
+      --circle-width: 0.125em;
+      /* Difference between the hypoteneuse of a square
+      and the diameter of a circle
+      =  (Math.sqrt(2) / 2) - (1 / 2) */
+      --magic-offset: 0.20710678118654757em;
+      --mask: radial-gradient(
+        circle at center,
+        transparent 0%,
+        transparent calc(100% - var(--magic-offset) - var(--circle-width) - 1px),
+              black calc(100% - var(--magic-offset) - var(--circle-width))
+        );
+    `}
 
     /* The browser's fill doesn't quite work
     here so we turn off the default progress fills... */
@@ -135,11 +171,12 @@ const Progress = styled.progress.attrs(props => ({
           var(--fill-color, currentColor) calc(3.6deg * (var(--percent) * 100)),
           transparent calc(3.6deg * (var(--percent) * 100))
         );
+      mask-image: var(--mask);
     }
 
-    /* ...Or a giant, math-heavy approximation of one... */
+    /* ...Or a giant, math-heavy approximation of one...
 
-    /* Older browser support (Pre-11 IE) requires some fun math.
+    Older browser support (Pre-11 IE) requires some fun math.
     Thanks to https://ffoodd.github.io/chaarts/pie-charts.html for
     climbing that mountain. */
     @supports not (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
@@ -188,7 +225,6 @@ const Progress = styled.progress.attrs(props => ({
         );
         clip-path: var(--polygon);
         height: var(--radius);
-        --mask: radial-gradient( circle at center, #fff 0%, #fff calc(var(--radius) / 2), transparent 0 );
         mask-image: var(--mask);
         transform: translate(-50%,-50%);
         width: var(--radius);
@@ -199,13 +235,12 @@ const Progress = styled.progress.attrs(props => ({
 
 Progress.defaultProps = {
   shape: 'bar',
-  max: 1
 }
 
 Progress.propTypes = {
   value: PropTypes.number,
   max: PropTypes.number,
-  shape: PropTypes.oneOf(['pie', 'bar']),
+  shape: PropTypes.oneOf(['pie', 'bar', 'circle']),
   reverse: PropTypes.bool,
 };
 
