@@ -11,7 +11,7 @@ stories.add(
   () => {
     return (
       <Progress
-        value={text("value", 0.5)}
+        value={text("value", 0.35)}
         max={number("max", 1)}
         shape={select('shape', ['bar', 'pie'], 'bar')}
         reverse={boolean('reverse', false)}
@@ -21,7 +21,7 @@ stories.add(
   {
     info: {
       text:
-        "Progress to indicate the loading state of an interface element or background process."
+        "Progress takes the browser's default progress element and extends it with additional states and styles, particularly the 'Pie' alternate shape."
     }
   }
 );

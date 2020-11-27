@@ -3,21 +3,25 @@ import styled, { css, keyframes } from "styled-components";
 
 const CHANGE_SMOOTHING_DURATION = '0.1s';
 const CHANGE_SMOOTHING_TIMING_FUNCTION = 'ease';
+const INDETERMINATE_BAR_ANIMATION_DURATION = '1.1s';
+
+const CONIC_SUPPORT_REQUIREMENTS = 'conic-gradient(var(--fill-color, currentColor) calc(3.6deg * var(--percent, 100)))';
 
 const indeterminateBar = keyframes`
   from {
-    transform: translateX(-200%);
-    
+    transform: scaleX(1.5) translateX(-100%);
   } to {
-    transform: translateX(200%);
+    transform: scaleX(1.5) translateX(100%);
   }
 `;
 
 const Progress = styled.progress.attrs(props => ({
+  value: props.value ? Math.min(props.reverse ? (props.max - props.value / props.max) : (props.value / props.max), props.max) : undefined,
   style: {
-    "--percent": props.reverse
-      ? 1 - (props.value / props.max)
-      : props.value / props.max,
+    ...props.style,
+    "--percent": Math.min((props.reverse ? (props.max - props.value / props.max) : props.value / props.max), props.max),
+
+    // CSS Variables for the fallback Pie style
     "--lt-25": (props.value / props.max * 100) <= 25 ? 1 : 0,
     "--gt-25": (props.value / props.max * 100) > 25 ? 1 : 0,
     "--lt-50": (props.value / props.max * 100) <= 50 ? 1 : 0,
@@ -26,34 +30,45 @@ const Progress = styled.progress.attrs(props => ({
     "--gt-75": (props.value / props.max * 100) > 75 ? 1 : 0,
   }
 }))`
-
-  /* Reset default styles */
+  /* Reset element style */
   appearance: none;
-
+  position: relative;
+  /* Brower-specific selectors have to be separated, because
+  some browsers will ignore a selector that includes another
+  browser's styles */
   &::-webkit-progress-bar {
+    background: transparent;
+  } &::-moz-progress-bar {
+    background: transparent;
+  } &::-ms-fill {
     background: transparent;
   }
 
-  /* temp styles */
+  /* Very basic default styling */
   border: 1px solid;
-  margin: 1em;
-  border-radius: 1em;
 
+  /* Reverse inverts the value recieved to the element,
+  and also flips the progress bar on the y axis. */
+  ${props => props.reverse && css`
+    transform: scaleX(-1);
+  `}
+
+  /* Bar style mostly uses default progress element
+  behavior, but with a more minimal style. */
   ${props => props.shape === 'bar' && css`
     width: 10em;
     height: 1em;
     overflow: hidden;
+    border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
 
-    /* &:after { */
-    &::-ms-fill,
     &::-webkit-progress-value {
-      /* position: absolute; */
-      /* top: 0; */
-      /* bottom: 0; */
-      /* left: 0; */
-      background: currentColor;
-      /* background: red; */
-      /* width: calc(var(--percent) * 100%); */
+      background: var(--fill-color, currentColor);
+      transition: width ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
+    } &::-moz-progress-bar {
+      background: var(--fill-color, currentColor);
+      transition: width ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
+    } &::-ms-fill {
+      background: var(--fill-color, currentColor);
       transition: width ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
     }
 
@@ -62,45 +77,83 @@ const Progress = styled.progress.attrs(props => ({
     // Normally we'd use the :indeterminate pseudo-class,
     // but using !props.value also captures the case where
     // the value prop exists but is empty.
-    ${props => !props.value && css`
-      &:after{
+    ${props => (props.value === undefined) && css`
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        background: none;
-        background-image: linear-gradient(to right, transparent, currentColor, transparent);
-        animation: ${indeterminateBar} 1s linear infinite ${props => props.reverse && 'reverse'};
+        transform-origin: center center;
+      }
+
+      /* Scrolling gradient */
+      &:after{
+        background-position: center;
+        background-image: linear-gradient(to right, transparent 0%, var(--fill-color, currentColor) 45%, var(--fill-color, currentColor) 55%, transparent 100%);
+        animation: ${indeterminateBar} ${INDETERMINATE_BAR_ANIMATION_DURATION} linear infinite};
+        opacity: ${({ theme }) => theme.OPACITY_LIGHT};
+      }
+
+      /* Light (opacity) background color */
+      &:before {
+        background: var(--fill-color, currentColor);
+        opacity: ${({ theme }) => theme.OPACITY_LIGHTEST};
       }
     `}
   `}
 
   ${props => props.shape === 'pie' && css`
     position: relative;
-    font-size: 1.5em;
     width: 1em;
     height: 1em;
     border-radius: 1000em;
     clip-path: circle(50% at 50% 50%);
+    border: 1px solid;
 
-    @supports (background-image: conic-gradient(currentColor calc(3.6deg * var(--percent, 100)))) {
+    /* The browser's fill doesn't quite work
+    here so we turn off the default progress fills... */
+    &::-webkit-progress-value {
+      display: none;
+    } &::-moz-progress-bar {
+      display: none
+    } &::-ms-fill {
+      display: none
+    }
+
+    /* ...And create a new fill with either a simple
+    conic gradient... */
+    @supports (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
       transition: background-image ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
       background-image:
         conic-gradient(
-          currentColor calc(3.6deg * (var(--percent) * 100)),
+          var(--fill-color, currentColor) calc(3.6deg * (var(--percent) * 100)),
           transparent calc(3.6deg * (var(--percent) * 100))
         );
     }
 
-    @supports not (background-image: conic-gradient(currentColor calc(3.6deg * var(--percent, 100)))) {
+    /* ...Or a giant, math-heavy approximation of one... */
+
+    /* Older browser support (Pre-11 IE) requires some fun math.
+    Thanks to https://ffoodd.github.io/chaarts/pie-charts.html for
+    climbing that mountain. */
+    @supports not (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
       &:after {
         content: '';
         left: 50%;
         position: absolute;
         top: 50%;
         transform-origin: center center;
-        background: currentColor;
+        background: var(--fill-color, currentColor);
         transition: clip-path ${CHANGE_SMOOTHING_DURATION} ${CHANGE_SMOOTHING_TIMING_FUNCTION};
 
-        --radius: 1.1em;
         --value: calc(var(--percent) * 100);
+        --radius: 1em;
         --start: 0;
         --part: calc( var(--value) * 3.6 );
         --main-angle: calc( var(--part) - ( 90 * ( var(--gt-25, 0) + var(--gt-50, 0) + var(--gt-75, 0) ) ) );
@@ -154,7 +207,6 @@ Progress.propTypes = {
   max: PropTypes.number,
   shape: PropTypes.oneOf(['pie', 'bar']),
   reverse: PropTypes.bool,
-  direction: PropTypes.oneOf(['ltr', 'rtl']),
 };
 
 Progress.displayName = "Progress";
