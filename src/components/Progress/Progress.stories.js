@@ -1,15 +1,14 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { number, select, boolean, text } from "@storybook/addon-knobs";
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import maskImage from "./legend.svg";
+import maskImage from './legend.svg';
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
   grid-gap: 1rem;
-  margin: 2rem;
   place-items: center;
   place-content: center;
 `;
@@ -59,18 +58,13 @@ const Wrapper = styled.div`
   padding-right: 1em;
   place-items: flex-end;
   place-content: flex-end;
-  background-image: linear-gradient(
-    to bottom,
-    currentColor,
-    currentColor 34%,
-    #000 30%
-  );
+  background-image: linear-gradient(to bottom, currentColor, currentColor 34%, #000 30%);
   position: relative;
   box-shadow: 0 0 0 1px ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
 
   &:after,
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 28%;
     left: 5%;
@@ -91,98 +85,79 @@ const Wrapper = styled.div`
 
 const stories = storiesOf("Components|Progress", module);
 
-stories
-  .add(
-    "Default",
-    () => {
-      return (
-        <Progress
-          value={number("value", 0.5)}
-          max={number("max", 1)}
-          shape={select("shape", ["bar", "pie", "circle"], "bar")}
-          reverse={boolean("reverse", false)}
-        />
-      );
-    },
-    {
-      info: {
-        text:
-          "Progress takes the browser's default progress element and extends it with additional states and styles, particularly the 'Pie' alternate shape. Mind the provided CSS Variables: --circle - width, --fill- color, etc."
-      }
+stories.add(
+  "Default",
+  () => {
+    return (
+      <Progress
+        value={number("value", 0.5)}
+        max={number("max", 1)}
+        shape={select('shape', ['bar', 'pie', 'circle'], 'bar')}
+        reverse={boolean('reverse', false)}
+      />
+    );
+  },
+  {
+    info: {
+      text:
+        "Progress takes the browser's default progress element and extends it with additional states and styles, particularly the 'Pie' alternate shape. Mind the provided CSS Variables: --circle - width, --fill- color, etc."
     }
-  )
-  .add("Pie", () => {
+  }
+).add(
+  "Pie",
+  () => {
     return (
       <Progress
         value={text("value", 0.35)}
-        shape={select("shape", ["bar", "pie", "circle"], "pie")}
+        shape={select('shape', ['bar', 'pie', 'circle'], 'pie')}
       />
     );
-  })
-  .add("Circle", () => {
+  },
+).add(
+  "Circle",
+  () => {
     return (
       <Progress
         value={text("value", 0.35)}
-        shape={select("shape", ["bar", "pie", "circle"], "circle")}
+        shape={select('shape', ['bar', 'pie', 'circle'], 'circle')}
       />
     );
-  })
-  .add("Variations", () => {
-    let demoValue = number("value", 0.5, {
-      range: true,
-      min: 0,
-      max: 1,
-      step: 0.05
-    });
+  },
+).add(
+  "Variations",
+  () => {
+    let demoValue = number("value", 0.5, { range: true, min: 0, max: 1, step: 0.05 });
 
     return (
       <Grid>
         <Progress value={demoValue} />
-        <Progress
-          value={demoValue}
-          style={{
-            border: 0,
-            color: "#00b42b",
-            width: "10em",
-            height: "0.5em"
-          }}
-        />
+        <Progress value={demoValue} style={{ border: 0, color: "#00b42b", width: '10em', height: '0.5em' }} />
         <Progress />
+        <Progress style={{ border: 0, color: "#00b42b", width: '10em', height: '0.5em' }} />
+        <Progress value={demoValue} shape='pie' style={{ fontSize: '10em' }} />
+        <Progress shape='circle' style={{
+          fontSize: '10em',
+          color: 'rebeccapurple',
+          '--circle-width': '8px'
+        }} />
         <Progress
+          shape='circle'
           style={{
-            border: 0,
-            color: "#00b42b",
-            width: "10em",
-            height: "0.5em"
-          }}
-        />
-        <Progress value={demoValue} shape="pie" style={{ fontSize: "10em" }} />
-        <Progress
-          shape="circle"
-          style={{
-            fontSize: "10em",
-            color: "rebeccapurple",
-            "--circle-width": "8px"
-          }}
-        />
-        <Progress
-          shape="circle"
-          style={{
-            fontSize: "10em",
-            backgroundColor: "rgba(0,0,0,0.08)",
-            border: "none",
-            "--fill-color": "#007aff",
-            "--circle-width": "4px"
+            fontSize: '10em',
+            backgroundColor: 'rgba(0,0,0,0.08)',
+            border: 'none',
+            '--fill-color': '#007aff',
+            '--circle-width': '4px'
           }}
         />
         <Progress
-          shape="pie"
+          shape='pie'
           style={{
-            fontSize: "10em",
-            backgroundColor: "rgba(0,0,0,0.08)",
-            border: "none",
-            "--fill-color": "#007aff",
-            "--circle-width": "4px"
+            fontSize: '10em',
+            backgroundColor: 'rgba(0,0,0,0.08)',
+            border: 'none',
+            '--fill-color': '#007aff',
+            '--circle-width': '4px'
           }}
         />
         <CustomProgress shape="circle" />
@@ -191,4 +166,5 @@ stories
         </Wrapper>
       </Grid>
     );
-  });
+  },
+);
