@@ -144,15 +144,15 @@ const Progress = styled.div.attrs(props => ({
     `}
 
     ${props.shape === 'circle' && css`
-      --circle-width: 0.125em;
+      --circle-fill-width: 0.125em;
       /* Difference between the hypoteneuse of a square
       and the diameter of a circle: (Math.sqrt(2) / 2) - (1 / 2) */
       --offset: 0.20710678118654757em;
       --mask: radial-gradient(
         circle at center,
         transparent 0%,
-        transparent calc(100% - var(--offset) - var(--circle-width) - 1px),
-              black calc(100% - var(--offset) - var(--circle-width))
+        transparent calc(100% - var(--offset) - var(--circle-fill-width) - 1px),
+              black calc(100% - var(--offset) - var(--circle-fill-width))
         );
         mask-image: var(--mask);
     `}
