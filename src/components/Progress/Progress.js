@@ -161,7 +161,8 @@ const Progress = styled.div.attrs(props => ({
     /* ...And create a new fill with either a simple
     conic gradient... */
     @supports (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
-      transition: background var(--change-smoothing-duration) var(--change-smoothing-timing-function);
+      /* TODO: CSS doesn't currently support animated background images */
+      /* transition: background var(--change-smoothing-duration) var(--change-smoothing-timing-function); */
       background-image:
         conic-gradient(
           var(--fill-color, currentColor) calc(3.6deg * (var(--percent) * 100)),
@@ -182,7 +183,9 @@ const Progress = styled.div.attrs(props => ({
         top: 50%;
         transform-origin: center center;
         background: var(--fill-color, currentColor);
-        transition: clip-path var(--change-smoothing-duration) var(--change-smoothing-timing-function);
+        /* TODO: Animating the polygon here wigs out
+        a bit at the 25, 50, and 75% points. */
+        /* transition: clip-path var(--change-smoothing-duration) var(--change-smoothing-timing-function); */
 
         --value: calc(var(--percent) * 100);
         --radius: 1em;
