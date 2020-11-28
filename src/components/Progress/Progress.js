@@ -146,14 +146,13 @@ const Progress = styled.div.attrs(props => ({
     ${props.shape === 'circle' && css`
       --circle-width: 0.125em;
       /* Difference between the hypoteneuse of a square
-      and the diameter of a circle
-      =  (Math.sqrt(2) / 2) - (1 / 2) */
-      --magic-offset: 0.20710678118654757em;
+      and the diameter of a circle: (Math.sqrt(2) / 2) - (1 / 2) */
+      --offset: 0.20710678118654757em;
       --mask: radial-gradient(
         circle at center,
         transparent 0%,
-        transparent calc(100% - var(--magic-offset) - var(--circle-width) - 1px),
-              black calc(100% - var(--magic-offset) - var(--circle-width))
+        transparent calc(100% - var(--offset) - var(--circle-width) - 1px),
+              black calc(100% - var(--offset) - var(--circle-width))
         );
         mask-image: var(--mask);
     `}
@@ -232,9 +231,6 @@ const Progress = styled.div.attrs(props => ({
 
 Progress.defaultProps = {
   shape: 'bar',
-  // 'max' on a progress element defaults to 1 anyway,
-  // but setting it here ensures it's available for
-  // important calcuations inside the component.
   max: 1
 }
 
