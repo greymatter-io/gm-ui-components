@@ -29,7 +29,7 @@ const Progress = styled.div.attrs(props => ({
   // or pseudo-elements. This also saves about
   // 50 lines of fixes acounting for browser
   // differences.
-  ariaRole: "progressbar",
+  role: "progressbar",
   value: (props.value)
     ? Math.min(props.reverse
       ? (props.max - props.value / props.max)
@@ -89,6 +89,11 @@ const Progress = styled.div.attrs(props => ({
       transform-origin: center center;
     }
 
+    &:before {
+      background: var(--background-color, var(--fill-color, currentColor));
+      opacity: var(--background-opacity, 0);
+    }
+
     &:after {
       right: auto;
       width: calc(var(--percent) * 100%);
@@ -114,8 +119,8 @@ const Progress = styled.div.attrs(props => ({
 
       /* Light (opacity) background color */
       &:before {
-        background: var(--fill-color, currentColor);
-        opacity: ${({ theme }) => theme.OPACITY_LIGHTEST};
+        background: var(--background-color, var(--fill-color, currentColor));
+        opacity: var(--background-opacity, ${({ theme }) => theme.OPACITY_LIGHTEST});
       }
     `}
   `}
@@ -156,8 +161,7 @@ const Progress = styled.div.attrs(props => ({
     /* ...And create a new fill with either a simple
     conic gradient... */
     @supports (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
-      /* We can't transition background gradients now, but maybe someday... */
-      /* transition: background var(--change-smoothing-duration) var(--change-smoothing-timing-function); */
+      transition: background var(--change-smoothing-duration) var(--change-smoothing-timing-function);
       background-image:
         conic-gradient(
           var(--fill-color, currentColor) calc(3.6deg * (var(--percent) * 100)),
