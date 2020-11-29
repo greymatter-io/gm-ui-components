@@ -57,12 +57,12 @@ const Progress = styled.div.attrs(props => ({
   border: 1px solid;
 
   /* Set some default values */
-  --change-smoothing-duration: 0.1s;
-  --change-smoothing-timing-function: ease;
-  --indeterminate-bar-animation-duration: 1.1s;
-  --indeterminate-bar-animation-timing-function: linear;
-  --indeterminate-pie-circle-animation-duration: 0.9s;
-  --indeterminate-pie-circle-animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67); // Default follows Microsoft's FluentUI style: https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner
+  --bar-progress-smoothing-duration: 0.1s;
+  --bar-progress-smoothing-timing-function: ease;
+  --indeterminate-bar-shimmer-duration: 1.1s;
+  --indeterminate-bar-shimmer-timing-function: linear;
+  --indeterminate-pie-circle-spin-duration: 0.9s;
+  --indeterminate-pie-circle-spin-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67); // Default follows Microsoft's FluentUI style: https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner
 
   /* Reverse inverts the value recieved to the element,
   and also flips the progress bar on the y axis. */
@@ -90,15 +90,16 @@ const Progress = styled.div.attrs(props => ({
     }
 
     &:before {
-      background: var(--background-color, var(--fill-color, currentColor));
-      opacity: var(--background-opacity, 0);
+      background: var(--background-color, transparent));
+      opacity: var(--bar-background-opacity, 1);
     }
 
     &:after {
       right: auto;
       width: calc(var(--percent) * 100%);
+      opacity: var(--bar-fill-opacity, 1);
       background: var(--fill-color, currentColor);
-      transition: width var(--change-smoothing-duration) var(--change-smoothing-timing-function);
+      transition: width var(--bar-progress-smoothing-duration) var(--bar-progress-smoothing-timing-function);
     }
 
     // Indeterminate style for when value is undefined
@@ -113,14 +114,14 @@ const Progress = styled.div.attrs(props => ({
         background-color: transparent;
         background-position: center;
         background-image: linear-gradient(to right, transparent 0%, var(--fill-color, currentColor) 45%, var(--fill-color, currentColor) 55%, transparent 100%);
-        animation: ${indeterminateBar} var(--indeterminate-bar-animation-duration) var(--indeterminate-bar-animation-timing-function) infinite;
+        animation: ${indeterminateBar} var(--indeterminate-bar-shimmer-duration) var(--indeterminate-bar-shimmer-timing-function) infinite;
         opacity: ${({ theme }) => theme.OPACITY_LIGHT};
       }
 
       /* Light (opacity) background color */
       &:before {
         background: var(--background-color, var(--fill-color, currentColor));
-        opacity: var(--background-opacity, ${({ theme }) => theme.OPACITY_LIGHTEST});
+        opacity: var(--bar-background-opacity, ${({ theme }) => theme.OPACITY_LIGHTEST});
       }
     `}
   `}
@@ -140,19 +141,19 @@ const Progress = styled.div.attrs(props => ({
       /* Set the size to 1/6 */
       --percent: 0.125 !important;
       /* And make it spin */
-      animation: ${indeterminatePie} var(--indeterminate-pie-circle-animation-duration) var(--indeterminate-pie-circle-animation-timing-function) infinite ${props => props.reverse ? 'reverse' : ''};
+      animation: ${indeterminatePie} var(--indeterminate-pie-circle-spin-duration) var(--indeterminate-pie-circle-spin-timing-function) infinite ${props => props.reverse ? 'reverse' : ''};
     `}
 
     ${props.shape === 'circle' && css`
       --circle-fill-width: 0.25rem;
       /* Difference between the hypoteneuse of a square
       and the diameter of a circle: (Math.sqrt(2) / 2) - (1 / 2) */
-      --circle-fill-offset: 0.20710678118654757em;
+      --circle-magic-fill-offset: 0.20710678118654757em;
       --mask: radial-gradient(
         circle at center,
         transparent 0%,
-        transparent calc(100% - var(--circle-fill-offset) - var(--circle-fill-width) - 1px),
-              black calc(100% - var(--circle-fill-offset) - var(--circle-fill-width))
+        transparent calc(100% - var(--circle-magic-fill-offset) - var(--circle-fill-width) - 1px),
+              black calc(100% - var(--circle-magic-fill-offset) - var(--circle-fill-width))
         );
         mask-image: var(--mask);
     `}
@@ -161,7 +162,7 @@ const Progress = styled.div.attrs(props => ({
     conic gradient... */
     @supports (background-image: ${CONIC_SUPPORT_REQUIREMENTS}) {
       /* TODO: CSS doesn't currently support animated background images */
-      /* transition: background var(--change-smoothing-duration) var(--change-smoothing-timing-function); */
+      /* transition: background var(--bar-progress-smoothing-duration) var(--bar-progress-smoothing-timing-function); */
       background-image:
         conic-gradient(
           var(--fill-color, currentColor) calc(3.6deg * (var(--percent) * 100)),
@@ -184,7 +185,7 @@ const Progress = styled.div.attrs(props => ({
         background: var(--fill-color, currentColor);
         /* TODO: Animating the polygon here wigs out
         a bit at the 25, 50, and 75% points. */
-        /* transition: clip-path var(--change-smoothing-duration) var(--change-smoothing-timing-function); */
+        /* transition: clip-path var(--bar-progress-smoothing-duration) var(--bar-progress-smoothing-timing-function); */
 
         --value: calc(var(--percent) * 100);
         --radius: 1em;

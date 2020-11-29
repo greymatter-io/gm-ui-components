@@ -151,11 +151,13 @@ stories.add(
           }}
         />
         <Progress
+          reverse
           shape='pie'
           style={{
             fontSize: '10em',
             backgroundColor: 'rgba(0,0,0,0.08)',
             border: 'none',
+            '--fill-opacity': 0.5,
             '--fill-color': '#007aff',
             '--circle-width': '4px'
           }}
