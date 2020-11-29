@@ -133,8 +133,10 @@ const Progress = styled.div.attrs(props => ({
     position: relative;
     width: 1em;
     height: 1em;
+    padding: 0 !important; // Padding breaks the mask, so it's disallowed. Borders and margins are allowed.
     border-radius: 1000em;
     clip-path: circle(50% at 50% 50%);
+    background: var(--background-color, transparent);
 
     /* Indeterminate style for pies and circles */
     ${props => !props.value && css`
@@ -149,13 +151,15 @@ const Progress = styled.div.attrs(props => ({
       /* Difference between the hypoteneuse of a square
       and the diameter of a circle: (Math.sqrt(2) / 2) - (1 / 2) */
       --circle-magic-fill-offset: 0.20710678118654757em;
-      --mask: radial-gradient(
-        circle at center,
+      --mask: radial-gradient( circle at center,
         transparent 0%,
         transparent calc(100% - var(--circle-magic-fill-offset) - var(--circle-fill-width) - 1px),
-              black calc(100% - var(--circle-magic-fill-offset) - var(--circle-fill-width))
-        );
-        mask-image: var(--mask);
+        black calc(100% - var(--circle-magic-fill-offset) - var(--circle-fill-width))
+      );
+      mask-image: var(--mask);
+      mask-clip: content-box;
+      mask-origin: padding-box;
+      mask-size: 100%;
     `}
 
     /* ...And create a new fill with either a simple
