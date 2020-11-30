@@ -51,6 +51,11 @@ describe("LayoutSection", () => {
     expect(tree.find(IconBell)).toHaveLength(1);
   });
   test("renders a Title", () => {
-    expect(tree.find("SectionTitle").children().text()).toBe("Test Layout");
+    expect(
+      tree
+        .find("SectionTitle")
+        .children()
+        .text()
+    ).toBe("Test Layout");
   });
 });

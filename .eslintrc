@@ -1,8 +1,6 @@
 {
   "rules": {
-    "prettier/prettier": [
-      "error"
-    ],
+    "prettier/prettier": ["error"],
     "quotes": [0, "single"],
     "react/forbid-prop-types": 0,
     "react/jsx-boolean-value": 0,

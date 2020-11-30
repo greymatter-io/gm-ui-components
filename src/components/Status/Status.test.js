@@ -90,7 +90,10 @@ describe("Status", () => {
         aStatus = mount(<Status statusType={t.statusType} />);
         expect(aStatus.find(t.visual)).toHaveLength(1);
         expect(
-          aStatus.find("Graphic").props().graphicColor({ theme: keen })
+          aStatus
+            .find("Graphic")
+            .props()
+            .graphicColor({ theme: keen })
         ).toBe(t.color);
       });
     });

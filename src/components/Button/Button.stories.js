@@ -59,7 +59,9 @@ stories
           margin: "0.25rem"
         },
         CombinationRenderer: ({ Component, props, options }) => {
-          const prettyJSON = JSON.stringify(props).split(",").join("\n");
+          const prettyJSON = JSON.stringify(props)
+            .split(",")
+            .join("\n");
           return (
             <Tooltip content={prettyJSON}>
               <Component

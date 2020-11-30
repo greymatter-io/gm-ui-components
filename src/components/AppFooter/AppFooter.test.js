@@ -15,7 +15,10 @@ describe("AppFooter", () => {
   it("hides social links when useExternalLinks is false", () => {
     wrapper = shallow(<AppFooter useExternalLinks={false} />);
     expect(
-      wrapper.find("FooterRightContent").dive().find("LongLogo")
+      wrapper
+        .find("FooterRightContent")
+        .dive()
+        .find("LongLogo")
     ).toHaveLength(0);
   });
 
