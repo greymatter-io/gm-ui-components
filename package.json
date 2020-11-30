@@ -29,7 +29,7 @@
     "polished": "^3.4.2"
   },
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack --mode=production",
     "build-storybook": "build-storybook -s public",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitmsg": "commitlint -e $GIT_PARAMS",
