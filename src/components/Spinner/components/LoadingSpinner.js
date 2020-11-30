@@ -12,7 +12,7 @@ export const Spinner = styled(Progress)`
   color: ${({ theme }) => theme.COLOR_INTENT_HIGHLIGHT};
   --circle-fill-width: 1.5px;
   --background-color: ${({ theme }) =>
-    transparentize(0.5, theme.COLOR_INTENT_HIGHLIGHT)};
+    transparentize(1 - theme.OPACITY_LIGHTEST, theme.COLOR_INTENT_HIGHLIGHT)};
 
   ${props =>
     props.orientation === "vertical" ? verticalStyles : horizontalStyles};
