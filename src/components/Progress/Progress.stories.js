@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { number, select, boolean, text } from "@storybook/addon-knobs";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import maskImage from "./legend.svg";
 
@@ -17,10 +17,10 @@ import Progress from "./Progress";
 
 const CustomProgress = styled(Progress)`
   font-size: 10em;
-  background-color: #00b42b;
+  color: #00b42b;
   border: 0;
-  color: #fff;
   --circle-width: 2px;
+  --percent: 0.33;
 `;
 
 const CustomProgress2 = styled(Progress)`
@@ -54,7 +54,6 @@ const Wrapper = styled.div`
   display: flex;
   align-self: stretch;
   justify-self: stretch;
-  /* padding-bottom: 0.5rem; */
   padding-right: 1em;
   place-items: flex-end;
   place-content: flex-end;
