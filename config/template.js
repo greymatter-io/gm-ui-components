@@ -45,6 +45,8 @@ function template(
   export default memoizedIcon;
   `;
 
+  // We can't directly interpolate arbitrary variables into ast, so we need to create an expression
+  // Based off https://github.com/sembark/gladio/blob/master/packages/icons/svgr.config.js
   ast.push(
     template.expression(
       `memoizedIcon.displayName = '${componentNameWithIconPrefix}'`
