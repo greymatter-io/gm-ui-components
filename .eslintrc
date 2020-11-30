@@ -37,7 +37,7 @@
     "es6": true,
     "browser": true
   },
-  "extends": ["react-app", "plugin:prettier/recommended", "prettier/react"],
+  "extends": ["react-app", "prettier", "prettier/react"],
   "parserOptions": {
     "ecmaVersion": 2016,
     "sourceType": "module",
