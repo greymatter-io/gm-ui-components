@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
 
-const CONIC_SUPPORT_REQUIREMENTS = 'conic-gradient(var(--fill-color, currentColor) calc(3.6deg * var(--percent, 100)))';
+const CONIC_SUPPORT_REQUIREMENTS =
+  "conic-gradient(var(--fill-color, currentColor) calc(3.6deg * var(--percent, 100)))";
 
 // Animations
 const indeterminateBar = keyframes`
@@ -30,22 +31,29 @@ const Progress = styled.div.attrs(props => ({
   // 50 lines of fixes acounting for browser
   // differences.
   role: "progressbar",
-  value: (props.value)
-    ? Math.min(props.reverse
-      ? (props.max - props.value / props.max)
-      : props.value, props.max)
+  value: props.value
+    ? Math.min(
+        props.reverse ? props.max - props.value / props.max : props.value,
+        props.max
+      )
     : undefined,
   style: {
     ...props.style,
-    "--percent": Math.min((props.reverse ? (props.max - props.value / props.max) : props.value / props.max), props.max) || undefined,
+    "--percent":
+      Math.min(
+        props.reverse
+          ? props.max - props.value / props.max
+          : props.value / props.max,
+        props.max
+      ) || undefined,
 
     // CSS Variables for the fallback Pie style
-    "--lt-25": (props.value / props.max * 100) <= 25 ? 1 : 0,
-    "--gt-25": (props.value / props.max * 100) > 25 ? 1 : 0,
-    "--lt-50": (props.value / props.max * 100) <= 50 ? 1 : 0,
-    "--gt-50": (props.value / props.max * 100) > 50 ? 1 : 0,
-    "--lt-75": (props.value / props.max * 100) <= 75 ? 1 : 0,
-    "--gt-75": (props.value / props.max * 100) > 75 ? 1 : 0,
+    "--lt-25": (props.value / props.max) * 100 <= 25 ? 1 : 0,
+    "--gt-25": (props.value / props.max) * 100 > 25 ? 1 : 0,
+    "--lt-50": (props.value / props.max) * 100 <= 50 ? 1 : 0,
+    "--gt-50": (props.value / props.max) * 100 > 50 ? 1 : 0,
+    "--lt-75": (props.value / props.max) * 100 <= 75 ? 1 : 0,
+    "--gt-75": (props.value / props.max) * 100 > 75 ? 1 : 0
   }
 }))`
   /* Reset element style */
@@ -66,13 +74,17 @@ const Progress = styled.div.attrs(props => ({
 
   /* Reverse inverts the value recieved to the element,
   and also flips the progress bar on the y axis. */
-  ${props => props.reverse && css`
-    transform: scaleX(-1);
-  `}
+  ${props =>
+    props.reverse &&
+    css`
+      transform: scaleX(-1);
+    `}
 
   /* Bar style mostly uses default progress element
   behavior, but with a more minimal style. */
-  ${props => props.shape === 'bar' && css`
+  ${props =>
+    props.shape === "bar" &&
+    css`
     width: 10em;
     height: 1em;
     overflow: hidden;
@@ -107,29 +119,44 @@ const Progress = styled.div.attrs(props => ({
     // Normally we'd use the :indeterminate pseudo-class,
     // but this also captures the case where the value
     // prop itself exists but the value is undefined.
-    ${props => !props.value && css`
-      /* Scrolling gradient */
-      &:after{
-        right: 0;
-        background-color: transparent;
-        background-position: center;
-        background-image: linear-gradient(to right, transparent 0%, var(--fill-color, currentColor) 45%, var(--fill-color, currentColor) 55%, transparent 100%);
-        animation: ${indeterminateBar} var(--indeterminate-bar-shimmer-duration) var(--indeterminate-bar-shimmer-timing-function) infinite;
-        opacity: ${({ theme }) => theme.OPACITY_LIGHT};
-      }
+    ${props =>
+      !props.value &&
+      css`
+        /* Scrolling gradient */
+        &:after {
+          right: 0;
+          background-color: transparent;
+          background-position: center;
+          background-image: linear-gradient(
+            to right,
+            transparent 0%,
+            var(--fill-color, currentColor) 45%,
+            var(--fill-color, currentColor) 55%,
+            transparent 100%
+          );
+          animation: ${indeterminateBar}
+            var(--indeterminate-bar-shimmer-duration)
+            var(--indeterminate-bar-shimmer-timing-function) infinite;
+          opacity: ${({ theme }) => theme.OPACITY_LIGHT};
+        }
 
-      /* Light (opacity) background color */
-      &:before {
-        background: var(--background-color, var(--fill-color, currentColor));
-        opacity: var(--bar-background-opacity, ${({ theme }) => theme.OPACITY_LIGHTEST});
-      }
-    `}
+        /* Light (opacity) background color */
+        &:before {
+          background: var(--background-color, var(--fill-color, currentColor));
+          opacity: var(
+            --bar-background-opacity,
+            ${({ theme }) => theme.OPACITY_LIGHTEST}
+          );
+        }
+      `}
   `}
 
   /* Pie & circle styles
   Circle is the same as pie, except that it sets a value
   to --mask-image, to cut out the center of the pie. */
-  ${props => (props.shape === 'pie' || props.shape === 'circle') && css`
+  ${props =>
+    (props.shape === "pie" || props.shape === "circle") &&
+    css`
     position: relative;
     width: 1em;
     height: 1em;
@@ -139,28 +166,42 @@ const Progress = styled.div.attrs(props => ({
     background: var(--background-color, transparent);
 
     /* Indeterminate style for pies and circles */
-    ${props => !props.value && css`
-      /* Set the size to 1/6 */
-      --percent: 0.125 !important;
-      /* And make it spin */
-      animation: ${indeterminatePie} var(--indeterminate-pie-circle-spin-duration) var(--indeterminate-pie-circle-spin-timing-function) infinite ${props => props.reverse ? 'reverse' : ''};
-    `}
+    ${props =>
+      !props.value &&
+      css`
+        /* Set the size to 1/6 */
+        --percent: 0.125 !important;
+        /* And make it spin */
+        animation: ${indeterminatePie}
+          var(--indeterminate-pie-circle-spin-duration)
+          var(--indeterminate-pie-circle-spin-timing-function) infinite
+          ${props => (props.reverse ? "reverse" : "")};
+      `}
 
-    ${props.shape === 'circle' && css`
-      --circle-fill-width: 0.25rem;
-      /* Difference between the hypoteneuse of a square
+    ${props.shape === "circle" &&
+      css`
+        --circle-fill-width: 0.25rem;
+        /* Difference between the hypoteneuse of a square
       and the diameter of a circle: (Math.sqrt(2) / 2) - (1 / 2) */
-      --circle-magic-fill-offset: 0.20710678118654757em;
-      --mask: radial-gradient( circle at center,
-        transparent 0%,
-        transparent calc(100% - var(--circle-magic-fill-offset) - var(--circle-fill-width) - 1px),
-        black calc(100% - var(--circle-magic-fill-offset) - var(--circle-fill-width))
-      );
-      mask-image: var(--mask);
-      mask-clip: content-box;
-      mask-origin: padding-box;
-      mask-size: 100%;
-    `}
+        --circle-magic-fill-offset: 0.20710678118654757em;
+        --mask: radial-gradient(
+          circle at center,
+          transparent 0%,
+          transparent
+            calc(
+              100% - var(--circle-magic-fill-offset) - var(--circle-fill-width) -
+                1px
+            ),
+          black
+            calc(
+              100% - var(--circle-magic-fill-offset) - var(--circle-fill-width)
+            )
+        );
+        mask-image: var(--mask);
+        mask-clip: content-box;
+        mask-origin: padding-box;
+        mask-size: 100%;
+      `}
 
     /* ...And create a new fill with either a simple
     conic gradient... */
@@ -235,15 +276,15 @@ const Progress = styled.div.attrs(props => ({
 `;
 
 Progress.defaultProps = {
-  shape: 'bar',
+  shape: "bar",
   max: 1
-}
+};
 
 Progress.propTypes = {
   value: PropTypes.number,
   max: PropTypes.number.isRequired,
-  shape: PropTypes.oneOf(['pie', 'bar', 'circle']),
-  reverse: PropTypes.bool,
+  shape: PropTypes.oneOf(["pie", "bar", "circle"]),
+  reverse: PropTypes.bool
 };
 
 Progress.displayName = "Progress";
