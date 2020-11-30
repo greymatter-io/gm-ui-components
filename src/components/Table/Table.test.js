@@ -25,17 +25,11 @@ describe("Table", () => {
   });
 
   test("passes the correct props to children", () => {
-    expect(
-      TableWrap.find("TableColumn")
-        .at(0)
-        .props()
-    ).toHaveProperty("colWidth");
+    expect(TableWrap.find("TableColumn").at(0).props()).toHaveProperty(
+      "colWidth"
+    );
 
-    expect(
-      TableWrap.find("TableRow")
-        .at(0)
-        .props()
-    ).toMatchObject({
+    expect(TableWrap.find("TableRow").at(0).props()).toMatchObject({
       columns,
       data: data[0]
     });
