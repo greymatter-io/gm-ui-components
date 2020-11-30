@@ -1,21 +1,9 @@
 {
-  "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": [
-      "off",
-      {
-        "bracketSpacing": true,
-        "jsxBracketSameLine": false,
-        "printWidth": 80,
-        "semi": true,
-        "singleQuote": false,
-        "tabWidth": 2,
-        "trailingComma": "none",
-        "useTabs": false
-      }
+      "error"
     ],
     "quotes": [0, "single"],
-    "linebreak-style": [2, "unix"],
     "react/forbid-prop-types": 0,
     "react/jsx-boolean-value": 0,
     "react/jsx-no-bind": 0,
@@ -51,7 +39,7 @@
     "es6": true,
     "browser": true
   },
-  "extends": ["react-app", "prettier", "prettier/react"],
+  "extends": ["react-app", "plugin:prettier/recommended", "prettier/react"],
   "parserOptions": {
     "ecmaVersion": 2016,
     "sourceType": "module",

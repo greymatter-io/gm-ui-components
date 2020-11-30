@@ -34,7 +34,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "deploy-storybook": "storybook-to-ghpages",
-    "format": "prettier --write 'src/**/*.{js,jsx}'",
+    "format": "prettier --config package.json --write 'src/**/*.{js,jsx}'",
     "generate-component": "node scripts/generateComponent",
     "junit-merge": "junit-merge",
     "lint-js": "node ./node_modules/eslint/bin/eslint 'src'",
@@ -128,7 +128,8 @@
     "singleQuote": false,
     "tabWidth": 2,
     "trailingComma": "none",
-    "useTabs": false
+    "useTabs": false,
+    "arrowParens": "avoid"
   },
   "commitlint": {
     "extends": [

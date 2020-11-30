@@ -11,14 +11,9 @@ export const shallowClone = (tree, context) => {
   if (tree.type.styledComponentId !== undefined) {
     // and if the sc does not have any interpolations, only dive twice
     if (tree.type.componentStyle.isStatic) {
-      return shallow(tree, context)
-        .dive()
-        .dive();
+      return shallow(tree, context).dive().dive();
     } else {
-      return shallow(tree, context)
-        .dive()
-        .dive()
-        .dive();
+      return shallow(tree, context).dive().dive().dive();
     }
   }
   // otherwise just return the shallow function
