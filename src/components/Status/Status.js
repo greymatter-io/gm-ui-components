@@ -15,7 +15,7 @@ import { Graphic } from "./components/Graphic";
 
 /**
  * Indicates the status of a content area. Provides text styles
- * and graphics for 'Indeterimate', 'Error', 'Warning', 'Success,
+ * and graphics for 'Indeterminate', 'Error', 'Warning', 'Success,
  * and 'Info' states.
  *
  * Message and detail are optional, but recommended to inform the
@@ -97,7 +97,11 @@ Status.propTypes = {
 Status.displayName = "Status";
 
 function GraphicStatusIndeterminate({ isBlock }) {
-  return <LoadingSpinner size={isBlock ? spacingScale(5) : spacingScale(2)} />;
+  return (
+    <LoadingSpinner
+      style={{ fontSize: isBlock ? spacingScale(5) : spacingScale(2) }}
+    />
+  );
 }
 
 GraphicStatusIndeterminate.propTypes = {
