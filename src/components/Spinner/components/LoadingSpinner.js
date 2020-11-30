@@ -19,8 +19,7 @@ export const Spinner = styled(Progress)`
   ${props =>
     props.size &&
     css`
-      height: ${props.size};
-      width: ${props.size};
+      font-size: ${props.size};
     `}
 `;
 
