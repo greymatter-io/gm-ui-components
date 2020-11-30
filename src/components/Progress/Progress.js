@@ -170,7 +170,7 @@ const Progress = styled.div.attrs(props => ({
       !props.value &&
       css`
         /* Set the size to 1/6 */
-        --percent: 0.125 !important;
+        --percent: 0.125;
         /* And make it spin */
         animation: ${indeterminatePie}
           var(--indeterminate-pie-circle-spin-duration)
@@ -190,7 +190,7 @@ const Progress = styled.div.attrs(props => ({
           transparent
             calc(
               100% - var(--circle-magic-fill-offset) - var(--circle-fill-width) -
-                1px
+                0.5px
             ),
           black
             calc(
