@@ -38,7 +38,7 @@ const DemoCanvas = styled.div`
 
 const DemoFieldset = styled(Fieldset)`
   position: relative;
-`
+`;
 
 const Space = styled.span`
   display: inline-block;
@@ -47,16 +47,16 @@ const Space = styled.span`
 `;
 
 const BackgroundAreaTwo = styled(Fieldset)`
-   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
-   position: relative;
-   overflow: hidden;
- `;
+  background-color: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
+  position: relative;
+  overflow: hidden;
+`;
 
 const BackgroundAreaThree = styled(Fieldset)`
-   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
-   position: relative;
-   overflow: hidden;
- `;
+  background-color: ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
+  position: relative;
+  overflow: hidden;
+`;
 
 const Note = styled.span`
   display: block;
@@ -68,7 +68,6 @@ const Note = styled.span`
   bottom: 0.5rem;
   right: 0.5rem;
 `;
-
 
 const DocumentationLink = styled.h2`
   text-align: center;
