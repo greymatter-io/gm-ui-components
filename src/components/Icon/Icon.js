@@ -34,7 +34,7 @@ export default function Icon({
     df =>
       props[df] !== undefined &&
       console.warn(
-        `Use ${deprecatedFields[df]} rather than ${df}. ${df} will be deprecated in the next major version.`
+        `Use ${deprecatedFields[df]} rather than ${df}. ${df} will be deprecated in the next major version of gm-ui-components.`
       )
   );
 
