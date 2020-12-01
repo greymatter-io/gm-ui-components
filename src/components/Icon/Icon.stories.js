@@ -230,17 +230,19 @@ stories
       const IconCog = Glyphs.IconCog;
       return (
         <IconCog
-          borderColor={color("borderColor")}
-          borderWidth={number("borderWidth")}
-          fillColor={color("fillColor")}
+          stroke={color("stroke", undefined)}
+          strokeWidth={number("strokeWidth", undefined)}
+          strokeOpacity={number("strokeOpacity", undefined)}
+          fill={color("fill")}
           fillOpacity={number("fillOpacity")}
           size={text("size")}
           title={text("title")}
-          hasBadge={boolean("hasBadge")}
-          isNegated={boolean("isNegated")}
+          hasBadge={boolean("hasBadge", true)}
+          isNegated={boolean("isNegated", true)}
           negationLineAngle={number("negationLineAngle", undefined)}
           badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
+          badgeSize={text("badgeSize", undefined)}
         />
       );
     },
@@ -258,15 +260,17 @@ stories
         <Icon
           title={text("title", undefined)}
           size={text("size", undefined)}
-          borderColor={color("borderColor", undefined)}
-          borderWidth={number("borderWidth", undefined)}
-          fillColor={color("fillColor", undefined)}
+          stroke={color("stroke", undefined)}
+          strokeWidth={number("strokeWidth", undefined)}
+          strokeOpacity={number("strokeOpacity", undefined)}
+          fill={color("fill", undefined)}
           fillOpacity={number("fillOpacity", undefined)}
           hasBadge={boolean("hasBadge", undefined)}
           isNegated={boolean("isNegated", undefined)}
           negationLineAngle={number("negationLineAngle", undefined)}
           badgeColor={color("badgeColor", undefined)}
           badgePosition={object("badgePosition", undefined)}
+          badgeSize={text("badgeSize", undefined)}
         >
           <svg className="svg-icon" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="7.4" />
@@ -291,17 +295,19 @@ stories
               <Glyph
                 title={glyph}
                 size={text("size", undefined)}
-                fillColor={color("fillColor", undefined)}
+                stroke={color("stroke", undefined)}
+                strokeWidth={number("strokeWidth", undefined)}
+                strokeOpacity={number("strokeOpacity", undefined)}
+                fill={color("fill", undefined)}
                 fillOpacity={number("fillOpacity", undefined)}
-                borderColor={color("borderColor", undefined)}
-                borderWidth={text("borderWidth")}
                 isNegated={boolean("isNegated", undefined)}
                 negationLineAngle={number("negationLineAngle", undefined)}
                 negationLineTrim={number("negationLineTrim", undefined)}
                 negationLineWidth={number("negationLineWidth", undefined)}
                 hasBadge={boolean("hasBadge", undefined)}
-                badgeColor={color("badgeColor")}
+                badgeColor={color("badgeColor", undefined)}
                 badgePosition={object("badgePosition", undefined)}
+                badgeSize={text("badgeSize", undefined)}
               />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>

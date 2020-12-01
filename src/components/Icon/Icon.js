@@ -16,10 +16,10 @@ export default function Icon({
   ariaLabelledby,
   badgeColor,
   badgePosition,
-  borderColor,
-  borderWidth,
+  badgeSize,
+  badgeMaskOffset,
   children,
-  fillColor,
+  fill,
   fillOpacity,
   glyphName,
   hasBadge,
@@ -28,14 +28,30 @@ export default function Icon({
   negationLineTrim,
   negationLineWidth,
   size,
+  stroke,
+  strokeOpacity,
+  strokeWidth,
   ...props
 }) {
+  const deprecatedFields = {
+    borderWidth: "strokeWidth",
+    borderColor: "stroke",
+    fillColor: "fill"
+  };
+
+  Object.keys(deprecatedFields).forEach(
+    df =>
+      props[df] !== undefined &&
+      console.warn(
+        `Use ${deprecatedFields[df]} rather than ${df}. ${df} will be deprecated in the next major version.`
+      )
+  );
 
   const iconMaskId = glyphName + size + "iconMask";
-  
+
   if (negationLineWidth === undefined) {
-    if (borderWidth !== 0) {
-      negationLineWidth = borderWidth
+    if (strokeWidth !== 0) {
+      negationLineWidth = strokeWidth
     } else {
       negationLineWidth = '1.0001px'
     }
@@ -44,83 +60,83 @@ export default function Icon({
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      borderColor={borderColor}
-      borderWidth={borderWidth}
-      fillColor={fillColor}
+      fill={fill}
       fillOpacity={fillOpacity}
       focusable="false"
       id={glyphName}
       size={size}
+      stroke={stroke}
+      strokeOpacity={strokeOpacity}
+      strokeWidth={strokeWidth}
       {...props}
     >
       {(isNegated || hasBadge) && (
         <mask id={iconMaskId}>
-            <rect
-              x="0"
-              y="0"
-              width={IconGridSize}
-              height={IconGridSize}
-              fill="white"
-              fillOpacity="1"
+          <rect
+            x="0"
+            y="0"
+            width={IconGridSize}
+            height={IconGridSize}
+            fill="white"
+            fillOpacity="1"
+          />
+          {isNegated && (
+            <line
+              className="negationLine maskHideArea"
+              stroke="black"
+              strokeLinecap="round"
+              strokeWidth={"calc(" + negationLineWidth + " * 3)"}
+              transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+              vectorEffect="non-scaling-stroke"
+              x1={IconGridSize - negationLineTrim}
+              x2={negationLineTrim}
+              y1={IconGridSize - negationLineTrim}
+              y2={negationLineTrim}
             />
-            {isNegated && (
-              <line
-                className="negationLine maskHideArea"
-                stroke="black"
-                strokeLinecap="round"
-                strokeWidth={"calc(" + negationLineWidth + " * 3)"}
-                transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
-                vectorEffect="non-scaling-stroke"
-                x1={IconGridSize - negationLineTrim}
-                x2={negationLineTrim}
-                y1={IconGridSize - negationLineTrim}
-                y2={negationLineTrim}
-              />
-            )}
-            {hasBadge && (
-              <circle
-                className="maskHideArea"
-                cx={badgePosition.x}
-                cy={badgePosition.y}
-                fill="black"
-                fillOpacity="1"
-                r="8"
-              />
-            )}
-          </mask>
+          )}
+          {hasBadge && (
+            <circle
+              className="badge maskHideArea"
+              cx={badgePosition.x}
+              cy={badgePosition.y}
+              fill="black"
+              fillOpacity="1"
+              r={"calc(" + badgeSize + " + " + badgeMaskOffset + ")"}
+            />
+          )}
+        </mask>
       )}
       <g
-      className="glyph"
-      mask={(isNegated || hasBadge) ? "url(#" + iconMaskId + ")" : undefined}
-      transform="rotate(0.0001"
+        className="glyph"
+        mask={(isNegated || hasBadge) ? "url(#" + iconMaskId + ")" : undefined}
+        transform="rotate(0.0001"
       >
         {children}
       </g>
       {isNegated && (
-          <line
-            className="negationLine"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeWidth={negationLineWidth}
-            transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
-            vectorEffect="non-scaling-stroke"
-            x1={IconGridSize - negationLineTrim}
-            x2={negationLineTrim}
-            y1={IconGridSize - negationLineTrim}
-            y2={negationLineTrim}
-          />
+        <line
+          className="negationLine"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeWidth={negationLineWidth}
+          transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+          vectorEffect="non-scaling-stroke"
+          x1={IconGridSize - negationLineTrim}
+          x2={negationLineTrim}
+          y1={IconGridSize - negationLineTrim}
+          y2={negationLineTrim}
+        />
       )}
       {hasBadge && (
-        <>
-          <circle
-            className="badge"
-            cx={badgePosition.x}
-            cy={badgePosition.y}
-            fill={badgeColor}
-            fillOpacity="1"
-            r="5"
-          />
-        </>
+        <circle
+          className="badge"
+          cx={badgePosition.x}
+          cy={badgePosition.y}
+          r={badgeSize}
+          stroke='none'
+          fillOpacity="1"
+          fill={badgeColor}
+        />
       )}
     </StyledSVG>
   );
@@ -130,10 +146,8 @@ Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   badgeColor: PropTypes.string,
   badgePosition: PropTypes.object,
-  borderColor: PropTypes.string,
-  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
-  fillColor: PropTypes.string,
+  fill: PropTypes.string,
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
@@ -142,20 +156,25 @@ Icon.propTypes = {
   negationLineTrim: PropTypes.number,
   negationLineWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.string,
+  stroke: PropTypes.string,
+  strokeOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
 Icon.defaultProps = {
   badgeColor: "red",
-  badgePosition: {x: 46, y: 16},
-  borderColor: "currentColor",
-  borderWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
+  badgePosition: { x: 46, y: 16 },
   fillColor: "currentColor",
   fillOpacity: 0.15,
   hasBadge: false,
+  badgeSize: '8px',
+  badgeMaskOffset: '3px',
   isNegated: false,
   negationLineTrim: 12,
   size: "1.7145em",
-  theme: keen,
+  stroke: "currentColor",
+  strokeWidth: "1.00001px", // SVG strokes with vector-effect: non-scaling-stroke; tend to look very bad at 1px
+  theme: keen
 };
 
 Icon.displayName = "Icon";
