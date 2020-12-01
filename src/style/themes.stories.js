@@ -29,15 +29,46 @@ const DemoCols = styled.div`
 
 const DemoCanvas = styled.div`
   padding: 1rem;
+  border: 1px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
+  border-radius: ${({ theme }) => theme.CORNER_RADIUS_CARD_LG};
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
+  position: relative;
 `;
+
+const DemoFieldset = styled(Fieldset)`
+  position: relative;
+`
 
 const Space = styled.span`
   display: inline-block;
   height: ${spacingScale(1)};
   width: ${spacingScale(1)};
 `;
+
+const BackgroundAreaTwo = styled(Fieldset)`
+   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
+   position: relative;
+   overflow: hidden;
+ `;
+
+const BackgroundAreaThree = styled(Fieldset)`
+   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
+   position: relative;
+   overflow: hidden;
+ `;
+
+const Note = styled.span`
+  display: block;
+  text-transform: uppercase;
+  font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_XS};
+  letter-spacing: 0.03em;
+  color: ${({ theme }) => theme.COLOR_CONTENT_NONESSENTIAL};
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+`;
+
 
 const DocumentationLink = styled.h2`
   text-align: center;
@@ -53,6 +84,7 @@ const DocumentationLink = styled.h2`
 function DemoContent({ themeName }) {
   return (
     <DemoCanvas>
+      <Note>Background level one</Note>
       <Breadcrumbs crumbs={["Overview", "Themes", "Theme"]} />
       <Space />
       <h1>{themeName}</h1>
@@ -67,7 +99,8 @@ function DemoContent({ themeName }) {
         <Tab label="Label" />
         <Tab label="Disabled" disabled />
       </TabGroup>
-      <Fieldset>
+      <DemoFieldset>
+        <Note>Background level three</Note>
         <Textarea
           autoFocus={false}
           label="Textarea"
@@ -89,24 +122,26 @@ function DemoContent({ themeName }) {
         <Space />
         <Checkbox labelPosition="right" label={"Checkbox"} />
         <Radio labelPosition="right" label={"Radio"} />
-      </Fieldset>
+      </DemoFieldset>
 
       <Space />
-      <Fieldset>
+      <BackgroundAreaTwo>
+        <Note>Background level two</Note>
         <ButtonGroup>
           <Button label={"Plain Button"} />
           <Space />
           <Button type={"primary"} label={"Primary Button"} />
         </ButtonGroup>
-      </Fieldset>
+      </BackgroundAreaTwo>
       <Space />
-      <Fieldset>
+      <BackgroundAreaThree>
+        <Note>Background level three</Note>
         <ButtonGroup>
           <Button label={"Plain Button"} />
           <Space />
           <Button type={"primary"} label={"Primary Button"} />
         </ButtonGroup>
-      </Fieldset>
+      </BackgroundAreaThree>
       <Space />
     </DemoCanvas>
   );
