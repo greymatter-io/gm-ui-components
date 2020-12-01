@@ -15,9 +15,9 @@ const IconGridSize = 64;
 export default function Icon({
   ariaLabelledby,
   badgeColor,
+  badgeMaskOffset,
   badgePosition,
   badgeSize,
-  badgeMaskOffset,
   children,
   fill,
   fillOpacity,
@@ -145,9 +145,9 @@ export default function Icon({
 Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   badgeColor: PropTypes.string,
+  badgeMaskOffset: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   badgePosition: PropTypes.object,
   badgeSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  badgeMaskOffset: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   fill: PropTypes.string,
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -160,17 +160,17 @@ Icon.propTypes = {
   size: PropTypes.string,
   stroke: PropTypes.string,
   strokeOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Icon.defaultProps = {
   badgeColor: "red",
+  badgeMaskOffset: '3px',
   badgePosition: { x: 46, y: 16 },
+  badgeSize: '8px',
   fill: "currentColor",
   fillOpacity: 0.15,
   hasBadge: false,
-  badgeSize: '8px',
-  badgeMaskOffset: '3px',
   isNegated: false,
   negationLineTrim: 12,
   size: "1.7145em",
