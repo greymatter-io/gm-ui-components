@@ -109,7 +109,7 @@ export default function Icon({
       <g
         className="glyph"
         mask={(isNegated || hasBadge) ? "url(#" + iconMaskId + ")" : undefined}
-        transform="rotate(0.0001"
+        transform="rotate(0.0001)"
       >
         {children}
       </g>
@@ -166,7 +166,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   badgeColor: "red",
   badgePosition: { x: 46, y: 16 },
-  fillColor: "currentColor",
+  fill: "currentColor",
   fillOpacity: 0.15,
   hasBadge: false,
   badgeSize: '8px',
