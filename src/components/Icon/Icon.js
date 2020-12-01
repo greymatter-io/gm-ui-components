@@ -146,6 +146,8 @@ Icon.propTypes = {
   ariaLabelledby: PropTypes.string,
   badgeColor: PropTypes.string,
   badgePosition: PropTypes.object,
+  badgeSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  badgeMaskOffset: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   fill: PropTypes.string,
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
