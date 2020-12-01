@@ -33,14 +33,6 @@ const DemoCanvas = styled.div`
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
 `;
 
-const StyledFieldset = styled(Fieldset)`
-  background-color: ${({ theme }) => theme.COLOR_BACKGROUND_TWO};
-`;
-
-const StyledFieldset2 = styled(Fieldset)`
-  background-color: ${({ theme }) => theme.COLOR_BACKGROUND_THREE};
-`;
-
 const Space = styled.span`
   display: inline-block;
   height: ${spacingScale(1)};
@@ -100,21 +92,21 @@ function DemoContent({ themeName }) {
       </Fieldset>
 
       <Space />
-      <StyledFieldset>
+      <Fieldset>
         <ButtonGroup>
           <Button label={"Plain Button"} />
           <Space />
           <Button type={"primary"} label={"Primary Button"} />
         </ButtonGroup>
-      </StyledFieldset>
+      </Fieldset>
       <Space />
-      <StyledFieldset2>
+      <Fieldset>
         <ButtonGroup>
           <Button label={"Plain Button"} />
           <Space />
           <Button type={"primary"} label={"Primary Button"} />
         </ButtonGroup>
-      </StyledFieldset2>
+      </Fieldset>
       <Space />
     </DemoCanvas>
   );
