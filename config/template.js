@@ -18,20 +18,6 @@ function template(
   jsx.children = jsx.children[0].children;
   jsx.selfClosing = false;
 
-  /**
-   * Pardon this estoric string replacement. Sketch creates SVGs but the only way it allows adding
-   * a name to the elements in the SVG is by applying an id. The ids aren’t always unique, which doesn't
-   * conform to the HTML spec, so this replacement converts those ids to classes. We also use the classes
-   * for styling.
-   */
-  jsx.openingElement.attributes = jsx.openingElement.attributes.map(a => {
-    if (a.name.name === "id") {
-      a.value.value = a.value.value.replace(/.*__/, ""); // "checkbox-checked_svg__checkbox-checked" => "checkbox-checked"
-      a.name.name = "className";
-    }
-    return a;
-  });
-
   const ast = jsxTpl.ast`
   import React from 'react';
   import Icon from "components/Icon";
