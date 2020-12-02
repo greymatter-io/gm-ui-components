@@ -51,9 +51,9 @@ export default function Icon({
 
   if (negationLineWidth === undefined) {
     if (strokeWidth !== 0) {
-      negationLineWidth = strokeWidth
+      negationLineWidth = strokeWidth;
     } else {
-      negationLineWidth = '1.0001px'
+      negationLineWidth = "1.0001px";
     }
   }
 
@@ -86,7 +86,17 @@ export default function Icon({
               stroke="black"
               strokeLinecap="round"
               strokeWidth={"calc(" + negationLineWidth + " * 3)"}
-              transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+              transform={
+                negationLineAngle
+                  ? "rotate(" +
+                    negationLineAngle +
+                    " " +
+                    IconGridSize / 2 +
+                    " " +
+                    IconGridSize / 2 +
+                    ")"
+                  : undefined
+              }
               vectorEffect="non-scaling-stroke"
               x1={IconGridSize - negationLineTrim}
               x2={negationLineTrim}
@@ -108,7 +118,7 @@ export default function Icon({
       )}
       <g
         className="glyph"
-        mask={(isNegated || hasBadge) ? "url(#" + iconMaskId + ")" : undefined}
+        mask={isNegated || hasBadge ? "url(#" + iconMaskId + ")" : undefined}
         transform="rotate(0.0001)"
       >
         {children}
@@ -119,7 +129,17 @@ export default function Icon({
           stroke="currentColor"
           strokeLinecap="round"
           strokeWidth={negationLineWidth}
-          transform={negationLineAngle ? "rotate(" + negationLineAngle + " " + IconGridSize / 2 + " " + IconGridSize / 2 + ")" : undefined}
+          transform={
+            negationLineAngle
+              ? "rotate(" +
+                negationLineAngle +
+                " " +
+                IconGridSize / 2 +
+                " " +
+                IconGridSize / 2 +
+                ")"
+              : undefined
+          }
           vectorEffect="non-scaling-stroke"
           x1={IconGridSize - negationLineTrim}
           x2={negationLineTrim}
@@ -133,7 +153,7 @@ export default function Icon({
           cx={badgePosition.x}
           cy={badgePosition.y}
           r={badgeSize}
-          stroke='none'
+          stroke="none"
           fillOpacity="1"
           fill={badgeColor}
         />
@@ -160,14 +180,14 @@ Icon.propTypes = {
   size: PropTypes.string,
   stroke: PropTypes.string,
   strokeOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
 Icon.defaultProps = {
   badgeColor: "red",
-  badgeMaskOffset: '3px',
+  badgeMaskOffset: "3px",
   badgePosition: { x: 46, y: 16 },
-  badgeSize: '8px',
+  badgeSize: "8px",
   fill: "currentColor",
   fillOpacity: 0.15,
   hasBadge: false,

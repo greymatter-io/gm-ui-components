@@ -42,7 +42,7 @@ const StyledSVG = styled.svg.attrs(() => ({
   }
 
   .glyph *[class*="border"]:not([class*="fill"]) {
-    fill: none;  
+    fill: none;
   }
 `;
 
