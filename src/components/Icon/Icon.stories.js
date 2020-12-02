@@ -237,9 +237,12 @@ stories
           fillOpacity={number("fillOpacity")}
           size={text("size")}
           title={text("title")}
-          hasBadge={boolean("hasBadge")}
+          hasBadge={boolean("hasBadge", false)}
+          isNegated={boolean("isNegated", false)}
+          negationLineAngle={number("negationLineAngle", undefined)}
           badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
+          badgeSize={text("badgeSize", undefined)}
         />
       );
     },
@@ -263,8 +266,11 @@ stories
           fill={color("fill", undefined)}
           fillOpacity={number("fillOpacity", undefined)}
           hasBadge={boolean("hasBadge", undefined)}
+          isNegated={boolean("isNegated", undefined)}
+          negationLineAngle={number("negationLineAngle", undefined)}
           badgeColor={color("badgeColor", undefined)}
           badgePosition={object("badgePosition", undefined)}
+          badgeSize={text("badgeSize", undefined)}
         >
           <svg className="svg-icon" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="7.4" />
@@ -294,9 +300,14 @@ stories
                 strokeOpacity={number("strokeOpacity", undefined)}
                 fill={color("fill", undefined)}
                 fillOpacity={number("fillOpacity", undefined)}
+                isNegated={boolean("isNegated", undefined)}
+                negationLineAngle={number("negationLineAngle", undefined)}
+                negationLineTrim={number("negationLineTrim", undefined)}
+                negationLineWidth={number("negationLineWidth", undefined)}
                 hasBadge={boolean("hasBadge", undefined)}
                 badgeColor={color("badgeColor", undefined)}
                 badgePosition={object("badgePosition", undefined)}
+                badgeSize={text("badgeSize", undefined)}
               />
               <GalleryIconLabel>{glyph}</GalleryIconLabel>
             </GalleryIconDemo>
