@@ -26,7 +26,6 @@
     "@popperjs/core": "^2"
   },
   "dependencies": {
-    "inter-ui": "^3.15.0",
     "polished": "^3.4.2"
   },
   "scripts": {
