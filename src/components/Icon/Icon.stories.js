@@ -238,7 +238,7 @@ stories
           size={text("size")}
           title={text("title")}
           hasBadge={boolean("hasBadge", true)}
-          isNegated={boolean("isNegated", true)}
+          isNegated={boolean("isNegated", false)}
           negationLineAngle={number("negationLineAngle", undefined)}
           badgeColor={color("badgeColor")}
           badgePosition={object("badgePosition", undefined)}
