@@ -60,14 +60,14 @@ export default function Icon({
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      fill={fill}
+      fill={fill || fillColor}
       fillOpacity={fillOpacity}
       focusable="false"
       id={glyphName}
       size={size}
-      stroke={stroke}
+      stroke={stroke || borderColor}
       strokeOpacity={strokeOpacity}
-      strokeWidth={strokeWidth}
+      strokeWidth={strokeWidth || borderWidth}
       {...props}
     >
       {(isNegated || hasBadge) && (
