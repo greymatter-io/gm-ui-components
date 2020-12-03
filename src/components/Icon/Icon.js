@@ -60,14 +60,14 @@ export default function Icon({
   return (
     <StyledSVG
       aria-labelledby={ariaLabelledby}
-      fill={fill}
+      fill={props.fillColor || fill}
       fillOpacity={fillOpacity}
       focusable="false"
       id={glyphName}
       size={size}
-      stroke={stroke}
+      stroke={props.borderColor || fill}
       strokeOpacity={strokeOpacity}
-      strokeWidth={strokeWidth}
+      strokeWidth={props.borderWidth || strokeWidth}
       {...props}
     >
       {(isNegated || hasBadge) && (
@@ -168,8 +168,11 @@ Icon.propTypes = {
   badgeMaskOffset: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   badgePosition: PropTypes.object,
   badgeSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  borderColor: PropTypes.string,
+  borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
   fill: PropTypes.string,
+  fillColor: PropTypes.string,
   fillOpacity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   glyphName: PropTypes.string,
   hasBadge: PropTypes.bool,
