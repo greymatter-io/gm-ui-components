@@ -30,7 +30,7 @@
 
 # Installation
 
-gm-ui-components is available as an npm package. It has 4 peer dependencies:
+gm-ui-components is available as an npm package. It has 6 peer dependencies:
 
 ```sh
 npm install --save gm-ui-components react react-dom styled-components inter-ui react-popper @popperjs/core
