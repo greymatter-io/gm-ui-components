@@ -45,7 +45,7 @@ stories
             color={color("color", "", groupIdComponent)}
             innerLabelOff={text("innerLabelOff", "", groupIdComponent)}
             innerLabelOn={text("innerLabelOn", "", groupIdComponent)}
-            disabled={boolean("disabled", "", groupIdComponent)}
+            isDisabled={boolean("isDisabled", false)}
             label={text("label", "Toggle Switch Label", groupIdComponent)}
             labelPosition={select(
               "labelPosition",
@@ -74,7 +74,7 @@ stories
               color={color("color")}
               innerLabelOff={text("innerLabelOff", "off")}
               innerLabelOn={text("innerLabelOn", "on")}
-              disabled={boolean("disabled")}
+              isDisabled={boolean("isDisabled", false)}
               label="With 0.5em wrapper"
               labelPosition={select(
                 "labelPosition",
@@ -88,7 +88,7 @@ stories
               color={color("color")}
               innerLabelOff={text("innerLabelOff", "off")}
               innerLabelOn={text("innerLabelOn", "on")}
-              disabled={boolean("disabled")}
+              isDisabled={boolean("isDisabled", false)}
               label="Default size"
               labelPosition={select(
                 "labelPosition",
@@ -102,14 +102,16 @@ stories
               color={color("color")}
               innerLabelOff={text("innerLabelOff", "off")}
               innerLabelOn={text("innerLabelOn", "on")}
-              disabled={boolean("disabled")}
+              isDisabled={boolean("isDisabled", false)}
               label="With 2em wrapper"
               labelPosition={select(
                 "labelPosition",
                 labelPositionOptions,
                 "right"
               )}
-            />
+            >
+              With 2em wrapper
+            </ToggleSwitch>
           </Wrap>
         </>
       );
@@ -134,7 +136,7 @@ stories
             color={color("color")}
             innerLabelOff={text("innerLabelOff", "")}
             innerLabelOn={text("innerLabelOn", "")}
-            disabled={boolean("disabled")}
+            isDisabled={boolean("isDisabled", false)}
             label={text("label", "Toggle Switch Label")}
             labelPosition={select(
               "labelPosition",
@@ -146,7 +148,7 @@ stories
             color={color("color")}
             innerLabelOff={text("innerLabelOff", "")}
             innerLabelOn={text("innerLabelOn", "")}
-            disabled={boolean("disabled")}
+            isDisabled={boolean("isDisabled", false)}
             label={text("label", "Toggle Switch Label")}
             labelPosition={select(
               "labelPosition",
