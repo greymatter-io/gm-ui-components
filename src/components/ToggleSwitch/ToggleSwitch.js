@@ -21,7 +21,10 @@ const ToggleSwitchElement = styled.input`
   width: 1.615em;
   display: flex;
   transition: all 0.3s ease;
-  border: 1px solid;
+  border: 1px solid cornflowerblue;
+  border-color: yellow;
+  border-color: ${({ color, theme }) =>
+    color ? color : theme.COLOR_INTENT_HIGHLIGHT};
   position: relative;
   outline: none;
   box-sizing: content-box;
@@ -118,7 +121,7 @@ const ToggleSwitchElement = styled.input`
 export default function ToggleSwitch({ children, ...props }) {
   let ref = React.useRef();
   let state = useToggleState(props);
-  let [events, setEvents] = React.useState([]);
+  let [setEvents] = React.useState([]);
   let { inputProps } = useSwitch(props, state, ref);
   let { isFocusVisible, focusProps } = useFocusRing();
 
@@ -151,7 +154,7 @@ export default function ToggleSwitch({ children, ...props }) {
     >
       <InputLabelText>{children || props.label}</InputLabelText>
       <ToggleSwitchElement
-        color={props.color}
+        color={props.color ? props.color : undefined}
         innerLabelOn={props.innerLabelOn}
         innerLabelOff={props.innerLabelOff}
         ref={ref}

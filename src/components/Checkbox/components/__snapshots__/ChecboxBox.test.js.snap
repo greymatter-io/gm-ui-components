@@ -73,8 +73,6 @@ exports[`CheckboxBox should render 1`] = `
   border-style: dashed !important;
 }
 
-.c1:focus,
-.c1:focus:active,
 .c1.isFocusVisible {
   outline: none;
   border: 1px solid #00b42b;
