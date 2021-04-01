@@ -165,7 +165,7 @@ stories
           "Toggle switches in a list of controls, where one causes a dangerous action."
       }
     }
-)
+  )
   .add(
     "Controlled, default selected",
     () => {
