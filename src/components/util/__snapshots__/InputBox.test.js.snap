@@ -73,6 +73,8 @@ exports[`InputBox should render 1`] = `
   border-style: dashed !important;
 }
 
+.c0:focus,
+.c0:focus:active,
 .c0.isFocusVisible {
   outline: none;
   border: 1px solid #00b42b;
