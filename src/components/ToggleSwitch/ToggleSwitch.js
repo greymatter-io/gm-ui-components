@@ -121,24 +121,10 @@ const ToggleSwitchElement = styled.input`
 export default function ToggleSwitch({ children, ...props }) {
   let ref = React.useRef();
   let state = useToggleState(props);
-  let [setEvents] = React.useState([]);
   let { inputProps } = useSwitch(props, state, ref);
   let { isFocusVisible, focusProps } = useFocusRing();
-
-  let { hoverProps, isHovered } = useHover({
-    onHoverStart: e =>
-      setEvents(events => [...events, `hover start with ${e.pointerType}`]),
-    onHoverEnd: e =>
-      setEvents(events => [...events, `hover end with ${e.pointerType}`])
-  });
-  let { pressProps, isPressed } = usePress({
-    onPressStart: e =>
-      setEvents(events => [...events, `press start with ${e.pointerType}`]),
-    onPressEnd: e =>
-      setEvents(events => [...events, `press end with ${e.pointerType}`]),
-    onPress: e =>
-      setEvents(events => [...events, `press with ${e.pointerType}`])
-  });
+  let { hoverProps, isHovered } = useHover({});
+  let { pressProps, isPressed } = usePress({});
 
   return (
     <InputWrap
@@ -158,7 +144,6 @@ export default function ToggleSwitch({ children, ...props }) {
         innerLabelOn={props.innerLabelOn}
         innerLabelOff={props.innerLabelOff}
         ref={ref}
-        ariaLabel={children || props.label}
         {...inputProps}
         {...focusProps}
         {...props}
@@ -170,6 +155,7 @@ export default function ToggleSwitch({ children, ...props }) {
 ToggleSwitch.propTypes = {
   children: PropTypes.any,
   color: PropTypes.string,
+  defaultChecked: PropTypes.bool,
   innerLabelOff: PropTypes.string,
   innerLabelOn: PropTypes.string,
   isDisabled: PropTypes.bool,
