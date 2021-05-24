@@ -40,7 +40,7 @@ exports[`StyledSVG matches snapshot 1`] = `
 
 <svg
   className="c0"
-  preserveAspectRatio="xMaxYMax meet"
+  preserveAspectRatio="xMidYMid meet"
   size="1.714em"
   version="1.1"
   viewBox="0 0 64 64"
