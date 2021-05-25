@@ -5,7 +5,7 @@ const StyledSVG = styled.svg.attrs(() => ({
   xmlns: "http://www.w3.org/2000/svg",
   xmlnsXlink: "http://www.w3.org/1999/xlink",
   viewBox: `0 0 64 64`,
-  preserveAspectRatio: "xMaxYMax meet"
+  preserveAspectRatio: "xMidYMid meet"
 }))`
   z-index: 1;
   width: ${props => props.size};
