@@ -14,7 +14,9 @@ const InputReset = ({ visible = false, onClick }) => {
 };
 
 const Button = styled.button`
-  display: ${props => (props.visible === true ? "block" : "none")};
+  visibility: ${props => (props.visible === true ? "visible" : "hidden")};
+  opacity: ${props => (props.visible === true ? "1" : "0")};
+  transition: opacity 0.25s ease;
   position: absolute;
   padding: 0;
   background: inherit;
