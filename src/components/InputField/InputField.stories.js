@@ -58,7 +58,7 @@ stories
           label="Always use a label"
           defaultValue="User content"
           placeholder="Placeholders aren't labels"
-          labelPosition="left"
+          labelPosition="top"
         />
       );
     },
