@@ -22,7 +22,7 @@ const Button = styled.button`
   background: inherit;
   border: none;
   border-radius: ${({ theme }) => theme.CORNER_RADIUS_INPUT};
-  color: ${({ theme }) => theme.COLOR_BRAND_PRIMARY};
+  color: inherit;
   font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_SM};
   font-weight: ${({ theme }) => theme.FONT_WEIGHT_BOLD};
   z-index: 1;
