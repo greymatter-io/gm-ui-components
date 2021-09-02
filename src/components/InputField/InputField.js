@@ -84,6 +84,8 @@ InputField.propTypes = {
   label: PropTypes.string,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   maxLength: PropTypes.number,
+  onChange: PropTypes.func,
+  onReset: PropTypes.func,
   placeholder: PropTypes.string,
   readonly: PropTypes.bool,
   style: PropTypes.object,

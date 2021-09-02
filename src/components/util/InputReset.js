@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 import { keen } from "style/theme";
 import { IconX } from "components/Glyphs";
@@ -25,6 +26,11 @@ const Button = styled.button`
   z-index: 1;
   cursor: pointer;
 `;
+
+InputReset.propTypes = {
+  onClick: PropTypes.func,
+  visible: PropTypes.bool
+};
 
 InputReset.defaultProps = {
   theme: keen
