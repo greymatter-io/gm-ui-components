@@ -14,6 +14,10 @@ export const InputTextField = styled.input`
   );
   border: ${BORDER_WIDTH}px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
+  padding-right: ${props =>
+    props.resettable && (props.type === "search" || props.type === "text")
+      ? spacingScale(3)
+      : spacingScale(1)};
   appearance: none;
   margin: 0;
   color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
@@ -28,6 +32,12 @@ export const InputTextField = styled.input`
 
   &::-webkit-search-decoration {
     -webkit-appearance: none;
+  }
+
+  // not supported in Firefox
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button
+  &::-webkit-search-cancel-button {
+    display: none;
   }
 
   &:hover {

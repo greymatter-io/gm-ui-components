@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import InputLabelText from "components/util/InputLabelText";
 import InputWrap from "components/util/InputWrap";
 import InputHint from "components/util/InputHint";
 import InputTextField from "components/util/InputTextField";
+import InputReset from "components/util/InputReset";
 
 export default function InputField({
   autoFocus,
@@ -19,8 +20,37 @@ export default function InputField({
   type,
   style,
   className,
+  onChange,
+  onReset,
+  resettable,
   ...props
 }) {
+  const [hasValue, setHasValue] = useState(false);
+  const input = useRef(null);
+
+  useEffect(() => {
+    if (input.current.value !== "") {
+      setHasValue(true);
+    }
+  }, []); // run once on render
+
+  function internalOnChange(e) {
+    setHasValue(!!e.target.value);
+    if (onChange) {
+      onChange(e);
+    }
+  }
+
+  function localOnReset() {
+    input.current.value = "";
+    setHasValue(false);
+    if (onReset) {
+      onReset();
+    }
+  }
+
+  console.log(resettable);
+
   return (
     <InputWrap
       labelPosition={labelPosition}
@@ -29,6 +59,7 @@ export default function InputField({
     >
       {label && <InputLabelText>{label}</InputLabelText>}
       <InputTextField
+        ref={input}
         type={type}
         autoFocus={autoFocus}
         defaultValue={defaultValue}
@@ -36,8 +67,13 @@ export default function InputField({
         readonly
         maxLength={maxLength}
         placeholder={placeholder}
+        onChange={internalOnChange}
+        resettable={resettable}
         {...props}
       />
+      {resettable && (type === "search" || type === "text") && (
+        <InputReset visible={hasValue} onClick={localOnReset} />
+      )}
       {hint && <InputHint>{hint}</InputHint>}
     </InputWrap>
   );
@@ -52,8 +88,11 @@ InputField.propTypes = {
   label: PropTypes.string,
   labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
   maxLength: PropTypes.number,
+  onChange: PropTypes.func,
+  onReset: PropTypes.func,
   placeholder: PropTypes.string,
   readonly: PropTypes.bool,
+  resettable: PropTypes.bool,
   style: PropTypes.object,
   type: PropTypes.oneOf([
     "email",
@@ -71,6 +110,7 @@ InputField.defaultProps = {
   disabled: false,
   labelPosition: "top",
   readonly: false,
+  resettable: false,
   type: "text"
 };
 

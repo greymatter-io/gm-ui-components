@@ -20,6 +20,15 @@ stories
         "url"
       ]);
 
+      const LabelPositions = select("labelPosition", [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ]);
+
+      const ResetOptions = select("resettable", [false, true]);
+
       return (
         <InputField
           autoFocus={boolean("autoFocus")}
@@ -31,6 +40,8 @@ stories
           defaultValue={text("defaultValue")}
           placeholder={text("placeholder")}
           maxLength={number("maxLength")}
+          labelPosition={LabelPositions}
+          resettable={ResetOptions}
         />
       );
     },
@@ -50,6 +61,7 @@ stories
           label="Always use a label"
           defaultValue="User content"
           placeholder="Placeholders aren't labels"
+          labelPosition="top"
         />
       );
     },

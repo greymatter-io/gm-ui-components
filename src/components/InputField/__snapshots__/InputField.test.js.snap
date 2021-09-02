@@ -146,7 +146,9 @@ exports[`InputField matches snapshot 1`] = `
     autoFocus={false}
     clickAction={[Function]}
     disabled={false}
+    onChange={[Function]}
     readonly={true}
+    resettable={false}
     theme={
       Object {
         "COLOR_BACKGROUND_DEFAULT": "hsl(0, 0%, 100%)",
