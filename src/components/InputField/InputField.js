@@ -22,6 +22,7 @@ export default function InputField({
   className,
   onChange,
   onReset,
+  resettable,
   ...props
 }) {
   const [hasValue, setHasValue] = useState(false);
@@ -48,6 +49,8 @@ export default function InputField({
     }
   }
 
+  console.log(resettable);
+
   return (
     <InputWrap
       labelPosition={labelPosition}
@@ -65,9 +68,10 @@ export default function InputField({
         maxLength={maxLength}
         placeholder={placeholder}
         onChange={internalOnChange}
+        resettable={resettable}
         {...props}
       />
-      {(type === "search" || type === "text") && (
+      {resettable && (type === "search" || type === "text") && (
         <InputReset visible={hasValue} onClick={localOnReset} />
       )}
       {hint && <InputHint>{hint}</InputHint>}
@@ -88,6 +92,7 @@ InputField.propTypes = {
   onReset: PropTypes.func,
   placeholder: PropTypes.string,
   readonly: PropTypes.bool,
+  resettable: PropTypes.bool,
   style: PropTypes.object,
   type: PropTypes.oneOf([
     "email",
@@ -105,6 +110,7 @@ InputField.defaultProps = {
   disabled: false,
   labelPosition: "top",
   readonly: false,
+  resettable: false,
   type: "text"
 };
 

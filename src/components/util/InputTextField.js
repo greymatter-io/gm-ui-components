@@ -15,7 +15,7 @@ export const InputTextField = styled.input`
   border: ${BORDER_WIDTH}px solid ${({ theme }) => theme.COLOR_KEYLINE_DEFAULT};
   padding: ${spacingScale(0.5)} ${spacingScale(1)};
   padding-right: ${props =>
-    props.type === "search" || props.type === "text"
+    props.resettable && (props.type === "search" || props.type === "text")
       ? spacingScale(3)
       : spacingScale(1)};
   appearance: none;

@@ -27,6 +27,8 @@ stories
         "left"
       ]);
 
+      const ResetOptions = select("resettable", [false, true]);
+
       return (
         <InputField
           autoFocus={boolean("autoFocus")}
@@ -39,6 +41,7 @@ stories
           placeholder={text("placeholder")}
           maxLength={number("maxLength")}
           labelPosition={LabelPositions}
+          resettable={ResetOptions}
         />
       );
     },
