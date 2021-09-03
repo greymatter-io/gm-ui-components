@@ -15,8 +15,6 @@
   </a>
   <a href="https://www.styled-components.com/" target="_blank"><img src="https://img.shields.io/badge/styled_with-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357" alt="styled with styled-components"></a>
   <a href="https://circleci.com/gh/greymatter-io/gm-ui-components/tree/master" target="_blank"><img src="https://circleci.com/gh/greymatter-io/gm-ui-components/tree/master.svg?style=shield" alt="tested on CircleCI"></a>
-  <a href="https://codeclimate.com/github/greymatter-io/gm-ui-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/e4f79b8a8ac6216ae81c/maintainability" /></a>
-  <a href="https://codeclimate.com/github/greymatter-io/gm-ui-components/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e4f79b8a8ac6216ae81c/test_coverage" /></a>
   <a href="https://opensource.org/licenses/mit-license.php" target="_blank"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" alt="licensed under MIT"></a>
 </p>
 
