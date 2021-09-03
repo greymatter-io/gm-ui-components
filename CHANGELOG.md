@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/greymatter-io/gm-ui-components/compare/v2.1.0...v2.1.1) (2021-09-03)
+
+### Bug Fixes
+* remove console.log statement ([#634](https://github.com/greymatter-io/gm-ui-components/issues/634)) ([51610a9](https://github.com/greymatter-io/gm-ui-components/commit/51610a9f0d7189f45e2154c05faa6d3280455829))
+
+
+
 # [2.1.0](https://github.com/greymatter-io/gm-ui-components/compare/v2.0.0...v2.1.0) (2021-09-03)
 
 
@@ -29,7 +36,6 @@
 * icons can now be presented in negative ([#533](https://github.com/greymatter-io/gm-ui-components/issues/533)) ([1955398](https://github.com/greymatter-io/gm-ui-components/commit/1955398))
 * update svgr ([#612](https://github.com/greymatter-io/gm-ui-components/issues/612)) ([c6db69c](https://github.com/greymatter-io/gm-ui-components/commit/c6db69c))
 * better default breadcrumb delimiter (or custom, or none) ([4e426fc](https://github.com/greymatter-io/gm-ui-components/commit/4e426fc87b02c20ef32522fcf05a4fb2fa7e2aca))
-
 
 
 
