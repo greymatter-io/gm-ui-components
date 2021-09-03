@@ -1,3 +1,15 @@
+# [2.1.0](https://github.com/greymatter-io/gm-ui-components/compare/v2.0.0...v2.1.0) (2021-09-03)
+
+
+### Features
+
+* add cross-browser input reset ([#629](https://github.com/greymatter-io/gm-ui-components/issues/629)) ([2c2ed76](https://github.com/greymatter-io/gm-ui-components/commit/2c2ed76272b96ff3d6cb709647497ce1d47f69df))
+* auto-generate css vars from theme vars ([#632](https://github.com/greymatter-io/gm-ui-components/issues/632)) ([568462d](https://github.com/greymatter-io/gm-ui-components/commit/568462dcfd10a7dadcd4f749c5b584ed7acb4c9b))
+* squished icons remain centered ([#625](https://github.com/greymatter-io/gm-ui-components/issues/625)) ([c4dd3d8](https://github.com/greymatter-io/gm-ui-components/commit/c4dd3d8105d385f21757cf574f5aba3c7e0fdc9d))
+* update brand elements ([#624](https://github.com/greymatter-io/gm-ui-components/issues/624)) ([a1b7b68](https://github.com/greymatter-io/gm-ui-components/commit/a1b7b683848511ff48cd087a4858746de5276a66))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/greymatter-io/gm-ui-components/compare/v1.4.4...v2.0.0) (2020-12-02)
 
