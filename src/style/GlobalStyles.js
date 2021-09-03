@@ -4,9 +4,9 @@ import SpaceGrotesk from "./fonts/space-grotesk/SpaceGrotesk-VariableFont_wght.t
 
 import "inter-ui/inter.css";
 
-const themeVarsToCSSVars = (theme) => {
-  return (Object.keys(theme).map(key => ('--' + key + ': ' + theme[key] + ';')));
-}
+const themeVarsToCSSVars = theme => {
+  return Object.keys(theme).map(key => "--" + key + ": " + theme[key] + ";");
+};
 
 const NORMALIZE = css`
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -361,8 +361,6 @@ const NORMALIZE = css`
     display: none;
   }
 `;
-
-
 
 const GlobalStyles = createGlobalStyle`
 
