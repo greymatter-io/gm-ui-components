@@ -49,8 +49,6 @@ export default function InputField({
     }
   }
 
-  console.log(resettable);
-
   return (
     <InputWrap
       labelPosition={labelPosition}
