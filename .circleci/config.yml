@@ -21,22 +21,10 @@ jobs:
       - run:
           name: Install dependencies
           command: npm ci
-      - restore_cache:
-          keys:
-            - v2-cc-reporter-
-      - run:
-          name: Install Code Climate Test Reporter
-          command: |
-            if [ ! -f cc-test-reporter ]; then curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter && chmod +x ./cc-test-reporter; fi
-      - save_cache:
-          paths:
-            - cc-test-reporter
-          key: v2-cc-reporter-
       - persist_to_workspace: 
           root: ~/repo
           paths:
             - node_modules
-            - cc-test-reporter
 
   build:
     <<: *defaults
@@ -86,23 +74,16 @@ jobs:
           name: Set JEST_JUNIT_OUTPUT
           command: echo 'export JEST_JUNIT_OUTPUT="results/junit-$CIRCLE_NODE_INDEX.xml"' >> $BASH_ENV
       - run:
-          name: Prepare Code Climate Test Reporter
-          command: ./cc-test-reporter before-build
-      - run:
           name: Run tests
           # split tests by timing and then run npm test
           command: |
             circleci tests glob "src/**/*.test.js" | circleci tests split --split-by=timings | \
             xargs npm test -- --testResultsProcessor="jest-junit"  --coverage --ci --maxWorkers=2
-      - run: 
-          name: Format coverage
-          command: ./cc-test-reporter format-coverage --output coverage/codeclimate.$CIRCLE_NODE_INDEX.json
       - persist_to_workspace: 
           root: ~/repo
           paths:
             - results
             - coverage
-            - cc-test-reporter
             
   coverage:
     <<: *defaults
@@ -110,11 +91,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/repo
-      - run:
-          name: Send Istanbul LCOV Results to Code Climate
-          command: |
-            ./cc-test-reporter sum-coverage coverage/codeclimate.*.json
-            ./cc-test-reporter upload-coverage
       - run: 
           name: Merge junit results
           command: mkdir junit && npm run junit-merge -- -d results -o junit/junit.xml
