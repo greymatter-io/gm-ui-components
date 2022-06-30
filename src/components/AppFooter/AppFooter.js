@@ -35,8 +35,8 @@ function AppFooter({
 
   const FooterLeftContent = () =>
     footerLeft || (
-      <LongLogo {...logoProps} title="Decipher Technology Studios website">
-        <LongLogoImg alt="Decipher Technology Studios Logo" />
+      <LongLogo {...logoProps} title="greymatter.io website">
+        <LongLogoImg alt="greymatter.io Logo" />
       </LongLogo>
     );
 
@@ -99,7 +99,7 @@ AppFooter.propTypes = {
 const CURRENT_YEAR = new Date().getFullYear();
 
 AppFooter.defaultProps = {
-  copyrightText: `TM and \u00A9 ${CURRENT_YEAR} Decipher Technology Studios`,
+  copyrightText: `TM and \u00A9 ${CURRENT_YEAR} greymatter.io Inc.`,
   useExternalLinks: true,
   theme: keen
 };

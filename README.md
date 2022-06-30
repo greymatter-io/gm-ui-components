@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="./src/images/decipher-logo.png" alt="Decipher Logo" width="50">
+  <img src="./src/images/decipher-logo.png" alt="greymatter.io Logo" width="50">
   <br>
   Grey Matter UI Component Library
   <br>
