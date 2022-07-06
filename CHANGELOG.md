@@ -3,7 +3,7 @@
 
 ### Features
 
-* Changed alt text and copyright to from Decipher to greymatter.io Inc. ([#636](https://github.com/greymatter-io/gm-ui-components/issues/636)) ([ac02521](https://github.com/greymatter-io/gm-ui-components/commit/ac0252118084e08ba0f3d86c688a873a0565b931))
+* Changed alt text and copyright from Decipher to greymatter.io Inc. ([#636](https://github.com/greymatter-io/gm-ui-components/issues/636)) ([ac02521](https://github.com/greymatter-io/gm-ui-components/commit/ac0252118084e08ba0f3d86c688a873a0565b931))
 
 
 
