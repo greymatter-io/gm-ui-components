@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/greymatter-io/gm-ui-components/compare/v2.1.1...v2.1.2) (2022-07-05)
+
+
+### Features
+
+* Changed alt text and copyright from Decipher to greymatter.io Inc. ([#636](https://github.com/greymatter-io/gm-ui-components/issues/636)) ([ac02521](https://github.com/greymatter-io/gm-ui-components/commit/ac0252118084e08ba0f3d86c688a873a0565b931))
+
+
+
 ## [2.1.1](https://github.com/greymatter-io/gm-ui-components/compare/v2.1.0...v2.1.1) (2021-09-03)
 
 ### Bug Fixes
