@@ -1,7 +1,7 @@
 {
   "name": "gm-ui-components",
   "version": "2.1.2",
-  "description": "A library of reusable UI components for the Grey Matter product suite.",
+  "description": "A library of reusable UI components for the greymatter.io product suite.",
   "main": "lib/build.js",
   "author": "greymatter.io",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "keywords": [
     "react",
     "gm-ui-components",
-    "Grey Matter"
+    "greymatter.io"
   ],
   "peerDependencies": {
     "react": "^16",

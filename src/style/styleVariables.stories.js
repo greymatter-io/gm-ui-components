@@ -199,7 +199,7 @@ const ColorTextDemo = styled(DemoItem)`
   background-color: ${({ theme }) => theme.COLOR_BACKGROUND_DEFAULT};
 
   &:before {
-    content: "Grey Matter";
+    content: "greymatter.io";
     font-size: ${({ theme }) => theme.FONT_SIZE_TEXT_LG};
     color: ${props => props.demoVar};
     margin: ${spacingScale(2)};
@@ -270,7 +270,7 @@ const LineHeightDemo = styled(FontDemo)`
     line-height: ${props => props.demoVar};
     max-width: 35ch;
     content: "Introducing the world’s first hybrid cloud intelligent mesh
-Flexibly optimize your cloud, enhance customer digital experience, gain critical business intelligence, and cut ops costs with Grey Matter.";
+Flexibly optimize your cloud, enhance customer digital experience, gain critical business intelligence, and cut ops costs with greymatter.io.";
   }
 `;
 
