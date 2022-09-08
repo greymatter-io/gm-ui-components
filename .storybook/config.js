@@ -19,7 +19,7 @@ function loadStories() {
 addParameters({
   options: {
     theme: gmTheme,
-    brandTitle: "Grey Matter UI Components",
+    brandTitle: "greymatter.io UI Components",
     brandUrl: "#",
     isFullscreen: false,
     showNav: true,

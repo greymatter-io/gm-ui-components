@@ -53,7 +53,7 @@ function AppFooter({
           href="http://github.com/greymatter-io"
           rel="noopener noreferrer"
           target="_blank"
-          title="Grey Matter Github"
+          title="greymatter.io Github"
         >
           <IconGitHub fillOpacity="1" strokeWidth="0" />
         </Link>
@@ -61,7 +61,7 @@ function AppFooter({
           href="http://twitter.com/greymatterio"
           rel="noopener noreferrer"
           target="_blank"
-          title="Grey Matter Twitter"
+          title="greymatter.io Twitter"
         >
           <IconTwitter fillOpacity="1" strokeWidth="0" />
         </Link>
@@ -69,7 +69,7 @@ function AppFooter({
           href="https://www.linkedin.com/company/greymatterio"
           rel="noopener noreferrer"
           target="_blank"
-          title="Grey Matter LinkedIn"
+          title="greymatter.io LinkedIn"
         >
           <IconLinkedIn fillOpacity="1" strokeWidth="0" />
         </Link>

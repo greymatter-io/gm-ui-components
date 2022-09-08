@@ -1,12 +1,12 @@
 <h1 align="center">
   <br>
-  <img src="./src/images/decipher-logo.png" alt="greymatter.io Logo" width="50">
+  <img src="./src/images/greymatter-logo.png" alt="greymatter.io Logo" width="50">
   <br>
-  Grey Matter UI Component Library
+  greymatter.io UI Component Library
   <br>
 </h1>
 
-<h4 align="center">React components for Grey Matter user interfaces</h4>
+<h4 align="center">React components for greymatter.io user interfaces</h4>
 
 <p align="center">
   <a href="https://github.com/prettier/prettier" target="_blank">
@@ -199,7 +199,7 @@ You can find more information on style variables [here](https://greymatter-io.gi
 
 # Documentation
 
-See the [Grey Matter UI Components storybook](https://greymatter-io.github.io/gm-ui-components) for more usage examples and documentation.
+See the [greymatter.io UI Components storybook](https://greymatter-io.github.io/gm-ui-components) for more usage examples and documentation.
 
 # Compatability
 

@@ -23,7 +23,7 @@ stories
     ),
     {
       info: {
-        text: `AppFooter for Grey Matter products.`
+        text: `AppFooter for greymatter.io products.`
       }
     }
   )
@@ -40,7 +40,7 @@ stories
     ),
     {
       info: {
-        text: `AppFooter for Grey Matter products.\n\nProviding \`children\` to AppFooter overrides all default footer content.`
+        text: `AppFooter for greymatter.io products.\n\nProviding \`children\` to AppFooter overrides all default footer content.`
       }
     }
   )
@@ -56,7 +56,7 @@ stories
     ),
     {
       info: {
-        text: `AppFooter for Grey Matter products.\n\nUse the \`footerLeft\`, \`footerCenter\`, and \`footerRight\` props to override specific sections of the footer.`
+        text: `AppFooter for greymatter.io products.\n\nUse the \`footerLeft\`, \`footerCenter\`, and \`footerRight\` props to override specific sections of the footer.`
       }
     }
   );

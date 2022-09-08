@@ -33,7 +33,7 @@ export default create({
   inputTextColor: "black",
   inputBorderRadius: 4,
 
-  brandTitle: "Grey Matter UI Components",
+  brandTitle: "greymatter.io UI Components",
   brandUrl: "https://github.com/greymatter-io/gm-ui-components",
   brandImage: null
 });
