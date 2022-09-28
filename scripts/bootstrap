@@ -1,0 +1,51 @@
+#!/bin/bash
+
+set -eo pipefail
+
+cmd_install () {
+  local ci=""
+
+  if [[ $(which node) == "" || $(node -v | grep -o "v17") == "" ]]; then
+    echo "Please install Node 17.x or higher."
+    exit 1
+  fi
+
+  echo "Required Node dependencies found."
+
+  echo "Installing NPM dependencies..."
+  if [[ $ci == "true" ]]; then
+    npm ci
+  else
+    npm install
+  fi
+}
+
+cmd_ci () {
+  cmd_install "true"
+}
+
+cmd_help () {
+  echo "This script will install NPM dependencies.
+
+valid commands: ci, help
+
+ci:
+  Install NPM dependencies for CI environments.
+help:
+  Print this message and exit."
+}
+
+if [ $# -eq 0 ]; then
+  cmd_install
+else
+  MODE="${1:-}"
+  case "$MODE" in
+    help|ci)
+      shift
+      "cmd_$MODE" "$@"
+      ;;
+    *)
+      cmd_help
+      ;;
+  esac
+fi
