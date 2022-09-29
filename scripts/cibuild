@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -e
+
+cmd_build () {
+  ./scripts/bootstrap ci
+}
+
+cmd_test () {
+  # Always install first because steps do not always run on
+  # the same Buildkite agent.
+  ./scripts/bootstrap ci
+  ./scripts/test
+}
+
+cmd_lint () {
+  # Always install first because steps do not always run on
+  # the same Buildkite agent.
+  ./scripts/bootstrap ci
+  ./scripts/test lint
+}
+
+if [ $# -eq 0 ]; then
+  echo "missing argument"
+  exit 1
+fi
+
+CMD=$1
+shift
+case $CMD in
+  build|test|lint)
+    cmd_$CMD "$@"
+    ;;
+  *)
+    echo "invalid argument: $CMD"
+    exit 1
+    ;;
+esac

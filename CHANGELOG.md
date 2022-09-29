@@ -3,7 +3,8 @@
 ### Changed
 
 * Changed all instances of "Grey Matter" that refer to the company to "greymatter.io"
-* Changed logo name from "decipher-logo.png" to "greymatter-logo.png" 
+* Changed logo name from "decipher-logo.png" to "greymatter-logo.png"
+* Replaced CircleCI pipeline with Buildkite
 
 
 ## [2.1.2](https://github.com/greymatter-io/gm-ui-components/compare/v2.1.1...v2.1.2) (2022-07-05)

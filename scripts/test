@@ -1,0 +1,54 @@
+#!/bin/bash
+
+set -euo pipefail
+
+cmd_lint () {
+  echo "Running linters..."
+  # Setting max warning to treat all eslint warning as errors that break
+  # the build. This matches the behavior of npm build and allows us to
+  # fail builds that would otherwise later break.
+  npm run lint-js -- --max-warnings=0
+}
+
+cmd_test () {
+  local ci=""
+
+  echo "Running tests..."
+  if [[ $ci == "true" ]]; then
+    npm test -- --coverage --ci
+  else
+    npm test
+  fi
+}
+
+cmd_ci () {
+  cmd_test "true"
+}
+
+cmd_help () {
+  echo "This script will execute linters and tests.
+
+valid commands: ci, help
+
+ci:
+  Run tests for CI environments.
+lint:
+  Run linters.
+help:
+  Print this message and exit."
+}
+
+if [ $# -eq 0 ]; then
+  cmd_test
+else
+  MODE="${1:-}"
+  case "$MODE" in
+    help|ci|lint)
+      shift
+      "cmd_$MODE" "$@"
+      ;;
+    *)
+      cmd_help
+      ;;
+  esac
+fi
