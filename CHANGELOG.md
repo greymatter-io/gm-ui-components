@@ -1,19 +1,19 @@
-## vNEXT
+## [2.1.3](https://github.com/greymatter-io/gm-ui-components/compare/v2.1.2...v2.1.3) (2022-09-30)
 
 ### Changed
 
 * Changed all instances of "Grey Matter" that refer to the company to "greymatter.io"
 * Changed logo name from "decipher-logo.png" to "greymatter-logo.png"
 * Replaced CircleCI pipeline with Buildkite
+* Fixed NPM security vulnerabilities
+* Fixed theme switching regression
 
 
 ## [2.1.2](https://github.com/greymatter-io/gm-ui-components/compare/v2.1.1...v2.1.2) (2022-07-05)
 
-
 ### Features
 
 * Changed alt text and copyright from Decipher to greymatter.io Inc. ([#636](https://github.com/greymatter-io/gm-ui-components/issues/636)) ([ac02521](https://github.com/greymatter-io/gm-ui-components/commit/ac0252118084e08ba0f3d86c688a873a0565b931))
-
 
 
 ## [2.1.1](https://github.com/greymatter-io/gm-ui-components/compare/v2.1.0...v2.1.1) (2021-09-03)
@@ -22,9 +22,7 @@
 * remove console.log statement ([#634](https://github.com/greymatter-io/gm-ui-components/issues/634)) ([51610a9](https://github.com/greymatter-io/gm-ui-components/commit/51610a9f0d7189f45e2154c05faa6d3280455829))
 
 
-
 # [2.1.0](https://github.com/greymatter-io/gm-ui-components/compare/v2.0.0...v2.1.0) (2021-09-03)
-
 
 ### Features
 
