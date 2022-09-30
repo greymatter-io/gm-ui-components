@@ -1,6 +1,6 @@
 {
   "name": "gm-ui-components",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A library of reusable UI components for the greymatter.io product suite.",
   "main": "lib/build.js",
   "author": "greymatter.io",
