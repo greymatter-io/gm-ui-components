@@ -11,6 +11,7 @@ const Wrap = styled.div`
   flex: 1 1 100%;
   align-items: stretch;
   justify-content: stretch;
+  color: ${({ theme }) => theme.COLOR_CONTENT_DEFAULT};
 
   > div {
     /* Header container */
