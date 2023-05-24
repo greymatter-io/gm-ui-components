@@ -5,11 +5,14 @@ set -eo pipefail
 cmd_install () {
   local ci=""
 
-  if [[ $(which node) == "" || $(node -v | grep -o "v17") == "" ]]; then
-    echo "Please install Node 17.x or higher."
-    exit 1
-  fi
+  node_version=$(node --version | awk -Fv '{print $2}')
 
+  # Compare the version with the minimum required version (17)
+  if [[ "$(printf '%s\n' "17" "$node_version" | sort -V | head -n1)" != "17" ]]; then
+      echo "Error: Node.js version $node_version is below the minimum required version (17)"
+      exit 1
+  fi
+  
   echo "Required Node dependencies found."
 
   echo "Installing NPM dependencies..."

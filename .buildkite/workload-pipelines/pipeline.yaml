@@ -1,0 +1,49 @@
+steps:
+  - label: ":nodejs: Lint"
+    key: lint
+    agents:
+      queue: k8s-agent
+    commands:
+    - ./scripts/cibuild lint
+    plugins:
+    - greymatter-io/k8s:
+        secret-name: build-secrets
+        agent-token-ssh-secret-key: buildkite-agent-token
+        git-ssh-secret-key: ssh-key
+        image-pull-secret: agent-pull-secret
+
+        image: greymatter.jfrog.io/pipeline-oci/gm-ui-components-ci:latest
+        always-pull: true
+        mount-secret: build-secrets:/secrets
+  - label: ":nodejs: Test"
+    key: test
+    agents:
+      queue: k8s-agent
+    commands:
+    - ./scripts/cibuild test
+    plugins:
+    - greymatter-io/k8s:
+        secret-name: build-secrets
+        agent-token-ssh-secret-key: buildkite-agent-token
+        git-ssh-secret-key: ssh-key
+        image-pull-secret: agent-pull-secret
+
+        image: greymatter.jfrog.io/pipeline-oci/gm-ui-components-ci:latest
+        always-pull: true
+        mount-secret: build-secrets:/secrets
+  - label: ":nodejs: Build"
+    key: build
+    agents:
+      queue: k8s-agent
+    commands:
+    - ./scripts/cibuild build
+    plugins:
+    - greymatter-io/k8s:
+        secret-name: build-secrets
+        agent-token-ssh-secret-key: buildkite-agent-token
+        git-ssh-secret-key: ssh-key
+        image-pull-secret: agent-pull-secret
+
+        image: greymatter.jfrog.io/pipeline-oci/gm-ui-components-ci:latest
+        always-pull: true
+        mount-secret: build-secrets:/secrets
