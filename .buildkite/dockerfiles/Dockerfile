@@ -11,5 +11,3 @@ RUN apt update -y
 
 RUN apt install -y gcc g++ make nodejs 
 
-
-
