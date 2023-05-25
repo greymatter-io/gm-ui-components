@@ -1,6 +1,6 @@
 steps:
   - key: build-base-image
-    name: ":docker: Build Control Build Image"
+    name: ":docker: Build gm-ui-components Image"
     agents:
         queue: k8s-agent
     command:
