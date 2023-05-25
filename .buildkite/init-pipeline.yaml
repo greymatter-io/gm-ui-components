@@ -2,7 +2,7 @@ agents:
   queue: k8s-agent
 
 steps:
-  # Build the build image will will do that if there is an update to the dockerfile or pipeline
+  # If there's an update to the Dockerfile or pipeline, build the image.
   - label: ":docker: Check for changes to the build image"
     plugins:
       - monebag/monorepo-diff#v2.5.8:
