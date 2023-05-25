@@ -1,0 +1,22 @@
+agents:
+  queue: k8s-agent
+
+steps:
+  # If there's an update to the Dockerfile or pipeline, build the image.
+  - label: ":docker: Check for changes to the build image"
+    plugins:
+      - monebag/monorepo-diff#v2.5.8:
+          interpolation: false
+          watch:
+            - path:
+                - ".buildkite/dockerfiles/"
+                - ".buildkite/workload_pipelines/build-image.yaml"
+              config:
+                command: buildkite-agent pipeline upload .buildkite/workload-pipelines/build-image.yaml
+                label: "Upload build-image pipeline"
+  - wait
+
+  - label: ":pipeline: default build pipeline config"
+    command: buildkite-agent pipeline upload .buildkite/workload-pipelines/pipeline.yaml
+    if: build.source != "schedule" && build.tag == null
+    

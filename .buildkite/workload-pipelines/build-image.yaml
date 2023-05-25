@@ -1,0 +1,23 @@
+steps:
+  - key: build-base-image
+    name: ":docker: Build gm-ui-components Image"
+    agents:
+        queue: k8s-agent
+    command:
+    - set -e
+    - buildah login -u ci --password-stdin < /secrets/jfrog-reference-token greymatter.jfrog.io
+    - buildah bud --layers -f .buildkite/dockerfiles/Dockerfile -t greymatter.jfrog.io/pipeline-oci/gm-ui-components-ci:latest .
+    - buildah push greymatter.jfrog.io/pipeline-oci/gm-ui-components-ci:latest
+    plugins:
+    - greymatter-io/k8s:
+        secret-name: build-secrets
+        agent-token-ssh-secret-key: buildkite-agent-token
+        git-ssh-secret-key: ssh-key
+
+        resources-request-cpu: 2000m
+        resources-request-memory: 4Gi
+
+        image: quay.io/buildah/stable:latest
+        mount-secret: build-secrets:/secrets
+        privileged: true 
+        
