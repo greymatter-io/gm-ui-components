@@ -20,5 +20,3 @@ steps:
     command: buildkite-agent pipeline upload .buildkite/workload-pipelines/pipeline.yaml
     if: build.source != "schedule" && build.tag == null
     
-  
-    
