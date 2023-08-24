@@ -10,7 +10,7 @@ steps:
           watch:
             - path:
                 - ".buildkite/dockerfiles/"
-                - ".buildkite/workload_pipelines/build-image.yaml"
+                - ".buildkite/workload-pipelines/build-image.yaml"
               config:
                 command: buildkite-agent pipeline upload .buildkite/workload-pipelines/build-image.yaml
                 label: "Upload build-image pipeline"
